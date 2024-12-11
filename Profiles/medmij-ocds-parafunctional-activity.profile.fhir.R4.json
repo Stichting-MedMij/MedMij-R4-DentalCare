@@ -1,0 +1,136 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "medmij-ocds-parafunctional-activity",
+    "meta": {
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "dental-care"
+            }
+        ]
+    },
+    "url": "http://medmij.nl/fhir/StructureDefinition/medmij-ocds-oral-hygiene",
+    "version": "0.0.1",
+    "name": "MedMijDentalCareParafunctionalActivity",
+    "title": "HCIM Modular data service - Dental Care - Parafunctional Activity",
+    "status": "draft",
+    "publisher": "MedMij",
+    "contact": [
+        {
+            "name": "MedMij",
+            "telecom": [
+                {
+                    "system": "email",
+                    "value": "info@medmij.nl",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Parafunctional activity observation</div>"
+    },
+    "description": "......",
+    "purpose": "This Observation resource represent the Parafunctional Activity",
+    "copyright": "MedMij",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Observation",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Observation",
+                "path": "Observation",
+                "short": "Parafunctional Activity",
+                "alias": ["Parafuctionele activiteit"]
+            },
+            {
+                "id": "Observation.code",
+                "path": "Observation.code",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
+                            "code": "PA1"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "Observation.effective[x]",
+                "path": "Observation.effective[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.effective[x]:effectiveDateTime",
+                "path": "Observation.effective[x]",
+                "sliceName": "effectiveDateTime",
+                "short": "ParafunctionalActivityDateTime",
+                "definition": "The date and time at which the Oral Hygiene was measured.",
+                "alias":  [
+                    "ParafunctioneleActiviteitDatumTijd"
+                ],
+                "type":  [
+                    {
+                        "code": "dateTime"
+                    }
+                ]
+            },
+            {
+                "id": "Observation.value[x]",
+                "path": "Observation.value[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.value[x]:valueCodeableConcept",
+                "path": "Observation.value[x]",
+                "sliceName": "valueCodeableConcept",
+                "short": "ParafunctionalActivityValue",
+                "definition": "The score is a ...",
+                "alias":  [
+                    "ParafunctioneleActiviteitWaarde"
+                ],
+                "type":  [
+                    {
+                        "code": "String"
+                    }
+                ]
+            },
+            {
+                "id": "Observation.note",
+                "path": "Observation.note",
+                "max": "1"
+            },
+            {
+                "id": "Observation.note.text",
+                "path": "Observation.note.text",
+                "short": "Comment",
+                "definition": "Comment on the Parafunctional Activity, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+                "alias":  [
+                    "Toelichting"
+                ]
+            }
+        ]
+    }
+}
+

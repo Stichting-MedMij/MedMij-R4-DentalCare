@@ -1,0 +1,140 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "medmij-mds-mouthcare-asascore",
+    "meta": {
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "oral-care"
+            }
+        ]
+    },
+    "url": "http://medmij.nl/fhir/StructureDefinition/medmij-mds-mouthcare-asascore",
+    "version": "0.0.1",
+    "name": "MedMijMDSMouthCareASAScore",
+    "title": "HCIM Modular data service - Mouthcare - ASA Score",
+    "status": "draft",
+    "publisher": "MedMij",
+    "contact": [
+        {
+            "name": "MedMij",
+            "telecom": [
+                {
+                    "system": "email",
+                    "value": "info@medmij.nl",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Modular data service - Mouth care - ASA Score</div>"
+    },
+    "description": "classification of physical condition according to American Society of Anaesthesiologists.",
+    "purpose": "This Observation resource represents the classification of physical condition according to American Society of Anaesthesiologists.",
+    "copyright": "MedMij",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Observation",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Observation",
+                "path": "Observation",
+                "short": "ASA Score",
+                "alias": ["ASA Score"]
+            },
+            {
+                "id": "Observation.code",
+                "path": "Observation.code",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "413347006"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "Observation.effective[x]",
+                "path": "Observation.effective[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.effective[x]:effectiveDateTime",
+                "path": "Observation.effective[x]",
+                "sliceName": "effectiveDateTime",
+                "short": "ASAscoreDateTime",
+                "definition": "The date and time at which the ASA score was measured.",
+                "alias":  [
+                    "ASAscoreDatumTijd"
+                ],
+                "type":  [
+                    {
+                        "code": "dateTime"
+                    }
+                ]
+            },
+            {
+                "id": "Observation.value[x]",
+                "path": "Observation.value[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.value[x]:valueCodeableConcept",
+                "path": "Observation.value[x]",
+                "sliceName": "valueCodeableConcept",
+                "short": "ASAscoreValue",
+                "definition": "The score is a ...",
+                "alias":  [
+                    "ASAscoreWaarde"
+                ],
+                "type":  [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ],
+                "binding": {
+                    "strength": "extensible",
+                    "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.2.2--20200901000000 (aanpassen)"
+                }
+            },
+            {
+                "id": "Observation.note",
+                "path": "Observation.note",
+                "max": "1"
+            },
+            {
+                "id": "Observation.note.text",
+                "path": "Observation.note.text",
+                "short": "Comment",
+                "definition": "Comment on the ASA score measurement, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+                "alias":  [
+                    "Toelichting"
+                ]
+            }
+        ]
+    }
+}
+

@@ -1,0 +1,140 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "medmij-ocds-pps-screening",
+    "meta": {
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "detal-care"
+            }
+        ]
+    },
+    "url": "http://medmij.nl/fhir/StructureDefinition/medmij-ocds-pps-screening",
+    "version": "0.0.1",
+    "name": "MedMijDetalCarePPSScreening",
+    "title": "HCIM Modular data service - Dental Care - PPS screening",
+    "status": "draft",
+    "publisher": "MedMij",
+    "contact": [
+        {
+            "name": "MedMij",
+            "telecom": [
+                {
+                    "system": "email",
+                    "value": "info@medmij.nl",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS screening</div>"
+    },
+    "description": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
+    "purpose": "This Observation resource represent the PPS Screening",
+    "copyright": "MedMij",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Observation",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Observation",
+                "path": "Observation",
+                "short": "PPS Screening",
+                "alias": ["PPS Screening"]
+            },
+            {
+                "id": "Observation.code",
+                "path": "Observation.code",
+                "patternCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
+                            "code": "PPSSCORE"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "Observation.effective[x]",
+                "path": "Observation.effective[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.effective[x]:effectiveDateTime",
+                "path": "Observation.effective[x]",
+                "sliceName": "effectiveDateTime",
+                "short": "PPSscreeningDateTime",
+                "definition": "The date and time at which the PPS screening was measured.",
+                "alias":  [
+                    "PPSscreeningDatumTijd"
+                ],
+                "type":  [
+                    {
+                        "code": "dateTime"
+                    }
+                ]
+            },
+            {
+                "id": "Observation.value[x]",
+                "path": "Observation.value[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Observation.value[x]:valueCodeableConcept",
+                "path": "Observation.value[x]",
+                "sliceName": "valueCodeableConcept",
+                "short": "PPSscoreValue",
+                "definition": "The score is a ...",
+                "alias":  [
+                    "PPSscoreWaarde"
+                ],
+                "type":  [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ],
+                "binding": {
+                    "strength": "extensible",
+                    "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.2.2--20200901000000 (aanpassen)"
+                }
+            },
+            {
+                "id": "Observation.note",
+                "path": "Observation.note",
+                "max": "1"
+            },
+            {
+                "id": "Observation.note.text",
+                "path": "Observation.note.text",
+                "short": "Comment",
+                "definition": "Comment on the PPS screening, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+                "alias":  [
+                    "Toelichting"
+                ]
+            }
+        ]
+    }
+}
+
