@@ -106,7 +106,7 @@
                 "path": "Observation.value[x]",
                 "sliceName": "valueCodeableConcept",
                 "short": "CariesRiskScoreValue",
-                "definition": "The score is a ...",
+                "definition": "The score is a risk...",
                 "alias":  [
                     "CariesRiskScoreWaarde"
                 ],
