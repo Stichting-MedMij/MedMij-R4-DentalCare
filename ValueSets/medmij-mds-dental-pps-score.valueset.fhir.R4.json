@@ -1,0 +1,55 @@
+{
+    "resourceType": "ValueSet",
+    "id": "medmij-mds-dental-care-pps-score",
+    "name": "PPSscreeningScore",
+    "title": "PPSscreeningScore",
+    "version": "0.0.1",
+    "experimental": false,
+    "publisher": "MedMij",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS screening score</div>"
+    },
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113883.3.3210.11.25"
+        }
+    ],
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+        ],
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "dental-care"
+            }
+        ]
+    },
+    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-oral-care-pps-score",
+    "status": "draft",
+    "description": "PPSscreeningScore",
+    "compose": {
+        "include": [
+            {
+                "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
+                "concept": [
+                    {
+                        "code": "ppsscore1",
+                        "display": "pockets 0-3 millimeter = in orde"
+                    },
+                    {
+                        "code": "ppsscore2",
+                        "display": "pockets 4-5 millimeter = mogelijk in orde"
+                    },
+                    {
+                        "code": "ppsscore3",
+                        "display": "pockets groter of gelijk aan 6 millimeter = wellicht niet in orde"
+                    }
+                ]
+            }
+        ]
+    }
+}
