@@ -102,9 +102,9 @@
                 }
             },
             {
-                "id": "Observation.value[x]:valueCodeableConcept",
+                "id": "Observation.value[x]:valueString",
                 "path": "Observation.value[x]",
-                "sliceName": "valueCodeableConcept",
+                "sliceName": "valueString",
                 "short": "ParafunctionalActivityValue",
                 "definition": "The score is a ...",
                 "alias":  [
