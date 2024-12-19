@@ -2,7 +2,7 @@
     "resourceType": "ValueSet",
     "id": "medmij-mds-oral-care-dental-hygiene-finding",
     "name": "Dental hygiene finding",
-    "tile": "Dental hygiene finding",
+    "title": "Dental hygiene finding",
     "version": "0.0.1",
     "experimental": false,
     "publisher": "MedMij",
