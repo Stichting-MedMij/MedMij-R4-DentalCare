@@ -54,7 +54,7 @@
                             }
                         ],
                         "code": "413496000",
-                        "display": "ASA score 2"
+                        "display": "ASA-score 2"
                     },
                     {
                         "extension":  [
@@ -64,7 +64,7 @@
                             }
                         ],
                         "code": "413497009",
-                        "display": "ASA score 3"
+                        "display": "ASA-score 3"
                     },
                     {
                         "extension":  [
@@ -74,7 +74,7 @@
                             }
                         ],
                         "code": "413498004",
-                        "display": "ASA score 4"
+                        "display": "ASA-score 4"
                     },
                     {
                         "extension":  [
@@ -84,7 +84,7 @@
                             }
                         ],
                         "code": "413499007",
-                        "display": "ASA score 5"
+                        "display": "ASA-score 5"
                     },
                     {
                         "extension":  [
@@ -94,7 +94,7 @@
                             }
                         ],
                         "code": "413500003",
-                        "display": "ASA score 6"
+                        "display": "ASA-score 6"
                     }
                 ]
             }
