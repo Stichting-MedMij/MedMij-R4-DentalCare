@@ -129,6 +129,19 @@
                 "alias":  [
                     "Toelichting"
                 ]
+            },
+            {
+                "id": "Observation.subject",
+                "path": "Observation.subject",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "http://hl7.org/fhir/StructureDefinition/Patient",
+                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+                        ]
+                    }
+                ]
             }
         ]
     }
