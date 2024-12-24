@@ -12,7 +12,7 @@
     "url": "http://medmij.nl/fhir/StructureDefinition/medmij-mds-dental-care-asascore",
     "version": "0.0.1",
     "name": "MedMijMDSDentalCareASAScore",
-    "title": "HCIM Modular data service - Mouthcare - ASA Score",
+    "title": "HCIM Modular data service - Dentalcare - ASA Score",
     "status": "draft",
     "publisher": "MedMij",
     "contact": [
