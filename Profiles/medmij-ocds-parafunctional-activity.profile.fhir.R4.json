@@ -1,6 +1,6 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "medmij-ocds-parafunctional-activity",
+    "id": "hcim-parafunctional-activity",
     "meta": {
         "tag": [
             {
@@ -9,9 +9,9 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/medmij-ocds-oral-hygiene",
+    "url": "http://medmij.nl/fhir/StructureDefinition/hcim-parafunctional-activity",
     "version": "0.0.1",
-    "name": "MedMijDentalCareParafunctionalActivity",
+    "name": "hcimDentalCareParafunctionalActivity",
     "title": "HCIM Modular data service - Dental Care - Parafunctional Activity",
     "status": "draft",
     "publisher": "MedMij",
@@ -55,7 +55,7 @@
                     "coding": [
                         {
                             "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
-                            "code": "PA1"
+                            "code": "AP1"
                         }
                     ]
                 }
