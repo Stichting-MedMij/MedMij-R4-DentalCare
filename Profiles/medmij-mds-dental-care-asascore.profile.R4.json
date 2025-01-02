@@ -117,7 +117,7 @@
                 ],
                 "binding": {
                     "strength": "extensible",
-                    "valueSet": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-asa-score"
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-ASAscore"
                 }
             },
             {
