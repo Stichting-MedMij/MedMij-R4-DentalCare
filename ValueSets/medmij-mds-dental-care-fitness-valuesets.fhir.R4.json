@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "medmij-mds-dental-care-dental-fitness",
+    "id": "hcim-DentalFitnessScore",
     "name": "Dental fitness",
     "title": "Dental fitness",
     "version": "0.0.1",
@@ -28,7 +28,7 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-dental-fitness",
+    "url": "http://medmij.nl/fhir/ValueSet/hcim-DentalFitnessScore",
     "status": "draft",
     "description": "Dental fitness",
     "compose": {

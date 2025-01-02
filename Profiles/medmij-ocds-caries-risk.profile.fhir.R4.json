@@ -1,6 +1,6 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "hcim-caries-risk",
+    "id": "hcim-CariesRisk",
     "meta": {
         "tag": [
             {
@@ -9,7 +9,7 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/hcim-caries-risk",
+    "url": "http://medmij.nl/fhir/StructureDefinition/hcim-CariesRisk",
     "version": "0.0.1",
     "name": "MedMijDentalCareCariesRisk",
     "title": "HCIM Modular data service - Detal Care - Caries Risk",
@@ -117,7 +117,7 @@
                 ],
                 "binding": {
                     "strength": "extensible",
-                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-caries-risk"
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-CariesRisk"
                 }
             },
             {

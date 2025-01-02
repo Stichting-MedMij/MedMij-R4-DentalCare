@@ -1,6 +1,6 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "medmij-ocds-Dental-Fitness-Score",
+    "id": "hcim-DentalFitnessScore",
     "meta": {
         "tag": [
             {
@@ -9,7 +9,7 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/medmij-ocds-dental-fitness-score",
+    "url": "http://medmij.nl/fhir/StructureDefinition/hcim-DentalFitnessScore",
     "version": "0.0.1",
     "name": "MedMijDentalCareDentalFitnessScore",
     "title": "HCIM Modular data service - Dental Care - Dental Fitness Score",
@@ -117,7 +117,7 @@
                 ],
                 "binding": {
                     "strength": "extensible",
-                    "valueSet": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-dental-fitness"
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-DentalFitnessScore"
                 }
             },
             {
