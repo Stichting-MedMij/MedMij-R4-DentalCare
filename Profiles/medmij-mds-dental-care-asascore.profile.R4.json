@@ -9,7 +9,7 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/cim-ASAscore",
+    "url": "http://medmij.nl/fhir/StructureDefinition/hcim-ASAscore",
     "version": "0.0.1",
     "name": "MedMijDentalCareASAScore",
     "title": "HCIM Modular data service - Dentalcare - ASA Score",
