@@ -1,6 +1,6 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "medmij-ocds-pps-screening",
+    "id": "hcim-PPSscreening",
     "meta": {
         "tag": [
             {
@@ -9,7 +9,7 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/medmij-ocds-pps-screening",
+    "url": "http://medmij.nl/fhir/StructureDefinition/hcim-PPSscreening",
     "version": "0.0.1",
     "name": "MedMijDetalCarePPSScreening",
     "title": "HCIM Modular data service - Dental Care - PPS screening",
@@ -117,7 +117,7 @@
                 ],
                 "binding": {
                     "strength": "extensible",
-                    "valueSet": "http://medmij.nl/fhir/ValueSet/medmij-mds-oral-care-pps-score"
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-PPSscreening"
                 }
             },
             {
