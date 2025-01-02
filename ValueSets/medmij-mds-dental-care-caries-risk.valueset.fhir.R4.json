@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "medmij-mds-dental-care-caries-risk",
+    "id": "hcim-caries-risk",
     "version": "0.0.1",
     "name": "CariesRisk",
     "title": "Caries Risk",
@@ -28,7 +28,7 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-caries-risk",
+    "url": "http://medmij.nl/fhir/ValueSet/hcim-caries-risk",
     "status": "draft",
     "description": "CariesRisk",
     "compose": {
