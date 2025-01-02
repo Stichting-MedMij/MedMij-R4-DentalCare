@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "medmij-mds-dental-care-asa-score",
+    "id": "hcim-ASAscore",
     "version": "0.0.1",
     "name": "ASAscore",
     "title": "ASAscore",
@@ -28,7 +28,7 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-asa-score",
+    "url": "http://medmij.nl/fhir/ValueSet/hcim-ASAscore",
     "status": "draft",
     "description": "ASAscore",
     "compose": {
