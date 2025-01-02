@@ -1,6 +1,6 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "medmij-ocds-detal-care-hygiene",
+    "id": "hcim-dental-hygiene-finding",
     "meta": {
         "tag": [
             {
@@ -9,7 +9,7 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/medmij-ocds-oral-hygiene",
+    "url": "http://medmij.nl/fhir/StructureDefinition/hcim-dental-hygiene-finding",
     "version": "0.0.1",
     "name": "MedMijDentalCareOralHygiene",
     "title": "HCIM Modular data service - Dental Care - Oral Hygiene",
@@ -117,7 +117,7 @@
                 ],
                 "binding": {
                     "strength": "extensible",
-                    "valueSet": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-oral-hygiene-finding"
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-dental-hygiene-finding"
                 }
             },
             {

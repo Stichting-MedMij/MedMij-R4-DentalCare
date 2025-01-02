@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "medmij-mds-oral-care-dental-hygiene-finding",
+    "id": "hcim-dental-hygiene-finding",
     "name": "Dental hygiene finding",
     "title": "Dental hygiene finding",
     "version": "0.0.1",
@@ -28,7 +28,7 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-oral-hygiene-finding",
+    "url": "http://medmij.nl/fhir/ValueSet/hcim-dental-hygiene-finding",
     "status": "draft",
     "description": "Dental hygiene finding",
     "compose": {
