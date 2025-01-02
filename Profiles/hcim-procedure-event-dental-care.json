@@ -1,0 +1,188 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hcim-procedure-event-dental-care",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "url": "http://nictiz.nl/fhir/StructureDefinition/hcim-procedure-event-dental-care",
+  "name": "NlcoreProcedureevent",
+  "title": "nl core Procedure event",
+  "status": "draft",
+  "publisher": "Nictiz",
+  "contact": [
+    {
+      "name": "Nictiz",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.nictiz.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Therapeutic or diagnostic procedure undergone by the patient (the complementary profile [nl-core-Procedure-request](<http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-request>) can be used for therapeutic or diagnostics procedures that the patient will undergo). A procedure can be a simple blood pressure measurement, but also a complex heart surgery.\r\nIn some care settings, the term treatment is used instead of the term procedure.",
+  "purpose": "A derived profile from [zib-Procedure](http://nictiz.nl/fhir/StructureDefinition/zib-Procedure-event) to provide a version better suited for implementation purposes. This profile augments the base profile with elements found in the various use cases that have adopted the zib.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "zib-procedure-v5.2-2020EN",
+      "uri": "https://zibs.nl/wiki/Procedure-v5.2(2020EN)",
+      "name": "zib Procedure-v5.2(2020EN)"
+    },
+    {
+      "identity": "zib-textresult-v4.4-2020EN",
+      "uri": "https://zibs.nl/wiki/TextResult-v4.4(2020EN)",
+      "name": "zib TextResult-v4.4(2020EN)"
+    },
+    {
+      "identity": "zib-medicaldevice-v3.3.1-2020EN",
+      "uri": "https://zibs.nl/wiki/MedicalDevice-v3.3.1(2020EN)",
+      "name": "zib MedicalDevice-v3.3.1(2020EN)"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://nictiz.nl/fhir/StructureDefinition/zib-Procedure-event",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure",
+        "comment": "The zib Procedure is mapped both to this Procedure profile and a profile on ServiceRequest (<http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-request>) to align with the intention of FHIR. All past procedures are covered using this Procedure resource, while all future procedures, including the advised procedures, are covered in the ServiceRequest resource. Both resources contain the zib mappings, with the exception of the Requester concept; this is not relevant for past procedures and has only been mapped to the ServiceRequest profile.\r\n\r\nThe planned and performed procedures can be linked using `Procedure.basedOn`.",
+        "alias": [
+          "nl-core-Procedure-event"
+        ]
+      },
+      {
+        "id": "Procedure.basedOn",
+        "path": "Procedure.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CarePlan",
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-request"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "short": "ProcedureType",
+        "definition": "The name of the procedure. the Care activities file dental care (NZa)",
+        "alias":  [
+            "VerrichtingType"
+        ],
+        "binding": {
+            "strength": "required",
+            "valueSet": "http://medmij.nl/fhir/CodeSystem/hcim-procedure-event-dental-care"
+        },
+        "mapping":  [
+            {
+                "identity": "zib-procedure-v5.2-2020EN",
+                "map": "NL-CM:14.1.4",
+                "comment": "ProcedureType"
+            }
+        ]
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.performer.actor",
+        "path": "Procedure.performer.actor",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.location",
+        "path": "Procedure.location",
+        "comment": "Please note that the zib concept Location::HealthcareProvider of zib MedicalDevice (NL-CM:10.1.8) is mapped onto this element, but it is also directly represented using a custom extension in the focal profile for that zib ([nl-core-MedicalDevice](http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice)). The reason for this is that the Location concept from zib MedicalDevice aligns with the Location concept from zib Procedure, but only for the situation that the Procedure is about placing an implant which is described using the instance of zib MedicalDevice. In this situation, the extension in the nl-core-MedicalDevice profile is redundant and it is advised to only use the current element to represent the Location concept.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.reasonReference",
+        "path": "Procedure.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Condition",
+              "http://hl7.org/fhir/StructureDefinition/Observation",
+              "http://hl7.org/fhir/StructureDefinition/Procedure",
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.bodySite",
+        "path": "Procedure.bodySite",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-AnatomicalLocation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.report:textResult",
+        "path": "Procedure.report",
+        "sliceName": "textResult",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-TextResult"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
