@@ -29,7 +29,7 @@
   "valueCodeableConcept": {
     "coding":  [
         {
-            "system": "http://snomed.info/sct",
+            "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
             "code": "ppsscore1",
             "display": "Pockets 0-3 millimeter = in orde"
         }
