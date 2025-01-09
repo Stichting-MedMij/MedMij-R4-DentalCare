@@ -38,23 +38,23 @@
                 "concept": [
                     {
                         "code": "609400006",
-                        "display": "At low risk for dental caries "
+                        "display": "At low risk for dental caries"
                     },
                     {
                         "code": "609399004",
-                        "display": "At increased risk for dental caries "
+                        "display": "At increased risk for dental caries"
                     },
                     {
                         "code": "609401005",
-                        "display": "At moderate risk for dental caries (finding) "
+                        "display": "At moderate risk for dental caries"
                     },
                     {
                         "code": "609402003",
-                        "display": "At high risk for dental caries (finding)"
+                        "display": "At high risk for dental caries"
                     },
                     {
                         "code": "609403008",
-                        "display": "At extreme risk for dental caries (finding)"
+                        "display": "At extreme risk for dental caries"
                     }
                 ]
             }
