@@ -57,6 +57,15 @@
                         "display": "At extreme risk for dental caries"
                     }
                 ]
+            },
+            {
+                "system": "2.16.840.1.113883.3.3210.11.22",
+                "concept": [
+                    {
+                        "code": "caries2",
+                        "display": "Verlaagd"
+                    }
+                ]
             }
         ]
     }
