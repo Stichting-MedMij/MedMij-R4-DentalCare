@@ -38,23 +38,23 @@
                 "concept": [
                     {
                         "code": "hygiene1",
-                        "display": "zeer goed"
+                        "display": "Zeer goed"
                     },
                     {
-                        "code": "hygiene2",
-                        "display": "goed"
+                        "code": "278543008",
+                        "display": "Goede mondhygiëne"
                     },
                     {
                         "code": "hygiene3",
-                        "display": "normaal"
+                        "display": "Normaal"
                     },
                     {
-                        "code": "hygiene4",
-                        "display": "slecht"
+                        "code": "110299009",
+                        "display": "Slechte mondhygiëne"
                     },
                     {
                         "code": "hygiene5",
-                        "display": "zeer slecht"
+                        "display": "Zeer slecht"
                     }
                 ]
             }
