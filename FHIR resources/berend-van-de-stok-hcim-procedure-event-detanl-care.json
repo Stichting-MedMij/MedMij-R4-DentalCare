@@ -39,37 +39,5 @@
     "reference": "Location/nl-core-Procedure-01-Location-01",
     "type": "Location",
     "display": "Healthcare provider (location), Tandartspraktijk"
-  },
-  "reasonReference": [
-    {
-      "reference": "Condition/nl-core-Procedure-01-Condition-01",
-      "type": "Condition",
-      "display": "Problem"
-    }
-  ],
-  "bodySite": [
-    {
-      "extension": [
-        {
-          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "7771000",
-                "display": "links"
-              }
-            ]
-          }
-        }
-      ],
-      "coding": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "72696002",
-          "display": "structuur van knieregio"
-        }
-      ]
-    }
-  ]
+  }
 }
