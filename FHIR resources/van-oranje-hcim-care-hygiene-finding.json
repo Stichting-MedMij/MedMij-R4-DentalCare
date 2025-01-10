@@ -29,9 +29,9 @@
   "valueCodeableConcept": {
     "coding":  [
         {
-            "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
-            "code": "hygiene4",
-            "display": "slecht"
+            "system": "http://snomed.info/sct",
+            "code": "609400006",
+            "display": "At low risk for dental caries"
         }
     ]
   }

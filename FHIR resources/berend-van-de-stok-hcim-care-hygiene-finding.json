@@ -29,9 +29,9 @@
   "valueCodeableConcept": {
     "coding":  [
         {
-            "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
-            "code": "hygiene2",
-            "display": "goed"
+            "system": "http://snomed.info/sct",
+            "code": "609402003",
+            "display": "At high risk for dental caries"
         }
     ]
   }
