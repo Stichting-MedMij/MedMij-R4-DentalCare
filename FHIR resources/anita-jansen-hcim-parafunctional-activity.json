@@ -15,7 +15,7 @@
     "coding": [
       {
         "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
-        "code": "AP1",
+        "code": "PA1",
         "display": "parafunctionele activiteit"
       }
     ]
@@ -26,10 +26,5 @@
     "display": "Patient, Anita Jansen"
   },
   "effectiveDateTime": "2022-02-11T10:43:00+01:00",
-  "valueString": "Erosie door het drinken van vruchtensap",
-  "note": [
-    {
-      "text": "Geen bijzonderheden"
-    }
-  ]
+  "valueString": "Erosie door het drinken van vruchtensap"
 }

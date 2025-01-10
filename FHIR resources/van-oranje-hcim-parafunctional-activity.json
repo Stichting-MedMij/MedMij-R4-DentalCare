@@ -15,7 +15,7 @@
     "coding": [
       {
         "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
-        "code": "AP1",
+        "code": "PA1",
         "display": "parafunctionele activiteit"
       }
     ]
@@ -26,10 +26,5 @@
     "display": "Patient, Erik van Oranje"
   },
   "effectiveDateTime": "2024-04-29T06:43:00+01:00",
-  "valueString": "Overmatig knarsen bij stress",
-  "note": [
-    {
-      "text": "Geen bijzonderheden"
-    }
-  ]
+  "valueString": "Overmatig knarsen bij stress"
 }
