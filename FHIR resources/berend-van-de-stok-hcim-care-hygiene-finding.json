@@ -30,8 +30,8 @@
     "coding":  [
         {
             "system": "http://snomed.info/sct",
-            "code": "609402003",
-            "display": "At high risk for dental caries"
+            "code": "278543008",
+            "display": "Goede mondhygiëne"
         }
     ]
   }

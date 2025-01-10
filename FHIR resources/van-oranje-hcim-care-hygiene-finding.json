@@ -30,8 +30,8 @@
     "coding":  [
         {
             "system": "http://snomed.info/sct",
-            "code": "609400006",
-            "display": "At low risk for dental caries"
+            "code": "110299009",
+            "display": "Slechte mondhygiëne"
         }
     ]
   }
