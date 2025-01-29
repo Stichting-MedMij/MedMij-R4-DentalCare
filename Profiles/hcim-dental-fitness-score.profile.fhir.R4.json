@@ -1,6 +1,6 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "hcim-DentalFitnessScore",
+    "id": "DentalCare-DentalFitnessScore",
     "meta": {
         "tag": [
             {
@@ -9,10 +9,10 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/hcim-DentalFitnessScore",
+    "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-DentalFitnessScore",
     "version": "0.0.1",
-    "name": "MedMijDentalFitnessScore",
-    "title": "HCIM Modular data service - Dental Care - Dental Fitness Score",
+    "name": "DentalCareDentalFitnessScore",
+    "title": "DentalCare - Dental Fitness Score",
     "status": "draft",
     "publisher": "MedMij",
     "contact": [
