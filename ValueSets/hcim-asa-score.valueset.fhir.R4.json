@@ -1,9 +1,9 @@
 {
     "resourceType": "ValueSet",
-    "id": "hcim-ASAscore",
+    "id": "DentalCare-ASAScore",
     "version": "0.0.1",
-    "name": "ASAscore",
-    "title": "ASAscore",
+    "name": "DentalCareASAScore",
+    "title": "DentalCare - ASA Score",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
@@ -28,9 +28,9 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/hcim-ASAscore",
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-ASAScore",
     "status": "draft",
-    "description": "ASAscore",
+    "description": "ASAScore",
     "compose": {
         "include": [
             {

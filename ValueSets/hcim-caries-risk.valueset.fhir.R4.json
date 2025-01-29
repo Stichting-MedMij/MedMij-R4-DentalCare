@@ -1,9 +1,9 @@
 {
     "resourceType": "ValueSet",
-    "id": "hcim-CariesRisk",
+    "id": "DentalCare-CariesRisk",
     "version": "0.0.1",
-    "name": "CariesRisk",
-    "title": "Caries Risk",
+    "name": "DentalCareCariesRisk",
+    "title": "DentalCare - Caries Risk",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
@@ -28,7 +28,7 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/hcim-CariesRisk",
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-CariesRisk",
     "status": "draft",
     "description": "CariesRisk",
     "compose": {
