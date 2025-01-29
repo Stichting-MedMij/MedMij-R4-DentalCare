@@ -1,6 +1,6 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "hcim-PPSscreening",
+    "id": "DentalCare-PPSScreening",
     "meta": {
         "tag": [
             {
@@ -9,10 +9,10 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/hcim-PPSscreening",
+    "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-PPSScreening",
     "version": "0.0.1",
-    "name": "MedMijDetalCarePPSScreening",
-    "title": "HCIM Modular data service - Dental Care - PPS screening",
+    "name": "DetalCarePPSScreening",
+    "title": "DentalCare - PPS screening",
     "status": "draft",
     "publisher": "MedMij",
     "contact": [
@@ -77,10 +77,10 @@
                 "id": "Observation.effective[x]:effectiveDateTime",
                 "path": "Observation.effective[x]",
                 "sliceName": "effectiveDateTime",
-                "short": "PPSscreeningDateTime",
+                "short": "PPSScreeningDateTime",
                 "definition": "The date and time at which the PPS screening was measured.",
                 "alias":  [
-                    "PPSscreeningDatumTijd"
+                    "PPSScreeningDatumTijd"
                 ],
                 "type":  [
                     {
@@ -105,10 +105,10 @@
                 "id": "Observation.value[x]:valueCodeableConcept",
                 "path": "Observation.value[x]",
                 "sliceName": "valueCodeableConcept",
-                "short": "PPSscoreValue",
+                "short": "PPSScoreValue",
                 "definition": "The score is a ...",
                 "alias":  [
-                    "PPSscoreWaarde"
+                    "PPSScoreWaarde"
                 ],
                 "type":  [
                     {
