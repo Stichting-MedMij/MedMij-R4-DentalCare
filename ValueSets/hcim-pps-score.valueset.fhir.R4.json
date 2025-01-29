@@ -1,14 +1,14 @@
 {
     "resourceType": "ValueSet",
-    "id": "medmij-mds-dental-care-pps-score",
-    "name": "PPSscreeningScore",
-    "title": "PPSscreeningScore",
+    "id": "DentalCare-PPSScreening",
+    "name": "DentalCarePPSScreening",
+    "title": "DentalCare - PPSscreening",
     "version": "0.0.1",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS screening score</div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS Screening</div>"
     },
     "identifier": [
         {
@@ -28,9 +28,9 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-oral-care-pps-score",
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-PPSScreening",
     "status": "draft",
-    "description": "PPSscreeningScore",
+    "description": "PPSScreeningScore",
     "compose": {
         "include": [
             {

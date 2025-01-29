@@ -1,14 +1,14 @@
 {
     "resourceType": "ValueSet",
-    "id": "medmij-mds-dental-care-pps-decision",
-    "name": "PPS screening decision",
-    "title": "PPS screening decision",
+    "id": "DentalCare-PPSScreeningDecision",
+    "name": "DentalCarePPSScreeningDecision",
+    "title": "DentalCare - PPS Screening Decision",
     "version": "0.0.1",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS screening decision</div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS Screening Decision</div>"
     },
     "identifier": [
         {
@@ -28,9 +28,9 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-pps-decision",
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-PPSScreeningDecision",
     "status": "draft",
-    "description": "PPS screening decision",
+    "description": "PPS Screening Decision",
     "compose": {
         "include": [
             {
