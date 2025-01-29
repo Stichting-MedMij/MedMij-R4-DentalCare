@@ -1,6 +1,6 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "hcim-parafunctional-activity",
+    "id": "DentalCare-ParafunctionalActivity",
     "meta": {
         "tag": [
             {
@@ -9,10 +9,10 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/hcim-parafunctional-activity",
+    "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-ParafunctionalActivity",
     "version": "0.0.1",
-    "name": "hcimDentalCareParafunctionalActivity",
-    "title": "HCIM Modular data service - Dental Care - Parafunctional Activity",
+    "name": "DentalCareParafunctionalActivity",
+    "title": "DentalCare - Parafunctional Activity",
     "status": "draft",
     "publisher": "MedMij",
     "contact": [
