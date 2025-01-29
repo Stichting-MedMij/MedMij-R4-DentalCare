@@ -1,14 +1,14 @@
 {
     "resourceType": "ValueSet",
-    "id": "hcim-dental-hygiene-finding",
-    "name": "Dental hygiene finding",
-    "title": "Dental hygiene finding",
+    "id": "DentalCare-OralHygieneFinding",
+    "name": "DentalCareDentalHygieneFinding",
+    "title": "DentalCare - Dental Hygiene Finding",
     "version": "0.0.1",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dental hygiene finding</div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dental Hygiene Finding</div>"
     },
     "identifier": [
         {
@@ -28,9 +28,9 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/hcim-dental-hygiene-finding",
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-OralHygieneFinding",
     "status": "draft",
-    "description": "Dental hygiene finding",
+    "description": "Dental Hygiene Finding",
     "compose": {
         "include": [
             {
