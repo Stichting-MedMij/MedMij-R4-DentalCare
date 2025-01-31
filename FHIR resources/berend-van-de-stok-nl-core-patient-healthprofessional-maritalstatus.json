@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "nl-core-Patient-01",
+  "id": "van-de-stok-nl-core-Patient",
   "meta": {
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"

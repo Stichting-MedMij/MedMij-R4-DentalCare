@@ -1,0 +1,16 @@
+{
+	"resourceType": "Goal",
+	"text": {
+		"status": "extensions",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>test</td></tr></tbody></table></div>"
+	},
+	"lifecycleStatus": "active",
+	"description": {
+		"text": "Wortelpuntoperatie (apexresectie)"
+	},
+	"subject": {
+		"reference": "Patient/van-de-stok-nl-core-Patient",
+		"type": "Patient",
+		"display": "Patient, Berend van de Stok"
+	}
+}
