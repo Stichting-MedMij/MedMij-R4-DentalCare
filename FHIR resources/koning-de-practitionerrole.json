@@ -15,6 +15,11 @@
         "type": "Practitioner",
         "display": "Healthcare professional (person), Koning, de"
     },
+    "organization": {
+        "reference": "Organization/org-00002222",
+        "type": "Organization",
+        "display": "Healthcare provider (organization), Tandartspraktijk de Koning"
+    },  
     "specialty":  [
         {
             "coding":  [

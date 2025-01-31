@@ -15,6 +15,11 @@
         "type": "Practitioner",
         "display": "Healthcare professional (person), Dijkstra"
     },
+    "organization": {
+        "reference": "Organization/org-00002222",
+        "type": "Organization",
+        "display": "Healthcare provider (organization), Tandartspraktijk Dijkstra"
+    },  
     "specialty":  [
         {
             "coding":  [

@@ -15,6 +15,11 @@
         "type": "Practitioner",
         "display": "Healthcare professional (person), Ruiter, de"
     },
+    "organization": {
+        "reference": "Organization/org-00002222",
+        "type": "Organization",
+        "display": "Healthcare provider (organization), Tandartspraktijk de Ruiter"
+    },    
     "specialty":  [
         {
             "coding":  [
