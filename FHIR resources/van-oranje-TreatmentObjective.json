@@ -1,0 +1,39 @@
+{
+	"resourceType": "Goal",
+	"text": {
+		"status": "extensions",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>test</td></tr></tbody></table></div>"
+	},
+	"lifecycleStatus": "active",
+	"description": {
+		"text": "Gewenste gezondheidstoestand: tandvleesontsteking behandelen"
+	},
+	"subject": {
+		"reference": "https://server.fire.ly/R4/Patient/nl-core-Patient-01",
+		"type": "Patient",
+		"display": "Patient, Erik van Oranje"
+	},
+	"target": [
+		{
+			"measure": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "129006008",
+						"display": "lopen"
+					}
+				]
+			},
+			"detailCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "161043008",
+						"display": "lichte beperking"
+					}
+				]
+			},
+			"dueDate": "2014-09-10"
+		}
+	]
+}
