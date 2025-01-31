@@ -11,7 +11,7 @@
         "div": "<div test></div>"
     },
     "practitioner": {
-        "reference": "Practitioner/nl-core-CareTeam-01-Practitioner-01",
+        "reference": "Practitioner/Koning-De-Practitioner",
         "type": "Practitioner",
         "display": "Healthcare professional (person), Koning, de"
     },
