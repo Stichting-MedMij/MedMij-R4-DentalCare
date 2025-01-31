@@ -10,25 +10,6 @@
     "status": "extensions",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Id 999998298 (BSN), Anita Jansen, Vrouw, 15 maart 2010 <span title=\"Divorced (D - http://terminology.hl7.org/CodeSystem/v3-MaritalStatus)\">Divorced</span></div><div><a href=\"tel:+31611234567\">+31611234567</a> (Tel), <a href=\"mailto:giesput@myweb.nl\">giesput@myweb.nl</a> (E-mail Privé)</div><div>1e Jacob van Campenstr 15, 1012 NX Hoogmade Kaag en Braassem, Nederland (Privé Post / Bezoek)</div><div>Nationaliteit: <span title=\"Nederlandse (0001 - 2.16.840.1.113883.2.4.4.16.32)\">Nederlandse</span></div><div><span title=\"Eerste relatie/contactpersoon (01 - RoleCodeLijst (COD472-VEKT))\">Eerste relatie/contactpersoon</span>, <span title=\"Hulpverlener (07 - RoleCodeLijst (COD472-VEKT))\">Hulpverlener</span> J.P.M. van Putten-van der Giessen<div><a href=\"tel:+31611234567\">+31611234567</a> (Tel), <a href=\"mailto:giesput@myweb.nl\">giesput@myweb.nl</a> (E-mail Werk), 1e Jacob van Campenstr 15, 1012 NX Hoogmade Kaag en Braassem, Nederland (Privé Post / Bezoek)</div></div><ul><li><span title=\"Nederlands (nl - ISO 639-1)\">Nederlands</span></li></ul></div>"
   },
-  "extension": [
-    {
-      "extension": [
-        {
-          "url": "code",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.32",
-                "code": "0001",
-                "display": "Nederlandse"
-              }
-            ]
-          }
-        }
-      ],
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality"
-    }
-  ],
   "identifier": [
     {
       "system": "http://fhir.nl/fhir/NamingSystem/bsn",
@@ -45,10 +26,6 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
             "valueString": "Jansen"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
-            "valueString": "Vaart"
           }
         ]
       },
@@ -60,7 +37,7 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
-              "valueCode": "BR"
+              "valueCode": "CL"
             }
           ]
         }
@@ -100,7 +77,7 @@
       "use": "home"
     }
   ],
-  "gender": "male",
+  "gender": "female",
   "_gender": {
     "extension": [
       {
@@ -129,7 +106,7 @@
               {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
                 "code": "HP",
-                "display": "Primary Home"
+                "display": "Officieel adres"
               }
             ]
           }
@@ -155,7 +132,7 @@
         }
       ],
       "city": "Amsterdam",
-      "postalCode": "1234 AA", 
+      "postalCode": "1234AA", 
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -171,231 +148,6 @@
                 }
               ]
             }
-          }
-        ]
-      }
-    }
-  ],
-  "maritalStatus": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-        "code": "D",
-        "display": "Divorced"
-      }
-    ]
-  },
-  "multipleBirthBoolean": true,
-  "contact": [
-    {
-      "relationship": [
-        {
-          "coding": [
-            {
-              "system": "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
-              "code": "01",
-              "display": "Eerste relatie/contactpersoon"
-            }
-          ]
-        },
-        {
-          "coding": [
-            {
-              "system": "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
-              "code": "07",
-              "display": "Hulpverlener"
-            }
-          ]
-        }
-      ],
-      "name": {
-        "use": "official",
-        "text": "B. Dijkstra",
-        "family": "Dijkstra",
-        "_family": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-              "valueString": "Dijkstra"
-            }
-          ]
-        },
-        "given": [
-          "B."
-        ],
-        "_given": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
-                "valueCode": "IN"
-              }
-            ]
-          }
-        ]
-      },
-      "telecom": [
-        {
-          "system": "phone",
-          "_system": {
-            "extension": [
-              {
-                "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
-                      "code": "LL",
-                      "display": "Land Line"
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          "value": "+31611234567"
-        },
-        {
-          "system": "email",
-          "value": "anitajansen@gmail.com",
-          "use": "work"
-        }
-      ],
-      "address": {
-        "extension": [
-          {
-            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
-                  "code": "HP",
-                  "display": "Primary Home"
-                }
-              ]
-            }
-          }
-        ],
-        "use": "home",
-        "type": "both",
-        "line": [
-          "1e Jacob van Campenstr 15"
-        ],
-        "_line": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-                "valueString": "1e Jacob van Campenstr"
-              },
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-                "valueString": "15"
-              }
-            ]
-          }
-        ],
-        "city": "Hoogmade",
-        "district": "Kaag en Braassem",
-        "postalCode": "1012 NX",
-        "country": "Nederland",
-        "_country": {
-          "extension": [
-            {
-              "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "urn:oid:2.16.840.1.113883.2.4.4.16.34",
-                    "version": "2020-04-01T00:00:00",
-                    "code": "6030",
-                    "display": "Nederland"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      }
-    }
-  ],
-  "communication": [
-    {
-      "extension": [
-        {
-          "extension": [
-            {
-              "url": "level",
-              "valueCoding": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency",
-                "code": "G",
-                "display": "Good"
-              }
-            },
-            {
-              "url": "type",
-              "valueCoding": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode",
-                "code": "RSP",
-                "display": "Received spoken"
-              }
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/patient-proficiency"
-        },
-        {
-          "extension": [
-            {
-              "url": "level",
-              "valueCoding": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency",
-                "code": "F",
-                "display": "Fair"
-              }
-            },
-            {
-              "url": "type",
-              "valueCoding": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode",
-                "code": "ESP",
-                "display": "Expressed spoken"
-              }
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/patient-proficiency"
-        },
-        {
-          "extension": [
-            {
-              "url": "level",
-              "valueCoding": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency",
-                "code": "G",
-                "display": "Good"
-              }
-            },
-            {
-              "url": "type",
-              "valueCoding": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode",
-                "code": "RWR",
-                "display": "Received written"
-              }
-            }
-          ],
-          "url": "http://hl7.org/fhir/StructureDefinition/patient-proficiency"
-        },
-        {
-          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
-          "valueString": "Bij gesprek met arts zoon uitnodigen voor vertalen"
-        }
-      ],
-      "language": {
-        "coding": [
-          {
-            "system": "urn:oid:1.0.639.1",
-            "code": "nl",
-            "display": "Nederlands"
           }
         ]
       }
