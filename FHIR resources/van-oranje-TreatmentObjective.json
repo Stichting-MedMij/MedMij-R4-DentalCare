@@ -8,6 +8,13 @@
 	"description": {
 		"text": "Tandvleesontsteking behandelen"
 	},
+	"priority": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/goal-priority",
+          "code": "high-priority",
+          "display": "high-priority"
+        } ]
+      },
 	"subject": {
 		"reference": "Patient/van-oranje-nl-core-Patient",
 		"type": "Patient",
