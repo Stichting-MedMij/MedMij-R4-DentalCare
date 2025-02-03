@@ -1,18 +1,18 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "medmij-ocds-parafunctional-activity",
+    "id": "DentalCare-PPSScreening",
     "meta": {
         "tag": [
             {
                 "system": "http://medmij.nl/fhir/data-service",
-                "code": "dental-care"
+                "code": "detal-care"
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/medmij-ocds-oral-hygiene",
+    "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-PPSScreening",
     "version": "0.0.1",
-    "name": "MedMijDentalCareParafunctionalActivity",
-    "title": "HCIM Modular data service - Dental Care - Parafunctional Activity",
+    "name": "DetalCarePPSScreening",
+    "title": "DentalCare - PPS screening",
     "status": "draft",
     "publisher": "MedMij",
     "contact": [
@@ -29,10 +29,10 @@
     ],
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Parafunctional activity observation</div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS screening</div>"
     },
-    "description": "......",
-    "purpose": "This Observation resource represent the Parafunctional Activity",
+    "description": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
+    "purpose": "This Observation resource represent the PPS Screening",
     "copyright": "MedMij",
     "fhirVersion": "4.0.1",
     "kind": "resource",
@@ -45,8 +45,8 @@
             {
                 "id": "Observation",
                 "path": "Observation",
-                "short": "Parafunctional Activity",
-                "alias": ["Parafuctionele activiteit"]
+                "short": "PPS Screening",
+                "alias": ["PPS Screening"]
             },
             {
                 "id": "Observation.code",
@@ -55,7 +55,7 @@
                     "coding": [
                         {
                             "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
-                            "code": "PA1"
+                            "code": "PPSSCORE"
                         }
                     ]
                 }
@@ -77,10 +77,10 @@
                 "id": "Observation.effective[x]:effectiveDateTime",
                 "path": "Observation.effective[x]",
                 "sliceName": "effectiveDateTime",
-                "short": "ParafunctionalActivityDateTime",
-                "definition": "The date and time at which the Oral Hygiene was measured.",
+                "short": "PPSScreeningDateTime",
+                "definition": "The date and time at which the PPS screening was measured.",
                 "alias":  [
-                    "ParafunctioneleActiviteitDatumTijd"
+                    "PPSScreeningDatumTijd"
                 ],
                 "type":  [
                     {
@@ -105,16 +105,20 @@
                 "id": "Observation.value[x]:valueCodeableConcept",
                 "path": "Observation.value[x]",
                 "sliceName": "valueCodeableConcept",
-                "short": "ParafunctionalActivityValue",
+                "short": "PPSScoreValue",
                 "definition": "The score is a ...",
                 "alias":  [
-                    "ParafunctioneleActiviteitWaarde"
+                    "PPSScoreWaarde"
                 ],
                 "type":  [
                     {
-                        "code": "String"
+                        "code": "CodeableConcept"
                     }
-                ]
+                ],
+                "binding": {
+                    "strength": "extensible",
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-PPSscreening"
+                }
             },
             {
                 "id": "Observation.note",
@@ -125,9 +129,22 @@
                 "id": "Observation.note.text",
                 "path": "Observation.note.text",
                 "short": "Comment",
-                "definition": "Comment on the Parafunctional Activity, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+                "definition": "Comment on the PPS screening, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
                 "alias":  [
                     "Toelichting"
+                ]
+            },
+            {
+                "id": "Observation.subject",
+                "path": "Observation.subject",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "http://hl7.org/fhir/StructureDefinition/Patient",
+                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+                        ]
+                    }
                 ]
             }
         ]

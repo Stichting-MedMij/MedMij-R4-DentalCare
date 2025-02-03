@@ -1,6 +1,6 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "medmij-ocds-detal-care-hygiene",
+    "id": "DentalCare-OralHygieneFinding",
     "meta": {
         "tag": [
             {
@@ -9,10 +9,10 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/medmij-ocds-oral-hygiene",
+    "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-OralHygieneFinding",
     "version": "0.0.1",
-    "name": "MedMijDentalCareOralHygiene",
-    "title": "HCIM Modular data service - Dental Care - Oral Hygiene",
+    "name": "DentalCareOralHygieneFinding",
+    "title": "DentalCare - Oral Hygiene Finding",
     "status": "draft",
     "publisher": "MedMij",
     "contact": [
@@ -32,7 +32,7 @@
         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Oral hygiene observation</div>"
     },
     "description": "......",
-    "purpose": "This Observation resource represent the Oral Hygiene",
+    "purpose": "This Observation resource represent the Oral Hygiene Finding",
     "copyright": "MedMij",
     "fhirVersion": "4.0.1",
     "kind": "resource",
@@ -117,7 +117,7 @@
                 ],
                 "binding": {
                     "strength": "extensible",
-                    "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.2.2--20200901000000 (aanpassen)"
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-dental-hygiene-finding"
                 }
             },
             {
@@ -132,6 +132,19 @@
                 "definition": "Comment on the Oral Hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
                 "alias":  [
                     "Toelichting"
+                ]
+            },
+            {
+                "id": "Observation.subject",
+                "path": "Observation.subject",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "http://hl7.org/fhir/StructureDefinition/Patient",
+                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+                        ]
+                    }
                 ]
             }
         ]

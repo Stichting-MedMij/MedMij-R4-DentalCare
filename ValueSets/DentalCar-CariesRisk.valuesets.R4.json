@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "medmij-mds-dental-care-caries-risk",
+    "id": "hcim-CariesRisk",
     "version": "0.0.1",
     "name": "CariesRisk",
     "title": "Caries Risk",
@@ -28,29 +28,42 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-caries-risk",
+    "url": "http://medmij.nl/fhir/ValueSet/hcim-CariesRisk",
     "status": "draft",
     "description": "CariesRisk",
     "compose": {
         "include": [
             {
-                "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
+                "system": "http://snomed.info/sct",
                 "concept": [
                     {
-                        "code": "caries1",
-                        "display": "Laag"
+                        "code": "609400006",
+                        "display": "At low risk for dental caries"
                     },
+                    {
+                        "code": "609399004",
+                        "display": "At increased risk for dental caries"
+                    },
+                    {
+                        "code": "609401005",
+                        "display": "At moderate risk for dental caries"
+                    },
+                    {
+                        "code": "609402003",
+                        "display": "At high risk for dental caries"
+                    },
+                    {
+                        "code": "609403008",
+                        "display": "At extreme risk for dental caries"
+                    }
+                ]
+            },
+            {
+                "system": "2.16.840.1.113883.3.3210.11.22",
+                "concept": [
                     {
                         "code": "caries2",
                         "display": "Verlaagd"
-                    },
-                    {
-                        "code": "caries3",
-                        "display": "Verhoogd"
-                    },
-                    {
-                        "code": "caries4",
-                        "display": "Hoog risico"
                     }
                 ]
             }

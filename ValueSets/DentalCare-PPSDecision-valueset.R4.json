@@ -1,20 +1,20 @@
 {
     "resourceType": "ValueSet",
-    "id": "medmij-mds-dental-care-pps-score",
-    "name": "PPSscreeningScore",
-    "title": "PPSscreeningScore",
+    "id": "DentalCare-PPSScreeningDecision",
+    "name": "DentalCarePPSScreeningDecision",
+    "title": "DentalCare - PPS Screening Decision",
     "version": "0.0.1",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS screening score</div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS Screening Decision</div>"
     },
     "identifier": [
         {
             "use": "official",
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:oid:2.16.840.1.113883.3.3210.11.25"
+            "value": "urn:oid:2.16.840.1.113883.3.3210.11.35"
         }
     ],
     "meta": {
@@ -28,25 +28,25 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-oral-care-pps-score",
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-PPSScreeningDecision",
     "status": "draft",
-    "description": "PPSscreeningScore",
+    "description": "PPS Screening Decision",
     "compose": {
         "include": [
             {
-                "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
+                "system": "urn:oid:2.16.840.1.113883.3.3210.11.35",
                 "concept": [
                     {
-                        "code": "ppsscore1",
-                        "display": "pockets 0-3 millimeter = in orde"
+                        "code": "ppsdec1",
+                        "display": "Geen paradontale vervolgbehandeling"
                     },
                     {
-                        "code": "ppsscore2",
-                        "display": "pockets 4-5 millimeter = mogelijk in orde"
+                        "code": "ppsdec2",
+                        "display": "Paro preventie traject"
                     },
                     {
-                        "code": "ppsscore3",
-                        "display": "pockets groter of gelijk aan 6 millimeter = wellicht niet in orde"
+                        "code": "ppsdec3",
+                        "display": "Paro traject"
                     }
                 ]
             }

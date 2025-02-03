@@ -1,6 +1,6 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "medmij-ocds-Dental-Fitness-Score",
+    "id": "DentalCare-DentalFitnessScore",
     "meta": {
         "tag": [
             {
@@ -9,10 +9,10 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/StructureDefinition/medmij-ocds-dental-fitness-score",
+    "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-DentalFitnessScore",
     "version": "0.0.1",
-    "name": "MedMijDentalCareDentalFitnessScore",
-    "title": "HCIM Modular data service - Dental Care - Dental Fitness Score",
+    "name": "DentalCareDentalFitnessScore",
+    "title": "DentalCare - Dental Fitness Score",
     "status": "draft",
     "publisher": "MedMij",
     "contact": [
@@ -117,7 +117,7 @@
                 ],
                 "binding": {
                     "strength": "extensible",
-                    "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.2.2--20200901000000 (aanpassen)"
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-DentalFitnessScore"
                 }
             },
             {
@@ -132,6 +132,19 @@
                 "definition": "Comment on the Dental Fitness Score, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
                 "alias":  [
                     "Toelichting"
+                ]
+            },
+            {
+                "id": "Observation.subject",
+                "path": "Observation.subject",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "http://hl7.org/fhir/StructureDefinition/Patient",
+                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+                        ]
+                    }
                 ]
             }
         ]

@@ -1,14 +1,14 @@
 {
     "resourceType": "ValueSet",
-    "id": "medmij-mds-oral-care-dental-hygiene-finding",
-    "name": "Dental hygiene finding",
-    "tile": "Dental hygiene finding",
+    "id": "DentalCare-OralHygieneFinding",
+    "name": "DentalCareDentalHygieneFinding",
+    "title": "DentalCare - Dental Hygiene Finding",
     "version": "0.0.1",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dental hygiene finding</div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dental Hygiene Finding</div>"
     },
     "identifier": [
         {
@@ -28,33 +28,38 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-oral-hygiene-finding",
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-OralHygieneFinding",
     "status": "draft",
-    "description": "Dental hygiene finding",
+    "description": "Dental Hygiene Finding",
     "compose": {
         "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "278543008",
+                        "display": "Goede mondhygiëne"
+                    },
+                    {
+                        "code": "110299009",
+                        "display": "Slechte mondhygiëne"
+                    }
+                ]
+            },
             {
                 "system": "2.16.840.1.113883.3.3210.11.27",
                 "concept": [
                     {
                         "code": "hygiene1",
-                        "display": "zeer goed"
-                    },
-                    {
-                        "code": "hygiene2",
-                        "display": "goed"
+                        "display": "Zeer goed"
                     },
                     {
                         "code": "hygiene3",
-                        "display": "normaal"
-                    },
-                    {
-                        "code": "hygiene4",
-                        "display": "slecht"
+                        "display": "Normaal"
                     },
                     {
                         "code": "hygiene5",
-                        "display": "zeer slecht"
+                        "display": "Zeer slecht"
                     }
                 ]
             }

@@ -1,0 +1,43 @@
+{
+  "resourceType": "Procedure",
+  "id": "hcim-procedure-event-dental-care",
+  "meta": {
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/hcim-procedure-event-dental-care"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Verrichting. Subject: Patient, Erik van Oranje. Status: voltooid<span style=\"display: block;\">Uitvoerende: Healthcare professional (role), Orthoptisten</span></caption><tbody><tr><td><span title=\"implantatie van knieprothese (392238003 - SNOMED CT)\">implantatie van knieprothese</span></td><td><div>Uitgevoerd: 5 juni 2012</div></td></tr><tr><th>Deel van lichaam</th><td><span title=\"structuur van knieregio (72696002 - SNOMED CT)\">structuur van knieregio</span></td></tr><tr><th>Locatie</th><td>Healthcare provider (location), UMCG</td></tr><tr><th>Reden</th><td>Problem</td></tr></tbody></table></div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "https://puc.overheid.nl/nza/doc/PUC_764375_22/1/",
+        "code": "R67*",
+        "display": "Plaatsen opbouw ten behoeve van implantaatkroon"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/nl-core-Patient-01",
+    "type": "Patient",
+    "display": "Patient, Erik van Oranje"
+  },
+  "performedDateTime": "2024-04-29",
+  "performer": [
+    {
+      "actor": {
+        "reference": "PractitionerRole/nl-core-Procedure-01-PractitionerRole-01",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/nl-core-Procedure-01-Location-01",
+    "type": "Location",
+    "display": "Healthcare provider (location), Tandartspraktijk"
+  }
+}

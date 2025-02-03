@@ -1,0 +1,96 @@
+{
+    "resourceType": "ValueSet",
+    "id": "DentalCare-PPSScreening",
+    "name": "DentalCarePPSScreening",
+    "title": "DentalCare - PPSscreening",
+    "version": "0.0.1",
+    "experimental": false,
+    "publisher": "MedMij",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS Screening</div>"
+    },
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113883.3.3210.11.25"
+        }
+    ],
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+        ],
+        "tag": [
+            {
+                "system": "http://medmij.nl/fhir/data-service",
+                "code": "dental-care"
+            }
+        ]
+    },
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-PPSScreening",
+    "status": "draft",
+    "description": "PPSScreeningScore",
+    "compose": {
+        "include": [
+            {
+                "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
+                "concept": [
+                    {
+                        "code": "ppsscore1",
+                        "display": "pockets 0-3 millimeter = in orde"
+                    }
+                ]            
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "ppsscore1",
+                        "display": "pockets 0-3 millimeter = in orde"
+                    },
+                    {
+                        "extension":  [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "pockets 0-3 millimeter = in orde"
+                            }
+                        ],
+                        "code": "6732009",
+                        "display": "behandeling van matig diepe pocket bij beginnende parodontitis type 2 (verrichting)",
+                        "designation": [
+                            {
+                                "language": "nl",
+                                "value": "behandeling van matig diepe pocket bij beginnende parodontitis type 2 (verrichting)"
+                            },
+                            {
+                                "language": "en-US",
+                                "value": "Type II, early periodontitis, moderate pocket therapy"
+                            }
+                        ]
+                    },
+                    {
+                        "extension":  [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
+                                "valueString": "pockets groter of gelijk aan 6 millimeter = wellicht niet in orde"
+                            }
+                        ],
+                        "code": "42123008",
+                        "display": "behandeling van matig diepe tot diepe pocket bij matig ernstige parodontitis type 3",
+                        "designation": [
+                            {
+                                "language": "nl",
+                                "value": "behandeling van matig diepe tot diepe pocket bij matig ernstige parodontitis type 3"
+                            },
+                            {
+                                "language": "en-US",
+                                "value": "Type III, moderate periodontitis, moderate to deep pocket therapy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

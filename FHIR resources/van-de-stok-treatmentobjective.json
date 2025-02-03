@@ -1,0 +1,29 @@
+{
+	"resourceType": "Goal",
+	"id": "van-de-stok-TreatmentObjective",
+	"meta": {
+	  "profile": [
+		"http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
+	  ]
+	},
+	"text": {
+		"status": "extensions",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>test</td></tr></tbody></table></div>"
+	},
+	"lifecycleStatus": "active",
+	"description": {
+		"text": "Wortelpuntoperatie (apexresectie)"
+	},
+	"priority": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/goal-priority",
+          "code": "low-priority",
+          "display": "low-priority"
+        } ]
+      },
+	"subject": {
+		"reference": "Patient/van-de-stok-nl-core-Patient",
+		"type": "Patient",
+		"display": "Patient, Berend van de Stok"
+	}
+}

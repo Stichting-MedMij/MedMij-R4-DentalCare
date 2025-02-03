@@ -1,14 +1,14 @@
 {
     "resourceType": "ValueSet",
-    "id": "medmij-mds-dental-care-dental-fitness",
-    "name": "Dental fitness",
-    "title": "Dental fitness",
+    "id": "DentalCare-DentalFitnessScore",
+    "name": "DentalCareDentalFitness",
+    "title": "DentalCare - Dental fitness",
     "version": "0.0.1",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dental fitness</div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dental Fitness</div>"
     },
     "identifier": [
         {
@@ -28,9 +28,9 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/medmij-mds-dental-care-dental-fitness",
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-DentalFitnessScore",
     "status": "draft",
-    "description": "Dental fitness",
+    "description": "Dental Fitness",
     "compose": {
         "include": [
             {
