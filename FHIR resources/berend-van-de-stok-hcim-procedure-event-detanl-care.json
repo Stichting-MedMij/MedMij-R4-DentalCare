@@ -3,7 +3,7 @@
   "id": "hcim-procedure-event-dental-care",
   "meta": {
     "profile": [
-      "http://nictiz.nl/fhir/StructureDefinition/hcim-procedure-event-dental-care"
+      "http://nictiz.nl/fhir/StructureDefinition/DentalCare-ProcedureEventDentalCare"
     ]
   },
   "text": {
@@ -21,7 +21,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/nl-core-Patient-01",
+    "reference": "Patient/xxx-vandestok",
     "type": "Patient",
     "display": "Patient, Berend van de Stok"
   },
@@ -29,15 +29,15 @@
   "performer": [
     {
       "actor": {
-        "reference": "PractitionerRole/nl-core-Procedure-01-PractitionerRole-01",
+        "reference": "PractitionerRole/Dijkstra-PractitionerRole",
         "type": "PractitionerRole",
         "display": "Healthcare professional (role), Tandarts"
       }
     }
   ],
   "location": {
-    "reference": "Location/nl-core-Procedure-01-Location-01",
+    "reference": "Location/tandartspraktijk-dijkstra",
     "type": "Location",
-    "display": "Healthcare provider (location), Tandartspraktijk"
+    "display": "Healthcare provider (location), Tandartspraktijk Dijkstra"
   }
 }
