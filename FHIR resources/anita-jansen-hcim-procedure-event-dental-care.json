@@ -1,9 +1,9 @@
 {
   "resourceType": "Procedure",
-  "id": "hcim-procedure-event-dental-care",
+  "id": "procedure-jansen-01",
   "meta": {
     "profile": [
-      "http://nictiz.nl/fhir/StructureDefinition/hcim-procedure-event-dental-care"
+      "http://nictiz.nl/fhir/StructureDefinition/DentalCare-ProcedureEventDentalCare"
     ]
   },
   "text": {
@@ -21,7 +21,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/nl-core-Patient-01",
+    "reference": "Patient/xxx-jansen",
     "type": "Patient",
     "display": "Patient, Anita Jansen"
   },
@@ -29,14 +29,14 @@
   "performer": [
     {
       "actor": {
-        "reference": "PractitionerRole/nl-core-Procedure-01-PractitionerRole-01",
+        "reference": "PractitionerRole/Ruiter-De-PractitionerRole",
         "type": "PractitionerRole",
         "display": "Healthcare professional (role), Tandarts"
       }
     }
   ],
   "location": {
-    "reference": "Location/nl-core-Procedure-01-Location-01",
+    "reference": "Location/tandartspraktijk-de-ruiter",
     "type": "Location",
     "display": "Healthcare provider (location), Tandartspraktijk"
   }

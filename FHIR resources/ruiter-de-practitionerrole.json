@@ -16,7 +16,7 @@
         "display": "Healthcare professional (person), Ruiter, de"
     },
     "organization": {
-        "reference": "Organization/org-00002222",
+        "reference": "Organization/tandartspraktijk-de-ruiter",
         "type": "Organization",
         "display": "Healthcare provider (organization), Tandartspraktijk de Ruiter"
     },    
