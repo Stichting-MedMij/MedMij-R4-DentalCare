@@ -3,7 +3,7 @@
   "id": "Cariesrisico-vandestok",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/hcim-caries-risk"
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-CariesRisk"
     ]
   },
   "text": {
