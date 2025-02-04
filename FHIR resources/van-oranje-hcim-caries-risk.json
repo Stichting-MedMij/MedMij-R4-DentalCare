@@ -3,7 +3,7 @@
   "id": "hcim-caries-risk",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/hcim-caries-risk"
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-CariesRisk"
     ]
   },
   "text": {
@@ -21,7 +21,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/nl-core-Patient-01",
+    "reference": "Patient/xxx-vanoranje",
     "type": "Patient",
     "display": "Patient, Erik van Oranje"
   },
