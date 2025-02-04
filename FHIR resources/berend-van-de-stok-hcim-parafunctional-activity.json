@@ -3,7 +3,7 @@
   "id": "ParafunctioneleActiviteit-vandestok",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/hcim-parafunctional-activity"
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-ParafunctionalActivity"
     ]
   },
   "text": {
