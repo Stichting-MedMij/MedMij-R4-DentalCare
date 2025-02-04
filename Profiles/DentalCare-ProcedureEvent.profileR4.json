@@ -82,7 +82,7 @@
         ],
         "binding": {
             "strength": "required",
-            "valueSet": "http://medmij.nl/fhir/CodeSystem/hcim-procedure-event-dental-care"
+            "valueSet": "http://medmij.nl/fhir/ValueSet/DentalCare-ProcedureEvent"
         },
         "mapping":  [
             {

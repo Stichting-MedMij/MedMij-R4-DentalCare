@@ -1,14 +1,14 @@
 {
     "resourceType": "ValueSet",
-    "id": "DentalCare-PPSScreening",
-    "name": "DentalCarePPSScreening",
-    "title": "DentalCare - PPSscreening",
+    "id": "DentalCare-PPSScore",
+    "name": "DentalCarePPSScore",
+    "title": "DentalCare - PPS score",
     "version": "0.0.1",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS Screening</div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS Score</div>"
     },
     "identifier": [
         {

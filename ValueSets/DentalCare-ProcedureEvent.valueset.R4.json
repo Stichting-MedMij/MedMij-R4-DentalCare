@@ -1,9 +1,9 @@
 {
     "resourceType": "ValueSet",
-    "id": "hcim-procedure-event-dental-care",
+    "id": "DentalCare-ProcedureEvent",
     "version": "0.0.1",
     "name": "ProcedureEventDentalCare",
-    "title": "ProcedureEventDentalCare",
+    "title": "DentalCare - Procedure Event",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
@@ -28,13 +28,13 @@
             }
         ]
     },
-    "url": "http://medmij.nl/fhir/ValueSet/hcim-procedure-event-dental-care",
+    "url": "http://medmij.nl/fhir/ValueSet/DentalCare-ProcedureEvent",
     "status": "draft",
     "description": "ProcedureEvent",
     "compose": {
         "include": [
                 {
-                    "system": "http://medmij.nl/fhir/CodeSystem/hcim-procedure-event-dental-care",
+                    "system": "http://medmij.nl/fhir/CodeSystem/DentalCare-ProcedureEvent",
                     "version": "2.36",
                     "concept": [
                         {

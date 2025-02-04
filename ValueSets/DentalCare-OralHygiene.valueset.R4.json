@@ -2,13 +2,13 @@
     "resourceType": "ValueSet",
     "id": "DentalCare-OralHygieneFinding",
     "name": "DentalCareDentalHygieneFinding",
-    "title": "DentalCare - Dental Hygiene Finding",
+    "title": "DentalCare - Oral Hygiene Finding",
     "version": "0.0.1",
     "experimental": false,
     "publisher": "MedMij",
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dental Hygiene Finding</div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Oral Hygiene Finding</div>"
     },
     "identifier": [
         {
