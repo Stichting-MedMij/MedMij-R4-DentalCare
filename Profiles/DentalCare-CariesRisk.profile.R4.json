@@ -27,10 +27,6 @@
             ]
         }
     ],
-    "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Caries risk observation</div>"
-    },
     "description": "......",
     "purpose": "This Observation resource represent the Caries Risk",
     "copyright": "MedMij",

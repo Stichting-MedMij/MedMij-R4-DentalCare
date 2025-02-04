@@ -27,10 +27,6 @@
             ]
         }
     ],
-    "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PPS screening</div>"
-    },
     "description": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
     "purpose": "This Observation resource represent the PPS Screening",
     "copyright": "MedMij",

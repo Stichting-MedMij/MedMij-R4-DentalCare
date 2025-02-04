@@ -27,10 +27,6 @@
             ]
         }
     ],
-    "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Parafunctional activity observation</div>"
-    },
     "description": "......",
     "purpose": "This Observation resource represent the Parafunctional Activity",
     "copyright": "MedMij",

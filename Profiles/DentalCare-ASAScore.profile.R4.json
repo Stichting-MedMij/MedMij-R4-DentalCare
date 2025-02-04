@@ -27,10 +27,6 @@
             ]
         }
     ],
-    "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Modular data service - DentalCare - ASA Score</div>"
-    },
     "description": "classification of physical condition according to American Society of Anaesthesiologists.",
     "purpose": "This Observation resource represents the classification of physical condition according to American Society of Anaesthesiologists.",
     "copyright": "MedMij",
