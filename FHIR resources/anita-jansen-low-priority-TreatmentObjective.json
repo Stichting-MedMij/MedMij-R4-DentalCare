@@ -22,7 +22,7 @@
         } ]
       },
 	"subject": {
-		"reference": "Patient/anita-jansen-nl-core-Patient",
+		"reference": "Patient/xxx-jansen",
 		"type": "Patient",
 		"display": "Patient, Anita Jansen"
 	}
