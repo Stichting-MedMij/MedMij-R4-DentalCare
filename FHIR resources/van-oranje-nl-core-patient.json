@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "van-oranje-nl-core-Patient",
+  "id": "xxx-vanoranje",
   "meta": {
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
