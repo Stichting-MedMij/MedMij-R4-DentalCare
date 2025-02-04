@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "anita-jansen-nl-core-Patient",
+  "id": "xxx-jansen",
   "meta": {
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
