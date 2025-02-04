@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "cim-ASAscore",
+  "id": "ASASScore-jansen",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/hcim-ASAscore"
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-ASAScore"
     ]
   },
   "text": {
@@ -21,7 +21,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/nl-core-Patient-01",
+    "reference": "Patient/xxx-jansen",
     "type": "Patient",
     "display": "Patient, Anita Jansen"
   },
