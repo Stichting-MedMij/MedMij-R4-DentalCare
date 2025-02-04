@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "hcim-parafunctional-activity",
+  "id": "ParafunctioneleActiviteit-jansen",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/hcim-parafunctional-activity"
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-ParafunctionalActivity"
     ]
   },
   "text": {
@@ -21,7 +21,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/nl-core-Patient-01",
+    "reference": "Patient/xxx-jansen",
     "type": "Patient",
     "display": "Patient, Anita Jansen"
   },
