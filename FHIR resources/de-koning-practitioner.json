@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "Koning-De-Practitioner",
+  "id": "de-koning-Practitioner",
   "meta": {
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"

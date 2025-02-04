@@ -21,7 +21,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/nl-core-Patient-01",
+    "reference": "Patient/xxx-vanoranje",
     "type": "Patient",
     "display": "Patient, Erik van Oranje"
   },
@@ -29,15 +29,15 @@
   "performer": [
     {
       "actor": {
-        "reference": "PractitionerRole/nl-core-Procedure-01-PractitionerRole-01",
+        "reference": "PractitionerRole/de-koning-PractitionerRole",
         "type": "PractitionerRole",
         "display": "Healthcare professional (role), Tandarts"
       }
     }
   ],
   "location": {
-    "reference": "Location/nl-core-Procedure-01-Location-01",
+    "reference": "Location/tandartspraktijk-de-koning",
     "type": "Location",
-    "display": "Healthcare provider (location), Tandartspraktijk"
+    "display": "Healthcare provider (location), Tandartspraktijk de Koning"
   }
 }

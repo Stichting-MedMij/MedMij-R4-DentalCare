@@ -1,6 +1,6 @@
 {
     "resourceType": "PractitionerRole",
-    "id": "Koning-De-PractitionerRole",
+    "id": "de-koning-PractitionerRole",
     "meta": {
         "profile":  [
             "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
@@ -11,12 +11,12 @@
         "div": "<div test></div>"
     },
     "practitioner": {
-        "reference": "Practitioner/Koning-De-Practitioner",
+        "reference": "Practitioner/de-koning-Practitioner",
         "type": "Practitioner",
         "display": "Healthcare professional (person), Koning, de"
     },
     "organization": {
-        "reference": "Organization/org-00002222",
+        "reference": "Organization/tandartspraktijk-de-koning",
         "type": "Organization",
         "display": "Healthcare provider (organization), Tandartspraktijk de Koning"
     },  
