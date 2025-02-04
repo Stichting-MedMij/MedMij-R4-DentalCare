@@ -1,6 +1,6 @@
 {
 	"resourceType": "Goal",
-	"id": "van-de-stok-TreatmentObjective",
+	"id": "treatmentobjective-shortterm-vandestok",
 	"meta": {
 	  "profile": [
 		"http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
@@ -22,7 +22,7 @@
         } ]
       },
 	"subject": {
-		"reference": "Patient/van-de-stok-nl-core-Patient",
+		"reference": "Patient/xxx-vandestok",
 		"type": "Patient",
 		"display": "Patient, Berend van de Stok"
 	}
