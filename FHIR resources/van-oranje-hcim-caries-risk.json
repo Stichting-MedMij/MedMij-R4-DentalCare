@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "hcim-caries-risk",
+  "id": "cariesrisico-vanoranje",
   "meta": {
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/DentalCare-CariesRisk"
