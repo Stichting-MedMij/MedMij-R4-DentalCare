@@ -16,7 +16,7 @@
         "display": "Healthcare professional (person), Dijkstra"
     },
     "organization": {
-        "reference": "Organization/org-00002222",
+        "reference": "Organization/tandartspraktijk-dijkstra",
         "type": "Organization",
         "display": "Healthcare provider (organization), Tandartspraktijk Dijkstra"
     },  
