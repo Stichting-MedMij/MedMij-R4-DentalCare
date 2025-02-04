@@ -3,7 +3,7 @@
   "id": "procedure-vanoranje-01",
   "meta": {
     "profile": [
-      "http://nictiz.nl/fhir/StructureDefinition/hcim-procedure-event-dental-care"
+      "http://nictiz.nl/fhir/StructureDefinition/DentalCare-ProcedureEventDentalCare"
     ]
   },
   "text": {
