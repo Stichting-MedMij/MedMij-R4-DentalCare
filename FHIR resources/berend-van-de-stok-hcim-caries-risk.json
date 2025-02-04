@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "hcim-caries-risk",
+  "id": "Cariesrisico-vandestok",
   "meta": {
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/hcim-caries-risk"
@@ -21,7 +21,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/nl-core-Patient-01",
+    "reference": "Patient/xxx-vandestok",
     "type": "Patient",
     "display": "Patient, Berend van de Stok"
   },
