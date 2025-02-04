@@ -6,10 +6,6 @@
       "http://nictiz.nl/fhir/StructureDefinition/DentalCare-ProcedureEventDentalCare"
     ]
   },
-  "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>Verrichting. Subject: Patient, Anita Jansen. Status: voltooid<span style=\"display: block;\">Uitvoerende: Healthcare professional (role), Orthoptisten</span></caption><tbody><tr><td><span title=\"implantatie van knieprothese (392238003 - SNOMED CT)\">implantatie van knieprothese</span></td><td><div>Uitgevoerd: 5 juni 2012</div></td></tr><tr><th>Deel van lichaam</th><td><span title=\"structuur van knieregio (72696002 - SNOMED CT)\">structuur van knieregio</span></td></tr><tr><th>Locatie</th><td>Healthcare provider (location), UMCG</td></tr><tr><th>Reden</th><td>Problem</td></tr></tbody></table></div>"
-  },
   "status": "completed",
   "code": {
     "coding": [

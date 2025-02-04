@@ -6,10 +6,6 @@
             "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
         ]
     },
-    "text": {
-        "status": "extensions",
-        "div": "<div test></div>"
-    },
     "practitioner": {
         "reference": "Practitioner/de-koning-Practitioner",
         "type": "Practitioner",

@@ -6,10 +6,6 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
     ]
   },
-  "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Id 999998286 (BSN), Johanna Petronella Maria van Putten-van der Giessen, Vrouw, 28 april 1934, Meerling, <span title=\"Divorced (D - http://terminology.hl7.org/CodeSystem/v3-MaritalStatus)\">Divorced</span></div><div><a href=\"tel:+31611234567\">+31611234567</a> (Tel), <a href=\"mailto:giesput@myweb.nl\">giesput@myweb.nl</a> (E-mail Privé)</div><div>1e Jacob van Campenstr 15, 1012 NX Hoogmade Kaag en Braassem, Nederland (Privé Post / Bezoek)</div><div>Nationaliteit: <span title=\"Nederlandse (0001 - 2.16.840.1.113883.2.4.4.16.32)\">Nederlandse</span></div><div><span title=\"Eerste relatie/contactpersoon (01 - RoleCodeLijst (COD472-VEKT))\">Eerste relatie/contactpersoon</span>, <span title=\"Hulpverlener (07 - RoleCodeLijst (COD472-VEKT))\">Hulpverlener</span> J.P.M. van Putten-van der Giessen<div><a href=\"tel:+31611234567\">+31611234567</a> (Tel), <a href=\"mailto:giesput@myweb.nl\">giesput@myweb.nl</a> (E-mail Werk), 1e Jacob van Campenstr 15, 1012 NX Hoogmade Kaag en Braassem, Nederland (Privé Post / Bezoek)</div></div><ul><li><span title=\"Nederlands (nl - ISO 639-1)\">Nederlands</span></li></ul></div>"
-  },
   "extension": [
     {
       "extension": [

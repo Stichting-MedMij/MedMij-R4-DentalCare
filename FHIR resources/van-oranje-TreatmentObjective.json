@@ -6,10 +6,6 @@
 		"http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
 	  ]
 	},
-	"text": {
-		"status": "extensions",
-		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><caption>test</td></tr></tbody></table></div>"
-	},
 	"lifecycleStatus": "active",
 	"description": {
 		"text": "Tandvleesontsteking behandelen"
