@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "Ruiter-De-Practitioner",
+  "id": "de-ruiter-Practitioner",
   "meta": {
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"

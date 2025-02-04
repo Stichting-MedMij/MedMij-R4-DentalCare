@@ -1,6 +1,6 @@
 {
     "resourceType": "PractitionerRole",
-    "id": "Ruiter-De-PractitionerRole",
+    "id": "de-ruiter-PractitionerRole",
     "meta": {
         "profile":  [
             "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
@@ -11,7 +11,7 @@
         "div": "<div test></div>"
     },
     "practitioner": {
-        "reference": "Practitioner/Ruiter-De-Practitioner",
+        "reference": "Practitioner/de-ruiter-Practitioner",
         "type": "Practitioner",
         "display": "Healthcare professional (person), Ruiter, de"
     },
