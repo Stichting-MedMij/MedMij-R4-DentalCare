@@ -1,6 +1,6 @@
 {
 	"resourceType": "Goal",
-	"id": "van-oranje-TreatmentObjective",
+	"id": "treatmentobjective-shortterm-vanoranje",
 	"meta": {
 	  "profile": [
 		"http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
@@ -22,7 +22,7 @@
         } ]
       },
 	"subject": {
-		"reference": "Patient/van-oranje-nl-core-Patient",
+		"reference": "Patient/xxx-vanoranje",
 		"type": "Patient",
 		"display": "Patient, Erik van Oranje"
 	}

@@ -1,6 +1,6 @@
 {
   "resourceType": "Procedure",
-  "id": "hcim-procedure-event-dental-care",
+  "id": "procedure-vandestok-01",
   "meta": {
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/DentalCare-ProcedureEventDentalCare"
