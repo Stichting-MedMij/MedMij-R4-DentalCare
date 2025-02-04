@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "hcim-dental-hygiene-finding",
+  "id": "mondhygiene-vandestok",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/hcim-dental-hygiene-finding"
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-OralHygieneFinding"
     ]
   },
   "text": {
@@ -21,7 +21,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/nl-core-Patient-01",
+    "reference": "Patient/xxx-vandestok",
     "type": "Patient",
     "display": "Patient, Berend van de Stok"
   },
