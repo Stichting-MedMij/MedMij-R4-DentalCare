@@ -113,7 +113,7 @@
                 ],
                 "binding": {
                     "strength": "extensible",
-                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-CariesRisk"
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/DentalCare-CariesRisk"
                 }
             },
             {
