@@ -25,7 +25,7 @@
   "valueCodeableConcept": {
     "coding":  [
         {
-            "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
+            "system": "urn:oid:2.16.528.1.1023.5",
             "code": "hygiene5",
             "display": "zeer slecht"
         }
