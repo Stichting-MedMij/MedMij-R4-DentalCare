@@ -5,13 +5,13 @@
         "tag": [
             {
                 "system": "http://medmij.nl/fhir/data-service",
-                "code": "detal-care"
+                "code": "dental-care"
             }
         ]
     },
     "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-PPSScreening",
     "version": "0.0.1",
-    "name": "DetalCarePPSScreening",
+    "name": "DentalCarePPSScreening",
     "title": "DentalCare - PPS screening",
     "status": "draft",
     "publisher": "MedMij",
