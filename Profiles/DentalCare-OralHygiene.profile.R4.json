@@ -5,7 +5,7 @@
         "tag": [
             {
                 "system": "http://medmij.nl/fhir/data-service",
-                "code": "detal-care"
+                "code": "dental-care"
             }
         ]
     },
