@@ -22,6 +22,13 @@
     "display": "Patient, Berend van de Stok"
   },
   "effectiveDateTime": "2024-01-01T10:43:00+01:00",
+  "performer":  [
+    {
+        "reference": "PractitionerRole/Dijkstra-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+    }
+  ],
   "valueCodeableConcept": {
     "coding":  [
         {
