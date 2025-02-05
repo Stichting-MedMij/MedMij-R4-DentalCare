@@ -22,5 +22,12 @@
     "display": "Patient, Erik van Oranje"
   },
   "effectiveDateTime": "2024-04-29T06:43:00+01:00",
+  "performer":  [
+    {
+        "reference": "PractitionerRole/de-koning-PractitionerRole",
+        "type": "PractitionerRole",
+        "display": "Healthcare professional (role), Tandarts"
+    }
+  ],
   "valueString": "Overmatig knarsen bij stress"
 }
