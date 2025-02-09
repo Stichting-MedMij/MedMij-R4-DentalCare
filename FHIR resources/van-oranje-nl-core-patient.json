@@ -45,10 +45,6 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
             "valueString": "Oranje"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix",
-            "valueString": "van der"
           }
         ]
       },
