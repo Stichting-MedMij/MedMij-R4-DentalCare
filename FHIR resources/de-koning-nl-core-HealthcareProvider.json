@@ -1,11 +1,12 @@
 {
-  "resourceType": "Location",
+  "resourceType": "Organization",
   "id": "tandartspraktijk-de-koning",
   "meta": {
     "profile": [
-      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
     ]
   },
+  "name": "Tandartspraktijk de Koning",
   "telecom": [
     {
       "system": "phone",

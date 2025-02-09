@@ -1,11 +1,12 @@
 {
-  "resourceType": "Location",
+  "resourceType": "Organization",
   "id": "tandartspraktijk-de-ruiter",
   "meta": {
     "profile": [
-      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
     ]
   },
+  "name": "Tandartspraktijk de Ruiter",
   "telecom": [
     {
       "system": "phone",

@@ -1,11 +1,12 @@
 {
-  "resourceType": "Location",
+  "resourceType": "Organization",
   "id": "tandartspraktijk-dijkstra",
   "meta": {
     "profile": [
-      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
     ]
   },
+  "name": "Erasmus Universitair Medisch Centrum",
   "telecom": [
     {
       "system": "phone",
