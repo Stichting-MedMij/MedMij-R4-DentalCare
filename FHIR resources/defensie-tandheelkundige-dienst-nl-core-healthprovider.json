@@ -7,15 +7,21 @@
     ]
   },
   "name": "Ministerie van Defensie DTD Tandheelkunde",
+  "identifier":  [
+    {
+        "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
+        "value": "12095095"
+    }
+],
   "telecom": [
     {
       "system": "phone",
-      "value": "+31107040704",
+      "value": "+31653603740",
       "use": "work"
     },
     {
       "system": "email",
-      "value": "info@erasmus.nl",
+      "value": "PJ.Jumpertz.01@mindef.nl",
       "use": "work"
     }
   ],
@@ -36,23 +42,23 @@
     ],
     "use": "work",
     "line": [
-      "s-Gravendijkwal 230"
+      "Herculeslaan 1"
     ],
     "_line": [
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-            "valueString": "s-Gravendijkwal"
+            "valueString": "Herculeslaan"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-            "valueString": "230"
+            "valueString": "1"
           }
         ]
       }
     ],
-    "city": "Rotterdam",
-    "postalCode": "3015 CE"
+    "city": "Utrecht",
+    "postalCode": "3584 AB"
   }
 }
