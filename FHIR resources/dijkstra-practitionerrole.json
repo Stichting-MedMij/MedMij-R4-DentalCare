@@ -12,9 +12,9 @@
         "display": "Healthcare professional (person), Dijkstra"
     },
     "organization": {
-        "reference": "Organization/tandartspraktijk-dijkstra",
+        "reference": "Organization/defensie-tandheelkundige-dienst",
         "type": "Organization",
-        "display": "Healthcare provider (organization), Tandartspraktijk Dijkstra"
+        "display": "Healthcare provider (organization), Ministerie van Defensie DTD Tandheelkunde"
     },  
     "specialty":  [
         {
@@ -25,6 +25,13 @@
                     "display": "Tandartsen"
                 }
             ]
+        }
+    ],
+    "location":  [
+        {
+            "reference": "Location/tandartsspoedpraktijk-CWZ-Nijmegen",
+            "type": "Location",
+            "display": "CWZ Nijmegen"
         }
     ]
 }
