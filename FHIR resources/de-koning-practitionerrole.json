@@ -12,9 +12,9 @@
         "display": "Healthcare professional (person), Koning, de"
     },
     "organization": {
-        "reference": "Organization/tandartspraktijk-de-koning",
+        "reference": "Organization/defensie-tandheelkundige-dienst",
         "type": "Organization",
-        "display": "Healthcare provider (organization), Tandartspraktijk de Koning"
+        "display": "Healthcare provider (organization), Ministerie van Defensie DTD Tandheelkunde"
     },  
     "specialty":  [
         {
@@ -25,6 +25,13 @@
                     "display": "Tandartsen"
                 }
             ]
+        }
+    ],
+    "location":  [
+        {
+            "reference": "Location/tandheelkunde-centra-vliegbasis-Gilze-Rijen",
+            "type": "Location",
+            "display": "Vliegbasis Gilze-Rijen"
         }
     ]
 }
