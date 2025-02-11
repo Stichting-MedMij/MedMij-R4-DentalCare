@@ -43,53 +43,22 @@
                 ]            
             },
             {
-                "system": "http://snomed.info/sct",
+                "system": "urn:oid:2.16.528.1.1023.5",
                 "concept": [
                     {
-                        "code": "ppsscore1",
-                        "display": "pockets 0-3 millimeter = in orde"
-                    },
-                    {
-                        "extension":  [
-                            {
-                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
-                                "valueString": "pockets 0-3 millimeter = in orde"
-                            }
-                        ],
-                        "code": "6732009",
-                        "display": "behandeling van matig diepe pocket bij beginnende parodontitis type 2 (verrichting)",
-                        "designation": [
-                            {
-                                "language": "nl",
-                                "value": "behandeling van matig diepe pocket bij beginnende parodontitis type 2 (verrichting)"
-                            },
-                            {
-                                "language": "en-US",
-                                "value": "Type II, early periodontitis, moderate pocket therapy"
-                            }
-                        ]
-                    },
-                    {
-                        "extension":  [
-                            {
-                                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
-                                "valueString": "pockets groter of gelijk aan 6 millimeter = wellicht niet in orde"
-                            }
-                        ],
-                        "code": "42123008",
-                        "display": "behandeling van matig diepe tot diepe pocket bij matig ernstige parodontitis type 3",
-                        "designation": [
-                            {
-                                "language": "nl",
-                                "value": "behandeling van matig diepe tot diepe pocket bij matig ernstige parodontitis type 3"
-                            },
-                            {
-                                "language": "en-US",
-                                "value": "Type III, moderate periodontitis, moderate to deep pocket therapy"
-                            }
-                        ]
+                        "code": "ppsscore2",
+                        "display": "pockets 4-5 millimeter = mogelijk in orde"
                     }
-                ]
+                ]            
+            },
+            {
+                "system": "urn:oid:2.16.528.1.1023.5",
+                "concept": [
+                    {
+                        "code": "ppsscore3",
+                        "display": "pockets groter of gelijk aan 6 millimeter = wellicht niet in orde"
+                    }
+                ]            
             }
         ]
     }
