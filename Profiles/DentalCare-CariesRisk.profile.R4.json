@@ -112,7 +112,7 @@
                     }
                 ],
                 "binding": {
-                    "strength": "extensible",
+                    "strength": "required",
                     "valueSet": "http://medmij.nl/fhir/ValueSet/DentalCare-CariesRisk"
                 }
             },
