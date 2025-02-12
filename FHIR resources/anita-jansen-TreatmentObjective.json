@@ -3,7 +3,7 @@
 	"id": "treatmentobjective-longterm-jansen",
 	"meta": {
 	  "profile": [
-		"http://medmij.nl/fhir/StructureDefinition//DentalCare-TreatmentObjective"
+		"http://medmij.nl/fhir/StructureDefinition/DentalCare-TreatmentObjective"
 	  ]
 	},
 	"lifecycleStatus": "active",
