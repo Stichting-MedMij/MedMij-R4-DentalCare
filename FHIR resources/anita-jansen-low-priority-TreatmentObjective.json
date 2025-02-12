@@ -3,7 +3,7 @@
 	"id": "treatmentobjective-shortterm-jansen",
 	"meta": {
 	  "profile": [
-		"http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
+		"http://medmij.nl/fhir/StructureDefinition//DentalCare-TreatmentObjective"
 	  ]
 	},
 	"lifecycleStatus": "active",

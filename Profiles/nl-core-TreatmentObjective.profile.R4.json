@@ -1,22 +1,22 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nl-core-TreatmentObjective",
+  "id": "DentalCare-TreatmentObjective",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
   },
-  "url": "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective",
+  "url": "http://medmij.nl/fhir/StructureDefinition//DentalCare-TreatmentObjective",
   "name": "NlcoreTreatmentObjective",
   "title": "nl core TreatmentObjective",
   "status": "draft",
-  "publisher": "Nictiz",
+  "publisher": "Medmij",
   "contact": [
     {
-      "name": "Nictiz",
+      "name": "Medmij",
       "telecom": [
         {
-          "system": "url",
-          "value": "https://www.nictiz.nl",
+          "system": "email",
+          "value": "info@medmij.nl",
           "use": "work"
         }
       ]
