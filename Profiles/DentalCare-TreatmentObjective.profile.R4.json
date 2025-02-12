@@ -41,7 +41,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Goal",
-  "baseDefinition": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Goal",
   "derivation": "constraint",
   "differential": {
     "element": [
