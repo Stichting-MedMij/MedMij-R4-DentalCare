@@ -113,7 +113,7 @@
                 ],
                 "binding": {
                     "strength": "extensible",
-                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-DentalFitnessScore"
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/DentalCare-DentalFitnessScore"
                 }
             },
             {

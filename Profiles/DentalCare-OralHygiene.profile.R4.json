@@ -113,7 +113,7 @@
                 ],
                 "binding": {
                     "strength": "extensible",
-                    "valueSet": "http://medmij.nl/fhir/ValueSet/hcim-dental-hygiene-finding"
+                    "valueSet": "http://medmij.nl/fhir/ValueSet/DentalCare-OralHygieneFinding"
                 }
             },
             {
