@@ -10,9 +10,9 @@
   "code": {
     "coding": [
       {
-        "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
-        "code": "PPSSCORE",
-        "display": "periodieke parodontale screening score"
+        "system": "http://snomed.info/sct",
+        "code": "540501000146103",
+        "display": "Periodic Periodontal Screening score"
       }
     ]
   },

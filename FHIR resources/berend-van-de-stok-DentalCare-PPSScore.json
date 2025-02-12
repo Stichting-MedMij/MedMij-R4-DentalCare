@@ -10,9 +10,9 @@
   "code": {
     "coding": [
       {
-        "system": "urn:oid:2.16.840.1.113883.3.3210.11.22",
-        "code": "PPSSCORE",
-        "display": "periodieke parodontale screening score"
+        "system": "http://snomed.info/sct",
+        "code": "540501000146103",
+        "display": "Periodic Periodontal Screening score"
       }
     ]
   },
@@ -32,9 +32,9 @@
   "valueCodeableConcept": {
     "coding":  [
         {
-            "system": "http://snomed.info/sct",
-            "code": "42123008",
-            "display": "behandeling van matig diepe tot diepe pocket bij matig ernstige parodontitis type 3"
+            "system": "urn:oid:2.16.528.1.1023.5",
+            "code": "ppsscore3",
+            "display": "pockets groter of gelijk aan 6 millimeter = wellicht niet in orde"
         }
     ]
   },
