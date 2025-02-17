@@ -32,9 +32,9 @@
   "valueCodeableConcept": {
     "coding":  [
         {
-            "system": "http://snomed.info/sct",
-            "code": "609400006",
-            "display": "At low risk for dental caries"
+            "system": "urn:oid:2.16.528.1.1023.5",
+            "code": "caries1",
+            "display": "Laag"
         }
     ]
   }
