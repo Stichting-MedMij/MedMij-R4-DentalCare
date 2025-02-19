@@ -81,7 +81,7 @@
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
                   "code": "MC",
-                  "display": "Mobile Phone"
+                  "display": "Mobiel telefoonnummer"
                 }
               ]
             }
