@@ -39,21 +39,11 @@
                     {
                         "code": "ppsscore1",
                         "display": "pockets 0-3 millimeter = in orde"
-                    }
-                ]            
-            },
-            {
-                "system": "urn:oid:2.16.528.1.1023.5.1.2",
-                "concept": [
+                    },
                     {
                         "code": "ppsscore2",
                         "display": "pockets 4-5 millimeter = mogelijk in orde"
-                    }
-                ]            
-            },
-            {
-                "system": "urn:oid:2.16.528.1.1023.5.1.2",
-                "concept": [
+                    },
                     {
                         "code": "ppsscore3",
                         "display": "pockets groter of gelijk aan 6 millimeter = wellicht niet in orde"
