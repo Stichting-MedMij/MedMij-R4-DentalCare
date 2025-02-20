@@ -6,6 +6,10 @@
 		"http://medmij.nl/fhir/StructureDefinition/DentalCare-TreatmentObjective"
 	  ]
 	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Vullen gaatjes rechter kies<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+	  },
 	"lifecycleStatus": "active",
 	"description": {
 		"text": "Vullen gaatjes rechter kies"
