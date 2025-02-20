@@ -6,6 +6,10 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Berend van de Stok<br/>BSN: 999998304<br/>Geboortedatum: 1980-05-04<br/>Geslacht: Man<br/>Adres: Bloemstraat 25, 5678BB Bergen op Zoom, Nederland<br/>Telefoon: +31687654321<br/>E-mail: berendvandestok@gmail.com</div>"
+  },
   "identifier": [
     {
       "system": "http://fhir.nl/fhir/NamingSystem/bsn",

@@ -6,6 +6,10 @@
 		"http://medmij.nl/fhir/StructureDefinition/DentalCare-TreatmentObjective"
 	  ]
 	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Wortelpuntoperatie (apexresectie)<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Laag</div>"
+	  },
 	"lifecycleStatus": "active",
 	"description": {
 		"text": "Wortelpuntoperatie (apexresectie)"

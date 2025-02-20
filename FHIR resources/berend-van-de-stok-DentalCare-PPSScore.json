@@ -6,6 +6,10 @@
       "http://medmij.nl/fhir/StructureDefinition/DentalCare-PPSScreening"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening score<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>PPS Score: pockets groter of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Paro traject<br/>Uitgevoerd door: Tandarts</div>"
+  },
   "status": "final",
   "code": {
     "coding": [
