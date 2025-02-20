@@ -1,7 +1,7 @@
 {
     "resourceType": "ValueSet",
     "id": "DentalCare-OralHygieneFinding",
-    "name": "DentalCareDentalHygieneFinding",
+    "name": "DentalCareOralHygieneFinding",
     "title": "DentalCare - Oral Hygiene Finding",
     "version": "0.0.1",
     "experimental": false,
@@ -30,7 +30,7 @@
     },
     "url": "http://medmij.nl/fhir/ValueSet/DentalCare-OralHygieneFinding",
     "status": "draft",
-    "description": "Dental Hygiene Finding",
+    "description": "Oral Hygiene Finding",
     "compose": {
         "include": [
             {
