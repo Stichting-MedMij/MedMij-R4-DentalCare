@@ -36,7 +36,7 @@
   "valueCodeableConcept": {
     "coding":  [
         {
-            "system": "urn:oid:2.16.528.1.1023.5",
+            "system": "urn:oid:2.16.528.1.1023.5.1",
             "code": "fitness2",
             "display": "May require dental treatment but unlikely to result in a dental emergency within 12 months"
         }
