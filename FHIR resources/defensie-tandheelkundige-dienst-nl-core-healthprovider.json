@@ -6,6 +6,10 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>AGB-code: 12095095<br/>Telefoon: +31653603740<br/>E-mail: PJ.Jumpertz.01@mindef.nl<br/>Adres: Herculeslaan 1, 3584 AB Utrecht</div>"
+  },
   "name": "Ministerie van Defensie DTD Tandheelkunde",
   "identifier":  [
     {

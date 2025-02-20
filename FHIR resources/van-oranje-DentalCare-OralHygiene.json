@@ -6,6 +6,10 @@
       "http://medmij.nl/fhir/StructureDefinition/DentalCare-OralHygieneFinding"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Mondhygiëne: Slechte mondhygiëne<br/>Uitgevoerd door: Tandarts</div>"
+  },
   "status": "final",
   "code": {
     "coding": [

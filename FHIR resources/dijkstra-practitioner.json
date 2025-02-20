@@ -6,6 +6,10 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: B. Dijkstra<br/>BIG-nummer: 12000003<br/>Telefoon: +31687654321<br/>E-mail: dijkstra@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
+  },
   "identifier": [
     {
       "system": "http://fhir.nl/fhir/NamingSystem/big",

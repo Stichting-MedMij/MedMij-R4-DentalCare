@@ -6,6 +6,10 @@
 		"http://medmij.nl/fhir/StructureDefinition/DentalCare-TreatmentObjective"
 	  ]
 	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Tandvleesontsteking behandelen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+	  },
 	"lifecycleStatus": "active",
 	"description": {
 		"text": "Tandvleesontsteking behandelen"

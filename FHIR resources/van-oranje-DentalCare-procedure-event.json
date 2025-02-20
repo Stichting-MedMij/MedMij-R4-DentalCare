@@ -3,8 +3,12 @@
   "id": "procedure-vanoranje-01",
   "meta": {
     "profile": [
-      "http://nictiz.nl/fhir/StructureDefinition/DentalCare-ProcedureEventDentalCare"
+      "http://medmij.nl/fhir/StructureDefinition/DentalCare-ProcedureEvent"
     ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Procedure: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
   },
   "status": "completed",
   "code": {
@@ -32,8 +36,8 @@
     }
   ],
   "location": {
-    "reference": "Location/tandartspraktijk-de-koning",
+    "reference": "Location/tandheelkunde-centra-vliegbasis-Gilze-Rijen",
     "type": "Location",
-    "display": "Healthcare provider (location), Tandartspraktijk de Koning"
+    "display": "Healthcare provider (location), Vliegbasis Gilze-Rijen"
   }
 }

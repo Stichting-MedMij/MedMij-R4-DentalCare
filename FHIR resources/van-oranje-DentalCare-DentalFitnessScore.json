@@ -6,6 +6,10 @@
       "http://medmij.nl/fhir/StructureDefinition/DentalCare-DentalFitnessScore"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness Score (NAVO-classificatiesysteem)<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-02-02 06:43<br/>Dental Fitness: No dental treatment required/ low risk for dental emergency<br/>Uitgevoerd door: Tandarts</div>"
+  },
   "status": "final",
   "code": {
     "coding": [

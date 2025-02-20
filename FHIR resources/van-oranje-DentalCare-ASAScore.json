@@ -6,6 +6,10 @@
       "http://medmij.nl/fhir/StructureDefinition/DentalCare-ASAScore"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>ASA Score: ASA-score 1<br/>Opmerking: Verandering gezondheid: enkel gebroken<br/>Uitgevoerd door: Tandarts</div>"
+  },
   "status": "final",
   "code": {
     "coding": [

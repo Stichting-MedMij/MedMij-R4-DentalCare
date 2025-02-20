@@ -6,6 +6,10 @@
         "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
       ]
     },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: CWZ Nijmegen<br/>Telefoon: 0246412121<br/>Adres: Weg door Jonkerbos 100, 6532 SZ Nijmegen<br/>Beheerde organisatie: Ministerie van Defensie DTD Tandheelkunde</div>"
+    },
     "name": "CWZ Nijmegen",
     "telecom": [
       {

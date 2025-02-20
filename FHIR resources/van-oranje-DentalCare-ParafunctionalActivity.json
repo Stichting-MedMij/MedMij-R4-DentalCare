@@ -6,6 +6,10 @@
       "http://medmij.nl/fhir/StructureDefinition/DentalCare-ParafunctionalActivity"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Activiteit: Overmatig knarsen bij stress<br/>Uitgevoerd door: Tandarts</div>"
+  },
   "status": "final",
   "code": {
     "coding": [

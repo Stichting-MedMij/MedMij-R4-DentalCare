@@ -6,6 +6,10 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Erik van Oranje<br/>BSN: 111222333<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Nationaliteit: Nederlandse<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123PP Montferland, Nederland</div>"
+  },
   "extension": [
     {
       "extension": [

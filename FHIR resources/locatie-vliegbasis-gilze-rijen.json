@@ -6,6 +6,10 @@
         "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
       ]
     },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: Vliegbasis Gilze-Rijen<br/>Telefoon: 0889502753<br/>Adres: Rijksweg 121, 5120 AA Rijen<br/>Beheerde organisatie: Ministerie van Defensie DTD Tandheelkunde</div>"
+    },
     "name": "Vliegbasis Gilze-Rijen",
     "telecom": [
       {
