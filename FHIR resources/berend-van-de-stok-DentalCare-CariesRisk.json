@@ -36,7 +36,7 @@
   "valueCodeableConcept": {
     "coding":  [
         {
-            "system": "urn:oid:2.16.528.1.1023.5",
+            "system": "urn:oid:2.16.528.1.1023.5.1.4",
             "code": "caries3",
             "display": "Verhoogd"
         }

@@ -16,19 +16,19 @@
     {
       "use": "official",
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:oid:2.16.528.1.1023.5.1.2"
+      "value": "urn:oid:2.16.528.1.1023.5.1.4"
     }
   ],
   "version": "0.0.1",
-  "name": "PPSScore",
-  "title": "PPSScore",
+  "name": "CariesRisk",
+  "title": "CariesRisk",
   "status": "active",
   "experimental": false,
   "publisher": "Medmij",
-  "description": "PPSScreeningScore",
+  "description": "CariesRiskScore",
   "caseSensitive": false,
   "content": "complete",
-  "count": 3,
+  "count": 4,
   "property": [
     {
       "code": "status",
@@ -39,8 +39,8 @@
   ],
   "concept": [
     {
-      "code": "ppsscore1",
-      "display": "pockets 0-3 millimeter = in orde",
+      "code": "caries1",
+      "display": "Laag",
       "property": [
         {
           "code": "status",
@@ -49,8 +49,8 @@
       ]
     },
     {
-      "code": "ppsscore2",
-      "display": "pockets 4-5 millimeter = mogelijk in orde",
+      "code": "caries2",
+      "display": "Verlaagd",
       "property": [
         {
           "code": "status",
@@ -59,14 +59,24 @@
       ]
     },
     {
-      "code": "ppsscore3",
-      "display": "pockets groter of gelijk aan 6 millimeter = wellicht niet in orde",
+      "code": "caries3",
+      "display": "Verhoogd",
       "property": [
         {
           "code": "status",
           "valueCode": "active"
         }
       ]
-    }
+    },
+    {
+        "code": "caries4",
+        "display": "Hoog risico",
+        "property": [
+          {
+            "code": "status",
+            "valueCode": "active"
+          }
+        ]
+      }
   ]
 }
