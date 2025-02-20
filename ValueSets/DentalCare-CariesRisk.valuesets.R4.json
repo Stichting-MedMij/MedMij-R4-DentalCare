@@ -34,36 +34,23 @@
     "compose": {
         "include": [
             {
-                "system": "http://snomed.info/sct",
-                "concept": [
-                    {
-                        "code": "609400006",
-                        "display": "At low risk for dental caries"
-                    },
-                    {
-                        "code": "609399004",
-                        "display": "At increased risk for dental caries"
-                    },
-                    {
-                        "code": "609401005",
-                        "display": "At moderate risk for dental caries"
-                    },
-                    {
-                        "code": "609402003",
-                        "display": "At high risk for dental caries"
-                    },
-                    {
-                        "code": "609403008",
-                        "display": "At extreme risk for dental caries"
-                    }
-                ]
-            },
-            {
                 "system": "urn:oid:2.16.528.1.1023.5",
                 "concept": [
                     {
+                        "code": "caries1",
+                        "display": "Laag"
+                    },
+                    {
                         "code": "caries2",
                         "display": "Verlaagd"
+                    },
+                    {
+                        "code": "caries3",
+                        "display": "Verhoogd"
+                    },
+                    {
+                        "code": "caries4",
+                        "display": "Hoog risico"
                     }
                 ]
             }
