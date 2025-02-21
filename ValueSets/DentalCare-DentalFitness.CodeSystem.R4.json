@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "2.16.528.1.1023.5.1",
+  "id": "CodeSystem-DentalCare-DentalFitnessScore",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
