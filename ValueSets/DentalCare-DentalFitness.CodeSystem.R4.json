@@ -11,7 +11,7 @@
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"nl-NL\" xml:lang=\"nl-NL\">Definitie-resources zijn niet voorzien van een narrative. Een menselijk leesbare versie is te vinden via de implementation guide(s) waarin deze resource gebruikt wordt.</div>"
   },
-  "url": "http://medmij.nl/fhir/CodeSystem/DentalCare-DentalFitnessScore",
+  "url": "urn:oid:2.16.528.1.1023.5.1",
   "identifier": [
     {
       "use": "official",
