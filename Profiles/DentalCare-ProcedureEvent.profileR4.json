@@ -122,6 +122,20 @@
         ]
       },
       {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Procedure.performed[x]:performedPeriod",
         "path": "Procedure.performed[x]",
         "sliceName": "performedPeriod",
@@ -185,20 +199,6 @@
             "identity": "zib-procedure-v5.2-2020EN",
             "map": "NL-CM:14.1.2",
             "comment": "ProcedureStartDate"
-          }
-        ]
-      },
-      {
-        "id": "Procedure.subject",
-        "path": "Procedure.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
-            ]
           }
         ]
       },
