@@ -9,6 +9,10 @@
             }
         ]
     },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns='http://www.w3.org/1999/xhtml'>StructureDefinition: DentalCare - Caries Risk<br/>Versie: 0.0.1<br/>Status: Concept<br/>Type: Observation<br/>Uitgever: MedMij<br/>Contact: info@medmij.nl<br/>Beschrijving: Caries Risk assessment.<br/>Doel: This Observation resource represents the Caries Risk.<br/>Copyright: MedMij<br/>FHIR Versie: 4.0.1</div>"
+      },
     "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-CariesRisk",
     "version": "0.0.1",
     "name": "DentalCareCariesRisk",
@@ -55,6 +59,19 @@
                         }
                     ]
                 }
+            },
+            {
+                "id": "Observation.subject",
+                "path": "Observation.subject",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "http://hl7.org/fhir/StructureDefinition/Patient",
+                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+                        ]
+                    }
+                ]
             },
             {
                 "id": "Observation.effective[x]",
@@ -128,19 +145,6 @@
                 "definition": "Comment on the Caries Risk, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
                 "alias":  [
                     "Toelichting"
-                ]
-            },
-            {
-                "id": "Observation.subject",
-                "path": "Observation.subject",
-                "type":  [
-                    {
-                        "code": "Reference",
-                        "targetProfile":  [
-                            "http://hl7.org/fhir/StructureDefinition/Patient",
-                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
-                        ]
-                    }
                 ]
             }
         ]

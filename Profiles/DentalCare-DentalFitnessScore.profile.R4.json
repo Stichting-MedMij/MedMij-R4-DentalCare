@@ -9,6 +9,10 @@
             }
         ]
     },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns='http://www.w3.org/1999/xhtml'>StructureDefinition: DentalCare - Dental Fitness Score<br/>Versie: 0.0.1<br/>Status: Concept<br/>Type: Observation<br/>Uitgever: MedMij<br/>Contact: info@medmij.nl<br/>Beschrijving: Dental Fitness Score assessment.<br/>Doel: This Observation resource represents the Dental Fitness Score.<br/>Copyright: MedMij<br/>FHIR Versie: 4.0.1</div>"
+      },
     "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-DentalFitnessScore",
     "version": "0.0.1",
     "name": "DentalCareDentalFitnessScore",

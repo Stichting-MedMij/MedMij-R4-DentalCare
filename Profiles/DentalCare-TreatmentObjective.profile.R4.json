@@ -93,6 +93,21 @@
 				]
 			},
 			{
+				"id": "Goal.subject",
+				"path": "Goal.subject",
+				"type": [
+				  {
+					"code": "Reference",
+					"targetProfile": [
+					  "http://hl7.org/fhir/StructureDefinition/Patient",
+					  "http://hl7.org/fhir/StructureDefinition/Group",
+					  "http://hl7.org/fhir/StructureDefinition/Organization",
+					  "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+					]
+				  }
+				]
+			},
+			{
 				"id": "Goal.target",
 				"path": "Goal.target",
 				"short": "DesiredHealthCondition",
@@ -255,22 +270,7 @@
 						"comment": "Comment"
 					}
 				]
-			},
-      {
-        "id": "Goal.subject",
-        "path": "Goal.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
-            ]
-          }
-        ]
-      }
+			}
     ]
   }
 }
