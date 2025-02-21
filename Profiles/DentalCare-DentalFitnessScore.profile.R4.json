@@ -57,6 +57,19 @@
                 }
             },
             {
+                "id": "Observation.subject",
+                "path": "Observation.subject",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "http://hl7.org/fhir/StructureDefinition/Patient",
+                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "Observation.effective[x]",
                 "path": "Observation.effective[x]",
                 "slicing": {
@@ -128,19 +141,6 @@
                 "definition": "Comment on the Dental Fitness Score, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
                 "alias":  [
                     "Toelichting"
-                ]
-            },
-            {
-                "id": "Observation.subject",
-                "path": "Observation.subject",
-                "type":  [
-                    {
-                        "code": "Reference",
-                        "targetProfile":  [
-                            "http://hl7.org/fhir/StructureDefinition/Patient",
-                            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
-                        ]
-                    }
                 ]
             }
         ]
