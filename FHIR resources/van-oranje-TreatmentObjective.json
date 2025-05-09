@@ -1,6 +1,6 @@
 {
 	"resourceType": "Goal",
-	"id": "treatmentobjective-longterm-vanoranje",
+	"id": "treatmentobjective-shortterm-vanoranje",
 	"meta": {
 	  "profile": [
 		"http://medmij.nl/fhir/StructureDefinition/DentalCare-TreatmentObjective"

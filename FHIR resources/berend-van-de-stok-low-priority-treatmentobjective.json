@@ -1,6 +1,6 @@
 {
 	"resourceType": "Goal",
-	"id": "treatmentobjective-shortterm-vandestok",
+	"id": "treatmentobjective-longterm-vandestok",
 	"meta": {
 	  "profile": [
 		"http://medmij.nl/fhir/StructureDefinition/DentalCare-TreatmentObjective"
