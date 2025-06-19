@@ -1,0 +1,219 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mz-PeriodicPeriodontalScreening",
+  "url": "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening",
+  "name": "MzPeriodicPeriodontalScreening",
+  "title": "mz PeriodicPeriodontalScreening",
+  "status": "draft",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
+  "purpose": "This Observation resource represents the PeriodicPeriodontalScreening building block for implementations following the information standard [Mondzorg](https://simplifier.net/medmij-r4-dental-care).",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "mz-dataset-100-alpha3-2025xxyy",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "PeriodicPeriodontalScreening",
+        "definition": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
+        "alias": [
+          "PeriodiekeParodontaleScreening",
+          "Measurement",
+          "Results",
+          "Tests"
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-alpha3-2025xxyy",
+            "map": "mz-dataelement-zz",
+            "comment": "PeriodicPeriodontalScreening"
+          }
+        ]
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "540501000146103",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Patient",
+        "alias": [
+          "Patient"
+        ],
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-alpha3-2025xxyy",
+            "map": "mz-dataelement-zz",
+            "comment": "Patient"
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.effective[x]:effectiveDateTime",
+        "path": "Observation.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "short": "PPSDateTime",
+        "definition": "The date and time at which the PPS was performed.",
+        "alias": [
+          "PPSDatumTijd"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-alpha3-2025xxyy",
+            "map": "mz-dataelement-zz",
+            "comment": "PPSDateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "short": "PPSScore",
+        "definition": "The score of the PPS.",
+        "alias": [
+          "PPSScore"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://medmij.nl/fhir/ValueSet/PPSScreening"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-alpha3-2025xxyy",
+            "map": "mz-dataelement-zz",
+            "comment": "PPSScore"
+          }
+        ]
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "max": "1"
+      },
+      {
+        "id": "Observation.note.text",
+        "path": "Observation.note.text",
+        "short": "Comment",
+        "definition": "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+        "alias": [
+          "Toelichting"
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-alpha3-2025xxyy",
+            "map": "mz-dataelement-zz",
+            "comment": "Comment"
+          }
+        ]
+      }
+    ]
+  }
+}
