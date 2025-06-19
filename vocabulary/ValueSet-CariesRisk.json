@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "CariesRisk",
+  "id": "CariesRisk",
+  "title": "CariesRisk ValueSet.",
+  "description": "Caries risk.",
+  "url": "http://medmij.nl/fhir/ValueSet/CariesRisk",
+  "meta": {
+    "tag": [
+      {
+        "code": "DentalCare",
+        "system": "http://medmij.nl/fhir/data-service"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.11.2.3.11.7"
+    }
+  ],
+  "experimental": false,
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "62482003",
+            "display": "Laag"
+          },
+          {
+            "code": "1250004",
+            "display": "Verlaagd"
+          },
+          {
+            "code": "35105006",
+            "display": "Verhoogd"
+          },
+          {
+            "code": "75540009",
+            "display": "Hoog"
+          }
+        ]
+      }
+    ]
+  }
+}
