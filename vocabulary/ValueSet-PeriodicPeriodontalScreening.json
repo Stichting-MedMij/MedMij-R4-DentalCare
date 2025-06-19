@@ -6,14 +6,6 @@
   "title": "PeriodicPeriodontalScreening ValueSet.",
   "description": "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS).",
   "url": "http://medmij.nl/fhir/ValueSet/PPSScreening",
-  "meta": {
-    "tag": [
-      {
-        "code": "DentalCare",
-        "system": "http://medmij.nl/fhir/data-service"
-      }
-    ]
-  },
   "identifier": [
     {
       "use": "official",

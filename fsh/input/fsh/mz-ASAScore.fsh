@@ -9,7 +9,6 @@ Parent: Observation
 Id: mz-ASAScore
 Title: "mz ASAScore"
 Description: "Classification of physical condition according to American Society of Anaesthesiologists."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^status = #draft
 * ^publisher = "MedMij"
 * ^contact.name = "MedMij"
@@ -63,7 +62,6 @@ ValueSet: ASAScore
 Id: ASAScore
 Title: "ASAScore ValueSet."
 Description: "Classification of physical condition according to American Society of Anaesthesiologists."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^url = $ASAScoreValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"

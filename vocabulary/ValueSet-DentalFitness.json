@@ -6,14 +6,6 @@
   "title": "DentalFitness ValueSet.",
   "description": "Dental fitness according to the NATO classification system.",
   "url": "http://medmij.nl/fhir/ValueSet/DentalFitness",
-  "meta": {
-    "tag": [
-      {
-        "code": "DentalCare",
-        "system": "http://medmij.nl/fhir/data-service"
-      }
-    ]
-  },
   "identifier": [
     {
       "use": "official",

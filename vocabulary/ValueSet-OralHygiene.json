@@ -6,14 +6,6 @@
   "title": "OralHygiene ValueSet.",
   "description": "Oral hygiene.",
   "url": "http://medmij.nl/fhir/ValueSet/OralHygiene",
-  "meta": {
-    "tag": [
-      {
-        "code": "DentalCare",
-        "system": "http://medmij.nl/fhir/data-service"
-      }
-    ]
-  },
   "identifier": [
     {
       "use": "official",

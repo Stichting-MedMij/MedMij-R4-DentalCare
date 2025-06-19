@@ -9,7 +9,6 @@ Parent: Observation
 Id: mz-OralHygiene
 Title: "mz OralHygiene"
 Description: "Oral hygiene finding."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^status = #draft
 * ^publisher = "MedMij"
 * ^contact.name = "MedMij"
@@ -63,7 +62,6 @@ ValueSet: OralHygiene
 Id: OralHygiene
 Title: "OralHygiene ValueSet."
 Description: "Oral hygiene."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^url = $OralHygieneValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"

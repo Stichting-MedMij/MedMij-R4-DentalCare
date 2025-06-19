@@ -9,7 +9,6 @@ Parent: Observation
 Id: mz-CariesRisk
 Title: "mz CariesRisk"
 Description: "Caries risk."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^status = #draft
 * ^publisher = "MedMij"
 * ^contact.name = "MedMij"
@@ -63,7 +62,6 @@ ValueSet: CariesRisk
 Id: CariesRisk
 Title: "CariesRisk ValueSet."
 Description: "Caries risk."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^url = $CariesRiskValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"

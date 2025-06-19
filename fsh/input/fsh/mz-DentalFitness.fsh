@@ -9,7 +9,6 @@ Parent: Observation
 Id: mz-DentalFitness
 Title: "mz DentalFitness"
 Description: "Dental fitness according to the NATO classification system."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^status = #draft
 * ^publisher = "MedMij"
 * ^contact.name = "MedMij"
@@ -63,7 +62,6 @@ ValueSet: DentalFitness
 Id: DentalFitness
 Title: "DentalFitness ValueSet."
 Description: "Dental fitness according to the NATO classification system."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^url = $DentalFitnessValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"

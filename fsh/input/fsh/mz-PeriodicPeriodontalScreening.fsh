@@ -11,7 +11,6 @@ Parent: Observation
 Id: mz-PeriodicPeriodontalScreening
 Title: "mz PeriodicPeriodontalScreening"
 Description: "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^status = #draft
 * ^publisher = "MedMij"
 * ^contact.name = "MedMij"
@@ -97,7 +96,6 @@ ValueSet: PeriodicPeriodontalScreening
 Id: PeriodicPeriodontalScreening
 Title: "PeriodicPeriodontalScreening ValueSet."
 Description: "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^url = $PPSValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"
