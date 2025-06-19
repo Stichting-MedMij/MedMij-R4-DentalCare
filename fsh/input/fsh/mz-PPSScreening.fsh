@@ -1,7 +1,10 @@
 //Profile on Observation for PPSScreening to be used in Mondzorg
 
 Alias: $SCT = http://snomed.info/sct
-Alias: $MedMij = urn:oid:2.16.528.1.1023.5
+Alias: $PPSCodeSystemOID = urn:oid:2.16.528.1.1023.5.1.2
+Alias: $PPSCodeSystemURL = http://medmij.nl/fhir/CodeSystem/PPSScreening
+Alias: $PPSValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.3
+Alias: $PPSValueSetURL = http://medmij.nl/fhir/ValueSet/PPSScreening
 
 Profile: MzPPSScreening
 Parent: Observation
@@ -42,7 +45,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^mapping.comment = "PPSScreeningDateTime"
 * performer only http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference or Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
 * valueCodeableConcept 1..1
-* valueCodeableConcept from PPSScreening (required)
+* valueCodeableConcept from $PPSValueSetURL (required)
   * ^short = "PPSScreeningValue"
   * ^definition = "The value of the PPS screening."
   * ^alias = "PPSScreeningWaarde"
@@ -58,15 +61,14 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
     * ^mapping.map = "mz-dataelement-zz"
     * ^mapping.comment = "Comment"
 
-ValueSet: PPSScreening
+CodeSystem: PPSScreening
 Id: PPSScreening
-Title: "PPSScreening ValueSet."
-Description: "Dental fitness score."
-* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
-* ^url = "http://medmij.nl/fhir/ValueSet/PPSScreening"
+Title: "PPSScreening CodeSystem."
+Description: "Codes for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
+* ^url = $PPSCodeSystemURL
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:2.16.528.1.1023.11.2.3.11.3"
+* ^identifier.value = $PPSCodeSystemOID
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "MedMij"
@@ -74,6 +76,37 @@ Description: "Dental fitness score."
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "info@medmij.nl"
 * ^contact.telecom.use = #work
-* $MedMij#ppsscore1 "pockets 0-3 millimeter = in orde"
-* $MedMij#ppsscore2 "pockets 4-5 millimeter = mogelijk in orde"
-* $MedMij#ppsscore3 "pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde"
+* ^caseSensitive = false
+* ^content = #complete
+* ^count = 3
+* ^property.code = #status
+* ^property.uri = "http://hl7.org/fhir/concept-properties#status"
+* ^property.description = "A code that indicates the status of the concept. Values found in this version of the code system are: 'active'."
+* ^property.type = #code
+* #ppsscore1 "Pockets 0-3 millimeter = in orde"
+  * ^property.code = #status
+  * ^property.valueCode = #active
+* #ppsscore2 "Pockets 4-5 millimeter = mogelijk in orde"
+  * ^property.code = #status
+  * ^property.valueCode = #active
+* #ppsscore3 "Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde"
+  * ^property.code = #status
+  * ^property.valueCode = #active
+
+ValueSet: PPSScreening
+Id: PPSScreening
+Title: "PPSScreening ValueSet."
+Description: "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
+* ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
+* ^url = $PPSValueSetURL
+* ^identifier.use = #official
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = $PPSValueSetOID
+* ^status = #draft
+* ^experimental = false
+* ^publisher = "MedMij"
+* ^contact.name = "MedMij"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "info@medmij.nl"
+* ^contact.telecom.use = #work
+* include codes from system $PPSCodeSystemURL

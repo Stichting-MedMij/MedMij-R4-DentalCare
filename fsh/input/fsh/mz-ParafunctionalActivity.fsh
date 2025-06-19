@@ -1,6 +1,5 @@
 //Profile on Observation for ParafunctionalActivity to be used in Mondzorg
 
-Alias: $SCT = http://snomed.info/sct
 Alias: $MedMij = urn:oid:2.16.528.1.1023.5
 
 Profile: MzParafunctionalActivity
@@ -35,7 +34,7 @@ Description: "Parafunctional activity."
   * ^mapping.comment = "Patient"
 * effectiveDateTime
   * ^short = "ParafunctionalActivityDateTime"
-  * ^definition = "The date and time at which the PPS screening was measured."
+  * ^definition = "The date and time at which the parafunctional activity was measured."
   * ^alias = "ParafunctioneleActiviteitDatumTijd"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
@@ -43,7 +42,7 @@ Description: "Parafunctional activity."
 * performer only http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference or Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
 * valueString 1..1
   * ^short = "ParafunctionalActivityValue"
-  * ^definition = "The value of the PPS screening."
+  * ^definition = "The value of the parafunctional activity."
   * ^alias = "ParafunctioneleActiviteitWaarde"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"

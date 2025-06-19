@@ -1,6 +1,8 @@
 //Profile on Observation for ASAScore to be used in Mondzorg
 
 Alias: $SCT = http://snomed.info/sct
+Alias: $ASAScoreValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.2
+Alias: $ASAScoreValueSetURL = http://medmij.nl/fhir/ValueSet/ASAScore
 
 Profile: MzASAScore
 Parent: Observation
@@ -41,7 +43,7 @@ Description: "Classification of physical condition according to American Society
   * ^mapping.comment = "ASAScoreDateTime"
 * performer only http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference or Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
 * valueCodeableConcept 1..1
-* valueCodeableConcept from ASAScore (required)
+* valueCodeableConcept from $ASAScoreValueSetURL (required)
   * ^short = "ASAScoreValue"
   * ^definition = "The value of the ASA score."
   * ^alias = "ASAScoreWaarde"
@@ -62,10 +64,10 @@ Id: ASAScore
 Title: "ASAScore ValueSet."
 Description: "Classification of physical condition according to American Society of Anaesthesiologists."
 * ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
-* ^url = "http://medmij.nl/fhir/ValueSet/ASAScore"
+* ^url = $ASAScoreValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = "urn:oid:2.16.528.1.1023.11.2.3.11.2"
+* ^identifier.value = $ASAScoreValueSetOID
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "MedMij"
