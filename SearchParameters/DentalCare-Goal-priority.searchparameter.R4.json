@@ -33,6 +33,6 @@
     "code": "priority",
     "base": ["Goal"],
     "type": "token",
-    "description": "TSearches on the priority of the goal. such as low-priority or high-priority.",
+    "description": "Searches on the priority of the goal, such as low-priority or high-priority.",
     "expression": "Goal.priority"
 }
