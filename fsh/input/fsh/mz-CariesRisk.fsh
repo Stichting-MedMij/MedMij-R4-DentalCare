@@ -36,7 +36,7 @@ Description: "Caries risk."
   * ^mapping.comment = "Patient"
 * effectiveDateTime
   * ^short = "CariesRiskDateTime"
-  * ^definition = "The date and time at which the caries risk was measured."
+  * ^definition = "The date and time at which the caries risk was determined."
   * ^alias = "CariesrisicoDatumTijd"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
@@ -45,7 +45,7 @@ Description: "Caries risk."
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $CariesRiskValueSetURL (required)
   * ^short = "CariesRiskValue"
-  * ^definition = "The value of the caries risk."
+  * ^definition = "The risk of caries."
   * ^alias = "CariesrisicoWaarde"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"

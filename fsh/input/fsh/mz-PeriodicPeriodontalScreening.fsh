@@ -1,4 +1,4 @@
-//Profile on Observation for PPSScreening to be used in Mondzorg
+//Profile on Observation for PeriodicPeriodontalScreening to be used in Mondzorg
 
 Alias: $SCT = http://snomed.info/sct
 Alias: $PPSCodeSystemOID = urn:oid:2.16.528.1.1023.5.1.2
@@ -6,10 +6,10 @@ Alias: $PPSCodeSystemURL = http://medmij.nl/fhir/CodeSystem/PPSScreening
 Alias: $PPSValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.3
 Alias: $PPSValueSetURL = http://medmij.nl/fhir/ValueSet/PPSScreening
 
-Profile: MzPPSScreening
+Profile: MzPeriodicPeriodontalScreening
 Parent: Observation
-Id: mz-PPSScreening
-Title: "mz PPSScreening"
+Id: mz-PeriodicPeriodontalScreening
+Title: "mz PeriodicPeriodontalScreening"
 Description: "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually."
 * ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^status = #draft
@@ -18,17 +18,17 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "info@medmij.nl"
 * ^contact.telecom.use = #work
-* ^purpose = "This Observation resource represents the PPSScreening building block for implementations following the information standard [Mondzorg](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Observation resource represents the PeriodicPeriodontalScreening building block for implementations following the information standard [Mondzorg](https://simplifier.net/medmij-r4-dental-care)."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
 * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
 * ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
 * . 
-  * ^short = "PPSScreening"
+  * ^short = "PeriodicPeriodontalScreening"
   * ^definition = "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually."
-  * ^alias = "PPSScreening"
+  * ^alias = "PeriodiekeParodontaleScreening"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
-  * ^mapping.comment = "PPSScreening"
+  * ^mapping.comment = "PeriodicPeriodontalScreening"
 * code ^patternCodeableConcept = $SCT#540501000146103
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
@@ -37,33 +37,33 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "Patient"
 * effectiveDateTime
-  * ^short = "PPSScreeningDateTime"
-  * ^definition = "The date and time at which the PPS screening was measured."
-  * ^alias = "PPSScreeningDatumTijd"
+  * ^short = "PPSDateTime"
+  * ^definition = "The date and time at which the PPS was performed."
+  * ^alias = "PPSDatumTijd"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
-  * ^mapping.comment = "PPSScreeningDateTime"
+  * ^mapping.comment = "PPSDateTime"
 * performer only http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference or Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $PPSValueSetURL (required)
-  * ^short = "PPSScreeningValue"
-  * ^definition = "The value of the PPS screening."
-  * ^alias = "PPSScreeningWaarde"
+  * ^short = "PPSScore"
+  * ^definition = "The score of the PPS."
+  * ^alias = "PPSScore"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
-  * ^mapping.comment = "PPSScreeningValue"
+  * ^mapping.comment = "PPSScore"
 * note 0..1
   * text
     * ^short = "Comment"
-    * ^definition = "Comment on the PPS screening, including comments on for example the circumstances and/or disruptive factors that may influence the result."
+    * ^definition = "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
     * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
     * ^mapping.map = "mz-dataelement-zz"
     * ^mapping.comment = "Comment"
 
-CodeSystem: PPSScreening
-Id: PPSScreening
-Title: "PPSScreening CodeSystem."
+CodeSystem: PeriodicPeriodontalScreening
+Id: PeriodicPeriodontalScreening
+Title: "PeriodicPeriodontalScreening CodeSystem."
 Description: "Codes for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
 * ^url = $PPSCodeSystemURL
 * ^identifier.use = #official
@@ -93,9 +93,9 @@ Description: "Codes for the periodontal screening for dental plaque-related dise
   * ^property.code = #status
   * ^property.valueCode = #active
 
-ValueSet: PPSScreening
-Id: PPSScreening
-Title: "PPSScreening ValueSet."
+ValueSet: PeriodicPeriodontalScreening
+Id: PeriodicPeriodontalScreening
+Title: "PeriodicPeriodontalScreening ValueSet."
 Description: "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
 * ^meta.tag = http://medmij.nl/fhir/data-service#DentalCare
 * ^url = $PPSValueSetURL

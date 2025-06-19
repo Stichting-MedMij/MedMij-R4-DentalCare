@@ -36,7 +36,7 @@ Description: "Oral hygiene finding."
   * ^mapping.comment = "Patient"
 * effectiveDateTime
   * ^short = "OralHygieneDateTime"
-  * ^definition = "The date and time at which the oral hygiene was measured."
+  * ^definition = "The date and time at which the oral hygiene was determined."
   * ^alias = "MondhygiëneDatumTijd"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
@@ -45,7 +45,7 @@ Description: "Oral hygiene finding."
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $OralHygieneValueSetURL (required)
   * ^short = "OralHygieneValue"
-  * ^definition = "The value of the oral hygiene."
+  * ^definition = "The oral hygiene."
   * ^alias = "MondhygiëneWaarde"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"

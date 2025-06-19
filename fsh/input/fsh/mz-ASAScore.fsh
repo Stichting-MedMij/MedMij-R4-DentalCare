@@ -36,7 +36,7 @@ Description: "Classification of physical condition according to American Society
   * ^mapping.comment = "Patient"
 * effectiveDateTime
   * ^short = "ASAScoreDateTime"
-  * ^definition = "The date and time at which the ASA score was measured."
+  * ^definition = "The date and time at which the ASA score was determined."
   * ^alias = "ASAScoreDatumTijd"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
