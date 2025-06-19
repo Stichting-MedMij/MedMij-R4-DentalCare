@@ -23,7 +23,6 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
 * . 
   * ^short = "PeriodicPeriodontalScreening"
-  * ^definition = "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually."
   * ^alias = "PeriodiekeParodontaleScreening"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"

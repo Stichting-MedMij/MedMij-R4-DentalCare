@@ -21,7 +21,6 @@ Description: "Dental fitness according to the NATO classification system."
 * ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
 * . 
   * ^short = "DentalFitness"
-  * ^definition = "Dental fitness according to the NATO classification system."
   * ^alias = "DentalFitness"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"

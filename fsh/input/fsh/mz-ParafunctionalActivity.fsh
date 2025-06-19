@@ -20,7 +20,6 @@ Description: "Parafunctional activity."
 * ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
 * . 
   * ^short = "ParafunctionalActivity"
-  * ^definition = "Parafunctional activity."
   * ^alias = "ParafunctioneleActiviteit"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"

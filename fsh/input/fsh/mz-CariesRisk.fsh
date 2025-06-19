@@ -21,7 +21,6 @@ Description: "Caries risk."
 * ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
 * . 
   * ^short = "CariesRisk"
-  * ^definition = "Caries risk."
   * ^alias = "Cariesrisico"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"

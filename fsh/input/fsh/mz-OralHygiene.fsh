@@ -21,7 +21,6 @@ Description: "Oral hygiene finding."
 * ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
 * . 
   * ^short = "OralHygiene"
-  * ^definition = "Oral hygiene finding."
   * ^alias = "Mondhygiëne"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"

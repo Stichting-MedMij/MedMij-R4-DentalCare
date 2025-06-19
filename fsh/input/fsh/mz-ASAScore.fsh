@@ -21,7 +21,6 @@ Description: "Classification of physical condition according to American Society
 * ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
 * . 
   * ^short = "ASAScore"
-  * ^definition = "Classification of physical condition according to American Society of Anaesthesiologists."
   * ^alias = "ASAScore"
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
