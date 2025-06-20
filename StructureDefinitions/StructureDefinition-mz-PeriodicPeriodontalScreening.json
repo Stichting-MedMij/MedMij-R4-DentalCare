@@ -19,7 +19,7 @@
     }
   ],
   "description": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
-  "purpose": "This Observation resource represents the PeriodicPeriodontalScreening building block for implementations following the information standard [Mondzorg](https://simplifier.net/medmij-r4-dental-care).",
+  "purpose": "This Observation resource represents the PeriodicPeriodontalScreening building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care).",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -131,6 +131,11 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
+        "short": "Performer",
+        "definition": "The health professional who performed the PPS.",
+        "alias": [
+          "Uitvoerder"
+        ],
         "type": [
           {
             "code": "Reference",
@@ -146,6 +151,13 @@
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
               "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
             ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-alpha3-2025xxyy",
+            "map": "mz-dataelement-zz",
+            "comment": "Performer"
           }
         ]
       },

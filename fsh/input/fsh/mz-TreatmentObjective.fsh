@@ -1,7 +1,5 @@
 //Profile on Goal for TreatmentObjective to be used in Mondzorg
 
-Alias: $GoalPriority = http://terminology.hl7.org/CodeSystem/goal-priority
-
 Profile: MzTreatmentObjective
 Parent: nl-core-TreatmentObjective
 Id: mz-TreatmentObjective
@@ -13,7 +11,7 @@ Description: "The treatment objective describes the desired result of the treatm
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "info@medmij.nl"
 * ^contact.telecom.use = #work
-* ^purpose = "This Goal resource represents the TreatmentObjective building block for implementations following the information standard [Mondzorg](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Goal resource represents the TreatmentObjective building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
 * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
 * ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"

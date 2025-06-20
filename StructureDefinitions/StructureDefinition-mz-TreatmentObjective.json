@@ -19,7 +19,7 @@
     }
   ],
   "description": "The treatment objective describes the desired result of the treatment/interventions in terms of the patient's diagnosed problem. The objective and target date are entered in addition to the target value. Comparing the healthcare results to the treatment objective provides insight into the effectivity of the treatment/interventions.",
-  "purpose": "This Goal resource represents the TreatmentObjective building block for implementations following the information standard [Mondzorg](https://simplifier.net/medmij-r4-dental-care).",
+  "purpose": "This Goal resource represents the TreatmentObjective building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care).",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
   "mapping": [

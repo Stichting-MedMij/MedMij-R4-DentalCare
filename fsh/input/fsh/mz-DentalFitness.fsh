@@ -15,7 +15,7 @@ Description: "Dental fitness according to the NATO classification system."
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "info@medmij.nl"
 * ^contact.telecom.use = #work
-* ^purpose = "This Observation resource represents the DentalFitness building block for implementations following the information standard [Mondzorg](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Observation resource represents the DentalFitness building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
 * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
 * ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
@@ -40,6 +40,12 @@ Description: "Dental fitness according to the NATO classification system."
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "DentalFitnessDateTime"
 * performer only http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference or Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
+  * ^short = "Performer"
+  * ^definition = "The health professional who determined the dental fitness."
+  * ^alias = "Uitvoerder"
+  * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
+  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $DentalFitnessValueSetURL (required)
   * ^short = "DentalFitnessValue"
