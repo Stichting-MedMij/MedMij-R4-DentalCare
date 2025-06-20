@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "OralHygiene",
+  "id": "OralHygiene",
+  "title": "OralHygiene ValueSet.",
+  "description": "Oral hygiene.",
+  "url": "http://medmij.nl/fhir/ValueSet/OralHygiene",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.11.2.3.11.6"
+    }
+  ],
+  "experimental": false,
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "425405005",
+            "display": "Uitstekend"
+          },
+          {
+            "code": "20572008",
+            "display": "Goed"
+          },
+          {
+            "code": "17621005",
+            "display": "Normaal"
+          },
+          {
+            "code": "556001",
+            "display": "Slecht"
+          },
+          {
+            "code": "1336219002",
+            "display": "Zeer slecht"
+          }
+        ]
+      }
+    ]
+  }
+}

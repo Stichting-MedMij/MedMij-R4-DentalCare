@@ -1,0 +1,77 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "PeriodicPeriodontalScreening",
+  "id": "PeriodicPeriodontalScreening",
+  "title": "PeriodicPeriodontalScreening CodeSystem.",
+  "description": "Codes for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS).",
+  "url": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening",
+  "concept": [
+    {
+      "code": "ppsscore1",
+      "display": "Pockets 0-3 millimeter = in orde",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "ppsscore2",
+      "display": "Pockets 4-5 millimeter = mogelijk in orde",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "ppsscore3",
+      "display": "Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.5.1.2"
+    }
+  ],
+  "experimental": false,
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": false,
+  "count": 3,
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "description": "A code that indicates the status of the concept. Values found in this version of the code system are: 'active'.",
+      "type": "code"
+    }
+  ]
+}

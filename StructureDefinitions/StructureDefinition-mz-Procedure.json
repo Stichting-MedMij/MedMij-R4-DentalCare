@@ -1,0 +1,106 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mz-Procedure",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "url": "http://medmij.nl/fhir/StructureDefinition/mz-Procedure",
+  "name": "MzProcedure",
+  "title": "mz Procedure",
+  "status": "draft",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Therapeutic or diagnostic procedure undergone by the patient in dental care.",
+  "purpose": "This Procedure resource represents the Procedure building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care).",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "mz-dataset-100-alpha3-2025xxyy",
+      "uri": "https://zibs.nl/wiki/Procedure-v5.2(2020EN)",
+      "name": "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-event",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure",
+        "alias": [
+          "Verrichting",
+          "nl-core-Procedure-event",
+          "Verrichting"
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-alpha3-2025xxyy",
+            "map": "mz-dataelement-zz",
+            "comment": "Procedure"
+          }
+        ]
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Procedure.code.coding:nullFlavor",
+        "path": "Procedure.code.coding",
+        "sliceName": "nullFlavor",
+        "comment": "The NullFlavor _OTH_ SHALL be conveyed (next to the NZa dental care code) to be compliant with the terminology used in zib Procedure. Note however, that the VerrichtingTypeCodelijsten should contain the NullFlavor _OTH_ according to the [erratum on zib publication 2020](https://zibs.nl/wiki/ZIB_Publicatie_2020(NL)#Errata_publicatie_2020) based on [ZIB-1536](https://nictiz.atlassian.net/browse/ZIB-1536) and [ZIB-1586](https://nictiz.atlassian.net/browse/ZIB-1586), but that this erratum has not yet been implemented in the nl-core profile (see <https://github.com/Nictiz/Nictiz-R4-zib2020/issues/411>). This means that this profile is currently not a proper derivation of the nl-core-Procedure-event profile.",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "OTH",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:nzaDentalCare",
+        "path": "Procedure.code.coding",
+        "sliceName": "nzaDentalCare",
+        "definition": "The name of the procedure based on the [Prestatie- en tariefbeschikking tandheelkundige zorg](https://puc.overheid.nl/nza/doc/PUC_764375_22/1/) authored by the Nederlandse Zorgautoriteit (NZa).",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://medmij.nl/fhir/ValueSet/ProcedureTypeNZaDentalCare"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-alpha3-2025xxyy",
+            "map": "mz-dataelement-zz",
+            "comment": "ProcedureType"
+          }
+        ]
+      }
+    ]
+  }
+}
