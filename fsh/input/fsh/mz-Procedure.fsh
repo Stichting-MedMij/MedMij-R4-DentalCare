@@ -9,6 +9,8 @@ Parent: http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-event
 Id: mz-Procedure
 Title: "mz Procedure"
 Description: "Therapeutic or diagnostic procedure undergone by the patient in dental care."
+* ^text.status = #empty
+* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^status = #draft
 * ^publisher = "MedMij"
 * ^contact.name = "MedMij"
@@ -33,7 +35,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     nullFlavor 1..1 and
     nzaDentalCare 1..1
 * code.coding[nullFlavor]
-  * ^comment = "The NullFlavor _OTH_ SHALL be conveyed (next to the NZa dental care code) to be compliant with the terminology used in zib Procedure. Note however, that the VerrichtingTypeCodelijsten should contain the NullFlavor _OTH_ according to the [erratum on zib publication 2020](https://zibs.nl/wiki/ZIB_Publicatie_2020(NL)#Errata_publicatie_2020) based on [ZIB-1536](https://nictiz.atlassian.net/browse/ZIB-1536) and [ZIB-1586](https://nictiz.atlassian.net/browse/ZIB-1586), but that this erratum has not yet been implemented in the nl-core profile (see https://github.com/Nictiz/Nictiz-R4-zib2020/issues/411). This means that this profile is currently not a proper derivation of the nl-core-Procedure-event profile."
+  * ^comment = "The NullFlavor _OTH_ SHALL be conveyed (next to the NZa dental care code) to be compliant with the terminology used in zib Procedure. Note however, that the VerrichtingTypeCodelijsten should contain the NullFlavor _OTH_ according to the [erratum on zib publication 2020](https://zibs.nl/wiki/ZIB_Publicatie_2020(NL)#Errata_publicatie_2020) based on [ZIB-1536](https://nictiz.atlassian.net/browse/ZIB-1536) and [ZIB-1586](https://nictiz.atlassian.net/browse/ZIB-1586), but that this erratum has not yet been implemented in the nl-core profile (see <https://github.com/Nictiz/Nictiz-R4-zib2020/issues/411>). This means that this profile is currently not a proper derivation of the nl-core-Procedure-event profile."
   * ^patternCoding = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#OTH
 * code.coding[nzaDentalCare] from $ProcedureTypeNZaDentalCareValueSetURL (required)
   * ^definition = "The name of the procedure based on the [Prestatie- en tariefbeschikking tandheelkundige zorg](https://puc.overheid.nl/nza/doc/PUC_764375_22/1/) authored by the Nederlandse Zorgautoriteit (NZa)."
@@ -45,6 +47,8 @@ ValueSet: ProcedureTypeNZaDentalCare
 Id: ProcedureTypeNZaDentalCare
 Title: "ProcedureTypeNZaDentalCare ValueSet."
 Description: "ValueSet for the procedure type in dental care authored by the Nederlandse Zorgautoriteit (NZa)."
+* ^text.status = #empty
+* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^url = $ProcedureTypeNZaDentalCareValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"

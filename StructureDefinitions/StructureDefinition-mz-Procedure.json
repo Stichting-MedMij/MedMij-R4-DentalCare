@@ -1,6 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mz-Procedure",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
   "url": "http://medmij.nl/fhir/StructureDefinition/mz-Procedure",
   "name": "MzProcedure",
   "title": "mz Procedure",
@@ -70,7 +74,7 @@
         "id": "Procedure.code.coding:nullFlavor",
         "path": "Procedure.code.coding",
         "sliceName": "nullFlavor",
-        "comment": "The NullFlavor _OTH_ SHALL be conveyed (next to the NZa dental care code) to be compliant with the terminology used in zib Procedure. Note however, that the VerrichtingTypeCodelijsten should contain the NullFlavor _OTH_ according to the [erratum on zib publication 2020](https://zibs.nl/wiki/ZIB_Publicatie_2020(NL)#Errata_publicatie_2020) based on [ZIB-1536](https://nictiz.atlassian.net/browse/ZIB-1536) and [ZIB-1586](https://nictiz.atlassian.net/browse/ZIB-1586), but that this erratum has not yet been implemented in the nl-core profile (see https://github.com/Nictiz/Nictiz-R4-zib2020/issues/411). This means that this profile is currently not a proper derivation of the nl-core-Procedure-event profile.",
+        "comment": "The NullFlavor _OTH_ SHALL be conveyed (next to the NZa dental care code) to be compliant with the terminology used in zib Procedure. Note however, that the VerrichtingTypeCodelijsten should contain the NullFlavor _OTH_ according to the [erratum on zib publication 2020](https://zibs.nl/wiki/ZIB_Publicatie_2020(NL)#Errata_publicatie_2020) based on [ZIB-1536](https://nictiz.atlassian.net/browse/ZIB-1536) and [ZIB-1586](https://nictiz.atlassian.net/browse/ZIB-1586), but that this erratum has not yet been implemented in the nl-core profile (see <https://github.com/Nictiz/Nictiz-R4-zib2020/issues/411>). This means that this profile is currently not a proper derivation of the nl-core-Procedure-event profile.",
         "min": 1,
         "max": "1",
         "patternCoding": {

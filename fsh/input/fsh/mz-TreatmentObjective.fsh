@@ -5,6 +5,8 @@ Parent: nl-core-TreatmentObjective
 Id: mz-TreatmentObjective
 Title: "mz TreatmentObjective"
 Description: "The treatment objective describes the desired result of the treatment/interventions in terms of the patient's diagnosed problem. The objective and target date are entered in addition to the target value. Comparing the healthcare results to the treatment objective provides insight into the effectivity of the treatment/interventions."
+* ^text.status = #empty
+* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^status = #draft
 * ^publisher = "MedMij"
 * ^contact.name = "MedMij"
