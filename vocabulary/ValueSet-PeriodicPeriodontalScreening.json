@@ -5,7 +5,7 @@
   "id": "PeriodicPeriodontalScreening",
   "title": "PeriodicPeriodontalScreening ValueSet.",
   "description": "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS).",
-  "url": "http://medmij.nl/fhir/ValueSet/PPSScreening",
+  "url": "http://medmij.nl/fhir/ValueSet/PeriodicPeriodontalScreening",
   "identifier": [
     {
       "use": "official",
@@ -30,7 +30,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://medmij.nl/fhir/CodeSystem/PPSScreening"
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening"
       }
     ]
   }

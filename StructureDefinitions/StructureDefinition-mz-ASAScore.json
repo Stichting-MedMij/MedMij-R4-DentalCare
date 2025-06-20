@@ -40,7 +40,6 @@
         "id": "Observation",
         "path": "Observation",
         "short": "ASAScore",
-        "definition": "Classification of physical condition according to American Society of Anaesthesiologists.",
         "alias": [
           "ASAScore",
           "Measurement",

@@ -40,7 +40,6 @@
         "id": "Observation",
         "path": "Observation",
         "short": "OralHygiene",
-        "definition": "Oral hygiene finding.",
         "alias": [
           "Mondhygiëne",
           "Measurement",

@@ -1,10 +1,10 @@
 //Profile on Observation for PeriodicPeriodontalScreening to be used in Mondzorg
 
 Alias: $SCT = http://snomed.info/sct
-Alias: $PPSCodeSystemOID = urn:oid:2.16.528.1.1023.5.1.2
-Alias: $PPSCodeSystemURL = http://medmij.nl/fhir/CodeSystem/PPSScreening
-Alias: $PPSValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.3
-Alias: $PPSValueSetURL = http://medmij.nl/fhir/ValueSet/PPSScreening
+Alias: $PeriodicPeriodontalScreeningCodeSystemOID = urn:oid:2.16.528.1.1023.5.1.2
+Alias: $PeriodicPeriodontalScreeningCodeSystemURL = http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening
+Alias: $PeriodicPeriodontalScreeningValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.3
+Alias: $PeriodicPeriodontalScreeningValueSetURL = http://medmij.nl/fhir/ValueSet/PeriodicPeriodontalScreening
 
 Profile: MzPeriodicPeriodontalScreening
 Parent: Observation
@@ -43,7 +43,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^mapping.comment = "PPSDateTime"
 * performer only http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference or Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
 * valueCodeableConcept 1..1
-* valueCodeableConcept from $PPSValueSetURL (required)
+* valueCodeableConcept from $PeriodicPeriodontalScreeningValueSetURL (required)
   * ^short = "PPSScore"
   * ^definition = "The score of the PPS."
   * ^alias = "PPSScore"
@@ -63,10 +63,10 @@ CodeSystem: PeriodicPeriodontalScreening
 Id: PeriodicPeriodontalScreening
 Title: "PeriodicPeriodontalScreening CodeSystem."
 Description: "Codes for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
-* ^url = $PPSCodeSystemURL
+* ^url = $PeriodicPeriodontalScreeningCodeSystemURL
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = $PPSCodeSystemOID
+* ^identifier.value = $PeriodicPeriodontalScreeningCodeSystemOID
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "MedMij"
@@ -95,10 +95,10 @@ ValueSet: PeriodicPeriodontalScreening
 Id: PeriodicPeriodontalScreening
 Title: "PeriodicPeriodontalScreening ValueSet."
 Description: "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
-* ^url = $PPSValueSetURL
+* ^url = $PeriodicPeriodontalScreeningValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"
-* ^identifier.value = $PPSValueSetOID
+* ^identifier.value = $PeriodicPeriodontalScreeningValueSetOID
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "MedMij"
@@ -106,4 +106,4 @@ Description: "ValueSet for the periodontal screening for dental plaque-related d
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "info@medmij.nl"
 * ^contact.telecom.use = #work
-* include codes from system $PPSCodeSystemURL
+* include codes from system $PeriodicPeriodontalScreeningCodeSystemURL

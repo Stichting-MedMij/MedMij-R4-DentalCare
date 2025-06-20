@@ -40,7 +40,6 @@
         "id": "Observation",
         "path": "Observation",
         "short": "CariesRisk",
-        "definition": "Caries risk.",
         "alias": [
           "Cariesrisico",
           "Measurement",

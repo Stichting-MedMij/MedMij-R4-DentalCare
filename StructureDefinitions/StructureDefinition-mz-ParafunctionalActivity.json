@@ -48,7 +48,6 @@
         "id": "Observation",
         "path": "Observation",
         "short": "ParafunctionalActivity",
-        "definition": "Parafunctional activity.",
         "alias": [
           "ParafunctioneleActiviteit",
           "Measurement",

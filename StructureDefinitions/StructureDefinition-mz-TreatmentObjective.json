@@ -39,24 +39,18 @@
       {
         "id": "Goal",
         "path": "Goal",
-        "short": "ShortTermTreatmentObjective / LongTermTreatmentObjective",
+        "short": "TreatmentObjective",
         "alias": [
           "nl-core-TreatmentObjective",
           "GewensteGezondheidstoestand",
           "FunctioneleOfMentaleStatus",
-          "KorteTermijnBehandeldoel",
-          "LangeTermijnBehandeldoel"
+          "Behandeldoel"
         ],
         "mapping": [
           {
             "identity": "mz-dataset-100-alpha3-2025xxyy",
             "map": "mz-dataelement-zz",
-            "comment": "ShortTermTreatmentObjective"
-          },
-          {
-            "identity": "mz-dataset-100-alpha3-2025xxyy",
-            "map": "mz-dataelement-zz",
-            "comment": "LongTermTreatmentObjective"
+            "comment": "TreatmentObjective"
           }
         ]
       },
@@ -69,17 +63,11 @@
         "alias": [
           "Prioriteit"
         ],
-        "min": 1,
         "binding": {
-          "strength": "required",
-          "valueSet": "http://medmij.nl/fhir/ValueSet/TreatmentObjectivePriority"
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/goal-priority"
         },
         "mapping": [
-          {
-            "identity": "mz-dataset-100-alpha3-2025xxyy",
-            "map": "mz-dataelement-zz",
-            "comment": "Priority"
-          },
           {
             "identity": "mz-dataset-100-alpha3-2025xxyy",
             "map": "mz-dataelement-zz",

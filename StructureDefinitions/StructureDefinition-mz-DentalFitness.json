@@ -40,7 +40,6 @@
         "id": "Observation",
         "path": "Observation",
         "short": "DentalFitness",
-        "definition": "Dental fitness according to the NATO classification system.",
         "alias": [
           "DentalFitness",
           "Measurement",
