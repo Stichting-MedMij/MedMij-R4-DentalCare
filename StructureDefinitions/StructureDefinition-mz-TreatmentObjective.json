@@ -36,20 +36,13 @@
   "kind": "resource",
   "abstract": false,
   "type": "Goal",
-  "baseDefinition": "http://medmij.nl/fhir/StructureDefinition/nl-core-TreatmentObjective",
+  "baseDefinition": "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Goal",
         "path": "Goal",
-        "short": "TreatmentObjective",
-        "alias": [
-          "nl-core-TreatmentObjective",
-          "GewensteGezondheidstoestand",
-          "FunctioneleOfMentaleStatus",
-          "Behandeldoel"
-        ],
         "mapping": [
           {
             "identity": "mz-dataset-100-alpha3-2025xxyy",

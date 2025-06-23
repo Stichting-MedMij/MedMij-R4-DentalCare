@@ -41,7 +41,7 @@ Description: "Classification of physical condition according to American Society
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "ASAScoreDateTime"
-* performer only http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference or Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
+* performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the ASA score."
   * ^alias = "Uitvoerder"

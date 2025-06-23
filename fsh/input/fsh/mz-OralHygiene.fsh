@@ -41,7 +41,7 @@ Description: "Oral hygiene finding."
   * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "OralHygieneDateTime"
-* performer only http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference or Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
+* performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the oral hygiene."
   * ^alias = "Uitvoerder"

@@ -143,9 +143,6 @@
         "type": [
           {
             "code": "Reference",
-            "profile": [
-              "http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference"
-            ],
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
