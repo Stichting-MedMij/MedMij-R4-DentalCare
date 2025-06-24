@@ -80,7 +80,7 @@ Description: "Caries risk."
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "info@medmij.nl"
 * ^contact.telecom.use = #work
-* $SCT#62482003 "Laag"
-* $SCT#1250004 "Verlaagd"
-* $SCT#35105006 "Verhoogd"
-* $SCT#75540009 "Hoog"
+* $SCT#62482003 "laag"
+* $SCT#1250004 "verlaagd"
+* $SCT#35105006 "verhoogd"
+* $SCT#75540009 "hoog"

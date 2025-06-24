@@ -68,7 +68,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[3].map = "mz-dataelement-zz"
   * ^mapping[3].comment = "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
 * code 1..1
-* code from $ProcedureTypeDentalCareValueSetURL (required)
+* code from $ProcedureTypeDentalCareValueSetURL (extensible)
   * ^short = "ProcedureType"
   * ^definition = "The name of the procedure based on the [Prestatie- en tariefbeschikking tandheelkundige zorg](https://puc.overheid.nl/nza/doc/PUC_764375_22/1/) and [Prestatie- en tariefbeschikking orthodontische zorg](https://puc.overheid.nl/nza/doc/PUC_764432_22/1/), both authored by the Nederlandse Zorgautoriteit (NZa)."
   * ^comment = "Since the _required_ binding of VerrichtingTypeCodelijsten in the nl-core profile does not contain the procedure types relevant for dental and orthodontic care, this profile is not derived from the nl-core profile."

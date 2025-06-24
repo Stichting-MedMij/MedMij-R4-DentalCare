@@ -34,23 +34,23 @@
         "concept": [
           {
             "code": "425405005",
-            "display": "Uitstekend"
+            "display": "uitstekend"
           },
           {
             "code": "20572008",
-            "display": "Goed"
+            "display": "goed"
           },
           {
             "code": "17621005",
-            "display": "Normaal"
+            "display": "normaal"
           },
           {
             "code": "556001",
-            "display": "Slecht"
+            "display": "slecht"
           },
           {
             "code": "1336219002",
-            "display": "Zeer slecht"
+            "display": "zeer slecht"
           }
         ]
       }

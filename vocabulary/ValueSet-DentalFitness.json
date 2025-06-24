@@ -34,7 +34,7 @@
         "concept": [
           {
             "code": "440351000146101",
-            "display": "nooit gezien door een defensie tandarts",
+            "display": "klasse 0",
             "designation": [
               {
                 "language": "nl-NL",
@@ -43,7 +43,7 @@
                   "system": "http://snomed.info/sct",
                   "display": "Synonym"
                 },
-                "value": "nooit gezien door een defensie tandarts"
+                "value": "nooit gezien door een defensietandarts"
               },
               {
                 "language": "en-US",
@@ -58,7 +58,7 @@
           },
           {
             "code": "258392002",
-            "display": "vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen",
+            "display": "klasse 1",
             "designation": [
               {
                 "language": "nl-NL",
@@ -82,7 +82,7 @@
           },
           {
             "code": "258393007",
-            "display": "kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden",
+            "display": "klasse 2",
             "designation": [
               {
                 "language": "nl-NL",
@@ -106,7 +106,7 @@
           },
           {
             "code": "258394001",
-            "display": "huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken",
+            "display": "klasse 3",
             "designation": [
               {
                 "language": "nl-NL",
@@ -130,7 +130,7 @@
           },
           {
             "code": "264750004",
-            "display": "vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig",
+            "display": "klasse 4",
             "designation": [
               {
                 "language": "nl-NL",

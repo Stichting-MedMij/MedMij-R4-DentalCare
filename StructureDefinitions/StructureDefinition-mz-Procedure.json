@@ -142,7 +142,7 @@
         ],
         "min": 1,
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://medmij.nl/fhir/ValueSet/ProcedureTypeDentalCare"
         },
         "mapping": [

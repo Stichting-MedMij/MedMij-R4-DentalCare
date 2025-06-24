@@ -80,8 +80,8 @@ Description: "Oral hygiene."
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "info@medmij.nl"
 * ^contact.telecom.use = #work
-* $SCT#425405005 "Uitstekend"
-* $SCT#20572008 "Goed"
-* $SCT#17621005 "Normaal"
-* $SCT#556001 "Slecht"
-* $SCT#1336219002 "Zeer slecht"
+* $SCT#425405005 "uitstekend"
+* $SCT#20572008 "goed"
+* $SCT#17621005 "normaal"
+* $SCT#556001 "slecht"
+* $SCT#1336219002 "zeer slecht"

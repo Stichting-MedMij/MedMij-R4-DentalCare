@@ -34,19 +34,19 @@
         "concept": [
           {
             "code": "62482003",
-            "display": "Laag"
+            "display": "laag"
           },
           {
             "code": "1250004",
-            "display": "Verlaagd"
+            "display": "verlaagd"
           },
           {
             "code": "35105006",
-            "display": "Verhoogd"
+            "display": "verhoogd"
           },
           {
             "code": "75540009",
-            "display": "Hoog"
+            "display": "hoog"
           }
         ]
       }
