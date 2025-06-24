@@ -49,7 +49,7 @@ Description: "Caries risk."
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
-* valueCodeableConcept from $CariesRiskValueSetURL (required)
+* valueCodeableConcept from $CariesRiskValueSetURL (extensible)
   * ^short = "CariesRiskValue"
   * ^definition = "The risk of caries."
   * ^alias = "CariesrisicoWaarde"

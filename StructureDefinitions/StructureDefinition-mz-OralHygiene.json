@@ -194,7 +194,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://medmij.nl/fhir/ValueSet/OralHygiene"
         },
         "mapping": [

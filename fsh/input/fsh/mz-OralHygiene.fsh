@@ -49,7 +49,7 @@ Description: "Oral hygiene finding."
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
-* valueCodeableConcept from $OralHygieneValueSetURL (required)
+* valueCodeableConcept from $OralHygieneValueSetURL (extensible)
   * ^short = "OralHygieneValue"
   * ^definition = "The oral hygiene."
   * ^alias = "MondhygiëneWaarde"
