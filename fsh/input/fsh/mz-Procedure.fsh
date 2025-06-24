@@ -33,16 +33,16 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * ^mapping[2].identity = "zib-medicaldevice-v3.3.1-2020EN"
 * ^mapping[2].uri = "https://zibs.nl/wiki/MedicalDevice-v3.3.1(2020EN)"
 * ^mapping[2].name = "zib MedicalDevice-v3.3.1(2020EN)"
-* ^mapping[3].identity = "mz-dataset-100-alpha3-20250507"
+* ^mapping[3].identity = "mz-dataset-100-beta1-2025xxyy"
 * ^mapping[3].uri = "" // This line has been added to overwrite the uri of HL7 V2
-* ^mapping[3].name = "Dataset Mondzorg 1.0.0-alpha.3 20250507"
+* ^mapping[3].name = "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
 * .
   * ^short = "Procedure"
   * ^alias = "Verrichting"
   * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
   * ^mapping[0].map = "NL-CM:14.1.1"
   * ^mapping[0].comment = "Procedure"
-  * ^mapping[1].identity = "mz-dataset-100-alpha3-20250507"
+  * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
   * ^mapping[1].map = "mz-dataelement-zz"
   * ^mapping[1].comment = "Procedure"
 * extension contains http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod named procedureMethod 0..*
@@ -61,10 +61,10 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[1].identity = "zib-procedure-v5.2-2020EN"
   * ^mapping[1].map = "NL-CM:14.1.3"
   * ^mapping[1].comment = "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
-  * ^mapping[2].identity = "mz-dataset-100-alpha3-20250507"
+  * ^mapping[2].identity = "mz-dataset-100-beta1-2025xxyy"
   * ^mapping[2].map = "mz-dataelement-zz"
   * ^mapping[2].comment = "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
-  * ^mapping[3].identity = "mz-dataset-100-alpha3-20250507"
+  * ^mapping[3].identity = "mz-dataset-100-beta1-2025xxyy"
   * ^mapping[3].map = "mz-dataelement-zz"
   * ^mapping[3].comment = "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
 * code 1..1
@@ -73,13 +73,13 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^definition = "The name of the procedure based on the [Prestatie- en tariefbeschikking tandheelkundige zorg](https://puc.overheid.nl/nza/doc/PUC_764375_22/1/) and [Prestatie- en tariefbeschikking orthodontische zorg](https://puc.overheid.nl/nza/doc/PUC_764432_22/1/), both authored by the Nederlandse Zorgautoriteit (NZa)."
   * ^comment = "Since the _required_ binding of VerrichtingTypeCodelijsten in the nl-core profile does not contain the procedure types relevant for dental and orthodontic care, this profile is not derived from the nl-core profile."
   * ^alias = "VerrichtingType"
-  * ^mapping.identity = "mz-dataset-100-alpha3-20250507"
+  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "ProcedureType"
 * subject only Reference(Patient or Group or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"
-  * ^mapping.identity = "mz-dataset-100-alpha3-20250507"
+  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
   * ^mapping.map = "mz-dataelement-1"
   * ^mapping.comment = "Patient"
 * performedPeriod
@@ -91,7 +91,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
     * ^mapping[0].map = "NL-CM:14.1.2"
     * ^mapping[0].comment = "ProcedureStartDate"
-    * ^mapping[1].identity = "mz-dataset-100-alpha3-20250507"
+    * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
     * ^mapping[1].map = "mz-dataelement-zz"
     * ^mapping[1].comment = "ProcedureStartDate"
   * end
@@ -102,7 +102,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
     * ^mapping[0].map = "NL-CM:14.1.3"
     * ^mapping[0].comment = "ProcedureEndDate"
-    * ^mapping[1].identity = "mz-dataset-100-alpha3-20250507"
+    * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
     * ^mapping[1].map = "mz-dataelement-zz"
     * ^mapping[1].comment = "ProcedureEndDate"
 * performedDateTime
@@ -113,7 +113,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
     * ^mapping[0].map = "NL-CM:14.1.2"
     * ^mapping[0].comment = "ProcedureStartDate"
-    * ^mapping[1].identity = "mz-dataset-100-alpha3-20250507"
+    * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
     * ^mapping[1].map = "mz-dataelement-zz"
     * ^mapping[1].comment = "ProcedureStartDate"
 * performer.actor only Reference(Practitioner or PractitionerRole or Organization or Patient or RelatedPerson or Device or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
@@ -128,7 +128,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
   * ^mapping[0].map = "NL-CM:14.1.6"
   * ^mapping[0].comment = "Performer"
-  * ^mapping[1].identity = "mz-dataset-100-alpha3-20250507"
+  * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
   * ^mapping[1].map = "mz-dataelement-zz"
   * ^mapping[1].comment = "Performer"
 * location only Reference(Location or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider)
@@ -142,7 +142,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[1].identity = "zib-medicaldevice-v3.3.1-2020EN"
   * ^mapping[1].map = "NL-CM:10.1.8"
   * ^mapping[1].comment = "Location (For specific situations only. See the comment on this element for more information.)"
-  * ^mapping[2].identity = "mz-dataset-100-alpha3-20250507"
+  * ^mapping[2].identity = "mz-dataset-100-beta1-2025xxyy"
   * ^mapping[2].map = "mz-dataelement-zz"
   * ^mapping[2].comment = "Location"
 * reasonReference only Reference(Condition or Observation or Procedure or DiagnosticReport or DocumentReference or http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem)
@@ -152,7 +152,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
   * ^mapping[0].map = "NL-CM:14.1.9"
   * ^mapping[0].comment = "Indication"
-  * ^mapping[1].identity = "mz-dataset-100-alpha3-20250507"
+  * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
   * ^mapping[1].map = "mz-dataelement-zz"
   * ^mapping[1].comment = "Indication"
 * bodySite 0..1
@@ -164,7 +164,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
   * ^mapping[0].map = "NL-CM:14.1.13"
   * ^mapping[0].comment = "ProcedureAnatomicalLocation"
-  * ^mapping[1].identity = "mz-dataset-100-alpha3-20250507"
+  * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
   * ^mapping[1].map = "mz-dataelement-zz"
   * ^mapping[1].comment = "ProcedureAnatomicalLocation"
 * report

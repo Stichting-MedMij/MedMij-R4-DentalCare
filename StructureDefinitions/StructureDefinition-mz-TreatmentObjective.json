@@ -28,9 +28,9 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-alpha3-20250507",
+      "identity": "mz-dataset-100-beta1-2025xxyy",
       "uri": "https://zibs.nl/wiki/TreatmentObjective-v3.2(2020EN)",
-      "name": "Dataset Mondzorg 1.0.0-alpha.3 20250507"
+      "name": "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
     }
   ],
   "kind": "resource",
@@ -45,7 +45,7 @@
         "path": "Goal",
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "TreatmentObjective"
           }
@@ -66,7 +66,7 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "Priority"
           }
@@ -81,7 +81,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-1",
             "comment": "Patient"
           }

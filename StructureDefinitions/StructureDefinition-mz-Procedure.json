@@ -43,9 +43,9 @@
       "name": "zib MedicalDevice-v3.3.1(2020EN)"
     },
     {
-      "identity": "mz-dataset-100-alpha3-20250507",
+      "identity": "mz-dataset-100-beta1-2025xxyy",
       "uri": "",
-      "name": "Dataset Mondzorg 1.0.0-alpha.3 20250507"
+      "name": "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
     }
   ],
   "kind": "resource",
@@ -69,7 +69,7 @@
             "comment": "Procedure"
           },
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "Procedure"
           }
@@ -120,12 +120,12 @@
             "comment": "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
           },
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
           },
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
           }
@@ -147,7 +147,7 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "ProcedureType"
           }
@@ -172,7 +172,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-1",
             "comment": "Patient"
           }
@@ -220,7 +220,7 @@
             "comment": "ProcedureStartDate"
           },
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "ProcedureStartDate"
           }
@@ -242,7 +242,7 @@
             "comment": "ProcedureEndDate"
           },
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "ProcedureEndDate"
           }
@@ -272,7 +272,7 @@
             "comment": "ProcedureStartDate"
           },
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "ProcedureStartDate"
           }
@@ -308,7 +308,7 @@
             "comment": "Performer"
           },
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "Performer"
           }
@@ -344,7 +344,7 @@
             "comment": "Location (For specific situations only. See the comment on this element for more information.)"
           },
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "Location"
           }
@@ -378,7 +378,7 @@
             "comment": "Indication"
           },
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "Indication"
           }
@@ -412,7 +412,7 @@
             "comment": "ProcedureAnatomicalLocation"
           },
           {
-            "identity": "mz-dataset-100-alpha3-20250507",
+            "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-zz",
             "comment": "ProcedureAnatomicalLocation"
           }
