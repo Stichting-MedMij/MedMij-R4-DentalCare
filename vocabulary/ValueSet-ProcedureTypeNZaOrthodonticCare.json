@@ -1,0 +1,307 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ProcedureTypeNZaOrthodonticCare",
+  "id": "ProcedureTypeNZaOrthodonticCare",
+  "title": "ProcedureTypeNZaOrthodonticCare ValueSet.",
+  "description": "ValueSet for the procedure type in orthodontic care authored by the Nederlandse Zorgautoriteit (NZa).",
+  "url": "http://medmij.nl/fhir/ValueSet/ProcedureTypeNZaOrthodonticCare",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.11.2.3.11.8"
+    }
+  ],
+  "experimental": false,
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://puc.overheid.nl/nza/doc/PUC_764432_22/1",
+        "concept": [
+          {
+            "code": "F121",
+            "display": "Eerste consult"
+          },
+          {
+            "code": "F122",
+            "display": "Herhaalconsult"
+          },
+          {
+            "code": "F123",
+            "display": "Controlebezoek"
+          },
+          {
+            "code": "F124",
+            "display": "Second opinion"
+          },
+          {
+            "code": "F125",
+            "display": "Maken gebitsmodellen"
+          },
+          {
+            "code": "F126",
+            "display": "Beoordelen gebitsmodellen inclusief bespreken behandelplan"
+          },
+          {
+            "code": "F127",
+            "display": "Multidisciplinair consult, per 5 minuten"
+          },
+          {
+            "code": "F128",
+            "display": "Prenataal consult, per 5 minuten"
+          },
+          {
+            "code": "F129",
+            "display": "Orthodontie in de eerste twee levensjaren "
+          },
+          {
+            "code": "F130",
+            "display": "Uitgebreid onderzoek t.b.v. opstellen en vastleggen van complex behandelplan door orthodontische zorgaanbieder"
+          },
+          {
+            "code": "F131",
+            "display": "Vervaardigen van een diagnostische set-up"
+          },
+          {
+            "code": "F132",
+            "display": "Maken van extra gebitsmodellen t.b.v. behandelingsevaluatie"
+          },
+          {
+            "code": "F133",
+            "display": "Beoordelen van extra gebitsmodellen t.b.v. behandelingsevaluatie"
+          },
+          {
+            "code": "F151",
+            "display": "Intra-orale röntgenfoto (3x4 cm)"
+          },
+          {
+            "code": "F152",
+            "display": "Occlusale opbeet röntgenfoto"
+          },
+          {
+            "code": "F153",
+            "display": "Extra-orale röntgenfoto (13x18 cm)"
+          },
+          {
+            "code": "F154",
+            "display": "Röntgenonderzoek d.m.v. hand/polsfoto's"
+          },
+          {
+            "code": "F155",
+            "display": "Vervaardiging orthopantomogram"
+          },
+          {
+            "code": "F156",
+            "display": "Beoordeling orthopantomogram"
+          },
+          {
+            "code": "F157",
+            "display": "Vervaardiging laterale schedelröntgenfoto"
+          },
+          {
+            "code": "F158",
+            "display": "Beoordeling laterale schedelröntgenfoto"
+          },
+          {
+            "code": "F159",
+            "display": "Vervaardiging voor-achterwaartse schedelröntgenfoto"
+          },
+          {
+            "code": "F160",
+            "display": "Beoordeling voor-achterwaartse schedelröntgenfoto"
+          },
+          {
+            "code": "F161",
+            "display": "Meerdimensionale kaakfoto"
+          },
+          {
+            "code": "F162",
+            "display": "Beoordeling meerdimensionale kaakfoto"
+          },
+          {
+            "code": "F411",
+            "display": "Plaatsen beugel categorie 1"
+          },
+          {
+            "code": "F421",
+            "display": "Plaatsen beugel categorie 2"
+          },
+          {
+            "code": "F431",
+            "display": "Plaatsen beugel categorie 3"
+          },
+          {
+            "code": "F441",
+            "display": "Plaatsen beugel categorie 4"
+          },
+          {
+            "code": "F451",
+            "display": "Plaatsen beugel categorie 5"
+          },
+          {
+            "code": "F461",
+            "display": "Plaatsen beugel categorie 6"
+          },
+          {
+            "code": "F471",
+            "display": "Plaatsen beugel categorie 7"
+          },
+          {
+            "code": "F481",
+            "display": "Plaatsen beugel categorie 8"
+          },
+          {
+            "code": "F491",
+            "display": "Plaatsen beugel categorie 9"
+          },
+          {
+            "code": "F492",
+            "display": "Verwijderen beugel categorie 5 t/m 9 per kaak"
+          },
+          {
+            "code": "F493",
+            "display": "Verwijderen en opnieuw plaatsen van attachments gedurende de beugelbehandeling per kaak"
+          },
+          {
+            "code": "F511",
+            "display": "Beugelconsult per kalendermaand categorie 1"
+          },
+          {
+            "code": "F512",
+            "display": "Beugelconsult per kalendermaand categorie 2"
+          },
+          {
+            "code": "F513",
+            "display": "Beugelconsult per kalendermaand categorie 3"
+          },
+          {
+            "code": "F514",
+            "display": "Beugelconsult per kalendermaand categorie 4"
+          },
+          {
+            "code": "F515",
+            "display": "Beugelconsult per kalendermaand categorie 5"
+          },
+          {
+            "code": "F516",
+            "display": "Beugelconsult per kalendermaand categorie 6"
+          },
+          {
+            "code": "F517",
+            "display": "Beugelconsult per kalendermaand categorie 7"
+          },
+          {
+            "code": "F518",
+            "display": "Beugelconsult per kalendermaand categorie 8"
+          },
+          {
+            "code": "F519",
+            "display": "Beugelconsult per kalendermaand categorie 9"
+          },
+          {
+            "code": "F520",
+            "display": "Beugelconsult op afstand"
+          },
+          {
+            "code": "F521",
+            "display": "Beugelconsult vanaf 25e behandelmaand (beugelcategorie 1 t/m 9)"
+          },
+          {
+            "code": "F531",
+            "display": "Nacontrole beugel categorie 1 t/m 4"
+          },
+          {
+            "code": "F532",
+            "display": "Nacontrole beugel categorie 5,7,8"
+          },
+          {
+            "code": "F533",
+            "display": "Nacontrole beugel categorie 6,9"
+          },
+          {
+            "code": "F611",
+            "display": "Documenteren en bespreken gegevens elektronische chip in uitneembare apparatuur "
+          },
+          {
+            "code": "F612",
+            "display": "Plaatsen intermaxillaire correctieveren"
+          },
+          {
+            "code": "F716",
+            "display": "Mondbeschermer tijdens behandeling met apparatuur"
+          },
+          {
+            "code": "F721",
+            "display": "Trekken tand of kies"
+          },
+          {
+            "code": "F722",
+            "display": "Trekken volgende tand of kies, in dezelfde zitting en hetzelfde kwadrant"
+          },
+          {
+            "code": "F723",
+            "display": "Plaatsen micro-implantaat (voor beugel)"
+          },
+          {
+            "code": "F724",
+            "display": "Preventieve voorlichting en/of instructie"
+          },
+          {
+            "code": "F810",
+            "display": "Reparatie of vervanging beugel categorie 1 tot en met 4 vanwege slijtage"
+          },
+          {
+            "code": "F811",
+            "display": "Reparatie of vervanging van beugel na verlies of onzorgvuldig gebruik"
+          },
+          {
+            "code": "F812",
+            "display": "Herstel en/of opnieuw plaatsen van retentie-apparatuur, per kaak"
+          },
+          {
+            "code": "F813",
+            "display": "Plaatsen (extra) retentie-apparatuur"
+          },
+          {
+            "code": "F814",
+            "display": "Plaatsen retentie-apparatuur bij orthodontisch niet behandelde of door andere zorgaanbieder orthodontisch behandelde patiënt, per kaak"
+          },
+          {
+            "code": "F815",
+            "display": "Verwijderen spalk, per element"
+          },
+          {
+            "code": "F911",
+            "display": "Inkopen op uitkomst orthodontie"
+          },
+          {
+            "code": "F900",
+            "display": "Informatieverstrekking, per vijf minuten"
+          },
+          {
+            "code": "F901",
+            "display": "Onderlinge dienstverlening"
+          }
+        ]
+      }
+    ]
+  }
+}

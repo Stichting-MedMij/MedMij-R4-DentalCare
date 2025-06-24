@@ -1,29 +1,30 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "DentalCare-ProcedureEvent",
+  "id": "mz-Procedure",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
   },
-  "url": "http://medmij.nl/fhir/StructureDefinition/DentalCare-ProcedureEvent",
-  "name": "DentalCareProcedureEventDentalCare",
-  "title": "DentalCare - Procedure Event Dental Care",
+  "url": "http://medmij.nl/fhir/StructureDefinition/mz-Procedure",
+  "name": "MzProcedure",
+  "title": "mz Procedure",
   "status": "draft",
-  "publisher": "Medmij",
+  "publisher": "MedMij",
   "contact": [
     {
       "name": "MedMij",
       "telecom": [
-          {
-              "system": "email",
-              "value": "info@medmij.nl",
-              "use": "work"
-          }
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
       ]
     }
   ],
-  "description": "Therapeutic or diagnostic procedure undergone by the patient (the complementary profile [nl-core-Procedure-request](<http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-request>) can be used for therapeutic or diagnostics procedures that the patient will undergo). A procedure can be a simple blood pressure measurement, but also a complex heart surgery.\r\nIn some care settings, the term treatment is used instead of the term procedure.",
-  "purpose": "A copied profile from zib-Procedure to provide a version better suited for implementation purposes of the Dental Care use case.",
+  "description": "Therapeutic or diagnostic procedure undergone by the patient in dental care.",
+  "purpose": "This Procedure resource represents the Procedure building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes w.r.t. ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, future procedures are not relevant in the context of Dental Care, hence all corresponding guidance and mappings present in the nl-core profile have been omitted in this profile.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -40,6 +41,11 @@
       "identity": "zib-medicaldevice-v3.3.1-2020EN",
       "uri": "https://zibs.nl/wiki/MedicalDevice-v3.3.1(2020EN)",
       "name": "zib MedicalDevice-v3.3.1(2020EN)"
+    },
+    {
+      "identity": "mz-dataset-100-beta1-2025xxyy",
+      "uri": "",
+      "name": "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
     }
   ],
   "kind": "resource",
@@ -52,15 +58,43 @@
       {
         "id": "Procedure",
         "path": "Procedure",
-        "comment": "The Procedure is mapped both to this Procedure profile and a profile on ServiceRequest (<http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-request>) to align with the intention of FHIR. All past procedures are covered using this Procedure resource, while all future procedures, including the advised procedures, are covered in the ServiceRequest resource. Both resources contain the zib mappings, with the exception of the Requester concept; this is not relevant for past procedures and has only been mapped to the ServiceRequest profile.\r\n\r\nThe planned and performed procedures can be linked using `Procedure.basedOn`.",
+        "short": "Procedure",
         "alias": [
-          "nl-core-Procedure-event"
+          "Verrichting"
+        ],
+        "mapping": [
+          {
+            "identity": "zib-procedure-v5.2-2020EN",
+            "map": "NL-CM:14.1.1",
+            "comment": "Procedure"
+          },
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-109",
+            "comment": "Procedure"
+          }
         ]
+      },
+      {
+        "id": "Procedure.extension",
+        "path": "Procedure.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "Procedure.extension:procedureMethod",
         "path": "Procedure.extension",
         "sliceName": "procedureMethod",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -71,23 +105,9 @@
         ]
       },
       {
-        "id": "Procedure.basedOn",
-        "path": "Procedure.basedOn",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CarePlan",
-              "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-              "http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-request"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Procedure.status",
         "path": "Procedure.status",
-        "definition": "This element is implictly mapped to the zib concepts ProcedureStartDate (NL-CM:14.1.2) and ProcedureEndDate (NL-CM:14.1.3). Unless the status is explicitly recorded, the following guidance applies:\r\n\r\n* When the ProcedureStartDate is in the future, `.status` will usually be set to _preparation_.\r\n* When ProcedureStartDate is in the past and ProcedureEndDate is in the future, `.status` will usually be set to _in-progress_.\r\n* When ProcedureEndDate is in the past, `.status` will usually be set to _completed_.\r\n* When ProcedureStartDate is in the past and ProcedureEndDate is missing, it may be assumed that the Procedure was recorded as a point in time and `.status` will usually be set to _completed_.\r\n* When a system is unable to infer the status from the ProcedureStartDate and ProcedureEndDate , `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the Procedure.",
+        "definition": "This element is implictly mapped to the zib concepts ProcedureStartDate (NL-CM:14.1.2) and ProcedureEndDate (NL-CM:14.1.3). Unless the status is explicitly recorded, the following guidance applies:\n* When the ProcedureStartDate is in the future, `.status` will usually be set to _preparation_.\n* When ProcedureStartDate is in the past and ProcedureEndDate is in the future, `.status` will usually be set to _in-progress_.\n* When ProcedureEndDate is in the past, `.status` will usually be set to _completed_.\n* When ProcedureStartDate is in the past and ProcedureEndDate is missing, it may be assumed that the Procedure was recorded as a point in time and `.status` will usually be set to _completed_.\n* When a system is unable to infer the status from the ProcedureStartDate and ProcedureEndDate , `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the Procedure.",
         "mapping": [
           {
             "identity": "zib-procedure-v5.2-2020EN",
@@ -98,6 +118,16 @@
             "identity": "zib-procedure-v5.2-2020EN",
             "map": "NL-CM:14.1.3",
             "comment": "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
+          },
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-110",
+            "comment": "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
+          },
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-111",
+            "comment": "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
           }
         ]
       },
@@ -105,25 +135,31 @@
         "id": "Procedure.code",
         "path": "Procedure.code",
         "short": "ProcedureType",
-        "definition": "The name of the procedure. the Care activities file dental care (NZa)",
-        "alias":  [
-            "VerrichtingType"
+        "definition": "The name of the procedure based on the [Prestatie- en tariefbeschikking tandheelkundige zorg](https://puc.overheid.nl/nza/doc/PUC_764375_22/1/) and [Prestatie- en tariefbeschikking orthodontische zorg](https://puc.overheid.nl/nza/doc/PUC_764432_22/1/), both authored by the Nederlandse Zorgautoriteit (NZa).",
+        "comment": "Since the _required_ binding of VerrichtingTypeCodelijsten in the nl-core profile does not contain the procedure types relevant for dental and orthodontic care, this profile is not derived from the nl-core profile.",
+        "alias": [
+          "VerrichtingType"
         ],
+        "min": 1,
         "binding": {
-            "strength": "extensible",
-            "valueSet": "http://medmij.nl/fhir/ValueSet/DentalCare-ProcedureEvent"
+          "strength": "extensible",
+          "valueSet": "http://medmij.nl/fhir/ValueSet/ProcedureTypeDentalCare"
         },
-        "mapping":  [
-            {
-                "identity": "zib-procedure-v5.2-2020EN",
-                "map": "NL-CM:14.1.4",
-                "comment": "ProcedureType"
-            }
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-114",
+            "comment": "ProcedureType"
+          }
         ]
       },
       {
         "id": "Procedure.subject",
         "path": "Procedure.subject",
+        "short": "Patient",
+        "alias": [
+          "Patient"
+        ],
         "type": [
           {
             "code": "Reference",
@@ -133,12 +169,35 @@
               "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
             ]
           }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-1",
+            "comment": "Patient"
+          }
         ]
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "Procedure.performed[x]:performedPeriod",
         "path": "Procedure.performed[x]",
         "sliceName": "performedPeriod",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Period"
@@ -159,6 +218,11 @@
             "identity": "zib-procedure-v5.2-2020EN",
             "map": "NL-CM:14.1.2",
             "comment": "ProcedureStartDate"
+          },
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-110",
+            "comment": "ProcedureStartDate"
           }
         ]
       },
@@ -166,7 +230,7 @@
         "id": "Procedure.performed[x]:performedPeriod.end",
         "path": "Procedure.performed[x].end",
         "short": "ProcedureEndDate",
-        "definition": "The end date (and if possible end time) of the procedure. A ‘vague’ date, such as only the year, is permitted. The element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedures that takes some time and is then always applied. If the procedure still continues, the value is left empty.",
+        "definition": "The end date (and if possible end time) of the procedure. A ‘vague’ date, such as only the year, is permitted. The element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty.",
         "comment": "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed).",
         "alias": [
           "VerrichtingEindDatum"
@@ -176,6 +240,11 @@
             "identity": "zib-procedure-v5.2-2020EN",
             "map": "NL-CM:14.1.3",
             "comment": "ProcedureEndDate"
+          },
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-111",
+            "comment": "ProcedureEndDate"
           }
         ]
       },
@@ -184,11 +253,13 @@
         "path": "Procedure.performed[x]",
         "sliceName": "performedDateTime",
         "short": "ProcedureStartDate",
-        "definition": "The (desired) start date (and if possible start time) of the procedure. A ‘vague’ date, such as only the year, is permitted. `performedDateTime` is used for instantaneous or very short lasting procedures.",
+        "definition": "The start date (and if possible start time) of the procedure. A ‘vague’ date, such as only the year, is permitted. `Procedure.performedDateTime` is used for instantaneous or very short lasting procedures.",
         "comment": "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed).",
         "alias": [
           "VerrichtingStartDatum"
         ],
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "dateTime"
@@ -199,6 +270,11 @@
             "identity": "zib-procedure-v5.2-2020EN",
             "map": "NL-CM:14.1.2",
             "comment": "ProcedureStartDate"
+          },
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-110",
+            "comment": "ProcedureStartDate"
           }
         ]
       },
@@ -206,13 +282,14 @@
         "id": "Procedure.performer.actor",
         "path": "Procedure.performer.actor",
         "short": "Performer",
-        "definition": "The healthcare provider who carried out or will carry out the procedure. In most cases, only the medical specialty is entered, and not the name of the healthcare provider.",
+        "definition": "The healthcare provider who carried out the procedure. In most cases, only the medical specialty is entered, and not the name of the healthcare provider.",
+        "comment": "Each occurrence of the zib HealthProfessional is normally represented by _two_ FHIR resources: a PractitionerRole resource (instance of [nl-core-HealthProfessional-PractitionerRole](http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)) and a Practitioner resource (instance of [nl-core-HealthProfessional-Practitioner](http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner)). The Practitioner resource is referenced from the PractitionerRole instance. For this reason, sending systems should fill the reference to the PractitionerRole instance here, and not the Practitioner resource. Receiving systems can then retrieve the reference to the Practitioner resource from that PractitionerRole instance.\n\nIn rare circumstances, there is only a Practitioner instance, in which case it is that instance which will be referenced here. However, since this should be the exception, the nl-core-HealthProfessional-Practitioner profile is not explicitly mentioned as a target profile.",
+        "alias": [
+          "Uitvoerder"
+        ],
         "type": [
           {
             "code": "Reference",
-            "profile": [
-              "http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference"
-            ],
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Practitioner",
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
@@ -229,6 +306,11 @@
             "identity": "zib-procedure-v5.2-2020EN",
             "map": "NL-CM:14.1.6",
             "comment": "Performer"
+          },
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-118",
+            "comment": "Performer"
           }
         ]
       },
@@ -236,7 +318,7 @@
         "id": "Procedure.location",
         "path": "Procedure.location",
         "short": "Location",
-        "definition": "The healthcare center where the procedure was, is or or will be carried out.",
+        "definition": "The healthcare center where the procedure was or is carried out.",
         "comment": "Please note that the zib concept Location::HealthcareProvider of zib MedicalDevice (NL-CM:10.1.8) is mapped onto this element, but it is also directly represented using a custom extension in the focal profile for that zib ([nl-core-MedicalDevice](http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice)). The reason for this is that the Location concept from zib MedicalDevice aligns with the Location concept from zib Procedure, but only for the situation that the Procedure is about placing an implant which is described using the instance of zib MedicalDevice. In this situation, the extension in the nl-core-MedicalDevice profile is redundant and it is advised to only use the current element to represent the Location concept.",
         "alias": [
           "Locatie"
@@ -260,6 +342,11 @@
             "identity": "zib-medicaldevice-v3.3.1-2020EN",
             "map": "NL-CM:10.1.8",
             "comment": "Location (For specific situations only. See the comment on this element for more information.)"
+          },
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-117",
+            "comment": "Location"
           }
         ]
       },
@@ -288,6 +375,11 @@
           {
             "identity": "zib-procedure-v5.2-2020EN",
             "map": "NL-CM:14.1.9",
+            "comment": "Indication"
+          },
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-113",
             "comment": "Indication"
           }
         ]
@@ -318,6 +410,11 @@
             "identity": "zib-procedure-v5.2-2020EN",
             "map": "NL-CM:14.1.13",
             "comment": "ProcedureAnatomicalLocation"
+          },
+          {
+            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "map": "mz-dataelement-112",
+            "comment": "ProcedureAnatomicalLocation"
           }
         ]
       },
@@ -339,15 +436,17 @@
         "path": "Procedure.report",
         "sliceName": "textResult",
         "short": "TextResult",
-        "comment": "The direction of the reference between zibs TextResult and Procedure is reversed in FHIR. Therefore the concept Procedure (NL-CM:13.2.5) of zib TextResult is mapped to this element.\r\n\r\nPlease note that on a functional level, zib TextResult references zib Procedure, but in FHIR this direction is reversed.",
+        "comment": "The direction of the reference between zibs TextResult and Procedure is reversed in FHIR. Therefore the concept Procedure (NL-CM:13.2.5) of zib TextResult is mapped to this element.\n\nPlease note that on a functional level, zib TextResult references zib Procedure, but in FHIR this direction is reversed.",
         "alias": [
           "TekstUitslag"
         ],
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://nictiz.nl/fhir/StructureDefinition/zib-TextResult"
+              "http://nictiz.nl/fhir/StructureDefinition/nl-core-TextResult"
             ]
           }
         ],
