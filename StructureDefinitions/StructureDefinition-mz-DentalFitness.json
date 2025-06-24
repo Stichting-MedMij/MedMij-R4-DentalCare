@@ -28,9 +28,9 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-alpha3-2025xxyy",
+      "identity": "mz-dataset-100-alpha3-20250507",
       "uri": "http://hl7.org/fhir/workflow",
-      "name": "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
+      "name": "Dataset Mondzorg 1.0.0-alpha.3 20250507"
     }
   ],
   "kind": "resource",
@@ -52,8 +52,8 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "identity": "mz-dataset-100-alpha3-20250507",
+            "map": "mz-dataelement-109",
             "comment": "DentalFitness"
           }
         ]
@@ -88,8 +88,8 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "identity": "mz-dataset-100-alpha3-20250507",
+            "map": "mz-dataelement-1",
             "comment": "Patient"
           }
         ]
@@ -126,8 +126,8 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "identity": "mz-dataset-100-alpha3-20250507",
+            "map": "mz-dataelement-110",
             "comment": "DentalFitnessDateTime"
           }
         ]
@@ -156,7 +156,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-2025xxyy",
+            "identity": "mz-dataset-100-alpha3-20250507",
             "map": "mz-dataelement-zz",
             "comment": "Performer"
           }
@@ -199,8 +199,8 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "identity": "mz-dataset-100-alpha3-20250507",
+            "map": "mz-dataelement-111",
             "comment": "DentalFitnessValue"
           }
         ]
@@ -220,7 +220,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-alpha3-2025xxyy",
+            "identity": "mz-dataset-100-alpha3-20250507",
             "map": "mz-dataelement-zz",
             "comment": "Comment"
           }

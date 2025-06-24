@@ -1,4 +1,4 @@
-//Profile on Observation for OralHygiene to be used in Mondzorg
+//Profile on Observation for OralHygiene to be used in Dental Care
 
 Alias: $SCT = http://snomed.info/sct
 Alias: $OralHygieneValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.6
@@ -19,33 +19,33 @@ Description: "Oral hygiene finding."
 * ^contact.telecom.use = #work
 * ^purpose = "This Observation resource represents the OralHygiene building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
-* ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
-* ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 2025xxyy"
+* ^mapping.identity = "mz-dataset-100-alpha3-20250507"
+* ^mapping.name = "Dataset Mondzorg 1.0.0-alpha.3 20250507"
 * . 
   * ^short = "OralHygiene"
   * ^alias = "Mondhygiëne"
-  * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
+  * ^mapping.identity = "mz-dataset-100-alpha3-20250507"
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "OralHygiene"
 * code ^patternCodeableConcept = $SCT#110298001
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"
-  * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.identity = "mz-dataset-100-alpha3-20250507"
+  * ^mapping.map = "mz-dataelement-1"
   * ^mapping.comment = "Patient"
 * effectiveDateTime
   * ^short = "OralHygieneDateTime"
   * ^definition = "The date and time at which the oral hygiene was determined."
   * ^alias = "MondhygiëneDatumTijd"
-  * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
+  * ^mapping.identity = "mz-dataset-100-alpha3-20250507"
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "OralHygieneDateTime"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the oral hygiene."
   * ^alias = "Uitvoerder"
-  * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
+  * ^mapping.identity = "mz-dataset-100-alpha3-20250507"
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
@@ -53,7 +53,7 @@ Description: "Oral hygiene finding."
   * ^short = "OralHygieneValue"
   * ^definition = "The oral hygiene."
   * ^alias = "MondhygiëneWaarde"
-  * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
+  * ^mapping.identity = "mz-dataset-100-alpha3-20250507"
   * ^mapping.map = "mz-dataelement-zz"
   * ^mapping.comment = "OralHygieneValue"
 * note 0..1
@@ -61,7 +61,7 @@ Description: "Oral hygiene finding."
     * ^short = "Comment"
     * ^definition = "Comment on the oral hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
-    * ^mapping.identity = "mz-dataset-100-alpha3-2025xxyy"
+    * ^mapping.identity = "mz-dataset-100-alpha3-20250507"
     * ^mapping.map = "mz-dataelement-zz"
     * ^mapping.comment = "Comment"
 
