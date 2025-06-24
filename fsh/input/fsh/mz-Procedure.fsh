@@ -43,7 +43,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[0].map = "NL-CM:14.1.1"
   * ^mapping[0].comment = "Procedure"
   * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[1].map = "mz-dataelement-zz"
+  * ^mapping[1].map = "mz-dataelement-109"
   * ^mapping[1].comment = "Procedure"
 * extension contains http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod named procedureMethod 0..*
 * status
@@ -62,10 +62,10 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[1].map = "NL-CM:14.1.3"
   * ^mapping[1].comment = "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
   * ^mapping[2].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[2].map = "mz-dataelement-zz"
+  * ^mapping[2].map = "mz-dataelement-110"
   * ^mapping[2].comment = "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
   * ^mapping[3].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[3].map = "mz-dataelement-zz"
+  * ^mapping[3].map = "mz-dataelement-111"
   * ^mapping[3].comment = "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
 * code 1..1
 * code from $ProcedureTypeDentalCareValueSetURL (extensible)
@@ -74,7 +74,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^comment = "Since the _required_ binding of VerrichtingTypeCodelijsten in the nl-core profile does not contain the procedure types relevant for dental and orthodontic care, this profile is not derived from the nl-core profile."
   * ^alias = "VerrichtingType"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-114"
   * ^mapping.comment = "ProcedureType"
 * subject only Reference(Patient or Group or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
@@ -92,7 +92,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     * ^mapping[0].map = "NL-CM:14.1.2"
     * ^mapping[0].comment = "ProcedureStartDate"
     * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping[1].map = "mz-dataelement-zz"
+    * ^mapping[1].map = "mz-dataelement-110"
     * ^mapping[1].comment = "ProcedureStartDate"
   * end
     * ^short = "ProcedureEndDate"
@@ -103,7 +103,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     * ^mapping[0].map = "NL-CM:14.1.3"
     * ^mapping[0].comment = "ProcedureEndDate"
     * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping[1].map = "mz-dataelement-zz"
+    * ^mapping[1].map = "mz-dataelement-111"
     * ^mapping[1].comment = "ProcedureEndDate"
 * performedDateTime
   * ^short = "ProcedureStartDate"
@@ -114,7 +114,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     * ^mapping[0].map = "NL-CM:14.1.2"
     * ^mapping[0].comment = "ProcedureStartDate"
     * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping[1].map = "mz-dataelement-zz"
+    * ^mapping[1].map = "mz-dataelement-110"
     * ^mapping[1].comment = "ProcedureStartDate"
 * performer.actor only Reference(Practitioner or PractitionerRole or Organization or Patient or RelatedPerson or Device or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
@@ -129,7 +129,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[0].map = "NL-CM:14.1.6"
   * ^mapping[0].comment = "Performer"
   * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[1].map = "mz-dataelement-zz"
+  * ^mapping[1].map = "mz-dataelement-118"
   * ^mapping[1].comment = "Performer"
 * location only Reference(Location or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider)
   * ^short = "Location"
@@ -143,7 +143,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[1].map = "NL-CM:10.1.8"
   * ^mapping[1].comment = "Location (For specific situations only. See the comment on this element for more information.)"
   * ^mapping[2].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[2].map = "mz-dataelement-zz"
+  * ^mapping[2].map = "mz-dataelement-117"
   * ^mapping[2].comment = "Location"
 * reasonReference only Reference(Condition or Observation or Procedure or DiagnosticReport or DocumentReference or http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem)
   * ^short = "Indication"
@@ -153,7 +153,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[0].map = "NL-CM:14.1.9"
   * ^mapping[0].comment = "Indication"
   * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[1].map = "mz-dataelement-zz"
+  * ^mapping[1].map = "mz-dataelement-113"
   * ^mapping[1].comment = "Indication"
 * bodySite 0..1
 * bodySite only http://nictiz.nl/fhir/StructureDefinition/nl-core-AnatomicalLocation
@@ -165,7 +165,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^mapping[0].map = "NL-CM:14.1.13"
   * ^mapping[0].comment = "ProcedureAnatomicalLocation"
   * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[1].map = "mz-dataelement-zz"
+  * ^mapping[1].map = "mz-dataelement-112"
   * ^mapping[1].comment = "ProcedureAnatomicalLocation"
 * report
   * ^slicing.discriminator.type = #profile

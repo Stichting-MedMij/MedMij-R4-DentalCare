@@ -25,7 +25,7 @@ Description: "Caries risk."
   * ^short = "CariesRisk"
   * ^alias = "Cariesrisico"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-124"
   * ^mapping.comment = "CariesRisk"
 * code ^patternCodeableConcept = $SCT#609399004
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
@@ -39,14 +39,14 @@ Description: "Caries risk."
   * ^definition = "The date and time at which the caries risk was determined."
   * ^alias = "CariesrisicoDatumTijd"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-125"
   * ^mapping.comment = "CariesRiskDateTime"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the caries risk."
   * ^alias = "Uitvoerder"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-147"
   * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $CariesRiskValueSetURL (extensible)
@@ -54,7 +54,7 @@ Description: "Caries risk."
   * ^definition = "The risk of caries."
   * ^alias = "CariesrisicoWaarde"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-126"
   * ^mapping.comment = "CariesRiskValue"
 * note 0..1
   * text
@@ -62,7 +62,7 @@ Description: "Caries risk."
     * ^definition = "Comment on the caries risk, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
     * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping.map = "mz-dataelement-zz"
+    * ^mapping.map = "mz-dataelement-127"
     * ^mapping.comment = "Comment"
 
 ValueSet: CariesRisk

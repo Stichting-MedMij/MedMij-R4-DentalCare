@@ -53,7 +53,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-124",
             "comment": "CariesRisk"
           }
         ]
@@ -127,7 +127,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-125",
             "comment": "CariesRiskDateTime"
           }
         ]
@@ -157,7 +157,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-147",
             "comment": "Performer"
           }
         ]
@@ -200,7 +200,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-126",
             "comment": "CariesRiskValue"
           }
         ]
@@ -221,7 +221,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-127",
             "comment": "Comment"
           }
         ]

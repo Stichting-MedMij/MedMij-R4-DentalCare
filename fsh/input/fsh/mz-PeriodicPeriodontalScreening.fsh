@@ -27,7 +27,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^short = "PeriodicPeriodontalScreening"
   * ^alias = "PeriodiekeParodontaleScreening"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-136"
   * ^mapping.comment = "PeriodicPeriodontalScreening"
 * code ^patternCodeableConcept = $SCT#540501000146103
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
@@ -41,14 +41,14 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^definition = "The date and time at which the PPS was performed."
   * ^alias = "PPSDatumTijd"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-137"
   * ^mapping.comment = "PPSDateTime"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who performed the PPS."
   * ^alias = "Uitvoerder"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-150"
   * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $PeriodicPeriodontalScreeningValueSetURL (required)
@@ -56,7 +56,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^definition = "The score of the PPS."
   * ^alias = "PPSScore"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-138"
   * ^mapping.comment = "PPSScore"
 * note 0..1
   * text
@@ -64,7 +64,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
     * ^definition = "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
     * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping.map = "mz-dataelement-zz"
+    * ^mapping.map = "mz-dataelement-139"
     * ^mapping.comment = "Comment"
 
 CodeSystem: PeriodicPeriodontalScreening

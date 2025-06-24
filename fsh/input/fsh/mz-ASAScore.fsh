@@ -25,7 +25,7 @@ Description: "Classification of physical condition according to American Society
   * ^short = "ASAScore"
   * ^alias = "ASAScore"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-132"
   * ^mapping.comment = "ASAScore"
 * code ^patternCodeableConcept = $SCT#413347006
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
@@ -39,14 +39,14 @@ Description: "Classification of physical condition according to American Society
   * ^definition = "The date and time at which the ASA score was determined."
   * ^alias = "ASAScoreDatumTijd"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-133"
   * ^mapping.comment = "ASAScoreDateTime"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the ASA score."
   * ^alias = "Uitvoerder"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-149"
   * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $ASAScoreValueSetURL (required)
@@ -54,7 +54,7 @@ Description: "Classification of physical condition according to American Society
   * ^definition = "The value of the ASA score."
   * ^alias = "ASAScoreWaarde"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-134"
   * ^mapping.comment = "ASAScoreValue"
 * note 0..1
   * text
@@ -62,7 +62,7 @@ Description: "Classification of physical condition according to American Society
     * ^definition = "Comment on the ASA score measurement, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
     * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping.map = "mz-dataelement-zz"
+    * ^mapping.map = "mz-dataelement-135"
     * ^mapping.comment = "Comment"
 
 ValueSet: ASAScore

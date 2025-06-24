@@ -25,7 +25,7 @@ Description: "Oral hygiene finding."
   * ^short = "OralHygiene"
   * ^alias = "Mondhygiëne"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-120"
   * ^mapping.comment = "OralHygiene"
 * code ^patternCodeableConcept = $SCT#110298001
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
@@ -39,14 +39,14 @@ Description: "Oral hygiene finding."
   * ^definition = "The date and time at which the oral hygiene was determined."
   * ^alias = "MondhygiëneDatumTijd"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-121"
   * ^mapping.comment = "OralHygieneDateTime"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the oral hygiene."
   * ^alias = "Uitvoerder"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-146"
   * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $OralHygieneValueSetURL (extensible)
@@ -54,7 +54,7 @@ Description: "Oral hygiene finding."
   * ^definition = "The oral hygiene."
   * ^alias = "MondhygiëneWaarde"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-122"
   * ^mapping.comment = "OralHygieneValue"
 * note 0..1
   * text
@@ -62,7 +62,7 @@ Description: "Oral hygiene finding."
     * ^definition = "Comment on the oral hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
     * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping.map = "mz-dataelement-zz"
+    * ^mapping.map = "mz-dataelement-123"
     * ^mapping.comment = "Comment"
 
 ValueSet: OralHygiene

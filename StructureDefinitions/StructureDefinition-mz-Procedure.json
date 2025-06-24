@@ -70,7 +70,7 @@
           },
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-109",
             "comment": "Procedure"
           }
         ]
@@ -121,12 +121,12 @@
           },
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-110",
             "comment": "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
           },
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-111",
             "comment": "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
           }
         ]
@@ -148,7 +148,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-114",
             "comment": "ProcedureType"
           }
         ]
@@ -221,7 +221,7 @@
           },
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-110",
             "comment": "ProcedureStartDate"
           }
         ]
@@ -243,7 +243,7 @@
           },
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-111",
             "comment": "ProcedureEndDate"
           }
         ]
@@ -273,7 +273,7 @@
           },
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-110",
             "comment": "ProcedureStartDate"
           }
         ]
@@ -309,7 +309,7 @@
           },
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-118",
             "comment": "Performer"
           }
         ]
@@ -345,7 +345,7 @@
           },
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-117",
             "comment": "Location"
           }
         ]
@@ -379,7 +379,7 @@
           },
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-113",
             "comment": "Indication"
           }
         ]
@@ -413,7 +413,7 @@
           },
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-112",
             "comment": "ProcedureAnatomicalLocation"
           }
         ]

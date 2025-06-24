@@ -53,7 +53,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-128",
             "comment": "ParafunctionalActivity"
           }
         ]
@@ -127,7 +127,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-129",
             "comment": "ParafunctionalActivityDateTime"
           }
         ]
@@ -157,7 +157,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-148",
             "comment": "Performer"
           }
         ]
@@ -196,7 +196,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-130",
             "comment": "ParafunctionalActivityValue"
           }
         ]
@@ -217,7 +217,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-131",
             "comment": "Comment"
           }
         ]

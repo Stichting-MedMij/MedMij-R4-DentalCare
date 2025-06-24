@@ -46,7 +46,7 @@ Description: "Dental fitness according to the NATO classification system."
   * ^definition = "The health professional who determined the dental fitness."
   * ^alias = "Uitvoerder"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-145"
   * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $DentalFitnessValueSetURL (required)
@@ -62,7 +62,7 @@ Description: "Dental fitness according to the NATO classification system."
     * ^definition = "Comment on the dental fitness, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
     * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping.map = "mz-dataelement-zz"
+    * ^mapping.map = "mz-dataelement-112"
     * ^mapping.comment = "Comment"
 
 ValueSet: DentalFitness

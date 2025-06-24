@@ -46,7 +46,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-140",
             "comment": "TreatmentObjective"
           }
         ]
@@ -67,7 +67,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-141",
             "comment": "Priority"
           }
         ]

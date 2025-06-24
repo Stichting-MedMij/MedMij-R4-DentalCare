@@ -19,7 +19,7 @@ Description: "The treatment objective describes the desired result of the treatm
 * ^mapping.name = "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
 * .
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-140"
   * ^mapping.comment = "TreatmentObjective"
 * priority from http://hl7.org/fhir/ValueSet/goal-priority (extensible)
   * ^short = "Priority"
@@ -27,7 +27,7 @@ Description: "The treatment objective describes the desired result of the treatm
   * ^comment = "A short-term and long-term treatment objective correspond with _high-priority_ and _low-priority_, respectively."
   * ^alias = "Prioriteit"
   * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-zz"
+  * ^mapping.map = "mz-dataelement-141"
   * ^mapping.comment = "Priority"
 * subject
   * ^short = "Patient"

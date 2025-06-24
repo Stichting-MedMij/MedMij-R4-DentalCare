@@ -53,7 +53,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-136",
             "comment": "PeriodicPeriodontalScreening"
           }
         ]
@@ -127,7 +127,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-137",
             "comment": "PPSDateTime"
           }
         ]
@@ -157,7 +157,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-150",
             "comment": "Performer"
           }
         ]
@@ -200,7 +200,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-138",
             "comment": "PPSScore"
           }
         ]
@@ -221,7 +221,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-139",
             "comment": "Comment"
           }
         ]

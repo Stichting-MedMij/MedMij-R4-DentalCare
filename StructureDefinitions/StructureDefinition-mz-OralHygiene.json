@@ -53,7 +53,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-120",
             "comment": "OralHygiene"
           }
         ]
@@ -127,7 +127,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-121",
             "comment": "OralHygieneDateTime"
           }
         ]
@@ -157,7 +157,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-146",
             "comment": "Performer"
           }
         ]
@@ -200,7 +200,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-122",
             "comment": "OralHygieneValue"
           }
         ]
@@ -221,7 +221,7 @@
         "mapping": [
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
-            "map": "mz-dataelement-zz",
+            "map": "mz-dataelement-123",
             "comment": "Comment"
           }
         ]
