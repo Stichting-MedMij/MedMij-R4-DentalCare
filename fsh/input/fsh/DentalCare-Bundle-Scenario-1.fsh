@@ -2,7 +2,7 @@
 
 Alias: $SCT = http://snomed.info/sct
 Alias: $MedMij = urn:oid:2.16.528.1.1023.5
-Alias: $PeriodicPeriodontalScreeningCodeSystemOID = urn:oid:2.16.528.1.1023.5.1.2
+Alias: $PeriodicPeriodontalScreeningCodeSystemURL = http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening
 Alias: $GoalPriority = http://terminology.hl7.org/CodeSystem/goal-priority
 Alias: $NZaDentalCare = https://puc.overheid.nl/nza/doc/PUC_764375_22/1
 
@@ -80,7 +80,7 @@ Usage: #example
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
-* valueCodeableConcept = $PeriodicPeriodontalScreeningCodeSystemOID#ppsscore1 "Pockets 0-3 millimeter = in orde"
+* valueCodeableConcept = $PeriodicPeriodontalScreeningCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
 * note
   * text = "Geen paradontale vervolgbehandeling"
 

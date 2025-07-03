@@ -35,7 +35,7 @@
     "coding": [
       {
         "code": "ppsscore2",
-        "system": "urn:oid:2.16.528.1.1023.5.1.2",
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening",
         "display": "Pockets 4-5 millimeter = mogelijk in orde"
       }
     ]

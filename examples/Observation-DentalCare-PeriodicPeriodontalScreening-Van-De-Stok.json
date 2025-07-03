@@ -35,7 +35,7 @@
     "coding": [
       {
         "code": "ppsscore3",
-        "system": "urn:oid:2.16.528.1.1023.5.1.2",
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening",
         "display": "Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde"
       }
     ]
