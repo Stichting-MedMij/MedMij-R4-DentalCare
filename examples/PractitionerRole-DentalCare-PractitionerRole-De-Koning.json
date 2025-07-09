@@ -28,11 +28,5 @@
         }
       ]
     }
-  ],
-  "location": [
-    {
-      "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-      "display": "Vliegbasis Gilze-Rijen"
-    }
   ]
 }
