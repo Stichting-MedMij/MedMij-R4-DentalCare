@@ -28,11 +28,5 @@
         }
       ]
     }
-  ],
-  "location": [
-    {
-      "reference": "Location/DentalCare-Location-CWZ-Nijmegen",
-      "display": "CWZ Nijmegen"
-    }
   ]
 }

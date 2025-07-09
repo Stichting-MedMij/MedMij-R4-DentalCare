@@ -176,7 +176,6 @@ Usage: #example
 * organization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
 * specialty
   * coding = urn:oid:2.16.840.1.113883.2.4.6.7#1200 "Tandartsen, algemeen practicus"
-* location = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
 
 Instance: DentalCare-Practitioner-Dijkstra
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner
