@@ -1,14 +1,5 @@
 //Profile on Procedure for Procedure to be used in Dental Care
 
-Alias: $ProcedureTypeDentalCareValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.9
-Alias: $ProcedureTypeDentalCareValueSetURL = http://medmij.nl/fhir/ValueSet/ProcedureTypeDentalCare
-Alias: $ProcedureTypeNZaDentalCareValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.5
-Alias: $ProcedureTypeNZaDentalCareValueSetURL = http://medmij.nl/fhir/ValueSet/ProcedureTypeNZaDentalCare
-Alias: $NZaDentalCare = https://puc.overheid.nl/nza/doc/PUC_764375_22/1
-Alias: $ProcedureTypeNZaOrthodonticCareValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.8
-Alias: $ProcedureTypeNZaOrthodonticCareValueSetURL = http://medmij.nl/fhir/ValueSet/ProcedureTypeNZaOrthodonticCare
-Alias: $NZaOrthodonticCare = https://puc.overheid.nl/nza/doc/PUC_764432_22/1
-
 Profile: MzProcedure
 Parent: Procedure
 Id: mz-Procedure
@@ -24,27 +15,9 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * ^contact.telecom.use = #work
 * ^purpose = "This Procedure resource represents the Procedure building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes w.r.t. ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, future procedures are not relevant in the context of Dental Care, hence all corresponding guidance and mappings present in the nl-core profile have been omitted in this profile."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
-* ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
-* ^mapping[0].uri = "https://zibs.nl/wiki/Procedure-v5.2(2020EN)"
-* ^mapping[0].name = "zib Procedure-v5.2(2020EN)"
-* ^mapping[1].identity = "zib-textresult-v4.4-2020EN"
-* ^mapping[1].uri = "https://zibs.nl/wiki/TextResult-v4.4(2020EN)"
-* ^mapping[1].name = "zib TextResult-v4.4(2020EN)"
-* ^mapping[2].identity = "zib-medicaldevice-v3.3.1-2020EN"
-* ^mapping[2].uri = "https://zibs.nl/wiki/MedicalDevice-v3.3.1(2020EN)"
-* ^mapping[2].name = "zib MedicalDevice-v3.3.1(2020EN)"
-* ^mapping[3].identity = "mz-dataset-100-beta1-2025xxyy"
-* ^mapping[3].uri = "" // This line has been added to overwrite the uri of HL7 V2
-* ^mapping[3].name = "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
 * .
   * ^short = "Procedure"
   * ^alias = "Verrichting"
-  * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
-  * ^mapping[0].map = "NL-CM:14.1.1"
-  * ^mapping[0].comment = "Procedure"
-  * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[1].map = "mz-dataelement-109"
-  * ^mapping[1].comment = "Procedure"
 * extension contains http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod named procedureMethod 0..*
 * status
   * ^definition = """
@@ -55,118 +28,56 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * When ProcedureStartDate is in the past and ProcedureEndDate is missing, it may be assumed that the Procedure was recorded as a point in time and `.status` will usually be set to _completed_.
   * When a system is unable to infer the status from the ProcedureStartDate and ProcedureEndDate , `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the Procedure.
   """
-  * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
-  * ^mapping[0].map = "NL-CM:14.1.2"
-  * ^mapping[0].comment = "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
-  * ^mapping[1].identity = "zib-procedure-v5.2-2020EN"
-  * ^mapping[1].map = "NL-CM:14.1.3"
-  * ^mapping[1].comment = "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
-  * ^mapping[2].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[2].map = "mz-dataelement-110"
-  * ^mapping[2].comment = "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
-  * ^mapping[3].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[3].map = "mz-dataelement-111"
-  * ^mapping[3].comment = "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
 * code 1..1
 * code from $ProcedureTypeDentalCareValueSetURL (extensible)
   * ^short = "ProcedureType"
   * ^definition = "The name of the procedure based on the [Prestatie- en tariefbeschikking tandheelkundige zorg](https://puc.overheid.nl/nza/doc/PUC_764375_22/1/) and [Prestatie- en tariefbeschikking orthodontische zorg](https://puc.overheid.nl/nza/doc/PUC_764432_22/1/), both authored by the Nederlandse Zorgautoriteit (NZa)."
   * ^comment = "Since the _required_ binding of VerrichtingTypeCodelijsten in the nl-core profile does not contain the procedure types relevant for dental and orthodontic care, this profile is not derived from the nl-core profile."
   * ^alias = "VerrichtingType"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-114"
-  * ^mapping.comment = "ProcedureType"
 * subject only Reference(Patient or Group or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-1"
-  * ^mapping.comment = "Patient"
 * performedPeriod
   * start
     * ^short = "ProcedureStartDate"
     * ^definition = "The start date (and if possible start time) of the procedure. A ‘vague’ date, such as only the year, is permitted. The element offers the option to indicate the start of the period of a series of related procedures."
     * ^comment = "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed)."
     * ^alias = "VerrichtingStartDatum"
-    * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
-    * ^mapping[0].map = "NL-CM:14.1.2"
-    * ^mapping[0].comment = "ProcedureStartDate"
-    * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping[1].map = "mz-dataelement-110"
-    * ^mapping[1].comment = "ProcedureStartDate"
   * end
     * ^short = "ProcedureEndDate"
     * ^definition = "The end date (and if possible end time) of the procedure. A ‘vague’ date, such as only the year, is permitted. The element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
     * ^comment = "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed)."
     * ^alias = "VerrichtingEindDatum"
-    * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
-    * ^mapping[0].map = "NL-CM:14.1.3"
-    * ^mapping[0].comment = "ProcedureEndDate"
-    * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping[1].map = "mz-dataelement-111"
-    * ^mapping[1].comment = "ProcedureEndDate"
 * performedDateTime
   * ^short = "ProcedureStartDate"
   * ^definition = "The start date (and if possible start time) of the procedure. A ‘vague’ date, such as only the year, is permitted. `Procedure.performedDateTime` is used for instantaneous or very short lasting procedures."
   * ^comment = "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed)."
   * ^alias = "VerrichtingStartDatum"
-  * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
-    * ^mapping[0].map = "NL-CM:14.1.2"
-    * ^mapping[0].comment = "ProcedureStartDate"
-    * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping[1].map = "mz-dataelement-110"
-    * ^mapping[1].comment = "ProcedureStartDate"
-* performer.actor only Reference(Practitioner or PractitionerRole or Organization or Patient or RelatedPerson or Device or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
-  * ^short = "Performer"
-  * ^definition = "The healthcare provider who carried out the procedure. In most cases, only the medical specialty is entered, and not the name of the healthcare provider."
-  * ^comment = """
-    Each occurrence of the zib HealthProfessional is normally represented by _two_ FHIR resources: a PractitionerRole resource (instance of [nl-core-HealthProfessional-PractitionerRole](http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)) and a Practitioner resource (instance of [nl-core-HealthProfessional-Practitioner](http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner)). The Practitioner resource is referenced from the PractitionerRole instance. For this reason, sending systems should fill the reference to the PractitionerRole instance here, and not the Practitioner resource. Receiving systems can then retrieve the reference to the Practitioner resource from that PractitionerRole instance.
-    
-    In rare circumstances, there is only a Practitioner instance, in which case it is that instance which will be referenced here. However, since this should be the exception, the nl-core-HealthProfessional-Practitioner profile is not explicitly mentioned as a target profile.
-    """
-  * ^alias = "Uitvoerder"
-  * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
-  * ^mapping[0].map = "NL-CM:14.1.6"
-  * ^mapping[0].comment = "Performer"
-  * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[1].map = "mz-dataelement-118"
-  * ^mapping[1].comment = "Performer"
+* performer
+  * actor only Reference(Practitioner or PractitionerRole or Organization or Patient or RelatedPerson or Device or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
+    * ^short = "Performer"
+    * ^definition = "The healthcare provider who carried out the procedure. In most cases, only the medical specialty is entered, and not the name of the healthcare provider."
+    * ^comment = """
+      Each occurrence of the zib HealthProfessional is normally represented by _two_ FHIR resources: a PractitionerRole resource (instance of [nl-core-HealthProfessional-PractitionerRole](http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)) and a Practitioner resource (instance of [nl-core-HealthProfessional-Practitioner](http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner)). The Practitioner resource is referenced from the PractitionerRole instance. For this reason, sending systems should fill the reference to the PractitionerRole instance here, and not the Practitioner resource. Receiving systems can then retrieve the reference to the Practitioner resource from that PractitionerRole instance.
+      
+      In rare circumstances, there is only a Practitioner instance, in which case it is that instance which will be referenced here. However, since this should be the exception, the nl-core-HealthProfessional-Practitioner profile is not explicitly mentioned as a target profile.
+      """
+    * ^alias = "Uitvoerder"
 * location only Reference(Location or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider)
   * ^short = "Location"
   * ^definition = "The healthcare center where the procedure was or is carried out."
   * ^comment = "Please note that the zib concept Location::HealthcareProvider of zib MedicalDevice (NL-CM:10.1.8) is mapped onto this element, but it is also directly represented using a custom extension in the focal profile for that zib ([nl-core-MedicalDevice](http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice)). The reason for this is that the Location concept from zib MedicalDevice aligns with the Location concept from zib Procedure, but only for the situation that the Procedure is about placing an implant which is described using the instance of zib MedicalDevice. In this situation, the extension in the nl-core-MedicalDevice profile is redundant and it is advised to only use the current element to represent the Location concept."
   * ^alias = "Locatie"
-  * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
-  * ^mapping[0].map = "NL-CM:14.1.5"
-  * ^mapping[0].comment = "Location"
-  * ^mapping[1].identity = "zib-medicaldevice-v3.3.1-2020EN"
-  * ^mapping[1].map = "NL-CM:10.1.8"
-  * ^mapping[1].comment = "Location (For specific situations only. See the comment on this element for more information.)"
-  * ^mapping[2].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[2].map = "mz-dataelement-117"
-  * ^mapping[2].comment = "Location"
 * reasonReference only Reference(Condition or Observation or Procedure or DiagnosticReport or DocumentReference or http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem)
   * ^short = "Indication"
   * ^definition = "The indication is the reason for the procedure."
   * ^alias = "Indicatie"
-  * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
-  * ^mapping[0].map = "NL-CM:14.1.9"
-  * ^mapping[0].comment = "Indication"
-  * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[1].map = "mz-dataelement-113"
-  * ^mapping[1].comment = "Indication"
 * bodySite 0..1
 * bodySite only http://nictiz.nl/fhir/StructureDefinition/nl-core-AnatomicalLocation
 * bodySite from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.11--20200901000000 (required)
   * ^short = "Location / ProcedureAnatomicalLocation"
   * ^definition = "Anatomical location which is the focus of the procedure."
   * ^alias = "VerrichtingAnatomischeLocatie"
-  * ^mapping[0].identity = "zib-procedure-v5.2-2020EN"
-  * ^mapping[0].map = "NL-CM:14.1.13"
-  * ^mapping[0].comment = "ProcedureAnatomicalLocation"
-  * ^mapping[1].identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping[1].map = "mz-dataelement-112"
-  * ^mapping[1].comment = "ProcedureAnatomicalLocation"
 * report
   * ^slicing.discriminator.type = #profile
   * ^slicing.discriminator.path = "resolve()"
@@ -180,9 +91,6 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     Please note that on a functional level, zib TextResult references zib Procedure, but in FHIR this direction is reversed.
     """
   * ^alias = "TekstUitslag"
-  * ^mapping.identity = "zib-textresult-v4.4-2020EN"
-  * ^mapping.map = "NL-CM:13.2.5"
-  * ^mapping.comment = "Reversed reference for zib TextResult.Procedure"
 
 ValueSet: ProcedureTypeDentalCare
 Id: ProcedureTypeDentalCare
@@ -192,7 +100,7 @@ Description: "Combined ValueSet for the procedure type in dental care."
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^url = $ProcedureTypeDentalCareValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $ProcedureTypeDentalCareValueSetOID
 * ^status = #draft
 * ^experimental = false
@@ -212,7 +120,7 @@ Description: "ValueSet for the procedure type in dental care authored by the Ned
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^url = $ProcedureTypeNZaDentalCareValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $ProcedureTypeNZaDentalCareValueSetOID
 * ^status = #draft
 * ^experimental = false
@@ -552,7 +460,7 @@ Description: "ValueSet for the procedure type in orthodontic care authored by th
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^url = $ProcedureTypeNZaOrthodonticCareValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $ProcedureTypeNZaOrthodonticCareValueSetOID
 * ^status = #draft
 * ^experimental = false
@@ -627,3 +535,50 @@ Description: "ValueSet for the procedure type in orthodontic care authored by th
 * $NZaOrthodonticCare#F911 "Inkopen op uitkomst orthodontie"
 * $NZaOrthodonticCare#F900 "Informatieverstrekking, per vijf minuten"
 * $NZaOrthodonticCare#F901 "Onderlinge dienstverlening"
+
+Mapping: ZibProcedure
+Source: MzProcedure
+Target: "https://zibs.nl/wiki/Procedure-v5.2(2020EN)"
+Id: zib-procedure-v5.2-2020EN
+Title: "zib Procedure-v5.2(2020EN)"
+* -> "NL-CM:14.1.1" "Procedure"
+* status -> "NL-CM:14.1.2" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
+* status -> "NL-CM:14.1.3" "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
+* performedPeriod.start -> "NL-CM:14.1.2" "ProcedureStartDate"
+* performedPeriod.end -> "NL-CM:14.1.3" "ProcedureEndDate"
+* performedDateTime -> "NL-CM:14.1.2" "ProcedureStartDate"
+* performer.actor -> "NL-CM:14.1.6" "Performer"
+* location -> "NL-CM:14.1.5" "Location"
+* reasonReference -> "NL-CM:14.1.9" "Indication"
+* bodySite -> "NL-CM:14.1.13" "ProcedureAnatomicalLocation"
+
+Mapping: ZibTextResult
+Source: MzProcedure
+Target: "https://zibs.nl/wiki/TextResult-v4.4(2020EN)"
+Id: zib-textresult-v4.4-2020EN
+Title: "zib TextResult-v4.4(2020EN)"
+* report[textResult] -> "NL-CM:13.2.5" "Reversed reference for zib TextResult.Procedure"
+
+Mapping: ZibMedicalDevice
+Source: MzProcedure
+Target: "https://zibs.nl/wiki/MedicalDevice-v3.3.1(2020EN)"
+Id: zib-medicaldevice-v3.3.1-2020EN
+Title: "zib MedicalDevice-v3.3.1(2020EN)"
+* location -> "NL-CM:10.1.8" "Location (For specific situations only. See the comment on this element for more information.)"
+
+Mapping: MedMijProcedure
+Source: MzProcedure
+Id: mz-dataset-100-beta1-2025xxyy
+Title: "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
+* -> "mz-dataelement-109" "Procedure"
+* status -> "mz-dataelement-110" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
+* status -> "mz-dataelement-111" "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
+* code -> "mz-dataelement-114" "ProcedureType"
+* subject -> "mz-dataelement-1" "Patient"
+* performedPeriod.start -> "mz-dataelement-110" "ProcedureStartDate"
+* performedPeriod.end -> "mz-dataelement-111" "ProcedureEndDate"
+* performedDateTime -> "mz-dataelement-110" "ProcedureStartDate"
+* performer.actor -> "mz-dataelement-118" "Performer"
+* location -> "mz-dataelement-117" "Location"
+* reasonReference -> "mz-dataelement-113" "Indication"
+* bodySite -> "mz-dataelement-112" "ProcedureAnatomicalLocation"

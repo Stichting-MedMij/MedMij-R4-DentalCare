@@ -15,23 +15,19 @@ Description: "The treatment objective describes the desired result of the treatm
 * ^contact.telecom.use = #work
 * ^purpose = "This Goal resource represents the TreatmentObjective building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
-* ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-* ^mapping.name = "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
-* .
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-140"
-  * ^mapping.comment = "TreatmentObjective"
 * priority from http://hl7.org/fhir/ValueSet/goal-priority (extensible)
   * ^short = "Priority"
   * ^definition = "The priority of the treatment objective, e.g. low or high priority."
   * ^comment = "A short-term and long-term treatment objective correspond with _high-priority_ and _low-priority_, respectively."
   * ^alias = "Prioriteit"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-141"
-  * ^mapping.comment = "Priority"
 * subject
   * ^short = "Patient"
   * ^alias = "Patient"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-1"
-  * ^mapping.comment = "Patient"
+
+Mapping: MedMijTreatmentObjective
+Source: MzTreatmentObjective
+Id: mz-dataset-100-beta1-2025xxyy
+Title: "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
+* -> "mz-dataelement-140" "TreatmentObjective"
+* priority -> "mz-dataelement-141" "Priority"
+* subject -> "mz-dataelement-1" "Patient"

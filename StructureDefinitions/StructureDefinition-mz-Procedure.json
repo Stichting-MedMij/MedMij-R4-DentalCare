@@ -29,22 +29,21 @@
   "mapping": [
     {
       "identity": "zib-procedure-v5.2-2020EN",
-      "uri": "https://zibs.nl/wiki/Procedure-v5.2(2020EN)",
-      "name": "zib Procedure-v5.2(2020EN)"
+      "name": "zib Procedure-v5.2(2020EN)",
+      "uri": "https://zibs.nl/wiki/Procedure-v5.2(2020EN)"
     },
     {
       "identity": "zib-textresult-v4.4-2020EN",
-      "uri": "https://zibs.nl/wiki/TextResult-v4.4(2020EN)",
-      "name": "zib TextResult-v4.4(2020EN)"
+      "name": "zib TextResult-v4.4(2020EN)",
+      "uri": "https://zibs.nl/wiki/TextResult-v4.4(2020EN)"
     },
     {
       "identity": "zib-medicaldevice-v3.3.1-2020EN",
-      "uri": "https://zibs.nl/wiki/MedicalDevice-v3.3.1(2020EN)",
-      "name": "zib MedicalDevice-v3.3.1(2020EN)"
+      "name": "zib MedicalDevice-v3.3.1(2020EN)",
+      "uri": "https://zibs.nl/wiki/MedicalDevice-v3.3.1(2020EN)"
     },
     {
       "identity": "mz-dataset-100-beta1-2025xxyy",
-      "uri": "",
       "name": "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
     }
   ],

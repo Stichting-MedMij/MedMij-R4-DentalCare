@@ -1,9 +1,5 @@
 //Profile on Observation for ASAScore to be used in Dental Care
 
-Alias: $SCT = http://snomed.info/sct
-Alias: $ASAScoreValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.2
-Alias: $ASAScoreValueSetURL = http://medmij.nl/fhir/ValueSet/ASAScore
-
 Profile: MzASAScore
 Parent: Observation
 Id: mz-ASAScore
@@ -19,28 +15,18 @@ Description: "Classification of physical condition according to American Society
 * ^contact.telecom.use = #work
 * ^purpose = "This Observation resource represents the ASAScore building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
-* ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-* ^mapping.name = "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
 * . 
   * ^short = "ASAScore"
   * ^alias = "ASAScore"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-132"
-  * ^mapping.comment = "ASAScore"
-* code ^patternCodeableConcept = $SCT#413347006
+* code
+  * ^patternCodeableConcept = $SCT#413347006
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-1"
-  * ^mapping.comment = "Patient"
 * effectiveDateTime
   * ^short = "ASAScoreDateTime"
   * ^definition = "The date and time at which the ASA score was determined."
   * ^alias = "ASAScoreDatumTijd"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-133"
-  * ^mapping.comment = "ASAScoreDateTime"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the ASA score."
@@ -50,25 +36,16 @@ Description: "Classification of physical condition according to American Society
     In rare circumstances, there is only a Practitioner instance, in which case it is that instance which will be referenced here. However, since this should be the exception, the nl-core-HealthProfessional-Practitioner profile is not explicitly mentioned as a target profile.
     """
   * ^alias = "Uitvoerder"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-149"
-  * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $ASAScoreValueSetURL (required)
   * ^short = "ASAScoreValue"
   * ^definition = "The value of the ASA score."
   * ^alias = "ASAScoreWaarde"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-134"
-  * ^mapping.comment = "ASAScoreValue"
 * note 0..1
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the ASA score measurement, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
-    * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping.map = "mz-dataelement-135"
-    * ^mapping.comment = "Comment"
 
 ValueSet: ASAScore
 Id: ASAScore
@@ -76,7 +53,7 @@ Title: "ASAScore ValueSet."
 Description: "Classification of physical condition according to American Society of Anaesthesiologists."
 * ^url = $ASAScoreValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $ASAScoreValueSetOID
 * ^status = #draft
 * ^experimental = false
@@ -97,3 +74,14 @@ Description: "Classification of physical condition according to American Society
   * ^extension[http://hl7.org/fhir/StructureDefinition/valueset-concept-comments].valueString = "Stervende, overlijden < 24 uur zonder ingreep"
 * $SCT#413500003 "ASA-score 6"
   * ^extension[http://hl7.org/fhir/StructureDefinition/valueset-concept-comments].valueString = "Hersendood, Multi Orgaan Donatie"
+
+Mapping: MedMijASAScore
+Source: MzASAScore
+Id: mz-dataset-100-beta1-2025xxyy
+Title: "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
+* -> "mz-dataelement-132" "ASAScore"
+* subject -> "mz-dataelement-1" "Patient"
+* effectiveDateTime -> "mz-dataelement-133" "ASAScoreDateTime"
+* performer -> "mz-dataelement-149" "Performer"
+* valueCodeableConcept -> "mz-dataelement-134" "ASAScoreValue"
+* note.text -> "mz-dataelement-135" "Comment"

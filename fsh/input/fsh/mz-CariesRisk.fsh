@@ -1,9 +1,5 @@
 //Profile on Observation for CariesRisk to be used in Dental Care
 
-Alias: $SCT = http://snomed.info/sct
-Alias: $CariesRiskValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.7
-Alias: $CariesRiskValueSetURL = http://medmij.nl/fhir/ValueSet/CariesRisk
-
 Profile: MzCariesRisk
 Parent: Observation
 Id: mz-CariesRisk
@@ -19,28 +15,18 @@ Description: "Caries risk."
 * ^contact.telecom.use = #work
 * ^purpose = "This Observation resource represents the CariesRisk building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
-* ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-* ^mapping.name = "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
 * . 
   * ^short = "CariesRisk"
   * ^alias = "Cariësrisico"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-124"
-  * ^mapping.comment = "CariesRisk"
-* code ^patternCodeableConcept = $SCT#609399004
+* code
+  * ^patternCodeableConcept = $SCT#609399004
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-1"
-  * ^mapping.comment = "Patient"
 * effectiveDateTime
   * ^short = "CariesRiskDateTime"
   * ^definition = "The date and time at which the caries risk was determined."
   * ^alias = "CariësrisicoDatumTijd"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-125"
-  * ^mapping.comment = "CariesRiskDateTime"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the caries risk."
@@ -50,25 +36,16 @@ Description: "Caries risk."
     In rare circumstances, there is only a Practitioner instance, in which case it is that instance which will be referenced here. However, since this should be the exception, the nl-core-HealthProfessional-Practitioner profile is not explicitly mentioned as a target profile.
     """
   * ^alias = "Uitvoerder"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-147"
-  * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $CariesRiskValueSetURL (extensible)
   * ^short = "CariesRiskValue"
   * ^definition = "The risk of caries."
   * ^alias = "CariësrisicoWaarde"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-126"
-  * ^mapping.comment = "CariesRiskValue"
 * note 0..1
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the caries risk, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
-    * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping.map = "mz-dataelement-127"
-    * ^mapping.comment = "Comment"
 
 ValueSet: CariesRisk
 Id: CariesRisk
@@ -76,7 +53,7 @@ Title: "CariesRisk ValueSet."
 Description: "Caries risk."
 * ^url = $CariesRiskValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $CariesRiskValueSetOID
 * ^status = #draft
 * ^experimental = false
@@ -89,3 +66,14 @@ Description: "Caries risk."
 * $SCT#1250004 "verlaagd"
 * $SCT#35105006 "verhoogd"
 * $SCT#75540009 "hoog"
+
+Mapping: MedMijCariesRisk
+Source: MzCariesRisk
+Id: mz-dataset-100-beta1-2025xxyy
+Title: "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
+* -> "mz-dataelement-124" "CariesRisk"
+* subject -> "mz-dataelement-1" "Patient"
+* effectiveDateTime -> "mz-dataelement-125" "CariesRiskDateTime"
+* performer -> "mz-dataelement-147" "Performer"
+* valueCodeableConcept -> "mz-dataelement-126" "CariesRiskValue"
+* note.text -> "mz-dataelement-127" "Comment"

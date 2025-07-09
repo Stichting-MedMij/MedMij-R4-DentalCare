@@ -1,9 +1,5 @@
 //Profile on Observation for DentalFitness to be used in Dental Care
 
-Alias: $SCT = http://snomed.info/sct
-Alias: $DentalFitnessValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.1
-Alias: $DentalFitnessValueSetURL = http://medmij.nl/fhir/ValueSet/DentalFitness
-
 Profile: MzDentalFitness
 Parent: Observation
 Id: mz-DentalFitness
@@ -19,28 +15,18 @@ Description: "Dental fitness according to the NATO classification system."
 * ^contact.telecom.use = #work
 * ^purpose = "This Observation resource represents the DentalFitness building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
-* ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-* ^mapping.name = "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
 * . 
   * ^short = "DentalFitness"
   * ^alias = "DentalFitness"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-109"
-  * ^mapping.comment = "DentalFitness"
-* code ^patternCodeableConcept = $SCT#440271000146100
+* code
+  * ^patternCodeableConcept = $SCT#440271000146100
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-1"
-  * ^mapping.comment = "Patient"
 * effectiveDateTime
   * ^short = "DentalFitnessDateTime"
   * ^definition = "The date and time at which the dental fitness was determined."
   * ^alias = "DentalFitnessDatumTijd"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-110"
-  * ^mapping.comment = "DentalFitnessDateTime"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the dental fitness."
@@ -50,25 +36,16 @@ Description: "Dental fitness according to the NATO classification system."
     In rare circumstances, there is only a Practitioner instance, in which case it is that instance which will be referenced here. However, since this should be the exception, the nl-core-HealthProfessional-Practitioner profile is not explicitly mentioned as a target profile.
     """
   * ^alias = "Uitvoerder"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-145"
-  * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $DentalFitnessValueSetURL (required)
   * ^short = "DentalFitnessValue"
   * ^definition = "The dental fitness."
   * ^alias = "DentalFitnessWaarde"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-111"
-  * ^mapping.comment = "DentalFitnessValue"
 * note 0..1
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the dental fitness, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
-    * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping.map = "mz-dataelement-112"
-    * ^mapping.comment = "Comment"
 
 ValueSet: DentalFitness
 Id: DentalFitness
@@ -76,7 +53,7 @@ Title: "DentalFitness ValueSet."
 Description: "Dental fitness according to the NATO classification system."
 * ^url = $DentalFitnessValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $DentalFitnessValueSetOID
 * ^status = #draft
 * ^experimental = false
@@ -120,3 +97,14 @@ Description: "Dental fitness according to the NATO classification system."
   * ^designation[1].language = #en-US
   * ^designation[1].use = $SCT#900000000000013009 "Synonym"
   * ^designation[1].value = "periodic dental examination required, undetermined dental status, or dental record is missing or incomplete"
+
+Mapping: MedMijDentalFitness
+Source: MzDentalFitness
+Id: mz-dataset-100-beta1-2025xxyy
+Title: "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
+* -> "mz-dataelement-109" "DentalFitness"
+* subject -> "mz-dataelement-1" "Patient"
+* effectiveDateTime -> "mz-dataelement-110" "DentalFitnessDateTime"
+* performer -> "mz-dataelement-145" "Performer"
+* valueCodeableConcept -> "mz-dataelement-111" "DentalFitnessValue"
+* note.text -> "mz-dataelement-112" "Comment"

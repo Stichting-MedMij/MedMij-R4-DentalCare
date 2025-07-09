@@ -1,16 +1,11 @@
-//Bundle with FHIR test instances in FSH format for "Dental Care" test scenario 1
-
-Alias: $SCT = http://snomed.info/sct
-Alias: $MedMij = urn:oid:2.16.528.1.1023.5
-Alias: $PeriodicPeriodontalScreeningCodeSystemURL = http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening
-Alias: $GoalPriority = http://terminology.hl7.org/CodeSystem/goal-priority
-Alias: $NZaDentalCare = https://puc.overheid.nl/nza/doc/PUC_764375_22/1
+//Bundle with FHIR test instances in FSH format for Dental Care test scenario 1
 
 Instance: DentalCare-ASAScore-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ASAScore
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: ASA-score 1<br/>Opmerking: Verandering gezondheid: enkel gebroken<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: ASA-score 1<br/>Opmerking: Verandering gezondheid: enkel gebroken<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -23,8 +18,9 @@ Usage: #example
 Instance: DentalCare-CariesRisk-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Risico op cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Cariësrisico: Laag<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Risico op cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Cariësrisico: Laag<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#609399004 "risico op cariës"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -35,8 +31,9 @@ Usage: #example
 Instance: DentalCare-DentalFitness-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness (NAVO-classificatiesysteem)<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-02-02 06:43<br/>Dental Fitness: Vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness (NAVO-classificatiesysteem)<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-02-02 06:43<br/>Dental Fitness: Vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#440271000146100 "'dental fitness' volgens NAVO-classificatiesysteem"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -49,8 +46,9 @@ Usage: #example
 Instance: DentalCare-OralHygiene-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#110298001 "bevinding betreffende mondhygiëne"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -61,8 +59,9 @@ Usage: #example
 Instance: DentalCare-ParafunctionalActivity-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Activiteit: Overmatig knarsen bij stress<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Activiteit: Overmatig knarsen bij stress<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $MedMij#PA1 "Parafunctionele activiteit"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -73,8 +72,9 @@ Usage: #example
 Instance: DentalCare-PeriodicPeriodontalScreening-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen paradontale vervolgbehandeling<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen paradontale vervolgbehandeling<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -87,8 +87,9 @@ Usage: #example
 Instance: DentalCare-TreatmentObjective-1-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Tandvleesontsteking behandelen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Tandvleesontsteking behandelen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#high-priority "High Priority"
 * description
@@ -98,8 +99,9 @@ Usage: #example
 Instance: DentalCare-TreatmentObjective-2-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Brug monteren bij rechterbovenkies<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Laag</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Brug monteren bij rechterbovenkies<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Laag</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#low-priority "Low Priority"
 * description
@@ -109,8 +111,9 @@ Usage: #example
 Instance: DentalCare-Procedure-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
 * status = #completed
 * code = $NZaDentalCare#R67 "Plaatsen opbouw ten behoeve van implantaatkroon"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -122,8 +125,9 @@ Usage: #example
 Instance: DentalCare-Patient-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Nationaliteit: Nederlandse<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Nationaliteit: Nederlandse<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
 * extension[http://hl7.org/fhir/StructureDefinition/patient-nationality].extension[code].valueCodeableConcept = urn:oid:2.16.840.1.113883.2.4.4.16.32#0001 "Nederlandse"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
@@ -167,8 +171,9 @@ Usage: #example
 Instance: DentalCare-PractitionerRole-De-Koning
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Koning, de<br/>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Koning, de<br/>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * practitioner = Reference(DentalCare-Practitioner-De-Koning) "A.B.D.O. de Koning"
 * organization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
 * specialty
@@ -178,8 +183,9 @@ Usage: #example
 Instance: DentalCare-Practitioner-De-Koning
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: A.B.D.O de Koning<br/>BIG-nummer: 12070100<br/>Telefoon: +31612345600<br/>E-mail: dekoning@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: A.B.D.O de Koning<br/>BIG-nummer: 12070100<br/>Telefoon: +31612345600<br/>E-mail: dekoning@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/big"
   * value = "12070100"
@@ -219,8 +225,9 @@ Usage: #example
 Instance: DentalCare-Organization-Defensie-Tandheelkundige-Dienst
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>AGB-code: 12095095<br/>Telefoon: +31653603740<br/>E-mail: PJ.Jumpertz.01@mindef.nl<br/>Adres: Herculeslaan 1, 3584 AB Utrecht</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>AGB-code: 12095095<br/>Telefoon: +31653603740<br/>E-mail: PJ.Jumpertz.01@mindef.nl<br/>Adres: Herculeslaan 1, 3584 AB Utrecht</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/agb-z"
   * value = "12095095"
@@ -245,8 +252,9 @@ Usage: #example
 Instance: DentalCare-Location-Vliegbasis-Gilze-Rijen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: Vliegbasis Gilze-Rijen<br/>Telefoon: 0889502753<br/>Adres: Rijksweg 121, 5120 AA Rijen<br/>Beherende organisatie: Ministerie van Defensie DTD Tandheelkunde</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: Vliegbasis Gilze-Rijen<br/>Telefoon: 0889502753<br/>Adres: Rijksweg 121, 5120 AA Rijen<br/>Beherende organisatie: Ministerie van Defensie DTD Tandheelkunde</div>"
 * name = "Vliegbasis Gilze-Rijen"
 * telecom
   * system = #phone
