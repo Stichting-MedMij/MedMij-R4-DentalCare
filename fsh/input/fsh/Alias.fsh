@@ -1,4 +1,4 @@
-//All aliases used in "Dental Care"
+//All aliases used in Dental Care
 
 Alias: $ASAScoreValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.2
 Alias: $ASAScoreValueSetURL = http://medmij.nl/fhir/ValueSet/ASAScore
