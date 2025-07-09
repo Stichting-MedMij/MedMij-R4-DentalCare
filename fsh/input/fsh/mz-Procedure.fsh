@@ -1,14 +1,5 @@
 //Profile on Procedure for Procedure to be used in Dental Care
 
-Alias: $ProcedureTypeDentalCareValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.9
-Alias: $ProcedureTypeDentalCareValueSetURL = http://medmij.nl/fhir/ValueSet/ProcedureTypeDentalCare
-Alias: $ProcedureTypeNZaDentalCareValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.5
-Alias: $ProcedureTypeNZaDentalCareValueSetURL = http://medmij.nl/fhir/ValueSet/ProcedureTypeNZaDentalCare
-Alias: $NZaDentalCare = https://puc.overheid.nl/nza/doc/PUC_764375_22/1
-Alias: $ProcedureTypeNZaOrthodonticCareValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.8
-Alias: $ProcedureTypeNZaOrthodonticCareValueSetURL = http://medmij.nl/fhir/ValueSet/ProcedureTypeNZaOrthodonticCare
-Alias: $NZaOrthodonticCare = https://puc.overheid.nl/nza/doc/PUC_764432_22/1
-
 Profile: MzProcedure
 Parent: Procedure
 Id: mz-Procedure
@@ -109,7 +100,7 @@ Description: "Combined ValueSet for the procedure type in dental care."
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^url = $ProcedureTypeDentalCareValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $ProcedureTypeDentalCareValueSetOID
 * ^status = #draft
 * ^experimental = false
@@ -129,7 +120,7 @@ Description: "ValueSet for the procedure type in dental care authored by the Ned
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^url = $ProcedureTypeNZaDentalCareValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $ProcedureTypeNZaDentalCareValueSetOID
 * ^status = #draft
 * ^experimental = false
@@ -469,7 +460,7 @@ Description: "ValueSet for the procedure type in orthodontic care authored by th
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^url = $ProcedureTypeNZaOrthodonticCareValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $ProcedureTypeNZaOrthodonticCareValueSetOID
 * ^status = #draft
 * ^experimental = false

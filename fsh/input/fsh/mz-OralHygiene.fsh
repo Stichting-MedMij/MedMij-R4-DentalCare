@@ -1,9 +1,5 @@
 //Profile on Observation for OralHygiene to be used in Dental Care
 
-Alias: $SCT = http://snomed.info/sct
-Alias: $OralHygieneValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.6
-Alias: $OralHygieneValueSetURL = http://medmij.nl/fhir/ValueSet/OralHygiene
-
 Profile: MzOralHygiene
 Parent: Observation
 Id: mz-OralHygiene
@@ -56,7 +52,7 @@ Title: "OralHygiene ValueSet."
 Description: "Oral hygiene."
 * ^url = $OralHygieneValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $OralHygieneValueSetOID
 * ^status = #draft
 * ^experimental = false

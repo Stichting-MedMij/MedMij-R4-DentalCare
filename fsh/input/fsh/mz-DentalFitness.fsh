@@ -1,9 +1,5 @@
 //Profile on Observation for DentalFitness to be used in Dental Care
 
-Alias: $SCT = http://snomed.info/sct
-Alias: $DentalFitnessValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.1
-Alias: $DentalFitnessValueSetURL = http://medmij.nl/fhir/ValueSet/DentalFitness
-
 Profile: MzDentalFitness
 Parent: Observation
 Id: mz-DentalFitness
@@ -56,7 +52,7 @@ Title: "DentalFitness ValueSet."
 Description: "Dental fitness according to the NATO classification system."
 * ^url = $DentalFitnessValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $DentalFitnessValueSetOID
 * ^status = #draft
 * ^experimental = false

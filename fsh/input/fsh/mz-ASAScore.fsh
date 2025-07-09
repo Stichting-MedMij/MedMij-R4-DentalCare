@@ -1,9 +1,5 @@
 //Profile on Observation for ASAScore to be used in Dental Care
 
-Alias: $SCT = http://snomed.info/sct
-Alias: $ASAScoreValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.2
-Alias: $ASAScoreValueSetURL = http://medmij.nl/fhir/ValueSet/ASAScore
-
 Profile: MzASAScore
 Parent: Observation
 Id: mz-ASAScore
@@ -56,7 +52,7 @@ Title: "ASAScore ValueSet."
 Description: "Classification of physical condition according to American Society of Anaesthesiologists."
 * ^url = $ASAScoreValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $ASAScoreValueSetOID
 * ^status = #draft
 * ^experimental = false

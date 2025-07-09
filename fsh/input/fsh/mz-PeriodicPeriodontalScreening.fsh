@@ -1,11 +1,5 @@
 //Profile on Observation for PeriodicPeriodontalScreening to be used in Dental Care
 
-Alias: $SCT = http://snomed.info/sct
-Alias: $PeriodicPeriodontalScreeningCodeSystemOID = urn:oid:2.16.528.1.1023.5.1.2
-Alias: $PeriodicPeriodontalScreeningCodeSystemURL = http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening
-Alias: $PeriodicPeriodontalScreeningValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.3
-Alias: $PeriodicPeriodontalScreeningValueSetURL = http://medmij.nl/fhir/ValueSet/PeriodicPeriodontalScreening
-
 Profile: MzPeriodicPeriodontalScreening
 Parent: Observation
 Id: mz-PeriodicPeriodontalScreening
@@ -60,7 +54,7 @@ Description: "Codes for the periodontal screening for dental plaque-related dise
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^url = $PeriodicPeriodontalScreeningCodeSystemURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $PeriodicPeriodontalScreeningCodeSystemOID
 * ^status = #draft
 * ^experimental = false
@@ -94,7 +88,7 @@ Description: "ValueSet for the periodontal screening for dental plaque-related d
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
 * ^url = $PeriodicPeriodontalScreeningValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $PeriodicPeriodontalScreeningValueSetOID
 * ^status = #draft
 * ^experimental = false

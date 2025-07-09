@@ -1,11 +1,5 @@
 //Bundle with FHIR test instances in FSH format for "Dental Care" test scenario 2
 
-Alias: $SCT = http://snomed.info/sct
-Alias: $MedMij = urn:oid:2.16.528.1.1023.5
-Alias: $PeriodicPeriodontalScreeningCodeSystemURL = http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening
-Alias: $GoalPriority = http://terminology.hl7.org/CodeSystem/goal-priority
-Alias: $NZaDentalCare = https://puc.overheid.nl/nza/doc/PUC_764375_22/1
-
 Instance: DentalCare-ASAScore-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ASAScore
 Usage: #example

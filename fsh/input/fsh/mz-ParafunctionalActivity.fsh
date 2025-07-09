@@ -1,7 +1,5 @@
 //Profile on Observation for ParafunctionalActivity to be used in Dental Care
 
-Alias: $MedMij = urn:oid:2.16.528.1.1023.5
-
 Profile: MzParafunctionalActivity
 Parent: Observation
 Id: mz-ParafunctionalActivity

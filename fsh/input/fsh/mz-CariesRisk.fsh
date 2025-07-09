@@ -1,9 +1,5 @@
 //Profile on Observation for CariesRisk to be used in Dental Care
 
-Alias: $SCT = http://snomed.info/sct
-Alias: $CariesRiskValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.7
-Alias: $CariesRiskValueSetURL = http://medmij.nl/fhir/ValueSet/CariesRisk
-
 Profile: MzCariesRisk
 Parent: Observation
 Id: mz-CariesRisk
@@ -56,7 +52,7 @@ Title: "CariesRisk ValueSet."
 Description: "Caries risk."
 * ^url = $CariesRiskValueSetURL
 * ^identifier.use = #official
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.system = $URI
 * ^identifier.value = $CariesRiskValueSetOID
 * ^status = #draft
 * ^experimental = false
