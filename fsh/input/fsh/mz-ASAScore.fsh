@@ -18,7 +18,8 @@ Description: "Classification of physical condition according to American Society
 * . 
   * ^short = "ASAScore"
   * ^alias = "ASAScore"
-* code ^patternCodeableConcept = $SCT#413347006
+* code
+  * ^patternCodeableConcept = $SCT#413347006
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"

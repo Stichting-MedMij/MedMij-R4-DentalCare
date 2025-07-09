@@ -1,10 +1,11 @@
-//Bundle with FHIR test instances in FSH format for "Dental Care" test scenario 3
+//Bundle with FHIR test instances in FSH format for Dental Care test scenario 3
 
 Instance: DentalCare-ASAScore-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ASAScore
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Score: ASA-score 3<br/>Opmerking: Allergisch voor gluten, heeft nierziekte en bloedarmoede<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Score: ASA-score 3<br/>Opmerking: Allergisch voor gluten, heeft nierziekte en bloedarmoede<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
 * status = #final
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -17,8 +18,9 @@ Usage: #example
 Instance: DentalCare-CariesRisk-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Risico op cariës<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Risico op cariës<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
 * status = #final
 * code = $SCT#609399004 "risico op cariës"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -29,8 +31,9 @@ Usage: #example
 Instance: DentalCare-DentalFitness-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness (NAVO-classificatiesysteem)<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-03-03 10:43<br/>Dental Fitness: Kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness (NAVO-classificatiesysteem)<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-03-03 10:43<br/>Dental Fitness: Kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
 * status = #final
 * code = $SCT#440271000146100 "'dental fitness' volgens NAVO-classificatiesysteem"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -43,8 +46,9 @@ Usage: #example
 Instance: DentalCare-OralHygiene-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Mondhygiëne: Goed<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Mondhygiëne: Goed<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
 * status = #final
 * code = $SCT#110298001 "bevinding betreffende mondhygiëne"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -55,8 +59,9 @@ Usage: #example
 Instance: DentalCare-ParafunctionalActivity-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Activiteit: Tanden knarsen tijdens slaap<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Activiteit: Tanden knarsen tijdens slaap<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
 * status = #final
 * code = $MedMij#PA1 "Parafunctionele activiteit"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -67,8 +72,9 @@ Usage: #example
 Instance: DentalCare-PeriodicPeriodontalScreening-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Score: Pockets groter of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Paro-traject<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Score: Pockets groter of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Paro-traject<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
 * status = #final
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -81,8 +87,9 @@ Usage: #example
 Instance: DentalCare-TreatmentObjective-1-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Trekken snijtand linksboven<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Trekken snijtand linksboven<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#high-priority "High Priority"
 * description
@@ -92,8 +99,9 @@ Usage: #example
 Instance: DentalCare-TreatmentObjective-2-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Wortelpuntoperatie (apexresectie)<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Laag</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Wortelpuntoperatie (apexresectie)<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Laag</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#low-priority "Low Priority"
 * description
@@ -103,8 +111,9 @@ Usage: #example
 Instance: DentalCare-Procedure-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Wortelpuntoperatie, per tandwortel, zonder afsluiting<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Wortelpuntoperatie, per tandwortel, zonder afsluiting<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
 * status = #completed
 * code = $NZaDentalCare#H42 "Wortelpuntoperatie, per tandwortel, zonder afsluiting"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -116,8 +125,9 @@ Usage: #example
 Instance: DentalCare-Patient-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Berend van de Stok<br/>Geboortedatum: 1980-05-04<br/>Geslacht: Man<br/>Adres: Bloemstraat 25, 5678 BB Bergen op Zoom, Nederland<br/>Telefoon: +31687654321<br/>E-mail: berendvandestok@gmail.com</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Berend van de Stok<br/>Geboortedatum: 1980-05-04<br/>Geslacht: Man<br/>Adres: Bloemstraat 25, 5678 BB Bergen op Zoom, Nederland<br/>Telefoon: +31687654321<br/>E-mail: berendvandestok@gmail.com</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
   * value.extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason].valueCode = #masked // gemaskeerd BSN
@@ -159,8 +169,9 @@ Usage: #example
 Instance: DentalCare-PractitionerRole-Dijkstra
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Dijkstra<br/>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>Locatie: CWZ Nijmegen</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Dijkstra<br/>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>Locatie: CWZ Nijmegen</div>"
 * practitioner = Reference(DentalCare-Practitioner-Dijkstra) "B. Dijkstra"
 * organization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
 * specialty
@@ -170,8 +181,9 @@ Usage: #example
 Instance: DentalCare-Practitioner-Dijkstra
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: B. Dijkstra<br/>BIG-nummer: 12000003<br/>Telefoon: +31687654321<br/>E-mail: dijkstra@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: B. Dijkstra<br/>BIG-nummer: 12000003<br/>Telefoon: +31687654321<br/>E-mail: dijkstra@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/big"
   * value = "12000003"
@@ -204,8 +216,9 @@ Usage: #example
 Instance: DentalCare-Location-CWZ-Nijmegen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: CWZ Nijmegen<br/>Telefoon: 0246412121<br/>Adres: Weg door Jonkerbos 100, 6532 SZ Nijmegen<br/>Beherende organisatie: Ministerie van Defensie DTD Tandheelkunde</div>"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: CWZ Nijmegen<br/>Telefoon: 0246412121<br/>Adres: Weg door Jonkerbos 100, 6532 SZ Nijmegen<br/>Beherende organisatie: Ministerie van Defensie DTD Tandheelkunde</div>"
 * name = "CWZ Nijmegen"
 * telecom
   * system = #phone

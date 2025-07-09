@@ -15,10 +15,11 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^contact.telecom.use = #work
 * ^purpose = "This Observation resource represents the PeriodicPeriodontalScreening building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
-* . 
+* .
   * ^short = "PeriodicPeriodontalScreening"
   * ^alias = "PeriodiekeParodontaleScreening"
-* code ^patternCodeableConcept = $SCT#540501000146103
+* code
+  * ^patternCodeableConcept = $SCT#540501000146103
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"

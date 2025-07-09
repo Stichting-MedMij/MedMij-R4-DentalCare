@@ -18,7 +18,8 @@ Description: "Caries risk."
 * . 
   * ^short = "CariesRisk"
   * ^alias = "Cariësrisico"
-* code ^patternCodeableConcept = $SCT#609399004
+* code
+  * ^patternCodeableConcept = $SCT#609399004
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"

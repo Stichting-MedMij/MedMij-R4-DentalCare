@@ -18,7 +18,8 @@ Description: "Dental fitness according to the NATO classification system."
 * . 
   * ^short = "DentalFitness"
   * ^alias = "DentalFitness"
-* code ^patternCodeableConcept = $SCT#440271000146100
+* code
+  * ^patternCodeableConcept = $SCT#440271000146100
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"
