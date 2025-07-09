@@ -21,28 +21,17 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^contact.telecom.use = #work
 * ^purpose = "This Observation resource represents the PeriodicPeriodontalScreening building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
-* ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-* ^mapping.name = "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
 * . 
   * ^short = "PeriodicPeriodontalScreening"
   * ^alias = "PeriodiekeParodontaleScreening"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-136"
-  * ^mapping.comment = "PeriodicPeriodontalScreening"
 * code ^patternCodeableConcept = $SCT#540501000146103
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-1"
-  * ^mapping.comment = "Patient"
 * effectiveDateTime
   * ^short = "PPSDateTime"
   * ^definition = "The date and time at which the PPS was performed."
   * ^alias = "PPSDatumTijd"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-137"
-  * ^mapping.comment = "PPSDateTime"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who performed the PPS."
@@ -52,25 +41,16 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
     In rare circumstances, there is only a Practitioner instance, in which case it is that instance which will be referenced here. However, since this should be the exception, the nl-core-HealthProfessional-Practitioner profile is not explicitly mentioned as a target profile.
     """
   * ^alias = "Uitvoerder"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-150"
-  * ^mapping.comment = "Performer"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $PeriodicPeriodontalScreeningValueSetURL (required)
   * ^short = "PPSScore"
   * ^definition = "The score of the PPS."
   * ^alias = "PPSScore"
-  * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-  * ^mapping.map = "mz-dataelement-138"
-  * ^mapping.comment = "PPSScore"
 * note 0..1
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
-    * ^mapping.identity = "mz-dataset-100-beta1-2025xxyy"
-    * ^mapping.map = "mz-dataelement-139"
-    * ^mapping.comment = "Comment"
 
 CodeSystem: PeriodicPeriodontalScreening
 Id: PeriodicPeriodontalScreening
@@ -124,3 +104,14 @@ Description: "ValueSet for the periodontal screening for dental plaque-related d
 * ^contact.telecom.value = "info@medmij.nl"
 * ^contact.telecom.use = #work
 * include codes from system $PeriodicPeriodontalScreeningCodeSystemURL
+
+Mapping: MedMijPeriodicPeriodontalScreening
+Source: MzPeriodicPeriodontalScreening
+Id: mz-dataset-100-beta1-2025xxyy
+Title: "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
+* -> "mz-dataelement-136" "PeriodicPeriodontalScreening"
+* subject -> "mz-dataelement-1" "Patient"
+* effectiveDateTime -> "mz-dataelement-137" "PPSDateTime"
+* performer -> "mz-dataelement-150" "Performer"
+* valueCodeableConcept -> "mz-dataelement-138" "PPSScore"
+* note.text -> "mz-dataelement-139" "Comment"
