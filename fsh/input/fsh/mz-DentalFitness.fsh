@@ -1,4 +1,4 @@
-//Profile on Observation for DentalFitness to be used in Dental Care
+// Profile on Observation for DentalFitness to be used in Dental Care
 
 Profile: MzDentalFitness
 Parent: Observation

@@ -1,4 +1,4 @@
-//Profile on Observation for CariesRisk to be used in Dental Care
+// Profile on Observation for CariesRisk to be used in Dental Care
 
 Profile: MzCariesRisk
 Parent: Observation

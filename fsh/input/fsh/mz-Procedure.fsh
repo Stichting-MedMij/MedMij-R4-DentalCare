@@ -1,4 +1,4 @@
-//Profile on Procedure for Procedure to be used in Dental Care
+// Profile on Procedure for Procedure to be used in Dental Care
 
 Profile: MzProcedure
 Parent: Procedure

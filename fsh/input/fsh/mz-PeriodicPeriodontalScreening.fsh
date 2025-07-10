@@ -1,4 +1,4 @@
-//Profile on Observation for PeriodicPeriodontalScreening to be used in Dental Care
+// Profile on Observation for PeriodicPeriodontalScreening to be used in Dental Care
 
 Profile: MzPeriodicPeriodontalScreening
 Parent: Observation

@@ -1,4 +1,4 @@
-//Profile on Observation for ParafunctionalActivity to be used in Dental Care
+// Profile on Observation for ParafunctionalActivity to be used in Dental Care
 
 Profile: MzParafunctionalActivity
 Parent: Observation

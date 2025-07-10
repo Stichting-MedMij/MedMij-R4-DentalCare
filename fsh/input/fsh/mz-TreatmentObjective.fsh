@@ -1,4 +1,4 @@
-//Profile on Goal for TreatmentObjective to be used in Dental Care
+// Profile on Goal for TreatmentObjective to be used in Dental Care
 
 Profile: MzTreatmentObjective
 Parent: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
