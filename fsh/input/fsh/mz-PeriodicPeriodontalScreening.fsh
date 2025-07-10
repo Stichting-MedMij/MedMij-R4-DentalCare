@@ -42,7 +42,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
     * ^definition = "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-CodeSystem: PeriodicPeriodontalScreening
+CodeSystem: PeriodicPeriodontalScreening_CS
 Id: PeriodicPeriodontalScreening
 Title: "PeriodicPeriodontalScreening CodeSystem."
 Description: "Codes for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
@@ -51,6 +51,7 @@ Description: "Codes for the periodontal screening for dental plaque-related dise
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $PeriodicPeriodontalScreeningCodeSystemOID
+* ^name = "PeriodicPeriodontalScreening"
 * ^status = #draft
 * ^experimental = false
 * insert PublisherAndContact
@@ -71,7 +72,7 @@ Description: "Codes for the periodontal screening for dental plaque-related dise
   * ^property.code = #status
   * ^property.valueCode = #active
 
-ValueSet: PeriodicPeriodontalScreening
+ValueSet: PeriodicPeriodontalScreening_VS
 Id: PeriodicPeriodontalScreening
 Title: "PeriodicPeriodontalScreening ValueSet."
 Description: "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
@@ -80,6 +81,7 @@ Description: "ValueSet for the periodontal screening for dental plaque-related d
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $PeriodicPeriodontalScreeningValueSetOID
+* ^name = "PeriodicPeriodontalScreening"
 * ^status = #draft
 * ^experimental = false
 * insert PublisherAndContact
