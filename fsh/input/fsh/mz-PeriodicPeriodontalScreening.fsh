@@ -1,20 +1,15 @@
-//Profile on Observation for PeriodicPeriodontalScreening to be used in Dental Care
+// Profile on Observation for PeriodicPeriodontalScreening to be used in Dental Care
 
 Profile: MzPeriodicPeriodontalScreening
 Parent: Observation
 Id: mz-PeriodicPeriodontalScreening
 Title: "mz PeriodicPeriodontalScreening"
 Description: "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually."
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+* insert DefaultNarrative
 * ^status = #draft
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * ^purpose = "This Observation resource represents the PeriodicPeriodontalScreening building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
-* ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
+* insert Copyright
 * .
   * ^short = "PeriodicPeriodontalScreening"
   * ^alias = "PeriodiekeParodontaleScreening"
@@ -47,23 +42,19 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
     * ^definition = "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-CodeSystem: PeriodicPeriodontalScreening
+CodeSystem: PeriodicPeriodontalScreening_CS
 Id: PeriodicPeriodontalScreening
 Title: "PeriodicPeriodontalScreening CodeSystem."
 Description: "Codes for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+* insert DefaultNarrative
 * ^url = $PeriodicPeriodontalScreeningCodeSystemURL
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $PeriodicPeriodontalScreeningCodeSystemOID
+* ^name = "PeriodicPeriodontalScreening"
 * ^status = #draft
 * ^experimental = false
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * ^caseSensitive = false
 * ^content = #complete
 * ^count = 3
@@ -81,23 +72,19 @@ Description: "Codes for the periodontal screening for dental plaque-related dise
   * ^property.code = #status
   * ^property.valueCode = #active
 
-ValueSet: PeriodicPeriodontalScreening
+ValueSet: PeriodicPeriodontalScreening_VS
 Id: PeriodicPeriodontalScreening
 Title: "PeriodicPeriodontalScreening ValueSet."
 Description: "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+* insert DefaultNarrative
 * ^url = $PeriodicPeriodontalScreeningValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $PeriodicPeriodontalScreeningValueSetOID
+* ^name = "PeriodicPeriodontalScreening"
 * ^status = #draft
 * ^experimental = false
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * include codes from system $PeriodicPeriodontalScreeningCodeSystemURL
 
 Mapping: MedMijPeriodicPeriodontalScreening

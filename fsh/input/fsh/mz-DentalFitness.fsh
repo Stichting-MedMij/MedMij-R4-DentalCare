@@ -1,20 +1,15 @@
-//Profile on Observation for DentalFitness to be used in Dental Care
+// Profile on Observation for DentalFitness to be used in Dental Care
 
 Profile: MzDentalFitness
 Parent: Observation
 Id: mz-DentalFitness
 Title: "mz DentalFitness"
 Description: "Dental fitness according to the NATO classification system."
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+* insert DefaultNarrative
 * ^status = #draft
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * ^purpose = "This Observation resource represents the DentalFitness building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
-* ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
+* insert Copyright
 * . 
   * ^short = "DentalFitness"
   * ^alias = "DentalFitness"
@@ -57,11 +52,7 @@ Description: "Dental fitness according to the NATO classification system."
 * ^identifier.value = $DentalFitnessValueSetOID
 * ^status = #draft
 * ^experimental = false
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * $SCT#440351000146101 "klasse 0"
   * ^designation[0].language = #nl-NL
   * ^designation[0].use = $SCT#900000000000013009 "Synonym"

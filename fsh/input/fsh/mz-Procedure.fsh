@@ -1,20 +1,15 @@
-//Profile on Procedure for Procedure to be used in Dental Care
+// Profile on Procedure for Procedure to be used in Dental Care
 
 Profile: MzProcedure
 Parent: Procedure
 Id: mz-Procedure
 Title: "mz Procedure"
 Description: "Therapeutic or diagnostic procedure undergone by the patient in dental care."
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+* insert DefaultNarrative
 * ^status = #draft
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * ^purpose = "This Procedure resource represents the Procedure building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes w.r.t. ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, future procedures are not relevant in the context of Dental Care, hence all corresponding guidance and mappings present in the nl-core profile have been omitted in this profile."
-* ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
+* insert Copyright
 * .
   * ^short = "Procedure"
   * ^alias = "Verrichting"
@@ -96,19 +91,14 @@ ValueSet: ProcedureTypeDentalCare
 Id: ProcedureTypeDentalCare
 Title: "ProcedureTypeDentalCare ValueSet."
 Description: "Combined ValueSet for the procedure type in dental care."
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+* insert DefaultNarrative
 * ^url = $ProcedureTypeDentalCareValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $ProcedureTypeDentalCareValueSetOID
 * ^status = #draft
 * ^experimental = false
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * include codes from valueset $ProcedureTypeNZaDentalCareValueSetURL
 * include codes from valueset $ProcedureTypeNZaOrthodonticCareValueSetURL
 
@@ -116,19 +106,14 @@ ValueSet: ProcedureTypeNZaDentalCare
 Id: ProcedureTypeNZaDentalCare
 Title: "ProcedureTypeNZaDentalCare ValueSet."
 Description: "ValueSet for the procedure type in dental care authored by the Nederlandse Zorgautoriteit (NZa)."
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+* insert DefaultNarrative
 * ^url = $ProcedureTypeNZaDentalCareValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $ProcedureTypeNZaDentalCareValueSetOID
 * ^status = #draft
 * ^experimental = false
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * $NZaDentalCare#C001 "Consult ten behoeve van een intake, inclusief bepalen en bespreken zorgdoel"
 * $NZaDentalCare#C002 "Consult voor een periodieke controle"
 * $NZaDentalCare#C003 "Consult, niet zijnde periodieke controle"
@@ -456,19 +441,14 @@ ValueSet: ProcedureTypeNZaOrthodonticCare
 Id: ProcedureTypeNZaOrthodonticCare
 Title: "ProcedureTypeNZaOrthodonticCare ValueSet."
 Description: "ValueSet for the procedure type in orthodontic care authored by the Nederlandse Zorgautoriteit (NZa)."
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+* insert DefaultNarrative
 * ^url = $ProcedureTypeNZaOrthodonticCareValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $ProcedureTypeNZaOrthodonticCareValueSetOID
 * ^status = #draft
 * ^experimental = false
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * $NZaOrthodonticCare#F121 "Eerste consult"
 * $NZaOrthodonticCare#F122 "Herhaalconsult"
 * $NZaOrthodonticCare#F123 "Controlebezoek"

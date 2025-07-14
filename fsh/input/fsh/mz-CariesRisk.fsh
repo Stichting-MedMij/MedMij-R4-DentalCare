@@ -1,20 +1,15 @@
-//Profile on Observation for CariesRisk to be used in Dental Care
+// Profile on Observation for CariesRisk to be used in Dental Care
 
 Profile: MzCariesRisk
 Parent: Observation
 Id: mz-CariesRisk
 Title: "mz CariesRisk"
 Description: "Caries risk."
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+* insert DefaultNarrative
 * ^status = #draft
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * ^purpose = "This Observation resource represents the CariesRisk building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
-* ^copyright = "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."
+* insert Copyright
 * . 
   * ^short = "CariesRisk"
   * ^alias = "Cariësrisico"
@@ -57,11 +52,7 @@ Description: "Caries risk."
 * ^identifier.value = $CariesRiskValueSetOID
 * ^status = #draft
 * ^experimental = false
-* ^publisher = "MedMij"
-* ^contact.name = "MedMij"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "info@medmij.nl"
-* ^contact.telecom.use = #work
+* insert PublisherAndContact
 * $SCT#62482003 "laag"
 * $SCT#1250004 "verlaagd"
 * $SCT#35105006 "verhoogd"
