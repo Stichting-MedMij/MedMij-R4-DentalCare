@@ -144,7 +144,7 @@ Usage: #example
   * given = "Berend"
 * telecom[0]
   * system = #phone
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "Mobiel telefoonnummer"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "Mobile contact"
   * value = "+31687654321"
 * telecom[1]
   * system = #email
@@ -155,7 +155,7 @@ Usage: #example
 * birthDate = "1980-05-04"
 * deceasedBoolean = false
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "Officieel adres"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "primary home"
   * use = #home
   * type = #both
   * line = "Bloemstraat 25"
@@ -163,7 +163,7 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "25"
   * city = "Bergen op Zoom"
   * postalCode = "5678 BB"
-  * country = "Nederland"
+  * country = "Netherlands"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Nederland"
 
 Instance: DentalCare-PractitionerRole-Dijkstra
@@ -209,7 +209,7 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
-  * country = "Nederland"
+  * country = "Netherlands"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Nederland"
 
 Instance: DentalCare-Location-CWZ-Nijmegen

@@ -145,7 +145,7 @@ Usage: #example
   * given = "Erik"
 * telecom[0]
   * system = #phone
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "Mobiel telefoonnummer"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile contact"
   * value = "+31612345600"
 * telecom[1]
   * system = #email
@@ -156,7 +156,7 @@ Usage: #example
 * birthDate = "1991-08-02"
 * deceasedBoolean = false
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "Officieel adres"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "primary home"
   * use = #home
   * type = #both
   * line = "De Doerak 57A"
@@ -165,7 +165,7 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix].valueString = "A"
   * city = "Montferland"
   * postalCode = "6123 PP"
-  * country = "Nederland"
+  * country = "Netherlands"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Nederland"
 
 Instance: DentalCare-PractitionerRole-De-Koning
@@ -218,7 +218,7 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
-  * country = "Nederland"
+  * country = "Netherlands"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Nederland"
 
 Instance: DentalCare-Organization-Defensie-Tandheelkundige-Dienst

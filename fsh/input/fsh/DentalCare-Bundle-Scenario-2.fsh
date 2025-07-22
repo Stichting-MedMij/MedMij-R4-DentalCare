@@ -143,7 +143,7 @@ Usage: #example
   * given = "Anita"
 * telecom[0]
   * system = #phone
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "Mobiel telefoonnummer"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile contact"
   * value = "+31612345678"
 * telecom[1]
   * system = #email
@@ -154,7 +154,7 @@ Usage: #example
 * birthDate = "2010-03-15"
 * deceasedBoolean = false
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "Officieel adres"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "primary home"
   * use = #home
   * type = #both
   * line = "Achillesstraat 12"
@@ -162,7 +162,7 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "12"
   * city = "Amsterdam"
   * postalCode = "1234 AA"
-  * country = "Nederland"
+  * country = "Netherlands"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Nederland"
 
 Instance: DentalCare-PractitionerRole-De-Ruiter
@@ -209,5 +209,5 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
-  * country = "Nederland"
+  * country = "Netherlands"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Nederland"
