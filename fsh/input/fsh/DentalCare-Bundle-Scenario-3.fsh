@@ -163,7 +163,7 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "25"
   * city = "Bergen op Zoom"
   * postalCode = "5678 BB"
-  * country = "Netherlands"
+  * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
 Instance: DentalCare-PractitionerRole-Dijkstra
@@ -209,7 +209,7 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
-  * country = "Netherlands"
+  * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
 Instance: DentalCare-Location-CWZ-Nijmegen

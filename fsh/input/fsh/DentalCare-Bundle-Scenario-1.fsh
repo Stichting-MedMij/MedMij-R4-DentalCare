@@ -165,7 +165,7 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix].valueString = "A"
   * city = "Montferland"
   * postalCode = "6123 PP"
-  * country = "Netherlands"
+  * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
 Instance: DentalCare-PractitionerRole-De-Koning
@@ -218,8 +218,8 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
-  * country = "Netherlands"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Nederland"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
 Instance: DentalCare-Organization-Defensie-Tandheelkundige-Dienst
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization
