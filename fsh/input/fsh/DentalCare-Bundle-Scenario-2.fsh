@@ -40,7 +40,7 @@ Usage: #example
 * effectiveDateTime = "2024-09-08T11:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
 * valueCodeableConcept
-  * coding = $SCT#258392002 "klasse 0"
+  * coding = $SCT#440351000146101 "klasse 0"
   * text = "nooit gezien door een defensietandarts"
 
 Instance: DentalCare-OralHygiene-Jansen
@@ -63,7 +63,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Activiteit: Erosie door het drinken van vruchtensap<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * status = #final
-* code = $MedMij#PA1 "Parafunctionele activiteit"
+* code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
 * effectiveDateTime = "2022-02-11T10:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
@@ -162,8 +162,8 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "12"
   * city = "Amsterdam"
   * postalCode = "1234 AA"
-  * country = "Netherlands"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Nederland"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
 Instance: DentalCare-PractitionerRole-De-Ruiter
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
@@ -209,5 +209,5 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
-  * country = "Netherlands"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Nederland"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"

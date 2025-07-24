@@ -77,7 +77,7 @@ Description: "Dental fitness according to the NATO classification system."
 * $SCT#258394001 "klasse 3"
   * ^designation[0].language = #nl-NL
   * ^designation[0].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[0].value = "nhuidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken"
+  * ^designation[0].value = "huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken"
   * ^designation[1].language = #en-US
   * ^designation[1].use = $SCT#900000000000013009 "Synonym"
   * ^designation[1].value = "current dental treatment to correct a dental condition that is likely to cause a dental emergency within 12 months"

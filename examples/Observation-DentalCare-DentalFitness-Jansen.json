@@ -34,7 +34,7 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "258392002",
+        "code": "440351000146101",
         "system": "http://snomed.info/sct",
         "display": "klasse 0"
       }
