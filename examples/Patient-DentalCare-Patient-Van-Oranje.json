@@ -88,7 +88,7 @@
                 {
                   "code": "MC",
                   "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
-                  "display": "Mobiel telefoonnummer"
+                  "display": "mobile contact"
                 }
               ]
             }
@@ -113,7 +113,7 @@
               {
                 "code": "HP",
                 "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
-                "display": "Officieel adres"
+                "display": "primary home"
               }
             ]
           }
@@ -154,7 +154,7 @@
                 {
                   "code": "NL",
                   "system": "urn:iso:std:iso:3166",
-                  "display": "Nederland"
+                  "display": "Netherlands"
                 }
               ]
             }
