@@ -13,7 +13,7 @@ Description: "Parafunctional activity."
 * . 
   * ^short = "ParafunctionalActivity"
   * ^alias = "ParafunctioneleActiviteit"
-* code ^patternCodeableConcept = $MedMij#PA1
+* code ^patternCodeableConcept = $SCT#110353005
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"

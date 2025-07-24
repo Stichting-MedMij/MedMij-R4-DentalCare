@@ -63,7 +63,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Activiteit: Tanden knarsen tijdens slaap<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
 * status = #final
-* code = $MedMij#PA1 "Parafunctionele activiteit"
+* code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
 * effectiveDateTime = "2024-01-01T08:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"

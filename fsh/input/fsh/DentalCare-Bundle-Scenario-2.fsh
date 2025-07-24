@@ -40,7 +40,7 @@ Usage: #example
 * effectiveDateTime = "2024-09-08T11:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
 * valueCodeableConcept
-  * coding = $SCT#258392002 "klasse 0"
+  * coding = $SCT#440351000146101 "klasse 0"
   * text = "nooit gezien door een defensietandarts"
 
 Instance: DentalCare-OralHygiene-Jansen
@@ -63,7 +63,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Activiteit: Erosie door het drinken van vruchtensap<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * status = #final
-* code = $MedMij#PA1 "Parafunctionele activiteit"
+* code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
 * effectiveDateTime = "2022-02-11T10:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
@@ -143,7 +143,7 @@ Usage: #example
   * given = "Anita"
 * telecom[0]
   * system = #phone
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile contact"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile"
   * value = "+31612345678"
 * telecom[1]
   * system = #email
