@@ -232,3 +232,18 @@ Usage: #example
   * city = "Nijmegen"
   * postalCode = "6532 SZ"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
+
+Instance: DentalCare-Payer-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Zorgkantoor Groningen<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-1-1<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
+* status = #active
+* code = $CoverageTypeCodeSystemOID#T "Tandverzekering (los)"
+* subscriberID = "12345679"
+* beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+* period
+  * start = "2025-1-1"
+  * end = "2026-1-1"
+* payor = Reference(DentalCare-Location-Menzis) "A.S.R."

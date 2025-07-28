@@ -24,3 +24,4 @@ Alias: $ProcedureTypeNZaOrthodonticCareValueSetOID = urn:oid:2.16.528.1.1023.11.
 Alias: $ProcedureTypeNZaOrthodonticCareValueSetURL = http://medmij.nl/fhir/ValueSet/ProcedureTypeNZaOrthodonticCare
 Alias: $SCT = http://snomed.info/sct
 Alias: $URI = urn:ietf:rfc:3986
+Alias: $CoverageTypeCodeSystemOID = urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1 

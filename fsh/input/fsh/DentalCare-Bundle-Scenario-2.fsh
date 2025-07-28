@@ -211,3 +211,18 @@ Usage: #example
   * postalCode = "2353 GA"
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+
+Instance: DentalCare-Payer-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Zorgkantoor Groningen<br/>Patiënt: Anita Jansen<br/>begin datum: 2025-1-1<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
+* status = #active
+* code = $CoverageTypeCodeSystemOID#AT "Aanvullend + tand"
+* subscriberID = "01234567"
+* beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+* period
+  * start = "2025-1-1"
+  * end = "2026-1-1"
+* payor = Reference(DentalCare-Location-Menzis) "Menzis Zorgverzekeraar N.V."
