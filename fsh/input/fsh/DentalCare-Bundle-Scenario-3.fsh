@@ -248,7 +248,6 @@ Usage: #example
   * end = "2026-1-1"
 * payor = Reference(DentalCare-Organization-Menzis) "A.S.R."
 
-
 Instance: DentalCare-Organization-ASR
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
 Usage: #example
