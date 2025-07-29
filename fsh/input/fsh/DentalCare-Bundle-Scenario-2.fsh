@@ -226,3 +226,17 @@ Usage: #example
   * start = "2025-1-1"
   * end = "2026-1-1"
 * payor = Reference(DentalCare-Location-Menzis) "Menzis Zorgverzekeraar N.V."
+
+Instance: DentalCare-Encounter-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>begin datum: 2023-07-22T09:00:00+01:00<br/>Status: Finished<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+* status = #finished
+* class = $EncounterClassCodeSystemURL#OTH "Second opinion"
+* participant = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+* period
+  * start = "2023-07-22T09:00:00+01:00"
+  * end = "2023-07-22T09:30:00+01:00"
+* location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"

@@ -247,3 +247,17 @@ Usage: #example
   * start = "2025-1-1"
   * end = "2026-1-1"
 * payor = Reference(DentalCare-Location-Menzis) "A.S.R."
+
+Instance: DentalCare-Encounter-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Consult intake<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-09-02T09:00:00+01:00<br/>Status: Plannend<br/>Locatie: CWZ Nijmegen</div>"
+* status = #planned
+* class = $EncounterClassCodeSystemURL#OTH "Consult intake"
+* participant = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+* period
+  * start = "2025-09-01T09:00:00+01:00"
+  * end = "2025-09-01T09:30:00+01:00"
+* location = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
