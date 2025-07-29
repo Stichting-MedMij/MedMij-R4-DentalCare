@@ -282,7 +282,26 @@ Usage: #example
 * period
   * start = "2025-1-1"
   * end = "2026-1-1"
-* payor = Reference(DentalCare-Location-Zorgkantoor-Groningen) "Zorgkantoor Groningen"
+* payor = Reference(DentalCare-Organization-Zorgkantoor-Groningen) "Zorgkantoor Groningen"
+
+Instance: DentalCare-Organization-Zorgkantoor-Groningen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Groningen<br/>Adres: Doerak 57A, 6123 PP Montferland</div>"
+* name = "Zorgkantoor Groningen"
+* address
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * use = #work
+  * line = "De Doerak 57A"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Doerak"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "57"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix].valueString = "A"
+  * city = "Montferland"
+  * postalCode = "6123 PP"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
 Instance: DentalCare-Encounter-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter

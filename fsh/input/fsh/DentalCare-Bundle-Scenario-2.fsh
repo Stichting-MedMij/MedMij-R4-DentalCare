@@ -225,7 +225,25 @@ Usage: #example
 * period
   * start = "2025-1-1"
   * end = "2026-1-1"
-* payor = Reference(DentalCare-Location-Menzis) "Menzis Zorgverzekeraar N.V."
+* payor = Reference(DentalCare-Organization-Menzis) "Menzis Zorgverzekeraar N.V."
+
+Instance: DentalCare-Organization-Menzis-Zorgverzekeraar
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Menzis Zorgverzekeraar<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam</div>"
+* name = "Menzis Zorgverzekeraar N.V."
+* address
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * use = #work
+  * line = "Achillesstraat 12"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Achillesstraat"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "12"
+  * city = "Amsterdam"
+  * postalCode = "1234 AA"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
 Instance: DentalCare-Encounter-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
