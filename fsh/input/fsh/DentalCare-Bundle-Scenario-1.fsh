@@ -308,7 +308,7 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>begin datum: 2026-07-2:10:00:00<br/>Status: Finished<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>begin datum: 2026-07-22:10:00:00<br/>Status: Planned<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #planned
 * class = $EncounterClassCodeSystemURL#OTH "Tandarts Periodiek Preventief Onderzoek"
 * participant = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
@@ -317,4 +317,20 @@ Usage: #example
   * end = "2026-07-22T11:00:00+01:00"
 * reasonCode
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Laatste orthopantomogram (röntgenfoto) was in 2025"
+* location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
+
+Instance: DentalCare-Encounter-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle afspraak<br/>Patiënt: Erik van Oranje<br/>begin datum: 2025-05-20:10:00:00<br/>Status: Finished<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+* status = #finished
+* class = $EncounterClassCodeSystemURL#OTH "Controle afspraak"
+* participant = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+* period
+  * start = "2026-05-20T10:00:00+01:00"
+  * end = "2026-05-20T11:00:00+01:00"
+* reasonCode
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Extra controle vanwege bloedend tandvlees"
 * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
