@@ -26,3 +26,5 @@ Alias: $SCT = http://snomed.info/sct
 Alias: $URI = urn:ietf:rfc:3986
 Alias: $CoverageTypeCodeSystemOID = urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1 
 Alias: $EncounterClassCodeSystemURL = http://terminology.hl7.org/CodeSystem/v3-ActCode 
+Alias: $ContactExtraRolcodesOID = urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.23.1 
+Alias: $ContactRoleCodeURL = http://terminology.hl7.org/CodeSystem/v3-RoleCode

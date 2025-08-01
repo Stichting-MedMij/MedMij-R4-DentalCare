@@ -164,6 +164,16 @@ Usage: #example
   * postalCode = "1234 AA"
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+* contact
+  * relationship
+    * coding = $ContactExtraRolcodesOID#24 "Wettelijke vertegenwoordiger" 
+  * name
+    * use = #official
+    * text = "J.M. Curator"
+    * family = "Curator"
+      * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Curator"
+    * given = "J.", "M."
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
 
 Instance: DentalCare-PractitionerRole-De-Ruiter
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole

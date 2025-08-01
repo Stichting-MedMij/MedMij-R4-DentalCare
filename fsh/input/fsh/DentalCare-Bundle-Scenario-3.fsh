@@ -165,6 +165,18 @@ Usage: #example
   * postalCode = "5678 BB"
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+* contact
+  * relationship[0]
+    * coding = $ContactRoleCodeURL#FTH "Father"
+  * relationship[1]
+    * coding = $ContactExtraRolcodesOID#01 "Eerste relatie/contactpersoon" 
+  * name
+    * use = #official
+    * text = "Piet Klaas"
+    * family = "Klaas"
+      * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Klaas"
+    * given = "Piet"
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
 
 Instance: DentalCare-PractitionerRole-Dijkstra
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
