@@ -172,8 +172,10 @@ Usage: #example
     * text = "J.M. Curator"
     * family = "Curator"
       * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Curator"
-    * given = "J.", "M."
-      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
+    * given[0] = "J."
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
+    * given[1] = "M."
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
 
 Instance: DentalCare-PractitionerRole-De-Ruiter
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
@@ -227,17 +229,17 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCom
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Zorgkantoor Groningen<br/>Patiënt: Anita Jansen<br/>begin datum: 2025-1-1<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Menzis<br/>Patiënt: Anita Jansen<br/>begin datum: 2025-01-01<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
 * status = #active
-* code = $CoverageTypeCodeSystemOID#AT "Aanvullend + tand"
-* subscriberID = "01234567"
+* type = $CoverageTypeCodeSystemOID#AT "Aanvullend + tand"
+* subscriberId = "01234567"
 * beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
 * period
-  * start = "2025-1-1"
-  * end = "2026-1-1"
+  * start = "2025-01-01"
+  * end = "2026-01-01"
 * payor = Reference(DentalCare-Organization-Menzis) "Menzis Zorgverzekeraar N.V."
 
-Instance: DentalCare-Organization-Menzis-Zorgverzekeraar
+Instance: DentalCare-Organization-Menzis
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
 Usage: #example
 * text
@@ -263,8 +265,10 @@ Usage: #example
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>begin datum: 2023-07-22T09:00:00+01:00<br/>Status: Finished<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #finished
 * class = $EncounterClassCodeSystemURL#OTH "Second opinion"
-* participant = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+* participant 
+  * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
 * period
   * start = "2023-07-22T09:00:00+01:00"
   * end = "2023-07-22T09:30:00+01:00"
-* location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
+* location 
+  * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"

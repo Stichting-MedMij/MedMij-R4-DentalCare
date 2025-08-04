@@ -250,15 +250,15 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCom
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Zorgkantoor Groningen<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-1-1<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: A.S.R<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-01-01<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
 * status = #active
-* code = $CoverageTypeCodeSystemOID#T "Tandverzekering (los)"
-* subscriberID = "12345679"
+* type = $CoverageTypeCodeSystemOID#T "Tandverzekering (los)"
+* subscriberId = "12345679"
 * beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
 * period
-  * start = "2025-1-1"
-  * end = "2026-1-1"
-* payor = Reference(DentalCare-Organization-Menzis) "A.S.R."
+  * start = "2025-01-01"
+  * end = "2026-01-01"
+* payor = Reference(DentalCare-Organization-ASR) "A.S.R."
 
 Instance: DentalCare-Organization-ASR
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
@@ -286,8 +286,10 @@ Usage: #example
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Consult intake<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-09-02T09:00:00+01:00<br/>Status: Plannend<br/>Locatie: CWZ Nijmegen</div>"
 * status = #planned
 * class = $EncounterClassCodeSystemURL#OTH "Consult intake"
-* participant = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
 * period
   * start = "2025-09-01T09:00:00+01:00"
   * end = "2025-09-01T09:30:00+01:00"
-* location = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
+* location 
+  * location = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
