@@ -301,17 +301,16 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Groningen<br/>Adres: Doerak 57A, 6123 PP Montferland</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Groningen<br/>Adres: Winschoterdiep 70, 9723 AB Groningen</div>"
 * name = "Zorgkantoor Groningen"
 * address
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
   * use = #work
-  * line = "De Doerak 57A"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Doerak"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "57"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix].valueString = "A"
-  * city = "Montferland"
-  * postalCode = "6123 PP"
+  * line = "Winschoterdiep 70"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Winschoterdiep"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "70"
+  * city = "Groningen"
+  * postalCode = "9723 AB"
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
