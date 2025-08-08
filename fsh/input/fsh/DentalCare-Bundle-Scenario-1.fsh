@@ -342,9 +342,9 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controleafspraak<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #finished
-* class = $NullFlavor#OTH "Anders"
+* class = $EncounterCode#AMB "Ambulatory"
 * type
-  * text = "Controleafspraak"
+  * text = "Tandarts Periodiek Preventief Onderzoek"
 * participant
   * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
 * period
