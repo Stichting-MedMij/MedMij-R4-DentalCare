@@ -169,14 +169,14 @@ Usage: #example
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 * contact
   * relationship[0]
-    * coding = $ContactExtraRolcodesOID#100001 "Mantelzorger"
+    * coding = $ExtraRolcodes#100001 "Mantelzorger"
   * relationship[1]
-    * coding = $ContactExtraRolcodesOID#01 "Eerste relatie/contactpersoon" 
+    * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon" 
   * name
     * use = #official
     * text = "Leo Jansen"
     * family = "Jansen"
-      * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Oranje"
+      * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Jansen"
     * given = "Leo"
       * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
 
@@ -286,9 +286,9 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCom
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Zorgkantoor Groningen<br/>Patiënt: Erik van Oranje<br/>begin datum: 2025-01-01<br/>Status: Actief<br/>Betaler: Zorgkantoor Groningen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Zorgkantoor Groningen<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Zorgkantoor Groningen</div>"
 * status = #active
-* type = $CoverageTypeCodeSystemOID#B "Basis"
+* type = $Verzekeringssoort#B "Basis"
 * subscriberId = "12345678"
 * beneficiary = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
 * period
@@ -320,9 +320,11 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>begin datum: 2026-07-22T10:00:00<br/>Status: Planned<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-07-22T10:00:00<br/>Einddatum: 2026-07-22T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #planned
-* class = $EncounterClassCodeSystemURL#OTH "Tandarts Periodiek Preventief Onderzoek"
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Tandarts Periodiek Preventief Onderzoek"
 * participant
   * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
 * period
@@ -338,9 +340,11 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle afspraak<br/>Patiënt: Erik van Oranje<br/>begin datum: 2025-05-20T10:00:00<br/>Status: Finished<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controleafspraak<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #finished
-* class = $EncounterClassCodeSystemURL#OTH "Controle afspraak"
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Controleafspraak"
 * participant
   * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
 * period

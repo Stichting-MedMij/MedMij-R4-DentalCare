@@ -167,9 +167,9 @@ Usage: #example
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 * contact
   * relationship[0]
-    * coding = $ContactRoleCodeURL#FTH "Father"
+    * coding = $RoleCode#FTH "Father"
   * relationship[1]
-    * coding = $ContactExtraRolcodesOID#01 "Eerste relatie/contactpersoon" 
+    * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon" 
   * name
     * use = #official
     * text = "Piet Klaas"
@@ -250,9 +250,9 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCom
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: A.S.R<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-01-01<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: A.S.R<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
 * status = #active
-* type = $CoverageTypeCodeSystemOID#T "Tandverzekering (los)"
+* type = $Verzekeringssoort#T "Tandverzekering (los)"
 * subscriberId = "12345679"
 * beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
 * period
@@ -283,9 +283,11 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Consult intake<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-09-02T09:00:00+01:00<br/>Status: Plannend<br/>Locatie: CWZ Nijmegen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Consult t.b.v. intake<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-09-02T09:00:00+01:00<br/>Status: Gepland<br/>Locatie: CWZ Nijmegen</div>"
 * status = #planned
-* class = $EncounterClassCodeSystemURL#OTH "Consult intake"
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Consult t.b.v. intake"
 * participant
   * individual = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
 * period

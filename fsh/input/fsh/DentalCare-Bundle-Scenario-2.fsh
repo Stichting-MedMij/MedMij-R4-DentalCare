@@ -166,7 +166,7 @@ Usage: #example
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 * contact
   * relationship
-    * coding = $ContactExtraRolcodesOID#24 "Wettelijke vertegenwoordiger" 
+    * coding = $VektisCOD472#24 "Wettelijke vertegenwoordiger" 
   * name
     * use = #official
     * text = "J.M. Curator"
@@ -229,9 +229,9 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCom
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Menzis<br/>Patiënt: Anita Jansen<br/>begin datum: 2025-01-01<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Menzis<br/>Patiënt: Anita Jansen<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
 * status = #active
-* type = $CoverageTypeCodeSystemOID#AT "Aanvullend + tand"
+* type = $Verzekeringssoort#AT "Aanvullend + tand"
 * subscriberId = "01234567"
 * beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
 * period
@@ -262,9 +262,11 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>begin datum: 2023-07-22T09:00:00+01:00<br/>Status: Finished<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #finished
-* class = $EncounterClassCodeSystemURL#OTH "Second opinion"
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Second opinion"
 * participant 
   * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
 * period
