@@ -23,25 +23,25 @@
         }
       ],
       "line": [
-        "Bloemstraat 25"
+        "Archimedeslaan 10"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Bloemstraat"
+              "valueString": "Archimedeslaan"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "25"
+              "valueString": "10"
             }
           ]
         }
       ],
       "use": "work",
-      "city": "Bergen op Zoom",
-      "postalCode": "5678 BB",
+      "city": "Utrecht",
+      "postalCode": "3584 BA",
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -63,7 +63,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: A.S.R.<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: A.S.R.<br/>Adres: Archimedeslaan 10, 3584 BA Utrecht</div>"
   },
   "name": "A.S.R."
 }

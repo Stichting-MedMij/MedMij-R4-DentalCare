@@ -1,5 +1,6 @@
 // All Aliases used in Dental Care
 
+Alias: $ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $ASAScoreValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.2
 Alias: $ASAScoreValueSetURL = http://medmij.nl/fhir/ValueSet/ASAScore
 Alias: $CariesRiskValueSetOID = urn:oid:2.16.528.1.1023.11.2.3.11.7
@@ -29,4 +30,3 @@ Alias: $SCT = http://snomed.info/sct
 Alias: $URI = urn:ietf:rfc:3986
 Alias: $VektisCOD472 = urn:oid:2.16.840.1.113883.2.4.3.11.22.472
 Alias: $Verzekeringssoort = urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1
-Alias: $EncounterCode = http://terminology.hl7.org/CodeSystem/v3-ActCode 

@@ -23,25 +23,25 @@
         }
       ],
       "line": [
-        "Achillesstraat 12"
+        "Lawickse Allee 130"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Achillesstraat"
+              "valueString": "Lawickse Allee"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "12"
+              "valueString": "130"
             }
           ]
         }
       ],
       "use": "work",
-      "city": "Amsterdam",
-      "postalCode": "1234 AA",
+      "city": "Wageningen",
+      "postalCode": "6709 DZ",
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -63,7 +63,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Menzis Zorgverzekeraar<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Menzis Zorgverzekeraar<br/>Adres: Lawickse Allee 130, 6709 DZ Wageningen</div>"
   },
   "name": "Menzis Zorgverzekeraar N.V."
 }

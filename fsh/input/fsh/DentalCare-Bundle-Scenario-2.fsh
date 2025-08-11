@@ -244,13 +244,13 @@ InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Menzis Zorgverzekeraar<br/>Adres: Lawickse Alle 130, 6709 DZ Wageningen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Menzis Zorgverzekeraar<br/>Adres: Lawickse Allee 130, 6709 DZ Wageningen</div>"
 * name = "Menzis Zorgverzekeraar N.V."
 * address
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
   * use = #work
-  * line = "Lawickse Alle 130"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Lawickse Alle"
+  * line = "Lawickse Allee 130"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Lawickse Allee"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "130"
   * city = "Wageningen"
   * postalCode = "6709 DZ"
@@ -264,7 +264,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #finished
-* class = $EncounterCode#AMB "Ambulatory"
+* class = $ActCode#AMB "Ambulatory"
 * type
   * text = "Second opinion"
 * participant 

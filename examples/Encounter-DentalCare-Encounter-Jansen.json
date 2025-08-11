@@ -12,9 +12,9 @@
   },
   "status": "finished",
   "class": {
-    "code": "OTH",
-    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-    "display": "Anders"
+    "code": "AMB",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "display": "Ambulatory"
   },
   "type": [
     {
