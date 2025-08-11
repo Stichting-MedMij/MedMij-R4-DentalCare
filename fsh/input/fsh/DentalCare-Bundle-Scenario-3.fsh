@@ -115,7 +115,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Wortelpuntoperatie, per tandwortel, zonder afsluiting<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
 * status = #completed
-* code = $NZaDentalCare#H42 "Wortelpuntoperatie, per tandwortel, zonder afsluiting"
+* code = $NZaOrthodonticCare#F121 "Eerste consult"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
 * performedDateTime = "2024-01-01"
 * performer
@@ -165,6 +165,18 @@ Usage: #example
   * postalCode = "5678 BB"
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+* contact
+  * relationship[0]
+    * coding = $RoleCode#FTH "Father"
+  * relationship[1]
+    * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon" 
+  * name
+    * use = #official
+    * text = "Piet Klaas"
+    * family = "Klaas"
+      * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Klaas"
+    * given = "Piet"
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
 
 Instance: DentalCare-PractitionerRole-Dijkstra
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
@@ -232,3 +244,54 @@ Usage: #example
   * city = "Nijmegen"
   * postalCode = "6532 SZ"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
+
+Instance: DentalCare-Payer-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: A.S.R<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
+* status = #active
+* type = $Verzekeringssoort#T "Tandverzekering (los)"
+* subscriberId = "12345679"
+* beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+* period
+  * start = "2025-01-01"
+  * end = "2026-01-01"
+* payor = Reference(DentalCare-Organization-ASR) "A.S.R."
+
+Instance: DentalCare-Organization-ASR
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: A.S.R.<br/>Adres: Archimedeslaan 10, 3584 BA Utrecht</div>"
+* name = "A.S.R."
+* address
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * use = #work
+  * line = "Archimedeslaan 10"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Archimedeslaan"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "10"
+  * city = "Utrecht"
+  * postalCode = "3584 BA"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+
+Instance: DentalCare-Encounter-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Consult t.b.v. intake<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-09-02T09:00:00+01:00<br/>Status: Gepland<br/>Locatie: CWZ Nijmegen</div>"
+* status = #planned
+* class = $ActCode#AMB "Ambulatory"
+* type
+  * text = "Consult t.b.v. intake"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+* period
+  * start = "2025-09-01T09:00:00+01:00"
+  * end = "2025-09-01T09:30:00+01:00"
+* location 
+  * location = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"

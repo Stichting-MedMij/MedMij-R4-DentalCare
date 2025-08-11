@@ -163,6 +163,56 @@
       }
     }
   ],
+  "contact": [
+    {
+      "name": {
+        "use": "official",
+        "given": [
+          "Leo"
+        ],
+        "_given": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                "valueCode": "BR"
+              }
+            ]
+          }
+        ],
+        "text": "Leo Jansen",
+        "family": "Jansen",
+        "_family": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+              "valueString": "Jansen"
+            }
+          ]
+        }
+      },
+      "relationship": [
+        {
+          "coding": [
+            {
+              "code": "100001",
+              "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.23.1",
+              "display": "Mantelzorger"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "code": "01",
+              "system": "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+              "display": "Eerste relatie/contactpersoon"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Nationaliteit: Nederlandse<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"

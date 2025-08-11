@@ -167,6 +167,18 @@ Usage: #example
   * postalCode = "6123 PP"
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+* contact
+  * relationship[0]
+    * coding = $ExtraRolcodes#100001 "Mantelzorger"
+  * relationship[1]
+    * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon" 
+  * name
+    * use = #official
+    * text = "Leo Jansen"
+    * family = "Jansen"
+      * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Jansen"
+    * given = "Leo"
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
 
 Instance: DentalCare-PractitionerRole-De-Koning
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
@@ -268,3 +280,76 @@ Usage: #example
   * city = "Rijen"
   * postalCode = "5120 AA"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
+
+Instance: DentalCare-Payer-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Zorgkantoor Groningen<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Zorgkantoor Groningen</div>"
+* status = #active
+* type = $Verzekeringssoort#B "Basis"
+* subscriberId = "12345678"
+* beneficiary = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+* period
+  * start = "2025-01-01"
+  * end = "2026-01-01"
+* payor = Reference(DentalCare-Organization-Zorgkantoor-Groningen) "Zorgkantoor Groningen"
+
+Instance: DentalCare-Organization-Zorgkantoor-Groningen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Groningen<br/>Adres: Winschoterdiep 70, 9723 AB Groningen</div>"
+* name = "Zorgkantoor Groningen"
+* address
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * use = #work
+  * line = "Winschoterdiep 70"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Winschoterdiep"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "70"
+  * city = "Groningen"
+  * postalCode = "9723 AB"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+
+Instance: DentalCare-Encounter-1-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-07-22T10:00:00<br/>Einddatum: 2026-07-22T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+* status = #planned
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Tandarts Periodiek Preventief Onderzoek"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+* period
+  * start = "2026-07-22T10:00:00+01:00"
+  * end = "2026-07-22T11:00:00+01:00"
+* reasonCode
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Laatste orthopantomogram (röntgenfoto) was in 2025"
+* location 
+  * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
+
+Instance: DentalCare-Encounter-2-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controleafspraak<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+* status = #finished
+* class = $ActCode#AMB "Ambulatory"
+* type
+  * text = "Tandarts Periodiek Preventief Onderzoek"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+* period
+  * start = "2025-05-20T10:00:00+01:00"
+  * end = "2025-05-20T11:00:00+01:00"
+* reasonCode
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Extra controle vanwege bloedend tandvlees"
+* location
+  * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"

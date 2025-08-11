@@ -136,6 +136,56 @@
       }
     }
   ],
+  "contact": [
+    {
+      "name": {
+        "use": "official",
+        "given": [
+          "J.",
+          "M."
+        ],
+        "_given": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                "valueCode": "IN"
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                "valueCode": "IN"
+              }
+            ]
+          }
+        ],
+        "text": "J.M. Curator",
+        "family": "Curator",
+        "_family": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+              "valueString": "Curator"
+            }
+          ]
+        }
+      },
+      "relationship": [
+        {
+          "coding": [
+            {
+              "code": "24",
+              "system": "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+              "display": "Wettelijke vertegenwoordiger"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Anita Jansen<br/>Geboortedatum: 2010-03-15<br/>Geslacht: Vrouw<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam, Nederland<br/>Telefoon: +31612345678<br/>E-mail: anitajansen@icloud.com</div>"

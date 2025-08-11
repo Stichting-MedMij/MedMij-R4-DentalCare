@@ -164,6 +164,18 @@ Usage: #example
   * postalCode = "1234 AA"
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+* contact
+  * relationship
+    * coding = $VektisCOD472#24 "Wettelijke vertegenwoordiger" 
+  * name
+    * use = #official
+    * text = "J.M. Curator"
+    * family = "Curator"
+      * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Curator"
+    * given[0] = "J."
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
+    * given[1] = "M."
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
 
 Instance: DentalCare-PractitionerRole-De-Ruiter
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
@@ -211,3 +223,54 @@ Usage: #example
   * postalCode = "2353 GA"
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+
+Instance: DentalCare-Payer-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Menzis<br/>Patiënt: Anita Jansen<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
+* status = #active
+* type = $Verzekeringssoort#AT "Aanvullend + tand"
+* subscriberId = "01234567"
+* beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+* period
+  * start = "2025-01-01"
+  * end = "2026-01-01"
+* payor = Reference(DentalCare-Organization-Menzis) "Menzis Zorgverzekeraar N.V."
+
+Instance: DentalCare-Organization-Menzis
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Menzis Zorgverzekeraar<br/>Adres: Lawickse Allee 130, 6709 DZ Wageningen</div>"
+* name = "Menzis Zorgverzekeraar N.V."
+* address
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * use = #work
+  * line = "Lawickse Allee 130"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Lawickse Allee"
+    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "130"
+  * city = "Wageningen"
+  * postalCode = "6709 DZ"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+
+Instance: DentalCare-Encounter-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+* status = #finished
+* class = $ActCode#AMB "Ambulatory"
+* type
+  * text = "Second opinion"
+* participant 
+  * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+* period
+  * start = "2023-07-22T09:00:00+01:00"
+  * end = "2023-07-22T09:30:00+01:00"
+* location 
+  * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
