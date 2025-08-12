@@ -245,7 +245,7 @@ Usage: #example
   * postalCode = "6532 SZ"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
 
-Instance: DentalCare-Payer-Van-De-Stok
+Instance: DentalCare-Payer-Organization-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
 Usage: #example
 * text
@@ -258,6 +258,21 @@ Usage: #example
 * period
   * start = "2025-01-01"
   * end = "2026-01-01"
+* payor = Reference(DentalCare-Organization-ASR) "A.S.R."
+
+Instance: DentalCare-Payer-Person-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
+* extension[http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation]
+  * extension[bankName].valueString = "ABNA"
+  * extension[bankCode].valueString = "ABNA00NL"
+  * extension[accountNumber].valueString = "NL00ABNA0001234567"
+* status = #active
+* type = $Verzekeringstype#pay "Pay"
+* beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
 * payor = Reference(DentalCare-Organization-ASR) "A.S.R."
 
 Instance: DentalCare-Organization-ASR

@@ -281,7 +281,7 @@ Usage: #example
   * postalCode = "5120 AA"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
 
-Instance: DentalCare-Payer-Van-Oranje
+Instance: DentalCare-Payer-Organization-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
 Usage: #example
 * text
@@ -294,6 +294,21 @@ Usage: #example
 * period
   * start = "2025-01-01"
   * end = "2026-01-01"
+* payor = Reference(DentalCare-Organization-Zorgkantoor-Groningen) "Zorgkantoor Groningen"
+
+Instance: DentalCare-Payer-Person-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Verzekeraar: Zorgkantoor Groningen</div>"
+* extension[http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation]
+  * extension[bankName].valueString = "ING"
+  * extension[bankCode].valueString = "INGBNL2A"
+  * extension[accountNumber].valueString = "NL85INGB0001234567"
+* status = #active
+* type = $Verzekeringstype#pay "Pay"
+* beneficiary = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
 * payor = Reference(DentalCare-Organization-Zorgkantoor-Groningen) "Zorgkantoor Groningen"
 
 Instance: DentalCare-Organization-Zorgkantoor-Groningen
