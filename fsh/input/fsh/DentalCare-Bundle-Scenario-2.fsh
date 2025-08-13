@@ -224,7 +224,7 @@ Usage: #example
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
-Instance: DentalCare-Payer-Jansen
+Instance: DentalCare-Payer-InsuranceCompany-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
 Usage: #example
 * text
@@ -237,6 +237,21 @@ Usage: #example
 * period
   * start = "2025-01-01"
   * end = "2026-01-01"
+* payor = Reference(DentalCare-Organization-Menzis) "Menzis Zorgverzekeraar N.V."
+
+Instance: DentalCare-Payer-Person-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
+Usage: #example
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
+* extension[http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation]
+  * extension[bankName].valueString = "RABO"
+  * extension[bankCode].valueString = "RABO21NL"
+  * extension[accountNumber].valueString = "NL21RABO0001234567"
+* status = #active
+* type = $Verzekeringstype#pay "Pay"
+* beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
 * payor = Reference(DentalCare-Organization-Menzis) "Menzis Zorgverzekeraar N.V."
 
 Instance: DentalCare-Organization-Menzis

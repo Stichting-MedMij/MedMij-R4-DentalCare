@@ -1,6 +1,6 @@
 {
   "resourceType": "Coverage",
-  "id": "DentalCare-Payer-Jansen",
+  "id": "DentalCare-Payer-InsuranceCompany-Jansen",
   "meta": {
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany"
