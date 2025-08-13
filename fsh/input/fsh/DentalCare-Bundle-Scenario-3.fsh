@@ -245,7 +245,7 @@ Usage: #example
   * postalCode = "6532 SZ"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
 
-Instance: DentalCare-Payer-Organization-Van-De-Stok
+Instance: DentalCare-Payer-InsuranceCompany-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
 Usage: #example
 * text

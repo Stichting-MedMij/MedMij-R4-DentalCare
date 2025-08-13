@@ -1,6 +1,6 @@
 {
   "resourceType": "Coverage",
-  "id": "DentalCare-Payer-Van-Oranje",
+  "id": "DentalCare-Payer-InsuranceCompany-Van-Oranje",
   "meta": {
     "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany"

@@ -224,7 +224,7 @@ Usage: #example
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
-Instance: DentalCare-Payer-Organization-Jansen
+Instance: DentalCare-Payer-InsuranceCompany-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
 Usage: #example
 * text
