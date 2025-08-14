@@ -1,4 +1,4 @@
-// Profile on Observation for PeriodicPeriodontalScreening to be used in Dental Care
+// Profile on Observation for PeriodicPeriodontalScreeningScore to be used in Dental Care
 
 Profile: MzPeriodicPeriodontalScreeningScore
 Parent: Observation
@@ -8,7 +8,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This Observation resource represents the PeriodicPeriodontalScreening building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Observation resource represents the PeriodicPeriodontalScreeningScore building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * insert Copyright
 * .
   * ^short = "PeriodicPeriodontalScreeningScore"
@@ -74,7 +74,7 @@ Description: "Codes for the periodontal screening for dental plaque-related dise
 
 ValueSet: PeriodicPeriodontalScreeningScore_VS
 Id: PeriodicPeriodontalScreeningScore
-Title: "PeriodicPeriodontalScreening ValueSet."
+Title: "PeriodicPeriodontalScreeningScore ValueSet."
 Description: "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
 * insert DefaultNarrative
 * ^url = $PeriodicPeriodontalScreeningScoreValueSetURL

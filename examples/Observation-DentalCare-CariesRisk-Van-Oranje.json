@@ -11,13 +11,13 @@
       {
         "code": "74024006",
         "system": "http://snomed.info/sct",
-        "display": "risico op cariës"
+        "display": "vatbaarheid voor cariës"
       }
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Risico op cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Cariësrisico: Laag<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Cariësrisico: Laag<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
   },
   "status": "final",
   "subject": {

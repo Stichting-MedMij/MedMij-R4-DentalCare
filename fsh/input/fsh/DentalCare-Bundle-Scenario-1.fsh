@@ -20,9 +20,9 @@ InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Risico op cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Cariësrisico: Laag<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Cariësrisico: Laag<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
-* code = $SCT#74024006 "risico op cariës"
+* code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
@@ -50,7 +50,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
-* code = $SCT#364126007 "bevinding betreffende mondhygiëne"
+* code = $SCT#364126007 "oral hygiene status"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
@@ -69,7 +69,7 @@ Usage: #example
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
 * valueString = "Overmatig knarsen bij stress"
 
-Instance: DentalCare-PeriodicPeriodontalScreening-Van-Oranje
+Instance: DentalCare-PeriodicPeriodontalScreeningScore-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
 Usage: #example
 * text
