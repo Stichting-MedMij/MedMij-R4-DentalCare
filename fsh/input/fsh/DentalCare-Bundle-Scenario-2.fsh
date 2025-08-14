@@ -80,7 +80,7 @@ Usage: #example
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
 * effectiveDateTime = "2022-02-11T08:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-* valueCodeableConcept = $PeriodicPeriodontalScreeningCodeSystemURL#ppsscore2 "Pockets 4-5 millimeter = mogelijk in orde"
+* valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore2 "Pockets 4-5 millimeter = mogelijk in orde"
 * note
   * text = "Paro-preventietraject"
 

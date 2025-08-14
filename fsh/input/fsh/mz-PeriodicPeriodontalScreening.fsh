@@ -1,9 +1,9 @@
 // Profile on Observation for PeriodicPeriodontalScreening to be used in Dental Care
 
-Profile: MzPeriodicPeriodontalScreening
+Profile: MzPeriodicPeriodontalScreeningScore
 Parent: Observation
-Id: mz-PeriodicPeriodontalScreening
-Title: "mz PeriodicPeriodontalScreening"
+Id: mz-PeriodicPeriodontalScreeningScore
+Title: "mz PeriodicPeriodontalScreeningScore"
 Description: "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually."
 * insert DefaultNarrative
 * ^status = #draft
@@ -11,8 +11,8 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^purpose = "This Observation resource represents the PeriodicPeriodontalScreening building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
 * insert Copyright
 * .
-  * ^short = "PeriodicPeriodontalScreening"
-  * ^alias = "PeriodiekeParodontaleScreening"
+  * ^short = "PeriodicPeriodontalScreeningScore"
+  * ^alias = "PeriodiekeParodontaleScreeningScore"
 * code
   * ^patternCodeableConcept = $SCT#540501000146103
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
@@ -32,7 +32,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
     """
   * ^alias = "Uitvoerder"
 * valueCodeableConcept 1..1
-* valueCodeableConcept from $PeriodicPeriodontalScreeningValueSetURL (required)
+* valueCodeableConcept from $PeriodicPeriodontalScreeningScoreValueSetURL (required)
   * ^short = "PPSScore"
   * ^definition = "The score of the PPS."
   * ^alias = "PPSScore"
@@ -42,16 +42,16 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
     * ^definition = "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-CodeSystem: PeriodicPeriodontalScreening_CS
-Id: PeriodicPeriodontalScreening
-Title: "PeriodicPeriodontalScreening CodeSystem."
+CodeSystem: PeriodicPeriodontalScreeningScore_CS
+Id: PeriodicPeriodontalScreeningScore
+Title: "PeriodicPeriodontalScreeningScore CodeSystem."
 Description: "Codes for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
 * insert DefaultNarrative
-* ^url = $PeriodicPeriodontalScreeningCodeSystemURL
+* ^url = $PeriodicPeriodontalScreeningScoreCodeSystemURL
 * ^identifier.use = #official
 * ^identifier.system = $URI
-* ^identifier.value = $PeriodicPeriodontalScreeningCodeSystemOID
-* ^name = "PeriodicPeriodontalScreening"
+* ^identifier.value = $PeriodicPeriodontalScreeningScoreCodeSystemOID
+* ^name = "PeriodicPeriodontalScreeningScore"
 * ^status = #draft
 * ^experimental = false
 * insert PublisherAndContact
@@ -72,26 +72,26 @@ Description: "Codes for the periodontal screening for dental plaque-related dise
   * ^property.code = #status
   * ^property.valueCode = #active
 
-ValueSet: PeriodicPeriodontalScreening_VS
-Id: PeriodicPeriodontalScreening
+ValueSet: PeriodicPeriodontalScreeningScore_VS
+Id: PeriodicPeriodontalScreeningScore
 Title: "PeriodicPeriodontalScreening ValueSet."
 Description: "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS)."
 * insert DefaultNarrative
-* ^url = $PeriodicPeriodontalScreeningValueSetURL
+* ^url = $PeriodicPeriodontalScreeningScoreValueSetURL
 * ^identifier.use = #official
 * ^identifier.system = $URI
-* ^identifier.value = $PeriodicPeriodontalScreeningValueSetOID
-* ^name = "PeriodicPeriodontalScreening"
+* ^identifier.value = $PeriodicPeriodontalScreeningScoreValueSetOID
+* ^name = "PeriodicPeriodontalScreeningScore"
 * ^status = #draft
 * ^experimental = false
 * insert PublisherAndContact
-* include codes from system $PeriodicPeriodontalScreeningCodeSystemURL
+* include codes from system $PeriodicPeriodontalScreeningScoreCodeSystemURL
 
-Mapping: MedMijPeriodicPeriodontalScreening
-Source: MzPeriodicPeriodontalScreening
+Mapping: MedMijPeriodicPeriodontalScreeningScore
+Source: MzPeriodicPeriodontalScreeningScore
 Id: mz-dataset-100-beta1-2025xxyy
 Title: "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
-* -> "mz-dataelement-136" "PeriodicPeriodontalScreening"
+* -> "mz-dataelement-136" "PeriodicPeriodontalScreeningScore"
 * subject -> "mz-dataelement-1" "Patient"
 * effectiveDateTime -> "mz-dataelement-137" "PPSDateTime"
 * performer -> "mz-dataelement-150" "Performer"
