@@ -14,7 +14,7 @@ Description: "Caries risk."
   * ^short = "CariesRisk"
   * ^alias = "Cariësrisico"
 * code
-  * ^patternCodeableConcept = $SCT#609399004
+  * ^patternCodeableConcept = $SCT#74024006
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"
@@ -36,7 +36,7 @@ Description: "Caries risk."
   * ^short = "CariesRiskValue"
   * ^definition = "The risk of caries."
   * ^alias = "CariësrisicoWaarde"
-* note 0..1
+* note
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the caries risk, including comments on for example the circumstances and/or disruptive factors that may influence the result."

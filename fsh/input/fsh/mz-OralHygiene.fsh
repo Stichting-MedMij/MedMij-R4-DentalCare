@@ -14,7 +14,7 @@ Description: "Oral hygiene finding."
   * ^short = "OralHygiene"
   * ^alias = "Mondhygiëne"
 * code
-  * ^patternCodeableConcept = $SCT#110298001
+  * ^patternCodeableConcept = $SCT#364126007
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
   * ^short = "Patient"
   * ^alias = "Patient"
@@ -36,7 +36,7 @@ Description: "Oral hygiene finding."
   * ^short = "OralHygieneValue"
   * ^definition = "The oral hygiene."
   * ^alias = "MondhygiëneWaarde"
-* note 0..1
+* note
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the oral hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result."

@@ -2,11 +2,11 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "PeriodicPeriodontalScreening",
-  "id": "PeriodicPeriodontalScreening",
-  "title": "PeriodicPeriodontalScreening CodeSystem.",
+  "name": "PeriodicPeriodontalScreeningScore",
+  "id": "PeriodicPeriodontalScreeningScore",
+  "title": "PeriodicPeriodontalScreeningScore CodeSystem.",
   "description": "Codes for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS).",
-  "url": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening",
+  "url": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore",
   "concept": [
     {
       "code": "ppsscore1",

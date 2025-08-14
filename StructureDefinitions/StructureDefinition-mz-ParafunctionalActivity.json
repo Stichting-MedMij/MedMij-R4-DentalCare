@@ -202,11 +202,6 @@
         ]
       },
       {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "max": "1"
-      },
-      {
         "id": "Observation.note.text",
         "path": "Observation.note.text",
         "short": "Comment",
