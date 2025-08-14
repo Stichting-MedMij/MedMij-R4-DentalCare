@@ -22,7 +22,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Risico op cariës<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
 * status = #final
-* code = $SCT#609399004 "risico op cariës"
+* code = $SCT#74024006 "risico op cariës"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
 * effectiveDateTime = "2024-01-01T08:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
@@ -50,7 +50,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Mondhygiëne: Goed<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
 * status = #final
-* code = $SCT#110298001 "bevinding betreffende mondhygiëne"
+* code = $SCT#364126007 "bevinding betreffende mondhygiëne"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
 * effectiveDateTime = "2024-01-01T08:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
@@ -70,7 +70,7 @@ Usage: #example
 * valueString = "Tanden knarsen tijdens slaap"
 
 Instance: DentalCare-PeriodicPeriodontalScreening-Van-De-Stok
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
 Usage: #example
 * text
   * status = #generated

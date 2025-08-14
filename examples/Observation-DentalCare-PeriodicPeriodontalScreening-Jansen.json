@@ -3,7 +3,7 @@
   "id": "DentalCare-PeriodicPeriodontalScreening-Jansen",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening"
+      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
     ]
   },
   "code": {

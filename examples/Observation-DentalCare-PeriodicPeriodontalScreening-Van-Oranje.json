@@ -3,7 +3,7 @@
   "id": "DentalCare-PeriodicPeriodontalScreening-Van-Oranje",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening"
+      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
     ]
   },
   "code": {

@@ -63,7 +63,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "110298001",
+              "code": "364126007",
               "system": "http://snomed.info/sct"
             }
           ]
