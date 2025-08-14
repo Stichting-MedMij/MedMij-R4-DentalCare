@@ -30,11 +30,10 @@ Dental care supports the following (types of) use cases
 -  Basic (general) dental care
 
 ### Use case: Retrieve Dental Fitness
-This FHIR implementation guide assumes that the PHR system is able to make a connection to the right TIS, for dental care TIS, that contains the patient's information. It does not provide information on finding the right XIS, for dental care TIS, nor does it provide information about security. Moreover, each transaction is performed in the context of a specific authenticated patient, for whose context (token) has been established using the authentication mechanisms described in the ['MedMij Afsprakenstelsel'](https://afsprakenstelsel.medmij.nl/). Each TIS or for dental care TIS, Gateway is required to perform filtering based on the patient associated with the context for the request, so only the records associated with the authenticated patient are returned. For this reason, search parameters should not be included for patient identification.  
+This FHIR implementation guide assumes that the PHR system is able to make a connection to the right TIS, for dental care TIS, that contains the patient's information. It does not provide information on finding the right XIS, for dental care TIS, nor does it provide information about security. Moreover, each transaction is performed in the context of a specific authenticated patient, for whose context (token) has been established using the authentication mechanisms described in the [MedMij Afsprakenstelsel](https://afsprakenstelsel.medmij.nl/). Each TIS or for dental care TIS, Gateway is required to perform filtering based on the patient associated with the context for the request, so only the records associated with the authenticated patient are returned. For this reason, search parameters should not be included for patient identification.  
 
 #### PHR: request message
-The PHR system requests the dental care data using individual ['Search'](https://hl7.org/fhir/R4/index.html)
- interactions. The mouthcare exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's mouthcare data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown: search interactions. The dental care exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's dental care data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown:  
+The PHR system requests the dental care data using individual [earch](https://hl7.org/fhir/R4/search.html) interactions. The mouthcare exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's mouthcare data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown: search interactions. The dental care exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's dental care data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown:  
 
 `GET [base]/[type]{?[parameters]}`
 
@@ -108,7 +107,7 @@ The returned data to the PHR should conform to the profiles listed in the table 
             <td>4</td>
             <td>DentalFitness</td>
             <td>DentalFitness</td>
-            <td><a href="https://simplifier.net/medmij-r4-dental-care/mz-DentalFitness" target="_blank">mz-DentalFitness</a></td>
+            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955334" target="_blank">mz-DentalFitness</a></td>
             <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|440271000146100&_include=Observation:performer</td>
         </tr>
     </tbody>
@@ -118,10 +117,10 @@ The returned data to the PHR should conform to the profiles listed in the table 
 </html>
 
 ### Use case: Retrieve Dental care data
-This FHIR implementation guide assumes that the PHR system is able to make a connection to the right TIS, for dental care TIS, that contains the patient's information. It does not provide information on finding the right XIS, for dental care TIS, nor does it provide information about security. Moreover, each transaction is performed in the context of a specific authenticated patient, for whose context (token) has been established using the authentication mechanisms described in the ['MedMij Afsprakenstelsel'](https://afsprakenstelsel.medmij.nl/). Each TIS or for dental care TIS. Gateway is required to perform filtering based on the patient associated with the context for the request, so only the records associated with the authenticated patient are returned. For this reason, search parameters should not be included for patient identification.  
+This FHIR implementation guide assumes that the PHR system is able to make a connection to the right TIS, for dental care TIS, that contains the patient's information. It does not provide information on finding the right XIS, for dental care TIS, nor does it provide information about security. Moreover, each transaction is performed in the context of a specific authenticated patient, for whose context (token) has been established using the authentication mechanisms described in the [MedMij Afsprakenstelsel](https://afsprakenstelsel.medmij.nl/). Each TIS or for dental care TIS. Gateway is required to perform filtering based on the patient associated with the context for the request, so only the records associated with the authenticated patient are returned. For this reason, search parameters should not be included for patient identification.  
 
 #### PHR: request message
-The PHR system requests the dental care data using individual  ['Search'](https://hl7.org/fhir/R4/index.html)  interactions. The mouthcare exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's mouthcare data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown: search interactions. The dental care exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's dental care data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown:  
+The PHR system requests the dental care data using individual [search](https://hl7.org/fhir/R4/search.html) interactions. The mouthcare exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's mouthcare data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown: search interactions. The dental care exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's dental care data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown:  
 
 `GET [base]/[type]{?[parameters]}`
 
@@ -195,49 +194,49 @@ The returned data to the PHR should conform to the profiles listed in the table 
             <td>4</td>
             <td>Verrichting</td>
             <td>Procedure</td>
-            <td><a href="https://simplifier.net/medmij-r4-dental-care/mz-Procedure" target="_blank">mz-Procedure</a></td>
+            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955338" target="_blank">mz-Procedure</a></td>
             <td class="monospace">GET [base]/Procedure?&_include=Procedure:performer</td>
         </tr>
         <tr>
             <td>5</td>
             <td>Behandeldoel</td>
             <td>TreatmentObjective</td>
-            <td><a href="https://simplifier.net/medmij-r4-dental-care/mz-TreatmentObjective">mz-TreatmentObjective</a></td>
+            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955339">mz-TreatmentObjective</a></td>
             <td class="monospace">GET [base]/Goal</td>
         </tr>
         <tr>
             <td>6</td>
             <td>Mondhygiëne</td>
             <td>OralHygiene</td>
-            <td><a href="https://simplifier.net/medmij-r4-dental-care/mz-OralHygiene">mz-OralHygiene</a></td>
+            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955335">mz-OralHygiene</a></td>
             <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|364126007&_include=Observation:performer</td>
         </tr>
         <tr>
             <td>7</td>
             <td>Cariësrisico</td>
             <td>CariesRisk</td>
-            <td><a href="https://simplifier.net/medmij-r4-dental-care/mz-CariesRisk">mz-CariesRisk</a></td>
+            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955333">mz-CariesRisk</a></td>
             <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|74024006&_include=Observation:performer</td>
         </tr>
         <tr>
             <td>8</td>
             <td>ParafunctioneleActiviteit</td>
             <td>ParafunctionalActivity</td>
-            <td><a href="https://simplifier.net/medmij-r4-dental-care/mz-ParafunctionalActivity">mz-ParafunctionalActivity</a></td>
+            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955336">mz-ParafunctionalActivity</a></td>
             <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|110353005&_include=Observation:performer</td>
         </tr>
         <tr>
             <td>9</td>
             <td>ASAScore</td>
             <td>ASAScore</td>
-            <td><a href="https://simplifier.net/medmij-r4-dental-care/mz-ASAScore">mz-ASAScore</a></td>
+            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955332">mz-ASAScore</a></td>
             <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|413347006&_include=Observation:performer</td>
         </tr>
         <tr>
             <td>10</td>
             <td>PeriodiekeParadontaleScreeningScore</td>
             <td>PeriodicPeriodontalScreeningScore</td>
-            <td><a href="https://simplifier.net/medmij-r4-dental-care/mz-PeriodicPeriodontalScreeningScore">mz-PeriodicPeriodontalScreeningScore</a></td>
+            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955337">mz-PeriodicPeriodontalScreeningScore</a></td>
             <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|540501000146103&_include=Observation:performer</td>
         </tr>
         <tr>
@@ -245,7 +244,7 @@ The returned data to the PHR should conform to the profiles listed in the table 
             <td>Betaler </td>
             <td>Payer</td>
             <td><a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885820">nl-core-Payer.InsuranceCompany
-            <a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2886056">nl-core-Payer.PayerPerson</a></td>
+            <a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885822">nl-core-Payer.PayerPerson</a></td>
             </a></td>
             <td class="monospace">GET [base]/Coverage?_include=Coverage:payor</td>
         </tr>

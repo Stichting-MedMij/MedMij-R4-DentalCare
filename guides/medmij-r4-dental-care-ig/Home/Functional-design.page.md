@@ -23,9 +23,6 @@ Toelichting op de zorginformatiebouwstenen: Mondzorg maakt gebruik van zib publi
 
 - Voor de Periodieke Parodontale Screenen Score is een [richtlijn](https://knmt.nl/nieuws/periodiek-parodontaal-screenen-ben-jij-er-al-aan-gewend) gevolgd;
 - Voor de ASA Score is een [richtlijn](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) gevolgd;
-- Voor de parafunctionele activiteit....
-- Voor de mondhygiëne....
-- Voor de Caries risico....
 - Voor de Dental Fitness-gegevens zijn een internationale en nationale richtlijn gevolgd, namelijk de 
 [NATO-standaard AMedP-4.4 "Dental Fitness Standards for Military Personnel and the NATO Dental Fitness Classification System"](https://www.coemed.org/files/stanags/03_AMEDP/AMedP-4.4_EDB_V1_E.pdf) 
 en Richtlijn 473 - Richtlijn bepaling Dental Fitness. (2023). Ministerie van Defensie.   
@@ -220,7 +217,7 @@ Tabel 3 Transactiegroep
 | Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Contact | [NTB] | TIS | Zorgaanbieder |
 
 ### Dataset
-De dataset kan gevonden worden op [GitHub](https://github.com/Stichting-MedMij/MedMij-R4-DentalCare/blob/main/Dataset/Mondzorg%20data%20en%20testpersona's%201.0.0-alpha.1..xlsx).
+De dataset kan gevonden worden op [GitHub](https://github.com/Stichting-MedMij/MedMij-R4-DentalCare/blob/main/dataset/Dataset_MedMij_Mondzorg_1.0.0-beta.1.xlsx).
 
 ### Weergaverichtlijnen
 
@@ -235,13 +232,3 @@ De richtlijn geeft géén handvatten voor de vormgeving (kleur, vorm, lettertype
 
 ### Inhoud weergaverichtlijn
 De weergaverichtlijnen voor de mondzorggegeven zijn [hier](https://medmij.atlassian.net/wiki/spaces/IER/pages/380960769/Weergaverichtlijn+Mondzorg+Beta+versie) te vinden.
-
-## Release notes
-
-Tabel 3 Release notes
-
-| Versie | Datum |Omschrijving |
-| --- | --- | --- |
-| 1.0.0-alpha.1 | 11-02-2025 | Eerste versie voor een Proof of Concept (POC)  | 
-| 1.0.0-alpha.2 | 12-05-2025 | Link GitHub dataset en weergaverichtlijnen toegevoegd| 
-| 1.0.0-beta.1 | 30-07-2025 | Link weergaverichtlijnen beta toegevoegd|
