@@ -36,7 +36,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^short = "PPSScore"
   * ^definition = "The score of the PPS."
   * ^alias = "PPSScore"
-* note 0..1
+* note
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."

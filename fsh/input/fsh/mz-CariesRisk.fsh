@@ -36,7 +36,7 @@ Description: "Caries risk."
   * ^short = "CariesRiskValue"
   * ^definition = "The risk of caries."
   * ^alias = "CariësrisicoWaarde"
-* note 0..1
+* note
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the caries risk, including comments on for example the circumstances and/or disruptive factors that may influence the result."
