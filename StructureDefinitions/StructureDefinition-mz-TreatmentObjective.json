@@ -28,8 +28,8 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-beta1-2025xxyy",
-      "name": "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
+      "identity": "mz-dataset-100-beta1-20250814",
+      "name": "Dataset Mondzorg 1.0.0-beta.1 20250814"
     }
   ],
   "kind": "resource",
@@ -44,7 +44,7 @@
         "path": "Goal",
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "identity": "mz-dataset-100-beta1-20250814",
             "map": "mz-dataelement-140",
             "comment": "TreatmentObjective"
           }
@@ -65,7 +65,7 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "identity": "mz-dataset-100-beta1-20250814",
             "map": "mz-dataelement-141",
             "comment": "Priority"
           }
@@ -80,7 +80,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-2025xxyy",
+            "identity": "mz-dataset-100-beta1-20250814",
             "map": "mz-dataelement-1",
             "comment": "Patient"
           }

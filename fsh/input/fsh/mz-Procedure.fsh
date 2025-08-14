@@ -548,8 +548,8 @@ Title: "zib MedicalDevice-v3.3.1(2020EN)"
 
 Mapping: MedMijProcedure
 Source: MzProcedure
-Id: mz-dataset-100-beta1-2025xxyy
-Title: "Dataset Mondzorg 1.0.0-beta.1 2025xxyy"
+Id: mz-dataset-100-beta1-20250814
+Title: "Dataset Mondzorg 1.0.0-beta.1 20250814"
 * -> "mz-dataelement-109" "Procedure"
 * status -> "mz-dataelement-110" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
 * status -> "mz-dataelement-111" "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
