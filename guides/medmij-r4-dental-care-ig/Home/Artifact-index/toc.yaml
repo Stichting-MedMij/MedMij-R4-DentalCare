@@ -1,0 +1,18 @@
+- name: Index
+  filename: Index.page.md
+- name: ASA Score
+  filename: ASA-Score.page.md
+- name: Caries Risk
+  filename: Caries-Risk.page.md
+- name: Dental Fitness
+  filename: Dental-Fitness.page.md
+- name: Oral Hygiene
+  filename: Oral-Hygiene.page.md
+- name: Parafunctional Activity
+  filename: Parafunctional-Activity.page.md
+- name: Periodic Periodontal Screening Score
+  filename: Periodic-Periodontal-Screening-Score.page.md
+- name: Procedure
+  filename: Procedure.page.md
+- name: Treatment Objective
+  filename: Treatment-Objective.page.md
