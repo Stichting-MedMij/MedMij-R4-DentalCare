@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mz-PeriodicPeriodontalScreening",
+  "id": "mz-PeriodicPeriodontalScreeningScore",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
   },
   "url": "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore",
-  "name": "MzPeriodicPeriodontalScreening",
-  "title": "mz PeriodicPeriodontalScreening",
+  "name": "MzPeriodicPeriodontalScreeningScore",
+  "title": "mz PeriodicPeriodontalScreeningScore",
   "status": "draft",
   "publisher": "MedMij",
   "contact": [
@@ -42,9 +42,9 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "PeriodicPeriodontalScreening",
+        "short": "PeriodicPeriodontalScreeningScore",
         "alias": [
-          "PeriodiekeParodontaleScreening",
+          "PeriodiekeParodontaleScreeningScore",
           "Measurement",
           "Results",
           "Tests"
@@ -53,7 +53,7 @@
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-136",
-            "comment": "PeriodicPeriodontalScreening"
+            "comment": "PeriodicPeriodontalScreeningScore"
           }
         ]
       },

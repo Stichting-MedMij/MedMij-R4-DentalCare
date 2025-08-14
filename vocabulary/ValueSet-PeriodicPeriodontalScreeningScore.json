@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "PeriodicPeriodontalScreening",
-  "id": "PeriodicPeriodontalScreening",
+  "name": "PeriodicPeriodontalScreeningScore",
+  "id": "PeriodicPeriodontalScreeningScore",
   "title": "PeriodicPeriodontalScreening ValueSet.",
   "description": "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS).",
   "url": "http://medmij.nl/fhir/ValueSet/PeriodicPeriodontalScreening",
