@@ -1,0 +1,5 @@
+# {{page-title}}
+
+{{tree:http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity, buttons}}
+
+This profile constrains the base FHIR Observation resource to represent Parafunctional Activity in the MedMij Dental Care context. The `.code` is fixed to SNOMED CT code 110353005 (parafunctional activity). The `.subject` may reference a Patient, preferably conforming to the Dutch nl-core-Patient profile. The `.effective[x]` element is sliced to allow effectiveDateTime, capturing when the parafunctional activity was determined. The `.performer` has a preferred reference to PractitionerRole in line with Nictiz Profiling Guidelins. The `.value[x]` element is mandatory and sliced to permit only valueString, which records the described parafunctional activity. The `.note` element is optional, with `.note.text` providing explanatory or contextual remarks.
