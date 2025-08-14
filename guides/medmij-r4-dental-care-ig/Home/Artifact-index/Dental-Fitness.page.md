@@ -1,3 +1,5 @@
 # {{page-title}}
 
 {{tree:http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness, buttons}}
+
+This profile constrains the base FHIR Observation resource to represent Dental Fitness in the MedMij Dental Care context, following the NATO classification system. The `.code` is fixed to SNOMED CT code 440271000146100 (dental fitness). The `.subject` may reference a Patient, preferably conforming to the Dutch nl-core-Patient profile. The `.effective[x]` element is sliced to allow effectiveDateTime, recording when the dental fitness was assessed. The `.performer` has a preferred reference to PractitionerRole in line with Nictiz Profiling Guidelins. The `.value[x]` element is mandatory and sliced to permit only valueCodeableConcept, bound with required strength to the MedMij Dental Fitness value set. The note element is optional, with `.note.text` used for contextual or explanatory remarks.

@@ -136,10 +136,6 @@ Tabel 3 Transactiegroep
 | Verzamelen Dental Fitness (PULL) | Raadplegen granulair gegeven Dental Fitness | [NTB]  | PGO | Patiënt |
 | Verzamelen Dental Fitness (PULL) | Beschikbaar stellen granulair gegeven Dental Fitness | [NTB] | TIS | Zorgaanbieder |
 
-### Usecasediagram
-
-{{render:usecasediagram.png}}
-
 ### Usecase: Mondzorggegevens
 
 ### Doel en relevantie granulair uitwisselen Algemene mondzorggegevens
