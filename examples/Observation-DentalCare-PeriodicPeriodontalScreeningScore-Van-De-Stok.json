@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-PeriodicPeriodontalScreening-Van-De-Stok",
+  "id": "DentalCare-PeriodicPeriodontalScreeningScore-Van-De-Stok",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening"
+      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
     ]
   },
   "code": {
@@ -35,7 +35,7 @@
     "coding": [
       {
         "code": "ppsscore3",
-        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening",
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore",
         "display": "Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde"
       }
     ]

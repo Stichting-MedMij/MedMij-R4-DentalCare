@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-PeriodicPeriodontalScreening-Van-Oranje",
+  "id": "DentalCare-PeriodicPeriodontalScreeningScore-Van-Oranje",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening"
+      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
     ]
   },
   "code": {
@@ -35,7 +35,7 @@
     "coding": [
       {
         "code": "ppsscore1",
-        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening",
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore",
         "display": "Pockets 0-3 millimeter = in orde"
       }
     ]

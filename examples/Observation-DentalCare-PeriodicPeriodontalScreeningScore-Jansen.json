@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-PeriodicPeriodontalScreening-Jansen",
+  "id": "DentalCare-PeriodicPeriodontalScreeningScore-Jansen",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening"
+      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
     ]
   },
   "code": {
@@ -35,7 +35,7 @@
     "coding": [
       {
         "code": "ppsscore2",
-        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening",
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore",
         "display": "Pockets 4-5 millimeter = mogelijk in orde"
       }
     ]

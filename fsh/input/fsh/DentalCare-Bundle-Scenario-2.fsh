@@ -20,9 +20,9 @@ InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
 Usage: #example
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Risico op cariës<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Cariësrisico: Verlaagd<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Cariësrisico: Verlaagd<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * status = #final
-* code = $SCT#609399004 "risico op cariës"
+* code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
 * effectiveDateTime = "2022-02-11T10:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
@@ -50,7 +50,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * status = #final
-* code = $SCT#110298001 "bevinding betreffende mondhygiëne"
+* code = $SCT#364126007 "oral hygiene status"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
 * effectiveDateTime = "2022-02-11T10:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
@@ -69,8 +69,8 @@ Usage: #example
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
 * valueString = "Erosie door het drinken van vruchtensap"
 
-Instance: DentalCare-PeriodicPeriodontalScreening-Jansen
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening
+Instance: DentalCare-PeriodicPeriodontalScreeningScore-Jansen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
 Usage: #example
 * text
   * status = #generated
@@ -80,7 +80,7 @@ Usage: #example
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
 * effectiveDateTime = "2022-02-11T08:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-* valueCodeableConcept = $PeriodicPeriodontalScreeningCodeSystemURL#ppsscore2 "Pockets 4-5 millimeter = mogelijk in orde"
+* valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore2 "Pockets 4-5 millimeter = mogelijk in orde"
 * note
   * text = "Paro-preventietraject"
 

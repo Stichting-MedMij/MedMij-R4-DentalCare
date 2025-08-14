@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "PeriodicPeriodontalScreening",
-  "id": "PeriodicPeriodontalScreening",
-  "title": "PeriodicPeriodontalScreening ValueSet.",
+  "name": "PeriodicPeriodontalScreeningScore",
+  "id": "PeriodicPeriodontalScreeningScore",
+  "title": "PeriodicPeriodontalScreeningScore ValueSet.",
   "description": "ValueSet for the periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS).",
-  "url": "http://medmij.nl/fhir/ValueSet/PeriodicPeriodontalScreening",
+  "url": "http://medmij.nl/fhir/ValueSet/PeriodicPeriodontalScreeningScore",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
@@ -34,7 +34,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreening"
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore"
       }
     ]
   }

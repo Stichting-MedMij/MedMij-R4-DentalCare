@@ -63,7 +63,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "110298001",
+              "code": "364126007",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -204,11 +204,6 @@
             "comment": "OralHygieneValue"
           }
         ]
-      },
-      {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "max": "1"
       },
       {
         "id": "Observation.note.text",

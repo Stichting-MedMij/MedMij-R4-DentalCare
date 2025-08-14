@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mz-PeriodicPeriodontalScreening",
+  "id": "mz-PeriodicPeriodontalScreeningScore",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
   },
-  "url": "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreening",
-  "name": "MzPeriodicPeriodontalScreening",
-  "title": "mz PeriodicPeriodontalScreening",
+  "url": "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore",
+  "name": "MzPeriodicPeriodontalScreeningScore",
+  "title": "mz PeriodicPeriodontalScreeningScore",
   "status": "draft",
   "publisher": "MedMij",
   "contact": [
@@ -23,7 +23,7 @@
     }
   ],
   "description": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
-  "purpose": "This Observation resource represents the PeriodicPeriodontalScreening building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care).",
+  "purpose": "This Observation resource represents the PeriodicPeriodontalScreeningScore building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care).",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -42,9 +42,9 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "PeriodicPeriodontalScreening",
+        "short": "PeriodicPeriodontalScreeningScore",
         "alias": [
-          "PeriodiekeParodontaleScreening",
+          "PeriodiekeParodontaleScreeningScore",
           "Measurement",
           "Results",
           "Tests"
@@ -53,7 +53,7 @@
           {
             "identity": "mz-dataset-100-beta1-2025xxyy",
             "map": "mz-dataelement-136",
-            "comment": "PeriodicPeriodontalScreening"
+            "comment": "PeriodicPeriodontalScreeningScore"
           }
         ]
       },
@@ -195,7 +195,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://medmij.nl/fhir/ValueSet/PeriodicPeriodontalScreening"
+          "valueSet": "http://medmij.nl/fhir/ValueSet/PeriodicPeriodontalScreeningScore"
         },
         "mapping": [
           {
@@ -204,11 +204,6 @@
             "comment": "PPSScore"
           }
         ]
-      },
-      {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "max": "1"
       },
       {
         "id": "Observation.note.text",

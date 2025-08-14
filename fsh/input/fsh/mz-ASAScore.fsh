@@ -36,7 +36,7 @@ Description: "Classification of physical condition according to American Society
   * ^short = "ASAScoreValue"
   * ^definition = "The value of the ASA score."
   * ^alias = "ASAScoreWaarde"
-* note 0..1
+* note
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the ASA score measurement, including comments on for example the circumstances and/or disruptive factors that may influence the result."

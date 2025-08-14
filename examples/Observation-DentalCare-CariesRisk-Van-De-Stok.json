@@ -9,15 +9,15 @@
   "code": {
     "coding": [
       {
-        "code": "609399004",
+        "code": "74024006",
         "system": "http://snomed.info/sct",
-        "display": "risico op cariës"
+        "display": "vatbaarheid voor cariës"
       }
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Risico op cariës<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
   },
   "status": "final",
   "subject": {

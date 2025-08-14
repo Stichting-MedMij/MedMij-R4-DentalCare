@@ -36,7 +36,7 @@ Description: "Dental fitness according to the NATO classification system."
   * ^short = "DentalFitnessValue"
   * ^definition = "The dental fitness."
   * ^alias = "DentalFitnessWaarde"
-* note 0..1
+* note
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the dental fitness, including comments on for example the circumstances and/or disruptive factors that may influence the result."
