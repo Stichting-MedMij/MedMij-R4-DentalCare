@@ -157,7 +157,7 @@ Anita Jansen vermoed dat ze gaatjes heeft. Ze is naar een civiele tandarts gewee
 #### Postconditie
 -	De bronleverancier namelijk het Tandarts Informatie Systeem (TIS) kan een een deel van de mondzorggegevens beschikbaar stellen, de TIS heeft een deel van de gegevens namelijk niet geregistreerd. De mondzorggegevens die wél beschikbaar zijn worden beschikbaar gesteld. De DVA laat weten aan de PGO welke gegevens beschikbaar zijn gemaakt. De mate van granulariteit van gegevens die uitgewisseld worden staan in het Technisch Ontwerp en zijn aangeduid met de FHIR resources en search query's {{pagelink:TO, text:FHIR IG}}. 
 
-{{render:Proces alternatieve flow.png}}
+{{render: guides/medmij-r4-dental-care-ig/images/Proces alternatieve flow.png}}
 
 ### Bedrijfsrollen en UML activity diagram
 
@@ -189,6 +189,10 @@ Tabel 2 Systeemrol
 ### Transacties en Transactiegroepen
 Het uitwisselen van gegevens tussen de verschillende systeemrollen gebeurt op basis van transacties, een verzameling van transacties (bijvoorbeeld een vraag- en antwoordbericht) vormt een zogeheten transactiegroep. Voor de transacties die tussen de systeemrollen plaatsvinden, wordt in Excel van Mondzorggegevens de berichtspecificatie beschreven. Hier is bij de scenario’s beschreven uit welke gegevenselementen een transactie bestaat en wat de kardinaliteit van deze elementen is. Voor de technische specificaties en de FHIR implementation guide, zie de {{pagelink:TO, text:FHIR IG}}. Alle gegevens zullen granulair uitgewisseld worden, wij wisselen dus niet in bundles van gegevens uit binnen dit project echter in aparte FHIR resources.
 
+### Ontwerp granulair uitwisselen Mondzorggegevens
+
+{{render: guides/medmij-r4-dental-care-ig/images/Granulaire gegevensdiensten.png}}
+
 Tabel 3 Transactiegroep
 
 | Transactiegroep | Transactie | Systeemrolcode | Systeem | Bedrijfsrol |
@@ -200,7 +204,7 @@ Tabel 3 Transactiegroep
 | Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Behandeldoel | [NTB] | PGO | Patiënt |
 | Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Behandeldoel | [NTB] | TIS | Zorgaanbieder |
 | Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Mondhygiëne| [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegevenMondhygiëne | [NTB] | TIS | Zorgaanbieder |
+| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Mondhygiëne | [NTB] | TIS | Zorgaanbieder |
 | Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Cariësrisico  | [NTB] | PGO | Patiënt |
 | Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Cariësrisico | [NTB] | TIS | Zorgaanbieder |
 | Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Parafunctionele activteit| [NTB] | PGO | Patiënt |
