@@ -195,7 +195,7 @@ The returned data to the PHR should conform to the profiles listed in the table 
             <td>Verrichting</td>
             <td>Procedure</td>
             <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955338" target="_blank">mz-Procedure</a></td>
-            <td class="monospace">GET [base]/Procedure?&_include=Procedure:performer</td>
+            <td class="monospace">GET [base]/Procedure?_include=Procedure:performer</td>
         </tr>
         <tr>
             <td>5</td>
