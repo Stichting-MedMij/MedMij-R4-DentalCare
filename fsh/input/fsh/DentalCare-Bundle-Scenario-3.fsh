@@ -214,7 +214,7 @@ Usage: #example
   * value = "dijkstra@tandarts.nl"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
   * use = #work
   * line = "Simon Smitweg 1"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Simon Smitweg"
@@ -236,7 +236,7 @@ Usage: #example
   * value = "0246412121"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
   * use = #work
   * line = "Weg door Jonkerbos 100"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Weg door Jonkerbos"
@@ -283,7 +283,7 @@ Usage: #example
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: A.S.R.<br/>Adres: Archimedeslaan 10, 3584 BA Utrecht</div>"
 * name = "A.S.R."
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
   * use = #work
   * line = "Archimedeslaan 10"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Archimedeslaan"

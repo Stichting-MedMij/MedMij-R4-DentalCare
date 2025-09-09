@@ -223,7 +223,7 @@ Usage: #example
   * value = "dekoning@tandarts.nl"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
   * use = #work
   * line = "Simon Smitweg 1"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Simon Smitweg"
@@ -252,7 +252,7 @@ Usage: #example
   * value = "PJ.Jumpertz.01@mindef.nl"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
   * use = #work
   * line = "Herculeslaan 1"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Herculeslaan"
@@ -272,7 +272,7 @@ Usage: #example
   * value = "0889502753"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
   * use = #work
   * line = "Rijksweg 121"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Rijksweg"
@@ -319,7 +319,7 @@ Usage: #example
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Groningen<br/>Adres: Winschoterdiep 70, 9723 AB Groningen</div>"
 * name = "Zorgkantoor Groningen"
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
   * use = #work
   * line = "Winschoterdiep 70"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Winschoterdiep"

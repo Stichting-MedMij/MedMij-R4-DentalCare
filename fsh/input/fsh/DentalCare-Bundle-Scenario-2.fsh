@@ -214,7 +214,7 @@ Usage: #example
   * value = "deruiter@tandarts.nl"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
   * use = #work
   * line = "Smitweg 1"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Smitweg"
@@ -262,7 +262,7 @@ Usage: #example
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Menzis Zorgverzekeraar<br/>Adres: Lawickse Allee 130, 6709 DZ Wageningen</div>"
 * name = "Menzis Zorgverzekeraar N.V."
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "Work Place"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
   * use = #work
   * line = "Lawickse Allee 130"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Lawickse Allee"
