@@ -282,6 +282,7 @@ Usage: #example
 * class = $ActCode#AMB "Ambulatory"
 * type
   * text = "Second opinion"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
 * participant 
   * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
 * period

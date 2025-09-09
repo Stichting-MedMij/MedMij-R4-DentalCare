@@ -339,6 +339,7 @@ Usage: #example
 * class = $NullFlavor#OTH "Anders"
 * type
   * text = "Tandarts Periodiek Preventief Onderzoek"
+* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"  
 * participant
   * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
 * period
@@ -359,6 +360,7 @@ Usage: #example
 * class = $ActCode#AMB "Ambulatory"
 * type
   * text = "Tandarts Periodiek Preventief Onderzoek"
+* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"  
 * participant
   * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
 * period
