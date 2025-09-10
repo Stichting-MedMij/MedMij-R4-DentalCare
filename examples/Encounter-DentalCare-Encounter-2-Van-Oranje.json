@@ -31,6 +31,10 @@
       "text": "Tandarts Periodiek Preventief Onderzoek"
     }
   ],
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-Oranje",
+    "display": "Erik van Oranje"
+  },
   "participant": [
     {
       "individual": {
