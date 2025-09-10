@@ -303,7 +303,7 @@ Usage: #example
 * class = $ActCode#AMB "Ambulatory"
 * type
   * text = "Consult t.b.v. intake"
-* subject = = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+* subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
 * participant
   * individual = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
 * period
