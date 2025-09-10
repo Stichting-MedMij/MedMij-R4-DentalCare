@@ -167,7 +167,7 @@ Usage: #example
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 * contact
   * relationship[0]
-    * coding = $RoleCode#FTH "Father"
+    * coding = $RoleCode#FTH "father"
   * relationship[1]
     * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon" 
   * name
