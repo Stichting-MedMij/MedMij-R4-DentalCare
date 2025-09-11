@@ -1,5 +1,11 @@
 # {{page-title}}
 
+## 1.0.0-beta.2
+
+| Component             | Description  | Ticket   |
+| --------------------- | ------------ | ---------|
+| Test material         | In the test instances for the zib Encounter a reference to the patient has been added on `.subject`. | [DOSINZAGE1-695](https://medmij.atlassian.net/browse/DOSINZAGE1-695) |
+
 ## 1.0.0-beta.1
 
 | Component             | Description  | Ticket   |
@@ -23,4 +29,3 @@
 | Test material         | Removed Location reference from PractitionerRole resources. | [DOSINZAGE1-555](https://medmij.atlassian.net/browse/DOSINZAGE1-555) |
 | Test material         | <ul> <li>Terminology in the test material has been updated to reflect the changes in dataset and FHIR profiles. <li>Several `.display`s have been updated. <li>Test instances have been finetuned. | [DOSINZAGE1-557](https://medmij.atlassian.net/browse/DOSINZAGE1-557), [DOSINZAGE1-631](https://medmij.atlassian.net/browse/DOSINZAGE1-631), [DOSINZAGE1-645](https://medmij.atlassian.net/browse/DOSINZAGE1-645) |
 | Test material         | Test instances for the zibs Encounter, ContactPerson and Payer have been added. | [DOSINZAGE1-635](https://medmij.atlassian.net/browse/DOSINZAGE1-635), [DOSINZAGE1-661](https://medmij.atlassian.net/browse/DOSINZAGE1-661) |
-| Test material         | Examples zib Contact: a reference to the patient added for the .subject | [DOSINZAGE1-695](https://medmij.atlassian.net/browse/DOSINZAGE1-695) |
