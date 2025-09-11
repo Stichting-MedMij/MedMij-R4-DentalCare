@@ -15,7 +15,7 @@
             {
               "code": "WP",
               "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
-              "display": "Work Place"
+              "display": "work place"
             }
           ]
         }

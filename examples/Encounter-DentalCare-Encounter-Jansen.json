@@ -21,6 +21,10 @@
       "text": "Second opinion"
     }
   ],
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen"
+  },
   "participant": [
     {
       "individual": {
