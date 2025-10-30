@@ -1,5 +1,3 @@
 # {{page-title}}
 
 {{tree:http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene, buttons}}
-
-This profile constrains the base FHIR Observation resource to represent Oral Hygiene in the MedMij Dental Care context. The `.code` is fixed to SNOMED CT code 364126007 (oral hygiene finding). The subject may reference a Patient, preferably conforming to the Dutch nl-core-Patient profile. The `.effective[x]` element is sliced to allow effectiveDateTime, indicating when the oral hygiene was assessed. The `.performer` has a preferred reference to PractitionerRole in line with Nictiz Profiling Guidelins. The `.value[x]` element is mandatory and sliced to permit only valueCodeableConcept, and with an extensible binding to the MedMij Oral Hygiene value set. The `.note` element is optional, with `.note.text` capturing explanatory or contextual remarks about the assessment.

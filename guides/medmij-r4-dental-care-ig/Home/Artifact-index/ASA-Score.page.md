@@ -1,5 +1,3 @@
 # {{page-title}}
 
 {{tree:http://medmij.nl/fhir/StructureDefinition/mz-ASAScore, buttons}}
-
-This profile constrains the base FHIR Observation resource to represent an ASA-Score in the MedMij Dental Care context. The `.code` is fixed to SNOMED CT code 413347006 (ASA physical status classification). The `.subject` may reference a Patient, preferably conforming to the Dutch nl-core-Patient profile. The `.effective[x]` element is sliced to allow effectiveDateTime, representing when the score was determined. The `.performer` has a preferred reference to PractitionerRole in line with Nictiz Profiling Guidelins. The `.value[x]` element is mandatory and sliced to allow only valueCodeableConcept, and a required binding to the MedMij ASA Score value set. The `.note` element is optional, with `.note.text` used for contextual comments about the score.

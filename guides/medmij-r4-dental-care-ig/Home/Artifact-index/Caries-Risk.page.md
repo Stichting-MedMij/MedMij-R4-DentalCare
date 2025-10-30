@@ -1,5 +1,3 @@
 # {{page-title}}
 
 {{tree:http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk, buttons}}
-
-This profile constrains the base FHIR Observation resource to represent Caries Risk in the MedMij Dental Care context. The `.code` is fixed to SNOMED CT code 74024006 (caries risk). The subject may reference a Patient, preferably conforming to the Dutch nl-core-Patient profile. The `.effective[x]` element is sliced to allow effectiveDateTime, indicating when the caries risk was determined. The `.performer` has a preferred reference to PractitionerRole in line with Nictiz Profiling Guidelins. The `.value[x]` element is mandatory and sliced to permit only valueCodeableConcept, and with an extensible binding to the MedMij Caries Risk value set. The `.note` element is optional, with `.note.text` used for contextual remarks about the assessment.

@@ -1,5 +1,3 @@
 # {{page-title}}
 
 {{tree:http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore, buttons}}
-
-This profile constrains the base FHIR Observation resource to represent a Periodic Periodontal Screening (PPS) in the MedMij Dental Care context. The `.code` is fixed to SNOMED CT code 540501000146103 (periodic periodontal screening). The `.subject` may reference a Patient, preferably conforming to the Dutch nl-core-Patient profile. The `.effective[x]` element is sliced to allow effectiveDateTime, capturing when the PPS was performed. The `.performer` has a preferred reference to PractitionerRole in line with Nictiz Profiling Guidelins. The `.value[x]` element is mandatory and sliced to permit only valueCodeableConcept,and with an extensible binding to the MedMij Periodic Periodontal Screening value set. The `.note` element is optional, with `.note.text` used for explanatory or contextual comments.
