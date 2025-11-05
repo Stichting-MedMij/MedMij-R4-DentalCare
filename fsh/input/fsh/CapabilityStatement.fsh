@@ -36,11 +36,11 @@ Usage: #definition
       * code = #search-type
   * resource[+]
     * type = #Observation
-    * supportedProfile[0]= "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
-    * supportedProfile[1]= "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk"  
-    * supportedProfile[2]= "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
-    * supportedProfile[3]= "http://medmij.nl/fhir/StructureDefinition/mz-ASAScore"
-    * supportedProfile[4]= "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"        
+    * supportedProfile[0] = "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
+    * supportedProfile[1] = "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk"  
+    * supportedProfile[2] = "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
+    * supportedProfile[3] = "http://medmij.nl/fhir/StructureDefinition/mz-ASAScore"
+    * supportedProfile[4] = "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"        
     * interaction
       * code = #search-type
     * searchParam
@@ -49,8 +49,8 @@ Usage: #definition
     * searchInclude = "Observation:performer"
   * resource[+]
     * type = #Coverage
-    * supportedProfile[0]= "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany"
-    * supportedProfile[1]= "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson"  
+    * supportedProfile[0] = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany"
+    * supportedProfile[1] = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson"  
     * interaction
       * code = #search-type
     * searchInclude = "Coverage:payor"
@@ -133,11 +133,11 @@ Usage: #definition
       * code = #search-type
   * resource[+]
     * type = #Observation
-    * supportedProfile[0]= "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
-    * supportedProfile[1]= "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk"  
-    * supportedProfile[2]= "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
-    * supportedProfile[3]= "http://medmij.nl/fhir/StructureDefinition/mz-ASAScore"
-    * supportedProfile[4]= "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"        
+    * supportedProfile[0] = "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
+    * supportedProfile[1] = "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk"  
+    * supportedProfile[2] = "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
+    * supportedProfile[3] = "http://medmij.nl/fhir/StructureDefinition/mz-ASAScore"
+    * supportedProfile[4] = "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"        
     * interaction
       * code = #search-type
     * searchParam
@@ -146,8 +146,8 @@ Usage: #definition
     * searchInclude = "Observation:performer"
   * resource[+]
     * type = #Coverage
-    * supportedProfile[0]= "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany"
-    * supportedProfile[1]= "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson"  
+    * supportedProfile[0] = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany"
+    * supportedProfile[1] = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson"  
     * interaction
       * code = #search-type
     * searchInclude = "Coverage:payor"
