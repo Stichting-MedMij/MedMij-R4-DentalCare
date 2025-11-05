@@ -41,12 +41,14 @@
   "status": "active",
   "beneficiary": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje"
+    "display": "Erik van Oranje",
+    "type": "Patient"
   },
   "payor": [
     {
-      "reference": "Organization/DentalCare-Organization-Zorgkantoor-Groningen",
-      "display": "Zorgkantoor Groningen"
+      "reference": "Patient/DentalCare-Patient-Van-Oranje",
+      "display": "Erik van Oranje",
+      "type": "Patient"
     }
   ]
 }

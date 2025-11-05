@@ -25,6 +25,7 @@
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje"
+    "display": "Erik van Oranje",
+    "type": "Patient"
   }
 }

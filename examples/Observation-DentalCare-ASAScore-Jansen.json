@@ -22,13 +22,15 @@
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen"
+    "display": "Anita Jansen",
+    "type": "Patient"
   },
   "effectiveDateTime": "2022-02-11T10:43:00+01:00",
   "performer": [
     {
       "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
-      "display": "D. de Ruiter, Tandarts"
+      "display": "D. de Ruiter, Tandarts",
+      "type": "PractitionerRole"
     }
   ],
   "valueCodeableConcept": {

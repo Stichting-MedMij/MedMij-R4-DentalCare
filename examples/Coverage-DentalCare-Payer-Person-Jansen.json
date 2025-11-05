@@ -41,12 +41,14 @@
   "status": "active",
   "beneficiary": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen"
+    "display": "Anita Jansen",
+    "type": "Patient"
   },
   "payor": [
     {
-      "reference": "Organization/DentalCare-Organization-Menzis",
-      "display": "Menzis Zorgverzekeraar N.V."
+      "reference": "Patient/DentalCare-Patient-Jansen",
+      "display": "Anita Jansen",
+      "type": "Patient"
     }
   ]
 }

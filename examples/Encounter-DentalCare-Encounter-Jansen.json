@@ -23,13 +23,15 @@
   ],
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen"
+    "display": "Anita Jansen",
+    "type": "Patient"
   },
   "participant": [
     {
       "individual": {
         "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
-        "display": "D. de Ruiter, Tandarts"
+        "display": "D. de Ruiter, Tandarts",
+        "type": "PractitionerRole"
       }
     }
   ],
@@ -41,7 +43,8 @@
     {
       "location": {
         "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-        "display": "Vliegbasis Gilze-Rijen"
+        "display": "Vliegbasis Gilze-Rijen",
+        "type": "Location"
       }
     }
   ]
