@@ -9,8 +9,10 @@ Usage: #example
 * status = #final
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 * effectiveDateTime = "2024-01-01T10:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#413497009 "ASA-score 3"
 * note
   * text = "Allergisch voor gluten, heeft nierziekte en bloedarmoede"
@@ -24,8 +26,10 @@ Usage: #example
 * status = #final
 * code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 * effectiveDateTime = "2024-01-01T08:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#35105006 "verhoogd"
 
 Instance: DentalCare-DentalFitness-Van-De-Stok
@@ -37,8 +41,10 @@ Usage: #example
 * status = #final
 * code = $SCT#440271000146100 "'dental fitness' volgens NAVO-classificatiesysteem"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 * effectiveDateTime = "2024-03-03T10:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept
   * coding = $SCT#258393007 "klasse 2"
   * text = "kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden"
@@ -52,8 +58,10 @@ Usage: #example
 * status = #final
 * code = $SCT#364126007 "oral hygiene status"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 * effectiveDateTime = "2024-01-01T08:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#20572008 "goed"
 
 Instance: DentalCare-ParafunctionalActivity-Van-De-Stok
@@ -65,8 +73,10 @@ Usage: #example
 * status = #final
 * code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 * effectiveDateTime = "2024-01-01T08:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+  * type = "PractitionerRole"
 * valueString = "Tanden knarsen tijdens slaap"
 
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Van-De-Stok
@@ -78,8 +88,10 @@ Usage: #example
 * status = #final
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 * effectiveDateTime = "2024-01-01T08:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore3 "Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde"
 * note
   * text = "Paro-traject"
@@ -95,6 +107,7 @@ Usage: #example
 * description
   * text = "Trekken snijtand linksboven"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 
 Instance: DentalCare-TreatmentObjective-2-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective
@@ -107,6 +120,7 @@ Usage: #example
 * description
   * text = "Wortelpuntoperatie (apexresectie)"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 
 Instance: DentalCare-Procedure-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
@@ -117,10 +131,13 @@ Usage: #example
 * status = #completed
 * code = $NZaOrthodonticCare#F121 "Eerste consult"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 * performedDateTime = "2024-01-01"
 * performer
   * actor = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+    * type = "PractitionerRole"
 * location = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
+  * type = "Location"
 
 Instance: DentalCare-Patient-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
@@ -185,7 +202,9 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Dijkstra<br/>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>Locatie: CWZ Nijmegen</div>"
 * practitioner = Reference(DentalCare-Practitioner-Dijkstra) "B. Dijkstra"
+  * type = "Practitioner"
 * organization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
+  * type = "Organization"
 * specialty
   * coding = urn:oid:2.16.840.1.113883.2.4.6.7#1200 "Tandartsen, algemeen practicus"
 
@@ -244,6 +263,7 @@ Usage: #example
   * city = "Nijmegen"
   * postalCode = "6532 SZ"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
+  * type = "Organization"
 
 Instance: DentalCare-Payer-InsuranceCompany-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
@@ -255,10 +275,12 @@ Usage: #example
 * type = $Verzekeringssoort#T "Tandverzekering (los)"
 * subscriberId = "12345679"
 * beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 * period
   * start = "2025-01-01"
   * end = "2026-01-01"
 * payor = Reference(DentalCare-Organization-ASR) "A.S.R."
+  * type = "Organization"
 
 Instance: DentalCare-Payer-Person-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
@@ -273,7 +295,9 @@ Usage: #example
 * status = #active
 * type = $Verzekeringstype#pay "Pay"
 * beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
-* payor = Reference(DentalCare-Organization-ASR) "A.S.R."
+  * type = "Patient"
+* payor = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 
 Instance: DentalCare-Organization-ASR
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
@@ -304,10 +328,13 @@ Usage: #example
 * type
   * text = "Consult t.b.v. intake"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
 * participant
   * individual = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+    * type = "PractitionerRole"
 * period
   * start = "2025-09-01T09:00:00+01:00"
   * end = "2025-09-01T09:30:00+01:00"
 * location 
   * location = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
+    * type = "Location"
