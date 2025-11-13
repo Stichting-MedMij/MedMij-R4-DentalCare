@@ -1,14 +1,14 @@
-// CapabilityStatement DentalCare 
+// CapabilityStatements to be used in Dental Care
 
-Instance: DentalCare-Server
+Instance: mz-ServeDentalCareData
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "DentalCareServer"
+* name = "mz ServeDentalCareData"
 * status = #active
 * date = "2025-11-03"
 * insert PublisherAndContactInstance
-* description = "his CapabilityStatement describes the minimal requirements for a server to expose Dental Care information based on the Dutch Health and Care Information models (Dutch: Zorginformatiebouwsteen or ZIB), release 2020. And based on the Dutch MedMij Dental Care Information models."
+* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve dental care data' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
 * insert CopyrightInstance
 * kind = #requirements
@@ -17,7 +17,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to expose Dental Care information transactions (system role: MM-MGR-FHIR)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve dental care data' transaction (system role: MM-MGB-FHIR)."
   * resource[+]
     * type = #Patient
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
@@ -63,49 +63,45 @@ Usage: #definition
       * name = "date"
       * type = #date
   * resource[+]
-    * type = #Patient
-    * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson" 
-    * interaction
-      * code = #search-type
-    * searchInclude = "Patient:contact"
-  * resource[+]
     * type = #PractitionerRole
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
     * documentation = "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle."
     * interaction
       * code = #read
-      * documentation = "If the server includes this (secondary) resource in the Bundle, the client does not need to execute a `read`. However, since a server may choose to not include it in the Bundle, support of the `read` interaction is mandatory for a client."
+      * documentation = "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
   * resource[+]
     * type = #Practitioner
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
     * documentation = "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle."
     * interaction
       * code = #read
-      * documentation = "If the server includes this (secondary) resource in the Bundle, the client does not need to execute a `read`. However, since a server may choose to not include it in the Bundle, support of the `read` interaction is mandatory for a client."
+      * documentation = "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
   * resource[+]
     * type = #Organization
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
     * documentation = "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle."
     * interaction
       * code = #read
-      * documentation = "If the server includes this (secondary) resource in the Bundle, the client does not need to execute a `read`. However, since a server may choose to not include it in the Bundle, support of the `read` interaction is mandatory for a client."
+      * documentation = "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
   * resource[+]
     * type = #Location
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
     * documentation = "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle."
     * interaction
       * code = #read
-      * documentation = "If the server includes this (secondary) resource in the Bundle, the client does not need to execute a `read`. However, since a server may choose to not include it in the Bundle, support of the `read` interaction is mandatory for a client."
+      * documentation = "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
+  * interaction
+    * code = #search-system
 
-Instance: DentalCare-Client
+Instance: mz-RetrieveDentalCareData
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "DentalCareClient"
+* name = "mz RetrieveDentalCareData"
 * status = #active
 * date = "2025-11-03"
 * insert PublisherAndContactInstance
-* description = "This CapabilityStatement describes the minimal requirements for a client to request Dental Care information based on the Dutch Health and Care Information models (Dutch: Zorginformatiebouwsteen or ZIB), release 2020. And based on the Dutch MedMij Dental Care Information models"
+* description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve dental care data' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide of the corresponding information standard should be consulted."
 * insert CopyrightInstance
 * kind = #requirements
@@ -114,7 +110,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to expose Dental Care information transactions (system role: MM-MGR-FHIR)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve dental care data' transaction (system role: MM-MGR-FHIR)."
   * resource[+]
     * type = #Patient
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
@@ -160,12 +156,6 @@ Usage: #definition
       * name = "date"
       * type = #date
   * resource[+]
-    * type = #Patient
-    * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson" 
-    * interaction
-      * code = #search-type
-    * searchInclude = "Patient:contact"
-  * resource[+]
     * type = #PractitionerRole
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"
     * documentation = "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle."
@@ -193,3 +183,5 @@ Usage: #definition
     * interaction
       * code = #read
       * documentation = "If the server includes this (secondary) resource in the Bundle, the client does not need to execute a `read`. However, since a server may choose to not include it in the Bundle, support of the `read` interaction is mandatory for a client."
+  * interaction
+    * code = #search-system
