@@ -9,7 +9,6 @@ Usage: #example
 * status = #final
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
-  * type = "Patient"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
 * valueCodeableConcept = $SCT#413495001 "ASA-score 1"
