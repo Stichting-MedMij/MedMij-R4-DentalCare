@@ -10,12 +10,11 @@ This Implementation Guide (IG) details the HL7 FHIR requirements for exchanging 
 This IG is a technical counterpart of the {{pagelink:FO, text: functional design}}. The FHIR version used for this IG is HL7 FHIR R4 (4.0.1).
 
 ## Actors involved
-
 | Actor | | System | | FHIR CapabilityStatement |
-|| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | **Name** | **Description** | **Name** | **Description** | **Name** | **Description** |
-| Patient | The user of a personal healthcare environment | PHR | Personal health record | [TO DO] | FHIR client requirements |
-| Healthcare provider | The user of a TIS | TIS | Healthcare information system | [TO DO] | FHIR server requirements |
+| Patient | The user of a personal healthcare environment | PHR | Personal health record | [CapabilityStatement Retrieve dental fitness](http://medmij.nl/fhir/CapabilityStatement/mz-RetrieveDentalFitness) <br/> [CapabilityStatement Retrieve dental care data](http://medmij.nl/fhir/CapabilityStatement/mz-RetrieveDentalCareData) | FHIR client requirements |
+| Healthcare provider | The user of a TIS | TIS | Healthcare information system | [CapabilityStatement Serve dental fitness](http://medmij.nl/fhir/CapabilityStatement/mz-ServeDentalFitness) <br/> [CapabilityStatement Serve dental care data](http://medmij.nl/fhir/CapabilityStatement/mz-ServeDentalCareData) | FHIR server requirements |
 
 ## Boundaries and relationships
 This FHIR IG includes use cases for the exchange of dental care data between health care providers (e.g. dentists) and patients (e.g. in a PHR setting).
@@ -271,6 +270,6 @@ The returned data to the PHR should conform to the profiles listed in the table 
 #### Configuration search query Encounter
 The PHR may use and the TIS shall be capable of processing the minimal requirements outlined in the FHIR R4 IG [2.7.1.1 Search on date, number or quantity](https://informatiestandaarden.nictiz.nl/wiki/FHIR:V1.0_FHIR_IG_R4#Search_URLs_and_search_parameters). Example query: 
 
-| Name | Type | Description | Example
+| Name | Type | Description | Example |
 |
-| [date](https://www.hl7.org/fhir/R4/search.html#date)  | date | Encounter date/time based on **start** date/time | Retrieve appointments with a start date/time from 01-01-2015 onwards by `GET [base]/Encounter?date=gt2017-12-31`
+| [date](https://www.hl7.org/fhir/R4/search.html#date)  | date | Encounter date/time based on **start** date/time | Retrieve appointments with a start date/time from 01-01-2015 onwards by `GET [base]/Encounter?date=gt2017-12-31` |

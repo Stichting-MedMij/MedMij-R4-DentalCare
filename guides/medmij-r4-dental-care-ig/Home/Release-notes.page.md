@@ -4,6 +4,8 @@
 
 | Component             | Description  | Ticket   |
 | --------------------- | ------------ | ---------|
+| Technical design      | Links to the CapabilityStatements have been added in the technical design. | [DOSINZAGE1-763](https://medmij.atlassian.net/browse/DOSINZAGE1-763) |
+| FHIR artifacts        | CapabilityStatements for the Retrieve and Serve transactions have been added. | [DOSINZAGE1-763](https://medmij.atlassian.net/browse/DOSINZAGE1-763) |
 | Test material         | In the test instances for the zib Encounter a reference to the patient has been added on `.subject`. | [DOSINZAGE1-695](https://medmij.atlassian.net/browse/DOSINZAGE1-695) |
 
 ## 1.0.0-beta.1
