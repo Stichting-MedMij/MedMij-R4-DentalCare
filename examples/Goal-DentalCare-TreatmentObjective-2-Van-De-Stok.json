@@ -25,6 +25,7 @@
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
-    "display": "Berend van de Stok"
+    "display": "Berend van de Stok",
+    "type": "Patient"
   }
 }

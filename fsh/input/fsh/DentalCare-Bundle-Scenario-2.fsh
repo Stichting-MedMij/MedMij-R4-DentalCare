@@ -9,8 +9,10 @@ Usage: #example
 * status = #final
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 * effectiveDateTime = "2022-02-11T10:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#413496000 "ASA-score 2"
 * note
   * text = "Allergisch voor hooikoorts, rookt 12 sigaretten per dag, gebruikt medicatie Cetirizine"
@@ -24,8 +26,10 @@ Usage: #example
 * status = #final
 * code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 * effectiveDateTime = "2022-02-11T10:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#1250004 "verlaagd"
 
 Instance: DentalCare-DentalFitness-Jansen
@@ -37,8 +41,10 @@ Usage: #example
 * status = #final
 * code = $SCT#440271000146100 "'dental fitness' volgens NAVO-classificatiesysteem"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 * effectiveDateTime = "2024-09-08T11:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept
   * coding = $SCT#440351000146101 "klasse 0"
   * text = "nooit gezien door een defensietandarts"
@@ -52,8 +58,10 @@ Usage: #example
 * status = #final
 * code = $SCT#364126007 "oral hygiene status"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 * effectiveDateTime = "2022-02-11T10:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#1336219002 "zeer slecht"
 
 Instance: DentalCare-ParafunctionalActivity-Jansen
@@ -65,8 +73,10 @@ Usage: #example
 * status = #final
 * code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 * effectiveDateTime = "2022-02-11T10:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+  * type = "PractitionerRole"
 * valueString = "Erosie door het drinken van vruchtensap"
 
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Jansen
@@ -78,8 +88,10 @@ Usage: #example
 * status = #final
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 * effectiveDateTime = "2022-02-11T08:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore2 "Pockets 4-5 millimeter = mogelijk in orde"
 * note
   * text = "Paro-preventietraject"
@@ -95,6 +107,7 @@ Usage: #example
 * description
   * text = "Vullen gaatjes rechterkies"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 
 Instance: DentalCare-TreatmentObjective-2-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective
@@ -107,6 +120,7 @@ Usage: #example
 * description
   * text = "Bekijken of vullingen op kroon nog goed aansluiten"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 
 Instance: DentalCare-Procedure-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
@@ -117,10 +131,13 @@ Usage: #example
 * status = #completed
 * code = $NZaDentalCare#X10 "Maken en beoordelen kleine röntgenfoto"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 * performedDateTime = "2022-02-11"
 * performer
   * actor = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+    * type = "PractitionerRole"
 * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
+  * type = "Location"
 
 Instance: DentalCare-Patient-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
@@ -184,7 +201,9 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Ruiter, de<br/>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * practitioner = Reference(DentalCare-Practitioner-De-Ruiter) "D. de Ruiter"
+  * type = "Practitioner"
 * organization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
+  * type = "Organization"
 * specialty
   * coding = urn:oid:2.16.840.1.113883.2.4.6.7#1200 "Tandartsen, algemeen practicus"
 
@@ -234,10 +253,12 @@ Usage: #example
 * type = $Verzekeringssoort#AT "Aanvullend + tand"
 * subscriberId = "01234567"
 * beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 * period
   * start = "2025-01-01"
   * end = "2026-01-01"
 * payor = Reference(DentalCare-Organization-Menzis) "Menzis Zorgverzekeraar N.V."
+  * type = "Organization"
 
 Instance: DentalCare-Payer-Person-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
@@ -252,7 +273,9 @@ Usage: #example
 * status = #active
 * type = $Verzekeringstype#pay "Pay"
 * beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
-* payor = Reference(DentalCare-Organization-Menzis) "Menzis Zorgverzekeraar N.V."
+  * type = "Patient"  
+* payor = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 
 Instance: DentalCare-Organization-Menzis
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
@@ -283,10 +306,13 @@ Usage: #example
 * type
   * text = "Second opinion"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
 * participant 
   * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+    * type = "PractitionerRole"
 * period
   * start = "2023-07-22T09:00:00+01:00"
   * end = "2023-07-22T09:30:00+01:00"
 * location 
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
+    * type = "Location"

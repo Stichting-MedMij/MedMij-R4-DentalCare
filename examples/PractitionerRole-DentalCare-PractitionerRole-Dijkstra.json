@@ -12,11 +12,13 @@
   },
   "practitioner": {
     "reference": "Practitioner/DentalCare-Practitioner-Dijkstra",
-    "display": "B. Dijkstra"
+    "display": "B. Dijkstra",
+    "type": "Practitioner"
   },
   "organization": {
     "reference": "Organization/DentalCare-Organization-Defensie-Tandheelkundige-Dienst",
-    "display": "Ministerie van Defensie DTD Tandheelkunde"
+    "display": "Ministerie van Defensie DTD Tandheelkunde",
+    "type": "Organization"
   },
   "specialty": [
     {

@@ -22,19 +22,22 @@
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje"
+    "display": "Erik van Oranje",
+    "type": "Patient"
   },
   "performedDateTime": "2024-04-29",
   "performer": [
     {
       "actor": {
         "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
-        "display": "A.B.D.O. de Koning, Tandarts"
+        "display": "A.B.D.O. de Koning, Tandarts",
+        "type": "PractitionerRole"
       }
     }
   ],
   "location": {
     "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-    "display": "Vliegbasis Gilze-Rijen"
+    "display": "Vliegbasis Gilze-Rijen",
+    "type": "Location"
   }
 }

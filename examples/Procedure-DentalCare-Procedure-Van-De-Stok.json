@@ -22,19 +22,22 @@
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
-    "display": "Berend van de Stok"
+    "display": "Berend van de Stok",
+    "type": "Patient"
   },
   "performedDateTime": "2024-01-01",
   "performer": [
     {
       "actor": {
         "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
-        "display": "B. Dijkstra, Tandarts"
+        "display": "B. Dijkstra, Tandarts",
+        "type": "PractitionerRole"
       }
     }
   ],
   "location": {
     "reference": "Location/DentalCare-Location-CWZ-Nijmegen",
-    "display": "CWZ Nijmegen"
+    "display": "CWZ Nijmegen",
+    "type": "Location"
   }
 }

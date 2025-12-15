@@ -23,7 +23,8 @@
   "subscriberId": "01234567",
   "beneficiary": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen"
+    "display": "Anita Jansen",
+    "type": "Patient"
   },
   "period": {
     "start": "2025-01-01",
@@ -32,7 +33,8 @@
   "payor": [
     {
       "reference": "Organization/DentalCare-Organization-Menzis",
-      "display": "Menzis Zorgverzekeraar N.V."
+      "display": "Menzis Zorgverzekeraar N.V.",
+      "type": "Organization"
     }
   ]
 }

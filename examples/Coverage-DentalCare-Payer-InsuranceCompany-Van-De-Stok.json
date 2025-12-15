@@ -23,7 +23,8 @@
   "subscriberId": "12345679",
   "beneficiary": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
-    "display": "Berend van de Stok"
+    "display": "Berend van de Stok",
+    "type": "Patient"
   },
   "period": {
     "start": "2025-01-01",
@@ -32,7 +33,8 @@
   "payor": [
     {
       "reference": "Organization/DentalCare-Organization-ASR",
-      "display": "A.S.R."
+      "display": "A.S.R.",
+      "type": "Organization"
     }
   ]
 }

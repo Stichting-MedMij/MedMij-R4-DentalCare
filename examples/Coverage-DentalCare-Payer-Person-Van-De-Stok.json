@@ -41,12 +41,14 @@
   "status": "active",
   "beneficiary": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
-    "display": "Berend van de Stok"
+    "display": "Berend van de Stok",
+    "type": "Patient"
   },
   "payor": [
     {
-      "reference": "Organization/DentalCare-Organization-ASR",
-      "display": "A.S.R."
+      "reference": "Patient/DentalCare-Patient-Van-De-Stok",
+      "display": "Berend van de Stok",
+      "type": "Patient"
     }
   ]
 }

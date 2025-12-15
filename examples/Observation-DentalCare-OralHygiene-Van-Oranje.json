@@ -22,13 +22,15 @@
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje"
+    "display": "Erik van Oranje",
+    "type": "Patient"
   },
   "effectiveDateTime": "2024-04-29T06:43:00+01:00",
   "performer": [
     {
       "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
-      "display": "A.B.D.O. de Koning, Tandarts"
+      "display": "A.B.D.O. de Koning, Tandarts",
+      "type": "PractitionerRole"
     }
   ],
   "valueCodeableConcept": {

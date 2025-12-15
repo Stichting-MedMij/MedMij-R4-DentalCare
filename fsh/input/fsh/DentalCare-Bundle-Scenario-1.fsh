@@ -9,8 +9,10 @@ Usage: #example
 * status = #final
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#413495001 "ASA-score 1"
 * note
   * text = "Verandering gezondheid: enkel gebroken"
@@ -24,8 +26,10 @@ Usage: #example
 * status = #final
 * code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#62482003 "laag"
 
 Instance: DentalCare-DentalFitness-Van-Oranje
@@ -37,8 +41,10 @@ Usage: #example
 * status = #final
 * code = $SCT#440271000146100 "'dental fitness' volgens NAVO-classificatiesysteem"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 * effectiveDateTime = "2024-02-02T06:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept
   * coding = $SCT#258392002 "klasse 1"
   * text = "vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen"
@@ -52,8 +58,10 @@ Usage: #example
 * status = #final
 * code = $SCT#364126007 "oral hygiene status"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#556001 "slecht"
 
 Instance: DentalCare-ParafunctionalActivity-Van-Oranje
@@ -65,8 +73,10 @@ Usage: #example
 * status = #final
 * code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+  * type = "PractitionerRole"
 * valueString = "Overmatig knarsen bij stress"
 
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Van-Oranje
@@ -78,8 +88,10 @@ Usage: #example
 * status = #final
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+  * type = "PractitionerRole"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
 * note
   * text = "Geen paradontale vervolgbehandeling"
@@ -95,6 +107,7 @@ Usage: #example
 * description
   * text = "Tandvleesontsteking behandelen"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 
 Instance: DentalCare-TreatmentObjective-2-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective
@@ -107,6 +120,7 @@ Usage: #example
 * description
   * text = "Brug monteren bij rechterbovenkies"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 
 Instance: DentalCare-Procedure-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
@@ -117,10 +131,13 @@ Usage: #example
 * status = #completed
 * code = $NZaDentalCare#R67 "Plaatsen opbouw ten behoeve van implantaatkroon"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 * performedDateTime = "2024-04-29"
 * performer
   * actor = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+    * type = "PractitionerRole"
 * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
+  * type = "Location"
 
 Instance: DentalCare-Patient-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
@@ -187,7 +204,9 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Koning, de<br/>Organisatie: Ministerie van Defensie DTD Tandheelkunde<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * practitioner = Reference(DentalCare-Practitioner-De-Koning) "A.B.D.O. de Koning"
+  * type = "Practitioner"
 * organization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
+  * type = "Organization"
 * specialty
   * coding = urn:oid:2.16.840.1.113883.2.4.6.7#1200 "Tandartsen, algemeen practicus"
 
@@ -280,6 +299,7 @@ Usage: #example
   * city = "Rijen"
   * postalCode = "5120 AA"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
+  * type = "Organization"
 
 Instance: DentalCare-Payer-InsuranceCompany-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
@@ -291,10 +311,12 @@ Usage: #example
 * type = $Verzekeringssoort#B "Basis"
 * subscriberId = "12345678"
 * beneficiary = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 * period
   * start = "2025-01-01"
   * end = "2026-01-01"
 * payor = Reference(DentalCare-Organization-Zorgkantoor-Groningen) "Zorgkantoor Groningen"
+  * type = "Organization"
 
 Instance: DentalCare-Payer-Person-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
@@ -309,7 +331,9 @@ Usage: #example
 * status = #active
 * type = $Verzekeringstype#pay "Pay"
 * beneficiary = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
-* payor = Reference(DentalCare-Organization-Zorgkantoor-Groningen) "Zorgkantoor Groningen"
+  * type = "Patient"
+* payor = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
 
 Instance: DentalCare-Organization-Zorgkantoor-Groningen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
@@ -339,9 +363,11 @@ Usage: #example
 * class = $NullFlavor#OTH "Anders"
 * type
   * text = "Tandarts Periodiek Preventief Onderzoek"
-* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"  
+* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"  
 * participant
   * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+    * type = "PractitionerRole"
 * period
   * start = "2026-07-22T10:00:00+01:00"
   * end = "2026-07-22T11:00:00+01:00"
@@ -349,6 +375,7 @@ Usage: #example
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Laatste orthopantomogram (röntgenfoto) was in 2025"
 * location 
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
+    * type = "Location"
 
 Instance: DentalCare-Encounter-2-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
@@ -361,8 +388,10 @@ Usage: #example
 * type
   * text = "Tandarts Periodiek Preventief Onderzoek"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"  
+  * type = "Patient"
 * participant
   * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+    * type = "PractitionerRole"
 * period
   * start = "2025-05-20T10:00:00+01:00"
   * end = "2025-05-20T11:00:00+01:00"
@@ -370,3 +399,4 @@ Usage: #example
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Extra controle vanwege bloedend tandvlees"
 * location
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
+    * type = "Location"

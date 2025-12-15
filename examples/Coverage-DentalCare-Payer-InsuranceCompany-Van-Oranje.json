@@ -23,7 +23,8 @@
   "subscriberId": "12345678",
   "beneficiary": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje"
+    "display": "Erik van Oranje",
+    "type": "Patient"
   },
   "period": {
     "start": "2025-01-01",
@@ -32,7 +33,8 @@
   "payor": [
     {
       "reference": "Organization/DentalCare-Organization-Zorgkantoor-Groningen",
-      "display": "Zorgkantoor Groningen"
+      "display": "Zorgkantoor Groningen",
+      "type": "Organization"
     }
   ]
 }
