@@ -21,6 +21,7 @@
   ],
   "name": [
     {
+      "use": "official",
       "given": [
         "Berend"
       ],
@@ -34,7 +35,6 @@
           ]
         }
       ],
-      "use": "official",
       "text": "Berend van de Stok",
       "family": "van de Stok",
       "_family": {

@@ -1,4 +1,4 @@
-// Bundle with FHIR test instances in FSH format for Dental Care test scenario 2
+// FHIR test instances in FSH format for Dental Care test scenario 2
 
 Instance: DentalCare-ASAScore-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ASAScore
@@ -148,14 +148,14 @@ Usage: #example
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
   * value.extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason].valueCode = #masked // gemaskeerd BSN
-* name[0]
+* name[nameInformation]
   * use = #official
   * text = "Anita Jansen"
   * family = "Jansen"
     * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Jansen"
   * given = "Anita"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
-* name[1]
+* name[nameInformation-GivenName]
   * use = #usual
   * given = "Anita"
 * telecom[0]
@@ -204,8 +204,7 @@ Usage: #example
   * type = "Practitioner"
 * organization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Ministerie van Defensie DTD Tandheelkunde"
   * type = "Organization"
-* specialty
-  * coding = urn:oid:2.16.840.1.113883.2.4.6.7#1200 "Tandartsen, algemeen practicus"
+* specialty[specialty] = $VektisAGB#1200 "Tandartsen, algemeen practicus"
 
 Instance: DentalCare-Practitioner-De-Ruiter
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner
@@ -216,7 +215,7 @@ Usage: #example
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/big"
   * value = "12101002"
-* name
+* name[nameInformation]
   * use = #official
   * text = "D. de Ruiter"
   * family = "de Ruiter"
