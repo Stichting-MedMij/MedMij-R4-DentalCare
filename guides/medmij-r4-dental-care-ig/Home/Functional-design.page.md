@@ -4,7 +4,7 @@ topic: FO
 
 # Functioneel ontwerp
 
-## Algemeen
+## Algemeen test
 
 ### Doelgroep
 De doelgroep voor deze pagina wijkt niet af van de [algemene doelgroep](https://informatiestandaarden.nictiz.nl/wiki/MedMij:FO:V1/FunctioneelOntwerp#Doelgroep) van de functionele ontwerpen binnen MedMij.
