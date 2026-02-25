@@ -86,34 +86,6 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 |---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
 | Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…   | Tendens         |
 
-## Verrichting
-
-<u>Overzichtsscherm</u>
-
-| Naam behandeling                                             | Startdatum behandeling | Zorgverlener                  | Zorgorganisatie |
-|--------------------------------------------------------------|-------------------------|-------------------------------|-----------------|
-| H42 wortelpuntoperatie, per tandwortel, zonder afsluiting    | 01-01-2024              | A.B. Janssen<br>Tandarts      | Tendens         |
-| R67 Plaatsen opbouw ten behoeve van implantaatkroon          | 01-12-2023              | A.B. Janssen<br>Tandarts      | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |  |
-|-------------------------------------------------------------------------------|--------------------------------------------------|
-| Naam behandeling                                                              | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
-| Startdatum behandeling                                                        | 01-01-2024                                      |
-| Einddatum behandeling                                                         | 01-01-2024                                      |
-| Zorgorganisatie                                                               | Tendens                                         |
-| Zorgverlener                                                                  | A.B. Janssen<br>Tandarts                        |
-| Manier behandeling                                                            | Vrijmaken                                       |
-
-## Dental Fitness
-
-<u>Overzichtsscherm</u>
-
-| DentalFitnessScore                                      | Datum       | Zorgverlener               | Uitleg             | Zorgorganisatie |
-|---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
-| Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…   | Tendens         |
-
 ---
 
 ## Verrichting
@@ -264,12 +236,29 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 
 <u>Detailscherm</u>
 
+| Geselecteerde regel: J.L. Teunissen |  |
+|-------------------------------------------|---------------------|
+| Zorgorganisatie                            |                     |
+| Naam betaler                               | J.L. Teunissen      |
+| Naam Bank                                  | ING Bank            |
+| Code Bank                                  | INGBNL2A            |
+| Rekeningnummer Bank                        | NL91INGB0417164300  |
+| Naam verzekeraar                           |                     |
+| Soort verzekering                          |                     |
+| Aanvullend tand                            |                     |
+| Nummer verzekerde                          |                     |
+
+<u>Detailscherm</u>
+
 | Geselecteerde regel: Zorgkantoor Groningen |  |
 |-------------------------------------------|---------------------|
 | Zorgorganisatie                            | Tendens             |
 | Naam betaler                               | Zorgkantoor Groningen |
-| Naam verzekeraar                           | De Groningse         |
-| Soort verzekering                          | Basis verzekering     |
-| Aanvullend tand                            | Ja                    |
-| Nummer verzekerde                          | 2312312312           |
+| Naam Bank                                  |                     |
+| Code Bank                                  |                     |
+| Rekeningnummer Bank                        |                     |
+| Naam verzekeraar                           | De Groningse        |
+| Soort verzekering                          | Basis verzekering   |
+| Aanvullend tand                            | Ja                  |
+| Nummer verzekerde                          | 2312312312          |
 
