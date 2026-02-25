@@ -86,14 +86,22 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 |---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
 | Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…   | Tendens         |
 
+## Verrichting
+
+<u>Overzichtsscherm</u>
+
+| Naam behandeling                                             | Startdatum behandeling | Zorgverlener                  | Zorgorganisatie |
+|--------------------------------------------------------------|-------------------------|-------------------------------|-----------------|
+| H42 wortelpuntoperatie, per tandwortel, zonder afsluiting    | 01-01-2024              | A.B. Janssen<br>Tandarts      | Tendens         |
+| R67 Plaatsen opbouw ten behoeve van implantaatkroon          | 01-12-2023              | A.B. Janssen<br>Tandarts      | Tendens         |
+
 <u>Detailscherm</u>
 
-| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting | |
-|------------------------------------------------------|--------------------------------------------------|
-| Naam behandeling                                     | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
-| Startdatum behandeling                               | 01-01-2024                                      |
-| Einddatum behandeling                                | 01-01-2024                                      |
-| Zorgorganisatie                                      | Tendens                                         |
-| Zorgverlener                                         | A.B. Janssen<br>Tandarts                        |
-| Manier behandeling                                   | Vrijmaken                                       |
-``
+| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |  |
+|-------------------------------------------------------------------------------|--------------------------------------------------|
+| Naam behandeling                                                              | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
+| Startdatum behandeling                                                        | 01-01-2024                                      |
+| Einddatum behandeling                                                         | 01-01-2024                                      |
+| Zorgorganisatie                                                               | Tendens                                         |
+| Zorgverlener                                                                  | A.B. Janssen<br>Tandarts                        |
+| Manier behandeling                                                            | Vrijmaken                                       |
