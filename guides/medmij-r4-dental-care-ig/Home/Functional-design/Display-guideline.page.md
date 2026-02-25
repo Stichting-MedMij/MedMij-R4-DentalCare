@@ -105,3 +105,171 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 | Zorgorganisatie                                                               | Tendens                                         |
 | Zorgverlener                                                                  | A.B. Janssen<br>Tandarts                        |
 | Manier behandeling                                                            | Vrijmaken                                       |
+
+## Dental Fitness
+
+<u>Overzichtsscherm</u>
+
+| DentalFitnessScore                                      | Datum       | Zorgverlener               | Uitleg             | Zorgorganisatie |
+|---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
+| Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…   | Tendens         |
+
+---
+
+## Verrichting
+
+<u>Overzichtsscherm</u>
+
+| Naam behandeling                                             | Startdatum behandeling | Zorgverlener                  | Zorgorganisatie |
+|--------------------------------------------------------------|-------------------------|-------------------------------|-----------------|
+| H42 wortelpuntoperatie, per tandwortel, zonder afsluiting    | 01-01-2024              | A.B. Janssen<br>Tandarts      | Tendens         |
+| R67 Plaatsen opbouw ten behoeve van implantaatkroon          | 01-12-2023              | A.B. Janssen<br>Tandarts      | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |  |
+|-------------------------------------------------------------------------------|--------------------------------------------------|
+| Naam behandeling                                                              | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
+| Startdatum behandeling                                                        | 01-01-2024                                      |
+| Einddatum behandeling                                                         | 01-01-2024                                      |
+| Zorgorganisatie                                                               | Tendens                                         |
+| Zorgverlener                                                                  | A.B. Janssen<br>Tandarts                        |
+| Manier behandeling                                                            | Vrijmaken                                       |
+
+---
+
+## Behandeldoel
+
+<u>Overzichtsscherm</u>
+
+| Doel behandeling                | Prioriteit      | Zorgorganisatie |
+|---------------------------------|------------------|-----------------|
+| tandvleesontsteking behandelen  | Hoge prioriteit  | Tendens         |
+| Vullen gaatje rechter kies      | Lage prioriteit  | Tendens         |
+
+---
+
+## Mondhygiëne
+
+<u>Overzichtsscherm</u>
+
+| Mondhygiëne           | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Slechte mondhygiëne    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+| Zeer slecht            | 01-12-2023  | A.B. Janssen               | Dit betekent dat…     | Tendens         |
+
+---
+
+## CariësRisico
+
+<u>Overzichtsscherm</u>
+
+| Risico op gaatjes | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|--------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Laag               | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+| Verlaagd           | 01-12-2023  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+
+---
+
+## ASA-score
+
+<u>Overzichtsscherm</u>
+
+| Score gezondheid (ASA)                                  | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|----------------------------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| ASA-score 1 Gezonde patiënt                              | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+| ASA-score 2 Milde systemische aandoening zonder belemmering | 01-12-2023 | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+
+---
+
+## Periodieke Parodontale Screening (PPS)
+
+<u>Overzichtsscherm</u>
+
+| Controle tandvlees                    | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Pockets 0–3 millimeter = in orde       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+| Pockets 4–5 millimeter = mogelijk in orde | 01-12-2023 | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+
+---
+
+## Parafunctionele activiteit
+
+<u>Overzichtsscherm</u>
+
+| Schadelijke gewoonte met tanden       | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Overmatig knarsen bij stress           | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+| Erosie door het drinken van vruchtensap| 01-12-2023  | A.B. Janssen               | Dit betekent dat…     | Tendens         |
+
+---
+
+## Contactpersoon
+
+<u>Overzichtsscherm</u>
+
+| Naam           | Rol                         | Zorgorganisatie |
+|----------------|------------------------------|-----------------|
+| T.S. Pietersen | Wettelijke vertegenwoordiger | Tendens         |
+| C.W. Willemsen | Mantelzorger                 | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Wettelijke vertegenwoordiger |  |
+|--------------------------------------------------|---------------|
+| Zorgorganisatie                                   | Tendens       |
+| Naam                                             | T.S. Pietersen|
+| Roepnaam                                         | Teun          |
+| Rol                                              | Wettelijke vertegenwoordiger |
+| Functie                                          | Onbekend      |
+| Straat                                           | Slaapstraat   |
+| Huisnummer                                       | 2             |
+| Woonplaats                                       | Droomverder   |
+| Land                                             | Dromenland    |
+
+---
+
+## Contact
+
+<u>Overzichtsscherm</u>
+
+| Type contact                          | Begindatum  | Begintijd | Zorgverlener               | Zorgorganisatie |
+|----------------------------------------|-------------|-----------|-----------------------------|-----------------|
+| Second opinion                         | 01-01-2024  | 09:00     | A.B. Janssen<br>Tandarts    | Tendens         |
+| Tandarts Periodiek Preventief Onderzoek| 01-12-2023  | 11:00     |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Second opinion |  |
+|------------------------------------|----------------------------|
+| Type contact                       | Second opinion            |
+| Begindatum                         | 01-01-2024                |
+| Begintijd                          | 09:00                     |
+| Einddatum                          | 01-01-2024                |
+| Eindtijd                           | 10:00                     |
+| Zorgverlener                       | A.B. Janssen<br>Tandarts  |
+| Zorgorganisatie                    | Tendens                   |
+| Type contact uitleg                | Extra Controle vanwege bloedend tandvlees |
+
+---
+
+## Betaler
+
+<u>Overzichtsscherm</u>
+
+| Naam betaler          | Zorgorganisatie |
+|------------------------|-----------------|
+| Zorgkantoor Groningen  | Tendens         |
+| J.L. Teunissen         | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Zorgkantoor Groningen |  |
+|-------------------------------------------|---------------------|
+| Zorgorganisatie                            | Tendens             |
+| Naam betaler                               | Zorgkantoor Groningen |
+| Naam verzekeraar                           | De Groningse         |
+| Soort verzekering                          | Basis verzekering     |
+| Aanvullend tand                            | Ja                    |
+| Nummer verzekerde                          | 2312312312           |
+
