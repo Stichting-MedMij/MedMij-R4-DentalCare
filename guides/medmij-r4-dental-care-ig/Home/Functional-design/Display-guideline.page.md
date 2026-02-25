@@ -53,7 +53,7 @@ Mondzorgoverzicht:
 
 Het overzichtsscherm van elke zib heeft dus een aparte pagina waar de datavelden getoond worden, voor alle (mondzorg) zorgaanbieders.
 
-<!-- {{render: guides/medmij-stu3-long-term-healthcare-ig/images/Langdurige zorg overzicht.png}} -->
+{{render: guides/medmij-stu3-long-term-healthcare-ig/images/Mondzorgoverzicht.png}}
 
 **Figuur 1: Voorbeeld mondzorgoverzicht**
 
@@ -61,7 +61,7 @@ Zorgorganisatie-mondzorgoverzicht
 
 Het overzichtsscherm van elke zib heeft dus een aparte tab waar de datavelden getoond worden, per zorgaanbieder. 
 
-<!-- {{render: guides/medmij-stu3-long-term-healthcare-ig/images/Zorgorganisatie overzicht.png}} --> 
+{{render: guides/medmij-stu3-long-term-healthcare-ig/images/Zorgorganisatie mondzorgoverzicht.png}} 
 
 **Figuur 2: Voorbeeld Zorgorganisatie - mondzorgoverzicht**
 
