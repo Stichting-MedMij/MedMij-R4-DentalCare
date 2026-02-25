@@ -53,7 +53,7 @@ Mondzorgoverzicht:
 
 Het overzichtsscherm van elke zib heeft dus een aparte pagina waar de datavelden getoond worden, voor alle (mondzorg) zorgaanbieders.
 
-{{render: guides/medmij-stu3-long-term-healthcare-ig/images/Mondzorgoverzicht.png}}
+{{render: guides/medmij-r4-dental-care-ig/images/Mondzorgoverzicht.png}}
 
 **Figuur 1: Voorbeeld mondzorgoverzicht**
 
@@ -61,7 +61,7 @@ Zorgorganisatie-mondzorgoverzicht
 
 Het overzichtsscherm van elke zib heeft dus een aparte tab waar de datavelden getoond worden, per zorgaanbieder. 
 
-{{render: guides/medmij-stu3-long-term-healthcare-ig/images/Zorgorganisatie mondzorgoverzicht.png}} 
+{{render: guides/medmij-r4-dental-care-ig/images/Zorgorganisatie mondzorgoverzicht.png}} 
 
 **Figuur 2: Voorbeeld Zorgorganisatie - mondzorgoverzicht**
 
@@ -77,4 +77,22 @@ De acceptatiecriteria voor de overzichtsschermen van elke zib is als volgt.
 | 4 | Voor het dataveld *Datum op* kun je een specifieke periode selecteren. |
 | 5 | Alle datavelden in het overzichtsscherm zijn sorteerbaar. |
 | 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de paragraaf *Tabel met specificaties* voor de aanbevolen termen per opgehaald dataveld. |
+
+### Detailoverzicht mondzorg
+
+Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtsscherm selecteert.
+
+### Voorbeeld mockup detailoverzicht mondzorg
+
+{{render: guides/medmij-r4-dental-care-ig/images/Detailscherm mondzorg.png}}
+
+### Mondzorg gegevens per zib
+
+Hieronder worden alle mondzorg zibs in tabelvorm weergegeven.  
+De zorgorganisatie in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1.  
+Deze is niet nodig voor scenario 2.
+
+
+
+
 
