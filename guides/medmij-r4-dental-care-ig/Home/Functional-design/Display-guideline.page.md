@@ -9,7 +9,7 @@ Dit is de weergaverichtlijn voor gegevensdienst Mondzorg.
 
 Het document bevat mock-ups die bedoeld zijn ter inspiratie. Persoonlijke gezondheidsomgevingen (PGO’s) kunnen deze voorbeelden naar eigen inzicht visueel vormgeven, zolang de gebruiksvriendelijkheid behouden blijft.
 
-## Doelen
+## Doel
 Deze richtlijn heeft als doel om duidelijke handvatten te bieden voor een patiëntvriendelijke en begrijpelijke weergave van langdurige zorg gegevens in PGO's. De richtlijn ondersteunt ontwikkelaars en zorgverleners bij het:
 - gebruiken van begrijpelijke en patiëntvriendelijke termen en toelichtingen;
 - structureren en presenteren van een overzicht van gegevens op een manier die aansluit bij de informatiebehoefte van PGO gebruikers.
@@ -38,7 +38,7 @@ De twee scenario’s, hieronder uitgewerkt, geven weer hoe een UX design getoond
 In deze richtlijn hebben we twee voorbeeld mockups opgenomen ter inspiratie. Daaronder hebben we elke zib apart opgenomen, niet in mockup vorm maar in tabel vorm. De twee voorbeeld mockups gaan over afspraken, maar let op, de zib “contact” is apart opgenomen in tabelvorm.
 
 ### Voorbeeld mockup overzichtsschermen mondzorg
-Mondzorgoverzicht:
+<u>Mondzorgoverzicht:</u>
 
 Het overzichtsscherm van elke zib heeft dus een aparte pagina waar de datavelden getoond worden, voor alle (mondzorg) zorgaanbieders.
 
@@ -46,7 +46,7 @@ Het overzichtsscherm van elke zib heeft dus een aparte pagina waar de datavelden
 
 **Figuur 1: Voorbeeld mondzorgoverzicht**
 
-Zorgorganisatie-mondzorgoverzicht
+<u>Zorgorganisatie-mondzorgoverzicht:</u>
 
 Het overzichtsscherm van elke zib heeft dus een aparte tab waar de datavelden getoond worden, per zorgaanbieder. 
 
@@ -78,9 +78,22 @@ Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtss
 ### Mondzorg gegevens per zib
 Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
 
+## Dental Fitness
 
+<u>Overzichtsscherm</u>
 
+| DentalFitnessScore                                      | Datum       | Zorgverlener               | Uitleg             | Zorgorganisatie |
+|---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
+| Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…   | Tendens         |
 
+<u>Detailscherm</u>
 
-
-
+| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting | |
+|------------------------------------------------------|--------------------------------------------------|
+| Naam behandeling                                     | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
+| Startdatum behandeling                               | 01-01-2024                                      |
+| Einddatum behandeling                                | 01-01-2024                                      |
+| Zorgorganisatie                                      | Tendens                                         |
+| Zorgverlener                                         | A.B. Janssen<br>Tandarts                        |
+| Manier behandeling                                   | Vrijmaken                                       |
+``
