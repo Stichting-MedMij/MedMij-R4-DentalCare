@@ -46,3 +46,35 @@ Er zijn twee weergaven gedefinieerd voor het overzicht van de mondzorg gegevens:
 De twee scenario’s, hieronder uitgewerkt, geven weer hoe een UX design getoond kan worden. Een PGO is vrij om één of beide van deze scenario’s te ondersteunen.De richtlijn gaat ervan uit dat PGO’s een responsief ontwerp ondersteunen. 
 
 In deze richtlijn hebben we twee voorbeeld mockups opgenomen ter inspiratie. Daaronder hebben we elke zib apart opgenomen, niet in mockup vorm maar in tabel vorm. De twee voorbeeld mockups gaan over afspraken, maar let op, de zib “contact” is apart opgenomen in tabelvorm.
+
+### Voorbeeld mockup overzichtsschermen mondzorg
+
+Mondzorgoverzicht:
+
+Het overzichtsscherm van elke zib heeft dus een aparte pagina waar de datavelden getoond worden, voor alle (mondzorg) zorgaanbieders.
+
+<!-- {{render: guides/medmij-stu3-long-term-healthcare-ig/images/Langdurige zorg overzicht.png}} -->
+
+**Figuur 1: Voorbeeld mondzorgoverzicht**
+
+Zorgorganisatie-mondzorgoverzicht
+
+Het overzichtsscherm van elke zib heeft dus een aparte tab waar de datavelden getoond worden, per zorgaanbieder. 
+
+<!-- {{render: guides/medmij-stu3-long-term-healthcare-ig/images/Zorgorganisatie overzicht.png}} --> 
+
+**Figuur 2: Voorbeeld Zorgorganisatie - mondzorgoverzicht**
+
+De acceptatiecriteria voor de overzichtsschermen van elke zib is als volgt.
+
+### Acceptatiecriteria overzichtsschermen
+
+| Nr | Acceptatiecriteria |
+|----|--------------------|
+| 1 | Standaard worden alle gegevens van de geraadpleegde zorgaanbieder(s) weergegeven, gesorteerd op datum van jong naar oud. |
+| 2 | Je kunt zoeken op (delen van) de gegevens of op informatie uit de andere datavelden in het overzichtsscherm. De gebruiker moet minimaal 3 karakters invoeren. |
+| 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. |
+| 4 | Voor het dataveld *Datum op* kun je een specifieke periode selecteren. |
+| 5 | Alle datavelden in het overzichtsscherm zijn sorteerbaar. |
+| 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de paragraaf *Tabel met specificaties* voor de aanbevolen termen per opgehaald dataveld. |
+
