@@ -341,11 +341,13 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 | C(ould have) | Gewenste functionaliteit die waarde toevoegt, maar minder kritisch is en indien nodig kan worden uitgesteld. |
 | W(on't have) | Functionaliteiten die nu buiten scope zijn maar mogelijk in de toekomst worden overwogen. |
 
+<br/> 
+
 <!-- VASTE KOLOMBREEDTES + PRESERVE WHITESPACE -->
 <style>
   .pgo-table {
     width: 100%;
-    table-layout: fixed;
+    table-layout: fixed;  /* respecteert <colgroup> widths */
     border-collapse: collapse;
     margin: 0 0 24px 0;
   }
@@ -357,18 +359,24 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
     word-break: break-word;
     white-space: pre-wrap; /* behoudt regeleinden en meerdere spaties */
   }
-  .pgo-table th { background: #f7f7f7; text-align: left; }
+  .pgo-table th {
+    background: #f7f7f7;
+    text-align: left;
+  }
 </style>
 
-<!-- Opzet in 11 kolommen, zoals in de Confluence-tabel -->
-<!-- Verdeling: 13% | 9% | 10% | 12% | 10% | 8% | 8% | 9% | 10% | 8% | 3% -->
+<!-- 9 KOLOMMEN: 
+1 Naam data-item | 2 Type item | 3 Id | 4 Voorbeeld | 
+5 Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven | 6 Opmerkingen | 
+7 Advies tekst weergave in PGO | 8 Advies: Gebruikersvriendelijke toelichting | 9 Prioriteit (MoSCoW)
+Breedteverdeling (op basis van eerdere mapping): 
+13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3%  (totaal 100%) -->
 
 <!-- DENTAL FITNESS -->
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:9%">
-    <col style="width:10%"><col style="width:20%"><col style="width:7%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
@@ -376,7 +384,7 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
       <th>Type item</th>
       <th>Id</th>
       <th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th>
       <th>Advies tekst weergave in PGO</th>
       <th>Advies: Gebruikersvriendelijke toelichting</th>
@@ -385,33 +393,33 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
   </thead>
   <tbody>
     <tr>
-      <td>Dental Fitness</td><td>Rootconcept</td><td></td><td></td><td></td><td></td><td></td>
+      <td>Dental Fitness</td><td>Rootconcept</td><td></td><td></td><td></td>
       <td>Het PGO ontvangt maar 1 Dental Fitness Score (geen historie)</td>
       <td>Dental Fitness</td>
       <td>De Dental Fitness Classificatie (DFC) is een tandheelkundige risico-inventarisatie en geeft aan in welke mate een militair kans loopt op tandheelkundige problemen welke (directe) behandeling behoeven binnen de 12 maanden vanaf het moment van vaststellen. </td>
       <td></td>
     </tr>
     <tr>
-      <td>DatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td></td><td>a</td><td></td>
+      <td>DatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
       <td>Alleen datum, geen tijd</td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>DentalFitnessScore</td><td>Item</td><td></td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td></td><td>a</td><td></td>
+      <td>DentalFitnessScore</td><td>Item</td><td></td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
       <td>De term DentalFitnessScore is heel bekend bij het personeel van defensie. Daarom hebben we de advies tekst weergave in PGO gelijk gehouden.</td>
       <td>DentalFitnessScore</td>
       <td>Klasse 0  “nooit gezien door een defensietandarts”<br/>Klasse 1 “vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen”<br/>Klasse 2 “kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden”<br/>Klasse 3 “huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken” <br/>Klasse 4 “vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig”</td>
       <td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td></td><td>a of b</td><td></td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td></td><td>a of b</td><td></td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
     </tr>
   </tbody>
@@ -421,59 +429,58 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th><th>(a) als overzicht en detailgegeven</th><th>(b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Verrichting</td><td>Rootconcept</td><td>NL-CM:14.1.1</td><td></td><td></td><td></td><td></td>
+      <td>Verrichting</td><td>Rootconcept</td><td>NL-CM:14.1.1</td><td></td><td></td>
       <td></td><td> Behandeling</td><td></td><td></td>
     </tr>
     <tr>
-      <td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td> 01-01-2024</td><td></td><td>a</td><td></td>
+      <td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td> 01-01-2024</td><td>a</td>
       <td></td><td>Startdatum behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingEindDatum</td><td>Item</td><td>NL-CM:14.1.3</td><td> 01-01-2024</td><td></td><td></td><td>b</td>
+      <td>VerrichtingEindDatum</td><td>Item</td><td>NL-CM:14.1.3</td><td> 01-01-2024</td><td>b</td>
       <td></td><td>Einddatum behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie, per tandwortel, zonder afsluiting</td><td></td><td>a</td><td></td>
+      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie, per tandwortel, zonder afsluiting</td><td>a</td>
       <td></td><td>Naam behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken</td><td></td><td></td><td>b</td>
+      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken</td><td>b</td>
       <td></td><td>Manier  behandeling</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>VerrichtingAnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td></td><td></td><td></td>
+      <td>VerrichtingAnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Indicatie::Probleem</td><td>Reference</td><td>NL-CM:14.1.9</td><td></td><td></td><td></td><td></td>
+      <td>Indicatie::Probleem</td><td>Reference</td><td>NL-CM:14.1.9</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Verrichting::MedischHulpmiddel</td><td>Reference</td><td>NL-CM:14.1.7</td><td></td><td></td><td></td><td></td>
+      <td>Verrichting::MedischHulpmiddel</td><td>Reference</td><td>NL-CM:14.1.7</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:14.1.5</td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:14.1.5</td><td>Tendens</td><td>a</td>
       <td></td><td>Zorgorganisatie</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td></td><td>a of b</td><td></td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener </td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
     </tr>
     <tr>
-      <td>Aanvrager::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.10</td><td></td><td></td><td></td><td></td>
+      <td>Aanvrager::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.10</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
   </tbody>
@@ -483,42 +490,41 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th><th>(a) als overzicht en detailgegeven</th><th>(b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Behandeldoel </td><td>Rootconcept</td><td></td><td></td><td></td><td></td><td></td>
+      <td>Behandeldoel </td><td>Rootconcept</td><td></td><td></td><td></td>
       <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td>Doel behandeling </td><td></td><td></td>
     </tr>
     <tr>
-      <td>GewenstZorgresultaat</td><td>Item</td><td></td><td>tandvleesontsteking behandelen</td><td></td><td>a </td><td></td>
+      <td>GewenstZorgresultaat</td><td>Item</td><td></td><td>tandvleesontsteking behandelen</td><td>a </td>
       <td></td><td>Doel behandeling  </td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td></td><td>a </td><td></td>
+      <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a </td>
       <td>High-priority weergeven als Hoge prioriteit en Low-priority weergeven als Lage prioriteit</td>
       <td>Prioriteit</td>
       <td>Aangeven of het GewenstZorgresultaat high-priority = (korte termijn) of low-priority (lange termijn) heeft.</td>
       <td>M</td>
     </tr>
     <tr>
-      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td></td><td></td><td></td><td></td><td></td>
+      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td></td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Probleem</td><td>Reference</td><td></td><td></td><td></td><td></td><td></td>
+      <td>Probleem</td><td>Reference</td><td></td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
     </tr>
   </tbody>
@@ -528,39 +534,38 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th><th>(a) als overzicht en detailgegeven</th><th>(b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Mondhygiëne</td><td>Rootconcept</td><td></td><td></td><td></td><td></td><td></td>
+      <td>Mondhygiëne</td><td>Rootconcept</td><td></td><td></td><td></td>
       <td></td><td>Mondhygiëne</td><td>Mondhygiëne is de (dagelijkse) verzorging van de mond en het gebit om deze gezond te houden en daardoor gaatjes (cariës) en tandvleesontstekingen te voorkomen.</td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td></td><td>a</td><td></td>
+      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
       <td></td><td> Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Mondhygiëne (ObservatieNaam)</td><td>Item</td><td></td><td> Slechte mondhygiëne</td><td></td><td>a </td><td></td>
+      <td>Mondhygiëne (ObservatieNaam)</td><td>Item</td><td></td><td> Slechte mondhygiëne</td><td>a </td>
       <td></td><td>Mondhygiëne </td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td></td><td>a of b</td><td></td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen. </td><td> Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td></td><td>a of b</td><td></td>
+      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td>a of b</td>
       <td></td><td> Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
     </tr>
   </tbody>
@@ -570,39 +575,38 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th><th>(a) als overzicht en detailgegeven</th><th>(b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>CariësRisico</td><td>Rootconcept </td><td></td><td></td><td></td><td></td><td></td>
+      <td>CariësRisico</td><td>Rootconcept </td><td></td><td></td><td></td>
       <td></td><td>Risico op gaatjes </td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes. </td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td></td><td>a </td><td></td>
+      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
       <td></td><td> Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>CariësRisico<br/>(ObservatieNaam)</td><td>Item</td><td></td><td> Laag</td><td></td><td>a</td><td></td>
-      <td></td><td>Risico op gaatjes</td><td>Toelichting gewenst</td><td>M</td>
+      <td>CariësRisico<br/>(ObservatieNaam)</td><td>Item</td><td></td><td> Laag</td><td>a</td>
+      <td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td></td><td>a of b</td><td></td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td></td><td>a of b</td><td></td>
+      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td>a of b</td>
       <td></td><td> Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
     </tr>
   </tbody>
@@ -612,41 +616,40 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th><th>(a) als overzicht en detailgegeven</th><th>(b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>ASA-score</td><td>Rootconcept</td><td></td><td></td><td></td><td></td><td></td>
+      <td>ASA-score</td><td>Rootconcept</td><td></td><td></td><td></td>
       <td>Score gezondheid (ASA)</td><td>De ASA-classificatie is het American Society of Anesthesiologists classificatiesysteem voor fysieke status (algehele medische toestand) </td><td></td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td></td><td>a </td><td></td>
+      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
       <td></td><td> Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>ASA score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>ASA-score 1 Gezonde patiënt</td><td></td><td>a </td><td></td>
+      <td>ASA score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>ASA-score 1 Gezonde patiënt</td><td>a </td>
       <td></td><td>Score gezondheid (ASA)</td>
       <td> ASA-score 1 (bevinding) = Gezonde patiënt <br/>ASA-score 2 (bevinding) = Milde systemische aandoening zonder belemmering<br/>ASA-score 3 (bevinding)  = Ernstige systemische aandoening, beperking dagelijkse activiteit<br/>ASA-score 4 (bevinding) = Ernstige invaliderende systeemaandoening, constante levensbedreiging<br/>ASA-score 5 (bevinding) = Stervende, overlijden &lt; 24 uur zonder ingreep<br/>ASA-score 6 (bevinding)  = Hersendood, Multi Orgaan Donatie</td>
       <td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td></td><td>a of b</td><td></td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td></td><td>a of b</td><td></td>
+      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td>a of b</td>
       <td></td><td> Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
     </tr>
   </tbody>
@@ -656,41 +659,40 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th><th>(a) als overzicht en detailgegeven</th><th>(b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Periodieke Parodontale Screenen (PPS)</td><td>Rootconcept </td><td></td><td></td><td></td><td></td><td></td>
+      <td>Periodieke Parodontale Screenen (PPS)</td><td>Rootconcept </td><td></td><td></td><td></td>
       <td>Controle  tandvlees</td>
       <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen. </td>
       <td></td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td></td><td>a</td><td></td>
+      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
       <td></td><td> Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>PPS score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>Pockets 0-3 millimeter = in orde</td><td></td><td>a </td><td></td>
+      <td>PPS score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>Pockets 0-3 millimeter = in orde</td><td>a </td>
       <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td></td><td>a of b</td><td></td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td></td><td></td><td>a of b</td><td></td>
+      <td>Toelichting</td><td>Item</td><td></td><td></td><td>a of b</td>
       <td></td><td> Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
     </tr>
   </tbody>
@@ -700,41 +702,40 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th><th>(a) als overzicht en detailgegeven</th><th>(b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Parafunctionele activiteit</td><td>Rootconcept </td><td></td><td></td><td></td><td></td><td></td>
+      <td>Parafunctionele activiteit</td><td>Rootconcept </td><td></td><td></td><td></td>
       <td>Schadelijke gewoonte met tanden</td>
       <td>Parafuncties zijn mondbewegingen die niets met kauwen, slikken of spreken te maken hebben (zoals tandenknarsen).  </td>
       <td></td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td></td><td>a </td><td></td>
+      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
       <td></td><td> Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Parafunctionele activiteit<br/>(ObservatieWaarde)</td><td>Item</td><td></td><td>Overmatig knarsen bij stress</td><td></td><td>a </td><td></td>
+      <td>Parafunctionele activiteit<br/>(ObservatieWaarde)</td><td>Item</td><td></td><td>Overmatig knarsen bij stress</td><td>a </td>
       <td></td><td>Schadelijke gewoonte met tanden</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td></td><td>a of b</td><td></td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td></td><td>a of b</td><td></td>
+      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td>a of b</td>
       <td></td><td> Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
     </tr>
   </tbody>
@@ -744,67 +745,66 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th><th>(a) als overzicht en detailgegeven</th><th>(b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Contact</td><td>Rootconcept</td><td>NL-CM:15.1.1</td><td></td><td></td><td></td><td></td>
+      <td>Contact</td><td>Rootconcept</td><td>NL-CM:15.1.1</td><td></td><td></td>
       <td></td><td>Afspraak</td><td></td><td></td>
     </tr>
     <tr>
-      <td>ContactType</td><td>Item</td><td>NL-CM:15.1.2</td><td>Second opinion</td><td></td><td>a</td><td></td>
+      <td>ContactType</td><td>Item</td><td>NL-CM:15.1.2</td><td>Second opinion</td><td>a</td>
       <td></td><td>Type contact of afspraak</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>9:00</td><td></td><td>a</td><td></td>
+      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>9:00</td><td>a</td>
       <td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd </td><td></td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td></td><td></td><td>b</td>
+      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
       <td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd </td><td></td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td></td><td>a of b</td><td></td>
+      <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
     </tr>
     <tr>
-      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
       <td></td><td>Zorgorganisatie</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>RedenContact</td><td>Container</td><td>NL-CM:15.1.13</td><td></td><td></td><td></td><td></td>
+      <td>RedenContact</td><td>Container</td><td>NL-CM:15.1.13</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra Controle vanwege bloedend tandvlees</td><td></td><td></td><td>b</td>
+      <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra Controle vanwege bloedend tandvlees</td><td>b</td>
       <td></td><td>Type contact uitleg (of Type contact Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td><td></td><td></td><td></td>
+      <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Herkomst</td><td>Item</td><td>NL-CM:15.1.14</td><td></td><td></td><td></td><td></td>
+      <td>Herkomst</td><td>Item</td><td>NL-CM:15.1.14</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Bestemming</td><td>Item</td><td>NL-CM:15.1.16</td><td></td><td></td><td></td><td></td>
+      <td>Bestemming</td><td>Item</td><td>NL-CM:15.1.16</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Redencontact:: Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td></td><td></td><td></td><td></td>
+      <td>Redencontact:: Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Redencontact::Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td></td><td></td><td></td><td></td>
+      <td>Redencontact::Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
   </tbody>
@@ -814,79 +814,78 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th><th>(a) als overzicht en detailgegeven</th><th>(b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>ContactPersoon</td><td>Rootconcept</td><td>NL-CM:3.1.1</td><td></td><td></td><td></td><td></td>
+      <td>ContactPersoon</td><td>Rootconcept</td><td>NL-CM:3.1.1</td><td></td><td></td>
       <td></td><td>Contactpersoon</td><td></td><td></td>
     </tr>
     <tr>
-      <td>Rol</td><td>Item</td><td>NL-CM:3.1.2</td><td>Wettelijke vertegenwoordiger</td><td></td><td>a</td><td></td>
+      <td>Rol</td><td>Item</td><td>NL-CM:3.1.2</td><td>Wettelijke vertegenwoordiger</td><td>a</td>
       <td></td><td>Rol</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Relatie</td><td>Item</td><td>NL-CM:3.1.3</td><td>Vader</td><td></td><td></td><td>b</td>
+      <td>Relatie</td><td>Item</td><td>NL-CM:3.1.3</td><td>Vader</td><td>b</td>
       <td></td><td>Relatie</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>Naamgegevens</td><td>Data, reference</td><td>NL-CM:3.1.4</td><td></td><td></td><td></td><td></td>
+      <td>Naamgegevens</td><td>Data, reference</td><td>NL-CM:3.1.4</td><td></td><td></td>
       <td></td><td></td><td></td><td></td>
     </tr>
     <tr>
-      <td>Initialen</td><td>Item</td><td>NL-CM:20.4.5</td><td>T.S. Pietersen</td><td></td><td>a</td><td></td>
+      <td>Initialen</td><td>Item</td><td>NL-CM:20.4.5</td><td>T.S. Pietersen</td><td>a</td>
       <td>Initialen, voorvoegsel en achternaam in één veld weergeven</td><td>Naam</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Roepnaam</td><td>Item</td><td>NL-CM:20.4.6</td><td>Teun</td><td></td><td></td><td>b</td>
+      <td>Roepnaam</td><td>Item</td><td>NL-CM:20.4.6</td><td>Teun</td><td>b</td>
       <td></td><td>Roepnaam</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Voorvoegsels</td><td>Item</td><td>NL-CM:20.4.11</td><td>T.S. Pietersen</td><td></td><td>a</td><td></td>
+      <td>Voorvoegsels</td><td>Item</td><td>NL-CM:20.4.11</td><td>T.S. Pietersen</td><td>a</td>
       <td>Initialen, voorvoegsel en achternaam in één veld weergeven</td><td>Naam</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Achternaam</td><td>Item</td><td>NL-CM:20.4.10</td><td>T.S. Pietersen</td><td></td><td>a</td><td></td>
+      <td>Achternaam</td><td>Item</td><td>NL-CM:20.4.10</td><td>T.S. Pietersen</td><td>a</td>
       <td>Initialen, voorvoegsel en achternaam in één veld weergeven</td><td>Naam</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Adresgegevens</td><td>Data, reference </td><td>NL-CM:3.1.5</td><td></td><td></td><td></td><td></td>
+      <td>Adresgegevens</td><td>Data, reference </td><td>NL-CM:3.1.5</td><td></td><td></td>
       <td></td><td></td><td></td><td></td>
     </tr>
     <tr>
-      <td>Straat</td><td>Item</td><td>NL-CM:20.5.2</td><td>Slaapstraat</td><td></td><td></td><td>b</td>
+      <td>Straat</td><td>Item</td><td>NL-CM:20.5.2</td><td>Slaapstraat</td><td>b</td>
       <td></td><td>Straat</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Huisnummer</td><td>Item</td><td>NL-CM:20.5.12</td><td>2</td><td></td><td></td><td>b</td>
+      <td>Huisnummer</td><td>Item</td><td>NL-CM:20.5.12</td><td>2</td><td>b</td>
       <td>Huisnummer + Huisnummerlettere + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Huisnummerletter</td><td>Item</td><td>NL-CM:20.5.11</td><td></td><td></td><td></td><td>b</td>
+      <td>Huisnummerletter</td><td>Item</td><td>NL-CM:20.5.11</td><td></td><td>b</td>
       <td>Huisnummer + Huisnummerlettere + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>HuisnummerToevoeging</td><td>Item</td><td>NL-CM:20.5.10</td><td></td><td></td><td></td><td>b</td>
+      <td>HuisnummerToevoeging</td><td>Item</td><td>NL-CM:20.5.10</td><td></td><td>b</td>
       <td>Huisnummer + Huisnummerlettere + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Woonplaats</td><td>Item</td><td>NL-CM:20.5.3</td><td>Droom</td><td></td><td></td><td>b</td>
+      <td>Woonplaats</td><td>Item</td><td>NL-CM:20.5.3</td><td>Droom</td><td>b</td>
       <td></td><td>Woonplaats</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Land</td><td>Item</td><td>NL-CM:20.5.5</td><td>Dromenland</td><td></td><td></td><td>b</td>
+      <td>Land</td><td>Item</td><td>NL-CM:20.5.5</td><td>Dromenland</td><td>b</td>
       <td></td><td>Land</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
     </tr>
   </tbody>
@@ -896,75 +895,74 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:26%"><col style="width:9%"><col style="width:10%"><col style="width:8%"><col style="width:3%">
   </colgroup>
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th><th>(a) als overzicht en detailgegeven</th><th>(b) als detailgegeven</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Betaler</td><td>Rootconcept</td><td>NL-CM:1.1.1</td><td></td><td></td><td></td><td></td>
+      <td>Betaler</td><td>Rootconcept</td><td>NL-CM:1.1.1</td><td></td><td></td>
       <td>Dit is de persoon die de rekening betaald</td><td>Betaler</td><td></td><td></td>
     </tr>
     <tr>
-      <td>BetalerPersoon</td><td>Container</td><td>NL-CM:1.1.2\t</td><td></td><td></td><td></td><td></td>
+      <td>BetalerPersoon</td><td>Container</td><td>NL-CM:1.1.2</td><td></td><td></td>
       <td></td><td></td><td></td><td></td>
     </tr>
     <tr>
-      <td>BetalerNaam</td><td>Item</td><td>NL-CM:1.1.5</td><td>J.L. Teunissen</td><td></td><td>a</td><td></td>
+      <td>BetalerNaam</td><td>Item</td><td>NL-CM:1.1.5</td><td>J.L. Teunissen</td><td>a</td>
       <td></td><td>Naam Betaler</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Bankgegevens</td><td>Container</td><td>NL-CM:1.1.4</td><td></td><td></td><td></td><td></td>
+      <td>Bankgegevens</td><td>Container</td><td>NL-CM:1.1.4</td><td></td><td></td>
       <td></td><td>Bankgegegevens </td><td></td><td></td>
     </tr>
     <tr>
-      <td>BankNaam</td><td>Item</td><td>NL-CM:1.1.9</td><td>ING Bank</td><td></td><td></td><td>b</td>
+      <td>BankNaam</td><td>Item</td><td>NL-CM:1.1.9</td><td>ING Bank</td><td>b</td>
       <td></td><td>Naam Bank</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>BankCode</td><td>Item</td><td>NL-CM:1.1.10</td><td>INGBNL2A</td><td></td><td></td><td>b</td>
+      <td>BankCode</td><td>Item</td><td>NL-CM:1.1.10</td><td>INGBNL2A</td><td>b</td>
       <td></td><td>Code Bank</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Rekeningnummer</td><td>Item</td><td>NL-CM:1.1.11</td><td>NL91INGB0417164300</td><td></td><td></td><td>b</td>
+      <td>Rekeningnummer</td><td>Item</td><td>NL-CM:1.1.11</td><td>NL91INGB0417164300</td><td>b</td>
       <td></td><td>Rekeningnummer Bank</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Verzekeraar</td><td>Container</td><td>NL-CM:1.1.3</td><td></td><td></td><td></td><td></td>
+      <td>Verzekeraar</td><td>Container</td><td>NL-CM:1.1.3</td><td></td><td></td>
       <td></td><td>Verzekeraar</td><td></td><td></td>
     </tr>
     <tr>
-      <td>Verzekering</td><td>Container</td><td>NL-CM:1.1.8</td><td></td><td></td><td></td><td></td>
+      <td>Verzekering</td><td>Container</td><td>NL-CM:1.1.8</td><td></td><td></td>
       <td></td><td>Verzekering</td><td></td><td></td>
     </tr>
     <tr>
-      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:1.1.13</td><td>01-01-2025</td><td></td><td></td><td>b</td>
+      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:1.1.13</td><td>01-01-2025</td><td>b</td>
       <td>Alleen datum, geen tijd</td><td>Begindatum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:1.1.14</td><td>31-12-2025</td><td></td><td></td><td>b</td>
+      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:1.1.14</td><td>31-12-2025</td><td>b</td>
       <td>Alleen datum, geen tijd</td><td>Einddatum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Verzekeringssoort</td><td>Item</td><td>NL-CM:1.1.15</td><td>Basis verzekering</td><td></td><td></td><td>b</td>
+      <td>Verzekeringssoort</td><td>Item</td><td>NL-CM:1.1.15</td><td>Basis verzekering</td><td>b</td>
       <td></td><td>Soort Verzekering</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>OrganisatieNaam</td><td>Item</td><td>NL-CM:1.1.16\t</td><td>Zorgkantoor Groningen</td><td></td><td>a</td><td></td>
+      <td>OrganisatieNaam</td><td>Item</td><td>NL-CM:1.1.16</td><td>Zorgkantoor Groningen</td><td>a</td>
       <td></td><td>Naam verzekeraar</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
     </tr>
     <tr>
-      <td>VerzekerdeNummer</td><td>Item</td><td>NL-CM:1.1.6</td><td>2312312312</td><td></td><td></td><td>b</td>
+      <td>VerzekerdeNummer</td><td>Item</td><td>NL-CM:1.1.6</td><td>2312312312</td><td>b</td>
       <td></td><td>Nummer verzekerde</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>????</td><td>Tendens</td><td></td><td>a</td><td></td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>????</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
     </tr>
   </tbody>
