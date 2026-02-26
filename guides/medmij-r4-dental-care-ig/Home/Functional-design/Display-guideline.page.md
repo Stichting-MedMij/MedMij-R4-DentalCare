@@ -17,18 +17,16 @@ Deze richtlijn heeft als doel om duidelijke handvatten te bieden voor een patië
 De richtlijn geeft géén handvatten voor de vormgeving (kleur, vorm, lettertype, etc.) van gegevens.
 
 ## Scope 
-De scope bevat de gegevens van de gegevensdienst Mondzorg die worden weergegeven in de PGO. 
-
-De richtlijn is ontwikkeld voor gegevens die verzameld worden via de Mondzorg MedMij-gegevensdienst. Gegevens die via andere MedMij-gegevensdiensten verzameld worden in de PGO zijn hierin niet meegenomen. 
+De scope van deze richtlijn bestaat uit de Mondzorg-gegevens die worden weergegeven in de PGO. Gegevens die via andere MedMij-gegevensdiensten verzameld worden in de PGO zijn hierin niet meegenomen.
 
 ## Inhoud richtlijn
 Het inloggen en authentiseren bij de zorgaanbieder is niet opgenomen in deze richtlijn.
-De gebruiker gaat in de PGO naar het mondzorgoverzicht en/of zorgorganisatie‑mondzorgoverzicht waar de mondzorg gegevens getoond worden.
+De gebruiker gaat in de PGO naar het mondzorgoverzicht en/of zorgaanbieder‑mondzorgoverzicht waar de mondzorg gegevens getoond worden.
 
 ### Overzichtsscherm mondzorg
 Er zijn twee weergaven gedefinieerd voor het overzicht van de mondzorg gegevens:
 - Scenario 1: Mondzorgoverzicht (met alle mondzorg gegevens van alle zorgaanbieders in één overzicht)
-- Scenario 2: Zorgorganisatie‑mondzorgoverzicht (Met alle mondzorg gegevens van één zorgaanbieder in één overzicht.)
+- Scenario 2: Zorgaanbieder‑mondzorgoverzicht (Met alle mondzorg gegevens van één zorgaanbieder in één overzicht.)
 
 De twee scenario’s, hieronder uitgewerkt, geven weer hoe een UX design getoond kan worden. Een PGO is vrij om één of beide van deze scenario’s te ondersteunen.De richtlijn gaat ervan uit dat PGO’s een responsief ontwerp ondersteunen. 
 
@@ -43,13 +41,13 @@ Het overzichtsscherm van elke zib heeft dus een aparte pagina waar de datavelden
 
 **Figuur 1: Voorbeeld mondzorgoverzicht**
 
-<u>Zorgorganisatie-mondzorgoverzicht:</u>
+<u>Zorgaanbieder-mondzorgoverzicht:</u>
 
-Het overzichtsscherm van elke zib heeft dus een aparte tab waar de datavelden getoond worden, per zorgaanbieder. 
+Het overzichtsscherm van elke zib heeft dus een aparte pagina waar de datavelden getoond worden, per zorgaanbieder. 
 
-{{render: guides/medmij-r4-dental-care-ig/images/Zorgorganisatie mondzorgoverzicht.png}} 
+{{render: guides/medmij-r4-dental-care-ig/images/Zorgaanbieder mondzorgoverzicht.png}} 
 
-**Figuur 2: Voorbeeld Zorgorganisatie - mondzorgoverzicht**
+**Figuur 2: Voorbeeld Zorgaanbieder - mondzorgoverzicht**
 
 De acceptatiecriteria voor de overzichtsschermen van elke zib is als volgt.
 
@@ -73,7 +71,7 @@ Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtss
 **Figuur 3: Voorbeeld Detailschermoverzicht - mondzorg**
 
 ### Mondzorg gegevens per zib
-Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
+Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
 
 ## Dental Fitness
 
@@ -261,7 +259,7 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 | Functie                                          | Onbekend      |
 | Straat                                           | Slaapstraat   |
 | Huisnummer                                       | 2             |
-| Woonplaats                                       | Droomverder   |
+| Woonplaats                                       | Droomv        |
 | Land                                             | Dromenland    |
 | Zorgorganisatie                                  | Tendens       |
 
@@ -295,10 +293,10 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 
 <u>Overzichtsscherm</u>
 
-| Naam betaler          | Zorgorganisatie |
-|------------------------|-----------------|
-| Zorgkantoor Groningen  | Tendens         |
-| J.L. Teunissen         | Tendens         |
+| Naam betaler/verzekeraar | Zorgorganisatie |
+|--------------------------|-----------------|
+| Zorgkantoor Groningen    | Tendens         |
+| J.L. Teunissen           | Tendens         |
 
 <u>Detailscherm</u>
 
@@ -329,4 +327,21 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 | Soort verzekering                          | Basis verzekering   |
 | Nummer verzekerde                          | 2312312312          |
 | Zorgorganisatie                            | Tendens             |
+
+## <a name="TabelSpecificaties"></a> Tabel met specificaties
+In de tabel met specificaties staan de gegevens uit de gegevensdienst Mondzorg, die relevant zijn voor deze weergaverichtlijn, weergegeven. 
+De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-methodiek. Datavelden die niet in de specificatietabel voorkomen, moeten worden beschouwd als datavelden met de letter W. 
+
+<br/> 
+
+| **Prioriteit** | **Omschrijving** |
+| --- | --- |
+| M(ust have) | Nodig voor de basisfunctionaliteit van de toepassing en moet worden geïmplementeerd om het proces succesvol te laten verlopen. |
+| S(hould have) | Belangrijke functionaliteit die niet vereist is, maar die voordelen biedt voor gebruikers en de algehele gebruikservaring. |
+| C(ould have) | Gewenste functionaliteit die waarde toevoegt, maar minder kritisch is en indien nodig kan worden uitgesteld. |
+| W(on't have) | Functionaliteiten die nu buiten scope zijn maar mogelijk in de toekomst worden overwogen. |
+
+<br/>
+
+
 
