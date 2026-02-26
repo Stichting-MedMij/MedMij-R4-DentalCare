@@ -492,3 +492,311 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 | Zorgaanbieder | Reference | ??? | Tendens | a | Liever geen afkortingen | Zorgorganisatie | Organisatienaam: M <br/> Overige velden: W |  |
 
 <br/>
+
+<!-- Vaste kolombreedtes voor alle tabellen -->
+<style>
+  .pgo-table {
+    width: 100%;
+    table-layout: fixed;   /* respecteert colgroup widths */
+    border-collapse: collapse;
+    margin: 0 0 24px 0;
+  }
+  .pgo-table th, .pgo-table td {
+    border: 1px solid #cccccc;
+    padding: 6px 8px;
+    vertical-align: top;
+    word-wrap: break-word;  /* breek lange woorden */
+    overflow-wrap: anywhere;
+  }
+  .pgo-table th {
+    background: #f7f7f7;
+    text-align: left;
+  }
+</style>
+
+<!-- Eén keer de kolombreedtes declareren en bij elke tabel hergebruiken -->
+<!-- Breedtes gebaseerd op ContactPersoon -->
+<!-- 16% | 10% | 12% | 17% | 12% | 10% | 11% | 8% | 4%  (totaal 100%) -->
+
+<!-- DENTAL FITNESS -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Dental Fitness</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td>a</td><td>1 score, geen historie</td><td>Dental Fitness</td><td>Uitleg over DFC-score</td><td></td></tr>
+    <tr><td>DatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td><td>Alleen datum</td><td>Datum</td><td></td><td>M</td></tr>
+    <tr><td>DentalFitnessScore</td><td>Item</td><td></td><td>Klasse 1</td><td>a</td><td>Term bekend bij Defensie</td><td>DentalFitnessScore</td><td>Uitleg klasse 0 t/m 4</td><td>M</td></tr>
+    <tr><td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen – Tandarts</td><td>a of b</td><td>Naam + specialisme tonen</td><td>Zorgverlener</td><td>Naam+specialisme: S, rest: W</td><td></td></tr>
+    <tr><td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td><td></td><td>Toelichting</td><td></td><td>M</td></tr>
+    <tr><td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td><td>Geen afkortingen</td><td>Zorgorganisatie</td><td>Organisatienaam: M, rest: W</td><td></td></tr>
+  </tbody>
+</table>
+
+<!-- VERRICHTING -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Verrichting</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:14.1.1</td><td></td><td>a</td><td></td><td>Behandeling</td><td></td><td></td></tr>
+    <tr><td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td>01-01-2024</td><td>a</td><td></td><td>Startdatum behandeling</td><td></td><td>M</td></tr>
+    <tr><td>VerrichtingEindDatum</td><td>Item</td><td>NL-CM:14.1.3</td><td>01-01-2024</td><td>b</td><td></td><td>Einddatum behandeling</td><td></td><td>M</td></tr>
+    <tr><td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie</td><td>a</td><td></td><td>Naam behandeling</td><td></td><td>M</td></tr>
+    <tr><td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken</td><td>b</td><td></td><td>Manier behandeling</td><td></td><td>S</td></tr>
+    <tr><td>VerrichtingAnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+    <tr><td>Indicatie::Probleem</td><td>Reference</td><td>NL-CM:14.1.9</td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+    <tr><td>Verrichting::MedischHulpmiddel</td><td>Reference</td><td>NL-CM:14.1.7</td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+    <tr><td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:14.1.5</td><td>Tendens</td><td>a</td><td></td><td>Zorgorganisatie</td><td></td><td>M</td></tr>
+    <tr><td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen – Tandarts</td><td>a of b</td><td>Naam + specialisme tonen</td><td>Zorgverlener</td><td>Naam+specialisme: S, rest: W</td><td></td></tr>
+    <tr><td>Aanvrager::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.10</td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+  </tbody>
+</table>
+
+<!-- BEHANDELDOEL -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Behandeldoel</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td>a</td><td>Kan aangeduid worden als Zorgplan</td><td>Doel behandeling</td><td></td><td></td></tr>
+    <tr><td>GewenstZorgresultaat</td><td>Item</td><td></td><td>tandvleesontsteking behandelen</td><td>a</td><td></td><td>Doel behandeling</td><td></td><td>M</td></tr>
+    <tr><td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a</td><td>High=hoog / Low=laag</td><td>Prioriteit</td><td>Kort vs lang termijn</td><td>M</td></tr>
+    <tr><td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td></td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+    <tr><td>Probleem</td><td>Reference</td><td></td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+    <tr><td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td><td>Geen afkortingen</td><td>Zorgorganisatie</td><td>Organisatienaam: M, rest: W</td><td></td></tr>
+  </tbody>
+</table>
+
+<!-- MONDHYGIËNE -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Mondhygiëne</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td>a</td><td></td><td>Mondhygiëne</td><td>Dagelijkse mondverzorging</td><td></td></tr>
+    <tr><td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td><td></td><td>Datum</td><td></td><td>M</td></tr>
+    <tr><td>Mondhygiëne (ObservatieNaam)</td><td>Item</td><td></td><td>Slechte mondhygiëne</td><td>a</td><td></td><td>Mondhygiëne</td><td></td><td>M</td></tr>
+    <tr><td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen – Tandarts</td><td>a of b</td><td></td><td>Zorgverlener</td><td>Naam+specialisme: S, rest: W</td><td></td></tr>
+    <tr><td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td><td></td><td>Toelichting</td><td></td><td>M</td></tr>
+    <tr><td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td><td></td><td>Zorgorganisatie</td><td>Organisatienaam: M, rest: W</td><td></td></tr>
+  </tbody>
+</table>
+
+<!-- CARIËSRISICO -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>CariësRisico</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td>a</td><td></td><td>Risico op gaatjes</td><td>Uitleg cariësproces</td><td></td></tr>
+    <tr><td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td><td></td><td>Datum</td><td></td><td>M</td></tr>
+    <tr><td>CariësRisico (ObservatieNaam)</td><td>Item</td><td></td><td>Laag</td><td>a</td><td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td></tr>
+    <tr><td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen – Tandarts</td><td>a of b</td><td></td><td>Zorgverlener</td><td>Naam+specialisme: S, rest: W</td><td></td></tr>
+    <tr><td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td><td></td><td>Toelichting</td><td></td><td>M</td></tr>
+    <tr><td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td><td>Geen afkortingen</td><td>Zorgorganisatie</td><td>Organisatienaam: M, rest: W</td><td></td></tr>
+  </tbody>
+</table>
+
+<!-- ASA-SCORE -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>ASA-score</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td>a</td><td></td><td>Score gezondheid (ASA)</td><td>Uitleg ASA 1–6</td><td></td></tr>
+    <tr><td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td><td></td><td>Datum</td><td></td><td>M</td></tr>
+    <tr><td>ASA score (ObservatieNaam)</td><td>Item</td><td></td><td>ASA-score 1</td><td>a</td><td></td><td>Score gezondheid</td><td></td><td>M</td></tr>
+    <tr><td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen – Tandarts</td><td>a of b</td><td></td><td>Zorgverlener</td><td>Naam+specialisme: S, rest: W</td><td></td></tr>
+    <tr><td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td><td></td><td>Toelichting</td><td></td><td>M</td></tr>
+    <tr><td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td><td></td><td>Zorgorganisatie</td><td>Organisatienaam: M, rest: W</td><td></td></tr>
+  </tbody>
+</table>
+
+<!-- PPS -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Periodieke Parodontale Screening (PPS)</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td>a</td><td></td><td>Controle tandvlees</td><td>Pocketdiepte 0–3mm = in orde</td><td></td></tr>
+    <tr><td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td><td></td><td>Datum</td><td></td><td>M</td></tr>
+    <tr><td>PPS score (ObservatieNaam)</td><td>Item</td><td></td><td>Pockets 0–3 mm = in orde</td><td>a</td><td></td><td>Controle tandvlees</td><td></td><td>M</td></tr>
+    <tr><td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen – Tandarts</td><td>a of b</td><td></td><td>Zorgverlener</td><td>Naam+specialisme: S, rest: W</td><td></td></tr>
+    <tr><td>Toelichting</td><td>Item</td><td></td><td></td><td>a of b</td><td></td><td>Toelichting</td><td></td><td>M</td></tr>
+    <tr><td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td><td></td><td>Zorgorganisatie</td><td>Organisatienaam: M, rest: W</td><td></td></tr>
+  </tbody>
+</table>
+
+<!-- PARAFUNCTIONELE ACTIVITEIT -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Parafunctionele activiteit</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td>a</td><td></td><td>Schadelijke gewoonte met tanden</td><td>zoals knarsen bij stress</td><td></td></tr>
+    <tr><td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td><td></td><td>Datum</td><td></td><td>M</td></tr>
+    <tr><td>Parafunctionele activiteit (ObservatieWaarde)</td><td>Item</td><td></td><td>Overmatig knarsen bij stress</td><td>a</td><td></td><td>Schadelijke gewoonte met tanden</td><td></td><td>M</td></tr>
+    <tr><td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen – Tandarts</td><td>a of b</td><td></td><td>Zorgverlener</td><td>Naam+specialisme: S, rest: W</td><td></td></tr>
+    <tr><td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td><td></td><td>Toelichting</td><td></td><td>M</td></tr>
+    <tr><td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td><td></td><td>Zorgorganisatie</td><td>Organisatienaam: M, rest: W</td><td></td></tr>
+  </tbody>
+</table>
+
+<!-- CONTACT -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Contact</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:15.1.1</td><td></td><td>a</td><td></td><td>Afspraak</td><td></td><td></td></tr>
+    <tr><td>ContactType</td><td>Item</td><td>NL-CM:15.1.2</td><td>Second opinion</td><td>a</td><td></td><td>Type contact of afspraak</td><td></td><td>M</td></tr>
+    <tr><td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01‑01‑2024 09:00</td><td>a</td><td>In 2 velden opsplitsen</td><td>Begindatum/begintijd</td><td></td><td>M</td></tr>
+    <tr><td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01‑01‑2024 10:00</td><td>b</td><td>In 2 velden</td><td>Einddatum/eindtijd</td><td></td><td>M</td></tr>
+    <tr><td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen – Tandarts</td><td>a of b</td><td>Naam + specialisme</td><td>Zorgverlener</td><td>Naam+specialisme: S, rest: W</td><td></td></tr>
+    <tr><td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td><td></td><td>Zorgorganisatie</td><td></td><td>M</td></tr>
+    <tr><td>RedenContact</td><td>Container</td><td>NL-CM:15.1.13</td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+    <tr><td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra controle vanwege bloedend tandvlees</td><td>b</td><td></td><td>Uitleg type contact</td><td></td><td>M</td></tr>
+    <tr><td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+    <tr><td>Herkomst</td><td>Item</td><td>NL-CM:15.1.14</td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+    <tr><td>Bestemming</td><td>Item</td><td>NL-CM:15.1.16</td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+    <tr><td>Redencontact::Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+    <tr><td>Redencontact::Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td></td><td>b</td><td></td><td></td><td></td><td>W</td></tr>
+  </tbody>
+</table>
+
+<!-- CONTACTPERSOON (referentiebreedtes) -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>ContactPersoon</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:3.1.1</td><td></td><td>a</td><td></td><td>Contactpersoon</td><td></td><td></td></tr>
+    <tr><td>Rol</td><td>Item</td><td>NL-CM:3.1.2</td><td>Wettelijke vertegenwoordiger</td><td>a</td><td></td><td>Rol</td><td></td><td>M</td></tr>
+    <tr><td>Relatie</td><td>Item</td><td>NL-CM:3.1.3</td><td>Vader</td><td>b</td><td></td><td>Relatie</td><td></td><td>S</td></tr>
+    <tr><td>Initialen</td><td>Item</td><td>NL-CM:20.4.5</td><td>T.S. Pietersen</td><td>a</td><td>In één naamveld</td><td>Naam</td><td></td><td>M</td></tr>
+    <tr><td>Roepnaam</td><td>Item</td><td>NL-CM:20.4.6</td><td>Teun</td><td>b</td><td></td><td>Roepnaam</td><td></td><td>M</td></tr>
+    <tr><td>Voorvoegsels</td><td>Item</td><td>NL-CM:20.4.11</td><td>(onderdeel naamveld)</td><td>a</td><td>Combined</td><td>Naam</td><td></td><td>M</td></tr>
+    <tr><td>Achternaam</td><td>Item</td><td>NL-CM:20.4.10</td><td>Pietersen</td><td>a</td><td>Combined</td><td>Naam</td><td></td><td>M</td></tr>
+    <tr><td>Straat</td><td>Item</td><td>NL-CM:20.5.2</td><td>Slaapstraat</td><td>b</td><td></td><td>Straat</td><td></td><td>M</td></tr>
+    <tr><td>Huisnummer</td><td>Item</td><td>NL-CM:20.5.12</td><td>2</td><td>b</td><td>Combineren</td><td>Huisnummer</td><td></td><td>M</td></tr>
+    <tr><td>Huisnummerletter</td><td>Item</td><td>NL-CM:20.5.11</td><td></td><td>b</td><td>Combineren</td><td>Huisnummer</td><td></td><td>M</td></tr>
+    <tr><td>HuisnummerToevoeging</td><td>Item</td><td>NL-CM:20.5.10</td><td></td><td>b</td><td>Combineren</td><td>Huisnummer</td><td></td><td>M</td></tr>
+    <tr><td>Woonplaats</td><td>Item</td><td>NL-CM:20.5.3</td><td>Droom</td><td>b</td><td></td><td>Woonplaats</td><td></td><td>M</td></tr>
+    <tr><td>Land</td><td>Item</td><td>NL-CM:20.5.5</td><td>Dromenland</td><td>b</td><td></td><td>Land</td><td></td><td>M</td></tr>
+    <tr><td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td><td>Geen afkortingen</td><td>Zorgorganisatie</td><td>Organisatienaam: M, rest: W</td><td></td></tr>
+  </tbody>
+</table>
+
+<!-- BETALER -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:16%"><col style="width:10%"><col style="width:12%"><col style="width:17%">
+    <col style="width:12%"><col style="width:10%"><col style="width:11%"><col style="width:8%"><col style="width:4%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies: Waar tonen in de PGO?</th><th>Opmerkingen</th><th>Advies tekst weergave in PGO</th>
+      <th>Advies: gebruikersvriendelijke toelichting</th><th>Prioriteit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Betaler</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:1.1.1</td><td></td><td>a</td><td>Persoon die betaalt</td><td>Betaler</td><td></td><td></td></tr>
+    <tr><td>BetalerPersoon</td><td>Container</td><td>NL-CM:1.1.2</td><td></td><td>b</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>BetalerNaam</td><td>Item</td><td>NL-CM:1.1.5</td><td>J.L. Teunissen</td><td>a</td><td></td><td>Naam betaler</td><td></td><td>M</td></tr>
+    <tr><td>Bankgegevens</td><td>Container</td><td>NL-CM:1.1.4</td><td></td><td>b</td><td></td><td>Bankgegevens</td><td></td><td></td></tr>
+    <tr><td>BankNaam</td><td>Item</td><td>NL-CM:1.1.9</td><td>ING Bank</td><td>b</td><td></td><td>Banknaam</td><td></td><td>M</td></tr>
+    <tr><td>BankCode</td><td>Item</td><td>NL-CM:1.1.10</td><td>INGBNL2A</td><td>b</td><td></td><td>Code bank</td><td></td><td>M</td></tr>
+    <tr><td>Rekeningnummer</td><td>Item</td><td>NL-CM:1.1.11</td><td>NL91INGB0417164300</td><td>b</td><td></td><td>Rekeningnummer</td><td></td><td>M</td></tr>
+    <tr><td>Verzekeraar</td><td>Container</td><td>NL-CM:1.1.3</td><td></td><td>b</td><td></td><td>Verzekeraar</td><td></td><td></td></tr>
+    <tr><td>Verzekering</td><td>Container</td><td>NL-CM:1.1.8</td><td></td><td>b</td><td></td><td>Verzekering</td><td></td><td></td></tr>
+    <tr><td>BeginDatumTijd</td><td>Item</td><td>NL-CM:1.1.13</td><td>01-01-2025</td><td>b</td><td>Alleen datum</td><td>Begindatum</td><td></td><td>M</td></tr>
+    <tr><td>EindDatumTijd</td><td>Item</td><td>NL-CM:1.1.14</td><td>31-12-2025</td><td>b</td><td>Alleen datum</td><td>Einddatum</td><td></td><td>M</td></tr>
+    <tr><td>Verzekeringssoort</td><td>Item</td><td>NL-CM:1.1.15</td><td>Basis verzekering</td><td>b</td><td></td><td>Soort verzekering</td><td></td><td>M</td></tr>
+    <tr><td>OrganisatieNaam</td><td>Item</td><td>NL-CM:1.1.16</td><td>Zorgkantoor Groningen</td><td>a</td><td></td><td>Naam verzekeraar</td><td>Organisatienaam: M, rest: W</td><td></td></tr>
+    <tr><td>VerzekerdeNummer</td><td>Item</td><td>NL-CM:1.1.6</td><td>2312312312</td><td>b</td><td></td><td>Nummer verzekerde</td><td></td><td>M</td></tr>
+    <tr><td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td><td>Geen afkortingen</td><td>Zorgorganisatie</td><td>Organisatienaam: M, rest: W</td><td></td></tr>
+  </tbody>
+</table>
+
