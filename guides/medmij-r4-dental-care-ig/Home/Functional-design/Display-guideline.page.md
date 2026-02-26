@@ -343,14 +343,14 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 
 <br/>
 
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: Gebruikersvriendelijke toelichting | Prioriteit |
+| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: gebruikersvriendelijke toelichting | Prioriteit |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Dental Fitness** | **Rootconcept** |  |  | a | Het PGO ontvangt maar 1 Dental Fitness Score (geen historie) | Dental Fitness | De Dental Fitness Classificatie (DFC) beschrijft risico op tandheelkundige problemen binnen 12 maanden. |  |
-| DatumTijd | Item |  | 01-01-2024 | a | Alleen datum, geen tijd | Datum |  | M |
-| DentalFitnessScore | Item |  | Klasse 1: vereist geen tandheelkundige behandeling | a | Term bekend bij defensie → handhaven | DentalFitnessScore | Complete uitleg over klasse 0 t/m 4 | M |
-| Uitvoerder::Zorgverlener | Reference |  | A.B. Janssen – Tandarts | a of b | Naam + specialisme tonen | Zorgverlener | Naam + specialisme: S <br/> Overige velden: W |  |
-| Toelichting | Item |  | Dit betekent dat… | a of b |  | Uitleg (of Toelichting) |  | M |
-| Zorgaanbieder | Reference |  | Tendens | a | Liever geen afkortingen | Zorgorganisatie | Organisatienaam: M <br/> Overige velden: W |  |
+| **Dental Fitness** | Rootconcept |  |  | a | 1 score, geen historie | Dental Fitness | Uitleg over DFC-score |  |
+| DatumTijd | Item |  | 01-01-2024 | a | Alleen datum | Datum |  | M |
+| DentalFitnessScore | Item |  | Klasse 1 | a | Term bekend bij Defensie | DentalFitnessScore | Uitleg klasse 0 t/m 4 | M |
+| Uitvoerder::Zorgverlener | Reference |  | A.B. Janssen – Tandarts | a of b | Naam + specialisme tonen | Zorgverlener | Naam+specialisme: S, rest: W |  |
+| Toelichting | Item |  | Dit betekent dat… | a of b |  | Toelichting |  | M |
+| Zorgaanbieder | Reference |  | Tendens | a | Geen afkortingen | Zorgorganisatie | Organisatienaam: M, rest: W |  |
 
 <br/>
 
