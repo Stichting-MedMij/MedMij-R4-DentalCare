@@ -21,9 +21,6 @@ De scope bevat de gegevens van de gegevensdienst Mondzorg die worden weergegeven
 
 De richtlijn is ontwikkeld voor gegevens die verzameld worden via de Mondzorg MedMij-gegevensdienst. Gegevens die via andere MedMij-gegevensdiensten verzameld worden in de PGO zijn hierin niet meegenomen. 
 
-## Beheer van de weergaverichtlijn
-De eigenaar van deze richtlijn is Stichting MedMij. Voor vragen of opmerkingen over de richtlijn kan contact opgenomen worden met stichting Medmij via info@medmij.nl.
-
 ## Inhoud richtlijn
 Het inloggen en authentiseren bij de zorgaanbieder is niet opgenomen in deze richtlijn.
 De gebruiker gaat in de PGO naar het mondzorgoverzicht en/of zorgorganisatie‑mondzorgoverzicht waar de mondzorg gegevens getoond worden.
@@ -85,6 +82,17 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 | DentalFitnessScore                                      | Datum       | Zorgverlener               | Uitleg             | Zorgorganisatie |
 |---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
 | Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…   | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel:  | Klasse 1: vereist geen tandheelkundige behandeling |
+|--------------------------------------------------|---------------|
+| DentalFitnessScore                                | Klasse 1: vereist geen tandheelkundige behandeling |
+| Datum                                             | 01-01-2024 |
+| Naam                                              | T.S. Pietersen |
+| Uitleg                                            | Dit betekent dat... |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
 
 ---
 
