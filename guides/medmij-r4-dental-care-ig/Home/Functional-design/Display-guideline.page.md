@@ -341,158 +341,6 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 | C(ould have) | Gewenste functionaliteit die waarde toevoegt, maar minder kritisch is en indien nodig kan worden uitgesteld. |
 | W(on't have) | Functionaliteiten die nu buiten scope zijn maar mogelijk in de toekomst worden overwogen. |
 
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Dental Fitness** | Rootconcept |  |  | a | 1 score, geen historie | Dental Fitness | Uitleg over DFC-score |  |
-| DatumTijd | Item |  | 01-01-2024 | a | Alleen datum | Datum |  | M |
-| DentalFitnessScore | Item |  | Klasse 1 | a | Term bekend bij Defensie | DentalFitnessScore | Uitleg klasse 0 t/m 4 | M |
-| Uitvoerder::Zorgverlener | Reference |  | A.B. Janssen – Tandarts | a of b | Naam + specialisme tonen | Zorgverlener | Naam+specialisme: S, rest: W |  |
-| Toelichting | Item |  | Dit betekent dat… | a of b |  | Toelichting |  | M |
-| Zorgaanbieder | Reference |  | Tendens | a | Geen afkortingen | Zorgorganisatie | Organisatienaam: M, rest: W |  |
-
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: Gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Verrichting** | **Rootconcept** | NL-CM:14.1.1 |  | a |  | Behandeling |  |  |
-| VerrichtingStartDatum | Item | NL-CM:14.1.2 | 01-01-2024 | a |  | Startdatum behandeling |  | M |
-| VerrichtingEindDatum | Item | NL-CM:14.1.3 | 01-01-2024 | b |  | Einddatum behandeling |  | M |
-| VerrichtingType | Item | NL-CM:14.1.4 | H42 wortelpuntoperatie | a |  | Naam behandeling |  | M |
-| VerrichtingMethode | Item | NL-CM:14.1.12 | Vrijmaken | b |  | Manier behandeling |  | S |
-| VerrichtingAnatomischeLocatie | Reference | NL-CM:14.1.13 |  | b |  |  |  | W |
-| Indicatie::Probleem | Reference | NL-CM:14.1.9 |  | b |  |  |  | W |
-| Verrichting::MedischHulpmiddel | Reference | NL-CM:14.1.7 |  | b |  |  |  | W |
-| Locatie::Zorgaanbieder | Reference | NL-CM:14.1.5 | Tendens | a |  | Zorgorganisatie |  | M |
-| Uitvoerder::Zorgverlener | Reference | NL-CM:14.1.6 | A.B. Janssen – Tandarts | a of b |  | Zorgverlener | Naam + specialisme: S <br/> Overige velden: W |  |
-| Aanvrager::Zorgverlener | Reference | NL-CM:14.1.10 |  | b |  |  |  | W |
-
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: Gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Behandeldoel** | **Rootconcept** |  |  | a | Kan als Zorgplan worden aangeduid | Doel behandeling |  |  |
-| GewenstZorgresultaat | Item |  | tandvleesontsteking behandelen | a |  | Doel behandeling |  | M |
-| Prioriteit | Item |  | Hoge prioriteit | a | High = hoge / Low = lage prioriteit | Prioriteit | Kortetermijn vs langetermijn doel | M |
-| GewensteGezondheidstoestand::FunctioneleOfMentaleStatus | Reference |  |  | b |  |  |  | W |
-| Probleem | Reference |  |  | b |  |  |  | W |
-| Zorgaanbieder | Reference |  | Tendens | a | Liever geen afkortingen | Zorgorganisatie | Organisatienaam: M <br/> Overige velden: W |  |
-
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Mondhygiëne** | **Rootconcept** |  |  | a |  | Mondhygiëne | Dagelijkse verzorging om gaatjes en ontstekingen te voorkomen. |  |
-| ObservatieDatumTijd | Item |  | 01-01-2024 | a |  | Datum |  | M |
-| Mondhygiëne (ObservatieNaam) | Item |  | Slechte mondhygiëne | a |  | Mondhygiëne |  | M |
-| Uitvoerder::Zorgverlener | Reference |  | A.B. Janssen – Tandarts | a of b |  | Zorgverlener | Naam + specialisme: S <br/> Overige velden: W |  |
-| Toelichting | Item |  | Dit betekent dat… | a of b |  | Uitleg |  | M |
-| Zorgaanbieder | Reference |  | Tendens | a | Liever geen afkortingen | Zorgorganisatie | Organisatienaam: M <br/> Overige velden: W |  |
-
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **CariësRisico** | **Rootconcept** |  |  | a |  | Risico op gaatjes | Uitleg het cariësproces (glazuur → dentine). |  |
-| ObservatieDatumTijd | Item |  | 01-01-2024 | a |  | Datum |  | M |
-| CariësRisico (ObservatieNaam) | Item |  | Laag | a | Toelichting gewenst | Risico op gaatjes |  | M |
-| Uitvoerder::Zorgverlener | Reference |  | A.B. Janssen – Tandarts | a of b |  | Zorgverlener | Naam + specialisme: S <br/> Overige velden: W |  |
-| Toelichting | Item |  | Dit betekent dat… | a of b |  | Uitleg |  | M |
-| Zorgaanbieder | Reference |  | Tendens | a | Liever geen afkortingen | Zorgorganisatie | Organisatienaam: M <br/> Overige velden: W |  |
-
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **ASA-score** | **Rootconcept** |  |  | a |  | Score gezondheid (ASA) | Uitleg ASA 1 t/m 6 |  |
-| ObservatieDatumTijd | Item |  | 01-01-2024 | a |  | Datum |  | M |
-| ASA score (ObservatieNaam) | Item |  | ASA-score 1 – Gezonde patiënt | a |  | Score gezondheid (ASA) |  | M |
-| Uitvoerder::Zorgverlener | Reference |  | A.B. Janssen – Tandarts | a of b |  | Zorgverlener | Naam + specialisme: S <br/> Overige velden: W |  |
-| Toelichting | Item |  | Dit betekent dat… | a of b |  | Uitleg |  | M |
-| Zorgaanbieder | Reference |  | Tendens | a | Liever geen afkortingen | Zorgorganisatie | Organisatienaam: M <br/> Overige velden: W |  |
-
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Periodieke Parodontale Screening (PPS)** | **Rootconcept** |  |  | a |  | Controle tandvlees | Pocketdiepte 0–3mm = in orde |  |
-| ObservatieDatumTijd | Item |  | 01-01-2024 | a |  | Datum |  | M |
-| PPS score (ObservatieNaam) | Item |  | Pockets 0–3 mm = in orde | a |  | Controle tandvlees |  | M |
-| Uitvoerder::Zorgverlener | Reference |  | A.B. Janssen – Tandarts | a of b |  | Zorgverlener | Naam + specialisme: S <br/> Overige velden: W |  |
-| Toelichting | Item |  |  | a of b |  | Uitleg |  | M |
-| Zorgaanbieder | Reference |  | Tendens | a |  | Zorgorganisatie | Organisatienaam: M <br/> Overige velden: W |  |
-
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Parafunctionele activiteit** | **Rootconcept** |  |  | a |  | Schadelijke gewoonte met tanden | zoals knarsen bij stress |  |
-| ObservatieDatumTijd | Item |  | 01-01-2024 | a |  | Datum |  | M |
-| Parafunctionele activiteit (ObservatieWaarde) | Item |  | Overmatig knarsen bij stress | a |  | Schadelijke gewoonte met tanden |  | M |
-| Uitvoerder::Zorgverlener | Reference |  | A.B. Janssen – Tandarts | a of b |  | Zorgverlener | Naam + specialisme: S <br/> Overige velden: W |  |
-| Toelichting | Item |  | Dit betekent dat… | a of b |  | Uitleg |  | M |
-| Zorgaanbieder | Reference |  | Tendens | a |  | Zorgorganisatie | Organisatienaam: M <br/> Overige velden: W |  |
-
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Contact** | **Rootconcept** | NL-CM:15.1.1 |  | a |  | Afspraak |  |  |
-| ContactType | Item | NL-CM:15.1.2 | Second opinion | a |  | Type contact of afspraak |  | M |
-| BeginDatumTijd | Item | NL-CM:15.1.3 | 01‑01‑2024 09:00 | a | Weergeven in 2 velden | Begindatum / Begintijd |  | M |
-| EindDatumTijd | Item | NL-CM:15.1.4 | 01‑01‑2024 10:00 | b | In 2 velden | Einddatum / Eindtijd |  | M |
-| ContactMet::Zorgverlener | Reference | NL-CM:15.1.7 | A.B. Janssen – Tandarts | a of b | Naam + specialisme tonen | Zorgverlener | Naam + specialisme: S <br/> Overige velden: W |  |
-| Locatie::Zorgaanbieder | Reference | NL-CM:15.1.8 | Tendens | a |  | Zorgorganisatie |  | M |
-| RedenContact | Container | NL-CM:15.1.13 |  | b |  |  |  | W |
-| ToelichtingRedenContact | Item | NL-CM:15.1.17 | Extra controle vanwege bloedend tandvlees | b |  | Uitleg type contact |  | M |
-| AfwijkendeUitslag | Item | NL-CM:15.1.12 |  | b |  |  |  | W |
-| Herkomst | Item | NL-CM:15.1.14 |  | b |  |  |  | W |
-| Bestemming | Item | NL-CM:15.1.16 |  | b |  |  |  | W |
-| Redencontact::Probleem | Reference | NL-CM:15.1.6 |  | b |  |  |  | W |
-| Redencontact::Verrichting | Reference | NL-CM:15.1.11 |  | b |  |  |  | W |
-
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **ContactPersoon** | **Rootconcept** | NL-CM:3.1.1 |  | a |  | Contactpersoon |  |  |
-| Rol | Item | NL-CM:3.1.2 | Wettelijke vertegenwoordiger | a |  | Rol |  | M |
-| Relatie | Item | NL-CM:3.1.3 | Vader | b |  | Relatie |  | S |
-| Initialen | Item | NL-CM:20.4.5 | T.S. Pietersen | a | In één veld met achternaam | Naam |  | M |
-| Roepnaam | Item | NL-CM:20.4.6 | Teun | b |  | Roepnaam |  | M |
-| Voorvoegsels | Item | NL-CM:20.4.11 | (via naamveld) | a | In één veld | Naam |  | M |
-| Achternaam | Item | NL-CM:20.4.10 | Pietersen | a | In één veld | Naam |  | M |
-| Straat | Item | NL-CM:20.5.2 | Slaapstraat | b |  | Straat |  | M |
-| Huisnummer | Item | NL-CM:20.5.12 | 2 | b | Combineren met toevoeging | Huisnummer |  | M |
-| Huisnummerletter | Item | NL-CM:20.5.11 |  | b | Combineren | Huisnummer |  | M |
-| HuisnummerToevoeging | Item | NL-CM:20.5.10 |  | b | Combineren | Huisnummer |  | M |
-| Woonplaats | Item | NL-CM:20.5.3 | Droom | b |  | Woonplaats |  | M |
-| Land | Item | NL-CM:20.5.5 | Dromenland | b |  | Land |  | M |
-| Zorgaanbieder | Reference | ??? | Tendens | a | Liever geen afkortingen | Zorgorganisatie | Organisatienaam: M <br/> Overige velden: W |  |
-
-<br/>
-
-| Naam data-item | Type item | Id | Voorbeeld | Advies: Waar tonen in de PGO? | Opmerkingen | Advies tekst weergave in PGO | Advies: gebruikersvriendelijke toelichting | Prioriteit |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Betaler** | **Rootconcept** | NL-CM:1.1.1 |  | a | Betalende persoon | Betaler |  |  |
-| BetalerPersoon | Container | NL-CM:1.1.2 |  | b |  |  |  |  |
-| BetalerNaam | Item | NL-CM:1.1.5 | J.L. Teunissen | a |  | Naam betaler |  | M |
-| Bankgegevens | Container | NL-CM:1.1.4 |  | b |  | Bankgegevens |  |  |
-| BankNaam | Item | NL-CM:1.1.9 | ING Bank | b |  | Naam bank |  | M |
-| BankCode | Item | NL-CM:1.1.10 | INGBNL2A | b |  | Code bank |  | M |
-| Rekeningnummer | Item | NL-CM:1.1.11 | NL91INGB0417164300 | b |  | Rekeningnummer bank |  | M |
-| Verzekeraar | Container | NL-CM:1.1.3 |  | b |  | Verzekeraar |  |  |
-| Verzekering | Container | NL-CM:1.1.8 |  | b |  | Verzekering |  |  |
-| BeginDatumTijd | Item | NL-CM:1.1.13 | 01-01-2025 | b | Alleen datum | Begindatum |  | M |
-| EindDatumTijd | Item | NL-CM:1.1.14 | 31-12-2025 | b | Alleen datum | Einddatum |  | M |
-| Verzekeringssoort | Item | NL-CM:1.1.15 | Basis verzekering | b |  | Soort verzekering |  | M |
-| OrganisatieNaam | Item | NL-CM:1.1.16 | Zorgkantoor Groningen | a |  | Naam verzekeraar | Organisatienaam: M <br/> Overige velden: W |  |
-| VerzekerdeNummer | Item | NL-CM:1.1.6 | 2312312312 | b |  | Nummer verzekerde |  | M |
-| Zorgaanbieder | Reference | ??? | Tendens | a | Liever geen afkortingen | Zorgorganisatie | Organisatienaam: M <br/> Overige velden: W |  |
-
-<br/>
-
 <!-- VASTE KOLOMBREEDTES + PRESERVE WHITESPACE -->
 <style>
   .pgo-table {
@@ -519,8 +367,8 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:10%"><col style="width:8%"><col style="width:8%"><col style="width:9%">
-    <col style="width:10%"><col style="width:8%"><col style="width:3%">
+    <col style="width:10%"><col style="width:9%">
+    <col style="width:10%"><col style="width:20%"><col style="width:7%">
   </colgroup>
   <thead>
     <tr>
@@ -528,9 +376,7 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
       <th>Type item</th>
       <th>Id</th>
       <th>Voorbeeld</th>
-      <th>Advies: Waar tonen in de PGO?</th>
-      <th>(a) als overzicht en detailgegeven</th>
-      <th>(b) als detailgegeven</th>
+      <th>Advies: Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th>
       <th>Advies tekst weergave in PGO</th>
       <th>Advies: Gebruikersvriendelijke toelichting</th>
