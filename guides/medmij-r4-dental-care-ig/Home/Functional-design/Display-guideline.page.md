@@ -109,12 +109,12 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 
 | Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |  |
 |-------------------------------------------------------------------------------|--------------------------------------------------|
-| Naam behandeling                                                              | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
-| Startdatum behandeling                                                        | 01-01-2024                                      |
-| Einddatum behandeling                                                         | 01-01-2024                                      |
-| Zorgorganisatie                                                               | Tendens                                         |
-| Zorgverlener                                                                  | A.B. Janssen<br>Tandarts                        |
-| Manier behandeling                                                            | Vrijmaken                                       |
+| Naam behandeling                                   | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
+| Startdatum behandeling                             | 01-01-2024                                      |
+| Einddatum behandeling                              | 01-01-2024                                      |
+| Manier behandeling                                 | Vrijmaken                                       |
+| Zorgverlener                                       | A.B. Janssen<br>Tandarts                        |
+| Zorgorganisatie                                    | Tendens                                         |
 
 ---
 
@@ -127,6 +127,14 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 | tandvleesontsteking behandelen  | Hoge prioriteit  | Tendens         |
 | Vullen gaatje rechter kies      | Lage prioriteit  | Tendens         |
 
+<u>Detailscherm</u>
+
+| Geselecteerde regel:  | tandvleesontsteking behandelen |
+|--------------------------------------------------|---------------|
+| Doel behandeling                                  | tandvleesontsteking behandelen |
+| Prioriteit                                        | Hoge prioriteit |
+| Zorgorganisatie                                   | Tendens          |
+
 ---
 
 ## Mondhygiëne
@@ -136,7 +144,17 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 | Mondhygiëne           | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
 |------------------------|-------------|-----------------------------|-----------------------|-----------------|
 | Slechte mondhygiëne    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
-| Zeer slecht            | 01-12-2023  | A.B. Janssen               | Dit betekent dat…     | Tendens         |
+| Zeer slecht            | 01-12-2023  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel:  | Slechte mondhygiëne |
+|--------------------------------------------------|---------------|
+| Mondhygiëne                                       | Slechte mondhygiëne |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Dit betekent dat... |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
 
 ---
 
@@ -149,6 +167,16 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 | Laag               | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
 | Verlaagd           | 01-12-2023  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
 
+<u>Detailscherm</u>
+
+| Geselecteerde regel:  | Laag |
+|--------------------------------------------------|---------------|
+| Risico op gaatjes                                 | Laag |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Dit betekent dat... |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
 ---
 
 ## ASA-score
@@ -159,6 +187,16 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 |----------------------------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
 | ASA-score 1 Gezonde patiënt                              | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
 | ASA-score 2 Milde systemische aandoening zonder belemmering | 01-12-2023 | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel:  | ASA-score 1 Gezonde patiënt |
+|--------------------------------------------------|---------------|
+| Score gezondheid (ASA)                            | ASA-score 1 Gezonde patiënt |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Dit betekent dat... |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
 
 ---
 
@@ -171,6 +209,16 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 | Pockets 0–3 millimeter = in orde       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
 | Pockets 4–5 millimeter = mogelijk in orde | 01-12-2023 | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
 
+<u>Detailscherm</u>
+
+| Geselecteerde regel:  | Pockets 0–3 millimeter = in orde |
+|--------------------------------------------------|---------------|
+| Controle tandvlees                                | Pockets 0–3 millimeter = in orde |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Dit betekent dat... |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
 ---
 
 ## Parafunctionele activiteit
@@ -181,6 +229,16 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 |----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
 | Overmatig knarsen bij stress           | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
 | Erosie door het drinken van vruchtensap| 01-12-2023  | A.B. Janssen               | Dit betekent dat…     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel:  | Overmatig knarsen bij stress |
+|--------------------------------------------------|---------------|
+| Schadelijke gewoonte met tanden                   | Overmatig knarsen bij stress |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Dit betekent dat... |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
 
 ---
 
@@ -197,7 +255,6 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 
 | Geselecteerde regel: Wettelijke vertegenwoordiger |  |
 |--------------------------------------------------|---------------|
-| Zorgorganisatie                                   | Tendens       |
 | Naam                                             | T.S. Pietersen|
 | Roepnaam                                         | Teun          |
 | Rol                                              | Wettelijke vertegenwoordiger |
@@ -206,6 +263,7 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 | Huisnummer                                       | 2             |
 | Woonplaats                                       | Droomverder   |
 | Land                                             | Dromenland    |
+| Zorgorganisatie                                  | Tendens       |
 
 ---
 
@@ -222,14 +280,14 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 
 | Geselecteerde regel: Second opinion |  |
 |------------------------------------|----------------------------|
-| Type contact                       | Second opinion            |
-| Begindatum                         | 01-01-2024                |
-| Begintijd                          | 09:00                     |
-| Einddatum                          | 01-01-2024                |
-| Eindtijd                           | 10:00                     |
-| Zorgverlener                       | A.B. Janssen<br>Tandarts  |
-| Zorgorganisatie                    | Tendens                   |
-| Type contact uitleg                | Extra Controle vanwege bloedend tandvlees |
+| Type contact                                      | Second opinion            |
+| Begindatum                                        | 01-01-2024                |
+| Begintijd                                         | 09:00                     |
+| Einddatum                                         | 01-01-2024                |
+| Eindtijd                                          | 10:00                     |
+| Type contact uitleg                               | Extra Controle vanwege bloedend tandvlees |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts  |
+| Zorgorganisatie                                   | Tendens                   |
 
 ---
 
@@ -246,27 +304,29 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgorganisatie
 
 | Geselecteerde regel: J.L. Teunissen |  |
 |-------------------------------------------|---------------------|
-| Zorgorganisatie                            |                     |
 | Naam betaler                               | J.L. Teunissen      |
 | Naam Bank                                  | ING Bank            |
 | Code Bank                                  | INGBNL2A            |
 | Rekeningnummer Bank                        | NL91INGB0417164300  |
 | Naam verzekeraar                           |                     |
+| Begindatum                                 |                     |
+| Einddatum                                  |                     |
 | Soort verzekering                          |                     |
-| Aanvullend tand                            |                     |
 | Nummer verzekerde                          |                     |
+| Zorgorganisatie                            | Tendens             |
 
 <u>Detailscherm</u>
 
 | Geselecteerde regel: Zorgkantoor Groningen |  |
 |-------------------------------------------|---------------------|
-| Zorgorganisatie                            | Tendens             |
-| Naam betaler                               | Zorgkantoor Groningen |
+| Naam betaler                               |                     |
 | Naam Bank                                  |                     |
 | Code Bank                                  |                     |
 | Rekeningnummer Bank                        |                     |
 | Naam verzekeraar                           | De Groningse        |
+| Begindatum                                 | 01-01-2025          |
+| Einddatum                                  | 31-12-2025          |
 | Soort verzekering                          | Basis verzekering   |
-| Aanvullend tand                            | Ja                  |
 | Nummer verzekerde                          | 2312312312          |
+| Zorgorganisatie                            | Tendens             |
 
