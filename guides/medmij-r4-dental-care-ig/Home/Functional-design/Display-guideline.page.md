@@ -412,7 +412,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
+      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
