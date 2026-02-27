@@ -61,14 +61,14 @@ De acceptatiecriteria voor de overzichtsschermen van elke zib is als volgt.
 | 5 | Alle datavelden in het overzichtsscherm zijn sorteerbaar. |
 | 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de paragraaf *Tabel met specificaties* voor de aanbevolen termen per opgehaald dataveld. |
 
-### Detailschermoverzicht mondzorg
+### Detailscherm mondzorg
 Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtsscherm selecteert.
 
-### Voorbeeld mockup detailoverzicht mondzorg
+### Voorbeeld mockup detailscherm mondzorg
 
 {{render: guides/medmij-r4-dental-care-ig/images/Detailscherm mondzorg.png}}
 
-**Figuur 3: Voorbeeld Detailschermoverzicht - mondzorg**
+**Figuur 3: Voorbeeld Detailscherm - mondzorg**
 
 ### Mondzorg gegevens per CIM
 Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn voor mondzorg, een voorbeeld in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
