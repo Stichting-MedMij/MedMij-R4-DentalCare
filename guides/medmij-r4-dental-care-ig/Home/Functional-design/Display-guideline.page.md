@@ -375,8 +375,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- DENTAL FITNESS -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -428,8 +428,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- VERRICHTING -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -489,8 +489,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- BEHANDELDOEL -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -533,8 +533,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- MONDHYGIËNE -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -574,8 +574,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- CARIËSRISICO -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -615,8 +615,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- ASA-SCORE -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -658,8 +658,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- PERIODIEKE PARODONTALE SCREENEN (PPS) -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -701,8 +701,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- PARAFUNCTIONELE ACTIVITEIT -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -744,8 +744,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- CONTACT -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -813,8 +813,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- CONTACTPERSOON -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -894,8 +894,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- BETALER -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:6%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:8%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
