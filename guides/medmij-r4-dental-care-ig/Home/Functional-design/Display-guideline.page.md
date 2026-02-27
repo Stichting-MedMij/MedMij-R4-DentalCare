@@ -502,11 +502,11 @@ Breedteverdeling (op basis van eerdere mapping):
   <tbody>
     <tr>
       <td>Behandeldoel </td><td>Rootconcept</td><td></td><td></td><td></td>
-      <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td>Doel behandeling </td><td></td><td></td>
+      <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td></td><td></td><td></td>
     </tr>
     <tr>
       <td>GewenstZorgresultaat</td><td>Item</td><td></td><td>tandvleesontsteking behandelen</td><td>a </td>
-      <td></td><td>Doel behandeling  </td><td></td><td>M</td>
+      <td></td><td>Doel behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a </td>
@@ -558,7 +558,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td> Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
@@ -627,8 +627,8 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>ASA-score</td><td>Rootconcept</td><td></td><td></td><td></td>
-      <td>Score gezondheid (ASA)</td><td>De ASA-classificatie is het American Society of Anesthesiologists classificatiesysteem voor fysieke status (algehele medische toestand) </td><td></td><td></td>
+      <td>ASA-score</td><td>Rootconcept</td><td></td><td></td><td><td></td></td>
+      <td>Score gezondheid (ASA)</td><td>De ASA-classificatie is het American Society of Anesthesiologists classificatiesysteem voor fysieke status (algehele medische toestand) </td><td></td>
     </tr>
     <tr>
       <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
@@ -671,8 +671,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <tbody>
     <tr>
       <td>Periodieke Parodontale Screenen (PPS)</td><td>Rootconcept </td><td></td><td></td><td></td>
-      <td>Controle  tandvlees</td>
-      <td></td><td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
+      <td></td><td>Controle  tandvlees</td>
+      <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
     </tr>
     <tr>
       <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
@@ -713,9 +713,9 @@ Breedteverdeling (op basis van eerdere mapping):
   <tbody>
     <tr>
       <td>Parafunctionele activiteit</td><td>Rootconcept </td><td></td><td></td><td></td>
-      <td>Schadelijke gewoonte met tanden</td>
+      <td></td><td>Schadelijke gewoonte met tanden</td>
       <td>Parafuncties zijn mondbewegingen die niets met kauwen, slikken of spreken te maken hebben (zoals tandenknarsen).  </td>
-      <td></td><td></td>
+      <td></td>
     </tr>
     <tr>
       <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
@@ -906,7 +906,7 @@ Breedteverdeling (op basis van eerdere mapping):
   <tbody>
     <tr>
       <td>Betaler</td><td>Rootconcept</td><td>NL-CM:1.1.1</td><td></td><td></td>
-      <td>Dit is de persoon die de rekening betaald</td><td>Betaler</td><td></td><td></td>
+      <td>Dit is de persoon of verzekeraar die de rekening betaald</td><td>Betaler</td><td></td><td></td>
     </tr>
     <tr>
       <td>BetalerPersoon</td><td>Container</td><td>NL-CM:1.1.2</td><td></td><td></td>
