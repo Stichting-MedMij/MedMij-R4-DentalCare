@@ -70,8 +70,8 @@ Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtss
 
 **Figuur 3: Voorbeeld Detailschermoverzicht - mondzorg**
 
-### Mondzorg gegevens per zib
-Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
+### Mondzorg gegevens per CIM
+Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn voor mondzorg, een voorbeeld in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
 
 ### Dental Fitness
 
