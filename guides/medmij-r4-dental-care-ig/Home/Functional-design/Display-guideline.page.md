@@ -73,7 +73,7 @@ Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtss
 ### Mondzorg gegevens per zib
 Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
 
-## Dental Fitness
+### Dental Fitness
 
 <u>Overzichtsscherm</u>
 
@@ -92,9 +92,9 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
----
+<br/>
 
-## Verrichting
+### Verrichting
 
 <u>Overzichtsscherm</u>
 
@@ -114,9 +114,9 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Zorgverlener                                       | A.B. Janssen<br>Tandarts                        |
 | Zorgorganisatie                                    | Tendens                                         |
 
----
+<br/>
 
-## Behandeldoel
+### Behandeldoel
 
 <u>Overzichtsscherm</u>
 
@@ -133,9 +133,9 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Prioriteit                                        | Hoge prioriteit |
 | Zorgorganisatie                                   | Tendens          |
 
----
+<br/>
 
-## Mondhygiëne
+### Mondhygiëne
 
 <u>Overzichtsscherm</u>
 
@@ -154,9 +154,9 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
----
+<br/>
 
-## CariësRisico
+### CariësRisico
 
 <u>Overzichtsscherm</u>
 
@@ -175,9 +175,9 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
----
+<br/>
 
-## ASA-score
+### ASA-score
 
 <u>Overzichtsscherm</u>
 
@@ -196,9 +196,9 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
----
+<br/>
 
-## Periodieke Parodontale Screening (PPS)
+### Periodieke Parodontale Screening (PPS)
 
 <u>Overzichtsscherm</u>
 
@@ -217,9 +217,9 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
----
+<br/>
 
-## Parafunctionele activiteit
+### Parafunctionele activiteit
 
 <u>Overzichtsscherm</u>
 
@@ -238,9 +238,9 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
----
+<br/>
 
-## Contactpersoon
+### Contactpersoon
 
 <u>Overzichtsscherm</u>
 
@@ -263,9 +263,9 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Land                                             | Dromenland    |
 | Zorgorganisatie                                  | Tendens       |
 
----
+<br/>
 
-## Contact
+### Contact
 
 <u>Overzichtsscherm</u>
 
@@ -287,9 +287,9 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts  |
 | Zorgorganisatie                                   | Tendens                   |
 
----
+<br/>
 
-## Betaler
+### Betaler
 
 <u>Overzichtsscherm</u>
 
@@ -327,6 +327,8 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 | Soort verzekering                          | Basis verzekering   |
 | Nummer verzekerde                          | 2312312312          |
 | Zorgorganisatie                            | Tendens             |
+
+<br/>
 
 ## <a name="TabelSpecificaties"></a> Tabel met specificaties
 In de tabel met specificaties staan de gegevens uit de gegevensdienst Mondzorg, die relevant zijn voor deze weergaverichtlijn, weergegeven. 
