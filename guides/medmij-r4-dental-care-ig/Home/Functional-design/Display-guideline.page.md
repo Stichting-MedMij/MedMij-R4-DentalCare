@@ -83,7 +83,7 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel:  | Klasse 1: vereist geen tandheelkundige behandeling |
+| Geselecteerde regel: Klasse 1: vereist geen tandheelkundige behandeling |  |
 |--------------------------------------------------|---------------|
 | DentalFitnessScore                                | Klasse 1: vereist geen tandheelkundige behandeling |
 | Datum                                             | 01-01-2024 |
@@ -122,12 +122,12 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 
 | Doel behandeling                | Prioriteit      | Zorgorganisatie |
 |---------------------------------|------------------|-----------------|
-| tandvleesontsteking behandelen  | Hoge prioriteit  | Tendens         |
+| Tandvleesontsteking behandelen  | Hoge prioriteit  | Tendens         |
 | Vullen gaatje rechter kies      | Lage prioriteit  | Tendens         |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel:  | tandvleesontsteking behandelen |
+| Geselecteerde regel: Tandvleesontsteking behandelen |  |
 |--------------------------------------------------|---------------|
 | Doel behandeling                                  | tandvleesontsteking behandelen |
 | Prioriteit                                        | Hoge prioriteit |
@@ -146,7 +146,7 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel:  | Slechte mondhygiëne |
+| Geselecteerde regel: Slechte mondhygiëne |  |
 |--------------------------------------------------|---------------|
 | Mondhygiëne                                       | Slechte mondhygiëne |
 | Datum                                             | 01-01-2024 |
@@ -167,7 +167,7 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel:  | Laag |
+| Geselecteerde regel: Laag |  |
 |--------------------------------------------------|---------------|
 | Risico op gaatjes                                 | Laag |
 | Datum                                             | 01-01-2024 |
@@ -188,7 +188,7 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel:  | ASA-score 1 Gezonde patiënt |
+| Geselecteerde regel: ASA-score 1 Gezonde patiënt |  |
 |--------------------------------------------------|---------------|
 | Score gezondheid (ASA)                            | ASA-score 1 Gezonde patiënt |
 | Datum                                             | 01-01-2024 |
@@ -209,7 +209,7 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel:  | Pockets 0–3 millimeter = in orde |
+| Geselecteerde regel: Pockets 0–3 millimeter = in orde |  |
 |--------------------------------------------------|---------------|
 | Controle tandvlees                                | Pockets 0–3 millimeter = in orde |
 | Datum                                             | 01-01-2024 |
@@ -230,7 +230,7 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel:  | Overmatig knarsen bij stress |
+| Geselecteerde regel: Overmatig knarsen bij stress |  |
 |--------------------------------------------------|---------------|
 | Schadelijke gewoonte met tanden                   | Overmatig knarsen bij stress |
 | Datum                                             | 01-01-2024 |
