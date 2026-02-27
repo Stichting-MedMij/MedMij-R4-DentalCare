@@ -558,7 +558,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td> Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
+      <td>Zowel de naam als specialisme tonen. </td><td> Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
@@ -599,7 +599,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
@@ -642,7 +642,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
+      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
@@ -685,10 +685,10 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td></td>Dit betekent dat…<td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -728,7 +728,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
@@ -773,7 +773,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
+      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
