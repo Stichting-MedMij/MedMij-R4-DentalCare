@@ -129,7 +129,7 @@ Hieronder worden alle mondzorg zibs in tabelvorm weergegeven. De zorgaanbieder i
 
 | Geselecteerde regel: Tandvleesontsteking behandelen |  |
 |--------------------------------------------------|---------------|
-| Doel behandeling                                  | tandvleesontsteking behandelen |
+| Doel behandeling                                  | Tandvleesontsteking behandelen |
 | Prioriteit                                        | Hoge prioriteit |
 | Zorgorganisatie                                   | Tendens          |
 
@@ -507,7 +507,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td></td><td></td><td></td>
     </tr>
     <tr>
-      <td>GewenstZorgresultaat</td><td>Item</td><td></td><td>tandvleesontsteking behandelen</td><td>a </td>
+      <td>GewenstZorgresultaat</td><td>Item</td><td></td><td>Tandvleesontsteking behandelen</td><td>a </td>
       <td></td><td>Doel behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
