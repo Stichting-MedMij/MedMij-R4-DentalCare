@@ -375,8 +375,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- DENTAL FITNESS -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -412,7 +412,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
+      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
@@ -420,7 +420,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M<br/>Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -428,8 +428,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- VERRICHTING -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -441,7 +441,7 @@ Breedteverdeling (op basis van eerdere mapping):
   <tbody>
     <tr>
       <td>Verrichting</td><td>Rootconcept</td><td>NL-CM:14.1.1</td><td></td><td></td>
-      <td></td><td> Behandeling</td><td></td><td></td>
+      <td></td><td>Behandeling</td><td></td><td></td>
     </tr>
     <tr>
       <td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td> 01-01-2024</td><td>a</td>
@@ -477,7 +477,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener </td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener </td><td></td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
       <td>Aanvrager::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.10</td><td></td><td></td>
@@ -489,8 +489,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- BEHANDELDOEL -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -525,7 +525,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M<br/>Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -533,8 +533,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- MONDHYGIËNE -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -550,23 +550,23 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
-      <td></td><td> Datum</td><td></td><td>M</td>
+      <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Mondhygiëne (ObservatieNaam)</td><td>Item</td><td></td><td> Slechte mondhygiëne</td><td>a </td>
+      <td>Mondhygiëne (ObservatieNaam)</td><td>Item</td><td></td><td>Slechte mondhygiëne</td><td>a </td>
       <td></td><td>Mondhygiëne </td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td> Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
+      <td>Zowel de naam als specialisme tonen. </td><td> Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td>a of b</td>
-      <td></td><td> Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
+      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M<br/>Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -574,8 +574,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- CARIËSRISICO -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -591,23 +591,23 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
-      <td></td><td> Datum</td><td></td><td>M</td>
+      <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>CariësRisico<br/>(ObservatieNaam)</td><td>Item</td><td></td><td> Laag</td><td>a</td>
+      <td>CariësRisico<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>Laag</td><td>a</td>
       <td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td>a of b</td>
-      <td></td><td> Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
+      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M<br/>Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -615,8 +615,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- ASA-SCORE -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -632,25 +632,25 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
-      <td></td><td> Datum</td><td></td><td>M</td>
+      <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>ASA score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>ASA-score 1 Gezonde patiënt</td><td>a </td>
       <td></td><td>Score gezondheid (ASA)</td>
-      <td> ASA-score 1 (bevinding) = Gezonde patiënt <br/>ASA-score 2 (bevinding) = Milde systemische aandoening zonder belemmering<br/>ASA-score 3 (bevinding)  = Ernstige systemische aandoening, beperking dagelijkse activiteit<br/>ASA-score 4 (bevinding) = Ernstige invaliderende systeemaandoening, constante levensbedreiging<br/>ASA-score 5 (bevinding) = Stervende, overlijden &lt; 24 uur zonder ingreep<br/>ASA-score 6 (bevinding)  = Hersendood, Multi Orgaan Donatie</td>
+      <td>ASA-score 1 (bevinding) = Gezonde patiënt <br/>ASA-score 2 (bevinding) = Milde systemische aandoening zonder belemmering<br/>ASA-score 3 (bevinding)  = Ernstige systemische aandoening, beperking dagelijkse activiteit<br/>ASA-score 4 (bevinding) = Ernstige invaliderende systeemaandoening, constante levensbedreiging<br/>ASA-score 5 (bevinding) = Stervende, overlijden &lt; 24 uur zonder ingreep<br/>ASA-score 6 (bevinding)  = Hersendood, Multi Orgaan Donatie</td>
       <td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
+      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td>a of b</td>
-      <td></td><td> Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
+      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M<br/>Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -658,8 +658,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- PERIODIEKE PARODONTALE SCREENEN (PPS) -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -677,7 +677,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
-      <td></td><td> Datum</td><td></td><td>M</td>
+      <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>PPS score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>Pockets 0-3 millimeter = in orde</td><td>a </td>
@@ -685,15 +685,15 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td></td><td>a of b</td>
-      <td></td><td> Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td>Toelichting</td><td>Item</td><td></td><td></td>Dit betekent dat…<td>a of b</td>
+      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M<br/>Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -701,8 +701,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- PARAFUNCTIONELE ACTIVITEIT -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -720,7 +720,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
-      <td></td><td> Datum</td><td></td><td>M</td>
+      <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Parafunctionele activiteit<br/>(ObservatieWaarde)</td><td>Item</td><td></td><td>Overmatig knarsen bij stress</td><td>a </td>
@@ -728,15 +728,15 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td> Dit betekent dat…</td><td>a of b</td>
-      <td></td><td> Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
+      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M<br/>Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -744,8 +744,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- CONTACT -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -773,7 +773,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td><td></td>
+      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td><td></td>Zorgverlener naam en specialisme: S<br/>Overige datavelden: W</td>
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
@@ -813,8 +813,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- CONTACTPERSOON -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -886,7 +886,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M<br/>Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -894,8 +894,8 @@ Breedteverdeling (op basis van eerdere mapping):
 <!-- BETALER -->
 <table class="pgo-table">
   <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:10%"><col style="width:12%">
-    <col style="width:8%"><col style="width:9%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:24%"><col style="width:5%">
   </colgroup>
   <thead>
     <tr>
@@ -955,7 +955,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>OrganisatieNaam</td><td>Item</td><td>NL-CM:1.1.16</td><td>Zorgkantoor Groningen</td><td>a</td>
-      <td></td><td>Naam verzekeraar</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
+      <td></td><td>Naam verzekeraar</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>VerzekerdeNummer</td><td>Item</td><td>NL-CM:1.1.6</td><td>2312312312</td><td>b</td>
@@ -963,7 +963,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>????</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td>Organisatienaam: M<br/>Overige datavelden: W</td><td></td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M<br/>Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
