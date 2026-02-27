@@ -672,8 +672,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td>Periodieke Parodontale Screenen (PPS)</td><td>Rootconcept </td><td></td><td></td><td></td>
       <td>Controle  tandvlees</td>
-      <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen. </td>
-      <td></td><td></td>
+      <td></td><td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
     </tr>
     <tr>
       <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
