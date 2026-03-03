@@ -2,8 +2,6 @@
   filename: Index.page.md
 - name: Functional design
   filename: Functional-design
-  name: Functioneel ontwerp
-  filename: Functional-design.page2.md
 - name: FHIR IG
   filename: FHIR-IG.page.md
 - name: Artifact index
