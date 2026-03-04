@@ -49,48 +49,28 @@ Op dit moment wordt de usecase uit dit ontwerp getoetst in een Proof of Concept 
 ### Algemeen
 Een usecase is een gedetailleerde beschrijving van een praktijksituatie in de mondzorg waarbij voor een concrete situatie het uitwisselen van informatie wordt beschreven aan de hand van actoren (mensen, systemen) die specifieke rollen vervullen en transacties uitvoeren. Hierbij wordt vastgelegd welke informatie op welk moment wordt gedeeld. Een usecase is een verbijzondering van een specifiek onderdeel van het zorgproces in de mondzorg.
 
-### Granulair raadplegen Dental Fitness en Mondzorggegevens 
-We stappen in deze Proof of Concept (PoC) af van het monolithische concept van één grote gegevensdienst, en gaan toe naar granulaire uitwisseling en kwalificatie op het niveau van afzonderlijke zibs/FHIR-profielen.
- 
-Het huidige Medmij-Afsprakenstelsel maakt het mogelijk om granulair gegevens uit te wisselen. We willen met de mondzorggegevens toe naar een situatie waarbij elke zib (en dus elk FHIR-profiel) wordt beschouwd als een losstaande gegevensdienst met eigen: 
-
-- Specificaties (zib + bijhorende FHIR-profielen);
-- Kwalificatiecriteria;
-- Testscenario’s.
-
-Wat blijft hetzelfde? 
-
-- De zibs blijven leidend als informatiemodel;
-- De keten (bronsysteem > DVA > PGO) blijft bestaan; 
-- Authenticatie, autorisatie, adressering en logging blijven conform het Medmij-Afsprakenstelsel.
-
-### Usecase: Mondzorggegevens
-
-### Doel en relevantie granulair uitwisselen Algemene mondzorggegevens
-Deze usecase beschrijft het raadplegen van algemene mondzorggegevens in de PGO. Iedere burger kan behoefte hebben aan gegevens rondom tandheelkundige zorg. Met deze usecase is het mogelijk om mondzorggegevens op te halen betreffende mond en tanden door middel van een door de persoon gekozen PGO.
+### Doel en relevantie granulair raadplegen mondzorggegevens
+Het doel is om het voor patiënten mogelijk te maken om regie te nemen op hun eigen gezondheid door inzicht te geven over de langdurigezorggegevens die over henzelf gaan.
 
 #### Patient journey Algemene mondzorggegevens
 De patient journey beschrijft enkele momenten waarop je als patiënt zijnde inzicht kan of zou willen hebben in de Algemene mondzorggegevens
 
-Anita Jansen vermoed dat ze gaatjes heeft. Ze is naar een civiele tandarts geweest voor een tandarts controle. De Tandarts geeft aan dat ze risico heeft op cariës. Anita krijgt uitleg van de tandarts over hoe ze over mondhygiëne kan verbeteren zodat ze dit thuis kan toepassen. Anita gaat na haar controle naar huis en wil graag weten wat de tandarts over haar heeft geregistreerd, ze logt via haar mobiele telefoon in via DigiD in op haar eigen gekozen PGO. Anita vraagt haar gegevens bij desbetreffende tandarts op waar ze de controle afspraak had. Ze vraagt haar mondzorggegevens op via de PGO. De bevindingen die de tandarts tijdens haar controle afspraak heeft verteld worden  overzichtelijk en begrijpelijk  getoond in haar PGO, zo ziet Anita haar cariesrisico score en ziet ze dat haar mondhymondhygiëne als 'normaal' is geregistreerd. Ze vind het prettig dat ze de bevindingen van de tandarts thuis nog eens na kan lezen en logt uit.
+Anita Jansen vermoed dat ze gaatjes heeft. Ze is naar een civiele tandarts geweest voor een tandarts controle. De Tandarts geeft aan dat ze risico heeft op cariës. Anita krijgt uitleg van de tandarts over hoe ze over mondhygiëne kan verbeteren zodat ze dit thuis kan toepassen. Anita gaat na haar controle naar huis en wil graag weten wat de tandarts over haar heeft geregistreerd, ze logt via haar mobiele telefoon in via DigiD in op haar eigen gekozen PGO. Anita vraagt haar gegevens bij desbetreffende tandarts op waar ze de controle afspraak had. Ze vraagt haar mondzorggegevens op via de PGO. De bevindingen die de tandarts tijdens haar controle afspraak heeft verteld worden overzichtelijk en begrijpelijk getoond in haar PGO, zo ziet Anita haar cariesrisico score en ziet ze dat haar mondhymondhygiëne als 'normaal' is geregistreerd. Ze vind het prettig dat ze de bevindingen van de tandarts thuis nog eens na kan lezen en logt uit.
 
-### Procesbeschrijving Algemene mondzorggegevens 
-
-#### Precondities
--	De patiënt heeft toestemming gegeven voor het elektronisch uitwisselen van medische gegevens tussen het betreffende TIS/EPD en de eigen gekozen persoonlijke gezondheidsomgeving (PGO).
+#### Preproces
+- De patiënt beschikt over een eigen PGO dat aan de MedMij-eisen voldoet.  
+- De patiënt heeft toestemming gegeven voor het elektronisch uitwisselen van medische gegevens tussen het betreffende XIS en de eigen persoonlijke gezondheidsomgeving. 
+- Er is sprake van een dossier voor de patiënt binnen de sector mondzorg.   
 
 #### Proces
-<p>1) De persoon heeft een eigen gekozen PGO, logt in via DigiD en vraagt de mondzorggegevens op. </p>
-<p>2) De Dienstverlener Persoon (DVP) raadpleegt de gegevens bij de DVA (zorgaanbieder). </p>
-<p>3) Afhankelijk van de bevoegdheden van de PGO worden de mondzorggegevens beschikbaar gesteld aan de PGO conform de MedMij-gegevensdienst Mondzorg. </p>
-<p>4) Nadat de mondzorggegevens door de PGO zijn ontvangen, worden deze aan de persoon beschikbaar gesteld en worden zijn gegevens overzichtelijk en begrijpelijk getoond. </p>
+- De patiënt raadpleegt zijn mondzorggegevens in zijn PGO.
+- Het systeem van de patiënt (PGO) vraagt om beschikbare medische gegevens bij een XIS aan de hand van een zoekopdracht.
+- Het systeem van de zorgaanbieder (XIS) stelt de gevraagde gegevens beschikbaar voor de patiënt.
 
-#### Postconditie
--	De bronleverancier namelijk het Tandarts Informatie Systeem (TIS) kan een een deel van de mondzorggegevens beschikbaar stellen, de TIS heeft een deel van de gegevens namelijk niet geregistreerd. De mondzorggegevens die wél beschikbaar zijn worden beschikbaar gesteld. De DVA laat weten aan de PGO welke gegevens beschikbaar zijn gemaakt. De mate van granulariteit van gegevens die uitgewisseld worden staan in het Technisch Ontwerp en zijn aangeduid met de FHIR resources en search query's {{pagelink:TO, text:FHIR IG}}. 
+#### Postproces
+- In de PGO van de patiënt worden de opgevraagde gegevens overzichtelijk en begrijpelijk getoond. 
 
-{{render: guides/medmij-r4-dental-care-ig/images/Proces alternatieve flow.png}}
-
-### Bedrijfsrollen en UML activity diagram
+### Bedrijfsrollen
 
 Deze usecase onderscheidt twee bedrijfsrollen, namelijk de Persoon en de (Zorg)Aanbieder zoals te zien in onderstaande tabel.
 
@@ -98,72 +78,30 @@ Tabel 1 Bedrijfsrollen
 
 | Bedrijfsrol (actor) | Beschrijving bedrijfsrol |
 | --- | --- |
-| Patiënt/ Persoon | Gebruiker van het PGO |
-| (zorg)aanbieder | Gebruiker van het TIS |
+| Patiënt | Gebruiker van het PGO |
+| Zorgaanbieder | Gebruiker van het XIS |
+
+**Tabel 1: Bedrijfsrollen**
 
 ### Informatieoverdracht
-Zowel de persoon als de (zorg)aanbieder maken ieder gebruik van een informatiesysteem:
+Zowel de patiënt als de zorgaanbieder maken ieder gebruik van een informatiesysteem:
 
-- PGO (persoon)
-- TIS Tandarts Informatie Systeem (zorgaanbieder)
+- PGO (patiënt)
+- XIS (zorgaanbieder)
 
 #### Systemen en systeemrollen
-Deze systemen kennen ieder verschillende systeemrollen, die het uitwisselen van gegevens tussen deze systemen mogelijk maken. Hier gaat het om de Algemene mondzorggegevens bepaald door de tandarts.
-
-Tabel 2 Systeemrol
-
-| Systeem | Naam systeemrol | Systeemrolcode | Omschrijving |
-| --- | --- | --- | --- |
-| PGO | MondzorgGegevensRaadplegend | MM-1.0-MGR-FHIR [NTB?]| Raadplegen mondzorggegevens bij de zorgaanbieder |
-| TIS | MondzorgGegevensBeschikbaarstellend | MM-1.0-MGB-FHIR [NTB?]| Beschikbaar stellen mondzorggegevens aan de Patiënt |
+Deze systemen kennen ieder verschillende systeemrollen, die het uitwisselen van gegevens tussen deze systemen mogelijk maken. Hier gaat het om de BgLZ+-gegevens die zijn geregistreerd bij de zorgaanbieder naar de patiënt. Aangezien de BgLZ+ wordt uitgewisseld door middel van granulaire gegevensdiensten, is er per gegevensdienst een systeemrol opgesteld. De systeemrollen worden hier niet expliciet benoemd, maar zijn onderdeel van de specificatie van de individuele granulaire gegevensdiensten.
 
 ### Transacties en Transactiegroepen
-Het uitwisselen van gegevens tussen de verschillende systeemrollen gebeurt op basis van transacties, een verzameling van transacties (bijvoorbeeld een vraag- en antwoordbericht) vormt een zogeheten transactiegroep. Voor de transacties die tussen de systeemrollen plaatsvinden, wordt in Excel van Mondzorggegevens de berichtspecificatie beschreven. Hier is bij de scenario’s beschreven uit welke gegevenselementen een transactie bestaat en wat de kardinaliteit van deze elementen is. Voor de technische specificaties en de FHIR implementation guide, zie de {{pagelink:TO, text:FHIR IG}}. Alle gegevens zullen granulair uitgewisseld worden, wij wisselen dus niet in bundles van gegevens uit binnen dit project echter in aparte FHIR resources.
+Het uitwisselen van gegevens tussen de verschillende systeemrollen gebeurt op basis van transacties. Een verzameling van transacties (bijvoorbeeld een vraag- en antwoordbericht) vormt een zogeheten transactiegroep. Voor de transacties die tussen de systeemrollen plaatsvinden, wordt in [ART-DECOR](https://decor.nictiz.nl/ad/#/mm-bglzplus-/datasets/dataset/2.16.840.1.113883.2.4.3.11.60.151.1.1/2026-01-21T08:25:05) (Deze https nog aanpassen!!!!???) beschreven welke gegevenselementen uitgewisseld worden binnen de mondzorg. Voor de technische specificaties, zie het {{pagelink: TD, text: technisch ontwerp}}.
 
-### Ontwerp granulair uitwisselen Mondzorggegevens
+De onderstaande tabel geeft een overzicht van alle granulaire gegevensdiensten die van toepassing zijn voor de mondzorggegevens. Merk op dat de domeinoverstijgende gegevensdiensten in de MedMij R4 Core IG worden beschreven, terwijl domeinspecifieke gegevensdiensten in deze IG worden beschreven.
 
-{{render: guides/medmij-r4-dental-care-ig/images/Granulaire gegevensdiensten.png}}
+| Id | Gegevensdienstnaam zonder versie | Versie |
+| --- | --- | --- | --- |
+| 900000110 | [Verzamelen MedMij Core - Betaler (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Payer?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.2 |
+| 900000412 | [Verzamelen MedMij Core - Contact (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-PulseRate?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.2 |
+| 900000408 | {{pagelink: Procedure, text: Verzamelen Mondzorg - Verrichting}} | 1.0.0-beta.2 |
+| 900000413 | {{pagelink: Treatment Objective, text: Verzamelen Mondzorg - Behandeldoel}} | 1.0.0-beta.2 |
 
-Tabel 3 Transactiegroep
-
-| Transactiegroep | Transactie | Systeemrolcode | Systeem | Bedrijfsrol |
-| --- | --- | --- | --- | --- |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Patiënt | [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Patiënt | [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Verrichting| [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Verrichting| [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Behandeldoel | [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Behandeldoel | [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Mondhygiëne| [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Mondhygiëne | [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Cariësrisico  | [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Cariësrisico | [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Parafunctionele activteit| [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Parafunctionele activiteit | [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven ASA Score | [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven ASA Score | [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Periodieke Paradontale Screening | [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Periodieke Paradontale Screening | [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Betaler | [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Betaler | [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Contactpersoon | [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Contactpersoon | [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Mondzorggegevens (PULL) | Raadplegen granulair gegeven Contact | [NTB] | PGO | Patiënt |
-| Verzamelen Mondzorggegevens (PULL) | Beschikbaar stellen granulair gegeven Contact | [NTB] | TIS | Zorgaanbieder |
-
-### Dataset
-De dataset kan gevonden worden op [GitHub](https://github.com/Stichting-MedMij/MedMij-R4-DentalCare/blob/main/dataset/Dataset_MedMij_Mondzorg_1.0.0-beta.1.xlsx).
-
-### Weergaverichtlijnen
-
-#### Scope weergaverichtlijnen 
-Het betreft een richtlijn. PGO-leveranciers hebben zelf de keuze of zij (delen van de) richtlijn toepassen voor de weergave van mondzorggegevens.
-
-De richtlijn geeft handvatten voor:
-- het gebruik van patiëntvriendelijke termen en toelichting;
-- de inhoud van het overzicht van mondzorggegevens in de PGO;
-
-De richtlijn geeft géén handvatten voor de vormgeving (kleur, vorm, lettertype, etc.) van mondzorggegevens. Er is wel een UX-design ontwikkeld die richting aan de vormgeving geeft.
-
-### Inhoud weergaverichtlijn
-De weergaverichtlijnen voor de mondzorggegeven zijn [hier](https://medmij.atlassian.net/wiki/spaces/IER/pages/380960769/Weergaverichtlijn+Mondzorg+Beta+versie) te vinden.
+**Tabel 2: Granulaire gegevensdiensten relevant voor mondzorg**
