@@ -33,7 +33,7 @@ Toelichting op de zorginformatiebouwstenen: Mondzorg maakt gebruik van zib publi
 en Richtlijn 473 - Richtlijn bepaling Dental Fitness. (2023). Ministerie van Defensie.   
 
 ### Reikwijdte
-De reikwijdte van dit ontwerp beslaat de functionele beschrijvingen en de dataset voor de gegevensuitwisselingen die voortvloeien uit uitgevoerde mondzorg. Mondzorg richt zich op observaties, behandeldoelen, betaler en verrichtingen rondom het functioneren van de mond, specifiek de tanden en het tandvlees.
+De reikwijdte van dit ontwerp beslaat de functionele beschrijvingen en de dataset voor de gegevensuitwisselingen die voortvloeien uit uitgevoerde mondzorg. 
 
 ### Infrastructuur
 Geen nadere specificatie, anders dan genoemd in de [algemene inleiding](https://informatiestandaarden.nictiz.nl/wiki/MedMij:FO:V1/FunctioneelOntwerp#Infrastructuur) van de functionele ontwerpen binnen MedMij.
@@ -63,80 +63,6 @@ Wat blijft hetzelfde?
 - De zibs blijven leidend als informatiemodel;
 - De keten (bronsysteem > DVA > PGO) blijft bestaan; 
 - Authenticatie, autorisatie, adressering en logging blijven conform het Medmij-Afsprakenstelsel.
-
-### Usecase: Beoordeling Dental Fitness
-
-### Doel en relevantie uitwisselen Beoordeling Dental Fitness
-Bij een Defensie Tandheelkundige Dienst (DTD) worden de medewerkers ten minste jaarlijks beoordeeld tijdens het periodiek mondonderzoek de Dental Fit-status (DF). Een medewerker is Dental Fit als hij/zij in Class 1 of 2 valt. Als een medewerker in Class 3 of 4 valt, is de medwerker niet Dental Fit. De klassering van een medewerker vindt plaats op basis van NAVO-standaard AMedP-4.4. In aanvulling daarop wordt Class 0 toegevoegd: er is nog nooit contact geweest met een DTD en er is geen mondzorgdossier. Dental Fitness beschrijft de status van de gezondheid van de mond. 
-
-#### Patient journey Beoordeling Dental Fitness
-De patient journey beschrijft enkele momenten waarop je als patiënt zijnde inzicht kan of zou willen hebben in de Dental Fitness score.
-
-Berend van de Stok is klaar met zijn opleiding en is nu officieel militair. Berend krijgt een melding dat hij naar een Defensie Tandheelkundige Dienst (DTD) moet komen om zijn Dental Fitness score te bepalen. Er zijn verschillende DTD locaties in Nederland hij kiest een locatie uit  dichtbij waar hij woont. Berend belt desbetreffend DTD om een afpsraak te maken om zijn Dental Fitness score te bepalen. Berend krijgt te horen dat hij de Dental Fitness score ten minste jaarlijks moet laten uitvoeren door een DTD en maakt een afspraak. Berend laat tijdens zijn afspraak de Dental Fitness als beoordelingsinstrument uitvoeren door de tandarts, hij gaat weer naar huis en bedenkt zich dat hij vergeten is wat de uitslag van zijn Dental Fitness score is. Berend logt nu op zijn PGO en raadpleegt op zijn eigen mobiele telefoon via de PGO de gegevens op bij desbetreffende zorgaanbieder waar hij zijn Dental Fitness controle heeft laten uitvoeren. Berend zijn Dental Fitness is beschikbaar in zijn PGO, nu weet hij zijn Dental Fitness score. 
-
-### Procesbeschrijving Dental Fitness 
-
-#### Precondities
-- De  medewerker beschikt over een eigen PGO dat aan de MedMij-eisen voldoet. 
-- De patiënt heeft toestemming gegeven voor het elektronisch uitwisselen van medische gegevens tussen het betreffende TIS/EPD en de eigen persoonlijke gezondheidsomgeving.
-- Er is sprake van een dossier voor de medewerker binnen de DTD. 
-- De beoordelende medewerker is ingelogd met de juiste authenticatie en autorisatie. 
-
-#### Triggers
-- Vanwege een geplande operationele inzet vindt toetsing op Dental Fitness plaats, dit gebeurt ten minste jaarlijks. 
-
-#### Proces
-<p> 1) De zorgverlener  zorgt dat de voor de Dental Fitness benodigde gegevens over onderzoek, diagnose en behandelingen mondzorg compleet zijn in het dossier. </p>
-<p> 2) De beoordelend zorgprofessional klasseert de persoon conform het NAVO-protocol in klasse 1, 2, 3 of 4. Status 0 krijgt een medewerker automatisch als er wel een tandheelkundig dossier is maar de medewerker nog nooit door de DTD is gezien. De tandheelkundige dienst kent alleen de klassen 1/2/3 toe. Klasse 4 gaat automatisch na 1 jaar in. </p>
-<p> 3) De beoordelend zorgprofessional verwerkt de Dental Fitness Score in het TIS. </p>
-<p> 4) De mondzorggegevens Dental Fitness zijn compleet en kunnen geraadpleegd worden door de medewerker via de PGO. </p>
-
-### Alternatieve flow raadplegen Dental Fitness
-- Om de beoordeling af te ronden, is informatie van elders – waarvan bekend is dat die beschikbaar is – opgevraagd (stap 1 is nog niet afgerond).
-- De status van het dossier is niet helder en indeling in klasse 4 is niet gewenst omdat verwerking van gegevens plaatsvindt (stap 3 is nog niet afgerond).
-- De beoordeling wordt na enige tijd herhaald.
-- Omdat er nog nooit een mondzorgcontact bij DTD is geweest en daardoor geen mondzorgdossier bestaat, wordt een afspraak ingepland voor een consult waarin het dossier wordt aangemaakt en de DF-klassering wordt uitgevoerd.  
-
-#### Postconditie
-- De indeling in een Dental Fitness-klasse is maximaal 365 dagen geldig na de laatste beoordeling.
-
-### Bedrijfsrollen en UML activity diagram
-Deze usecase onderscheidt twee bedrijfsrollen, namelijk de Persoon en de (Zorg)Aanbieder zoals te zien in onderstaande tabel.
-
-Tabel 1 Bedrijfsrollen
-
-| Bedrijfsrol (actor) | Beschrijving bedrijfsrol |
-| --- | --- |
-| Patiënt/ Persoon | Gebruiker van de PGO |
-| (zorg)aanbieder | Gebruiker van het TIS |
-
-### Informatieoverdracht
-Zowel de persoon als de (zorg)aanbieder maken ieder gebruik van een informatiesysteem:
-
-- PGO (persoon)
-- TIS Tandarts Informatie Systeem ((zorg)aanbieder)
-
-#### Systemen en systeemrollen
-Deze systemen kennen ieder verschillende systeemrollen, die het uitwisselen van gegevens tussen deze systemen mogelijk maken. Hier gaat het om de Dental Fitness score bepaald door de DTD naar de persoon.
-
-Tabel 2 Systeemrol
-
-| Systeem | Naam systeemrol | Systeemrolcode | Omschrijving |
-| --- | --- | --- | --- |
-| PGO | Dental Fitness Raadplegend | MM-1.0-DFR-FHIR [NTB?]| Raadplegen Dental Fitness bij de zorgaanbieder |
-| TIS | Dental Fitness Beschikbaarstellend | MM-1.0-DFB-FHIR [NTB?] | Beschikbaar stellen Dental Fitness aan de patienpatiëntpatiënt |
-
-### Transacties en transactiegroepen
-Het uitwisselen van gegevens tussen de verschillende systeemrollen gebeurt op basis van transacties, een verzameling van transacties (bijvoorbeeld een vraag- en antwoordbericht) vormt een zogeheten transactiegroep. Voor de transacties die tussen de systeemrollen plaatsvinden, wordt in Excel van Mondzorggegevens de berichtspecificatie beschreven. Hier is bij de scenario’s beschreven uit welke gegevenselementen een transactie bestaat en wat de kardinaliteit van deze elementen is. Voor de technische specificaties en FHIR implementation guide, zie de {{pagelink:TO, text:FHIR IG}}.
-
-Tabel 3 Transactiegroep
-
-| Transactiegroep | Transactie | Systeemrolcode | Systeem | Bedrijfsrol |
-| --- | --- | --- | --- | --- |
-| Verzamelen Dental Fitness (PULL) | Raadplegen granulair gegeven Patiënt | [NTB] | PGO | Patiënt |
-| Verzamelen Dental Fitness (PULL) | Beschikbaar stellen granulair gegeven Patiënt | [NTB] | TIS | Zorgaanbieder |
-| Verzamelen Dental Fitness (PULL) | Raadplegen granulair gegeven Dental Fitness | [NTB]  | PGO | Patiënt |
-| Verzamelen Dental Fitness (PULL) | Beschikbaar stellen granulair gegeven Dental Fitness | [NTB] | TIS | Zorgaanbieder |
 
 ### Usecase: Mondzorggegevens
 
