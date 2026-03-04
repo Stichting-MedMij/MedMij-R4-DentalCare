@@ -105,6 +105,9 @@ De onderstaande tabel geeft een overzicht van alle granulaire gegevensdiensten d
 | 900000103 | {{pagelink: Treatment-Objective, text: Verzamelen Mondzorg - Behandeldoel}} | 1.0.0-beta.2 |
 | 900000104 | {{pagelink: Oral-Hygiene, text: Verzamelen Mondzorg - Mondhygiëne}} | 1.0.0-beta.2 |
 | 900000105 | {{pagelink: Caries-Risk, text: Verzamelen Mondzorg - Cariësrisico}} | 1.0.0-beta.2 |
-
+| 900000106 | {{pagelink: Parafunctional-Activity, text: Verzamelen Mondzorg - Parafunctionele activiteit}} | 1.0.0-beta.2 
+| 900000107 | {{pagelink: ASA-Score, text: Verzamelen Mondzorg - ASA-score}} | 1.0.0-beta.2 |
+| 900000108 | {{pagelink: Periodic-Periodontal-Screening-Score, text: Verzamelen Mondzorg - Periodiek parodontaal screening}} | 1.0.0-beta.2 |
+| 900000109 | {{pagelink: Dental-Fitness, text: Verzamelen Mondzorg - Dental Fitness}} | 1.0.0-beta.2 | 
 
 **Tabel 2: Granulaire gegevensdiensten relevant voor mondzorg**
