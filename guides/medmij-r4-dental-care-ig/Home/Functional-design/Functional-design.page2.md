@@ -93,7 +93,7 @@ Zowel de patiënt als de zorgaanbieder maken ieder gebruik van een informatiesys
 Deze systemen kennen ieder verschillende systeemrollen, die het uitwisselen van gegevens tussen deze systemen mogelijk maken. Hier gaat het om de mondzorggegevens die zijn geregistreerd bij de zorgaanbieder naar de patiënt. Aangezien de mondzorg wordt uitgewisseld door middel van granulaire gegevensdiensten, is er per gegevensdienst een systeemrol opgesteld. De systeemrollen worden hier niet expliciet benoemd, maar zijn onderdeel van de specificatie van de individuele granulaire gegevensdiensten.
 
 ### Transacties en Transactiegroepen
-Het uitwisselen van gegevens tussen de verschillende systeemrollen gebeurt op basis van transacties. Een verzameling van transacties (bijvoorbeeld een vraag- en antwoordbericht) vormt een zogeheten transactiegroep. Voor de transacties die tussen de systeemrollen plaatsvinden, wordt in [ART-DECOR](https://decor.nictiz.nl/ad/#/mm-bglzplus-/datasets/dataset/2.16.840.1.113883.2.4.3.11.60.151.1.1/2026-01-21T08:25:05) (Deze https nog aanpassen!!!!???) beschreven welke gegevenselementen uitgewisseld worden binnen de mondzorg. Voor de technische specificaties, zie het {{pagelink: FHIR-IG, text: technisch ontwerp}}.
+Het uitwisselen van gegevens tussen de verschillende systeemrollen gebeurt op basis van transacties. Een verzameling van transacties (bijvoorbeeld een vraag- en antwoordbericht) vormt een zogeheten transactiegroep. Voor de transacties die tussen de systeemrollen plaatsvinden, wordt in [ART-DECOR](https://decor.nictiz.nl/ad/#/mm-bglzplus-/datasets/dataset/2.16.840.1.113883.2.4.3.11.60.151.1.1/2026-01-21T08:25:05) (Deze https nog aanpassen!!!!???) beschreven welke gegevenselementen uitgewisseld worden binnen de mondzorg. Voor de technische specificaties, zie het {{pagelink: TO, text: technisch ontwerp}}.
 
 De onderstaande tabel geeft een overzicht van alle granulaire gegevensdiensten die van toepassing zijn voor de mondzorggegevens. Merk op dat de domeinoverstijgende gegevensdiensten in de MedMij R4 Core IG worden beschreven, terwijl domeinspecifieke gegevensdiensten in deze IG worden beschreven.
 
@@ -102,11 +102,11 @@ De onderstaande tabel geeft een overzicht van alle granulaire gegevensdiensten d
 | 900000110 | [Verzamelen MedMij Core - Betaler (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Payer?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.2 |
 | 900000111 | [Verzamelen MedMij Core - Contact (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-PulseRate?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.2 |
 | 900000102 | {{pagelink: Procedure, text: Verzamelen Mondzorg - Verrichting}} | 1.0.0-beta.2 |
-| 900000103 | {{pagelink: Treatment-Objective, text: Verzamelen Mondzorg - Behandeldoel}} | 1.0.0-beta.2 |
+| 900000103 | {{pagelink: Treatment-Objective, text: Verzamelen Mondzorg - Behandeldoel}} (Of toch een core zib??!!) | 1.0.0-beta.2 |
 | 900000104 | {{pagelink: Oral-Hygiene, text: Verzamelen Mondzorg - Mondhygiëne}} | 1.0.0-beta.2 |
 | 900000105 | {{pagelink: Caries-Risk, text: Verzamelen Mondzorg - Cariësrisico}} | 1.0.0-beta.2 |
 | 900000106 | {{pagelink: Parafunctional-Activity, text: Verzamelen Mondzorg - Parafunctionele activiteit}} | 1.0.0-beta.2 
-| 900000107 | {{pagelink: ASA-Score, text: Verzamelen Mondzorg - ASA-score}} | 1.0.0-beta.2 |
+| 900000107 | {{pagelink: ASA-Score, text: Verzamelen Mondzorg - ASA-score}} (Of toch een core zib??!!) | 1.0.0-beta.2 |
 | 900000108 | {{pagelink: Periodic-Periodontal-Screening-Score, text: Verzamelen Mondzorg - Periodiek parodontaal screening}} | 1.0.0-beta.2 |
 | 900000109 | {{pagelink: Dental-Fitness, text: Verzamelen Mondzorg - Dental Fitness}} | 1.0.0-beta.2 | 
 
