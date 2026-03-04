@@ -100,8 +100,11 @@ De onderstaande tabel geeft een overzicht van alle granulaire gegevensdiensten d
 | Id | Gegevensdienstnaam zonder versie | Versie |
 | --- | --- | --- | --- |
 | 900000110 | [Verzamelen MedMij Core - Betaler (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Payer?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.2 |
-| 900000412 | [Verzamelen MedMij Core - Contact (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-PulseRate?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.2 |
-| 900000408 | {{pagelink: Procedure, text: Verzamelen Mondzorg - Verrichting}} | 1.0.0-beta.2 |
-| 900000413 | {{pagelink: Treatment Objective, text: Verzamelen Mondzorg - Behandeldoel}} | 1.0.0-beta.2 |
+| 900000111 | [Verzamelen MedMij Core - Contact (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-PulseRate?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.2 |
+| 900000102 | {{pagelink: Procedure, text: Verzamelen Mondzorg - Verrichting}} | 1.0.0-beta.2 |
+| 900000103 | {{pagelink: Treatment-Objective, text: Verzamelen Mondzorg - Behandeldoel}} | 1.0.0-beta.2 |
+| 900000104 | {{pagelink: Oral-Hygiene, text: Verzamelen Mondzorg - Mondhygiëne}} | 1.0.0-beta.2 |
+| 900000105 | {{pagelink: Caries-Risk, text: Verzamelen Mondzorg - Cariësrisico}} | 1.0.0-beta.2 |
+
 
 **Tabel 2: Granulaire gegevensdiensten relevant voor mondzorg**
