@@ -395,14 +395,14 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Dental Fitness</td><td>Rootconcept</td>mz-dataelement-109<td></td><td></td><td></td>
+      <td>Dental Fitness</td><td>Rootconcept</td><td>mz-dataelement-109</td><td></td><td></td>
       <td>Het PGO ontvangt maar 1 Dental Fitness Score (geen historie)</td>
       <td>Dental Fitness</td>
       <td>De Dental Fitness Classificatie (DFC) is een tandheelkundige risico-inventarisatie en geeft aan in welke mate een militair kans loopt op tandheelkundige problemen welke (directe) behandeling behoeven binnen de 12 maanden vanaf het moment van vaststellen. </td>
       <td></td>
     </tr>
     <tr>
-      <td>DatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>mz-dataelement-110</td><td>01-01-2024</td><td>a</td>
       <td>Alleen datum, geen tijd</td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
