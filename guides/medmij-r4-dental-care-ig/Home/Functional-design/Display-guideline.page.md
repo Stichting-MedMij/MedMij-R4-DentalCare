@@ -5,30 +5,30 @@ topic: Weergaverichtlijn
 # Weergaverichtlijn 
 
 ## Inleiding
-Dit is de weergaverichtlijn voor gegevensdienst Mondzorg.
+Dit is de weergaverichtlijn voor de gegevensdienst Mondzorg.
 
 Het document bevat mock-ups die bedoeld zijn ter inspiratie. Persoonlijke gezondheidsomgevingen (PGO’s) kunnen deze voorbeelden naar eigen inzicht visueel vormgeven, zolang de gebruiksvriendelijkheid behouden blijft.
 
 ## Doel
-Deze richtlijn heeft als doel om duidelijke handvatten te bieden voor een patiëntvriendelijke en begrijpelijke weergave van langdurige zorg gegevens in PGO's. De richtlijn ondersteunt ontwikkelaars en zorgverleners bij het:
+Deze richtlijn heeft als doel om duidelijke handvatten te bieden voor een patiëntvriendelijke en begrijpelijke weergave van langdurige zorg gegevens in de PGO. De richtlijn ondersteunt ontwikkelaars en zorgverleners bij het:
 - gebruiken van begrijpelijke en patiëntvriendelijke termen en toelichtingen;
 - structureren en presenteren van een overzicht van gegevens op een manier die aansluit bij de informatiebehoefte van PGO gebruikers.
 
 De richtlijn geeft géén handvatten voor de vormgeving (kleur, vorm, lettertype, etc.) van gegevens.
 
 ## Scope 
-De scope van deze richtlijn bestaat uit de Mondzorg-gegevens die worden weergegeven in de PGO. Gegevens die via andere MedMij-gegevensdiensten verzameld worden in de PGO zijn hierin niet meegenomen.
+De scope van deze richtlijn bestaat uit de mondzorggegevens die worden weergegeven in de PGO. Gegevens die via andere MedMij-gegevensdiensten verzameld worden in de PGO zijn hierin niet meegenomen.
 
 ## Inhoud richtlijn
 Het inloggen en authentiseren bij de zorgaanbieder is niet opgenomen in deze richtlijn.
-De gebruiker gaat in de PGO naar het mondzorgoverzicht en/of zorgaanbieder‑mondzorgoverzicht waar de mondzorg gegevens getoond worden.
+De gebruiker gaat in de PGO naar het mondzorgoverzicht en/of zorgaanbieder‑mondzorgoverzicht waar de mondzorggegevens getoond worden.
 
 ### Overzichtsscherm mondzorg
-Er zijn twee weergaven gedefinieerd voor het overzicht van de mondzorg gegevens:
-- Scenario 1: Mondzorgoverzicht (met alle mondzorg gegevens van alle zorgaanbieders in één overzicht)
-- Scenario 2: Zorgaanbieder‑mondzorgoverzicht (Met alle mondzorg gegevens van één zorgaanbieder in één overzicht.)
+Er zijn twee weergaven gedefinieerd voor het overzicht van de mondzorggegevens:
+- Scenario 1: Mondzorgoverzicht (met alle mondzorggegevens van alle zorgaanbieders in één overzicht)
+- Scenario 2: Zorgaanbieder‑mondzorgoverzicht (met alle mondzorggegevens van één zorgaanbieder in één overzicht.)
 
-De twee scenario’s, hieronder uitgewerkt, geven weer hoe een UX design getoond kan worden. Een PGO is vrij om één of beide van deze scenario’s te ondersteunen.De richtlijn gaat ervan uit dat PGO’s een responsief ontwerp ondersteunen. 
+De twee scenario’s, hieronder uitgewerkt, geven weer hoe een UX design getoond kan worden. De PGO is vrij om één of beide van deze scenario’s te ondersteunen.De richtlijn gaat ervan uit dat de PGO een responsief ontwerp ondersteunen. 
 
 In deze richtlijn hebben we twee voorbeeld mockups opgenomen ter inspiratie. Daaronder hebben we elke CIM apart opgenomen, niet in mockup vorm maar in tabel vorm. De twee voorbeeld mockups gaan over afspraken, maar let op, de CIM “contact” is apart opgenomen in tabelvorm.
 
@@ -70,7 +70,7 @@ Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtss
 
 **Figuur 3: Voorbeeld Detailscherm - mondzorg**
 
-### Mondzorg gegevens per CIM
+### Mondzorggegevens per CIM
 Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn voor mondzorg, een voorbeeld in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
 
 ### Dental Fitness
@@ -369,7 +369,7 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <!-- 9 KOLOMMEN: 
 1 Naam data-item | 2 Type item | 3 Id | 4 Voorbeeld | 
 5 Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven | 6 Opmerkingen | 
-7 Advies tekst weergave in PGO | 8 Advies: Gebruikersvriendelijke toelichting | 9 Prioriteit (MoSCoW)
+7 Advies tekst weergave in de PGO | 8 Advies: Gebruikersvriendelijke toelichting | 9 Prioriteit (MoSCoW)
 Breedteverdeling (op basis van eerdere mapping): 
 13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3%  (totaal 100%) -->
 
@@ -387,7 +387,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th>
-      <th>Advies tekst weergave in PGO</th>
+      <th>Advies tekst weergave in de PGO</th>
       <th>Advies: Gebruikersvriendelijke toelichting</th>
       <th>Prioriteit (MoSCoW)</th>
     </tr>
@@ -395,7 +395,7 @@ Breedteverdeling (op basis van eerdere mapping):
   <tbody>
     <tr>
       <td>Dental Fitness</td><td>Rootconcept</td><td>mz-dataelement-109</td><td></td><td></td>
-      <td>Het PGO ontvangt maar 1 Dental Fitness Score (geen historie)</td>
+      <td>De PGO ontvangt maar 1 Dental Fitness Score (geen historie)</td>
       <td>Dental Fitness</td>
       <td>De Dental Fitness Classificatie (DFC) is een tandheelkundige risico-inventarisatie en geeft aan in welke mate een militair kans loopt op tandheelkundige problemen welke (directe) behandeling behoeven binnen de 12 maanden vanaf het moment van vaststellen. </td>
       <td></td>
@@ -406,7 +406,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>DentalFitnessScore</td><td>Item</td><td></td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
-      <td>De term DentalFitnessScore is heel bekend bij het personeel van defensie. Daarom hebben we de advies tekst weergave in PGO gelijk gehouden.</td>
+      <td>De term DentalFitnessScore is heel bekend bij het personeel van defensie. Daarom hebben we de advies tekst weergave in de PGO gelijk gehouden.</td>
       <td>DentalFitnessScore</td>
       <td>Klasse 0  “nooit gezien door een defensietandarts”<br/>Klasse 1 “vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen”<br/>Klasse 2 “kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden”<br/>Klasse 3 “huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken” <br/>Klasse 4 “vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig”</td>
       <td>M</td>
@@ -436,7 +436,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -497,7 +497,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -541,7 +541,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -582,7 +582,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -623,7 +623,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -666,7 +666,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -708,7 +708,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -751,7 +751,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -800,11 +800,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Redencontact:: Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td></td><td></td>
+      <td>Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Redencontact::Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td></td><td></td>
+      <td>Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
   </tbody>
@@ -820,21 +820,13 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>ContactPersoon</td><td>Rootconcept</td><td>NL-CM:3.1.1</td><td></td><td></td>
       <td></td><td>Contactpersoon</td><td></td><td></td>
-    </tr>
-    <tr>
-      <td>Rol</td><td>Item</td><td>NL-CM:3.1.2</td><td>Wettelijke vertegenwoordiger</td><td>a</td>
-      <td></td><td>Rol</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Relatie</td><td>Item</td><td>NL-CM:3.1.3</td><td>Vader</td><td>b</td>
-      <td></td><td>Relatie</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>Naamgegevens</td><td>Data, reference</td><td>NL-CM:3.1.4</td><td></td><td></td>
@@ -866,15 +858,15 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Huisnummer</td><td>Item</td><td>NL-CM:20.5.12</td><td>2</td><td>b</td>
-      <td>Huisnummer + Huisnummerlettere + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
+      <td>Huisnummer + Huisnummerletter + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Huisnummerletter</td><td>Item</td><td>NL-CM:20.5.11</td><td></td><td>b</td>
-      <td>Huisnummer + Huisnummerlettere + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
+      <td>Huisnummer + Huisnummerletter + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>HuisnummerToevoeging</td><td>Item</td><td>NL-CM:20.5.10</td><td></td><td>b</td>
-      <td>Huisnummer + Huisnummerlettere + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
+      <td>Huisnummer + Huisnummerletter + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Woonplaats</td><td>Item</td><td>NL-CM:20.5.3</td><td>Droom</td><td>b</td>
@@ -883,6 +875,14 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td>Land</td><td>Item</td><td>NL-CM:20.5.5</td><td>Dromenland</td><td>b</td>
       <td></td><td>Land</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Rol</td><td>Item</td><td>NL-CM:3.1.2</td><td>Wettelijke vertegenwoordiger</td><td>a</td>
+      <td></td><td>Rol</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Relatie</td><td>Item</td><td>NL-CM:3.1.3</td><td>Vader</td><td>b</td>
+      <td></td><td>Relatie</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
@@ -901,7 +901,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
       <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -960,6 +960,14 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td>VerzekerdeNummer</td><td>Item</td><td>NL-CM:1.1.6</td><td>2312312312</td><td>b</td>
       <td></td><td>Nummer verzekerde</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Adresgegevens</td><td>Reference</td><td>NL-CM:1.1.17</td><td></td><td>b</td>
+      <td></td><td></td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Contactgegevens</td><td>Reference</td><td>NL-CM:1.1.12</td><td></td><td>b</td>
+      <td></td><td></td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>????</td><td>Tendens</td><td>a</td>
