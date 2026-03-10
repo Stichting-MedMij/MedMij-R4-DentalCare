@@ -45,7 +45,7 @@ Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden
 
 Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden getoond worden, per zorgaanbieder. 
 
-{{render: guides/medmij-r4-dental-care-ig/images/Zorgaanbieder mondzorgoverzicht.png}} 
+{{render: guides/medmij-r4-dental-care-ig/images/Zorgorganisatie mondzorgoverzicht.png}} 
 
 **Figuur 2: Voorbeeld Zorgaanbieder - mondzorgoverzicht**
 
@@ -59,7 +59,7 @@ De acceptatiecriteria voor de overzichtsschermen van elke CIM is als volgt.
 | 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. |
 | 4 | Voor het dataveld *Datum op* kun je een specifieke periode selecteren. |
 | 5 | Alle datavelden in het overzichtsscherm zijn sorteerbaar. |
-| 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de paragraaf *Tabel met specificaties* voor de aanbevolen termen per opgehaald dataveld. |
+| 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de paragraaf {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld. |
 
 ### Detailscherm mondzorg
 Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtsscherm selecteert.
@@ -87,7 +87,6 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 |--------------------------------------------------|---------------|
 | DentalFitnessScore                                | Klasse 1: vereist geen tandheelkundige behandeling |
 | Datum                                             | 01-01-2024 |
-| Naam                                              | T.S. Pietersen |
 | Uitleg                                            | Dit betekent dat... |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
@@ -378,7 +377,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -422,7 +421,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -431,7 +430,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -475,7 +474,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:14.1.5</td><td>Tendens</td><td>a</td>
-      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M</td>
+      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
@@ -492,7 +491,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -527,7 +526,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -536,7 +535,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -568,7 +567,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -577,7 +576,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -609,7 +608,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -618,7 +617,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -652,7 +651,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -661,7 +660,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -694,7 +693,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M<br/></td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W<br/></td>
     </tr>
   </tbody>
 </table>
@@ -703,7 +702,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -737,7 +736,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -746,7 +745,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -778,7 +777,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
-      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M</td>
+      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
     <tr>
       <td>RedenContact</td><td>Container</td><td>NL-CM:15.1.13</td><td></td><td></td>
@@ -815,7 +814,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -887,7 +886,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -896,7 +895,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:9%"><col style="width:10%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -964,7 +963,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>????</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
