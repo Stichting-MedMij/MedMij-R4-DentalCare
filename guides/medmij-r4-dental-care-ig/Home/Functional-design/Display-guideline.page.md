@@ -377,7 +377,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -430,7 +430,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -491,7 +491,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -535,7 +535,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%">><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -576,7 +576,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -617,7 +617,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -660,7 +660,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -702,7 +702,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -745,7 +745,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -814,7 +814,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -895,7 +895,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:9%"><col style="width:11%"><col style="width:22%"><col style="width:6%">
+    <col style="width:10%"><col style="width:10%"><col style="width:10%"><col style="width:22%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
