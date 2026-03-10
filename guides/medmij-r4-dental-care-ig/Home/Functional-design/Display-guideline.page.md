@@ -30,12 +30,12 @@ Er zijn twee weergaven gedefinieerd voor het overzicht van de mondzorg gegevens:
 
 De twee scenario’s, hieronder uitgewerkt, geven weer hoe een UX design getoond kan worden. Een PGO is vrij om één of beide van deze scenario’s te ondersteunen.De richtlijn gaat ervan uit dat PGO’s een responsief ontwerp ondersteunen. 
 
-In deze richtlijn hebben we twee voorbeeld mockups opgenomen ter inspiratie. Daaronder hebben we elke zib apart opgenomen, niet in mockup vorm maar in tabel vorm. De twee voorbeeld mockups gaan over afspraken, maar let op, de zib “contact” is apart opgenomen in tabelvorm.
+In deze richtlijn hebben we twee voorbeeld mockups opgenomen ter inspiratie. Daaronder hebben we elke CIM apart opgenomen, niet in mockup vorm maar in tabel vorm. De twee voorbeeld mockups gaan over afspraken, maar let op, de CIM “contact” is apart opgenomen in tabelvorm.
 
 ### Voorbeeld mockup overzichtsschermen mondzorg
 <u>Mondzorgoverzicht:</u>
 
-Het overzichtsscherm van elke zib heeft dus een aparte pagina waar de datavelden getoond worden, voor alle (mondzorg) zorgaanbieders.
+Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden getoond worden, voor alle (mondzorg) zorgaanbieders.
 
 {{render: guides/medmij-r4-dental-care-ig/images/Mondzorgoverzicht.png}}
 
@@ -43,13 +43,13 @@ Het overzichtsscherm van elke zib heeft dus een aparte pagina waar de datavelden
 
 <u>Zorgaanbieder-mondzorgoverzicht:</u>
 
-Het overzichtsscherm van elke zib heeft dus een aparte pagina waar de datavelden getoond worden, per zorgaanbieder. 
+Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden getoond worden, per zorgaanbieder. 
 
 {{render: guides/medmij-r4-dental-care-ig/images/Zorgaanbieder mondzorgoverzicht.png}} 
 
 **Figuur 2: Voorbeeld Zorgaanbieder - mondzorgoverzicht**
 
-De acceptatiecriteria voor de overzichtsschermen van elke zib is als volgt.
+De acceptatiecriteria voor de overzichtsschermen van elke CIM is als volgt.
 
 
 | Nr | Acceptatiecriteria |
