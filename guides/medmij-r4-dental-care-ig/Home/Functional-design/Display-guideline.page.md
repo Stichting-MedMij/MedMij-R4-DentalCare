@@ -829,7 +829,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Contactpersoon</td><td></td><td></td>
     </tr>
     <tr>
-      <td>Naamgegevens</td><td>Data, reference</td><td>NL-CM:3.1.4</td><td></td><td></td>
+      <td>Naamgegevens</td><td>Reference</td><td>NL-CM:3.1.4</td><td></td><td></td>
       <td></td><td></td><td></td><td></td>
     </tr>
     <tr>
@@ -849,7 +849,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Initialen, voorvoegsel en achternaam in één veld weergeven</td><td>Naam</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Adresgegevens</td><td>Data, reference </td><td>NL-CM:3.1.5</td><td></td><td></td>
+      <td>Adresgegevens</td><td>Reference </td><td>NL-CM:3.1.5</td><td></td><td></td>
       <td></td><td></td><td></td><td></td>
     </tr>
     <tr>
@@ -877,11 +877,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Land</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Rol</td><td>Item</td><td>NL-CM:3.1.2</td><td>Wettelijke vertegenwoordiger</td><td>a</td>
+      <td>Rol</td><td>Item</td><td>NL-CM:3.1.2</td><td>Wettelijke vertegenwoordiger (code '24' in codesysteem 'RoleCode')</td><td>a</td>
       <td></td><td>Rol</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Relatie</td><td>Item</td><td>NL-CM:3.1.3</td><td>Vader</td><td>b</td>
+      <td>Relatie</td><td>Item</td><td>NL-CM:3.1.3</td><td>Vader (code 'FTH' in codesysteem 'COD821-VEKT')</td><td>b</td>
       <td></td><td>Relatie</td><td></td><td>S</td>
     </tr>
     <tr>
