@@ -9,8 +9,6 @@ Dit ontwerp beschrijft de databeschikbaarheid richting de persoon voor de mondzo
 
 De mondzorggegevens worden op een granulaire wijze uitgewisseld. Dit houdt in dat elke CIM binnen de mondzorg los opgevraagd en uitgewisseld kan worden, en dat voor elke CIM een zogenaamde granulaire gegevensdienst is gedefinieerd. Meer informatie over granulaire uitwisseling is te vinden in de [MedMij R4 Core IG](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-exchange?version=1.0.0). Deze https nog aanpassen!!!!???
 
-Merk op dat naast dit ontwerp ook de (functionele) eisen en richtlijnen beschreven in de [MedMij R4 Core IG](https://simplifier.net/guide/medmij-stu3-core-ig?version=1.0.0) (Deze https nog aanpassen!!!!???) en de door Nictiz gepubliceerde [Ontwerpen MedMij, versie 2020.02](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.02/Ontwerpen) van toepassing zijn.
-
 ### Doelgroep
 De doelgroep voor deze pagina wijkt niet af van de [algemene doelgroep](https://informatiestandaarden.nictiz.nl/wiki/MedMij:FO:V1/FunctioneelOntwerp#Doelgroep) van de functionele ontwerpen binnen MedMij.
 
@@ -95,19 +93,19 @@ Deze systemen kennen ieder verschillende systeemrollen, die het uitwisselen van 
 ### Transacties en Transactiegroepen
 Het uitwisselen van gegevens tussen de verschillende systeemrollen gebeurt op basis van transacties. Een verzameling van transacties (bijvoorbeeld een vraag- en antwoordbericht) vormt een zogeheten transactiegroep. Voor de transacties die tussen de systeemrollen plaatsvinden, wordt in [ART-DECOR](https://decor.nictiz.nl/ad/#/mm-bglzplus-/datasets/dataset/2.16.840.1.113883.2.4.3.11.60.151.1.1/2026-01-21T08:25:05) (Deze https nog aanpassen!!!!???) beschreven welke gegevenselementen uitgewisseld worden binnen de mondzorg. Voor de technische specificaties, zie het {{pagelink: TO, text: technisch ontwerp}}.
 
-De onderstaande tabel geeft een overzicht van alle granulaire gegevensdiensten die van toepassing zijn voor de mondzorggegevens. Merk op dat de domeinoverstijgende gegevensdiensten in de MedMij R4 Core IG worden beschreven, terwijl domeinspecifieke gegevensdiensten in deze IG worden beschreven.
+De onderstaande tabel geeft een overzicht van alle granulaire gegevensdiensten die van toepassing zijn voor de mondzorggegevens. De Dental Fitness gegevensdienst is uitsluitend voor de Defensie context van toepassing. Merk op dat de domeinoverstijgende gegevensdiensten in de MedMij R4 Core IG worden beschreven, terwijl domeinspecifieke gegevensdiensten in deze IG worden beschreven. 
 
 | Id | Gegevensdienstnaam zonder versie | Versie |
 | --- | --- | --- | --- |
-| 900000110 | [Verzamelen MedMij Core - Betaler (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Payer?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.2 |
-| 900000111 | [Verzamelen MedMij Core - Contact (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-PulseRate?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.2 |
-| 900000102 | {{pagelink: Procedure, text: Verzamelen Mondzorg - Verrichting}} | 1.0.0-beta.2 |
+| 900000111 | [Verzamelen MedMij Core - Contact (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-PulseRate?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.1 |
+| 900000110 | [Verzamelen MedMij Core - Betaler (zib2020/R4)](https://simplifier.net/guide/medmij-stu3-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Payer?version=1.0.0) (Deze https nog aanpassen!!!!???) | 1.0.0-beta.1 |
+| 900000102 | {{pagelink: Procedure, text: Verzamelen Mondzorg - Verrichting}} | 1.0.0-beta.1 |
 | 900000103 | {{pagelink: Treatment-Objective, text: Verzamelen Mondzorg - Behandeldoel}} (Of toch een core zib??!!) | 1.0.0-beta.2 |
-| 900000104 | {{pagelink: Oral-Hygiene, text: Verzamelen Mondzorg - Mondhygiëne}} | 1.0.0-beta.2 |
-| 900000105 | {{pagelink: Caries-Risk, text: Verzamelen Mondzorg - Cariësrisico}} | 1.0.0-beta.2 |
-| 900000106 | {{pagelink: Parafunctional-Activity, text: Verzamelen Mondzorg - Parafunctionele activiteit}} | 1.0.0-beta.2 
-| 900000107 | {{pagelink: ASA-Score, text: Verzamelen Mondzorg - ASA-score}} (Of toch een core zib??!!) | 1.0.0-beta.2 |
-| 900000108 | {{pagelink: Periodic-Periodontal-Screening-Score, text: Verzamelen Mondzorg - Periodiek parodontaal screening}} | 1.0.0-beta.2 |
-| 900000109 | {{pagelink: Dental-Fitness, text: Verzamelen Mondzorg - Dental Fitness}} | 1.0.0-beta.2 | 
+| 900000104 | {{pagelink: Oral-Hygiene, text: Verzamelen Mondzorg - Mondhygiëne}} | 1.0.0-beta.1 |
+| 900000105 | {{pagelink: Caries-Risk, text: Verzamelen Mondzorg - Cariësrisico}} | 1.0.0-beta.1 |
+| 900000106 | {{pagelink: Parafunctional-Activity, text: Verzamelen Mondzorg - Parafunctionele activiteit}} | 1.0.0-beta.1 
+| 900000107 | {{pagelink: ASA-Score, text: Verzamelen Mondzorg - ASA-score}} (Of toch een core zib??!!) | 1.0.0-beta.1 |
+| 900000108 | {{pagelink: Periodic-Periodontal-Screening-Score, text: Verzamelen Mondzorg - Periodiek parodontaal screening}} | 1.0.0-beta.1 |
+| 900000109 | {{pagelink: Dental Fitness, text: Verzamelen Mondzorg - Dental Fitness}} | 1.0.0-beta.1 | 
 
 **Tabel 2: Granulaire gegevensdiensten relevant voor mondzorg**
