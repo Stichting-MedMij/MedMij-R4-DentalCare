@@ -405,7 +405,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Alleen datum, geen tijd</td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>DentalFitnessScore</td><td>Item</td><td></td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
+      <td>DentalFitnessScore</td><td>Item</td><td>mz-dataelement-111</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
       <td>De term DentalFitnessScore is heel bekend bij het personeel van defensie. Daarom hebben we de advies tekst weergave in de PGO gelijk gehouden.</td>
       <td>DentalFitnessScore</td>
       <td>Klasse 0  “nooit gezien door een defensietandarts”<br/>Klasse 1 “vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen”<br/>Klasse 2 “kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden”<br/>Klasse 3 “huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken” <br/>Klasse 4 “vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig”</td>
@@ -453,11 +453,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Einddatum behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie, per tandwortel, zonder afsluiting</td><td>a</td>
+      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie, per tandwortel, zonder afsluiting (codesysteem 'NZa codes')</td><td>a</td>
       <td></td><td>Naam behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken</td><td>b</td>
+      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken (id 302196006 in codesysteem 'SNOMED CT')</td><td>b</td>
       <td></td><td>Manier  behandeling</td><td></td><td>S</td>
     </tr>
     <tr>
@@ -502,7 +502,7 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Behandeldoel </td><td>Rootconcept</td><td></td><td></td><td></td>
+      <td>Behandeldoel </td><td>Rootconcept</td><td>NL-CM:13.5.1</td><td></td><td></td>
       <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td></td><td></td><td></td>
     </tr>
     <tr>
@@ -546,11 +546,11 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Mondhygiëne</td><td>Rootconcept</td><td></td><td></td><td></td>
+      <td>Mondhygiëne</td><td>Rootconcept</td><td>mz-dataelement-120</td><td></td><td></td>
       <td></td><td>Mondhygiëne</td><td>Mondhygiëne is de (dagelijkse) verzorging van de mond en het gebit om deze gezond te houden en daardoor gaatjes (cariës) en tandvleesontstekingen te voorkomen.</td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
+      <td>ObservatieDatumTijd</td><td>Item</td><td>mz-dataelement-121</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -587,11 +587,11 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>CariësRisico</td><td>Rootconcept </td><td></td><td></td><td></td>
+      <td>CariësRisico</td><td>Rootconcept </td><td>mz-dataelement-124</td><td></td><td></td>
       <td></td><td>Risico op gaatjes </td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes. </td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
+      <td>ObservatieDatumTijd</td><td>Item</td><td>mz-dataelement-125</td><td>01-01-2024</td><td>a </td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -849,6 +849,18 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Initialen, voorvoegsel en achternaam in één veld weergeven</td><td>Naam</td><td></td><td>M</td>
     </tr>
     <tr>
+      <td>Contactgegevens</td><td>Reference </td><td>NL-CM:20.6.1</td><td></td><td></td>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>Telefoonnummer</td><td>Item</td><td>NL-CM:20.6.4</td><td>+31664615805</td><td>b</td>
+      <td></td><td>Telefoonnummer</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>EmailAdres</td><td>Item</td><td>NL-CM:20.6.7</td><td>zomaar@test.nl</td><td>b</td>
+      <td></td><td>Email</td><td></td><td>M</td>
+    </tr>
+    <tr>
       <td>Adresgegevens</td><td>Reference </td><td>NL-CM:3.1.5</td><td></td><td></td>
       <td></td><td></td><td></td><td></td>
     </tr>
@@ -950,7 +962,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Alleen datum, geen tijd</td><td>Einddatum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Verzekeringssoort</td><td>Item</td><td>NL-CM:1.1.15</td><td>Basis verzekering</td><td>b</td>
+      <td>Verzekeringssoort</td><td>Item</td><td>NL-CM:1.1.15</td><td>Basis verzekerd (code 'B' in codesysteem 'Verzekeringssoort')</td><td>b</td>
       <td></td><td>Soort Verzekering</td><td></td><td>M</td>
     </tr>
     <tr>
