@@ -1,0 +1,181 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mz-lm-DentalFitness",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "url": "http://medmij.nl/fhir/StructureDefinition/mz-lm-DentalFitness",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.3.1.1"
+    }
+  ],
+  "name": "MzLmDentalFitness",
+  "title": "DentalFitness",
+  "status": "draft",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Dental fitness according to the NATO classification system.",
+  "purpose": "This LogicalModel represents the DentalFitness Clinical Information Model (CIM) for patient use cases in the context of Dental Care.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "mz-dataset-100-beta2-20260324",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
+    },
+    {
+      "identity": "SNOMED",
+      "name": "SNOMED CT",
+      "uri": "http://snomed.info/sct"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://medmij.nl/fhir/StructureDefinition/mz-lm-DentalFitness",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "mz-lm-DentalFitness",
+        "path": "mz-lm-DentalFitness",
+        "short": "DentalFitness",
+        "definition": "Dental fitness according to the NATO classification system.",
+        "alias": [
+          "DentalFitness"
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-6",
+            "comment": "DentalFitness"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-DentalFitness.DentalFitnessDateTime",
+        "path": "mz-lm-DentalFitness.DentalFitnessDateTime",
+        "short": "Dental fitness date/time",
+        "definition": "The date and time at which the dental fitness was determined.",
+        "alias": [
+          "DentalFitnessDatumTijd"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-7",
+            "comment": "DentalFitnessDateTime"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "439771001",
+            "comment": "datum van gebeurtenis"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-DentalFitness.DentalFitnessValue",
+        "path": "mz-lm-DentalFitness.DentalFitnessValue",
+        "short": "Dental fitness value",
+        "definition": "The dental fitness.",
+        "alias": [
+          "DentalFitnessWaarde"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://medmij.nl/fhir/ValueSet/DentalFitness"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-8",
+            "comment": "DentalFitnessValue"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "440271000146100",
+            "comment": "'dental fitness' volgens NAVO-classificatiesysteem"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-DentalFitness.Performer",
+        "path": "mz-lm-DentalFitness.Performer",
+        "short": "Performer",
+        "definition": "The health professional who determined the ASA score.",
+        "alias": [
+          "Uitvoerder"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthProfessional"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-9",
+            "comment": "Performer"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-DentalFitness.Comment",
+        "path": "mz-lm-DentalFitness.Comment",
+        "short": "Comment",
+        "definition": "Comment on the dental fitness, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+        "alias": [
+          "Toelichting"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-10",
+            "comment": "Comment"
+          }
+        ]
+      }
+    ]
+  }
+}

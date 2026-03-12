@@ -1,0 +1,651 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mz-lm-Procedure",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "url": "http://medmij.nl/fhir/StructureDefinition/mz-lm-Procedure",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.3.1.7"
+    }
+  ],
+  "name": "MzLmProcedure",
+  "title": "Procedure",
+  "status": "draft",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Therapeutic or diagnostic procedure undergone by the patient in dental care.",
+  "purpose": "This LogicalModel represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)) adjusted such that it is suitable for implementation purposes in the context of Dental Care. In particular, it uses other (dental care-specific) terminology to indicate the procedure type, and the MedicalDevice and Requester concepts from the zib are omitted.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "mz-dataset-100-beta2-20260324",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
+    },
+    {
+      "identity": "SNOMED",
+      "name": "SNOMED CT",
+      "uri": "http://snomed.info/sct"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://medmij.nl/fhir/StructureDefinition/mz-lm-Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "mz-lm-Procedure",
+        "path": "mz-lm-Procedure",
+        "short": "Procedure",
+        "definition": "Therapeutic or diagnostic procedure undergone by the patient in dental care.",
+        "alias": [
+          "Verrichting"
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-26",
+            "comment": "Procedure"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "71388002",
+            "comment": "verrichting"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.ProcedureStartDate",
+        "path": "mz-lm-Procedure.ProcedureStartDate",
+        "short": "Procedure start date",
+        "definition": "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the start of the period of a series of related procedures.",
+        "alias": [
+          "VerrichtingStartDatum"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-27",
+            "comment": "ProcedureStartDate"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.ProcedureEndDate",
+        "path": "mz-lm-Procedure.ProcedureEndDate",
+        "short": "Procedure end date",
+        "definition": "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty.",
+        "alias": [
+          "VerrichtingEindDatum"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-28",
+            "comment": "ProcedureEndDate"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.ProcedureType",
+        "path": "mz-lm-Procedure.ProcedureType",
+        "short": "Procedure type",
+        "definition": "The name of the procedure based on the [Prestatie- en tariefbeschikking tandheelkundige zorg](https://puc.overheid.nl/nza/doc/PUC_764375_22/1/) and [Prestatie- en tariefbeschikking orthodontische zorg](https://puc.overheid.nl/nza/doc/PUC_764432_22/1/), both authored by the Nederlandse Zorgautoriteit (NZa).",
+        "alias": [
+          "VerrichtingType"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://medmij.nl/fhir/ValueSet/ProcedureTypeDentalCare"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-29",
+            "comment": "ProcedureType"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.ProcedureMethod",
+        "path": "mz-lm-Procedure.ProcedureMethod",
+        "short": "Procedure method",
+        "definition": "The method or technique that was used to perform the procedure, e.g. approach, lavage, pressuring, etc.",
+        "alias": [
+          "VerrichtingMethode"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.4--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-30",
+            "comment": "ProcedureMethod"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "260686004",
+            "comment": "methode"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.ProcedureAnatomicalLocation",
+        "path": "mz-lm-Procedure.ProcedureAnatomicalLocation",
+        "short": "Procedure anatomical location",
+        "definition": "Anatomical location which is the focus of the procedure.",
+        "alias": [
+          "VerrichtingAnatomischeLocatie"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-31",
+            "comment": "ProcedureAnatomicalLocation"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "405813007",
+            "comment": "directe locatie van verrichting"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.ProcedureAnatomicalLocation.Location",
+        "path": "mz-lm-Procedure.ProcedureAnatomicalLocation.Location",
+        "short": "Location",
+        "definition": "Localisation on/in the body.",
+        "alias": [
+          "Locatie"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.11--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-32",
+            "comment": "Location"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "363698007",
+            "comment": "locatie van bevinding"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.ProcedureAnatomicalLocation.Laterality",
+        "path": "mz-lm-Procedure.ProcedureAnatomicalLocation.Laterality",
+        "short": "Laterality",
+        "definition": "Laterality adds information about body site to the anatomical location, e.g. left.",
+        "alias": [
+          "Lateraliteit"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.7.2--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-33",
+            "comment": "Laterality"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "272741003",
+            "comment": "lateraliteit"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication",
+        "path": "mz-lm-Procedure.Indication",
+        "short": "Indication",
+        "definition": "The indication is the reason for the procedure.",
+        "alias": [
+          "Indicatie"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-34",
+            "comment": "Indication"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "363702006",
+            "comment": "heeft focus"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.ProblemType",
+        "path": "mz-lm-Procedure.Indication.ProblemType",
+        "short": "Problem type",
+        "definition": "The type of problem.",
+        "alias": [
+          "ProbleemType"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.1--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-35",
+            "comment": "ProblemType"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.ProblemName",
+        "path": "mz-lm-Procedure.Indication.ProblemName",
+        "short": "Problem name",
+        "definition": "The problem name defines the problem. Depending on the setting, different code systems can be used.",
+        "alias": [
+          "ProbleemNaam"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.3--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-36",
+            "comment": "ProblemName"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.FurtherSpecificationProblemName",
+        "path": "mz-lm-Procedure.Indication.FurtherSpecificationProblemName",
+        "short": "Further specification problem name",
+        "definition": "Further specification of problem name when it is recorded via a thesaurus or code system in which the required level of detail is not (yet) available.",
+        "alias": [
+          "NadereSpecificatieProbleemNaam"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-37",
+            "comment": "FurtherSpecificationProblemName"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.ProblemAnatomicalLocation",
+        "path": "mz-lm-Procedure.Indication.ProblemAnatomicalLocation",
+        "short": "Problem anatomical location",
+        "definition": "Anatomical location which is the focus of the problem.",
+        "alias": [
+          "ProbleemAnatomischeLocatie"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-38",
+            "comment": "ProblemAnatomicalLocation"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "405813007",
+            "comment": "directe locatie van verrichting"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.ProblemAnatomicalLocation.Location",
+        "path": "mz-lm-Procedure.Indication.ProblemAnatomicalLocation.Location",
+        "short": "Location",
+        "definition": "Localisation on/in the body.",
+        "alias": [
+          "Locatie"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.11--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-39",
+            "comment": "Location"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "363698007",
+            "comment": "locatie van bevinding"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.ProblemAnatomicalLocation.Laterality",
+        "path": "mz-lm-Procedure.Indication.ProblemAnatomicalLocation.Laterality",
+        "short": "Laterality",
+        "definition": "Laterality adds information about body site to the anatomical location, e.g. left.",
+        "alias": [
+          "Lateraliteit"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.7.2--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-40",
+            "comment": "Laterality"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "272741003",
+            "comment": "lateraliteit"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.ProblemStartDate",
+        "path": "mz-lm-Procedure.Indication.ProblemStartDate",
+        "short": "Problem start date",
+        "definition": "Onset of the symptom, complaint, functional limitation, complication or date of diagnosis. A 'vague' date, such as only the year or the month and the year, is permitted.",
+        "alias": [
+          "ProbleemBeginDatum"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-41",
+            "comment": "ProblemStartDate"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.ProblemEndDate",
+        "path": "mz-lm-Procedure.Indication.ProblemEndDate",
+        "short": "Problem end date",
+        "definition": "Date on which the disorder to which the problem applies, is considered not to be present anymore. This date needs not to be the same as the date of the change in problem status. A 'vague' date, such as only the year or the month and the year, is permitted. ",
+        "alias": [
+          "ProbleemEindDatum"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-42",
+            "comment": "ProblemEndDate"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.ProblemStatus",
+        "path": "mz-lm-Procedure.Indication.ProblemStatus",
+        "short": "Problem status",
+        "definition": "The problem status describes the condition of the problem:\n1. Active problems are problems of which the patient experiences symptoms or for which evidence exists.\n2. Problems with the status 'Inactive' refer to problems that don't affect the patient anymore or of which there is no evidence of existence anymore.",
+        "alias": [
+          "ProbleemStatus"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-43",
+            "comment": "ProblemStatus"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.VerificationStatus",
+        "path": "mz-lm-Procedure.Indication.VerificationStatus",
+        "short": "Verification status",
+        "definition": "Clinical status of the problem or the diagnosis.",
+        "alias": [
+          "VerificatieStatus"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-44",
+            "comment": "VerificationStatus"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "408729009",
+            "comment": "context van bevinding"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Indication.Comment",
+        "path": "mz-lm-Procedure.Indication.Comment",
+        "short": "Comment",
+        "definition": "Comment by the one who determined or updated the problem.",
+        "alias": [
+          "Toelichting"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-45",
+            "comment": "Comment"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Location",
+        "path": "mz-lm-Procedure.Location",
+        "short": "Location",
+        "definition": "The healthcare center where the procedure was, is or or will be carried out.",
+        "alias": [
+          "Locatie"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthcareProvider"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-46",
+            "comment": "Location"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-Procedure.Performer",
+        "path": "mz-lm-Procedure.Performer",
+        "short": "Performer",
+        "definition": "The health professional who carried out the procedure. In most cases, only the medical specialty is entered, and not the name of the health professional.",
+        "alias": [
+          "Uitvoerder"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthProfessional"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-47",
+            "comment": "Performer"
+          }
+        ]
+      }
+    ]
+  }
+}

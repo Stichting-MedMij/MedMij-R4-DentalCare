@@ -23,7 +23,7 @@
     }
   ],
   "description": "Therapeutic or diagnostic procedure undergone by the patient in dental care.",
-  "purpose": "This Procedure resource represents the Procedure building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes w.r.t. ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, future procedures are not relevant in the context of Dental Care, hence all corresponding guidance and mappings present in the nl-core profile have been omitted in this profile.",
+  "purpose": "This Procedure resource represents the Procedure building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care). This profile is based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)), but has no dependency on the corresponding nl-core profile because it contains non-compatible changes w.r.t. ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, future procedures are not relevant in the context of Dental Care, hence all corresponding guidance and mappings present in the nl-core profile have been omitted in this profile.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -207,7 +207,7 @@
         "id": "Procedure.performed[x]:performedPeriod.start",
         "path": "Procedure.performed[x].start",
         "short": "ProcedureStartDate",
-        "definition": "The start date (and if possible start time) of the procedure. A ‘vague’ date, such as only the year, is permitted. The element offers the option to indicate the start of the period of a series of related procedures.",
+        "definition": "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted. The element offers the option to indicate the start of the period of a series of related procedures.",
         "comment": "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed).",
         "alias": [
           "VerrichtingStartDatum"
@@ -229,7 +229,7 @@
         "id": "Procedure.performed[x]:performedPeriod.end",
         "path": "Procedure.performed[x].end",
         "short": "ProcedureEndDate",
-        "definition": "The end date (and if possible end time) of the procedure. A ‘vague’ date, such as only the year, is permitted. The element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty.",
+        "definition": "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted. The element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty.",
         "comment": "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed).",
         "alias": [
           "VerrichtingEindDatum"
@@ -252,7 +252,7 @@
         "path": "Procedure.performed[x]",
         "sliceName": "performedDateTime",
         "short": "ProcedureStartDate",
-        "definition": "The start date (and if possible start time) of the procedure. A ‘vague’ date, such as only the year, is permitted. `Procedure.performedDateTime` is used for instantaneous or very short lasting procedures.",
+        "definition": "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted. `Procedure.performedDateTime` is used for instantaneous or very short lasting procedures.",
         "comment": "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed).",
         "alias": [
           "VerrichtingStartDatum"
@@ -281,7 +281,7 @@
         "id": "Procedure.performer.actor",
         "path": "Procedure.performer.actor",
         "short": "Performer",
-        "definition": "The healthcare provider who carried out the procedure. In most cases, only the medical specialty is entered, and not the name of the healthcare provider.",
+        "definition": "The health professional who carried out the procedure. In most cases, only the medical specialty is entered, and not the name of the health professional.",
         "comment": "Each occurrence of the zib HealthProfessional is normally represented by _two_ FHIR resources: a PractitionerRole resource (instance of [nl-core-HealthProfessional-PractitionerRole](http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)) and a Practitioner resource (instance of [nl-core-HealthProfessional-Practitioner](http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner)). The Practitioner resource is referenced from the PractitionerRole instance. For this reason, sending systems should fill the reference to the PractitionerRole instance here, and not the Practitioner resource. Receiving systems can then retrieve the reference to the Practitioner resource from that PractitionerRole instance.\n\nIn rare circumstances, there is only a Practitioner instance, in which case it is that instance which will be referenced here. However, since this should be the exception, the nl-core-HealthProfessional-Practitioner profile is not explicitly mentioned as a target profile.",
         "alias": [
           "Uitvoerder"

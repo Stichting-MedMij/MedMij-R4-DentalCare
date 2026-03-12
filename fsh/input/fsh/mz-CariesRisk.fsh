@@ -32,31 +32,15 @@ Description: "Caries risk."
     """
   * ^alias = "Uitvoerder"
 * valueCodeableConcept 1..1
-* valueCodeableConcept from $CariesRiskValueSetURL (extensible)
+* valueCodeableConcept from CariesRisk_VS (extensible)
   * ^short = "CariesRiskValue"
-  * ^definition = "The risk of caries."
+  * ^definition = "The caries risk."
   * ^alias = "CariësrisicoWaarde"
 * note
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the caries risk, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
-
-ValueSet: CariesRisk
-Id: CariesRisk
-Title: "CariesRisk ValueSet."
-Description: "Caries risk."
-* ^url = $CariesRiskValueSetURL
-* ^identifier.use = #official
-* ^identifier.system = $URI
-* ^identifier.value = $CariesRiskValueSetOID
-* ^status = #draft
-* ^experimental = false
-* insert PublisherAndContact
-* $SCT#62482003 "laag"
-* $SCT#1250004 "verlaagd"
-* $SCT#35105006 "verhoogd"
-* $SCT#75540009 "hoog"
 
 Mapping: MedMijCariesRisk
 Source: MzCariesRisk

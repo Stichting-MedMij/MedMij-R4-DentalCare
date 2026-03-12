@@ -182,7 +182,7 @@
         "path": "Observation.value[x]",
         "sliceName": "valueCodeableConcept",
         "short": "CariesRiskValue",
-        "definition": "The risk of caries.",
+        "definition": "The caries risk.",
         "alias": [
           "CariësrisicoWaarde"
         ],

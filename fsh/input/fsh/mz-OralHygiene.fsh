@@ -4,7 +4,7 @@ Profile: MzOralHygiene
 Parent: Observation
 Id: mz-OralHygiene
 Title: "mz OralHygiene"
-Description: "Oral hygiene finding."
+Description: "Oral hygiene."
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
@@ -32,7 +32,7 @@ Description: "Oral hygiene finding."
     """
   * ^alias = "Uitvoerder"
 * valueCodeableConcept 1..1
-* valueCodeableConcept from $OralHygieneValueSetURL (extensible)
+* valueCodeableConcept from OralHygiene_VS (extensible)
   * ^short = "OralHygieneValue"
   * ^definition = "The oral hygiene."
   * ^alias = "MondhygiëneWaarde"
@@ -41,23 +41,6 @@ Description: "Oral hygiene finding."
     * ^short = "Comment"
     * ^definition = "Comment on the oral hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
-
-ValueSet: OralHygiene
-Id: OralHygiene
-Title: "OralHygiene ValueSet."
-Description: "Oral hygiene."
-* ^url = $OralHygieneValueSetURL
-* ^identifier.use = #official
-* ^identifier.system = $URI
-* ^identifier.value = $OralHygieneValueSetOID
-* ^status = #draft
-* ^experimental = false
-* insert PublisherAndContact
-* $SCT#425405005 "uitstekend"
-* $SCT#20572008 "goed"
-* $SCT#17621005 "normaal"
-* $SCT#556001 "slecht"
-* $SCT#1336219002 "zeer slecht"
 
 Mapping: MedMijOralHygiene
 Source: MzOralHygiene
