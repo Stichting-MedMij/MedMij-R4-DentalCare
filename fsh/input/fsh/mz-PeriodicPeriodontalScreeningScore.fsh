@@ -8,20 +8,20 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This Observation resource represents the PeriodicPeriodontalScreeningScore building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Observation resource represents the PeriodicPeriodontalScreeningScore Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
 * .
   * ^short = "PeriodicPeriodontalScreeningScore"
+  * ^definition = "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine the patient, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually."
   * ^alias = "PeriodiekeParodontaleScreeningScore"
 * code
   * ^patternCodeableConcept = $SCT#540501000146103
+* subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
-  * ^short = "Patient"
-  * ^alias = "Patient"
 * effectiveDateTime
-  * ^short = "PPSDateTime"
+  * ^short = "PeriodicPeriodontalScreeningScoreDateTime"
   * ^definition = "The date and time at which the PPS was performed."
-  * ^alias = "PPSDatumTijd"
+  * ^alias = "PeriodiekeParodontaleScreeningScoreDatumTijd"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who performed the PPS."
@@ -33,22 +33,21 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^alias = "Uitvoerder"
 * valueCodeableConcept 1..1
 * valueCodeableConcept from PeriodicPeriodontalScreeningScore_VS (required)
-  * ^short = "PPSScore"
+  * ^short = "PeriodicPeriodontalScreeningScoreValue"
   * ^definition = "The score of the PPS."
-  * ^alias = "PPSScore"
+  * ^alias = "PeriodiekeParodontaleScreeningScoreWaarde"
 * note
   * text
     * ^short = "Comment"
     * ^definition = "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MedMijPeriodicPeriodontalScreeningScore
+Mapping: MzPeriodicPeriodontalScreeningScoreMedMij-100-beta2
 Source: MzPeriodicPeriodontalScreeningScore
-Id: mz-dataset-100-beta1-20250814
-Title: "Dataset Mondzorg 1.0.0-beta.1 20250814"
-* -> "mz-dataelement-136" "PeriodicPeriodontalScreeningScore"
-* subject -> "mz-dataelement-1" "Patient"
-* effectiveDateTime -> "mz-dataelement-137" "PPSDateTime"
-* performer -> "mz-dataelement-150" "Performer"
-* valueCodeableConcept -> "mz-dataelement-138" "PPSScore"
-* note.text -> "mz-dataelement-139" "Comment"
+Id: mz-dataset-100-beta2-20260324
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
+* -> "mz-dataelement-21" "PeriodicPeriodontalScreeningScore"
+* effectiveDateTime -> "mz-dataelement-22" "PeriodicPeriodontalScreeningScoreDateTime"
+* performer -> "mz-dataelement-24" "Performer"
+* valueCodeableConcept -> "mz-dataelement-23" "PeriodicPeriodontalScreeningScoreValue"
+* note.text -> "mz-dataelement-25" "Comment"

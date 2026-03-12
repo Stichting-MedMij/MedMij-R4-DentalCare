@@ -8,16 +8,16 @@ Description: "Dental fitness according to the NATO classification system."
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This Observation resource represents the DentalFitness building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Observation resource represents the DentalFitness Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
 * . 
   * ^short = "DentalFitness"
+  * ^definition = "Dental fitness according to the NATO classification system."
   * ^alias = "DentalFitness"
 * code
   * ^patternCodeableConcept = $SCT#440271000146100
+* subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
-  * ^short = "Patient"
-  * ^alias = "Patient"
 * effectiveDateTime
   * ^short = "DentalFitnessDateTime"
   * ^definition = "The date and time at which the dental fitness was determined."
@@ -42,13 +42,12 @@ Description: "Dental fitness according to the NATO classification system."
     * ^definition = "Comment on the dental fitness, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MedMijDentalFitness
+Mapping: MzDentalFitnessMedMij-100-beta2
 Source: MzDentalFitness
-Id: mz-dataset-100-beta1-20250814
-Title: "Dataset Mondzorg 1.0.0-beta.1 20250814"
-* -> "mz-dataelement-109" "DentalFitness"
-* subject -> "mz-dataelement-1" "Patient"
-* effectiveDateTime -> "mz-dataelement-110" "DentalFitnessDateTime"
-* performer -> "mz-dataelement-145" "Performer"
-* valueCodeableConcept -> "mz-dataelement-111" "DentalFitnessValue"
-* note.text -> "mz-dataelement-112" "Comment"
+Id: mz-dataset-100-beta2-20260324
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
+* -> "mz-dataelement-6" "DentalFitness"
+* effectiveDateTime -> "mz-dataelement-7" "DentalFitnessDateTime"
+* performer -> "mz-dataelement-9" "Performer"
+* valueCodeableConcept -> "mz-dataelement-8" "DentalFitnessValue"
+* note.text -> "mz-dataelement-10" "Comment"

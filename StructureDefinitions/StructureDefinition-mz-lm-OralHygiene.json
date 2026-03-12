@@ -42,6 +42,11 @@
       "identity": "SNOMED",
       "name": "SNOMED CT",
       "uri": "http://snomed.info/sct"
+    },
+    {
+      "identity": "LOINC",
+      "name": "LOINC",
+      "uri": "http://loinc.org"
     }
   ],
   "kind": "logical",
@@ -136,7 +141,7 @@
         "id": "mz-lm-OralHygiene.Performer",
         "path": "mz-lm-OralHygiene.Performer",
         "short": "Performer",
-        "definition": "The health professional who determined the ASA score.",
+        "definition": "The health professional who determined the oral hygiene.",
         "alias": [
           "Uitvoerder"
         ],
@@ -178,6 +183,11 @@
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-15",
             "comment": "Comment"
+          },
+          {
+            "identity": "LOINC",
+            "map": "48767-8",
+            "comment": "Verklarend commentaar"
           }
         ]
       }

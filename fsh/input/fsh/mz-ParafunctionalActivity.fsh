@@ -8,15 +8,15 @@ Description: "Parafunctional activity."
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This Observation resource represents the ParafunctionalActivity building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Observation resource represents the ParafunctionalActivity Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
 * . 
   * ^short = "ParafunctionalActivity"
+  * ^definition = "Parafunctional activity."
   * ^alias = "ParafunctioneleActiviteit"
 * code ^patternCodeableConcept = $SCT#110353005
+* subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
-  * ^short = "Patient"
-  * ^alias = "Patient"
 * effectiveDateTime
   * ^short = "ParafunctionalActivityDateTime"
   * ^definition = "The date and time at which the parafunctional activity was determined."
@@ -40,13 +40,12 @@ Description: "Parafunctional activity."
     * ^definition = "Comment on the parafunctional activity, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MedMijParafunctionalActivity
+Mapping: MzParafunctionalActivityMedMij-100-beta2
 Source: MzParafunctionalActivity
-Id: mz-dataset-100-beta1-20250814
-Title: "Dataset Mondzorg 1.0.0-beta.1 20250814"
-* -> "mz-dataelement-128" "ParafunctionalActivity"
-* subject -> "mz-dataelement-1" "Patient"
-* effectiveDateTime -> "mz-dataelement-129" "ParafunctionalActivityDateTime"
-* performer -> "mz-dataelement-148" "Performer"
-* valueString -> "mz-dataelement-130" "ParafunctionalActivityValue"
-* note.text -> "mz-dataelement-131" "Comment"
+Id: mz-dataset-100-beta2-20260324
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
+* -> "mz-dataelement-16" "ParafunctionalActivity"
+* effectiveDateTime -> "mz-dataelement-17" "ParafunctionalActivityDateTime"
+* performer -> "mz-dataelement-19" "Performer"
+* valueString -> "mz-dataelement-18" "ParafunctionalActivityValue"
+* note.text -> "mz-dataelement-20" "Comment"

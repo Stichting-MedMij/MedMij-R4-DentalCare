@@ -8,16 +8,16 @@ Description: "Oral hygiene."
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This Observation resource represents the OralHygiene building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Observation resource represents the OralHygiene Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
 * . 
   * ^short = "OralHygiene"
+  * ^definition = "Oral hygiene."
   * ^alias = "Mondhygiëne"
 * code
   * ^patternCodeableConcept = $SCT#364126007
+* subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
-  * ^short = "Patient"
-  * ^alias = "Patient"
 * effectiveDateTime
   * ^short = "OralHygieneDateTime"
   * ^definition = "The date and time at which the oral hygiene was determined."
@@ -42,13 +42,12 @@ Description: "Oral hygiene."
     * ^definition = "Comment on the oral hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MedMijOralHygiene
+Mapping: MzOralHygieneMedMij-100-beta2
 Source: MzOralHygiene
-Id: mz-dataset-100-beta1-20250814
-Title: "Dataset Mondzorg 1.0.0-beta.1 20250814"
-* -> "mz-dataelement-120" "OralHygiene"
-* subject -> "mz-dataelement-1" "Patient"
-* effectiveDateTime -> "mz-dataelement-121" "OralHygieneDateTime"
-* performer -> "mz-dataelement-146" "Performer"
-* valueCodeableConcept -> "mz-dataelement-122" "OralHygieneValue"
-* note.text -> "mz-dataelement-123" "Comment"
+Id: mz-dataset-100-beta2-20260324
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
+* -> "mz-dataelement-11" "OralHygiene"
+* effectiveDateTime -> "mz-dataelement-12" "OralHygieneDateTime"
+* performer -> "mz-dataelement-14" "Performer"
+* valueCodeableConcept -> "mz-dataelement-13" "OralHygieneValue"
+* note.text -> "mz-dataelement-15" "Comment"

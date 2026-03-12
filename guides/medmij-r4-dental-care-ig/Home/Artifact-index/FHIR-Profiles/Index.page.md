@@ -13,12 +13,11 @@ The following FHIR profiles have been introduced for the Dental Care standard:
 | {{pagelink: LogicalModelsIndex, text: OralHygiene, anchor: MzLmOralHygiene}} | Observation | {{pagelink: FHIRProfilesIndex, text: mz-OralHygiene, anchor: MzOralHygiene}} |
 | {{pagelink: LogicalModelsIndex, text: ParafunctionalActivity, anchor: MzLmParafunctionalActivity}} | Observation | {{pagelink: FHIRProfilesIndex, text: mz-ParafunctionalActivity, anchor: MzParafunctionalActivity}} |
 | {{pagelink: LogicalModelsIndex, text: PeriodicPeriodontalScreeningScore, anchor: MzLmPeriodicPeriodontalScreeningScore}} | Observation | {{pagelink: FHIRProfilesIndex, text: mz-PeriodicPeriodontalScreeningScore, anchor: MzPeriodicPeriodontalScreeningScore}} |
-| {{pagelink: LogicalModelsIndex, text: Procedure, anchor: MzLmProcedure}} | Observation | {{pagelink: FHIRProfilesIndex, text: mz-Procedure, anchor: MzProcedure}} |
+| {{pagelink: LogicalModelsIndex, text: Procedure, anchor: MzLmProcedure}} | Procedure | {{pagelink: FHIRProfilesIndex, text: mz-Procedure, anchor: MzProcedure}} |
 
 **Table 1: Relevant dental care-specific profiles**
 
 Note the following:
-- The CIM Procedure is largely based on zib publication 2020, but uses other (dental care-specific) terminology to indicate the procedure type. As the underlying functional requirements are not entirely compatible, the mz-Procedure profile is largely based on, but not derived from, the [nl-core-Procedure-event](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-event&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) profile.
 - The [Nictiz Profiling Guidelines for FHIR R4](https://informatiestandaarden.nictiz.nl/wiki/FHIR:V1.0_FHIR_Profiling_Guidelines_R4) have been used as guidelines for creating the profiles.
 - The (element) descriptions present in the profiles are taken from the respective Logical Model the mapped concept originates from.
 - The ['open world' modeling](https://informatiestandaarden.nictiz.nl/wiki/FHIR:V1.0_FHIR_Profiling_Guidelines_R4#Open_vs._closed_world_modeling) approach is adopted as much as possible. Notable exceptions are cardinalities that have been restricted based on the functional dataset of the MedMij use case, such as several minimum cardinalities.

@@ -21,7 +21,7 @@ Description: "Caries risk."
 * CariesRiskValue 1..1 CodeableConcept "Caries risk value" "The caries risk."
 * CariesRiskValue from CariesRisk_VS (extensible)
   * ^alias = "CariësrisicoWaarde"
-* Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the ASA score."
+* Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the caries risk."
   * ^alias = "Uitvoerder"
 * Comment 0..* string "Comment" "Comment on the caries risk, including comments on for example the circumstances and/or disruptive factors that may influence the result."
   * ^alias = "Toelichting"
@@ -47,7 +47,7 @@ Description: "Dental fitness according to the NATO classification system."
 * DentalFitnessValue 1..1 CodeableConcept "Dental fitness value" "The dental fitness."
 * DentalFitnessValue from DentalFitness_VS (required)
   * ^alias = "DentalFitnessWaarde"
-* Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the ASA score."
+* Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the dental fitness."
   * ^alias = "Uitvoerder"
 * Comment 0..* string "Comment" "Comment on the dental fitness, including comments on for example the circumstances and/or disruptive factors that may influence the result."
   * ^alias = "Toelichting"
@@ -73,7 +73,7 @@ Description: "Oral hygiene."
 * OralHygieneValue 1..1 CodeableConcept "Oral hygiene value" "The oral hygiene."
 * OralHygieneValue from OralHygiene_VS (extensible)
   * ^alias = "MondhygiëneWaarde"
-* Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the ASA score."
+* Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the oral hygiene."
   * ^alias = "Uitvoerder"
 * Comment 0..* string "Comment" "Comment on the oral hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result."
   * ^alias = "Toelichting"
@@ -98,7 +98,7 @@ Description: "Parafunctional activity."
   * ^alias = "ParafunctioneleActiviteitDatumTijd"
 * ParafunctionalActivityValue 1..1 string "Parafunctional activity value" "The parafunctional activity."
   * ^alias = "ParafunctioneleActiviteitWaarde"
-* Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the ASA score."
+* Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the parafunctional activity."
   * ^alias = "Uitvoerder"
 * Comment 0..* string "Comment" "Comment on the parafunctional activity, including comments on for example the circumstances and/or disruptive factors that may influence the result."
   * ^alias = "Toelichting"
@@ -124,7 +124,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * PeriodicPeriodontalScreeningScoreValue 1..1 CodeableConcept "Periodic Periodontal Screening score value" "The score of the PPS."
 * PeriodicPeriodontalScreeningScoreValue from PeriodicPeriodontalScreeningScore_VS (required)
   * ^alias = "PeriodiekeParodontaleScreeningScoreWaarde"
-* Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the ASA score."
+* Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who performed the PPS."
   * ^alias = "Uitvoerder"
 * Comment 0..* string "Comment" "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."
   * ^alias = "Toelichting"
@@ -217,6 +217,13 @@ Title: "SNOMED CT"
 * CariesRiskDateTime -> "439771001" "datum van gebeurtenis"
 * CariesRiskValue -> "74024006" "vatbaarheid voor cariës"
 
+Mapping: MzLmCariesRiskLOINC
+Source: MzLmCariesRisk
+Target: "http://loinc.org"
+Id: LOINC
+Title: "LOINC"
+* Comment -> "48767-8" "Verklarend commentaar"
+
 Mapping: MzLmDentalFitnessMedMij-100-beta2
 Source: MzLmDentalFitness
 Id: mz-dataset-100-beta2-20260324
@@ -234,6 +241,13 @@ Id: SNOMED
 Title: "SNOMED CT"
 * DentalFitnessDateTime -> "439771001" "datum van gebeurtenis"
 * DentalFitnessValue -> "440271000146100" "'dental fitness' volgens NAVO-classificatiesysteem"
+
+Mapping: MzLmDentalFitnessLOINC
+Source: MzLmDentalFitness
+Target: "http://loinc.org"
+Id: LOINC
+Title: "LOINC"
+* Comment -> "48767-8" "Verklarend commentaar"
 
 Mapping: MzLmOralHygieneMedMij-100-beta2
 Source: MzLmOralHygiene
@@ -254,6 +268,13 @@ Title: "SNOMED CT"
 * OralHygieneDateTime -> "439771001" "datum van gebeurtenis"
 * OralHygieneValue -> "364126007" "status van mondhygiëne"
 
+Mapping: MzLmOralHygieneLOINC
+Source: MzLmOralHygiene
+Target: "http://loinc.org"
+Id: LOINC
+Title: "LOINC"
+* Comment -> "48767-8" "Verklarend commentaar"
+
 Mapping: MzLmParafunctionalActivityMedMij-100-beta2
 Source: MzLmParafunctionalActivity
 Id: mz-dataset-100-beta2-20260324
@@ -272,6 +293,13 @@ Title: "SNOMED CT"
 * ParafunctionalActivityDateTime -> "439771001" "datum van gebeurtenis"
 * ParafunctionalActivityValue -> "110353005" "parafunctionele gewoonte"
 
+Mapping: MzLmParafunctionalActivityLOINC
+Source: MzLmParafunctionalActivity
+Target: "http://loinc.org"
+Id: LOINC
+Title: "LOINC"
+* Comment -> "48767-8" "Verklarend commentaar"
+
 Mapping: MzLmPeriodicPeriodontalScreeningScoreMedMij-100-beta2
 Source: MzLmPeriodicPeriodontalScreeningScore
 Id: mz-dataset-100-beta2-20260324
@@ -289,6 +317,28 @@ Id: SNOMED
 Title: "SNOMED CT"
 * PeriodicPeriodontalScreeningScoreDateTime -> "439771001" "datum van gebeurtenis"
 * PeriodicPeriodontalScreeningScoreValue -> "540501000146103" "score op periodieke parodontale screening"
+
+Mapping: MzLmPeriodicPeriodontalScreeningScoreLOINC
+Source: MzLmPeriodicPeriodontalScreeningScore
+Target: "http://loinc.org"
+Id: LOINC
+Title: "LOINC"
+* Comment -> "48767-8" "Verklarend commentaar"
+
+Mapping: MzLmProcedureZibProcedure
+Source: MzLmProcedure
+Target: "https://zibs.nl/wiki/Procedure-v5.2(2020EN)"
+Id: zib-procedure-v5.2-2020EN
+Title: "zib Procedure-v5.2(2020EN)"
+* . -> "NL-CM:14.1.1" "Procedure"
+* ProcedureStartDate -> "NL-CM:14.1.2" "ProcedureStartDate"
+* ProcedureEndDate -> "NL-CM:14.1.3" "ProcedureEndDate"
+* ProcedureType -> "NL-CM:14.1.4" "ProcedureType"
+* ProcedureMethod -> "NL-CM:14.1.12" "ProcedureMethod"
+* ProcedureAnatomicalLocation -> "NL-CM:14.1.13" "ProcedureAnatomicalLocation"
+* Indication -> "NL-CM:14.1.9" "Indication"
+* Location -> "NL-CM:14.1.5" "Location"
+* Performer -> "NL-CM:14.1.6" "Performer"
 
 Mapping: MzLmProcedureMedMij-100-beta2
 Source: MzLmProcedure

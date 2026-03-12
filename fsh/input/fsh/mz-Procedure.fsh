@@ -8,7 +8,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This Procedure resource represents the Procedure building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care). This profile is based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)), but has no dependency on the corresponding nl-core profile because it contains non-compatible changes w.r.t. ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, future procedures are not relevant in the context of Dental Care, hence all corresponding guidance and mappings present in the nl-core profile have been omitted in this profile."
+* ^purpose = "This Procedure resource represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. This profile is based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)), but has no dependency on the corresponding nl-core-Procedure-event profile because it contains non-compatible changes with respect to ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, future procedures are not relevant in the context of Dental Care, hence all corresponding guidance and mappings (e.g. to Requester) present in the nl-core profile have been omitted in this profile."
 * insert Copyright
 * .
   * ^short = "Procedure"
@@ -30,8 +30,6 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^comment = "Since the _required_ binding of VerrichtingTypeCodelijsten in the nl-core profile does not contain the procedure types relevant for dental and orthodontic care, this profile is not derived from the nl-core profile."
   * ^alias = "VerrichtingType"
 * subject only Reference(Patient or Group or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
-  * ^short = "Patient"
-  * ^alias = "Patient"
 * performedPeriod
   * start
     * ^short = "ProcedureStartDate"
@@ -87,7 +85,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     """
   * ^alias = "TekstUitslag"
 
-Mapping: ZibProcedure
+Mapping: MzProcedureZibProcedure
 Source: MzProcedure
 Target: "https://zibs.nl/wiki/Procedure-v5.2(2020EN)"
 Id: zib-procedure-v5.2-2020EN
@@ -103,33 +101,32 @@ Title: "zib Procedure-v5.2(2020EN)"
 * reasonReference -> "NL-CM:14.1.9" "Indication"
 * bodySite -> "NL-CM:14.1.13" "ProcedureAnatomicalLocation"
 
-Mapping: ZibTextResult
+Mapping: MzProcedureZibTextResult
 Source: MzProcedure
 Target: "https://zibs.nl/wiki/TextResult-v4.4(2020EN)"
 Id: zib-textresult-v4.4-2020EN
 Title: "zib TextResult-v4.4(2020EN)"
 * report[textResult] -> "NL-CM:13.2.5" "Reversed reference for zib TextResult.Procedure"
 
-Mapping: ZibMedicalDevice
+Mapping: MzProcedureZibMedicalDevice
 Source: MzProcedure
 Target: "https://zibs.nl/wiki/MedicalDevice-v3.3.1(2020EN)"
 Id: zib-medicaldevice-v3.3.1-2020EN
 Title: "zib MedicalDevice-v3.3.1(2020EN)"
 * location -> "NL-CM:10.1.8" "Location (For specific situations only. See the comment on this element for more information.)"
 
-Mapping: MedMijProcedure
+Mapping: MzProcedureMedMij-100-beta2
 Source: MzProcedure
-Id: mz-dataset-100-beta1-20250814
-Title: "Dataset Mondzorg 1.0.0-beta.1 20250814"
-* -> "mz-dataelement-109" "Procedure"
-* status -> "mz-dataelement-110" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
-* status -> "mz-dataelement-111" "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
-* code -> "mz-dataelement-114" "ProcedureType"
-* subject -> "mz-dataelement-1" "Patient"
-* performedPeriod.start -> "mz-dataelement-110" "ProcedureStartDate"
-* performedPeriod.end -> "mz-dataelement-111" "ProcedureEndDate"
-* performedDateTime -> "mz-dataelement-110" "ProcedureStartDate"
-* performer.actor -> "mz-dataelement-118" "Performer"
-* location -> "mz-dataelement-117" "Location"
-* reasonReference -> "mz-dataelement-113" "Indication"
-* bodySite -> "mz-dataelement-112" "ProcedureAnatomicalLocation"
+Id: mz-dataset-100-beta2-20260324
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
+* -> "mz-dataelement-26" "Procedure"
+* status -> "mz-dataelement-27" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
+* status -> "mz-dataelement-28" "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
+* code -> "mz-dataelement-29" "ProcedureType"
+* performedPeriod.start -> "mz-dataelement-27" "ProcedureStartDate"
+* performedPeriod.end -> "mz-dataelement-28" "ProcedureEndDate"
+* performedDateTime -> "mz-dataelement-27" "ProcedureStartDate"
+* performer.actor -> "mz-dataelement-47" "Performer"
+* location -> "mz-dataelement-46" "Location"
+* reasonReference -> "mz-dataelement-34" "Indication"
+* bodySite -> "mz-dataelement-31" "ProcedureAnatomicalLocation"

@@ -35,6 +35,11 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
+      "identity": "zib-procedure-v5.2-2020EN",
+      "name": "zib Procedure-v5.2(2020EN)",
+      "uri": "https://zibs.nl/wiki/Procedure-v5.2(2020EN)"
+    },
+    {
       "identity": "mz-dataset-100-beta2-20260324",
       "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
     },
@@ -60,6 +65,11 @@
           "Verrichting"
         ],
         "mapping": [
+          {
+            "identity": "zib-procedure-v5.2-2020EN",
+            "map": "NL-CM:14.1.1",
+            "comment": "Procedure"
+          },
           {
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-26",
@@ -89,6 +99,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-procedure-v5.2-2020EN",
+            "map": "NL-CM:14.1.2",
+            "comment": "ProcedureStartDate"
+          },
+          {
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-27",
             "comment": "ProcedureStartDate"
@@ -111,6 +126,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-procedure-v5.2-2020EN",
+            "map": "NL-CM:14.1.3",
+            "comment": "ProcedureEndDate"
+          },
           {
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-28",
@@ -139,6 +159,11 @@
         },
         "mapping": [
           {
+            "identity": "zib-procedure-v5.2-2020EN",
+            "map": "NL-CM:14.1.4",
+            "comment": "ProcedureType"
+          },
+          {
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-29",
             "comment": "ProcedureType"
@@ -165,6 +190,11 @@
           "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.4--20200901000000"
         },
         "mapping": [
+          {
+            "identity": "zib-procedure-v5.2-2020EN",
+            "map": "NL-CM:14.1.12",
+            "comment": "ProcedureMethod"
+          },
           {
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-30",
@@ -193,6 +223,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-procedure-v5.2-2020EN",
+            "map": "NL-CM:14.1.13",
+            "comment": "ProcedureAnatomicalLocation"
+          },
           {
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-31",
@@ -285,6 +320,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-procedure-v5.2-2020EN",
+            "map": "NL-CM:14.1.9",
+            "comment": "Indication"
+          },
           {
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-34",
@@ -614,6 +654,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-procedure-v5.2-2020EN",
+            "map": "NL-CM:14.1.5",
+            "comment": "Location"
+          },
+          {
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-46",
             "comment": "Location"
@@ -639,6 +684,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-procedure-v5.2-2020EN",
+            "map": "NL-CM:14.1.6",
+            "comment": "Performer"
+          },
           {
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-47",
