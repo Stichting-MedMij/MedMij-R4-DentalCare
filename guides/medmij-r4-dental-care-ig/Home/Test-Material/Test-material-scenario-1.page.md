@@ -37,6 +37,73 @@
 | DeathIndicator | |
 | DateOfDeath | |
 
+
+##  data HealthProfessional
+
+| | |
+| --- | --- |
+| HealthProfessionalIdentificationNumber | |
+| NameInformation.FirstNames | |
+| NameInformation.Initials | A.B.D.O. |
+| NameInformation.GivenName | Erik |
+| NameInformation.NameUsage | |
+| NameInformation.LastName.Prefix | de |
+| NameInformation.LastName.LastName | Koning |
+| NameInformation.LastNamePartner.PartnerPrefix | |
+| NameInformation.LastNamePartner.PartnerLastName | |
+| NameInformation.Titles | |
+| Speciality | Tandartsen, algemeen practicus (code'1200' from codes ystem 'Vektis AGB-medische specialismen') |
+| Gender | Man (code 'M' from code system 'AdministrativeGender') |
+| AddressInformation.Street | Simon Smitweg  |
+| AddressInformation.HouseNumber | |
+| AddressInformation.HouseNumberLetter |  |
+| AddressInformation.HouseNumberAddition | |
+| AddressInformation.HouseNumberIndication | |
+| AddressInformation.Postcode | 2353 GA|
+| AddressInformation.PlaceOfResidence | Leiderdorp |
+| AddressInformation.Municipality | |
+| AddressInformation.Country | Netherlands (code 'NL' from code system 'GBA Tabel 34 (Landentabel)') |
+| AddressInformation.AdditionalInformation | |
+| AddressInformation.AddressType | |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | +31 612345600 |
+| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'Mobiel telefoonnummer')  |
+| ContactInformation.TelephoneNumbers.NumberType | |
+| ContactInformation.TelephoneNumbers.Comment | |
+| ContactInformation.EmailAddresses.EmailAddress | dekoning@tandarts.nl|
+| ContactInformation.EmailAddresses.EmailAddressType | |
+| Healthprovider |  |
+| HealthProfessionalRole |  |
+
+
+##  data Healthcare Provider
+
+| | |
+| --- | --- |
+| HealthProviderIdentificationNumber | 12095095 |
+| OrganizationName| Defensie Tandheelkundige Dienst  |
+| DepartmentSpeciality |  |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | 31653603740 |
+| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'Mobiel telefoonnummer')  |
+| ContactInformation.TelephoneNumbers.NumberType | |
+| ContactInformation.TelephoneNumbers.Comment | |
+| ContactInformation.EmailAddresses.EmailAddress | PJ.Jumpertz.01@mindef.nl|
+| ContactInformation.EmailAddresses.EmailAddressType | |
+| AddressInformation.Street | Herculeslaan   |
+| AddressInformation.HouseNumber | |
+| AddressInformation.HouseNumberLetter |  |
+| AddressInformation.HouseNumberAddition | |
+| AddressInformation.HouseNumberIndication | |
+| AddressInformation.Postcode | 3584 AB |
+| AddressInformation.PlaceOfResidence | Utrecht |
+| AddressInformation.Municipality | |
+| AddressInformation.Country | Netherlands (code 'NL' from code system 'GBA Tabel 34 (Landentabel)') |
+| AddressInformation.AdditionalInformation | |
+| AddressInformation.AddressType | Work Place (code 'WP' from code system 'Mobiel telefoonnummer') |
+| OrganizationType | |
+| OrganizationLocation.LocationName | |
+| OrganizationLocation.LocationNumber | |
+
+
 ## ASA score data
 
 | | |
@@ -45,6 +112,7 @@
 | ASAScoreValue | ASA-score 1 (bevinding) (code '413495001' from code system 'http://snomed.info/sct')|
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | Verandering gezondheid: enkel gebroken |
+
 
 ## Encounter 1 data
 
@@ -63,6 +131,7 @@
 | Encounter.Origin | |
 | Encounter.Destination | |
 
+
 ## Encounter 2 data
 
 | | |
@@ -80,6 +149,7 @@
 | Encounter.Origin | |
 | Encounter.Destination | |
 
+
 ## Payer data
 
 | | |
@@ -90,14 +160,14 @@
 | Comment | |
 
 
-## Treatment objective data
+## Treatmentobjective data
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | |
-| CariesRiskValue | |
-| Performer | |
-| Comment | |
+| DesiredHealthcareResult | Tandvleesontsteking behandelen |
+| DesiredHealthCondition::FunctionalOrMentalStatus| |
+| Problem | |
+
 
 ## Caries Risk data
 
@@ -108,6 +178,7 @@
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
 
+
 ## Dental Fitness data
 
 | | |
@@ -116,6 +187,7 @@
 | CariesRiskValue | |
 | Performer | |
 | Comment | |
+
 
 ## Oral Hygiene data
 
@@ -126,6 +198,7 @@
 | Performer | |
 | Comment | |
 
+
 ## Parafunctional Activity data
 
 | | |
@@ -134,6 +207,7 @@
 | ParafunctionalActivityValue | Overmatig knarsen bij stress |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
+
 
 ## Periodic Periodontal Screening Score data
 
@@ -144,11 +218,31 @@
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
 
+
 ## Procedure data
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | |
-| CariesRiskValue | |
-| Performer | |
-| Comment | |
+| ProcedureStartDate | 2024-04-29 |
+| ProcedureEndDate | |
+| ProcedureType | Plaatsen opbouw ten behoeve van implantaatkroon = in orde (code 'R67' from code system 'n.t.b.') |
+| ProcedureMethod | |
+| ProcedureAnatomicalLocation.Location | |
+| Procedure.ProcedureAnatomicalLocation.Laterality| |
+| Procedure.Indication | |
+| Procedure.Indication.ProblemType | |
+| Procedure.Indication.ProblemName | |
+| Procedure.Indication.FurtherSpecificationProblemName | |
+| Procedure.Indication.ProblemAnatomicalLocation | |
+| Procedure.Indication.Location | |
+| Procedure.Indication.Laterality | |
+| Procedure.Indication.ProblemStartDate | |
+| Procedure.Indication.ProblemEndDate | |
+| Procedure.Indication.ProblemStatus | |
+| Procedure.Indication.VerificationStatus | |
+| Procedure.Indication.Comment | |
+| Procedure.Location | Vliegbasis Gilze-Rijen |
+| Procedure.Performer | A.B.D.O. de Koning, Tandarts |
+
+
+
