@@ -1,4 +1,14 @@
 - name: Index
   filename: Index.page.md
-- name: ASA Score
-  filename: ASAScore.page.md
+- name: Caries Risk
+  filename: CariesRisk.page.md
+- name: Dental Fitness
+  filename: DentalFitness.page.md
+- name: Oral Hygiene
+  filename: OralHygiene.page.md
+- name: Parafunctional Activity
+  filename: ParafunctionalActivity.page.md
+- name: Periodic Periodontal Screening Score
+  filename: PeriodicPeriodontalScreeningScore.page.md
+- name: Procedure
+  filename: Procedure.page.md
