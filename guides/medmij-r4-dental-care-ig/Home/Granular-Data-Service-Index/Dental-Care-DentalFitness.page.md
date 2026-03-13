@@ -17,7 +17,7 @@ topic: DentalFitness
 ## Functional model
 | | |
 | --- | --- |
-| **CIM** | DentalFitness |
+| **CIM** | DentalFitness (based on the [AMedP-4.4 standard](https://www.coemed.org/files/stanags/03_AMEDP/AMedP-4.4_EDB_V1_E.pdf) authored by NATO) |
 | **Functional version** | 1.0.0-beta.2 |
 
 The Logical Model is included below.

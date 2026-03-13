@@ -17,7 +17,7 @@ topic: Procedure
 ## Functional model
 | | |
 | --- | --- |
-| **CIM** | Procedure |
+| **CIM** | [zib Procedure in publication 2020](https://zibs.nl/wiki/Procedure-v5.2(2020EN)) adjusted with dental-care specific terminology on ProcedureType, and without the MedicalDevice and Requester concepts |
 | **Functional version** | 1.0.0-beta.2 |
 
 The Logical Model is included below.
