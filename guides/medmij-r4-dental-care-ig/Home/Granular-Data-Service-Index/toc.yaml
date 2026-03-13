@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Retrieve Dental Care - Caries risk
+  filename: Dental-Care-CariesRisk.page.md
+- name: Retrieve Dental Care - Dental fitness
+  filename: Dental-Care-DentalFitness.page.md
+- name: Retrieve Dental Care - Oral hygiene
+  filename: Dental-Care-OralHygiene.page.md
+- name: Retrieve Dental Care - Parafunctional activity
+  filename: Dental-Care-Parafunctional activity.page.md
+- name: Retrieve Dental Care - Periodic Periodontal Screening score
+  filename: Dental-Care-PeriodicPeriodontalScreeningScore.page.md
+- name: Retrieve Dental Care - Procedure
+  filename: Dental-Care-Procedure.page.md
