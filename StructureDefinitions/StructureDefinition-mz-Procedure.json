@@ -23,7 +23,7 @@
     }
   ],
   "description": "Therapeutic or diagnostic procedure undergone by the patient in dental care.",
-  "purpose": "This Procedure resource represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. This profile is based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)), but has no dependency on the corresponding nl-core-Procedure-event profile because it contains non-compatible changes with respect to ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, future procedures are not relevant in the context of Dental Care, hence all corresponding guidance and mappings (e.g. to Requester) present in the nl-core profile have been omitted in this profile.",
+  "purpose": "This Procedure resource represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. This profile is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)), but has no dependency on the corresponding nl-core-Procedure-event profile because it contains non-compatible changes with respect to ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, guidance and mappings corresponding to the MedicalDevice and Requester concepts, as well as the reversed reference for zib TextResult, which are present in the nl-core profile, have been omitted in this profile.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -31,16 +31,6 @@
       "identity": "zib-procedure-v5.2-2020EN",
       "name": "zib Procedure-v5.2(2020EN)",
       "uri": "https://zibs.nl/wiki/Procedure-v5.2(2020EN)"
-    },
-    {
-      "identity": "zib-textresult-v4.4-2020EN",
-      "name": "zib TextResult-v4.4(2020EN)",
-      "uri": "https://zibs.nl/wiki/TextResult-v4.4(2020EN)"
-    },
-    {
-      "identity": "zib-medicaldevice-v3.3.1-2020EN",
-      "name": "zib MedicalDevice-v3.3.1(2020EN)",
-      "uri": "https://zibs.nl/wiki/MedicalDevice-v3.3.1(2020EN)"
     },
     {
       "identity": "mz-dataset-100-beta2-20260324",
@@ -307,7 +297,6 @@
         "path": "Procedure.location",
         "short": "Location",
         "definition": "The healthcare center where the procedure was or is carried out.",
-        "comment": "Please note that the zib concept Location::HealthcareProvider of zib MedicalDevice (NL-CM:10.1.8) is mapped onto this element, but it is also directly represented using a custom extension in the focal profile for that zib ([nl-core-MedicalDevice](http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice)). The reason for this is that the Location concept from zib MedicalDevice aligns with the Location concept from zib Procedure, but only for the situation that the Procedure is about placing an implant which is described using the instance of zib MedicalDevice. In this situation, the extension in the nl-core-MedicalDevice profile is redundant and it is advised to only use the current element to represent the Location concept.",
         "alias": [
           "Locatie"
         ],
@@ -325,11 +314,6 @@
             "identity": "zib-procedure-v5.2-2020EN",
             "map": "NL-CM:14.1.5",
             "comment": "Location"
-          },
-          {
-            "identity": "zib-medicaldevice-v3.3.1-2020EN",
-            "map": "NL-CM:10.1.8",
-            "comment": "Location (For specific situations only. See the comment on this element for more information.)"
           },
           {
             "identity": "mz-dataset-100-beta2-20260324",
@@ -403,46 +387,6 @@
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-31",
             "comment": "ProcedureAnatomicalLocation"
-          }
-        ]
-      },
-      {
-        "id": "Procedure.report",
-        "path": "Procedure.report",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "profile",
-              "path": "resolve()"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Procedure.report:textResult",
-        "path": "Procedure.report",
-        "sliceName": "textResult",
-        "short": "TextResult",
-        "comment": "The direction of the reference between zibs TextResult and Procedure is reversed in FHIR. Therefore the concept Procedure (NL-CM:13.2.5) of zib TextResult is mapped to this element.\n\nPlease note that on a functional level, zib TextResult references zib Procedure, but in FHIR this direction is reversed.",
-        "alias": [
-          "TekstUitslag"
-        ],
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://nictiz.nl/fhir/StructureDefinition/nl-core-TextResult"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "zib-textresult-v4.4-2020EN",
-            "map": "NL-CM:13.2.5",
-            "comment": "Reversed reference for zib TextResult.Procedure"
           }
         ]
       }

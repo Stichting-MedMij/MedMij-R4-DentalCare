@@ -37,7 +37,7 @@ Description: "Dental fitness according to the NATO classification system."
 * ^identifier.value = $MzLmDentalFitnessOID
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This LogicalModel represents the DentalFitness Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
+* ^purpose = "This LogicalModel represents the DentalFitness Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is based on the [AMedP-4.4 standard](https://www.coemed.org/files/stanags/03_AMEDP/AMedP-4.4_EDB_V1_E.pdf) authored by NATO."
 * insert Copyright
 * ^abstract = false
 * .
@@ -114,7 +114,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^identifier.value = $MzLmPeriodicPeriodontalScreeningScoreOID
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This LogicalModel represents the PeriodicPeriodontalScreeningScore Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
+* ^purpose = "This LogicalModel represents the PeriodicPeriodontalScreeningScore Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is based on the [Richtlijn Parodontale Screening, Diagnostiek en Behandeling in de Algemene praktijk](https://congressus-nvvp.s3.amazonaws.com/files/9f135c843bbc4ac28c26d829f10d00be.pdf?response-content-disposition=inline%3Bfilename%3D1._MC_Richtlijn_Parodontale_Screening.pdf&AWSAccessKeyId=AKIAIUTTQ23AZYZKILZQ&Signature=cdO3YKzGOIFSAtFDa43zsirqvno%3D&Expires=1773409137) authored by the NVvP."
 * insert Copyright
 * ^abstract = false
 * .
@@ -140,7 +140,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * ^identifier.value = $MzLmProcedureOID
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This LogicalModel represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)) adjusted such that it is suitable for implementation purposes in the context of Dental Care. In particular, it uses other (dental care-specific) terminology to indicate the procedure type, and the MedicalDevice and Requester concepts from the zib are omitted."
+* ^purpose = "This LogicalModel represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)) adjusted such that it is suitable for implementation purposes in the context of Dental Care. In particular, it uses dental care-specific terminology to indicate the ProcedureType, and the MedicalDevice and Requester concepts from the zib are omitted."
 * insert Copyright
 * ^abstract = false
 * .
