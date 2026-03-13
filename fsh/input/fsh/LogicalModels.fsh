@@ -149,8 +149,8 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^alias = "VerrichtingStartDatum"
 * ProcedureEndDate 0..1 dateTime "Procedure end date" "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
   * ^alias = "VerrichtingEindDatum"
-* ProcedureType 1..1 CodeableConcept "Procedure type" "The name of the procedure based on the [Prestatie- en tariefbeschikking tandheelkundige zorg](https://puc.overheid.nl/nza/doc/PUC_764375_22/1/) and [Prestatie- en tariefbeschikking orthodontische zorg](https://puc.overheid.nl/nza/doc/PUC_764432_22/1/), both authored by the Nederlandse Zorgautoriteit (NZa)."
-* ProcedureType from ProcedureTypeDentalCare_VS (extensible)
+* ProcedureType 1..1 CodeableConcept "Procedure type" "The name of the procedure based on the [Prestatiecodelijst Mondzorg](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis."
+* ProcedureType from ProcedureTypeVektisDentalCare_VS (extensible)
   * ^alias = "VerrichtingType"
 * ProcedureMethod 0..* CodeableConcept "Procedure method" "The method or technique that was used to perform the procedure, e.g. approach, lavage, pressuring, etc."
 * ProcedureMethod from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.4--20200901000000 (required)
