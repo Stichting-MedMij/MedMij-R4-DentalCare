@@ -1,4 +1,4 @@
-// CapabilityStatements used in MedMij R4 Core
+// CapabilityStatements used in Dental Care
 
 Instance: mz-CariesRisk-Retrieve
 InstanceOf: CapabilityStatement
@@ -72,7 +72,7 @@ Usage: #definition
 * status = #draft
 * date = "2026-03-24"
 * insert PublisherAndContactInstance
-* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Caries risk' transaction within MedMij R4 Core."
+* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Caries risk' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
 * insert CopyrightInstance
 * kind = #requirements
@@ -200,7 +200,7 @@ Usage: #definition
 * status = #draft
 * date = "2026-03-24"
 * insert PublisherAndContactInstance
-* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction within MedMij R4 Core."
+* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
 * insert CopyrightInstance
 * kind = #requirements
@@ -328,7 +328,7 @@ Usage: #definition
 * status = #draft
 * date = "2026-03-24"
 * insert PublisherAndContactInstance
-* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction within MedMij R4 Core."
+* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
 * insert CopyrightInstance
 * kind = #requirements
@@ -456,7 +456,7 @@ Usage: #definition
 * status = #draft
 * date = "2026-03-24"
 * insert PublisherAndContactInstance
-* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Parafunctional activity' transaction within MedMij R4 Core."
+* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Parafunctional activity' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
 * insert CopyrightInstance
 * kind = #requirements
@@ -584,7 +584,7 @@ Usage: #definition
 * status = #draft
 * date = "2026-03-24"
 * insert PublisherAndContactInstance
-* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction within MedMij R4 Core."
+* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
 * insert CopyrightInstance
 * kind = #requirements
@@ -719,7 +719,7 @@ Usage: #definition
 * status = #draft
 * date = "2026-03-24"
 * insert PublisherAndContactInstance
-* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Procedure' transaction within MedMij R4 Core."
+* description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Procedure' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
 * insert CopyrightInstance
 * kind = #requirements
