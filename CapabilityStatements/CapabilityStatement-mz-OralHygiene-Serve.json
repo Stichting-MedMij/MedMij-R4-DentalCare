@@ -1,14 +1,14 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "mz-ServeDentalCareData",
-  "url": "http://medmij.nl/fhir/CapabilityStatement/mz-ServeDentalCareData",
+  "id": "mz-OralHygiene-Serve",
+  "url": "http://medmij.nl/fhir/CapabilityStatement/mz-OralHygiene-Serve",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
   },
-  "name": "mz ServeDentalCareData",
-  "status": "active",
-  "date": "2025-11-03",
+  "name": "Mz OralHygiene Serve",
+  "status": "draft",
+  "date": "2026-03-24",
   "publisher": "MedMij",
   "contact": [
     {
@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve dental care data' transaction within Dental Care.",
+  "description": "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction within Dental Care.",
   "purpose": "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "kind": "requirements",
@@ -34,52 +34,12 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve dental care data' transaction (system role: MM-MGB-FHIR).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction (system role: MZ-OHB-1.0.0-beta.1-FHIR).",
       "resource": [
-        {
-          "type": "Patient",
-          "supportedProfile": [
-            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
-          ],
-          "interaction": [
-            {
-              "code": "search-type"
-            }
-          ]
-        },
-        {
-          "type": "Procedure",
-          "supportedProfile": [
-            "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
-          ],
-          "interaction": [
-            {
-              "code": "search-type"
-            }
-          ],
-          "searchInclude": [
-            "Procedure:performer"
-          ]
-        },
-        {
-          "type": "Goal",
-          "supportedProfile": [
-            "http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective"
-          ],
-          "interaction": [
-            {
-              "code": "search-type"
-            }
-          ]
-        },
         {
           "type": "Observation",
           "supportedProfile": [
-            "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene",
-            "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk",
-            "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity",
-            "http://medmij.nl/fhir/StructureDefinition/mz-ASAScore",
-            "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
+            "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
           ],
           "interaction": [
             {
@@ -91,40 +51,18 @@
               "name": "code",
               "type": "token"
             }
-          ],
-          "searchInclude": [
-            "Observation:performer"
           ]
         },
         {
-          "type": "Coverage",
+          "type": "Patient",
           "supportedProfile": [
-            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany",
-            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson"
+            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
           ],
+          "documentation": "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle.",
           "interaction": [
             {
-              "code": "search-type"
-            }
-          ],
-          "searchInclude": [
-            "Coverage:payor"
-          ]
-        },
-        {
-          "type": "Encounter",
-          "supportedProfile": [
-            "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
-          ],
-          "interaction": [
-            {
-              "code": "search-type"
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "date",
-              "type": "date"
+              "code": "read",
+              "documentation": "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
             }
           ]
         },
