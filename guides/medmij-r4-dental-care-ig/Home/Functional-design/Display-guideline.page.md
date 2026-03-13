@@ -43,7 +43,7 @@ Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden
 
 <u>Zorgaanbieder-mondzorgoverzicht:</u>
 
-Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden getoond worden, per zorgaanbieder. 
+Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden getoond worden, per zorgaanbieder. De in de mockup gebruikte tabs dienen enkel als voorbeeld van een mogelijke vormgeving.   
 
 {{render: guides/medmij-r4-dental-care-ig/images/Zorgorganisatie mondzorgoverzicht.png}} 
 
@@ -62,7 +62,7 @@ De acceptatiecriteria voor de overzichtsschermen van elke CIM is als volgt.
 | 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de paragraaf {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld. |
 
 ### Detailscherm mondzorg
-Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtsscherm selecteert.
+Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtsscherm selecteert. De in de mockup weergegeven gegevens dienen uitsluitend ter demonstratie.
 
 ### Voorbeeld mockup detailscherm mondzorg
 
@@ -140,14 +140,14 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 | Mondhygiëne           | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
 |------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Slechte mondhygiëne    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+| Slecht    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
 | Zeer slecht            | 01-12-2023  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Slechte mondhygiëne |  |
+| Geselecteerde regel: Slecht |  |
 |--------------------------------------------------|---------------|
-| Mondhygiëne                                       | Slechte mondhygiëne |
+| Mondhygiëne                                       | Slecht |
 | Datum                                             | 01-01-2024 |
 | Uitleg                                            | Dit betekent dat... |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
@@ -453,11 +453,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Einddatum behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie, per tandwortel, zonder afsluiting (codesysteem 'NZa codes')</td><td>a</td>
+      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie, per tandwortel, zonder afsluiting (code H42 in codesysteem 'NZa codes')</td><td>a</td>
       <td></td><td>Naam behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken (id 302196006 in codesysteem 'SNOMED CT')</td><td>b</td>
+      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken (code 302196006 in codesysteem 'SNOMED CT')</td><td>b</td>
       <td></td><td>Manier  behandeling</td><td></td><td>S</td>
     </tr>
     <tr>
@@ -554,7 +554,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Mondhygiëne (ObservatieNaam)</td><td>Item</td><td></td><td>Slechte mondhygiëne</td><td>a </td>
+      <td>Mondhygiëne (ObservatieNaam)</td><td>Item</td><td></td><td>Slecht (code slecht in codesysteem 'SNOMED CT')</td><td>a </td>
       <td></td><td>Mondhygiëne </td><td></td><td>M</td>
     </tr>
     <tr>
@@ -595,7 +595,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>CariësRisico<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>Laag</td><td>a</td>
+      <td>CariësRisico<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>Laag (code 62482003 in codesysteem 'SNOMED CT')</td><td>a</td>
       <td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -636,7 +636,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>ASA score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>ASA-score 1 Gezonde patiënt</td><td>a </td>
+      <td>ASA score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>ASA-score 1 Gezonde patiënt (code 413495001 in codesysteem 'SNOMED CT')</td><td>a </td>
       <td></td><td>Score gezondheid (ASA)</td>
       <td>ASA-score 1 (bevinding) = Gezonde patiënt <br/>ASA-score 2 (bevinding) = Milde systemische aandoening zonder belemmering<br/>ASA-score 3 (bevinding)  = Ernstige systemische aandoening, beperking dagelijkse activiteit<br/>ASA-score 4 (bevinding) = Ernstige invaliderende systeemaandoening, constante levensbedreiging<br/>ASA-score 5 (bevinding) = Stervende, overlijden &lt; 24 uur zonder ingreep<br/>ASA-score 6 (bevinding)  = Hersendood, Multi Orgaan Donatie</td>
       <td>M</td>
@@ -680,7 +680,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>PPS score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>Pockets 0-3 millimeter = in orde</td><td>a </td>
+      <td>PPS score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>Pockets 0-3 millimeter = in orde (code ppsscore1 in codesysteem 'Nog invullen??!!')</td><td>a </td>
       <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -760,7 +760,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Afspraak</td><td></td><td></td>
     </tr>
     <tr>
-      <td>ContactType</td><td>Item</td><td>NL-CM:15.1.2</td><td>Second opinion</td><td>a</td>
+      <td>ContactType</td><td>Item</td><td>NL-CM:15.1.2</td><td>Second opinion (code 'OTH' Second Opinion in codesysteem 'NullFlavor')</td><td>a</td>
       <td></td><td>Type contact of afspraak</td><td></td><td>M</td>
     </tr>
     <tr>
