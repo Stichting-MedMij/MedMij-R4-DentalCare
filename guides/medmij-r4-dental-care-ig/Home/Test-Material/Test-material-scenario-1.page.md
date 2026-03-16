@@ -246,7 +246,7 @@
 | | |
 | --- | --- |
 | PPSDateTime |2024-04-29T06:43:00+01:00|
-| PPSValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'n.t.b.') |
+| PPSValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system '2.16.528.1.1023.2.1.1') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
 
