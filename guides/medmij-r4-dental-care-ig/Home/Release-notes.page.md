@@ -5,6 +5,7 @@
 | Component             | Description  | Ticket   |
 | --------------------- | ------------ | ---------|
 | Test material         | In the test instances for the zib Encounter a reference to the patient has been added on `.subject`. | [DOSINZAGE1-695](https://medmij.atlassian.net/browse/DOSINZAGE1-695) |
+| Test material         | The test material has been relocated to the IG. | [DOSINZAGE1-883](https://medmij.atlassian.net/browse/DOSINZAGE1-883) |
 
 ## 1.0.0-beta.1
 

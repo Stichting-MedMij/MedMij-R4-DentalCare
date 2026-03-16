@@ -1,4 +1,4 @@
-# Scenario 1
+# Scenario 2
 
 ## Patient data
 
@@ -6,33 +6,33 @@
 | --- | --- |
 | NameInformation.FirstNames | |
 | NameInformation.Initials | |
-| NameInformation.GivenName | Erik |
+| NameInformation.GivenName | Anita |
 | NameInformation.NameUsage | |
-| NameInformation.LastName.Prefix | van |
-| NameInformation.LastName.LastName | Oranje |
+| NameInformation.LastName.Prefix | |
+| NameInformation.LastName.LastName | Jansen |
 | NameInformation.LastNamePartner.PartnerPrefix | |
 | NameInformation.LastNamePartner.PartnerLastName | |
 | NameInformation.Titles | |
-| AddressInformation.Street | De Doerak |
-| AddressInformation.HouseNumber | 57 |
-| AddressInformation.HouseNumberLetter | A |
+| AddressInformation.Street | Achillesstraat |
+| AddressInformation.HouseNumber | 12 |
+| AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 6123 PP |
-| AddressInformation.PlaceOfResidence | Montferland |
+| AddressInformation.Postcode | 1234 AA |
+| AddressInformation.PlaceOfResidence | Amsterdam |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Officieel Adres (code 'HP' from code system 'AddressUse') |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345600 |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345678 |
 | ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse')  |
 | ContactInformation.TelephoneNumbers.NumberType | |
 | ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | erikvanoranje@icloud.com |
+| ContactInformation.EmailAddresses.EmailAddress | anitajansen@icloud.com |
 | ContactInformation.EmailAddresses.EmailAddressType | |
-| PatientIdentificationNumber | 999998286 (in identifier system 'Burgerservicenummer') |
-| DateOfBirth | 02-08-1991 |
-| Gender | Man (code 'M' from code system 'AdministrativeGender') |
+| PatientIdentificationNumber | 999998298 (in identifier system 'Burgerservicenummer') |
+| DateOfBirth | 15-03-2010 |
+| Gender | Vrouw (code 'F' from code system 'AdministrativeGender') |
 | MultipleBirthIndicator | |
 | DeathIndicator | |
 | DateOfDeath | |
@@ -41,13 +41,13 @@
 
 | | |
 | --- | --- |
-| HealthProfessionalIdentificationNumber | 12070100 (in identifier system 'BIG register inschrijvingsnummer') |
+| HealthProfessionalIdentificationNumber | 12101002 (in identifier system 'BIG register inschrijvingsnummer') |
 | NameInformation.FirstNames | |
-| NameInformation.Initials | A.B.D.O. |
+| NameInformation.Initials | D. |
 | NameInformation.GivenName | |
 | NameInformation.NameUsage | |
 | NameInformation.LastName.Prefix | de |
-| NameInformation.LastName.LastName | Koning |
+| NameInformation.LastName.LastName | Ruiter |
 | NameInformation.LastNamePartner.PartnerPrefix | |
 | NameInformation.LastNamePartner.PartnerLastName | |
 | NameInformation.Titles | |
@@ -55,7 +55,7 @@
 | Gender | |
 | AddressInformation.Street | Simon Smitweg  |
 | AddressInformation.HouseNumber | 1 |
-| AddressInformation.HouseNumberLetter |  |
+| AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 2353 GA |
@@ -64,11 +64,11 @@
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345601 |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345678 |
 | ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'AddressUse')  |
 | ContactInformation.TelephoneNumbers.NumberType | |
 | ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | dekoning@tandarts.nl |
+| ContactInformation.EmailAddresses.EmailAddress | deruiter@tandarts.nl |
 | ContactInformation.EmailAddresses.EmailAddressType | |
 | HealthcareProvider | Defensie Tandheelkundige Dienst |
 | HealthProfessionalRole | |
@@ -131,67 +131,67 @@
 
 | | |
 | --- | --- |
-| ASAScoreDateTime | 29-04-2024 06:43 |
-| ASAScoreValue | ASA-score 1 (code '413495001' from code system 'SNOMED CT')|
-| Performer | A.B.D.O. de Koning, Tandarts |
-| Comment | Verandering gezondheid: enkel gebroken |
+| ASAScoreDateTime | 11-02-2022 10:43 |
+| ASAScoreValue | ASA-score 2 (code '413496000' from code system 'SNOMED CT')|
+| Performer | D. de Ruiter, Tandarts |
+| Comment | Allergisch voor hooikoorts, rookt 12 sigaretten per dag, gebruikt medicatie Cetirizine |
 
 ## Caries Risk data
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | 29-04-2024 06:43 |
-| CariesRiskValue | Laag (code '62482003' from code system 'SNOMED CT')  |
-| Performer | A.B.D.O. de Koning, Tandarts |
+| CariesRiskDateTime | 11-02-2022 10:43 |
+| CariesRiskValue | Verlaagd (code '1250004' from code system 'SNOMED CT')  |
+| Performer | D. de Ruiter, Tandarts |
 | Comment | |
 
 ## Dental Fitness data
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | 02-02-2024 06:43 |
-| DentalFitnessValue | Klasse 1 (code '258392002' from code system 'SNOMED CT') |
-| Performer | A.B.D.O. de Koning, Tandarts |
+| DentalFitnessDateTime | 08-09-2024 11:43 |
+| DentalFitnessValue | Klasse 0 (code '440351000146101' from code system 'SNOMED CT') |
+| Performer | D. de Ruiter, Tandarts |
 | Comment | |
 
 ## Oral Hygiene data
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | 29-04-2024 06:43 |
-| OralHygieneValue | Slecht (code '556001' from code system 'SNOMED CT') |
-| Performer | A.B.D.O. de Koning, Tandarts |
+| OralHygieneDateTime | 11-02-2022 10:43 |
+| OralHygieneValue | Zeer slecht (code '1336219002' from code system 'SNOMED CT') |
+| Performer | D. de Ruiter, Tandarts |
 | Comment | |
 
 ## Parafunctional Activity data
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | 29-04-2024 06:43 |
-| ParafunctionalActivityValue | Overmatig knarsen bij stress |
-| Performer | A.B.D.O. de Koning, Tandarts |
+| ParafunctionalActivityDateTime | 11-02-2022 10:43 |
+| ParafunctionalActivityValue | Erosie door het drinken van vruchtensap |
+| Performer | D. de Ruiter, Tandarts |
 | Comment | |
 
 ## Periodic Periodontal Screening Score data
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 29-04-2024 06:43 |
-| PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system '2.16.528.1.1023.2.1.1') |
-| Performer | A.B.D.O. de Koning, Tandarts |
-| Comment | Geen paradontale vervolgbehandeling |
+| PeriodicPeriodontalScreeningScoreDateTime | 11-02-2022 08:43 |
+| PeriodicPeriodontalScreeningScoreValue | Pockets 4-5 millimeter = mogelijk in orde (code 'ppsscore2' from code system '2.16.528.1.1023.2.1.1') |
+| Performer | D. de Ruiter, Tandarts |
+| Comment | Paro-preventietraject |
 
 ## Treatment Objective data
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | Tandvleesontsteking behandelen |
+| DesiredHealthcareResult | Vullen gaatjes rechterkies |
 | DesiredHealthCondition::FunctionalOrMentalStatus | |
 | Problem | |
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | Brug monteren bij rechterbovenkies |
+| DesiredHealthcareResult | Bekijken of vullingen op kroon nog goed aansluiten |
 | DesiredHealthCondition | |
 | Problem | |
 
@@ -199,9 +199,9 @@
 
 | | |
 | --- | --- |
-| ProcedureStartDate | 29-04-2024 |
+| ProcedureStartDate | 11-02-2022 |
 | ProcedureEndDate | |
-| ProcedureType | Plaatsen opbouw ten behoeve van implantaatkroon (code 'R67' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureType | Maken en beoordelen kleine röntgenfoto (code 'X10' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
 | ProcedureAnatomicalLocation.Laterality| |
@@ -218,16 +218,16 @@
 | Indication.VerificationStatus | |
 | Indication.Comment | |
 | Location | Vliegbasis Gilze-Rijen |
-| Performer | A.B.D.O. de Koning, Tandarts |
+| Performer | D. de Ruiter, Tandarts |
 
 ## Payer data
 
 | | |
 | --- | --- |
-| PayerPerson.PayerName | Erik van Oranje |
-| PayerPerson.BankInformation.BankName | ING |
-| PayerPerson.BankInformation.BankCode | INGBNL2A |
-| PayerPerson.BankInformation.AccountNumber | NL85INGB0001234567 |
+| PayerPerson.PayerName | Anita Jansen |
+| PayerPerson.BankInformation.BankName | RABO |
+| PayerPerson.BankInformation.BankCode | RABO21NL |
+| PayerPerson.BankInformation.AccountNumber | NL21RABO0001234567 |
 | InsuranceCompany.Insurance.StartDateTime | |
 | InsuranceCompany.Insurance.EndDateTime | |
 | InsuranceCompany.Insurance.InsuranceType | |
@@ -245,17 +245,17 @@
 | PayerPerson.BankInformation.AccountNumber | |
 | InsuranceCompany.Insurance.StartDateTime | 01-01-2025 |
 | InsuranceCompany.Insurance.EndDateTime | 01-01-2026 |
-| InsuranceCompany.Insurance.InsuranceType | Basis (code 'B' from code system 'Verzekeringssoort') |
+| InsuranceCompany.Insurance.InsuranceType | Aanvullend + tand (code 'AT' from code system 'Verzekeringssoort') |
 | InsuranceCompany.IdentificationNumber | |
-| InsuranceCompany.OrganizationName | Zorgkantoor Groningen |
-| InsuranceCompany.InsurantNumber | 12345678 |
-| AddressInformation.Street | Winschoterdiep |
-| AddressInformation.HouseNumber | 70 |
-| AddressInformation.HouseNumberLetter |  |
+| InsuranceCompany.OrganizationName | Menzis Zorgverzekeraar N.V. |
+| InsuranceCompany.InsurantNumber | 01234567 |
+| AddressInformation.Street | Lawickse Allee |
+| AddressInformation.HouseNumber | 130 |
+| AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 9723 AB |
-| AddressInformation.PlaceOfResidence | Groningen |
+| AddressInformation.Postcode | 6709 DZ |
+| AddressInformation.PlaceOfResidence | Wageningen |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -266,28 +266,14 @@
 
 | | |
 | --- | --- |
-| ContactType | Anders (code 'OTH' from code system 'NullFlavor') |
-| ContactWith | A.B.D.O. de Koning, Tandarts |
-| Location | Vliegbasis Gilze-Rijen |
-| StartDateTime | 22-07-2026 10:00 |
-| EndDateTime | 22-07-2026 11:00 |
-| ContactReason.Problem | |
-| ContactReason.Procedure | |
-| ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | Laatste orthopantomogram (röntgenfoto) was in 2025 |
-| Origin | |
-| Destination | |
-
-| | |
-| --- | --- |
 | ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
-| ContactWith | A.B.D.O. de Koning, Tandarts |
+| ContactWith | D. de Ruiter, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
-| StartDateTime | 20-05-2025 10:00 |
-| EndDateTime | 20-05-2025 11:00 |
+| StartDateTime | 22-07-2023 09:00 |
+| EndDateTime | 22-07-2023 09:30 |
 | ContactReason.Problem | |
 | ContactReason.Procedure | |
 | ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | Extra controle vanwege bloedend tandvlees |
+| ContactReason.CommentContactReason | |
 | Origin | |
 | Destination | |
