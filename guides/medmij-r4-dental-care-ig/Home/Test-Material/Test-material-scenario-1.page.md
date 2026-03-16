@@ -25,7 +25,7 @@
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Officieel Adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345600 |
-| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse')  |
+| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.NumberType | |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | erikvanoranje@icloud.com |
@@ -53,9 +53,9 @@
 | NameInformation.Titles | |
 | Speciality | Tandartsen, algemeen practicus (code'1200' from code system 'Vektis AGB-medische specialismen') |
 | Gender | |
-| AddressInformation.Street | Simon Smitweg  |
+| AddressInformation.Street | Simon Smitweg |
 | AddressInformation.HouseNumber | 1 |
-| AddressInformation.HouseNumberLetter |  |
+| AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 2353 GA |
@@ -65,7 +65,7 @@
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345601 |
-| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'AddressUse')  |
+| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.NumberType | |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | dekoning@tandarts.nl |
@@ -81,7 +81,7 @@
 | OrganizationName | Defensie Tandheelkundige Dienst |
 | DepartmentSpeciality | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31653603740 |
-| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'AddressUse')  |
+| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.NumberType | |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | PJ.Jumpertz.01@mindef.nl |
@@ -107,7 +107,7 @@
 | OrganizationName | Vliegbasis Gilze-Rijen |
 | DepartmentSpeciality | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | 0889502753 |
-| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'AddressUse')  |
+| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.NumberType | |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | |
@@ -141,7 +141,7 @@
 | | |
 | --- | --- |
 | CariesRiskDateTime | 29-04-2024 06:43 |
-| CariesRiskValue | Laag (code '62482003' from code system 'SNOMED CT')  |
+| CariesRiskValue | Laag (code '62482003' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
 
@@ -234,8 +234,23 @@
 | InsuranceCompany.IdentificationNumber | |
 | InsuranceCompany.OrganizationName | |
 | InsuranceCompany.InsurantNumber | |
-| Addressinformation | |
-| ContactInformation | |
+| AddressInformation.Street | |
+| AddressInformation.HouseNumber | |
+| AddressInformation.HouseNumberLetter | |
+| AddressInformation.HouseNumberAddition | |
+| AddressInformation.HouseNumberIndication | |
+| AddressInformation.Postcode | |
+| AddressInformation.PlaceOfResidence | |
+| AddressInformation.Municipality | |
+| AddressInformation.Country | |
+| AddressInformation.AdditionalInformation | |
+| AddressInformation.AddressType | |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | |
+| ContactInformation.TelephoneNumbers.TelecomType | |
+| ContactInformation.TelephoneNumbers.NumberType | |
+| ContactInformation.TelephoneNumbers.Comment | |
+| ContactInformation.EmailAddresses.EmailAddress | |
+| ContactInformation.EmailAddresses.EmailAddressType | |
 
 | | |
 | --- | --- |
@@ -251,7 +266,7 @@
 | InsuranceCompany.InsurantNumber | 12345678 |
 | AddressInformation.Street | Winschoterdiep |
 | AddressInformation.HouseNumber | 70 |
-| AddressInformation.HouseNumberLetter |  |
+| AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9723 AB |
@@ -260,7 +275,12 @@
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Work Place (code 'WP' from code system 'AddressUse') |
-| ContactInformation | |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | |
+| ContactInformation.TelephoneNumbers.TelecomType | |
+| ContactInformation.TelephoneNumbers.NumberType | |
+| ContactInformation.TelephoneNumbers.Comment | |
+| ContactInformation.EmailAddresses.EmailAddress | |
+| ContactInformation.EmailAddresses.EmailAddressType | |
 
 ## Encounter data
 
