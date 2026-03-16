@@ -54,7 +54,7 @@ De acceptatiecriteria voor de overzichtsschermen van elke CIM is als volgt.
 
 | Nr | Acceptatiecriteria |
 |----|--------------------|
-| 1 | Standaard worden alle gegevens van de geraadpleegde zorgaanbieder(s) weergegeven, gesorteerd op datum van jong naar oud. |
+| 1 | Standaard worden alle beschikbaar gestelde gegevens van de zorgaanbieders(s) overzichtelijk weergegeven, gesorteerd op datum van nieuw naar oud. |
 | 2 | Je kunt zoeken op (delen van) de gegevens of op informatie uit de andere datavelden in het overzichtsscherm. De gebruiker moet minimaal 3 karakters invoeren. |
 | 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. |
 | 4 | Voor het dataveld *Datum op* kun je een specifieke periode selecteren. |
@@ -394,7 +394,7 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Dental Fitness</td><td>Rootconcept</td><td>mz-dataelement-109</td><td></td><td></td>
+      <td><strong>Dental Fitness</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-109</td><td></td><td></td>
       <td>De PGO ontvangt maar 1 Dental Fitness Score (geen historie)</td>
       <td>Dental Fitness</td>
       <td>De Dental Fitness Classificatie (DFC) is een tandheelkundige risico-inventarisatie en geeft aan in welke mate een militair kans loopt op tandheelkundige problemen welke (directe) behandeling behoeven binnen de 12 maanden vanaf het moment van vaststellen. </td>
@@ -406,7 +406,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>DentalFitnessScore</td><td>Item</td><td>mz-dataelement-111</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
-      <td>De term DentalFitnessScore is heel bekend bij het personeel van defensie. Daarom hebben we de advies tekst weergave in de PGO gelijk gehouden.</td>
+      <td>De patiëntvriendelijke toelichting die achter de klasse 0 t/m 4 staan zoals "nooit gezien door een defensietandarts" is verplicht om te tonen in de PGO. Enkel de waarden zoals "Klasse 0" zegt de militair niet genoeg. De patiëntvriendelijke toelichting houdt de NATO AMedP-4.4. standaard en defensierichtlijn aan. De Dental Fitness Score is bekend bij het personeel van defensie.</td>
       <td>DentalFitnessScore</td>
       <td>Klasse 0  “nooit gezien door een defensietandarts”<br/>Klasse 1 “vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen”<br/>Klasse 2 “kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden”<br/>Klasse 3 “huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken” <br/>Klasse 4 “vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig”</td>
       <td>M</td>
@@ -441,7 +441,7 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Verrichting</td><td>Rootconcept</td><td>NL-CM:14.1.1</td><td></td><td></td>
+      <td><strong>Verrichting</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:14.1.1</td><td></td><td></td>
       <td></td><td>Behandeling</td><td></td><td></td>
     </tr>
     <tr>
@@ -461,7 +461,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Manier  behandeling</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>VerrichtingAnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td></td>
+      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
@@ -502,7 +502,7 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Behandeldoel </td><td>Rootconcept</td><td>NL-CM:13.5.1</td><td></td><td></td>
+      <td><strong>Behandeldoel</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:13.5.1</td><td></td><td></td>
       <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td></td><td></td><td></td>
     </tr>
     <tr>
@@ -546,15 +546,15 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Mondhygiëne</td><td>Rootconcept</td><td>mz-dataelement-120</td><td></td><td></td>
+      <td><strong>Mondhygiëne</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-120</td><td></td><td></td>
       <td></td><td>Mondhygiëne</td><td>Mondhygiëne is de (dagelijkse) verzorging van de mond en het gebit om deze gezond te houden en daardoor gaatjes (cariës) en tandvleesontstekingen te voorkomen.</td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td>mz-dataelement-121</td><td>01-01-2024</td><td>a</td>
+      <td>MondhygiëneDatumTijd</td><td>Item</td><td>mz-dataelement-121</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Mondhygiëne (ObservatieNaam)</td><td>Item</td><td></td><td>Slecht (code slecht in codesysteem 'SNOMED CT')</td><td>a </td>
+      <td>MondhygiëneWaarde</td><td>Item</td><td></td><td>Slecht (code slecht in codesysteem 'SNOMED CT')</td><td>a </td>
       <td></td><td>Mondhygiëne </td><td></td><td>M</td>
     </tr>
     <tr>
@@ -587,15 +587,15 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>CariësRisico</td><td>Rootconcept </td><td>mz-dataelement-124</td><td></td><td></td>
+      <td><strong>CariësRisico</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-124</td><td></td><td></td>
       <td></td><td>Risico op gaatjes </td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes. </td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td>mz-dataelement-125</td><td>01-01-2024</td><td>a </td>
+      <td>CariesRisicoDatumTijd</td><td>Item</td><td>mz-dataelement-125</td><td>01-01-2024</td><td>a </td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>CariësRisico<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>Laag (code 62482003 in codesysteem 'SNOMED CT')</td><td>a</td>
+      <td>CariesRisicoWaarde</td><td>Item</td><td></td><td>Laag (code 62482003 in codesysteem 'SNOMED CT')</td><td>a</td>
       <td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -628,16 +628,16 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>ASA-score</td><td>Rootconcept</td><td></td><td></td><td><td></td></td>
+      <td><strong>ASA-score</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td><td></td></td>
       <td>Score gezondheid (ASA)</td><td>De ASA-classificatie is het American Society of Anesthesiologists classificatiesysteem voor fysieke status (algehele medische toestand) </td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
+      <td>ASAScoreDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>ASA score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>ASA-score 1 Gezonde patiënt (code 413495001 in codesysteem 'SNOMED CT')</td><td>a </td>
-      <td></td><td>Score gezondheid (ASA)</td>
+      <td>ASAScoreWaarde</td><td>Item</td><td></td><td>ASA-score 1 Gezonde patiënt (code 413495001 in codesysteem 'SNOMED CT')</td><td>a </td>
+      <td>De patiëntvriendelijke toelichting die achter de score 1 t/m 6 staan zoals "Gezonde patiënt" is verplicht om te tonen in de PGO. Enkel de waarden zoals "ASA-score 1" zegt de pgo-gebruikber niet genoeg.</td><td>Score gezondheid (ASA)</td>
       <td>ASA-score 1 (bevinding) = Gezonde patiënt <br/>ASA-score 2 (bevinding) = Milde systemische aandoening zonder belemmering<br/>ASA-score 3 (bevinding)  = Ernstige systemische aandoening, beperking dagelijkse activiteit<br/>ASA-score 4 (bevinding) = Ernstige invaliderende systeemaandoening, constante levensbedreiging<br/>ASA-score 5 (bevinding) = Stervende, overlijden &lt; 24 uur zonder ingreep<br/>ASA-score 6 (bevinding)  = Hersendood, Multi Orgaan Donatie</td>
       <td>M</td>
     </tr>
@@ -656,7 +656,7 @@ Breedteverdeling (op basis van eerdere mapping):
   </tbody>
 </table>
 
-<!-- PERIODIEKE PARODONTALE SCREENEN (PPS) -->
+<!-- PERIODIEKE PARODONTALE SCREENEN (PPS)Periodieke Parodontale Screening Score https://knmt.nl/nieuws/periodiek-parodontaal-screenen-ben-jij-er-al-aan-gewend -->
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
@@ -671,16 +671,16 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Periodieke Parodontale Screenen (PPS)</td><td>Rootconcept </td><td></td><td></td><td></td>
+      <td><strong>Periodieke Parodontale Screening Score (PPS)</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
       <td></td><td>Controle  tandvlees</td>
       <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
+      <td>PPSDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>PPS score<br/>(ObservatieNaam)</td><td>Item</td><td></td><td>Pockets 0-3 millimeter = in orde (code ppsscore1 in codesysteem 'Nog invullen??!!')</td><td>a </td>
+      <td>PPSScore</td><td>Item</td><td></td><td>Pockets 0-3 millimeter = in orde (code ppsscore1 in codesysteem 'Nog invullen??!!')</td><td>a </td>
       <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -713,17 +713,17 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Parafunctionele activiteit</td><td>Rootconcept </td><td></td><td></td><td></td>
+      <td><strong>Parafunctionele activiteit</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
       <td></td><td>Schadelijke gewoonte met tanden</td>
       <td>Parafuncties zijn mondbewegingen die niets met kauwen, slikken of spreken te maken hebben (zoals tandenknarsen).  </td>
       <td></td>
     </tr>
     <tr>
-      <td>ObservatieDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
+      <td>ParafunctioneleActiviteitDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Parafunctionele activiteit<br/>(ObservatieWaarde)</td><td>Item</td><td></td><td>Overmatig knarsen bij stress</td><td>a </td>
+      <td>Parafunctionele activiteit waarde</td><td>Item</td><td></td><td>Overmatig knarsen bij stress</td><td>a </td>
       <td></td><td>Schadelijke gewoonte met tanden</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -756,20 +756,12 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Contact</td><td>Rootconcept</td><td>NL-CM:15.1.1</td><td></td><td></td>
-      <td></td><td>Afspraak</td><td></td><td></td>
+      <td><strong>Contact</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:15.1.1</td><td></td><td></td>
+      <td></td><td>Contact</td><td></td><td></td>
     </tr>
     <tr>
       <td>ContactType</td><td>Item</td><td>NL-CM:15.1.2</td><td>Second opinion (code 'OTH' Second Opinion in codesysteem 'NullFlavor')</td><td>a</td>
-      <td></td><td>Type contact of afspraak</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>9:00</td><td>a</td>
-      <td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd </td><td></td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
-      <td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd </td><td></td><td></td><td>M</td>
+      <td></td><td>Type contact</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
@@ -780,23 +772,15 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
     <tr>
-      <td>RedenContact</td><td>Container</td><td>NL-CM:15.1.13</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>9:00</td><td>a</td>
+      <td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd </td><td></td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra Controle vanwege bloedend tandvlees</td><td>b</td>
-      <td></td><td>Type contact uitleg (of Type contact Toelichting)</td><td></td><td>M</td>
+      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
+      <td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd </td><td></td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-    <tr>
-      <td>Herkomst</td><td>Item</td><td>NL-CM:15.1.14</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-    <tr>
-      <td>Bestemming</td><td>Item</td><td>NL-CM:15.1.16</td><td></td><td></td>
+      <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
@@ -805,6 +789,22 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td></td><td></td>
+      <td></td><td></td><td></td><td>W</td>
+    </tr>
+    <tr>
+      <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td><td></td>
+      <td></td><td></td><td></td><td>W</td>
+    </tr>
+    <tr>
+      <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra Controle vanwege bloedend tandvlees</td><td>b</td>
+      <td></td><td>Type contact uitleg (of Type contact Toelichting)</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Herkomst</td><td>Item</td><td>NL-CM:15.1.14</td><td></td><td></td>
+      <td></td><td></td><td></td><td>W</td>
+    </tr>
+    <tr>
+      <td>Bestemming</td><td>Item</td><td>NL-CM:15.1.16</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
   </tbody>
@@ -825,7 +825,7 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>ContactPersoon</td><td>Rootconcept</td><td>NL-CM:3.1.1</td><td></td><td></td>
+      <td><strong>ContactPersoon</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:3.1.1</td><td></td><td></td>
       <td></td><td>Contactpersoon</td><td></td><td></td>
     </tr>
     <tr>
@@ -918,11 +918,11 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td>Betaler</td><td>Rootconcept</td><td>NL-CM:1.1.1</td><td></td><td></td>
+      <td><strong>Betaler</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:1.1.1</td><td></td><td></td>
       <td>Dit is de persoon of verzekeraar die de rekening betaald</td><td>Betaler</td><td></td><td></td>
     </tr>
     <tr>
-      <td>BetalerPersoon</td><td>Container</td><td>NL-CM:1.1.2</td><td></td><td></td>
+      <td><strong>BetalerPersoon</strong></td><td><strong>Container</strong></td><td>NL-CM:1.1.2</td><td></td><td></td>
       <td></td><td></td><td></td><td></td>
     </tr>
     <tr>
@@ -930,7 +930,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Naam Betaler</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Bankgegevens</td><td>Container</td><td>NL-CM:1.1.4</td><td></td><td></td>
+      <td><strong>Bankgegevens</strong></td><td><strong>Container</strong></td><td>NL-CM:1.1.4</td><td></td><td></td>
       <td></td><td>Bankgegegevens </td><td></td><td></td>
     </tr>
     <tr>
@@ -946,11 +946,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Rekeningnummer Bank</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Verzekeraar</td><td>Container</td><td>NL-CM:1.1.3</td><td></td><td></td>
+      <td><strong>Verzekeraar</strong></td><td><strong>Container</strong></td><td>NL-CM:1.1.3</td><td></td><td></td>
       <td></td><td>Verzekeraar</td><td></td><td></td>
     </tr>
     <tr>
-      <td>Verzekering</td><td>Container</td><td>NL-CM:1.1.8</td><td></td><td></td>
+      <td><strong>Verzekering</strong></td><td><strong>Container</strong></td><td>NL-CM:1.1.8</td><td></td><td></td>
       <td></td><td>Verzekering</td><td></td><td></td>
     </tr>
     <tr>
