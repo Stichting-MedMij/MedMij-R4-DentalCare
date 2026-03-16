@@ -127,7 +127,7 @@
 | Encounter.Problem | |
 | Encounter.Procedure | |
 | Encounter.DeviatingResult | |
-| Encounter.CommentContactReason | ELaatste orthopantomogram (röntgenfoto) was in 2025 |
+| Encounter.CommentContactReason | Laatste orthopantomogram (röntgenfoto) was in 2025 |
 | Encounter.Origin | |
 | Encounter.Destination | |
 
@@ -150,17 +150,49 @@
 | Encounter.Destination | |
 
 
-## Payer data
+## Payer Person data
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | |
-| CariesRiskValue | |
-| Performer | |
-| Comment | |
+| Payer.PayerPerson | |
+| Payer.PayerlPerson.PayerName | Erik van Oranje |
+| Payer.BankInformation | |
+| Payer.BankInformation.BankName | ING |
+| Payer.BankInformation.BankCode | INGBNL2A |
+| Payer.BankInformation.AccountNumber | NL85INGB0001234567 |
+| Payer.InsuranceCompany | |
+| Payer.InsuranceCompany.Insurance | |
+| Payer.InsuranceCompany.Insurance.StartDateTime | |
+| Payer.InsuranceCompany.Insurance.EndDateTime | |
+| Payer.InsuranceCompany.Insurance.InsuranceType | |
+| Payer.InsuranceCompany.Insurance.InsuranceNumber | |
+| Payer.InsuranceCompany.Insurance.OrganizationName | |
+| Payer.InsuranceCompany.Insurance.InsuranceNumber | |
+| Payer.InsuranceCompany.Insurance.Addressinformation | |
+| Payer.InsuranceCompany.Insurance.ContactInformation | |
 
+## Payer Insurance Company
 
-## Treatmentobjective data
+| | |
+| --- | --- |
+| Payer.PayerPerson | |
+| Payer.PayerlPerson.PayerName | Erik van Oranje |
+| Payer.BankInformation | |
+| Payer.BankInformation.BankName | |
+| Payer.BankInformation.BankCode | |
+| Payer.BankInformation.AccountNumber | |
+| Payer.InsuranceCompany | |
+| Payer.InsuranceCompany.Insurance | |
+| Payer.InsuranceCompany.Insurance.StartDateTime | 2025-01-01 |
+| Payer.InsuranceCompany.Insurance.EndDateTime | 2026-01-01 |
+| Payer.InsuranceCompany.Insurance.InsuranceType | Basis (code 'B' from code system 'Verzekeringssoort')  |
+| Payer.InsuranceCompany.Insurance.InsuranceNumber | |
+| Payer.InsuranceCompany.Insurance.OrganizationName | Zorgkantoor Groningen|
+| Payer.InsuranceCompany.Insurance.InsuranceNumber | 12345678 |
+| Payer.InsuranceCompany.Insurance.Addressinformation | |
+| Payer.InsuranceCompany.Insurance.ContactInformation | |
+
+## TreatmentObjective data
 
 | | |
 | --- | --- |
@@ -183,9 +215,9 @@
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | |
-| CariesRiskValue | |
-| Performer | |
+| DentalFitnessDateTime | 2024-02-02T06:43:00+01:00 |
+| DentalFitnessValue | Klasse 1 (code '258392002' from code system 'http://snomed.info/sct') |
+| Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
 
 
@@ -193,9 +225,9 @@
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | |
-| CariesRiskValue | |
-| Performer | |
+| CariesRiskDateTime |2024-04-29T06:43:00+01:00|
+| CariesRiskValue | Slecht (code '556001' from code system 'http://snomed.info/sct') |
+| Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
 
 
@@ -225,7 +257,7 @@
 | --- | --- |
 | ProcedureStartDate | 2024-04-29 |
 | ProcedureEndDate | |
-| ProcedureType | Plaatsen opbouw ten behoeve van implantaatkroon = in orde (code 'R67' from code system 'n.t.b.') |
+| ProcedureType | Plaatsen opbouw ten behoeve van implantaatkroon = in orde (code 'R67' from code system 'Vektis Mondzorg OID 2.16.528.1.1023.4.1.9') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
 | Procedure.ProcedureAnatomicalLocation.Laterality| |
