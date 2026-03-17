@@ -1,7 +1,7 @@
 // FHIR test instances in FSH format for Dental Care test scenario 2
 
 Instance: DentalCare-ASAScore-Jansen
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ASAScore
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
 Usage: #example
 * text
   * status = #generated
@@ -97,7 +97,7 @@ Usage: #example
   * text = "Paro-preventietraject"
 
 Instance: DentalCare-TreatmentObjective-1-Jansen
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
 * text
   * status = #generated
@@ -110,7 +110,7 @@ Usage: #example
   * type = "Patient"
 
 Instance: DentalCare-TreatmentObjective-2-Jansen
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
 * text
   * status = #generated

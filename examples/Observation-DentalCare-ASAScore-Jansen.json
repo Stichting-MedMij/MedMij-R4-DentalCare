@@ -3,7 +3,7 @@
   "id": "DentalCare-ASAScore-Jansen",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/mz-ASAScore"
+      "http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore"
     ]
   },
   "code": {

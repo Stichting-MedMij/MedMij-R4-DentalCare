@@ -3,7 +3,7 @@
   "id": "DentalCare-TreatmentObjective-2-Van-De-Stok",
   "meta": {
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/mz-TreatmentObjective"
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
     ]
   },
   "text": {
