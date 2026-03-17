@@ -1,28 +1,30 @@
 ---
-topic: TO
+topic: TD
 ---
 
-# FHIR IG
+# Technical design
 
 ## Introduction
-This Implementation Guide (IG) details the HL7 FHIR requirements for exchanging dental care data. 
+This technical design provides the technical specification of the Dental Care (Dutch: Mondzorg) standard.
 
-This IG is a technical counterpart of the {{pagelink:FO, text: functional design}}. The FHIR version used for this IG is HL7 FHIR R4 (4.0.1).
+This technical design is the technical counterpart of the {{pagelink: FO, text: functional design}}. The FHIR version used for this IG is R4 (4.0.1).
+
+Note that in addition to this design, the (technical) guidelines as specified in the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig?version=1.0.0) and the [MedMij FHIR IG for R4](https://informatiestandaarden.nictiz.nl/wiki/MedMij:IG:V1/FHIR_IG) apply, the latter of which is published by Nictiz.
 
 ## Actors involved
+| Actor | | System | |
+| --- | --- | --- | --- |
+| **Name** | **Description** | **Name** | **Description** |
+| Patient | The user of a personal healthcare environment | PHR | Personal health record |
+| Healthcare provider | The user of a XIS | XIS | Healthcare information system |
 
-| Actor | | System | | FHIR CapabilityStatement |
-|| --- | --- | --- | --- | --- | --- |
-| **Name** | **Description** | **Name** | **Description** | **Name** | **Description** |
-| Patient | The user of a personal healthcare environment | PHR | Personal health record | [TO DO] | FHIR client requirements |
-| Healthcare provider | The user of a TIS | TIS | Healthcare information system | [TO DO] | FHIR server requirements |
+**Table 1: Actors**
 
 ## Boundaries and relationships
-This FHIR IG includes use cases for the exchange of dental care data between health care providers (e.g. dentists) and patients (e.g. in a PHR setting).
+This technical design includes use cases for the exchange of dental care data between healthcare providers (e.g. dentists) and patients (e.g. in a PHR setting).
 
-This IG guide assumes that a PHR is able to connect with a TIS. It does not provide information on finding the right source system nor does it provide information about security. These infrastructure and interface specifications are described in the [MedMij Afsprakenstelsel](https://afsprakenstelsel.medmij.nl/).
+This technical design assumes that a PHR is able to make a connection to the right XIS that contains the patient's information. It does not provide information on finding the right source system nor does it provide information about security. These infrastructure and interface specifications are described in the [MedMij Afsprakenstelsel](https://afsprakenstelsel.medmij.nl/). In particular, each transaction is performed in the context of a specific authenticated patient, which has been established using the authentication mechanisms outlined in the MedMij Afsprakenstelsel (also see the [MedMij FHIR IG by Nictiz](https://informatiestandaarden.nictiz.nl/wiki/MedMij:IG:V1/FHIR_IG#Afsprakenstelsel)), i.e. via an OAuth2 token. Each XIS gateway is required to perform filtering based on the patient associated with the context for the request, so only the records associated with the authenticated patient are returned. For this reason, search parameters for patient identification SHALL NOT be included.
 
-Dental care uses the HCIM based FHIR profiles for exchanging information as used in other standards extended with additional dental care specific profiles. These dental care specific profiles are derived from, or largely based on, the base HCIM FHIR profiles (i.e. nl-core profiles), where possible. For instance, mz-TreatmentObjective is a profile on Goal derived from nl-core-TreatmentObjective, where additional constraints and guidance has been added based on the TreatmentObjective building block used in dental care. Another example is the mz-Procedure profile, which is largely based on the nl-core-Procedure-event profile, but not derived from the latter profile, as the underlying functional requirements are not entirely compatible.
 
 ## Use cases
 Dental care supports the following (types of) use cases
