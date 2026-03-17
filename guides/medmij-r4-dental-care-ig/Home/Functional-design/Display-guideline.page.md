@@ -258,7 +258,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 | Relatie                                          | Vader         |
 | Straat                                           | Slaapstraat   |
 | Huisnummer                                       | 2             |
-| Woonplaats                                       | Droomv        |
+| Woonplaats                                       | Droom        |
 | Land                                             | Dromenland    |
 | Zorgorganisatie                                  | Tendens       |
 
@@ -320,7 +320,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 | Naam Bank                                  |                     |
 | Code Bank                                  |                     |
 | Rekeningnummer Bank                        |                     |
-| Naam verzekeraar                           | De Groningse        |
+| Naam verzekeraar                           | Zorgkantoor Groningen        |
 | Begindatum                                 | 01-01-2025          |
 | Einddatum                                  | 31-12-2025          |
 | Soort verzekering                          | Basis verzekering   |
@@ -772,12 +772,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
     <tr>
-      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>9:00</td><td>a</td>
-      <td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd </td><td></td><td></td><td>M</td>
+      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>9:00</td><td>a</td></td><td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd </td><td></td><td>M</td>
     </tr>
     <tr>
       <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
-      <td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd </td><td></td><td></td><td>M</td>
+      <td></td><td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd </td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
