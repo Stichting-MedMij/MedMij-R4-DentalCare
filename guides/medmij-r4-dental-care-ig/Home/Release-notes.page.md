@@ -11,6 +11,7 @@
 | FHIR artifacts         | The OIDs of all CodeSystems and ValueSets have been updated to align with the new OID register of MedMij. | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
 | FHIR artifacts         | The terminology on `.type` in the mz-Procedure profile has been changed to the [Prestatiecodelijst Mondzorg](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis. | [DOSINZAGE1-911](https://medmij.atlassian.net/browse/DOSINZAGE1-911) |
 | Test material          | In the test instances for the zib Encounter a reference to the patient has been added on `.subject`. | [DOSINZAGE1-695](https://medmij.atlassian.net/browse/DOSINZAGE1-695) |
+| Test material          | In the test instances for the CIM Procedure the `.type` has been updated to align with the new terminology specified in the mz-Procedure profile. | [DOSINZAGE1-911](https://medmij.atlassian.net/browse/DOSINZAGE1-911) |
 
 ## 1.0.0-beta.1
 
