@@ -6,6 +6,7 @@
 | --------------------- | ------------ | ---------|
 | Test material         | In the test instances for the zib Encounter a reference to the patient has been added on `.subject`. | [DOSINZAGE1-695](https://medmij.atlassian.net/browse/DOSINZAGE1-695) |
 | Test material         | In the test instances for the CIMs ASAScore and TreatmentObjective the `.mneta.profile` has been updated to reference the medmij-core-ASAScore and nl-core-TreatmentObjective profiles, respectively. | [DOSINZAGE1-883](https://medmij.atlassian.net/browse/DOSINZAGE1-883) |
+| Test material         | The `.meta.tag`s corresponding to the care type have been added to all test instances. | [DOSINZAGE1-883](https://medmij.atlassian.net/browse/DOSINZAGE1-883) |
 | Test material         | The test material has been relocated to the IG. | [DOSINZAGE1-883](https://medmij.atlassian.net/browse/DOSINZAGE1-883) |
 
 ## 1.0.0-beta.1

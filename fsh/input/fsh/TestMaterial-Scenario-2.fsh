@@ -3,6 +3,8 @@
 Instance: DentalCare-ASAScore-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Score: ASA-score 2<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Opmerking: Allergisch voor hooikoorts, rookt 12 sigaretten per dag, gebruikt medicatie Cetirizine</div>"
@@ -20,6 +22,8 @@ Usage: #example
 Instance: DentalCare-CariesRisk-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Cariësrisico: Verlaagd<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
@@ -35,6 +39,8 @@ Usage: #example
 Instance: DentalCare-DentalFitness-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2024-09-08 11:43<br/>Dental Fitness: Nooit gezien door een defensietandarts<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
@@ -52,6 +58,8 @@ Usage: #example
 Instance: DentalCare-OralHygiene-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
@@ -67,6 +75,8 @@ Usage: #example
 Instance: DentalCare-ParafunctionalActivity-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Activiteit: Erosie door het drinken van vruchtensap<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
@@ -82,6 +92,8 @@ Usage: #example
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 08:43<br/>Score: Pockets 4-5 millimeter = mogelijk in orde<br/>Opmerking: Paro-preventietraject<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
@@ -99,6 +111,8 @@ Usage: #example
 Instance: DentalCare-TreatmentObjective-1-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Vullen gaatjes rechterkies<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
@@ -112,6 +126,8 @@ Usage: #example
 Instance: DentalCare-TreatmentObjective-2-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Bekijken of vullingen op kroon nog goed aansluiten<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Laag</div>"
@@ -125,6 +141,8 @@ Usage: #example
 Instance: DentalCare-Procedure-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Maken en beoordelen kleine röntgenfoto<br/>Patiënt: Anita Jansen<br/>Status: Voltooid<br/>Datum: 2022-02-11<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Tandartspraktijk de Ruiter</div>"
@@ -142,6 +160,8 @@ Usage: #example
 Instance: DentalCare-Patient-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Anita Jansen<br/>Geboortedatum: 2010-03-15<br/>Geslacht: Vrouw<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam, Nederland<br/>Telefoon: +31612345678<br/>E-mail: anitajansen@icloud.com</div>"
@@ -197,6 +217,8 @@ Usage: #example
 Instance: DentalCare-PractitionerRole-De-Ruiter
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Ruiter, de<br/>Organisatie: Defensie Tandheelkundige Dienst<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
@@ -209,6 +231,8 @@ Usage: #example
 Instance: DentalCare-Practitioner-De-Ruiter
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: D. de Ruiter<br/>BIG-nummer: 12101002<br/>Telefoon: +31612345678<br/>E-mail: deruiter@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
@@ -245,6 +269,8 @@ Usage: #example
 Instance: DentalCare-Payer-InsuranceCompany-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Menzis<br/>Patiënt: Anita Jansen<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
@@ -262,6 +288,8 @@ Usage: #example
 Instance: DentalCare-Payer-Person-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
@@ -279,6 +307,8 @@ Usage: #example
 Instance: DentalCare-Organization-Menzis
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Menzis Zorgverzekeraar<br/>Adres: Lawickse Allee 130, 6709 DZ Wageningen</div>"
@@ -297,6 +327,8 @@ Usage: #example
 Instance: DentalCare-Encounter-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"

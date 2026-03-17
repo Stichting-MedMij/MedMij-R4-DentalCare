@@ -3,6 +3,8 @@
 Instance: DentalCare-ASAScore-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Score: ASA-score 3<br/>Opmerking: Allergisch voor gluten, heeft nierziekte en bloedarmoede<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
@@ -20,6 +22,8 @@ Usage: #example
 Instance: DentalCare-CariesRisk-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
@@ -35,6 +39,8 @@ Usage: #example
 Instance: DentalCare-DentalFitness-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness (NAVO-classificatiesysteem)<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-03-03 10:43<br/>Dental Fitness: Kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
@@ -52,6 +58,8 @@ Usage: #example
 Instance: DentalCare-OralHygiene-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Mondhygiëne: Goed<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
@@ -67,6 +75,8 @@ Usage: #example
 Instance: DentalCare-ParafunctionalActivity-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Activiteit: Tanden knarsen tijdens slaap<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
@@ -82,6 +92,8 @@ Usage: #example
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 08:43<br/>Score: Pockets groter of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Paro-traject<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
@@ -99,6 +111,8 @@ Usage: #example
 Instance: DentalCare-TreatmentObjective-1-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Trekken snijtand linksboven<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
@@ -112,6 +126,8 @@ Usage: #example
 Instance: DentalCare-TreatmentObjective-2-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Wortelpuntoperatie (apexresectie)<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Laag</div>"
@@ -125,6 +141,8 @@ Usage: #example
 Instance: DentalCare-Procedure-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Wortelpuntoperatie, per tandwortel, zonder afsluiting<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
@@ -142,6 +160,8 @@ Usage: #example
 Instance: DentalCare-Patient-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Berend van de Stok<br/>Geboortedatum: 1980-05-04<br/>Geslacht: Man<br/>Adres: Bloemstraat 25, 5678 BB Bergen op Zoom, Nederland<br/>Telefoon: +31687654321<br/>E-mail: berendvandestok@gmail.com</div>"
@@ -198,6 +218,8 @@ Usage: #example
 Instance: DentalCare-PractitionerRole-Dijkstra
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Dijkstra<br/>Organisatie: Defensie Tandheelkundige Dienst<br/>Locatie: CWZ Nijmegen</div>"
@@ -210,6 +232,8 @@ Usage: #example
 Instance: DentalCare-Practitioner-Dijkstra
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: B. Dijkstra<br/>BIG-nummer: 12000003<br/>Telefoon: +31687654321<br/>E-mail: dijkstra@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
@@ -245,6 +269,8 @@ Usage: #example
 Instance: DentalCare-Location-CWZ-Nijmegen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: CWZ Nijmegen<br/>Telefoon: 0246412121<br/>Adres: Weg door Jonkerbos 100, 6532 SZ Nijmegen<br/>Beherende organisatie: Defensie Tandheelkundige Dienst</div>"
@@ -267,6 +293,8 @@ Usage: #example
 Instance: DentalCare-Payer-InsuranceCompany-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: A.S.R<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
@@ -284,6 +312,8 @@ Usage: #example
 Instance: DentalCare-Payer-Person-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
@@ -301,6 +331,8 @@ Usage: #example
 Instance: DentalCare-Organization-ASR
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: A.S.R.<br/>Adres: Archimedeslaan 10, 3584 BA Utrecht</div>"
@@ -319,6 +351,8 @@ Usage: #example
 Instance: DentalCare-Encounter-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
 Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Consult t.b.v. intake<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-09-02T09:00:00+01:00<br/>Status: Gepland<br/>Locatie: CWZ Nijmegen</div>"
