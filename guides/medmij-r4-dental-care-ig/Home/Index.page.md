@@ -1,6 +1,6 @@
 # {{page-title}}
 
-This is the implementation guide for MedMij R4 Dental Care, also known as "Mondzorg". 
+This is the implementation guide for MedMij R4 Dental Care, also known as "Mondzorg".
 
 Please note that this guide is currently in its beta phase. As we progress through the beta phase, we are actively gathering feedback, identifying areas for improvement, and documenting lessons learned.
 
