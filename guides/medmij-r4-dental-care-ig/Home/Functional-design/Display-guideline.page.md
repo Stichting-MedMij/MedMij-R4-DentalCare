@@ -2,7 +2,7 @@
 topic: Weergaverichtlijn
 ---
 
-# Weergaverichtlijn 
+# Weergaverichtlijn
 
 ## Inleiding
 Dit is de weergaverichtlijn voor de gegevensdienst Mondzorg.
@@ -16,7 +16,7 @@ Deze richtlijn heeft als doel om duidelijke handvatten te bieden voor een patië
 
 De richtlijn geeft géén handvatten voor de vormgeving (kleur, vorm, lettertype, etc.) van gegevens.
 
-## Scope 
+## Scope
 De scope van deze richtlijn bestaat uit de mondzorggegevens die worden weergegeven in de PGO. Gegevens die via andere MedMij-gegevensdiensten verzameld worden in de PGO zijn hierin niet meegenomen.
 
 ## Inhoud richtlijn
@@ -28,7 +28,7 @@ Er zijn twee weergaven gedefinieerd voor het overzicht van de mondzorggegevens:
 - Scenario 1: Mondzorgoverzicht (met alle mondzorggegevens van alle zorgaanbieders in één overzicht)
 - Scenario 2: Zorgaanbieder‑mondzorgoverzicht (met alle mondzorggegevens van één zorgaanbieder in één overzicht.)
 
-De twee scenario’s, hieronder uitgewerkt, geven weer hoe een UX design getoond kan worden. De PGO is vrij om één of beide van deze scenario’s te ondersteunen.De richtlijn gaat ervan uit dat de PGO een responsief ontwerp ondersteunen. 
+De twee scenario’s, hieronder uitgewerkt, geven weer hoe een UX design getoond kan worden. De PGO is vrij om één of beide van deze scenario’s te ondersteunen.De richtlijn gaat ervan uit dat de PGO een responsief ontwerp ondersteunen.
 
 In deze richtlijn hebben we twee voorbeeld mockups opgenomen ter inspiratie. Daaronder hebben we elke CIM apart opgenomen, niet in mockup vorm maar in tabel vorm. De twee voorbeeld mockups gaan over afspraken, maar let op, de CIM “contact” is apart opgenomen in tabelvorm.
 
@@ -43,9 +43,9 @@ Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden
 
 <u>Zorgaanbieder-mondzorgoverzicht:</u>
 
-Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden getoond worden, per zorgaanbieder. De in de mockup gebruikte tabs dienen enkel als voorbeeld van een mogelijke vormgeving.   
+Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden getoond worden, per zorgaanbieder. De in de mockup gebruikte tabs dienen enkel als voorbeeld van een mogelijke vormgeving.
 
-{{render: guides/medmij-r4-dental-care-ig/images/Zorgorganisatie mondzorgoverzicht.png}} 
+{{render: guides/medmij-r4-dental-care-ig/images/Zorgorganisatie mondzorgoverzicht.png}}
 
 **Figuur 2: Voorbeeld Zorgaanbieder - mondzorgoverzicht**
 
@@ -330,10 +330,10 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 <br/>
 
 ## <a name="TabelSpecificaties"></a> Tabel met specificaties
-In de tabel met specificaties staan de gegevens uit de gegevensdienst Mondzorg, die relevant zijn voor deze weergaverichtlijn, weergegeven. 
-De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-methodiek. Datavelden die niet in de specificatietabel voorkomen, moeten worden beschouwd als datavelden met de letter W. 
+In de tabel met specificaties staan de gegevens uit de gegevensdienst Mondzorg, die relevant zijn voor deze weergaverichtlijn, weergegeven.
+De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-methodiek. Datavelden die niet in de specificatietabel voorkomen, moeten worden beschouwd als datavelden met de letter W.
 
-<br/> 
+<br/>
 
 | **Prioriteit** | **Omschrijving** |
 | --- | --- |
@@ -342,7 +342,7 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 | C(ould have) | Gewenste functionaliteit die waarde toevoegt, maar minder kritisch is en indien nodig kan worden uitgesteld. |
 | W(on't have) | Functionaliteiten die nu buiten scope zijn maar mogelijk in de toekomst worden overwogen. |
 
-<br/> 
+<br/>
 
 <!-- VASTE KOLOMBREEDTES + PRESERVE WHITESPACE -->
 <style>
@@ -366,11 +366,11 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
   }
 </style>
 
-<!-- 9 KOLOMMEN: 
-1 Naam data-item | 2 Type item | 3 Id | 4 Voorbeeld | 
-5 Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven | 6 Opmerkingen | 
+<!-- 9 KOLOMMEN:
+1 Naam data-item | 2 Type item | 3 Id | 4 Voorbeeld |
+5 Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven | 6 Opmerkingen |
 7 Advies tekst weergave in de PGO | 8 Advies: Gebruikersvriendelijke toelichting | 9 Prioriteit (MoSCoW)
-Breedteverdeling (op basis van eerdere mapping): 
+Breedteverdeling (op basis van eerdere mapping):
 13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3%  (totaal 100%) -->
 
 <!-- DENTAL FITNESS -->
