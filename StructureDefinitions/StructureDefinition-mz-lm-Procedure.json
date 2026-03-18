@@ -142,7 +142,7 @@
         "id": "mz-lm-Procedure.ProcedureType",
         "path": "mz-lm-Procedure.ProcedureType",
         "short": "Procedure type",
-        "definition": "The name of the procedure based on the [Prestatie- en tariefbeschikking tandheelkundige zorg](https://puc.overheid.nl/nza/doc/PUC_764375_22/1/) and [Prestatie- en tariefbeschikking orthodontische zorg](https://puc.overheid.nl/nza/doc/PUC_764432_22/1/), both authored by the Nederlandse Zorgautoriteit (NZa).",
+        "definition": "The name of the procedure based on the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis.",
         "alias": [
           "VerrichtingType"
         ],
@@ -155,7 +155,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://medmij.nl/fhir/ValueSet/ProcedureTypeDentalCare"
+          "valueSet": "http://medmij.nl/fhir/ValueSet/ProcedureTypeVektisDentalCare"
         },
         "mapping": [
           {
