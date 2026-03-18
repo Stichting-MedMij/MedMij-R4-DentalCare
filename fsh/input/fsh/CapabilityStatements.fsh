@@ -663,9 +663,6 @@ Usage: #definition
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
     * interaction
       * code = #search-type
-    * searchParam
-      * name = "code"
-      * type = #token
   * resource[+]
     * type = #Patient
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
@@ -734,9 +731,6 @@ Usage: #definition
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
     * interaction
       * code = #search-type
-    * searchParam
-      * name = "code"
-      * type = #token
   * resource[+]
     * type = #Patient
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
