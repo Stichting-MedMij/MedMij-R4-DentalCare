@@ -22,7 +22,7 @@
     "coding": [
       {
         "code": "X10",
-        "system": "https://puc.overheid.nl/nza/doc/PUC_764375_22/1",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.981",
         "display": "Maken en beoordelen kleine röntgenfoto"
       }
     ]

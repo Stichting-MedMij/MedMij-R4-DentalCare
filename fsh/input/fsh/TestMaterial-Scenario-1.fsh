@@ -147,7 +147,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
 * status = #completed
-* code = $NZaDentalCare#R67 "Plaatsen opbouw ten behoeve van implantaatkroon"
+* code = $ProcedureTypeVektisDentalCareCodeSystemOID#R67 "Plaatsen opbouw ten behoeve van implantaatkroon"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
 * performedDateTime = "2024-04-29"
