@@ -8,7 +8,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This Procedure resource represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. This profile is based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)), but has no dependency on the corresponding nl-core-Procedure-event profile because it contains non-compatible changes with respect to ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, future procedures are not relevant in the context of Dental Care, hence all corresponding guidance and mappings (e.g. to Requester) present in the nl-core profile have been omitted in this profile."
+* ^purpose = "This Procedure resource represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. This profile is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)), but has no dependency on the corresponding nl-core-Procedure-event profile because it contains non-compatible changes with respect to ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, guidance and mappings corresponding to the MedicalDevice and Requester concepts, as well as the reversed reference for zib TextResult, which are present in the nl-core profile, have been omitted from this profile."
 * insert Copyright
 * .
   * ^short = "Procedure"
@@ -59,7 +59,6 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * location only Reference(Location or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider)
   * ^short = "Location"
   * ^definition = "The healthcare center where the procedure was or is carried out."
-  * ^comment = "Please note that the zib concept Location::HealthcareProvider of zib MedicalDevice (NL-CM:10.1.8) is mapped onto this element, but it is also directly represented using a custom extension in the focal profile for that zib ([nl-core-MedicalDevice](http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice)). The reason for this is that the Location concept from zib MedicalDevice aligns with the Location concept from zib Procedure, but only for the situation that the Procedure is about placing an implant which is described using the instance of zib MedicalDevice. In this situation, the extension in the nl-core-MedicalDevice profile is redundant and it is advised to only use the current element to represent the Location concept."
   * ^alias = "Locatie"
 * reasonReference only Reference(Condition or Observation or Procedure or DiagnosticReport or DocumentReference or http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem)
   * ^short = "Indication"
@@ -71,19 +70,6 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^short = "Location / ProcedureAnatomicalLocation"
   * ^definition = "Anatomical location which is the focus of the procedure."
   * ^alias = "VerrichtingAnatomischeLocatie"
-* report
-  * ^slicing.discriminator.type = #profile
-  * ^slicing.discriminator.path = "resolve()"
-  * ^slicing.rules = #open
-* report contains textResult 0..*
-* report[textResult] only Reference(http://nictiz.nl/fhir/StructureDefinition/nl-core-TextResult)
-  * ^short = "TextResult"
-  * ^comment = """
-    The direction of the reference between zibs TextResult and Procedure is reversed in FHIR. Therefore the concept Procedure (NL-CM:13.2.5) of zib TextResult is mapped to this element.
-    
-    Please note that on a functional level, zib TextResult references zib Procedure, but in FHIR this direction is reversed.
-    """
-  * ^alias = "TekstUitslag"
 
 Mapping: MzProcedureZibProcedure
 Source: MzProcedure
@@ -100,20 +86,6 @@ Title: "zib Procedure-v5.2(2020EN)"
 * location -> "NL-CM:14.1.5" "Location"
 * reasonReference -> "NL-CM:14.1.9" "Indication"
 * bodySite -> "NL-CM:14.1.13" "ProcedureAnatomicalLocation"
-
-Mapping: MzProcedureZibTextResult
-Source: MzProcedure
-Target: "https://zibs.nl/wiki/TextResult-v4.4(2020EN)"
-Id: zib-textresult-v4.4-2020EN
-Title: "zib TextResult-v4.4(2020EN)"
-* report[textResult] -> "NL-CM:13.2.5" "Reversed reference for zib TextResult.Procedure"
-
-Mapping: MzProcedureZibMedicalDevice
-Source: MzProcedure
-Target: "https://zibs.nl/wiki/MedicalDevice-v3.3.1(2020EN)"
-Id: zib-medicaldevice-v3.3.1-2020EN
-Title: "zib MedicalDevice-v3.3.1(2020EN)"
-* location -> "NL-CM:10.1.8" "Location (For specific situations only. See the comment on this element for more information.)"
 
 Mapping: MzProcedureMedMij-100-beta2
 Source: MzProcedure

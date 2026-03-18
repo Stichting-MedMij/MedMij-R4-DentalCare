@@ -10,7 +10,7 @@ Description: "Oral hygiene."
 * insert PublisherAndContact
 * ^purpose = "This Observation resource represents the OralHygiene Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
-* . 
+* .
   * ^short = "OralHygiene"
   * ^definition = "Oral hygiene."
   * ^alias = "Mondhygiëne"
