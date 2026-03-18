@@ -208,7 +208,7 @@ Usage: #example
   * relationship[0]
     * coding = $ExtraRolcodes#100001 "Mantelzorger"
   * relationship[1]
-    * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon" 
+    * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon"
   * name
     * use = #official
     * text = "Leo Jansen"
@@ -399,7 +399,7 @@ Usage: #example
 * type
   * text = "Tandarts Periodiek Preventief Onderzoek"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
-  * type = "Patient"  
+  * type = "Patient"
 * participant
   * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
     * type = "PractitionerRole"
@@ -408,7 +408,7 @@ Usage: #example
   * end = "2026-07-22T11:00:00+01:00"
 * reasonCode
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Laatste orthopantomogram (röntgenfoto) was in 2025"
-* location 
+* location
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
     * type = "Location"
 
@@ -424,7 +424,7 @@ Usage: #example
 * class = $ActCode#AMB "Ambulatory"
 * type
   * text = "Tandarts Periodiek Preventief Onderzoek"
-* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"  
+* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
 * participant
   * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"

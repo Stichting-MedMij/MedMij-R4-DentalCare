@@ -203,7 +203,7 @@ Usage: #example
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 * contact
   * relationship
-    * coding = $VektisCOD472#24 "Wettelijke vertegenwoordiger" 
+    * coding = $VektisCOD472#24 "Wettelijke vertegenwoordiger"
   * name
     * use = #official
     * text = "J.M. Curator"
@@ -300,7 +300,7 @@ Usage: #example
 * status = #active
 * type = $Verzekeringstype#pay "Pay"
 * beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
-  * type = "Patient"  
+  * type = "Patient"
 * payor = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
   * type = "Patient"
 
@@ -338,12 +338,12 @@ Usage: #example
   * text = "Second opinion"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
   * type = "Patient"
-* participant 
+* participant
   * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
     * type = "PractitionerRole"
 * period
   * start = "2023-07-22T09:00:00+01:00"
   * end = "2023-07-22T09:30:00+01:00"
-* location 
+* location
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
     * type = "Location"

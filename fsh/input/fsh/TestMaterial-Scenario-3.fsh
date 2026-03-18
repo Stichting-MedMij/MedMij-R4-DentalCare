@@ -206,7 +206,7 @@ Usage: #example
   * relationship[0]
     * coding = $RoleCode#FTH "father"
   * relationship[1]
-    * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon" 
+    * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon"
   * name
     * use = #official
     * text = "Piet Klaas"
@@ -368,6 +368,6 @@ Usage: #example
 * period
   * start = "2025-09-01T09:00:00+01:00"
   * end = "2025-09-01T09:30:00+01:00"
-* location 
+* location
   * location = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
     * type = "Location"
