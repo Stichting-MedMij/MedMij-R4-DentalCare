@@ -25,254 +25,37 @@ This technical design includes use cases for the exchange of dental care data be
 
 This technical design assumes that a PHR is able to make a connection to the right XIS that contains the patient's information. It does not provide information on finding the right source system nor does it provide information about security. These infrastructure and interface specifications are described in the [MedMij Afsprakenstelsel](https://afsprakenstelsel.medmij.nl/). In particular, each transaction is performed in the context of a specific authenticated patient, which has been established using the authentication mechanisms outlined in the MedMij Afsprakenstelsel (also see the [MedMij FHIR IG by Nictiz](https://informatiestandaarden.nictiz.nl/wiki/MedMij:IG:V1/FHIR_IG#Afsprakenstelsel)), i.e. via an OAuth2 token. Each XIS gateway is required to perform filtering based on the patient associated with the context for the request, so only the records associated with the authenticated patient are returned. For this reason, search parameters for patient identification SHALL NOT be included.
 
+## <a name="RelatingFHIRToFunctionalCounterpart"></a> Relating FHIR (profiles) to its functional counterpart
+The functional model used in Dental Care consists of zibs from [publication 2020](https://zibs.nl/wiki/HCIM_Release_2020(EN)), as well as Clinical Information Models (CIMs) defined by MedMij, the latter of which are represented by {{pagelink: LogicalModelsIndex, text: Logical Models}}.
+- For each concept in these Logical Models, an id is assigned by MedMij. These ids are also added as mappings in the {{pagelink: FHIRProfilesIndex, text: FHIR profiles}} on the corresponding elements, i.e. by specifying `.mapping.map` on each element accordingly. Therefore, these ids form the linking pin between the Logical Models and FHIR profiles. If no such mapping is possible for a certain element in a FHIR profile, guidance is provided to indicate how that element should be handled.
+- The zibs are technically implemented via nl-core profiles, which are bundled in the [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.4) package. In these profiles, mappings to the corresponding zib (concepts) have been added.
 
 ## Use cases
-Dental care supports the following (types of) use cases
--  Dental Fitness (for Ministery of Defense exchange only)
--  Basic (general) dental care
+Within Dental Care the following use cases are distinguished:
+- General dental care
+- Dental Fitness (only relevant in the Ministry of Defence context)
 
-### Use case: Retrieve Dental Fitness
-This FHIR implementation guide assumes that the PHR system is able to make a connection to the right TIS, for dental care TIS, that contains the patient's information. It does not provide information on finding the right XIS, for dental care TIS, nor does it provide information about security. Moreover, each transaction is performed in the context of a specific authenticated patient, for whose context (token) has been established using the authentication mechanisms described in the [MedMij Afsprakenstelsel](https://afsprakenstelsel.medmij.nl/). Each TIS or for dental care TIS, Gateway is required to perform filtering based on the patient associated with the context for the request, so only the records associated with the authenticated patient are returned. For this reason, search parameters for patient identification SHALL NOT be included.
+Within this technical design these use cases are combined into a single use case, as a granular exchange approach is adopted.
 
-#### PHR: request message
-The PHR system requests the dental care data using individual [search](https://hl7.org/fhir/R4/search.html) interactions. The dental care exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's dental care data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown: search interactions. The dental care exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's dental care data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown:  
+### Use case: Retrieve Dental Care data
+The Dental Care data is defined and exchanged in a granular manner, which means that for each CIM that is part of Dental Care, a separate (granular) data service is defined. Granular exchange allows the PHR to retrieve individual data services that are part of Dental Care through targeted search interactions, in accordance with the general guidance and profiles defined in the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.0.0).
 
-`GET [base]/[type]{?[parameters]}`
+The table below gives an overview of all granular data services that are applicable for Dental Care. Note that cross-domain data services are defined in the MedMij R4 Core IG, while domain-specific data services are defined in this IG.
 
-The table below shows in the first four columns the dental care sections, the HCIMs that constitute those sections and the specific content of dental care specific information. The last column shows the FHIR search queries to obtain the dental care information. These queries and expected responses are based on profiles listed in the {{pagelink:FO, text: functional design}}.
+| Id | Data service name without version (English) | Data service name without version (Dutch) | Data service version |
+| --- | --- | --- | --- |
+| 900000107 | [Retrieve MedMij Core - ASA score](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-ASAScore?version=1.0.0) | Verzamelen MedMij Core - ASA-score | 1.0.0-beta.1 |
+| 900000111 | [Retrieve MedMij Core - Encounter (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Encounter?version=1.0.0) | Verzamelen MedMij Core - Contact (zib2020/R4) | 1.0.0-beta.1 |
+| 900000101 | [Retrieve MedMij Core - Patient (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Patient?version=1.0.0) | Verzamelen MedMij Core - Patient (zib2020/R4) | 1.0.0-beta.1 |
+| 900000110 | [Retrieve MedMij Core - Payer (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Payer?version=1.0.0) | Verzamelen MedMij Core - Betaler (zib2020/R4) | 1.0.0-beta.1 |
+| 900000103 | [Retrieve MedMij Core - Treatment objective (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-TreatmentObjective?version=1.0.0) | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) | 1.0.0-beta.1 |
+| 900000105 | {{pagelink: CariesRisk, text: Retrieve Dental Care - Caries risk}} | Verzamelen Mondzorg - Cariësrisico | 1.0.0-beta.1 |
+| 900000109 | {{pagelink: DentalFitness, text: Retrieve Dental Care - Dental fitness}} | Verzamelen Mondzorg - Dental fitness | 1.0.0-beta.1 |
+| 900000104 | {{pagelink: OralHygiene, text: Retrieve Dental Care - Oral hygiene}} | Verzamelen Mondzorg - Mondhygiëne | 1.0.0-beta.1 |
+| 900000106 | {{pagelink: ParafunctionalActivity, text: Retrieve Dental Care - Parafunctional activity}} | Verzamelen Mondzorg - Parafunctionele activiteit | 1.0.0-beta.1 |
+| 900000108 | {{pagelink: PeriodicPeriodontalScreeningScore, text: Retrieve Dental Care - Periodic Periodontal Screening score}} | Verzamelen Mondzorg - Periodieke Parodontale Screening-score | 1.0.0-beta.1 |
+| 900000102 | {{pagelink: Procedure, text: Retrieve Dental Care - Procedure}} | Verzamelen Mondzorg - Verrichting | 1.0.0-beta.1 |
 
-#### TIS: Response message
-The returned data to the PHR should conform to the profiles listed in the table below.   
+**Table 2: Granular data services applicable for Dental Care+**
 
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nette Tabel</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        .monospace {
-            font-family: monospace;
-            font-size: 12px;
-        }
-    </style>
-</head>
-<body>
-
-<table>
-    <thead>
-        <tr>
-            <th>Section</th>
-            <th>CIM NL</th>
-            <th>HCIM EN</th>
-            <th>FHIR Profile </th>
-            <th>Search URL</th>
-        </tr>
-    </thead>
-    <tbody>
-               <tr>
-            <td>1</td>
-            <td>Patiënt</td>
-            <td>Patient</td>
-              <td><a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885819" target="_blank">nl-core-Patient</a></td>
-            <td class="monospace">GET [base]/Patient</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Zorgverlener</td>
-            <td>HealthProfessional</td>
-            <td><a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885777" target="_blank">nl-core-HealthProfessional-Practitioner 
-             <a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885778" target="_blank">nl-core-HealthProfessional-PractitionerRole</a></td>
-            <td class="monospace">See Observation Dental Fitness</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Zorgaanbieder</td>
-            <td>HealthcareProvider</td>
-            <td><a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885775" target="_blank">nl-core-HealthcareProvider
-            <a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885776" target="_blank">nl-core-HealthcareProvider-Organization</a></td>
-            <td class="monospace">See Observation Dental Fitness</td>
-        </tr>
-         <tr>
-            <td>4</td>
-            <td>DentalFitness</td>
-            <td>DentalFitness</td>
-            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955334" target="_blank">mz-DentalFitness</a></td>
-            <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|440271000146100&_include=Observation:performer</td>
-        </tr>
-    </tbody>
-</table>
-
-</body>
-</html>
-
-### Use case: Retrieve Dental care data
-This FHIR implementation guide assumes that the PHR system is able to make a connection to the right TIS, for dental care TIS, that contains the patient's information. It does not provide information on finding the right XIS, for dental care TIS, nor does it provide information about security. Moreover, each transaction is performed in the context of a specific authenticated patient, for whose context (token) has been established using the authentication mechanisms described in the [MedMij Afsprakenstelsel](https://afsprakenstelsel.medmij.nl/). Each TIS or for dental care TIS. Gateway is required to perform filtering based on the patient associated with the context for the request, so only the records associated with the authenticated patient are returned. For this reason, search parameters for patient identification SHALL NOT be included.
-
-#### PHR: request message
-The PHR system requests the dental care data using individual [search](https://hl7.org/fhir/R4/search.html) interactions. The dental care exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's dental care data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown: search interactions. The dental care exchange consists of multiple FHIR resources with certain constraints. To obtain the patient's dental care data, the client can use multiple individual search operations based on specified search queries. The interactions are performed by an HTTP GET as shown:  
-
-`GET [base]/[type]{?[parameters]}`
-
-The table below shows in the first four columns the dental care sections, the HCIMs that constitute those sections and the specific content of dental care specific information. The last column shows the FHIR search queries to obtain the dental care information. These queries and expected responses are based on profiles listed in the {{pagelink:FO, text: functional design}}.
-
-#### TIS: Response message
-The returned data to the PHR should conform to the profiles listed in the table below.
-
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nette Tabel</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        .monospace {
-            font-family: monospace;
-            font-size: 12px;
-        }
-    </style>
-</head>
-<body>
-
-<table>
-    <thead>
-        <tr>
-            <th>Section</th>
-            <th>CIM NL</th>
-            <th>HCIM EN</th>
-            <th>FHIR Profile</th>
-            <th>Search URL</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Patiënt</td>
-            <td>Patient</td>
-            <td><a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885819" target="_blank">nl-core-Patient</a></td>
-            <td class="monospace">GET [base]/Patient</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Zorgverlener</td>
-            <td>HealthProfessional</td>
-            <td><a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885777" target="_blank">nl-core-HealthProfessional-Practitioner
-            <a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885778" target="_blank">nl-core-HealthProfessional-PractitionerRole</a></td>
-            <td class="monospace">See Observations </td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Zorgaanbieder</td>
-            <td>HealthcareProvider</td>
-            <td><a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885775" target="_blank">nl-core-HealthcareProvider
-            <a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885776" target="_blank">nl-core-HealthcareProvider-Organization</a></td>
-            <td class="monospace">See Observations </td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Verrichting</td>
-            <td>Procedure</td>
-            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955338" target="_blank">mz-Procedure</a></td>
-            <td class="monospace">GET [base]/Procedure?_include=Procedure:performer</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Behandeldoel</td>
-            <td>TreatmentObjective</td>
-            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955339">mz-TreatmentObjective</a></td>
-            <td class="monospace">GET [base]/Goal</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Mondhygiëne</td>
-            <td>OralHygiene</td>
-            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955335">mz-OralHygiene</a></td>
-            <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|364126007&_include=Observation:performer</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Cariësrisico</td>
-            <td>CariesRisk</td>
-            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955333">mz-CariesRisk</a></td>
-            <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|74024006&_include=Observation:performer</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>ParafunctioneleActiviteit</td>
-            <td>ParafunctionalActivity</td>
-            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955336">mz-ParafunctionalActivity</a></td>
-            <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|110353005&_include=Observation:performer</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>ASAScore</td>
-            <td>ASAScore</td>
-            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955332">mz-ASAScore</a></td>
-            <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|413347006&_include=Observation:performer</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>PeriodiekeParadontaleScreeningScore</td>
-            <td>PeriodicPeriodontalScreeningScore</td>
-            <td><a href="https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare/1.0.0-beta.1/files/2955337">mz-PeriodicPeriodontalScreeningScore</a></td>
-            <td class="monospace">GET [base]/Observation?code=http://snomed.info/sct|540501000146103&_include=Observation:performer</td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td>Betaler </td>
-            <td>Payer</td>
-            <td><a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885820">nl-core-Payer.InsuranceCompany
-            <a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885822">nl-core-Payer.PayerPerson</a></td>
-            </a></td>
-            <td class="monospace">GET [base]/Coverage?_include=Coverage:payor</td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td>Contactpersoon</td>
-            <td>ContactPerson</td>
-             <td><a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885752">nl-core-ContactPerson</a></td>
-            <td class="monospace">See Patient.contact </td>
-        </tr>
-        <tr>
-            <td>13</td>
-            <td>Contact</td>
-            <td>Encounter</td>
-            <td><a href="https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.1/files/2885764">nl-core-Encounter</a></td>
-            <td class="monospace">GET [base]/Encounter?date=[date]</td>
-        </tr>
-    </tbody>
-</table>
-
-</body>
-</html>
-
-#### Configuration search query Encounter
-The PHR may use and the TIS shall be capable of processing the minimal requirements outlined in the FHIR R4 IG [2.7.1.1 Search on date, number or quantity](https://informatiestandaarden.nictiz.nl/wiki/FHIR:V1.0_FHIR_IG_R4#Search_URLs_and_search_parameters). Example query: 
-
-| Name | Type | Description | Example
-|
-| [date](https://www.hl7.org/fhir/R4/search.html#date)  | date | Encounter date/time based on **start** date/time | Retrieve appointments with a start date/time from 01-01-2015 onwards by `GET [base]/Encounter?date=gt2017-12-31`
+The technical specifications with respect to the request message executed by the PHR and the response message of the XIS are detailed in the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.0.0#GeneralTechnicalSpecifications).
