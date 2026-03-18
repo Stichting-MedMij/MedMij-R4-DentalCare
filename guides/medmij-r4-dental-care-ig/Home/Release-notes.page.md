@@ -16,7 +16,7 @@
 | Dataset               | Orthodontic procedures have been added to the Procedure concept. | [DOSINZAGE1-647](https://medmij.atlassian.net/browse/DOSINZAGE1-647) |
 | Dataset               | Several corrections based on test findings Alpha phase have been done. | [DOSINZAGE1-631](https://medmij.atlassian.net/browse/DOSINZAGE1-631) |
 | Dataset               | <ul> <li>The terminology codes for CariesRisk and OralHygiene have been changed. <li>The name of the Periodic Periodontal Screening building block has been changed to Periodic Periodontal Screening Score. <li>The cardinality of all Comment concepts has been changed from `0..1` to `0..*`. | [DOSINZAGE1-668](https://medmij.atlassian.net/browse/DOSINZAGE1-668) |
-| Functional design     | The display guidelines (weergaverichtlijn) has been added to the functional design. | 
+| Functional design     | The display guidelines (weergaverichtlijn) has been added to the functional design. |
 | Technical design      | Added references and search queries for the zibs Encounter, ContactPerson and Payer. | [DOSINZAGE1-642](https://medmij.atlassian.net/browse/DOSINZAGE1-642) |
 | Technical design      | Added guidance on the search parameter `date` for the Encounter resource. | [DOSINZAGE1-651](https://medmij.atlassian.net/browse/DOSINZAGE1-651) |
 | Technical design      | Changed search query for Parafunctional Activity. | [DOSINZAGE1-652](https://medmij.atlassian.net/browse/DOSINZAGE1-652) |
