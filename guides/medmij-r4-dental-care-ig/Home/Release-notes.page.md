@@ -4,6 +4,8 @@
 
 | Component             | Description  | Ticket   |
 | --------------------- | ------------ | ---------|
+| Functional design     | The use cases Retrieve Dental Fitness and Retrieve Dental care data have been combined into a single use case that is defined via granular data services. The cross-domain data services have been moved to the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index?version=1.0.0). | [DOSINZAGE1-869](https://medmij.atlassian.net/browse/DOSINZAGE1-869) |
+| Functional design     | The display guideline (weergaverichtlijn) has been added to the functional design. | [DOSINZAGE1-871](https://medmij.atlassian.net/browse/DOSINZAGE1-871) |
 | Test material         | In the test instances for the zib Encounter a reference to the patient has been added on `.subject`. | [DOSINZAGE1-695](https://medmij.atlassian.net/browse/DOSINZAGE1-695) |
 
 ## 1.0.0-beta.1
