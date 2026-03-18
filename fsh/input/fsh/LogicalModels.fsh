@@ -114,7 +114,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^identifier.value = $MzLmPeriodicPeriodontalScreeningScoreOID
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This LogicalModel represents the PeriodicPeriodontalScreeningScore Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is based on the [Richtlijn Parodontale Screening, Diagnostiek en Behandeling in de Algemene praktijk](https://congressus-nvvp.s3.amazonaws.com/files/9f135c843bbc4ac28c26d829f10d00be.pdf?response-content-disposition=inline%3Bfilename%3D1._MC_Richtlijn_Parodontale_Screening.pdf&AWSAccessKeyId=AKIAIUTTQ23AZYZKILZQ&Signature=cdO3YKzGOIFSAtFDa43zsirqvno%3D&Expires=1773409137) authored by the NVvP."
+* ^purpose = "This LogicalModel represents the PeriodicPeriodontalScreeningScore Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is based on the [Richtlijn Parodontale Screening, Diagnostiek en Behandeling in de Algemene praktijk](https://www.nvvp.org/voor-professionals/richtlijnen) authored by the NVvP."
 * insert Copyright
 * ^abstract = false
 * .
