@@ -8,16 +8,16 @@ Description: "Caries risk."
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This Observation resource represents the CariesRisk building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Observation resource represents the CariesRisk Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
 * . 
   * ^short = "CariesRisk"
+  * ^definition = "Caries risk."
   * ^alias = "Cariësrisico"
 * code
   * ^patternCodeableConcept = $SCT#74024006
+* subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
-  * ^short = "Patient"
-  * ^alias = "Patient"
 * effectiveDateTime
   * ^short = "CariesRiskDateTime"
   * ^definition = "The date and time at which the caries risk was determined."
@@ -32,9 +32,9 @@ Description: "Caries risk."
     """
   * ^alias = "Uitvoerder"
 * valueCodeableConcept 1..1
-* valueCodeableConcept from $CariesRiskValueSetURL (extensible)
+* valueCodeableConcept from CariesRisk_VS (extensible)
   * ^short = "CariesRiskValue"
-  * ^definition = "The risk of caries."
+  * ^definition = "The caries risk."
   * ^alias = "CariësrisicoWaarde"
 * note
   * text
@@ -42,29 +42,12 @@ Description: "Caries risk."
     * ^definition = "Comment on the caries risk, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-ValueSet: CariesRisk
-Id: CariesRisk
-Title: "CariesRisk ValueSet."
-Description: "Caries risk."
-* ^url = $CariesRiskValueSetURL
-* ^identifier.use = #official
-* ^identifier.system = $URI
-* ^identifier.value = $CariesRiskValueSetOID
-* ^status = #draft
-* ^experimental = false
-* insert PublisherAndContact
-* $SCT#62482003 "laag"
-* $SCT#1250004 "verlaagd"
-* $SCT#35105006 "verhoogd"
-* $SCT#75540009 "hoog"
-
-Mapping: MedMijCariesRisk
+Mapping: MzCariesRiskMedMij-100-beta2
 Source: MzCariesRisk
-Id: mz-dataset-100-beta1-20250814
-Title: "Dataset Mondzorg 1.0.0-beta.1 20250814"
-* -> "mz-dataelement-124" "CariesRisk"
-* subject -> "mz-dataelement-1" "Patient"
-* effectiveDateTime -> "mz-dataelement-125" "CariesRiskDateTime"
-* performer -> "mz-dataelement-147" "Performer"
-* valueCodeableConcept -> "mz-dataelement-126" "CariesRiskValue"
-* note.text -> "mz-dataelement-127" "Comment"
+Id: mz-dataset-100-beta2-20260324
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
+* -> "mz-dataelement-1" "CariesRisk"
+* effectiveDateTime -> "mz-dataelement-2" "CariesRiskDateTime"
+* performer -> "mz-dataelement-4" "Performer"
+* valueCodeableConcept -> "mz-dataelement-3" "CariesRiskValue"
+* note.text -> "mz-dataelement-5" "Comment"
