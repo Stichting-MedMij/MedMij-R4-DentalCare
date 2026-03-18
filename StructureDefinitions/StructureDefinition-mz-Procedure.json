@@ -124,15 +124,15 @@
         "id": "Procedure.code",
         "path": "Procedure.code",
         "short": "ProcedureType",
-        "definition": "The name of the procedure based on the [Prestatie- en tariefbeschikking tandheelkundige zorg](https://puc.overheid.nl/nza/doc/PUC_764375_22/1/) and [Prestatie- en tariefbeschikking orthodontische zorg](https://puc.overheid.nl/nza/doc/PUC_764432_22/1/), both authored by the Nederlandse Zorgautoriteit (NZa).",
-        "comment": "Since the _required_ binding of VerrichtingTypeCodelijsten in the nl-core profile does not contain the procedure types relevant for dental and orthodontic care, this profile is not derived from the nl-core profile.",
+        "definition": "The name of the procedure based on the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis.",
+        "comment": "Since the _required_ binding of VerrichtingTypeCodelijsten in the nl-core profile does not contain the procedure types relevant for dental care, this profile is not derived from the nl-core profile.",
         "alias": [
           "VerrichtingType"
         ],
         "min": 1,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://medmij.nl/fhir/ValueSet/ProcedureTypeDentalCare"
+          "valueSet": "http://medmij.nl/fhir/ValueSet/ProcedureTypeVektisDentalCare"
         },
         "mapping": [
           {
