@@ -142,7 +142,7 @@
         "id": "mz-lm-Procedure.ProcedureType",
         "path": "mz-lm-Procedure.ProcedureType",
         "short": "Procedure type",
-        "definition": "The name of the procedure based on the [Prestatiecodelijst Mondzorg](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis.",
+        "definition": "The name of the procedure based on the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis.",
         "alias": [
           "VerrichtingType"
         ],

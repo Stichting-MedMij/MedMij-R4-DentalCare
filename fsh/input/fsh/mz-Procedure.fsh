@@ -26,7 +26,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * code 1..1
 * code from ProcedureTypeVektisDentalCare_VS (extensible)
   * ^short = "ProcedureType"
-  * ^definition = "The name of the procedure based on the [Prestatiecodelijst Mondzorg](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis."
+  * ^definition = "The name of the procedure based on the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis."
   * ^comment = "Since the _required_ binding of VerrichtingTypeCodelijsten in the nl-core profile does not contain the procedure types relevant for dental care, this profile is not derived from the nl-core profile."
   * ^alias = "VerrichtingType"
 * subject only Reference(Patient or Group or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)

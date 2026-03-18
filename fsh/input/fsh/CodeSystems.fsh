@@ -22,7 +22,7 @@ Description: "Codes for the periodontal screening for dental plaque-related dise
 CodeSystem: ProcedureTypeVektisDentalCare_CS
 Id: ProcedureTypeVektisDentalCare
 Title: "ProcedureTypeVektisDentalCare CodeSystem."
-Description: "Codes for the procedure type in dental care authored by Vektis in the Prestatiecodelijst Mondzorg. The current content of this code system can be retrieved from the [Vektis Prestatiecodelijsten index](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten)."
+Description: "Codes for the procedure type in dental care authored by Vektis in the Prestatiecodelijst Mondzorg (010). The current content of this code system can be retrieved from the [Vektis Prestatiecodelijsten index](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten)."
 * insert DefaultNarrative
 * ^url = $ProcedureTypeVektisDentalCareCodeSystemOID
 * ^identifier.use = #official

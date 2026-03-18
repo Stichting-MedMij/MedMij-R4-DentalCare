@@ -4,7 +4,7 @@
   "name": "ProcedureTypeVektisDentalCare",
   "id": "ProcedureTypeVektisDentalCare",
   "title": "ProcedureTypeVektisDentalCare ValueSet.",
-  "description": "ValueSet for the procedure type in dental care authored by Vektis in the Prestatiecodelijst Mondzorg.",
+  "description": "ValueSet for the procedure type in dental care authored by Vektis in the Prestatiecodelijst Mondzorg (010).",
   "url": "http://medmij.nl/fhir/ValueSet/ProcedureTypeVektisDentalCare",
   "text": {
     "status": "empty",

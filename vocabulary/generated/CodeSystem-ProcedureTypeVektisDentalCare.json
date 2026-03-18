@@ -5,7 +5,7 @@
   "name": "ProcedureTypeVektisDentalCare",
   "id": "ProcedureTypeVektisDentalCare",
   "title": "ProcedureTypeVektisDentalCare CodeSystem.",
-  "description": "Codes for the procedure type in dental care authored by Vektis in the Prestatiecodelijst Mondzorg. The current content of this code system can be retrieved from the [Vektis Prestatiecodelijsten index](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten).",
+  "description": "Codes for the procedure type in dental care authored by Vektis in the Prestatiecodelijst Mondzorg (010). The current content of this code system can be retrieved from the [Vektis Prestatiecodelijsten index](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten).",
   "url": "urn:oid:2.16.840.1.113883.2.4.3.30.4.981",
   "text": {
     "status": "empty",

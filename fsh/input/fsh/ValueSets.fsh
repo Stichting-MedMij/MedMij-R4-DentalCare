@@ -100,7 +100,7 @@ Description: "ValueSet for the periodontal screening for dental plaque-related d
 ValueSet: ProcedureTypeVektisDentalCare_VS
 Id: ProcedureTypeVektisDentalCare
 Title: "ProcedureTypeVektisDentalCare ValueSet."
-Description: "ValueSet for the procedure type in dental care authored by Vektis in the Prestatiecodelijst Mondzorg."
+Description: "ValueSet for the procedure type in dental care authored by Vektis in the Prestatiecodelijst Mondzorg (010)."
 * insert DefaultNarrative
 * ^identifier.use = #official
 * ^identifier.system = $URI
