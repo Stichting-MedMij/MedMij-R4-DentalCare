@@ -2,10 +2,12 @@
   filename: Index.page.md
 - name: Functional design
   filename: Functional-design.page.md
-- name: FHIR IG
-  filename: FHIR-IG.page.md
+- name: Technical design
+  filename: Technical-design.page.md
 - name: Artifact index
   filename: Artifact-Index
+- name: Granular data service index
+  filename: Granular-Data-Service-Index
 - name: Dependencies
   filename: Dependencies.page.md
 - name: Test material
