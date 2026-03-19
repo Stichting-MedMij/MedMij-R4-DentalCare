@@ -10,13 +10,13 @@
 | FHIR artifacts         | The profiles mz-ASAScore and mz-TreatmentObjective have been removed. The former has been renamed to medmij-core-ASAScore and has been moved to the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Artifact-Index/FHIR-Profiles?version=1.0.0). | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
 | FHIR artifacts         | The cardinality of `.subject` has been changed to `1..1` in the mz-CariesRisk, mz-DentalFitness, mz-OralHygiene, mz-ParafunctionalActivity and mz-PeriodicPeriodontalScreeningScore profiles. | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
 | FHIR artifacts         | The mappings to the zibs MedicalDevice and TextResult in the mz-Procedure profile, as well as corresponding guidance, have been removed. | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
-| FHIR artifacts         | The terminology on `.type` in the mz-Procedure profile has been changed to the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis. | [DOSINZAGE1-911](https://medmij.atlassian.net/browse/DOSINZAGE1-911) |
+| FHIR artifacts         | The terminology on `.code` in the mz-Procedure profile has been changed to the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis. | [DOSINZAGE1-911](https://medmij.atlassian.net/browse/DOSINZAGE1-911) |
 | FHIR artifacts         | The mappings in the FHIR profiles have been aligned with the Logical Models. | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
 | FHIR artifacts         | The OIDs of all CodeSystems and ValueSets have been updated to align with the new OID register of MedMij. | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
 | FHIR artifacts         | CapabilityStatements for the domain-specific data services Caries risk, Dental fitness, Oral hygiene, Parafunctional activity, Periodic Periodontal Screening score and Procedure have been added. | [DOSINZAGE1-916](https://medmij.atlassian.net/browse/DOSINZAGE1-916) |
 | Granular data services | The data services Caries risk, Dental fitness, Oral hygiene, Parafunctional activity, Periodic Periodontal Screening score and Procedure have been added. | [DOSINZAGE1-916](https://medmij.atlassian.net/browse/DOSINZAGE1-916) |
 | Test material          | In the test instances for the zib Encounter a reference to the patient has been added on `.subject`. | [DOSINZAGE1-695](https://medmij.atlassian.net/browse/DOSINZAGE1-695) |
-| Test material          | In the test instances for the CIM Procedure the `.type` has been updated to align with the new terminology specified in the mz-Procedure profile. | [DOSINZAGE1-911](https://medmij.atlassian.net/browse/DOSINZAGE1-911) |
+| Test material          | In the test instances for the CIM Procedure the `.code` has been updated to align with the new terminology specified in the mz-Procedure profile. | [DOSINZAGE1-911](https://medmij.atlassian.net/browse/DOSINZAGE1-911) |
 
 ## 1.0.0-beta.1
 
