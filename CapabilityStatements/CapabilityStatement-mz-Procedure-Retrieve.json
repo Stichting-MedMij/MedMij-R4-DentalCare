@@ -48,7 +48,7 @@
           ],
           "searchParam": [
             {
-              "name": "code",
+              "name": "category",
               "type": "token"
             }
           ]

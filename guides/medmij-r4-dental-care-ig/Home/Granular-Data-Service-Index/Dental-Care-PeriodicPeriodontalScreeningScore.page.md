@@ -17,7 +17,7 @@ topic: PeriodicPeriodontalScreeningScore
 ## Functional model
 | | |
 | --- | --- |
-| **CIM** | PeriodicPeriodontalScreeningScore (based on the [Richtlijn Parodontale Screening, Diagnostiek en Behandeling in de Algemene praktijk](https://congressus-nvvp.s3.amazonaws.com/files/9f135c843bbc4ac28c26d829f10d00be.pdf?response-content-disposition=inline%3Bfilename%3D1._MC_Richtlijn_Parodontale_Screening.pdf&AWSAccessKeyId=AKIAIUTTQ23AZYZKILZQ&Signature=cdO3YKzGOIFSAtFDa43zsirqvno%3D&Expires=1773409137) authored by the NVvP) |
+| **CIM** | PeriodicPeriodontalScreeningScore (based on the [Richtlijn Parodontale Screening, Diagnostiek en Behandeling in de Algemene praktijk](https://www.nvvp.org/voor-professionals/richtlijnen) authored by the NVvP) |
 | **Functional version** | 1.0.0-beta.2 |
 
 The Logical Model is included below.

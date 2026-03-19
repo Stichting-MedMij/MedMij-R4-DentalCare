@@ -664,7 +664,7 @@ Usage: #definition
     * interaction
       * code = #search-type
     * searchParam
-      * name = "code"
+      * name = "category"
       * type = #token
   * resource[+]
     * type = #Patient
@@ -735,7 +735,7 @@ Usage: #definition
     * interaction
       * code = #search-type
     * searchParam
-      * name = "code"
+      * name = "category"
       * type = #token
   * resource[+]
     * type = #Patient
