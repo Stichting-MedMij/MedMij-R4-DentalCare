@@ -73,108 +73,6 @@ Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtss
 ### Mondzorggegevens per CIM
 Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn voor mondzorg, een voorbeeld in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
 
-### Dental Fitness
-
-<u>Overzichtsscherm</u>
-
-| DentalFitnessScore                                      | Datum       | Zorgverlener               | Uitleg             | Zorgorganisatie |
-|---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
-| Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.   | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Klasse 1: vereist geen tandheelkundige behandeling |  |
-|--------------------------------------------------|---------------|
-| DentalFitnessScore                                | Klasse 1: vereist geen tandheelkundige behandeling |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
-
-<br/>
-
-### Verrichting
-
-<u>Overzichtsscherm</u>
-
-| Naam Verrichting                                             | Startdatum verrichting | Zorgverlener                  | Zorgorganisatie |
-|--------------------------------------------------------------|-------------------------|-------------------------------|-----------------|
-| H42 wortelpuntoperatie, per tandwortel, zonder afsluiting    | 01-01-2024              | A.B. Janssen<br>Tandarts      | Tendens         |
-| R67 Plaatsen opbouw ten behoeve van implantaatkroon          | 01-12-2023              | A.B. Janssen<br>Tandarts      | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |  |
-|-------------------------------------------------------------------------------|--------------------------------------------------|
-| Naam verrichting                                   | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
-| Startdatum verrichting                             | 01-01-2024                                      |
-| Einddatum verrichting                              | 01-01-2024                                      |
-| Manier verrichting                                 | Vrijmaken                                       |
-| Zorgverlener                                       | A.B. Janssen<br>Tandarts                        |
-| Zorgorganisatie                                    | Tendens                                         |
-
-<br/>
-
-### Behandeldoel
-
-<u>Overzichtsscherm</u>
-
-| Doel behandeling                | Prioriteit      | 
-|---------------------------------|------------------|
-| Tandvleesontsteking behandelen  | Hoge prioriteit  |
-| Vullen gaatje rechter kies      | Lage prioriteit  |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Tandvleesontsteking behandelen |  |
-|--------------------------------------------------|---------------|
-| Doel behandeling                                  | Tandvleesontsteking behandelen |
-| Prioriteit                                        | Hoge prioriteit |
-
-<br/>
-
-### Mondhygiëne
-
-<u>Overzichtsscherm</u>
-
-| Mondhygiëne           | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Slecht    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Zeer slecht            | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Slecht |  |
-|--------------------------------------------------|---------------|
-| Mondhygiëne                                       | Slecht |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
-
-<br/>
-
-### CariësRisico
-
-<u>Overzichtsscherm</u>
-
-| Risico op gaatjes | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|--------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Laag               | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Verlaagd           | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Laag |  |
-|--------------------------------------------------|---------------|
-| Risico op gaatjes                                 | Laag |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
-
-<br/>
-
 ### ASA-score
 
 <u>Overzichtsscherm</u>
@@ -196,45 +94,27 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 <br/>
 
-### Periodieke Parodontale Screening (PPS)
+### Contact
 
 <u>Overzichtsscherm</u>
 
-| Controle tandvlees                    | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Pockets 0–3 millimeter = in orde       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Pockets 4–5 millimeter = mogelijk in orde | 01-12-2023 | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Type contact                          | Begindatum  | Begintijd | Zorgverlener               | Zorgorganisatie |
+|----------------------------------------|-------------|-----------|-----------------------------|-----------------|
+| Second opinion                         | 01-01-2024  | 09:00     | A.B. Janssen<br>Tandarts    | Tendens         |
+| Tandarts Periodiek Preventief Onderzoek| 01-12-2023  | 11:00     | A.B. Janssen<br>Tandarts    | Tendens         |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Pockets 0–3 millimeter = in orde |  |
-|--------------------------------------------------|---------------|
-| Controle tandvlees                                | Pockets 0–3 millimeter = in orde |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
-
-<br/>
-
-### Parafunctionele activiteit
-
-<u>Overzichtsscherm</u>
-
-| Schadelijke gewoonte met tanden       | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Overmatig knarsen bij stress           | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Erosie door het drinken van vruchtensap| 01-12-2023  | A.B. Janssen               | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Overmatig knarsen bij stress |  |
-|--------------------------------------------------|---------------|
-| Schadelijke gewoonte met tanden                   | Overmatig knarsen bij stress |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
+| Geselecteerde regel: Second opinion |  |
+|------------------------------------|----------------------------|
+| Type contact                                      | Second opinion            |
+| Begindatum                                        | 01-01-2024                |
+| Begintijd                                         | 09:00                     |
+| Einddatum                                         | 01-01-2024                |
+| Eindtijd                                          | 10:00                     |
+| Reden contact                                     | Extra Controle vanwege bloedend tandvlees |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts  |
+| Zorgorganisatie                                   | Tendens                   |
 
 <br/>
 
@@ -260,30 +140,6 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 | Woonplaats                                       | Droom        |
 | Land                                             | Dromenland    |
 | Zorgorganisatie                                  | Tendens       |
-
-<br/>
-
-### Contact
-
-<u>Overzichtsscherm</u>
-
-| Type contact                          | Begindatum  | Begintijd | Zorgverlener               | Zorgorganisatie |
-|----------------------------------------|-------------|-----------|-----------------------------|-----------------|
-| Second opinion                         | 01-01-2024  | 09:00     | A.B. Janssen<br>Tandarts    | Tendens         |
-| Tandarts Periodiek Preventief Onderzoek| 01-12-2023  | 11:00     | A.B. Janssen<br>Tandarts    | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Second opinion |  |
-|------------------------------------|----------------------------|
-| Type contact                                      | Second opinion            |
-| Begindatum                                        | 01-01-2024                |
-| Begintijd                                         | 09:00                     |
-| Einddatum                                         | 01-01-2024                |
-| Eindtijd                                          | 10:00                     |
-| Reden contact                                     | Extra Controle vanwege bloedend tandvlees |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts  |
-| Zorgorganisatie                                   | Tendens                   |
 
 <br/>
 
@@ -325,6 +181,150 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 | Soort verzekering                          | Basis verzekering   |
 | Nummer verzekerde                          | 2312312312          |
 | Zorgorganisatie                            | Tendens             |
+
+<br/>
+
+### Behandeldoel
+
+<u>Overzichtsscherm</u>
+
+| Doel behandeling                | Prioriteit      | 
+|---------------------------------|------------------|
+| Tandvleesontsteking behandelen  | Hoge prioriteit  |
+| Vullen gaatje rechter kies      | Lage prioriteit  |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Tandvleesontsteking behandelen |  |
+|--------------------------------------------------|---------------|
+| Doel behandeling                                  | Tandvleesontsteking behandelen |
+| Prioriteit                                        | Hoge prioriteit |
+
+<br/>
+
+### CariësRisico
+
+<u>Overzichtsscherm</u>
+
+| Risico op gaatjes | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|--------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Laag               | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Verlaagd           | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Laag |  |
+|--------------------------------------------------|---------------|
+| Risico op gaatjes                                 | Laag |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
+### Dental Fitness
+
+<u>Overzichtsscherm</u>
+
+| DentalFitnessScore                                      | Datum       | Zorgverlener               | Uitleg             | Zorgorganisatie |
+|---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
+| Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.   | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Klasse 1: vereist geen tandheelkundige behandeling |  |
+|--------------------------------------------------|---------------|
+| DentalFitnessScore                                | Klasse 1: vereist geen tandheelkundige behandeling |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
+### Mondhygiëne
+
+<u>Overzichtsscherm</u>
+
+| Mondhygiëne           | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Slecht    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Zeer slecht            | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Slecht |  |
+|--------------------------------------------------|---------------|
+| Mondhygiëne                                       | Slecht |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
+### Parafunctionele activiteit
+
+<u>Overzichtsscherm</u>
+
+| Schadelijke gewoonte met tanden       | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Overmatig knarsen bij stress           | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Erosie door het drinken van vruchtensap| 01-12-2023  | A.B. Janssen               | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Overmatig knarsen bij stress |  |
+|--------------------------------------------------|---------------|
+| Schadelijke gewoonte met tanden                   | Overmatig knarsen bij stress |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
+### Periodieke Parodontale Screening (PPS)
+
+<u>Overzichtsscherm</u>
+
+| Controle tandvlees                    | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Pockets 0–3 millimeter = in orde       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Pockets 4–5 millimeter = mogelijk in orde | 01-12-2023 | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Pockets 0–3 millimeter = in orde |  |
+|--------------------------------------------------|---------------|
+| Controle tandvlees                                | Pockets 0–3 millimeter = in orde |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
+### Verrichting
+
+<u>Overzichtsscherm</u>
+
+| Naam Verrichting                                             | Startdatum verrichting | Zorgverlener                  | Zorgorganisatie |
+|--------------------------------------------------------------|-------------------------|-------------------------------|-----------------|
+| H42 wortelpuntoperatie, per tandwortel, zonder afsluiting    | 01-01-2024              | A.B. Janssen<br>Tandarts      | Tendens         |
+| R67 Plaatsen opbouw ten behoeve van implantaatkroon          | 01-12-2023              | A.B. Janssen<br>Tandarts      | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |  |
+|-------------------------------------------------------------------------------|--------------------------------------------------|
+| Naam verrichting                                   | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
+| Startdatum verrichting                             | 01-01-2024                                      |
+| Einddatum verrichting                              | 01-01-2024                                      |
+| Manier verrichting                                 | Vrijmaken                                       |
+| Zorgverlener                                       | A.B. Janssen<br>Tandarts                        |
+| Zorgorganisatie                                    | Tendens                                         |
 
 <br/>
 
@@ -372,242 +372,6 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 Breedteverdeling (op basis van eerdere mapping): 
 13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3%  (totaal 100%) -->
 
-<!-- DENTAL FITNESS -->
-<table class="pgo-table">
-  <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Naam data-item</th>
-      <th>Type item</th>
-      <th>Id</th>
-      <th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th>
-      <th>Advies tekst weergave in de PGO</th>
-      <th>Advies: Gebruikersvriendelijke toelichting</th>
-      <th>Prioriteit (MoSCoW)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Dental Fitness</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-109</td><td></td><td></td>
-      <td>De PGO ontvangt maar 1 Dental Fitness Score (geen historie)</td>
-      <td>Dental Fitness</td>
-      <td>De Dental Fitness Classificatie (DFC) is een tandheelkundige risico-inventarisatie en geeft aan in welke mate een militair kans loopt op tandheelkundige problemen welke (directe) behandeling behoeven binnen de 12 maanden vanaf het moment van vaststellen. </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>DentalFitnessDatumTijd</td><td>Item</td><td>mz-dataelement-110</td><td>01-01-2024</td><td>a</td>
-      <td>Alleen datum, geen tijd</td><td>Datum</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>DentalFitnessWaarde</td><td>Item</td><td>mz-dataelement-111</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
-      <td>De patiëntvriendelijke toelichting die achter de klasse 0 t/m 4 staan zoals "nooit gezien door een defensietandarts" is verplicht om te tonen in de PGO. Enkel de waarden zoals "Klasse 0" zegt de militair niet genoeg. De patiëntvriendelijke toelichting houdt de NATO AMedP-4.4. standaard en defensierichtlijn aan. De Dental Fitness Score is bekend bij het personeel van defensie.</td>
-      <td>DentalFitnessScore</td>
-      <td>[Valueset](https://simplifier.net/medmij-r4-dental-care/dentalfitness).</td>
-      <td>M</td>
-    </tr>
-    <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
-    </tr>
-    <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- VERRICHTING -->
-<table class="pgo-table">
-  <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Verrichting</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:14.1.1</td><td></td><td></td>
-      <td></td><td>Verrichting</td><td></td><td></td>
-    </tr>
-    <tr>
-      <td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td> 01-01-2024</td><td>a</td>
-      <td></td><td>Startdatum verrichting of startdatum</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>VerrichtingEindDatum</td><td>Item</td><td>NL-CM:14.1.3</td><td> 01-01-2024</td><td>b</td>
-      <td></td><td>Einddatum verrichting of einddatum</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie, per tandwortel, zonder afsluiting (code H42 in codesysteem 'NZa codes')</td><td>a</td>
-      <td></td><td>Naam verrichting of Verrichting</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken (code 302196006 in codesysteem 'SNOMED CT')</td><td>b</td>
-      <td></td><td>Manier verrichting of manier</td><td></td><td>S</td>
-    </tr>
-    <tr>
-      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-    <tr>
-      <td>Indicatie::Probleem</td><td>Reference</td><td>NL-CM:14.1.9</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-    <tr>
-      <td>Verrichting::MedischHulpmiddel</td><td>Reference</td><td>NL-CM:14.1.7</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-    <tr>
-      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:14.1.5</td><td>Tendens</td><td>a</td>
-      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
-    </tr>
-    <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener </td><td></td><td>Zorgverlener naam en specialisme: S</td>
-    </tr>
-    <tr>
-      <td>Aanvrager::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.10</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- BEHANDELDOEL -->
-<table class="pgo-table">
-  <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Behandeldoel</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:13.5.1</td><td></td><td></td>
-      <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-      <td>GewenstZorgresultaat</td><td>Item</td><td></td><td>Tandvleesontsteking behandelen</td><td>a </td>
-      <td></td><td>Doel behandeling</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a </td>
-      <td>High-priority weergeven als Hoge prioriteit en Low-priority weergeven als Lage prioriteit</td>
-      <td>Prioriteit</td>
-      <td>Aangeven of het GewenstZorgresultaat high-priority = (korte termijn) of low-priority (lange termijn) heeft.</td>
-      <td>M</td>
-    </tr>
-    <tr>
-      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td></td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-    <tr>
-      <td>Probleem</td><td>Reference</td><td></td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- MONDHYGIËNE -->
-<table class="pgo-table">
-  <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Mondhygiëne</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-120</td><td></td><td></td>
-      <td></td><td>Mondhygiëne</td><td>Mondhygiëne is de (dagelijkse) verzorging van de mond en het gebit om deze gezond te houden en daardoor gaatjes (cariës) en tandvleesontstekingen te voorkomen.</td><td></td>
-    </tr>
-    <tr>
-      <td>MondhygiëneDatumTijd</td><td>Item</td><td>mz-dataelement-121</td><td>01-01-2024</td><td>a</td>
-      <td></td><td>Datum</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>MondhygiëneWaarde</td><td>Item</td><td></td><td>Slecht (code slecht in codesysteem 'SNOMED CT')</td><td>a </td>
-      <td></td><td>Mondhygiëne </td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
-    </tr>
-    <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- CARIËSRISICO -->
-<table class="pgo-table">
-  <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>CariësRisico</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-124</td><td></td><td></td>
-      <td></td><td>Risico op gaatjes </td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes. </td><td></td>
-    </tr>
-    <tr>
-      <td>CariesRisicoDatumTijd</td><td>Item</td><td>mz-dataelement-125</td><td>01-01-2024</td><td>a </td>
-      <td></td><td>Datum</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>CariesRisicoWaarde</td><td>Item</td><td></td><td>Laag (code 62482003 in codesysteem 'SNOMED CT')</td><td>a</td>
-      <td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
-    </tr>
-    <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
-    </tr>
-  </tbody>
-</table>
-
 <!-- ASA-SCORE -->
 <table class="pgo-table">
   <colgroup>
@@ -639,91 +403,6 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
-    </tr>
-    <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- PERIODIEKE PARODONTALE SCREENEN (PPS)Periodieke Parodontale Screening Score https://knmt.nl/nieuws/periodiek-parodontaal-screenen-ben-jij-er-al-aan-gewend -->
-<table class="pgo-table">
-  <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>PeriodiekeParodontaleScreeningScore</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
-      <td></td><td>Controle  tandvlees</td>
-      <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
-    </tr>
-    <tr>
-      <td>PPSDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
-      <td></td><td>Datum</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>PPSScore</td><td>Item</td><td></td><td>Pockets 0-3 millimeter = in orde (code ppsscore1 in codesysteem 'Nog invullen??!!')</td><td>a </td>
-      <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
-    </tr>
-    <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W<br/></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- PARAFUNCTIONELE ACTIVITEIT -->
-<table class="pgo-table">
-  <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>ParafunctioneleActiviteit</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
-      <td></td><td>Schadelijke gewoonte met tanden</td>
-      <td>Parafuncties zijn mondbewegingen die niets met kauwen, slikken of spreken te maken hebben (zoals tandenknarsen).  </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>ParafunctioneleActiviteitDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
-      <td></td><td>Datum</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Parafunctionele activiteit waarde</td><td>Item</td><td></td><td>Overmatig knarsen bij stress</td><td>a </td>
-      <td></td><td>Schadelijke gewoonte met tanden</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
@@ -978,6 +657,327 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>????</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BEHANDELDOEL -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Behandeldoel</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:13.5.1</td><td></td><td></td>
+      <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>GewenstZorgresultaat</td><td>Item</td><td></td><td>Tandvleesontsteking behandelen</td><td>a </td>
+      <td></td><td>Doel behandeling</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a </td>
+      <td>High-priority weergeven als Hoge prioriteit en Low-priority weergeven als Lage prioriteit</td>
+      <td>Prioriteit</td>
+      <td>Aangeven of het GewenstZorgresultaat high-priority = (korte termijn) of low-priority (lange termijn) heeft.</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td></td><td></td><td></td>
+      <td></td><td></td><td></td><td>W</td>
+    </tr>
+    <tr>
+      <td>Probleem</td><td>Reference</td><td></td><td></td><td></td>
+      <td></td><td></td><td></td><td>W</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- CARIËSRISICO -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>CariësRisico</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-124</td><td></td><td></td>
+      <td></td><td>Risico op gaatjes </td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes. </td><td></td>
+    </tr>
+    <tr>
+      <td>CariesRisicoDatumTijd</td><td>Item</td><td>mz-dataelement-125</td><td>01-01-2024</td><td>a </td>
+      <td></td><td>Datum</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>CariesRisicoWaarde</td><td>Item</td><td></td><td>Laag (code 62482003 in codesysteem 'SNOMED CT')</td><td>a</td>
+      <td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+    </tr>
+    <tr>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- DENTAL FITNESS -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th>
+      <th>Type item</th>
+      <th>Id</th>
+      <th>Voorbeeld</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th>
+      <th>Advies tekst weergave in de PGO</th>
+      <th>Advies: Gebruikersvriendelijke toelichting</th>
+      <th>Prioriteit (MoSCoW)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Dental Fitness</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-109</td><td></td><td></td>
+      <td>De PGO ontvangt maar 1 Dental Fitness Score (geen historie)</td>
+      <td>Dental Fitness</td>
+      <td>De Dental Fitness Classificatie (DFC) is een tandheelkundige risico-inventarisatie en geeft aan in welke mate een militair kans loopt op tandheelkundige problemen welke (directe) behandeling behoeven binnen de 12 maanden vanaf het moment van vaststellen. </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DentalFitnessDatumTijd</td><td>Item</td><td>mz-dataelement-110</td><td>01-01-2024</td><td>a</td>
+      <td>Alleen datum, geen tijd</td><td>Datum</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>DentalFitnessWaarde</td><td>Item</td><td>mz-dataelement-111</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
+      <td>De patiëntvriendelijke toelichting die achter de klasse 0 t/m 4 staan zoals "nooit gezien door een defensietandarts" is verplicht om te tonen in de PGO. Enkel de waarden zoals "Klasse 0" zegt de militair niet genoeg. De patiëntvriendelijke toelichting houdt de NATO AMedP-4.4. standaard en defensierichtlijn aan. De Dental Fitness Score is bekend bij het personeel van defensie.</td>
+      <td>DentalFitnessScore</td>
+      <td>[Valueset](https://simplifier.net/medmij-r4-dental-care/dentalfitness).</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+    </tr>
+    <tr>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- MONDHYGIËNE -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Mondhygiëne</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-120</td><td></td><td></td>
+      <td></td><td>Mondhygiëne</td><td>Mondhygiëne is de (dagelijkse) verzorging van de mond en het gebit om deze gezond te houden en daardoor gaatjes (cariës) en tandvleesontstekingen te voorkomen.</td><td></td>
+    </tr>
+    <tr>
+      <td>MondhygiëneDatumTijd</td><td>Item</td><td>mz-dataelement-121</td><td>01-01-2024</td><td>a</td>
+      <td></td><td>Datum</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>MondhygiëneWaarde</td><td>Item</td><td></td><td>Slecht (code slecht in codesysteem 'SNOMED CT')</td><td>a </td>
+      <td></td><td>Mondhygiëne </td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+    </tr>
+    <tr>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- PARAFUNCTIONELE ACTIVITEIT -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ParafunctioneleActiviteit</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
+      <td></td><td>Schadelijke gewoonte met tanden</td>
+      <td>Parafuncties zijn mondbewegingen die niets met kauwen, slikken of spreken te maken hebben (zoals tandenknarsen).  </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ParafunctioneleActiviteitDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
+      <td></td><td>Datum</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Parafunctionele activiteit waarde</td><td>Item</td><td></td><td>Overmatig knarsen bij stress</td><td>a </td>
+      <td></td><td>Schadelijke gewoonte met tanden</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+    </tr>
+    <tr>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- PERIODIEKE PARODONTALE SCREENEN (PPS)Periodieke Parodontale Screening Score https://knmt.nl/nieuws/periodiek-parodontaal-screenen-ben-jij-er-al-aan-gewend -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>PeriodiekeParodontaleScreeningScore</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
+      <td></td><td>Controle  tandvlees</td>
+      <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
+    </tr>
+    <tr>
+      <td>PPSDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
+      <td></td><td>Datum</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>PPSScore</td><td>Item</td><td></td><td>Pockets 0-3 millimeter = in orde (code ppsscore1 in codesysteem 'Nog invullen??!!')</td><td>a </td>
+      <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+    </tr>
+    <tr>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W<br/></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- VERRICHTING -->
+<table class="pgo-table">
+  <colgroup>
+    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
+    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Verrichting</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:14.1.1</td><td></td><td></td>
+      <td></td><td>Verrichting</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td> 01-01-2024</td><td>a</td>
+      <td></td><td>Startdatum verrichting of startdatum</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>VerrichtingEindDatum</td><td>Item</td><td>NL-CM:14.1.3</td><td> 01-01-2024</td><td>b</td>
+      <td></td><td>Einddatum verrichting of einddatum</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie, per tandwortel, zonder afsluiting (code H42 in codesysteem 'NZa codes')</td><td>a</td>
+      <td></td><td>Naam verrichting of Verrichting</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken (code 302196006 in codesysteem 'SNOMED CT')</td><td>b</td>
+      <td></td><td>Manier verrichting of manier</td><td></td><td>S</td>
+    </tr>
+    <tr>
+      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td></td>
+      <td></td><td></td><td></td><td>W</td>
+    </tr>
+    <tr>
+      <td>Indicatie::Probleem</td><td>Reference</td><td>NL-CM:14.1.9</td><td></td><td></td>
+      <td></td><td></td><td></td><td>W</td>
+    </tr>
+    <tr>
+      <td>Verrichting::MedischHulpmiddel</td><td>Reference</td><td>NL-CM:14.1.7</td><td></td><td></td>
+      <td></td><td></td><td></td><td>W</td>
+    </tr>
+    <tr>
+      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:14.1.5</td><td>Tendens</td><td>a</td>
+      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+    </tr>
+    <tr>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener </td><td></td><td>Zorgverlener naam en specialisme: S</td>
+    </tr>
+    <tr>
+      <td>Aanvrager::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.10</td><td></td><td></td>
+      <td></td><td></td><td></td><td>W</td>
     </tr>
   </tbody>
 </table>
