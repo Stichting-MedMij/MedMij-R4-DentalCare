@@ -23,6 +23,8 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * When ProcedureStartDate is in the past and ProcedureEndDate is missing, it may be assumed that the Procedure was recorded as a point in time and `.status` will usually be set to _completed_.
   * When a system is unable to infer the status from the ProcedureStartDate and ProcedureEndDate , `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the Procedure.
   """
+* category 1..1
+  * ^patternCodeableConcept = $SCT#225362009
 * code 1..1
 * code from ProcedureTypeVektisDentalCare_VS (extensible)
   * ^short = "ProcedureType"

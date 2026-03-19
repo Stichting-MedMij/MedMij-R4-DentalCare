@@ -45,6 +45,12 @@
             {
               "code": "search-type"
             }
+          ],
+          "searchParam": [
+            {
+              "name": "category",
+              "type": "token"
+            }
           ]
         },
         {
