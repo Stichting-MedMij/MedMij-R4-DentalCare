@@ -121,6 +121,19 @@
         ]
       },
       {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "225362009",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      },
+      {
         "id": "Procedure.code",
         "path": "Procedure.code",
         "short": "ProcedureType",
