@@ -4,9 +4,17 @@
 
 | Component             | Description  | Ticket   |
 | --------------------- | ------------ | ---------|
+| Dataset                | Logical Models corresponding to the CariesRisk, DentalFitness, OralHygiene, ParafunctionalActivity, PeriodicPeriodontalScreeningScore and Procedure information models have been added, and the dataelement ids have been updated. | [DOSINZAGE1-881](https://medmij.atlassian.net/browse/DOSINZAGE1-881) |
 | Functional design     | The use cases Retrieve Dental Fitness and Retrieve Dental care data have been combined into a single use case that is defined via granular data services. The cross-domain data services have been moved to the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index?version=1.0.0). | [DOSINZAGE1-869](https://medmij.atlassian.net/browse/DOSINZAGE1-869) |
 | Functional design     | The display guideline (weergaverichtlijn) has been added to the functional design. | [DOSINZAGE1-871](https://medmij.atlassian.net/browse/DOSINZAGE1-871) |
-| Test material         | In the test instances for the zib Encounter a reference to the patient has been added on `.subject`. | [DOSINZAGE1-695](https://medmij.atlassian.net/browse/DOSINZAGE1-695) |
+| FHIR artifacts         | The profiles mz-ASAScore and mz-TreatmentObjective have been removed. The former has been renamed to medmij-core-ASAScore and has been moved to the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Artifact-Index/FHIR-Profiles?version=1.0.0). | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
+| FHIR artifacts         | The cardinality of `.subject` has been changed to `1..1` in the mz-CariesRisk, mz-DentalFitness, mz-OralHygiene, mz-ParafunctionalActivity and mz-PeriodicPeriodontalScreeningScore profiles. | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
+| FHIR artifacts         | The mappings to the zibs MedicalDevice and TextResult in the mz-Procedure profile, as well as corresponding guidance, have been removed. | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
+| FHIR artifacts         | The mappings in the FHIR profiles have been aligned with the Logical Models. | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
+| FHIR artifacts         | The OIDs of all CodeSystems and ValueSets have been updated to align with the new OID register of MedMij. | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
+| FHIR artifacts         | The terminology on `.code` in the mz-Procedure profile has been changed to the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis. | [DOSINZAGE1-911](https://medmij.atlassian.net/browse/DOSINZAGE1-911) |
+| Test material          | In the test instances for the zib Encounter a reference to the patient has been added on `.subject`. | [DOSINZAGE1-695](https://medmij.atlassian.net/browse/DOSINZAGE1-695) |
+| Test material          | In the test instances for the CIM Procedure the `.code` has been updated to align with the new terminology specified in the mz-Procedure profile. | [DOSINZAGE1-911](https://medmij.atlassian.net/browse/DOSINZAGE1-911) |
 
 ## 1.0.0-beta.1
 
@@ -18,7 +26,7 @@
 | Dataset               | Orthodontic procedures have been added to the Procedure concept. | [DOSINZAGE1-647](https://medmij.atlassian.net/browse/DOSINZAGE1-647) |
 | Dataset               | Several corrections based on test findings Alpha phase have been done. | [DOSINZAGE1-631](https://medmij.atlassian.net/browse/DOSINZAGE1-631) |
 | Dataset               | <ul> <li>The terminology codes for CariesRisk and OralHygiene have been changed. <li>The name of the Periodic Periodontal Screening building block has been changed to Periodic Periodontal Screening Score. <li>The cardinality of all Comment concepts has been changed from `0..1` to `0..*`. | [DOSINZAGE1-668](https://medmij.atlassian.net/browse/DOSINZAGE1-668) |
-| Functional design     | The display guidelines (weergaverichtlijn) has been added to the functional design. | 
+| Functional design     | The display guidelines (weergaverichtlijn) has been added to the functional design. |
 | Technical design      | Added references and search queries for the zibs Encounter, ContactPerson and Payer. | [DOSINZAGE1-642](https://medmij.atlassian.net/browse/DOSINZAGE1-642) |
 | Technical design      | Added guidance on the search parameter `date` for the Encounter resource. | [DOSINZAGE1-651](https://medmij.atlassian.net/browse/DOSINZAGE1-651) |
 | Technical design      | Changed search query for Parafunctional Activity. | [DOSINZAGE1-652](https://medmij.atlassian.net/browse/DOSINZAGE1-652) |

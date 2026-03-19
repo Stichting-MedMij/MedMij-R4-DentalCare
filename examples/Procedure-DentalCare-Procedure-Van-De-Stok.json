@@ -14,8 +14,8 @@
   "code": {
     "coding": [
       {
-        "code": "F121",
-        "system": "https://puc.overheid.nl/nza/doc/PUC_764432_22/1",
+        "code": "F121A",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.981",
         "display": "Eerste consult"
       }
     ]

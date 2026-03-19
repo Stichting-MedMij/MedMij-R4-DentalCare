@@ -22,14 +22,14 @@
       ]
     }
   ],
-  "description": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
-  "purpose": "This Observation resource represents the PeriodicPeriodontalScreeningScore building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care).",
+  "description": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine the patient, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
+  "purpose": "This Observation resource represents the PeriodicPeriodontalScreeningScore Clinical Information Model (CIM) for patient use cases in the context of Dental Care.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-beta1-20250814",
-      "name": "Dataset Mondzorg 1.0.0-beta.1 20250814"
+      "identity": "mz-dataset-100-beta2-20260324",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
     }
   ],
   "kind": "resource",
@@ -43,6 +43,7 @@
         "id": "Observation",
         "path": "Observation",
         "short": "PeriodicPeriodontalScreeningScore",
+        "definition": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine the patient, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
         "alias": [
           "PeriodiekeParodontaleScreeningScore",
           "Measurement",
@@ -51,8 +52,8 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-136",
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-21",
             "comment": "PeriodicPeriodontalScreeningScore"
           }
         ]
@@ -72,10 +73,7 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "short": "Patient",
-        "alias": [
-          "Patient"
-        ],
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -83,13 +81,6 @@
               "http://hl7.org/fhir/StructureDefinition/Patient",
               "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
             ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-1",
-            "comment": "Patient"
           }
         ]
       },
@@ -111,10 +102,10 @@
         "id": "Observation.effective[x]:effectiveDateTime",
         "path": "Observation.effective[x]",
         "sliceName": "effectiveDateTime",
-        "short": "PPSDateTime",
+        "short": "PeriodicPeriodontalScreeningScoreDateTime",
         "definition": "The date and time at which the PPS was performed.",
         "alias": [
-          "PPSDatumTijd"
+          "PeriodiekeParodontaleScreeningScoreDatumTijd"
         ],
         "min": 0,
         "max": "1",
@@ -125,9 +116,9 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-137",
-            "comment": "PPSDateTime"
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-22",
+            "comment": "PeriodicPeriodontalScreeningScoreDateTime"
           }
         ]
       },
@@ -156,8 +147,8 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-150",
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-24",
             "comment": "Performer"
           }
         ]
@@ -181,10 +172,10 @@
         "id": "Observation.value[x]:valueCodeableConcept",
         "path": "Observation.value[x]",
         "sliceName": "valueCodeableConcept",
-        "short": "PPSScore",
+        "short": "PeriodicPeriodontalScreeningScoreValue",
         "definition": "The score of the PPS.",
         "alias": [
-          "PPSScore"
+          "PeriodiekeParodontaleScreeningScoreWaarde"
         ],
         "min": 1,
         "max": "1",
@@ -199,9 +190,9 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-138",
-            "comment": "PPSScore"
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-23",
+            "comment": "PeriodicPeriodontalScreeningScoreValue"
           }
         ]
       },
@@ -215,8 +206,8 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-139",
+            "identity": "mz-dataset-100-beta2-20260324",
+            "map": "mz-dataelement-25",
             "comment": "Comment"
           }
         ]
