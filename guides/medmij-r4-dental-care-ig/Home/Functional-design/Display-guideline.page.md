@@ -79,7 +79,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 | DentalFitnessScore                                      | Datum       | Zorgverlener               | Uitleg             | Zorgorganisatie |
 |---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
-| Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…   | Tendens         |
+| Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.   | Tendens         |
 
 <u>Detailscherm</u>
 
@@ -87,7 +87,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 |--------------------------------------------------|---------------|
 | DentalFitnessScore                                | Klasse 1: vereist geen tandheelkundige behandeling |
 | Datum                                             | 01-01-2024 |
-| Uitleg                                            | Dit betekent dat... |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
@@ -97,7 +97,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 <u>Overzichtsscherm</u>
 
-| Naam behandeling                                             | Startdatum behandeling | Zorgverlener                  | Zorgorganisatie |
+| Naam Verrichting                                             | Startdatum verrichting | Zorgverlener                  | Zorgorganisatie |
 |--------------------------------------------------------------|-------------------------|-------------------------------|-----------------|
 | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting    | 01-01-2024              | A.B. Janssen<br>Tandarts      | Tendens         |
 | R67 Plaatsen opbouw ten behoeve van implantaatkroon          | 01-12-2023              | A.B. Janssen<br>Tandarts      | Tendens         |
@@ -106,10 +106,10 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 | Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |  |
 |-------------------------------------------------------------------------------|--------------------------------------------------|
-| Naam behandeling                                   | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
-| Startdatum behandeling                             | 01-01-2024                                      |
-| Einddatum behandeling                              | 01-01-2024                                      |
-| Manier behandeling                                 | Vrijmaken                                       |
+| Naam verrichting                                   | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
+| Startdatum verrichting                             | 01-01-2024                                      |
+| Einddatum verrichting                              | 01-01-2024                                      |
+| Manier verrichting                                 | Vrijmaken                                       |
 | Zorgverlener                                       | A.B. Janssen<br>Tandarts                        |
 | Zorgorganisatie                                    | Tendens                                         |
 
@@ -119,10 +119,10 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 <u>Overzichtsscherm</u>
 
-| Doel behandeling                | Prioriteit      | Zorgorganisatie |
-|---------------------------------|------------------|-----------------|
-| Tandvleesontsteking behandelen  | Hoge prioriteit  | Tendens         |
-| Vullen gaatje rechter kies      | Lage prioriteit  | Tendens         |
+| Doel behandeling                | Prioriteit      | 
+|---------------------------------|------------------|
+| Tandvleesontsteking behandelen  | Hoge prioriteit  |
+| Vullen gaatje rechter kies      | Lage prioriteit  |
 
 <u>Detailscherm</u>
 
@@ -130,7 +130,6 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 |--------------------------------------------------|---------------|
 | Doel behandeling                                  | Tandvleesontsteking behandelen |
 | Prioriteit                                        | Hoge prioriteit |
-| Zorgorganisatie                                   | Tendens          |
 
 <br/>
 
@@ -140,8 +139,8 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 | Mondhygiëne           | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
 |------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Slecht    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
-| Zeer slecht            | 01-12-2023  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+| Slecht    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Zeer slecht            | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
 
 <u>Detailscherm</u>
 
@@ -149,7 +148,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 |--------------------------------------------------|---------------|
 | Mondhygiëne                                       | Slecht |
 | Datum                                             | 01-01-2024 |
-| Uitleg                                            | Dit betekent dat... |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
@@ -161,8 +160,8 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 | Risico op gaatjes | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
 |--------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Laag               | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
-| Verlaagd           | 01-12-2023  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+| Laag               | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Verlaagd           | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
 
 <u>Detailscherm</u>
 
@@ -170,7 +169,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 |--------------------------------------------------|---------------|
 | Risico op gaatjes                                 | Laag |
 | Datum                                             | 01-01-2024 |
-| Uitleg                                            | Dit betekent dat... |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
@@ -182,8 +181,8 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 | Score gezondheid (ASA)                                  | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
 |----------------------------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| ASA-score 1 Gezonde patiënt                              | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
-| ASA-score 2 Milde systemische aandoening zonder belemmering | 01-12-2023 | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+| ASA-score 1 Gezonde patiënt                              | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| ASA-score 2 Milde systemische aandoening zonder belemmering | 01-12-2023 | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
 
 <u>Detailscherm</u>
 
@@ -191,7 +190,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 |--------------------------------------------------|---------------|
 | Score gezondheid (ASA)                            | ASA-score 1 Gezonde patiënt |
 | Datum                                             | 01-01-2024 |
-| Uitleg                                            | Dit betekent dat... |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
@@ -203,8 +202,8 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 | Controle tandvlees                    | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
 |----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Pockets 0–3 millimeter = in orde       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
-| Pockets 4–5 millimeter = mogelijk in orde | 01-12-2023 | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
+| Pockets 0–3 millimeter = in orde       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Pockets 4–5 millimeter = mogelijk in orde | 01-12-2023 | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
 
 <u>Detailscherm</u>
 
@@ -212,7 +211,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 |--------------------------------------------------|---------------|
 | Controle tandvlees                                | Pockets 0–3 millimeter = in orde |
 | Datum                                             | 01-01-2024 |
-| Uitleg                                            | Dit betekent dat... |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
@@ -224,8 +223,8 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 | Schadelijke gewoonte met tanden       | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
 |----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Overmatig knarsen bij stress           | 01-01-2024  | A.B. Janssen<br>Tandarts    | Dit betekent dat…     | Tendens         |
-| Erosie door het drinken van vruchtensap| 01-12-2023  | A.B. Janssen               | Dit betekent dat…     | Tendens         |
+| Overmatig knarsen bij stress           | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Erosie door het drinken van vruchtensap| 01-12-2023  | A.B. Janssen               | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
 
 <u>Detailscherm</u>
 
@@ -233,7 +232,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 |--------------------------------------------------|---------------|
 | Schadelijke gewoonte met tanden                   | Overmatig knarsen bij stress |
 | Datum                                             | 01-01-2024 |
-| Uitleg                                            | Dit betekent dat... |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
 | Zorgorganisatie                                   | Tendens          |
 
@@ -282,7 +281,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 | Begintijd                                         | 09:00                     |
 | Einddatum                                         | 01-01-2024                |
 | Eindtijd                                          | 10:00                     |
-| Type contact uitleg                               | Extra Controle vanwege bloedend tandvlees |
+| Reden contact                                     | Extra Controle vanwege bloedend tandvlees |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts  |
 | Zorgorganisatie                                   | Tendens                   |
 
@@ -401,14 +400,14 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td>
     </tr>
     <tr>
-      <td>DatumTijd</td><td>Item</td><td>mz-dataelement-110</td><td>01-01-2024</td><td>a</td>
+      <td>DentalFitnessDatumTijd</td><td>Item</td><td>mz-dataelement-110</td><td>01-01-2024</td><td>a</td>
       <td>Alleen datum, geen tijd</td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>DentalFitnessScore</td><td>Item</td><td>mz-dataelement-111</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
+      <td>DentalFitnessWaarde</td><td>Item</td><td>mz-dataelement-111</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
       <td>De patiëntvriendelijke toelichting die achter de klasse 0 t/m 4 staan zoals "nooit gezien door een defensietandarts" is verplicht om te tonen in de PGO. Enkel de waarden zoals "Klasse 0" zegt de militair niet genoeg. De patiëntvriendelijke toelichting houdt de NATO AMedP-4.4. standaard en defensierichtlijn aan. De Dental Fitness Score is bekend bij het personeel van defensie.</td>
       <td>DentalFitnessScore</td>
-      <td>Klasse 0  “nooit gezien door een defensietandarts”<br/>Klasse 1 “vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen”<br/>Klasse 2 “kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden”<br/>Klasse 3 “huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken” <br/>Klasse 4 “vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig”</td>
+      <td>[Valueset](https://simplifier.net/medmij-r4-dental-care/dentalfitness).</td>
       <td>M</td>
     </tr>
     <tr>
@@ -416,7 +415,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -442,23 +441,23 @@ Breedteverdeling (op basis van eerdere mapping):
   <tbody>
     <tr>
       <td><strong>Verrichting</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:14.1.1</td><td></td><td></td>
-      <td></td><td>Behandeling</td><td></td><td></td>
+      <td></td><td>Verrichting</td><td></td><td></td>
     </tr>
     <tr>
       <td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td> 01-01-2024</td><td>a</td>
-      <td></td><td>Startdatum behandeling</td><td></td><td>M</td>
+      <td></td><td>Startdatum verrichting of startdatum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>VerrichtingEindDatum</td><td>Item</td><td>NL-CM:14.1.3</td><td> 01-01-2024</td><td>b</td>
-      <td></td><td>Einddatum behandeling</td><td></td><td>M</td>
+      <td></td><td>Einddatum verrichting of einddatum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie, per tandwortel, zonder afsluiting (code H42 in codesysteem 'NZa codes')</td><td>a</td>
-      <td></td><td>Naam behandeling</td><td></td><td>M</td>
+      <td></td><td>Naam verrichting of Verrichting</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken (code 302196006 in codesysteem 'SNOMED CT')</td><td>b</td>
-      <td></td><td>Manier  behandeling</td><td></td><td>S</td>
+      <td></td><td>Manier verrichting of manier</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td></td>
@@ -524,10 +523,6 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Probleem</td><td>Reference</td><td></td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
-    <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
-    </tr>
   </tbody>
 </table>
 
@@ -562,7 +557,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -603,7 +598,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -628,7 +623,7 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>ASA-score</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td><td></td></td>
+      <td><strong>ASAscore</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td><td></td></td>
       <td>Score gezondheid (ASA)</td><td>De ASA-classificatie is het American Society of Anesthesiologists classificatiesysteem voor fysieke status (algehele medische toestand) </td><td></td>
     </tr>
     <tr>
@@ -638,7 +633,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td>ASAScoreWaarde</td><td>Item</td><td></td><td>ASA-score 1 Gezonde patiënt (code 413495001 in codesysteem 'SNOMED CT')</td><td>a </td>
       <td>De patiëntvriendelijke toelichting die achter de score 1 t/m 6 staan zoals "Gezonde patiënt" is verplicht om te tonen in de PGO. Enkel de waarden zoals "ASA-score 1" zegt de pgo-gebruikber niet genoeg.</td><td>Score gezondheid (ASA)</td>
-      <td>ASA-score 1 (bevinding) = Gezonde patiënt <br/>ASA-score 2 (bevinding) = Milde systemische aandoening zonder belemmering<br/>ASA-score 3 (bevinding)  = Ernstige systemische aandoening, beperking dagelijkse activiteit<br/>ASA-score 4 (bevinding) = Ernstige invaliderende systeemaandoening, constante levensbedreiging<br/>ASA-score 5 (bevinding) = Stervende, overlijden &lt; 24 uur zonder ingreep<br/>ASA-score 6 (bevinding)  = Hersendood, Multi Orgaan Donatie</td>
+      <td>[Valueset](https://simplifier.net/medmij-r4-dental-care/asascore).</td>
       <td>M</td>
     </tr>
     <tr>
@@ -646,7 +641,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -671,7 +666,7 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>Periodieke Parodontale Screening Score (PPS)</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
+      <td><strong>PeriodiekeParodontaleScreeningScore</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
       <td></td><td>Controle  tandvlees</td>
       <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
     </tr>
@@ -688,7 +683,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -713,7 +708,7 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>Parafunctionele activiteit</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
+      <td><strong>ParafunctioneleActiviteit</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
       <td></td><td>Schadelijke gewoonte met tanden</td>
       <td>Parafuncties zijn mondbewegingen die niets met kauwen, slikken of spreken te maken hebben (zoals tandenknarsen).  </td>
       <td></td>
@@ -731,7 +726,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Dit betekent dat…</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -769,7 +764,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
-      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam M, Overige datavelden: W</td>
     </tr>
     <tr>
       <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>9:00</td><td>a</td></td><td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd </td><td></td><td>M</td>
@@ -796,7 +791,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra Controle vanwege bloedend tandvlees</td><td>b</td>
-      <td></td><td>Type contact uitleg (of Type contact Toelichting)</td><td></td><td>M</td>
+      <td></td><td>Reden contact</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Herkomst</td><td>Item</td><td>NL-CM:15.1.14</td><td></td><td></td>
