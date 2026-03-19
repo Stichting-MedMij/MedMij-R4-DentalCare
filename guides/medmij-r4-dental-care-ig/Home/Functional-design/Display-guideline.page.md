@@ -115,7 +115,7 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 
 <br/>
 
-### Behandeldoel
+### Behandeldoel 
 
 <u>Overzichtsscherm</u>
 
