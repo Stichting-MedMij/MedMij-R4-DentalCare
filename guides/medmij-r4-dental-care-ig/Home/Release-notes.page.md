@@ -2,11 +2,11 @@
 
 ## 1.0.0-beta.2
 
-| Component             | Description  | Ticket   |
-| --------------------- | ------------ | ---------|
+| Component              | Description  | Ticket   |
+| ---------------------- | ------------ | ---------|
 | Dataset                | Logical Models corresponding to the CariesRisk, DentalFitness, OralHygiene, ParafunctionalActivity, PeriodicPeriodontalScreeningScore and Procedure information models have been added, and the dataelement ids have been updated. | [DOSINZAGE1-881](https://medmij.atlassian.net/browse/DOSINZAGE1-881) |
-| Functional design     | The use cases Retrieve Dental Fitness and Retrieve Dental care data have been combined into a single use case that is defined via granular data services. The cross-domain data services have been moved to the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index?version=1.0.0). | [DOSINZAGE1-869](https://medmij.atlassian.net/browse/DOSINZAGE1-869) |
-| Functional design     | The display guideline (weergaverichtlijn) has been added to the functional design. | [DOSINZAGE1-871](https://medmij.atlassian.net/browse/DOSINZAGE1-871) |
+| Functional design      | The use cases Retrieve Dental Fitness and Retrieve Dental care data have been combined into a single use case that is defined via granular data services. The cross-domain data services have been moved to the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index?version=1.0.0). | [DOSINZAGE1-869](https://medmij.atlassian.net/browse/DOSINZAGE1-869) |
+| Functional design      | The display guideline (weergaverichtlijn) has been added to the functional design. | [DOSINZAGE1-871](https://medmij.atlassian.net/browse/DOSINZAGE1-871) |
 | Technical design       | The use cases Retrieve Dental Fitness and Retrieve Dental care data have been combined into a single use case that is defined via granular data services. The cross-domain data services have been moved to the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index?version=1.0.0). | [DOSINZAGE1-870](https://medmij.atlassian.net/browse/DOSINZAGE1-870) |
 | FHIR artifacts         | <ul> <li> The nl-core dependency has been updated to 0.12.0-beta.4. <li> A dependency on version 1.0.0 of MedMij R4 Core has been added. | [DOSINZAGE1-870](https://medmij.atlassian.net/browse/DOSINZAGE1-870) |
 | FHIR artifacts         | The profiles mz-ASAScore and mz-TreatmentObjective have been removed. The former has been renamed to medmij-core-ASAScore and has been moved to the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Artifact-Index/FHIR-Profiles?version=1.0.0). | [DOSINZAGE1-882](https://medmij.atlassian.net/browse/DOSINZAGE1-882) |
