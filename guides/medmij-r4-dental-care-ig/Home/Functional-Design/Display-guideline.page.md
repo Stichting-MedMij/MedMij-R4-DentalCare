@@ -73,6 +73,30 @@ Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtss
 ### Mondzorggegevens per CIM
 Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn voor mondzorg, een voorbeeld in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
 
+### Contact
+
+<u>Overzichtsscherm</u>
+
+| Type contact                          | Begindatum  | Begintijd | Zorgverlener               | Zorgorganisatie |
+|----------------------------------------|-------------|-----------|-----------------------------|-----------------|
+| Second opinion                         | 01-01-2024  | 09:00     | A.B. Janssen<br>Tandarts    | Tendens         |
+| Tandarts Periodiek Preventief Onderzoek| 01-12-2023  | 11:00     | A.B. Janssen<br>Tandarts    | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Second opinion |  |
+|------------------------------------|----------------------------|
+| Type contact                                      | Second opinion            |
+| Begindatum                                        | 01-01-2024                |
+| Begintijd                                         | 09:00                     |
+| Einddatum                                         | 01-01-2024                |
+| Eindtijd                                          | 10:00                     |
+| Reden contact                                     | Extra Controle vanwege bloedend tandvlees |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts  |
+| Zorgorganisatie                                   | Tendens                   |
+
+<br/>
+
 ### ASA-score
 
 <u>Overzichtsscherm</u>
@@ -87,150 +111,6 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 | Geselecteerde regel: ASA-score 1 Gezonde patiënt |  |
 |--------------------------------------------------|---------------|
 | Score gezondheid (ASA)                            | ASA-score 1 Gezonde patiënt |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
-
-<br/>
-
-### Dental Fitness
-
-<u>Overzichtsscherm</u>
-
-| DentalFitnessScore                                      | Datum       | Zorgverlener               | Uitleg             | Zorgorganisatie |
-|---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
-| Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.   | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Klasse 1: vereist geen tandheelkundige behandeling |  |
-|--------------------------------------------------|---------------|
-| DentalFitnessScore                                | Klasse 1: vereist geen tandheelkundige behandeling |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
-
-<br/>
-
-### Verrichting
-
-<u>Overzichtsscherm</u>
-
-| Naam Verrichting                                             | Startdatum verrichting | Zorgverlener                  | Zorgorganisatie |
-|--------------------------------------------------------------|-------------------------|-------------------------------|-----------------|
-| H42 wortelpuntoperatie, per tandwortel, zonder afsluiting    | 01-01-2024              | A.B. Janssen<br>Tandarts      | Tendens         |
-| R67 Plaatsen opbouw ten behoeve van implantaatkroon          | 01-12-2023              | A.B. Janssen<br>Tandarts      | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |  |
-|-------------------------------------------------------------------------------|--------------------------------------------------|
-| Naam verrichting                                   | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
-| Startdatum verrichting                             | 01-01-2024                                      |
-| Einddatum verrichting                              | 01-01-2024                                      |
-| Manier verrichting                                 | Vrijmaken                                       |
-| Zorgverlener                                       | A.B. Janssen<br>Tandarts                        |
-| Zorgorganisatie                                    | Tendens                                         |
-
-<br/>
-
-### Behandeldoel 
-
-<u>Overzichtsscherm</u>
-
-| Doel behandeling                | Prioriteit      | 
-|---------------------------------|------------------|
-| Tandvleesontsteking behandelen  | Hoge prioriteit  |
-| Vullen gaatje rechter kies      | Lage prioriteit  |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Tandvleesontsteking behandelen |  |
-|--------------------------------------------------|---------------|
-| Doel behandeling                                  | Tandvleesontsteking behandelen |
-| Prioriteit                                        | Hoge prioriteit |
-
-<br/>
-
-### Mondhygiëne
-
-<u>Overzichtsscherm</u>
-
-| Mondhygiëne           | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Slecht    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Zeer slecht            | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Slecht |  |
-|--------------------------------------------------|---------------|
-| Mondhygiëne                                       | Slecht |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
-
-<br/>
-
-### CariësRisico
-
-<u>Overzichtsscherm</u>
-
-| Risico op gaatjes | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|--------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Laag               | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Verlaagd           | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Laag |  |
-|--------------------------------------------------|---------------|
-| Risico op gaatjes                                 | Laag |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
-
-<br/>
-
-### Periodieke Parodontale Screening (PPS)
-
-<u>Overzichtsscherm</u>
-
-| Controle tandvlees                    | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Pockets 0–3 millimeter = in orde       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Pockets 4–5 millimeter = mogelijk in orde | 01-12-2023 | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Pockets 0–3 millimeter = in orde |  |
-|--------------------------------------------------|---------------|
-| Controle tandvlees                                | Pockets 0–3 millimeter = in orde |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
-
-<br/>
-
-### Parafunctionele activiteit
-
-<u>Overzichtsscherm</u>
-
-| Schadelijke gewoonte met tanden       | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Overmatig knarsen bij stress           | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Erosie door het drinken van vruchtensap| 01-12-2023  | A.B. Janssen               | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Overmatig knarsen bij stress |  |
-|--------------------------------------------------|---------------|
-| Schadelijke gewoonte met tanden                   | Overmatig knarsen bij stress |
 | Datum                                             | 01-01-2024 |
 | Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
@@ -260,30 +140,6 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 | Woonplaats                                       | Droom        |
 | Land                                             | Dromenland    |
 | Zorgorganisatie                                  | Tendens       |
-
-<br/>
-
-### Contact
-
-<u>Overzichtsscherm</u>
-
-| Type contact                          | Begindatum  | Begintijd | Zorgverlener               | Zorgorganisatie |
-|----------------------------------------|-------------|-----------|-----------------------------|-----------------|
-| Second opinion                         | 01-01-2024  | 09:00     | A.B. Janssen<br>Tandarts    | Tendens         |
-| Tandarts Periodiek Preventief Onderzoek| 01-12-2023  | 11:00     | A.B. Janssen<br>Tandarts    | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Second opinion |  |
-|------------------------------------|----------------------------|
-| Type contact                                      | Second opinion            |
-| Begindatum                                        | 01-01-2024                |
-| Begintijd                                         | 09:00                     |
-| Einddatum                                         | 01-01-2024                |
-| Eindtijd                                          | 10:00                     |
-| Reden contact                                     | Extra Controle vanwege bloedend tandvlees |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts  |
-| Zorgorganisatie                                   | Tendens                   |
 
 <br/>
 
@@ -325,6 +181,150 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 | Soort verzekering                          | Basis verzekering   |
 | Nummer verzekerde                          | 2312312312          |
 | Zorgorganisatie                            | Tendens             |
+
+<br/>
+
+### Behandeldoel 
+
+<u>Overzichtsscherm</u>
+
+| Doel behandeling                | Prioriteit      | 
+|---------------------------------|------------------|
+| Tandvleesontsteking behandelen  | Hoge prioriteit  |
+| Vullen gaatje rechter kies      | Lage prioriteit  |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Tandvleesontsteking behandelen |  |
+|--------------------------------------------------|---------------|
+| Doel behandeling                                  | Tandvleesontsteking behandelen |
+| Prioriteit                                        | Hoge prioriteit |
+
+<br/>
+
+### CariësRisico
+
+<u>Overzichtsscherm</u>
+
+| Risico op gaatjes | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|--------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Laag               | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Verlaagd           | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Laag |  |
+|--------------------------------------------------|---------------|
+| Risico op gaatjes                                 | Laag |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
+### Dental Fitness
+
+<u>Overzichtsscherm</u>
+
+| DentalFitnessScore                                      | Datum       | Zorgverlener               | Uitleg             | Zorgorganisatie |
+|---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
+| Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.   | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Klasse 1: vereist geen tandheelkundige behandeling |  |
+|--------------------------------------------------|---------------|
+| DentalFitnessScore                                | Klasse 1: vereist geen tandheelkundige behandeling |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
+### Mondhygiëne
+
+<u>Overzichtsscherm</u>
+
+| Mondhygiëne           | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Slecht    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Zeer slecht            | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Slecht |  |
+|--------------------------------------------------|---------------|
+| Mondhygiëne                                       | Slecht |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
+### Parafunctionele activiteit
+
+<u>Overzichtsscherm</u>
+
+| Schadelijke gewoonte met tanden       | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Overmatig knarsen bij stress           | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Erosie door het drinken van vruchtensap| 01-12-2023  | A.B. Janssen               | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Overmatig knarsen bij stress |  |
+|--------------------------------------------------|---------------|
+| Schadelijke gewoonte met tanden                   | Overmatig knarsen bij stress |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
+### Periodieke Parodontale Screening (PPS)
+
+<u>Overzichtsscherm</u>
+
+| Controle tandvlees                    | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| Pockets 0–3 millimeter = in orde       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Pockets 4–5 millimeter = mogelijk in orde | 01-12-2023 | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Pockets 0–3 millimeter = in orde |  |
+|--------------------------------------------------|---------------|
+| Controle tandvlees                                | Pockets 0–3 millimeter = in orde |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
+### Verrichting
+
+<u>Overzichtsscherm</u>
+
+| Naam Verrichting                                             | Startdatum verrichting | Zorgverlener                  | Zorgorganisatie |
+|--------------------------------------------------------------|-------------------------|-------------------------------|-----------------|
+| H42 wortelpuntoperatie, per tandwortel, zonder afsluiting    | 01-01-2024              | A.B. Janssen<br>Tandarts      | Tendens         |
+| R67 Plaatsen opbouw ten behoeve van implantaatkroon          | 01-12-2023              | A.B. Janssen<br>Tandarts      | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |  |
+|-------------------------------------------------------------------------------|--------------------------------------------------|
+| Naam verrichting                                   | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
+| Startdatum verrichting                             | 01-01-2024                                      |
+| Einddatum verrichting                              | 01-01-2024                                      |
+| Manier verrichting                                 | Vrijmaken                                       |
+| Zorgverlener                                       | A.B. Janssen<br>Tandarts                        |
+| Zorgorganisatie                                    | Tendens                                         |
 
 <br/>
 
