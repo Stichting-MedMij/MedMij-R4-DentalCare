@@ -716,27 +716,27 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>CariësRisico</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-124</td><td></td><td></td>
+      <td><strong>CariësRisico</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-1</td><td></td><td></td>
       <td></td><td>Risico op gaatjes </td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes. </td><td></td>
     </tr>
     <tr>
-      <td>CariesRisicoDatumTijd</td><td>Item</td><td>mz-dataelement-125</td><td>01-01-2024</td><td>a </td>
+      <td>CariesRisicoDatumTijd</td><td>Item</td><td>mz-dataelement-2</td><td>01-01-2024</td><td>a </td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>CariesRisicoWaarde</td><td>Item</td><td></td><td>Laag (code 62482003 in codesysteem 'SNOMED CT')</td><td>a</td>
+      <td>CariesRisicoWaarde</td><td>Item</td><td>mz-dataelement-3</td><td>Laag (code 62482003 in codesysteem 'SNOMED CT')</td><td>a</td>
       <td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>mz-dataelement-5</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -763,33 +763,33 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>Dental Fitness</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-109</td><td></td><td></td>
+      <td><strong>Dental Fitness</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-6</td><td></td><td></td>
       <td>De PGO ontvangt maar 1 Dental Fitness Score (geen historie)</td>
       <td>Dental Fitness</td>
       <td>De Dental Fitness Classificatie (DFC) is een tandheelkundige risico-inventarisatie en geeft aan in welke mate een militair kans loopt op tandheelkundige problemen welke (directe) behandeling behoeven binnen de 12 maanden vanaf het moment van vaststellen. </td>
       <td></td>
     </tr>
     <tr>
-      <td>DentalFitnessDatumTijd</td><td>Item</td><td>mz-dataelement-110</td><td>01-01-2024</td><td>a</td>
+      <td>DentalFitnessDatumTijd</td><td>Item</td><td>mz-dataelement-7</td><td>01-01-2024</td><td>a</td>
       <td>Alleen datum, geen tijd</td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>DentalFitnessWaarde</td><td>Item</td><td>mz-dataelement-111</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
+      <td>DentalFitnessWaarde</td><td>Item</td><td>mz-dataelement-8</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
       <td>De patiëntvriendelijke toelichting die achter de klasse 0 t/m 4 staan zoals "nooit gezien door een defensietandarts" is verplicht om te tonen in de PGO. Enkel de waarden zoals "Klasse 0" zegt de militair niet genoeg. De patiëntvriendelijke toelichting houdt de NATO AMedP-4.4. standaard en defensierichtlijn aan. De Dental Fitness Score is bekend bij het personeel van defensie.</td>
       <td>DentalFitnessScore</td>
       <td>Klasse 0  “nooit gezien door een defensietandarts” <br/> Klasse 1 “vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen” <br/> Klasse 2 “kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden” <br/> Klasse 3 “huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken” <br/> Klasse 4 “vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig”</td>
       <td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-9</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>mz-dataelement-10</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
