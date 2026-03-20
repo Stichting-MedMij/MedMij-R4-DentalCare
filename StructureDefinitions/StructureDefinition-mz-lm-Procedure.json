@@ -159,11 +159,6 @@
         },
         "mapping": [
           {
-            "identity": "zib-procedure-v5.2-2020EN",
-            "map": "NL-CM:14.1.4",
-            "comment": "ProcedureType"
-          },
-          {
             "identity": "mz-dataset-100-beta2-20260324",
             "map": "mz-dataelement-29",
             "comment": "ProcedureType"
