@@ -387,29 +387,29 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>ASAscore</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td><td></td></td>
+      <td><strong>ASAscore</strong></td><td><strong>Rootconcept</strong></td><td>medmij-core-dataelement-1</td><td></td><td><td></td></td>
       <td>Score gezondheid (ASA)</td><td>De ASA-classificatie is het American Society of Anesthesiologists classificatiesysteem voor fysieke status (algehele medische toestand) </td><td></td>
     </tr>
     <tr>
-      <td>ASAScoreDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
+      <td>ASAScoreDatumTijd</td><td>Item</td><td>medmij-core-dataelement-2</td><td>01-01-2024</td><td>a </td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>ASAScoreWaarde</td><td>Item</td><td></td><td>ASA-score 1 Gezonde patiënt (code 413495001 in codesysteem 'SNOMED CT')</td><td>a </td>
+      <td>ASAScoreWaarde</td><td>Item</td><td>medmij-core-dataelement-3</td><td>ASA-score 1 Gezonde patiënt (code 413495001 in codesysteem 'SNOMED CT')</td><td>a </td>
       <td>De patiëntvriendelijke toelichting die achter de score 1 t/m 6 staan zoals "Gezonde patiënt" is verplicht om te tonen in de PGO. Enkel de waarden zoals "ASA-score 1" zegt de pgo-gebruikber niet genoeg.</td><td>Score gezondheid (ASA)</td>
       <td>ASA-score 1 (bevinding) = Gezonde patiënt <br/> ASA-score 2 (bevinding) = Milde systemische aandoening zonder belemmering <br/> ASA-score 3 (bevinding)  = Ernstige systemische aandoening, beperking dagelijkse activiteit <br/> ASA-score 4 (bevinding) = Ernstige invaliderende systeemaandoening, constante levensbedreiging <br/> ASA-score 5 (bevinding) = Stervende, overlijden < 24 uur zonder ingreep <br/> ASA-score 6 (bevinding)  = Hersendood, Multi Orgaan Donatie</td>
       <td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>medmij-core-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>medmij-core-dataelement-5</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -655,7 +655,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td></td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>????</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -680,22 +680,22 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td></td><td></td><td></td>
     </tr>
     <tr>
-      <td>GewenstZorgresultaat</td><td>Item</td><td></td><td>Tandvleesontsteking behandelen</td><td>a </td>
+      <td>GewenstZorgresultaat</td><td>Item</td><td>NL-CM:13.5.3</td><td>Tandvleesontsteking behandelen</td><td>a </td>
       <td></td><td>Doel behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a </td>
+      <td>Prioriteit</td><td>Item</td><td>???</td><td>Hoge prioriteit</td><td>a </td>
       <td>High-priority weergeven als Hoge prioriteit en Low-priority weergeven als Lage prioriteit</td>
       <td>Prioriteit</td>
       <td>Aangeven of het GewenstZorgresultaat high-priority = (korte termijn) of low-priority (lange termijn) heeft.</td>
       <td>M</td>
     </tr>
     <tr>
-      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td></td><td></td><td></td>
+      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td>NL-CM:4.26.1</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Probleem</td><td>Reference</td><td></td><td></td><td></td>
+      <td>Probleem</td><td>Reference</td><td>???</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
   </tbody>
@@ -810,27 +810,27 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>Mondhygiëne</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-120</td><td></td><td></td>
+      <td><strong>Mondhygiëne</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-11</td><td></td><td></td>
       <td></td><td>Mondhygiëne</td><td>Mondhygiëne is de (dagelijkse) verzorging van de mond en het gebit om deze gezond te houden en daardoor gaatjes (cariës) en tandvleesontstekingen te voorkomen.</td><td></td>
     </tr>
     <tr>
-      <td>MondhygiëneDatumTijd</td><td>Item</td><td>mz-dataelement-121</td><td>01-01-2024</td><td>a</td>
+      <td>MondhygiëneDatumTijd</td><td>Item</td><td>mz-dataelement-12</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>MondhygiëneWaarde</td><td>Item</td><td></td><td>Slecht (code slecht in codesysteem 'SNOMED CT')</td><td>a </td>
+      <td>MondhygiëneWaarde</td><td>Item</td><td>mz-dataelement-13</td><td>Slecht (code slecht in codesysteem 'SNOMED CT')</td><td>a </td>
       <td></td><td>Mondhygiëne </td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-14</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>mz-dataelement-15</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -851,29 +851,29 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>ParafunctioneleActiviteit</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
+      <td><strong>ParafunctioneleActiviteit</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-16</td><td></td><td></td>
       <td></td><td>Schadelijke gewoonte met tanden</td>
       <td>Parafuncties zijn mondbewegingen die niets met kauwen, slikken of spreken te maken hebben (zoals tandenknarsen).  </td>
       <td></td>
     </tr>
     <tr>
-      <td>ParafunctioneleActiviteitDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a </td>
+      <td>ParafunctioneleActiviteitDatumTijd</td><td>Item</td><td>mz-dataelement-17</td><td>01-01-2024</td><td>a </td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Parafunctionele activiteit waarde</td><td>Item</td><td></td><td>Overmatig knarsen bij stress</td><td>a </td>
+      <td>Parafunctionele activiteit waarde</td><td>Item</td><td>mz-dataelement-18</td><td>Overmatig knarsen bij stress</td><td>a </td>
       <td></td><td>Schadelijke gewoonte met tanden</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-19</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>mz-dataelement-20</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -894,28 +894,28 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>PeriodiekeParodontaleScreeningScore</strong></td><td><strong>Rootconcept</strong></td><td></td><td></td><td></td>
+      <td><strong>PeriodiekeParodontaleScreeningScore</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-21</td><td></td><td></td>
       <td></td><td>Controle  tandvlees</td>
       <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
     </tr>
     <tr>
-      <td>PPSDatumTijd</td><td>Item</td><td></td><td>01-01-2024</td><td>a</td>
+      <td>PPSDatumTijd</td><td>Item</td><td>mz-dataelement-22</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>PPSScore</td><td>Item</td><td></td><td>Pockets 0-3 millimeter = in orde (code ppsscore1 in codesysteem 'Nog invullen??!!')</td><td>a </td>
+      <td>PPSScore</td><td>Item</td><td>mz-dataelement-23</td><td>Pockets 0-3 millimeter = in orde (code ppsscore1 in codesysteem 'Nog invullen??!!')</td><td>a </td>
       <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td></td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-24</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td></td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>mz-dataelement-25</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W<br/></td>
     </tr>
   </tbody>
