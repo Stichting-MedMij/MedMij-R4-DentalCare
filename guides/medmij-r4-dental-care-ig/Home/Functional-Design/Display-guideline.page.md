@@ -73,6 +73,27 @@ Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtss
 ### Mondzorggegevens per CIM
 Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn voor mondzorg, een voorbeeld in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
 
+### ASA-score
+
+<u>Overzichtsscherm</u>
+
+| Score gezondheid (ASA)                                  | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
+|----------------------------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
+| ASA-score 1 Gezonde patiënt                              | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| ASA-score 2 Milde systemische aandoening zonder belemmering | 01-12-2023 | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: ASA-score 1 Gezonde patiënt |  |
+|--------------------------------------------------|---------------|
+| Score gezondheid (ASA)                            | ASA-score 1 Gezonde patiënt |
+| Datum                                             | 01-01-2024 |
+| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
+| Zorgorganisatie                                   | Tendens          |
+
+<br/>
+
 ### Dental Fitness
 
 <u>Overzichtsscherm</u>
@@ -168,27 +189,6 @@ Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn
 | Geselecteerde regel: Laag |  |
 |--------------------------------------------------|---------------|
 | Risico op gaatjes                                 | Laag |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
-
-<br/>
-
-### ASA-score
-
-<u>Overzichtsscherm</u>
-
-| Score gezondheid (ASA)                                  | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|----------------------------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| ASA-score 1 Gezonde patiënt                              | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| ASA-score 2 Milde systemische aandoening zonder belemmering | 01-12-2023 | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: ASA-score 1 Gezonde patiënt |  |
-|--------------------------------------------------|---------------|
-| Score gezondheid (ASA)                            | ASA-score 1 Gezonde patiënt |
 | Datum                                             | 01-01-2024 |
 | Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
 | Zorgverlener                                      | A.B. Janssen<br>Tandarts |
