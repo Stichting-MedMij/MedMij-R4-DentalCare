@@ -397,7 +397,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td>ASAScoreWaarde</td><td>Item</td><td></td><td>ASA-score 1 Gezonde patiënt (code 413495001 in codesysteem 'SNOMED CT')</td><td>a </td>
       <td>De patiëntvriendelijke toelichting die achter de score 1 t/m 6 staan zoals "Gezonde patiënt" is verplicht om te tonen in de PGO. Enkel de waarden zoals "ASA-score 1" zegt de pgo-gebruikber niet genoeg.</td><td>Score gezondheid (ASA)</td>
-      <td>[Valueset](https://simplifier.net/medmij-r4-dental-care/asascore).</td>
+      <td><a> href="https://r.net/medmij-r4-dental-care/asascoreValueset</a></td>
       <td>M</td>
     </tr>
     <tr>
