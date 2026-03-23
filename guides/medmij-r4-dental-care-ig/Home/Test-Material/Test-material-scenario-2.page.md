@@ -51,7 +51,7 @@
 | NameInformation.LastNamePartner.PartnerPrefix | |
 | NameInformation.LastNamePartner.PartnerLastName | |
 | NameInformation.Titles | |
-| Speciality | Tandartsen, algemeen practicus (code'1200' from code system 'Vektis AGB-medische specialismen') |
+| Speciality | Tandartsen, algemeen practicus (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | Gender | |
 | AddressInformation.Street | Simon Smitweg |
 | AddressInformation.HouseNumber | 1 |
@@ -177,7 +177,7 @@
 | | |
 | --- | --- |
 | PeriodicPeriodontalScreeningScoreDateTime | 11-02-2022 08:43 |
-| PeriodicPeriodontalScreeningScoreValue | Pockets 4-5 millimeter = mogelijk in orde (code 'ppsscore2' from code system '2.16.528.1.1023.2.1.1') |
+| PeriodicPeriodontalScreeningScoreValue | Pockets 4-5 millimeter = mogelijk in orde (code 'ppsscore2' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Paro-preventietraject |
 
@@ -186,7 +186,7 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Vullen gaatjes rechterkies |
-| DesiredHealthCondition::FunctionalOrMentalStatus | |
+| DesiredHealthCondition | |
 | Problem | |
 
 | | |
@@ -234,17 +234,17 @@
 | InsuranceCompany.IdentificationNumber | |
 | InsuranceCompany.OrganizationName | |
 | InsuranceCompany.InsurantNumber | |
-| AddressInformation.Street | |
-| AddressInformation.HouseNumber | |
+| AddressInformation.Street | Achillesstraat |
+| AddressInformation.HouseNumber | 12 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | |
-| AddressInformation.PlaceOfResidence | |
+| AddressInformation.Postcode | 1234 AA |
+| AddressInformation.PlaceOfResidence | Amsterdam |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | |
+| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | |
+| AddressInformation.AddressType | Officieel Adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | |
 | ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | |

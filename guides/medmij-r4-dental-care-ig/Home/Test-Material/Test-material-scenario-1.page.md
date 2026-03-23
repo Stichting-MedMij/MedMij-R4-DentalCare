@@ -51,7 +51,7 @@
 | NameInformation.LastNamePartner.PartnerPrefix | |
 | NameInformation.LastNamePartner.PartnerLastName | |
 | NameInformation.Titles | |
-| Speciality | Tandartsen, algemeen practicus (code'1200' from code system 'Vektis AGB-medische specialismen') |
+| Speciality | Tandartsen, algemeen practicus (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | Gender | |
 | AddressInformation.Street | Simon Smitweg |
 | AddressInformation.HouseNumber | 1 |
@@ -177,7 +177,7 @@
 | | |
 | --- | --- |
 | PeriodicPeriodontalScreeningScoreDateTime | 29-04-2024 06:43 |
-| PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system '2.16.528.1.1023.2.1.1') |
+| PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | Geen paradontale vervolgbehandeling |
 
@@ -186,7 +186,7 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Tandvleesontsteking behandelen |
-| DesiredHealthCondition::FunctionalOrMentalStatus | |
+| DesiredHealthCondition | |
 | Problem | |
 
 | | |
@@ -234,17 +234,17 @@
 | InsuranceCompany.IdentificationNumber | |
 | InsuranceCompany.OrganizationName | |
 | InsuranceCompany.InsurantNumber | |
-| AddressInformation.Street | |
-| AddressInformation.HouseNumber | |
-| AddressInformation.HouseNumberLetter | |
+| AddressInformation.Street | De Doerak |
+| AddressInformation.HouseNumber | 57 |
+| AddressInformation.HouseNumberLetter | A |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | |
-| AddressInformation.PlaceOfResidence | |
+| AddressInformation.Postcode | 6123 PP |
+| AddressInformation.PlaceOfResidence | Montferland |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | |
+| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | |
+| AddressInformation.AddressType | Officieel Adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | |
 | ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | |

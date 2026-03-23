@@ -1,4 +1,4 @@
-# Scenario 1
+# Scenario 3
 
 ## Patient data
 
@@ -51,7 +51,7 @@
 | NameInformation.LastNamePartner.PartnerPrefix | |
 | NameInformation.LastNamePartner.PartnerLastName | |
 | NameInformation.Titles | |
-| Speciality | Tandartsen, algemeen practicus (code'1200' from code system 'Vektis AGB-medische specialismen') |
+| Speciality | Tandartsen, algemeen practicus (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | Gender | |
 | AddressInformation.Street | Simon Smitweg |
 | AddressInformation.HouseNumber | 1 |
@@ -177,7 +177,7 @@
 | | |
 | --- | --- |
 | PeriodicPeriodontalScreeningScoreDateTime | 01-01-2024 08:43 |
-| PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system '2.16.528.1.1023.2.1.1') |
+| PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | B. Dijkstra, Tandarts |
 | Comment | Paro-traject |
 
@@ -186,7 +186,7 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Trekken snijtand linksboven |
-| DesiredHealthCondition::FunctionalOrMentalStatus | |
+| DesiredHealthCondition | |
 | Problem | |
 
 | | |
@@ -234,17 +234,17 @@
 | InsuranceCompany.IdentificationNumber | |
 | InsuranceCompany.OrganizationName | |
 | InsuranceCompany.InsurantNumber | |
-| AddressInformation.Street | |
-| AddressInformation.HouseNumber | |
+| AddressInformation.Street | Bloemstraat |
+| AddressInformation.HouseNumber | 25 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | |
-| AddressInformation.PlaceOfResidence | |
+| AddressInformation.Postcode | 5678 BB |
+| AddressInformation.PlaceOfResidence | Bergen op Zoom |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | |
+| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | |
+| AddressInformation.AddressType | Officieel Adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | |
 | ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | |
