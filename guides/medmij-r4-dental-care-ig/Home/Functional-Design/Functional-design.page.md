@@ -19,9 +19,9 @@ De doelgroep voor deze pagina wijkt niet af van de [algemene doelgroep](https://
 ### Algemeen
 Diverse Nederlandse en Europese wetten vormen de kaders voor het kunnen uitwisselen van mondzorggegevens.
 
-Zodra gegevens binnen de Defensie-context worden uitgewisseld, kan dat uitsluitend met DVP- en DVA-systemen die voldoen aan zowel het [MedMij Afsprakenstelsel](https://afsprakenstelsel.medmij.nl/) als de militaire informatiebeveiliging conform de [Algemene Beveiligingseisen voor Defensieopdrachten (ABDO)](https://www.defensie.nl/site/binaries/site-content/collections/documents/2020/02/04/abdo-2019/ABDO2019_Definitief_V1.1_web.pdf). Concreet zijn deze van toepassing bij de gegevensuitwisseling van de Dental Fitness.
+Zodra gegevens binnen de Defensie-context worden uitgewisseld, kan dat uitsluitend met DVP- en DVA-systemen die voldoen aan zowel het [MedMij Afsprakenstelsel](https://afsprakenstelsel.medmij.nl/) als de militaire informatiebeveiliging conform de [Algemene Beveiligingseisen voor Defensieopdrachten (ABDO)](https://www.defensie.nl/site/binaries/site-content/collections/documents/2020/02/04/abdo-2019/ABDO2019_Definitief_V1.1_web.pdf). In het bijzonder zijn deze van toepassing bij de gegevensuitwisseling van de Dental Fitness.
 
-Voor overige mondzorggegevens zijn de ABDO-eisen niet van toepassing. Aanvullend is de [NEN 7510](https://www.nen.nl/zorg-welzijn/ict-in-de-zorg/informatiebeveiliging-in-de-zorg) van toepassing.
+Voor overige mondzorggegevens zijn de ABDO-eisen niet van toepassing, wanneer deze buiten de Defensie-context worden uitgewisseld. Aanvullend is de [NEN 7510](https://www.nen.nl/zorg-welzijn/ict-in-de-zorg/informatiebeveiliging-in-de-zorg) van toepassing.
 
 ### Richtlijn en proces
 Dit ontwerp is conform specificaties genoemd in de [algemene inleiding](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.01/Ontwerpen#Richtlijn) van de functionele ontwerpen binnen MedMij.
