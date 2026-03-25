@@ -449,23 +449,23 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>9:00</td><td>a</td></td><td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd </td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
-      <td></td><td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd </td><td></td><td>M</td>
+     <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
+     <td></td><td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd </td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td></td><td></td>
+      <td>Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td></td><td>b</td>
       <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td></td><td></td>
+      <td>Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td></td><td>b</td>
       <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td><td></td>
+      <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td><td>b</td>
       <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
