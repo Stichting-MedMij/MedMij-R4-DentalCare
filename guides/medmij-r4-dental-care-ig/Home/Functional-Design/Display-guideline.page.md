@@ -408,7 +408,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -732,7 +732,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -784,7 +784,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -825,7 +825,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -868,7 +868,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -910,7 +910,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W<br/></td>
     </tr>
   </tbody>
