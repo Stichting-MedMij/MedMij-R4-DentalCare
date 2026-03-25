@@ -90,7 +90,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Begintijd | 09:00 |
 | Einddatum | 01-01-2024 |
 | Eindtijd | 10:00 |
-| Reden contact | Extra controle vanwege bloedend tandvlees |
+| Reden contact toelichting | Extra controle vanwege bloedend tandvlees |
 | Zorgverlener | A.B. Janssen <br/> Tandarts |
 | Zorgorganisatie | Tendens |
 
@@ -187,10 +187,10 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 
 <u>Overzichtsscherm</u>
 
-| Doel behandeling | Prioriteit |
-| --- | --- |
-| Tandvleesontsteking behandelen | Hoge prioriteit |
-| Vullen gaatje rechter kies | Lage prioriteit |
+| Doel behandeling | Prioriteit | Zorgorganisatie |
+| --- | --- | --- |
+| Tandvleesontsteking behandelen | Hoge prioriteit | Tendens |
+| Vullen gaatje rechter kies | Lage prioriteit | Tendens |
 
 <u>Detailscherm</u>
 
@@ -198,6 +198,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | --- | --- |
 | Doel behandeling | Tandvleesontsteking behandelen |
 | Prioriteit | Hoge prioriteit |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
@@ -408,7 +409,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -457,27 +458,19 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra Controle vanwege bloedend tandvlees</td><td>b</td>
-      <td></td><td>Reden contact</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Herkomst</td><td>Item</td><td>NL-CM:15.1.14</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-    <tr>
-      <td>Bestemming</td><td>Item</td><td>NL-CM:15.1.16</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td></td><td>Reden contact toelichting of Uitleg reden contact</td><td></td><td>M</td>
     </tr>
   </tbody>
 </table>
@@ -569,7 +562,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Relatie</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -654,7 +647,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td></td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -683,7 +676,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Doel behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Prioriteit</td><td>Item</td><td>???</td><td>Hoge prioriteit</td><td>a </td>
+      <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a </td>
       <td>High-priority weergeven als Hoge prioriteit en Low-priority weergeven als Lage prioriteit</td>
       <td>Prioriteit</td>
       <td>Aangeven of het GewenstZorgresultaat high-priority = (korte termijn) of low-priority (lange termijn) heeft.</td>
@@ -694,8 +687,12 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Probleem</td><td>Reference</td><td>???</td><td></td><td></td>
+      <td>Probleem</td><td>Reference</td><td></td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
+    </tr>
+    <tr>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -735,7 +732,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -788,7 +785,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -829,7 +826,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -872,7 +869,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
@@ -914,7 +911,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W<br/></td>
     </tr>
   </tbody>
