@@ -397,8 +397,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td>ASAScoreWaarde</td><td>Item</td><td>medmij-core-dataelement-3</td><td>ASA-score 1 Gezonde patiënt (code 413495001 in codesysteem 'SNOMED CT')</td><td>a </td>
       <td>De patiëntvriendelijke toelichting die achter de score 1 t/m 6 staan zoals "Gezonde patiënt" is verplicht om te tonen in de PGO. Enkel de waarden zoals "ASA-score 1" zegt de pgo-gebruikber niet genoeg.</td><td>Score gezondheid (ASA)</td>
-      <td>ASA-score 1 (bevinding) = Gezonde patiënt <br/> ASA-score 2 (bevinding) = Milde systemische aandoening zonder belemmering <br/> ASA-score 3 (bevinding)  = Ernstige systemische aandoening, beperking dagelijkse activiteit <br/> ASA-score 4 (bevinding) = Ernstige invaliderende systeemaandoening, constante levensbedreiging <br/> ASA-score 5 (bevinding) = Stervende, overlijden < 24 uur zonder ingreep <br/> ASA-score 6 (bevinding)  = Hersendood, Multi Orgaan Donatie</td>
-      <td>M</td>
+      <td></td><td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>medmij-core-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a</td>
@@ -445,9 +444,10 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
       <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam M, Overige datavelden: W</td>
     </tr>
-    <tr>
-      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>9:00</td><td>a</td></td><td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd </td><td></td><td>M</td>
+     <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>09:00</td><td>a</td>
+     <td></td><td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd</td><td></td><td>M</td>
     </tr>
+    <tr>
     <tr>
      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
      <td></td><td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd </td><td></td><td>M</td>
@@ -773,8 +773,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>DentalFitnessWaarde</td><td>Item</td><td>mz-dataelement-8</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
       <td>De patiëntvriendelijke toelichting die achter de klasse 0 t/m 4 staan zoals "nooit gezien door een defensietandarts" is verplicht om te tonen in de PGO. Enkel de waarden zoals "Klasse 0" zegt de militair niet genoeg. De patiëntvriendelijke toelichting houdt de NATO AMedP-4.4. standaard en defensierichtlijn aan. De Dental Fitness Score is bekend bij het personeel van defensie.</td>
       <td>DentalFitnessScore</td>
-      <td>Klasse 0  “nooit gezien door een defensietandarts” <br/> Klasse 1 “vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen” <br/> Klasse 2 “kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden” <br/> Klasse 3 “huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken” <br/> Klasse 4 “vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig”</td>
-      <td>M</td>
+      <td></td><td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-9</td><td>A.B. Janssen<br/>Tandarts</td><td>a</td>
