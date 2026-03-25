@@ -400,11 +400,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>medmij-core-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>medmij-core-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a</td>
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td>medmij-core-dataelement-5</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>medmij-core-dataelement-5</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -437,7 +437,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Type contact</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a</td>
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
@@ -715,7 +715,7 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>CariësRisico</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-1</td><td></td><td></td>
+      <td><strong>Cariësrisico</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-1</td><td></td><td></td>
       <td></td><td>Risico op gaatjes </td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes. </td><td></td>
     </tr>
     <tr>
@@ -727,11 +727,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td>mz-dataelement-5</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>mz-dataelement-5</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -780,11 +780,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-9</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-9</td><td>A.B. Janssen<br/>Tandarts</td><td>a</td>
       <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td>mz-dataelement-10</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>mz-dataelement-10</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -821,11 +821,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Mondhygiëne </td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-14</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-14</td><td>A.B. Janssen<br/>Tandarts</td><td>a</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td>mz-dataelement-15</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>mz-dataelement-15</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -864,11 +864,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Schadelijke gewoonte met tanden</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-19</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-19</td><td>A.B. Janssen<br/>Tandarts</td><td>a</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td>mz-dataelement-20</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>mz-dataelement-20</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -906,11 +906,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-24</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-24</td><td>A.B. Janssen<br/>Tandarts</td><td>a</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
-      <td>Toelichting</td><td>Item</td><td>mz-dataelement-25</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
+      <td>Toelichting</td><td>Item</td><td>mz-dataelement-25</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a</td>
       <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -971,7 +971,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td>a</td>
       <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener </td><td></td><td>Zorgverlener naam en specialisme: S</td>
     </tr>
     <tr>
