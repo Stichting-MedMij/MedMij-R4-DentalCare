@@ -154,6 +154,22 @@
 | Performer | D. de Ruiter, Tandarts |
 | Comment | |
 
+## Encounter data
+
+| | |
+| --- | --- |
+| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
+| ContactWith | D. de Ruiter, Tandarts |
+| Location | Vliegbasis Gilze-Rijen |
+| StartDateTime | 22-07-2023 09:00 |
+| EndDateTime | 22-07-2023 09:30 |
+| ContactReason.Problem | |
+| ContactReason.Procedure | |
+| ContactReason.DeviatingResult | |
+| ContactReason.CommentContactReason | |
+| Origin | |
+| Destination | |
+
 ## Oral Hygiene data
 
 | | |
@@ -171,54 +187,6 @@
 | ParafunctionalActivityValue | Erosie door het drinken van vruchtensap |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | |
-
-## Periodic Periodontal Screening Score data
-
-| | |
-| --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 11-02-2022 08:43 |
-| PeriodicPeriodontalScreeningScoreValue | Pockets 4-5 millimeter = mogelijk in orde (code 'ppsscore2' from code system 'PeriodicPeriodontalScreeningScore') |
-| Performer | D. de Ruiter, Tandarts |
-| Comment | Paro-preventietraject |
-
-## Treatment Objective data
-
-| | |
-| --- | --- |
-| DesiredHealthcareResult | Vullen gaatjes rechterkies |
-| DesiredHealthCondition | |
-| Problem | |
-
-| | |
-| --- | --- |
-| DesiredHealthcareResult | Bekijken of vullingen op kroon nog goed aansluiten |
-| DesiredHealthCondition | |
-| Problem | |
-
-## Procedure data
-
-| | |
-| --- | --- |
-| ProcedureStartDate | 11-02-2022 |
-| ProcedureEndDate | |
-| ProcedureType | Maken en beoordelen kleine röntgenfoto (code 'X10' from code system 'Vektis Prestatiecodelijst Mondzorg') |
-| ProcedureMethod | |
-| ProcedureAnatomicalLocation.Location | |
-| ProcedureAnatomicalLocation.Laterality| |
-| Indication | |
-| Indication.ProblemType | |
-| Indication.ProblemName | |
-| Indication.FurtherSpecificationProblemName | |
-| Indication.ProblemAnatomicalLocation | |
-| Indication.ProblemAnatomicalLocation.Location | |
-| Indication.ProblemAnatomicalLocation.Laterality | |
-| Indication.ProblemStartDate | |
-| Indication.ProblemEndDate | |
-| Indication.ProblemStatus | |
-| Indication.VerificationStatus | |
-| Indication.Comment | |
-| Location | Vliegbasis Gilze-Rijen |
-| Performer | D. de Ruiter, Tandarts |
 
 ## Payer data
 
@@ -282,18 +250,50 @@
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
 
-## Encounter data
+## Periodic Periodontal Screening Score data
 
 | | |
 | --- | --- |
-| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
-| ContactWith | D. de Ruiter, Tandarts |
+| PeriodicPeriodontalScreeningScoreDateTime | 11-02-2022 08:43 |
+| PeriodicPeriodontalScreeningScoreValue | Pockets 4-5 millimeter = mogelijk in orde (code 'ppsscore2' from code system 'PeriodicPeriodontalScreeningScore') |
+| Performer | D. de Ruiter, Tandarts |
+| Comment | Paro-preventietraject |
+
+## Procedure data
+
+| | |
+| --- | --- |
+| ProcedureStartDate | 11-02-2022 |
+| ProcedureEndDate | |
+| ProcedureType | Maken en beoordelen kleine röntgenfoto (code 'X10' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureMethod | |
+| ProcedureAnatomicalLocation.Location | |
+| ProcedureAnatomicalLocation.Laterality| |
+| Indication | |
+| Indication.ProblemType | |
+| Indication.ProblemName | |
+| Indication.FurtherSpecificationProblemName | |
+| Indication.ProblemAnatomicalLocation | |
+| Indication.ProblemAnatomicalLocation.Location | |
+| Indication.ProblemAnatomicalLocation.Laterality | |
+| Indication.ProblemStartDate | |
+| Indication.ProblemEndDate | |
+| Indication.ProblemStatus | |
+| Indication.VerificationStatus | |
+| Indication.Comment | |
 | Location | Vliegbasis Gilze-Rijen |
-| StartDateTime | 22-07-2023 09:00 |
-| EndDateTime | 22-07-2023 09:30 |
-| ContactReason.Problem | |
-| ContactReason.Procedure | |
-| ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | |
-| Origin | |
-| Destination | |
+| Performer | D. de Ruiter, Tandarts |
+
+## Treatment Objective data
+
+| | |
+| --- | --- |
+| DesiredHealthcareResult | Vullen gaatjes rechterkies |
+| DesiredHealthCondition | |
+| Problem | |
+
+| | |
+| --- | --- |
+| DesiredHealthcareResult | Bekijken of vullingen op kroon nog goed aansluiten |
+| DesiredHealthCondition | |
+| Problem | |

@@ -154,6 +154,22 @@
 | Performer | B. Dijkstra, Tandarts |
 | Comment | |
 
+## Encounter data
+
+| | |
+| --- | --- |
+| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
+| ContactWith | B. Dijkstra, Tandarts |
+| Location | CWZ Nijmegen |
+| StartDateTime | 01-09-2025 09:00 |
+| EndDateTime | 01-09-2025 09:30 |
+| ContactReason.Problem | |
+| ContactReason.Procedure | |
+| ContactReason.DeviatingResult | |
+| ContactReason.CommentContactReason | |
+| Origin | |
+| Destination | |
+
 ## Oral Hygiene data
 
 | | |
@@ -171,54 +187,6 @@
 | ParafunctionalActivityValue | Tanden knarsen tijdens slaap |
 | Performer | B. Dijkstra, Tandarts |
 | Comment | |
-
-## Periodic Periodontal Screening Score data
-
-| | |
-| --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 01-01-2024 08:43 |
-| PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system 'PeriodicPeriodontalScreeningScore') |
-| Performer | B. Dijkstra, Tandarts |
-| Comment | Paro-traject |
-
-## Treatment Objective data
-
-| | |
-| --- | --- |
-| DesiredHealthcareResult | Trekken snijtand linksboven |
-| DesiredHealthCondition | |
-| Problem | |
-
-| | |
-| --- | --- |
-| DesiredHealthcareResult | Wortelpuntoperatie (apexresectie) |
-| DesiredHealthCondition | |
-| Problem | |
-
-## Procedure data
-
-| | |
-| --- | --- |
-| ProcedureStartDate | 01-01-2024 |
-| ProcedureEndDate | |
-| ProcedureType | Eerste consult (code 'F121A' from code system 'Vektis Prestatiecodelijst Mondzorg') |
-| ProcedureMethod | |
-| ProcedureAnatomicalLocation.Location | |
-| ProcedureAnatomicalLocation.Laterality| |
-| Indication | |
-| Indication.ProblemType | |
-| Indication.ProblemName | |
-| Indication.FurtherSpecificationProblemName | |
-| Indication.ProblemAnatomicalLocation | |
-| Indication.ProblemAnatomicalLocation.Location | |
-| Indication.ProblemAnatomicalLocation.Laterality | |
-| Indication.ProblemStartDate | |
-| Indication.ProblemEndDate | |
-| Indication.ProblemStatus | |
-| Indication.VerificationStatus | |
-| Indication.Comment | |
-| Location | CWZ Nijmegen |
-| Performer | B. Dijkstra, Tandarts |
 
 ## Payer data
 
@@ -282,18 +250,50 @@
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
 
-## Encounter data
+## Periodic Periodontal Screening Score data
 
 | | |
 | --- | --- |
-| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
-| ContactWith | B. Dijkstra, Tandarts |
+| PeriodicPeriodontalScreeningScoreDateTime | 01-01-2024 08:43 |
+| PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system 'PeriodicPeriodontalScreeningScore') |
+| Performer | B. Dijkstra, Tandarts |
+| Comment | Paro-traject |
+
+## Procedure data
+
+| | |
+| --- | --- |
+| ProcedureStartDate | 01-01-2024 |
+| ProcedureEndDate | |
+| ProcedureType | Eerste consult (code 'F121A' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureMethod | |
+| ProcedureAnatomicalLocation.Location | |
+| ProcedureAnatomicalLocation.Laterality| |
+| Indication | |
+| Indication.ProblemType | |
+| Indication.ProblemName | |
+| Indication.FurtherSpecificationProblemName | |
+| Indication.ProblemAnatomicalLocation | |
+| Indication.ProblemAnatomicalLocation.Location | |
+| Indication.ProblemAnatomicalLocation.Laterality | |
+| Indication.ProblemStartDate | |
+| Indication.ProblemEndDate | |
+| Indication.ProblemStatus | |
+| Indication.VerificationStatus | |
+| Indication.Comment | |
 | Location | CWZ Nijmegen |
-| StartDateTime | 01-09-2025 09:00 |
-| EndDateTime | 01-09-2025 09:30 |
-| ContactReason.Problem | |
-| ContactReason.Procedure | |
-| ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | |
-| Origin | |
-| Destination | |
+| Performer | B. Dijkstra, Tandarts |
+
+## Treatment Objective data
+
+| | |
+| --- | --- |
+| DesiredHealthcareResult | Trekken snijtand linksboven |
+| DesiredHealthCondition | |
+| Problem | |
+
+| | |
+| --- | --- |
+| DesiredHealthcareResult | Wortelpuntoperatie (apexresectie) |
+| DesiredHealthCondition | |
+| Problem | |

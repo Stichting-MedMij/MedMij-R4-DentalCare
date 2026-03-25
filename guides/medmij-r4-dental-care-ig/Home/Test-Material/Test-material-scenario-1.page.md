@@ -154,6 +154,36 @@
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
 
+## Encounter data
+
+| | |
+| --- | --- |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor') |
+| ContactWith | A.B.D.O. de Koning, Tandarts |
+| Location | Vliegbasis Gilze-Rijen |
+| StartDateTime | 22-07-2026 10:00 |
+| EndDateTime | 22-07-2026 11:00 |
+| ContactReason.Problem | |
+| ContactReason.Procedure | |
+| ContactReason.DeviatingResult | |
+| ContactReason.CommentContactReason | Laatste orthopantomogram (röntgenfoto) was in 2025 |
+| Origin | |
+| Destination | |
+
+| | |
+| --- | --- |
+| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
+| ContactWith | A.B.D.O. de Koning, Tandarts |
+| Location | Vliegbasis Gilze-Rijen |
+| StartDateTime | 20-05-2025 10:00 |
+| EndDateTime | 20-05-2025 11:00 |
+| ContactReason.Problem | |
+| ContactReason.Procedure | |
+| ContactReason.DeviatingResult | |
+| ContactReason.CommentContactReason | Extra controle vanwege bloedend tandvlees |
+| Origin | |
+| Destination | |
+
 ## Oral Hygiene data
 
 | | |
@@ -171,54 +201,6 @@
 | ParafunctionalActivityValue | Overmatig knarsen bij stress |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
-
-## Periodic Periodontal Screening Score data
-
-| | |
-| --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 29-04-2024 06:43 |
-| PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
-| Performer | A.B.D.O. de Koning, Tandarts |
-| Comment | Geen paradontale vervolgbehandeling |
-
-## Treatment Objective data
-
-| | |
-| --- | --- |
-| DesiredHealthcareResult | Tandvleesontsteking behandelen |
-| DesiredHealthCondition | |
-| Problem | |
-
-| | |
-| --- | --- |
-| DesiredHealthcareResult | Brug monteren bij rechterbovenkies |
-| DesiredHealthCondition | |
-| Problem | |
-
-## Procedure data
-
-| | |
-| --- | --- |
-| ProcedureStartDate | 29-04-2024 |
-| ProcedureEndDate | |
-| ProcedureType | Plaatsen opbouw ten behoeve van implantaatkroon (code 'R67' from code system 'Vektis Prestatiecodelijst Mondzorg') |
-| ProcedureMethod | |
-| ProcedureAnatomicalLocation.Location | |
-| ProcedureAnatomicalLocation.Laterality| |
-| Indication | |
-| Indication.ProblemType | |
-| Indication.ProblemName | |
-| Indication.FurtherSpecificationProblemName | |
-| Indication.ProblemAnatomicalLocation | |
-| Indication.ProblemAnatomicalLocation.Location | |
-| Indication.ProblemAnatomicalLocation.Laterality | |
-| Indication.ProblemStartDate | |
-| Indication.ProblemEndDate | |
-| Indication.ProblemStatus | |
-| Indication.VerificationStatus | |
-| Indication.Comment | |
-| Location | Vliegbasis Gilze-Rijen |
-| Performer | A.B.D.O. de Koning, Tandarts |
 
 ## Payer data
 
@@ -282,32 +264,50 @@
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
 
-## Encounter data
+## Periodic Periodontal Screening Score data
 
 | | |
 | --- | --- |
-| ContactType | Anders (code 'OTH' from code system 'NullFlavor') |
-| ContactWith | A.B.D.O. de Koning, Tandarts |
-| Location | Vliegbasis Gilze-Rijen |
-| StartDateTime | 22-07-2026 10:00 |
-| EndDateTime | 22-07-2026 11:00 |
-| ContactReason.Problem | |
-| ContactReason.Procedure | |
-| ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | Laatste orthopantomogram (röntgenfoto) was in 2025 |
-| Origin | |
-| Destination | |
+| PeriodicPeriodontalScreeningScoreDateTime | 29-04-2024 06:43 |
+| PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
+| Performer | A.B.D.O. de Koning, Tandarts |
+| Comment | Geen paradontale vervolgbehandeling |
+
+## Procedure data
 
 | | |
 | --- | --- |
-| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
-| ContactWith | A.B.D.O. de Koning, Tandarts |
+| ProcedureStartDate | 29-04-2024 |
+| ProcedureEndDate | |
+| ProcedureType | Plaatsen opbouw ten behoeve van implantaatkroon (code 'R67' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureMethod | |
+| ProcedureAnatomicalLocation.Location | |
+| ProcedureAnatomicalLocation.Laterality| |
+| Indication | |
+| Indication.ProblemType | |
+| Indication.ProblemName | |
+| Indication.FurtherSpecificationProblemName | |
+| Indication.ProblemAnatomicalLocation | |
+| Indication.ProblemAnatomicalLocation.Location | |
+| Indication.ProblemAnatomicalLocation.Laterality | |
+| Indication.ProblemStartDate | |
+| Indication.ProblemEndDate | |
+| Indication.ProblemStatus | |
+| Indication.VerificationStatus | |
+| Indication.Comment | |
 | Location | Vliegbasis Gilze-Rijen |
-| StartDateTime | 20-05-2025 10:00 |
-| EndDateTime | 20-05-2025 11:00 |
-| ContactReason.Problem | |
-| ContactReason.Procedure | |
-| ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | Extra controle vanwege bloedend tandvlees |
-| Origin | |
-| Destination | |
+| Performer | A.B.D.O. de Koning, Tandarts |
+
+## Treatment Objective data
+
+| | |
+| --- | --- |
+| DesiredHealthcareResult | Tandvleesontsteking behandelen |
+| DesiredHealthCondition | |
+| Problem | |
+
+| | |
+| --- | --- |
+| DesiredHealthcareResult | Brug monteren bij rechterbovenkies |
+| DesiredHealthCondition | |
+| Problem | |
