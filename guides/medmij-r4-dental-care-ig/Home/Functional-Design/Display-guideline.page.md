@@ -7,12 +7,12 @@ topic: Weergaverichtlijn
 ## Inleiding
 Dit is de weergaverichtlijn voor de gegevensdienst Mondzorg.
 
-Het document bevat mock-ups die bedoeld zijn ter inspiratie. Persoonlijke gezondheidsomgevingen (PGO’s) kunnen deze voorbeelden naar eigen inzicht visueel vormgeven, zolang de gebruiksvriendelijkheid behouden blijft.
+De richtlijn bevat mock-ups die bedoeld zijn ter inspiratie. Persoonlijke gezondheidsomgevingen (PGO's) kunnen deze voorbeelden naar eigen inzicht visueel vormgeven, zolang de gebruiksvriendelijkheid behouden blijft.
 
 ## Doel
-Deze richtlijn heeft als doel om duidelijke handvatten te bieden voor een patiëntvriendelijke en begrijpelijke weergave van langdurige zorg gegevens in de PGO. De richtlijn ondersteunt ontwikkelaars en zorgverleners bij het:
+Deze richtlijn heeft als doel om duidelijke handvatten te bieden voor een patiëntvriendelijke en begrijpelijke weergave van mondzorggegevens in de PGO. De richtlijn ondersteunt ontwikkelaars en zorgverleners bij het:
 - gebruiken van begrijpelijke en patiëntvriendelijke termen en toelichtingen;
-- structureren en presenteren van een overzicht van gegevens op een manier die aansluit bij de informatiebehoefte van PGO gebruikers.
+- structureren en presenteren van een overzicht van gegevens op een manier die aansluit bij de informatiebehoefte van PGO-gebruikers.
 
 De richtlijn geeft géén handvatten voor de vormgeving (kleur, vorm, lettertype, etc.) van gegevens.
 
@@ -20,311 +20,310 @@ De richtlijn geeft géén handvatten voor de vormgeving (kleur, vorm, lettertype
 De scope van deze richtlijn bestaat uit de mondzorggegevens die worden weergegeven in de PGO. Gegevens die via andere MedMij-gegevensdiensten verzameld worden in de PGO zijn hierin niet meegenomen.
 
 ## Inhoud richtlijn
-Het inloggen en authentiseren bij de zorgaanbieder is niet opgenomen in deze richtlijn.
-De gebruiker gaat in de PGO naar het mondzorgoverzicht en/of zorgaanbieder‑mondzorgoverzicht waar de mondzorggegevens getoond worden.
+Het inloggen en authenticeren bij de zorgaanbieder is niet opgenomen in deze richtlijn.
+De gebruiker gaat in de PGO naar het overzicht Mondzorg en/of overzicht Zorgaanbieder ‑ Mondzorg waar de mondzorggegevens getoond worden.
 
 ### Overzichtsscherm mondzorg
 Er zijn twee weergaven gedefinieerd voor het overzicht van de mondzorggegevens:
-- Scenario 1: Mondzorgoverzicht (met alle mondzorggegevens van alle zorgaanbieders in één overzicht)
-- Scenario 2: Zorgaanbieder‑mondzorgoverzicht (met alle mondzorggegevens van één zorgaanbieder in één overzicht.)
+- Scenario 1: Overzicht Mondzorg (met alle mondzorggegevens van alle zorgaanbieders in één overzicht)
+- Scenario 2: Overzicht Zorgaanbieder ‑ Mondzorg (met alle mondzorggegevens van één zorgaanbieder in één overzicht.)
 
-De twee scenario’s, hieronder uitgewerkt, geven weer hoe een UX design getoond kan worden. De PGO is vrij om één of beide van deze scenario’s te ondersteunen.De richtlijn gaat ervan uit dat de PGO een responsief ontwerp ondersteunen.
+De twee scenario’s, hieronder uitgewerkt, geven weer hoe een UX-design getoond kan worden. Een PGO is vrij om één of beide van deze scenario’s te ondersteunen. De richtlijn gaat ervan uit dat de PGO een responsief ontwerp ondersteunt.
 
-In deze richtlijn hebben we twee voorbeeld mockups opgenomen ter inspiratie. Daaronder hebben we elke CIM apart opgenomen, niet in mockup vorm maar in tabel vorm. De twee voorbeeld mockups gaan over afspraken, maar let op, de CIM “contact” is apart opgenomen in tabelvorm.
+In deze richtlijn zijn twee mock-ups opgenomen ter inspiratie. Daaronder is elke CIM (Clinical Information Model) apart opgenomen, niet in een mock-up, maar in tabelvorm. De twee mock-ups gaan over afspraken en corresponderen met de CIM Contact.
 
-### Voorbeeld mockup overzichtsschermen mondzorg
-<u>Mondzorgoverzicht:</u>
+### Mock-ups overzichtsschermen mondzorg
+<u>Overzicht Mondzorg</u>
 
-Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden getoond worden, voor alle (mondzorg) zorgaanbieders.
+In het Overzicht Mondzorg heeft het overzichtsscherm van elke CIM een aparte pagina waar de datavelden getoond worden, voor alle zorgaanbieders (binnen de mondzorg).
 
-{{render: guides/medmij-r4-dental-care-ig/images/Mondzorgoverzicht.png}}
+{{render: guides/medmij-r4-dental-care-ig/images/Overzicht Mondzorg.png}}
 
-**Figuur 1: Voorbeeld mondzorgoverzicht**
+**Figuur 1: Voorbeeld Overzicht Mondzorg**
 
-<u>Zorgaanbieder-mondzorgoverzicht:</u>
+<u>Overzicht Zorgaanbieder - Mondzorg</u>
 
-Het overzichtsscherm van elke CIM heeft dus een aparte pagina waar de datavelden getoond worden, per zorgaanbieder. De in de mockup gebruikte tabs dienen enkel als voorbeeld van een mogelijke vormgeving.
+In het Overzicht Zorgaanbieder - Mondzorg heeft het overzichtsscherm van elke CIM een aparte pagina waar de datavelden getoond worden, per zorgaanbieder. De in de mock-up gebruikte tabs dienen enkel als voorbeeld van een mogelijke vormgeving.
 
-{{render: guides/medmij-r4-dental-care-ig/images/Zorgorganisatie mondzorgoverzicht.png}}
+{{render: guides/medmij-r4-dental-care-ig/images/Overzicht Zorgaanbieder - Mondzorg.png}}
 
-**Figuur 2: Voorbeeld Zorgaanbieder - mondzorgoverzicht**
+**Figuur 2: Voorbeeld Overzicht Zorgaanbieder - Mondzorg**
 
 De acceptatiecriteria voor de overzichtsschermen van elke CIM is als volgt.
-
 
 | Nr | Acceptatiecriteria |
 |----|--------------------|
 | 1 | Standaard worden alle beschikbaar gestelde gegevens van de zorgaanbieders(s) overzichtelijk weergegeven, gesorteerd op datum van nieuw naar oud. |
 | 2 | Je kunt zoeken op (delen van) de gegevens of op informatie uit de andere datavelden in het overzichtsscherm. De gebruiker moet minimaal 3 karakters invoeren. |
 | 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. |
-| 4 | Voor het dataveld *Datum op* kun je een specifieke periode selecteren. |
+| 4 | Voor het datumveld in het overzichtsscherm kun je een specifieke periode selecteren. |
 | 5 | Alle datavelden in het overzichtsscherm zijn sorteerbaar. |
-| 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de paragraaf {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld. |
+| 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld. |
 
 ### Detailscherm mondzorg
-Dit detailscherm krijg je te zien als je een specifieke regel in het overzichtsscherm selecteert. De in de mockup weergegeven gegevens dienen uitsluitend ter demonstratie.
+Dit detailscherm krijgt een PGO-gebruiker te zien na het selecteren van een specifieke regel in het overzichtsscherm. De in de mock-up weergegeven gegevens dienen uitsluitend ter demonstratie.
 
-### Voorbeeld mockup detailscherm mondzorg
+### Mock-up detailscherm mondzorg
 
-{{render: guides/medmij-r4-dental-care-ig/images/Detailscherm mondzorg.png}}
+{{render: guides/medmij-r4-dental-care-ig/images/Detailscherm Mondzorg.png}}
 
-**Figuur 3: Voorbeeld Detailscherm - mondzorg**
+**Figuur 3: Voorbeeld Detailscherm Mondzorg**
 
 ### Mondzorggegevens per CIM
-Hieronder wordt voor alle CIM's (Clinical Information Models), die relevant zijn voor mondzorg, een voorbeeld in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
+Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
 
-### Contact
+#### Contact
 
 <u>Overzichtsscherm</u>
 
-| Type contact                          | Begindatum  | Begintijd | Zorgverlener               | Zorgorganisatie |
-|----------------------------------------|-------------|-----------|-----------------------------|-----------------|
-| Second opinion                         | 01-01-2024  | 09:00     | A.B. Janssen<br>Tandarts    | Tendens         |
-| Tandarts Periodiek Preventief Onderzoek| 01-12-2023  | 11:00     | A.B. Janssen<br>Tandarts    | Tendens         |
+| Type contact | Begindatum  | Begintijd | Zorgverlener | Zorgorganisatie |
+| --- | --- | --- | --- | --- |
+| Second opinion | 01-01-2024 | 09:00 | A.B. Janssen <br/> Tandarts | Tendens |
+| Tandarts Periodiek Preventief Onderzoek | 01-12-2023 | 11:00 | A.B. Janssen <br/> Tandarts | Tendens |
 
 <u>Detailscherm</u>
 
 | Geselecteerde regel: Second opinion |  |
-|------------------------------------|----------------------------|
-| Type contact                                      | Second opinion            |
-| Begindatum                                        | 01-01-2024                |
-| Begintijd                                         | 09:00                     |
-| Einddatum                                         | 01-01-2024                |
-| Eindtijd                                          | 10:00                     |
-| Reden contact                                     | Extra Controle vanwege bloedend tandvlees |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts  |
-| Zorgorganisatie                                   | Tendens                   |
+| --- | --- |
+| Type contact | Second opinion |
+| Begindatum | 01-01-2024 |
+| Begintijd | 09:00 |
+| Einddatum | 01-01-2024 |
+| Eindtijd | 10:00 |
+| Reden contact | Extra controle vanwege bloedend tandvlees |
+| Zorgverlener | A.B. Janssen <br/> Tandarts |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
-### ASA-score
+#### ASA-score
 
 <u>Overzichtsscherm</u>
 
-| Score gezondheid (ASA)                                  | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|----------------------------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| ASA-score 1 Gezonde patiënt                              | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| ASA-score 2 Milde systemische aandoening zonder belemmering | 01-12-2023 | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Score gezondheid (ASA) | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
+| --- | --- | --- | --- | --- |
+| ASA-score 1 Gezonde patiënt | 01-01-2024  | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens         |
+| ASA-score 2 Milde systemische aandoening zonder belemmering | 01-12-2023 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: ASA-score 1 Gezonde patiënt |  |
-|--------------------------------------------------|---------------|
-| Score gezondheid (ASA)                            | ASA-score 1 Gezonde patiënt |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
+| Geselecteerde regel: ASA-score 1 Gezonde patiënt | |
+| --- | --- |
+| Score gezondheid (ASA) | ASA-score 1 Gezonde patiënt |
+| Datum | 01-01-2024 |
+| Uitleg | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener | A.B. Janssen <br/> Tandarts |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
-### Contactpersoon
+#### Contactpersoon
 
 <u>Overzichtsscherm</u>
 
-| Naam           | Rol                         | Zorgorganisatie |
-|----------------|------------------------------|-----------------|
-| T.S. Pietersen | Wettelijke vertegenwoordiger | Tendens         |
-| C.W. Willemsen | Mantelzorger                 | Tendens         |
+| Naam | Rol | Zorgorganisatie |
+| --- | --- | --- |
+| T.S. Pietersen | Wettelijke vertegenwoordiger | Tendens |
+| C.W. Willemsen | Mantelzorger | Tendens |
 
 <u>Detailscherm</u>
 
 | Geselecteerde regel: Wettelijke vertegenwoordiger |  |
-|--------------------------------------------------|---------------|
-| Naam                                             | T.S. Pietersen|
-| Roepnaam                                         | Teun          |
-| Rol                                              | Wettelijke vertegenwoordiger |
-| Relatie                                          | Vader         |
-| Straat                                           | Slaapstraat   |
-| Huisnummer                                       | 2             |
-| Woonplaats                                       | Droom        |
-| Land                                             | Dromenland    |
-| Zorgorganisatie                                  | Tendens       |
+| --- | --- |
+| Naam | T.S. Pietersen |
+| Roepnaam | Teun |
+| Rol | Wettelijke vertegenwoordiger |
+| Relatie | Vader |
+| Straat | Slaapstraat |
+| Huisnummer | 2 |
+| Woonplaats | Droom |
+| Land | Dromenland |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
-### Betaler
+#### Betaler
 
 <u>Overzichtsscherm</u>
 
 | Naam betaler/verzekeraar | Zorgorganisatie |
-|--------------------------|-----------------|
-| Zorgkantoor Groningen    | Tendens         |
-| J.L. Teunissen           | Tendens         |
+| --- | --- |
+| Zorgkantoor Groningen | Tendens |
+| J.L. Teunissen | Tendens |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: J.L. Teunissen |  |
-|-------------------------------------------|---------------------|
-| Naam betaler                               | J.L. Teunissen      |
-| Naam Bank                                  | ING Bank            |
-| Code Bank                                  | INGBNL2A            |
-| Rekeningnummer Bank                        | NL91INGB0417164300  |
-| Naam verzekeraar                           |                     |
-| Begindatum                                 |                     |
-| Einddatum                                  |                     |
-| Soort verzekering                          |                     |
-| Nummer verzekerde                          |                     |
-| Zorgorganisatie                            | Tendens             |
+| Geselecteerde regel: J.L. Teunissen | |
+| --- | --- |
+| Naam betaler | J.L. Teunissen |
+| Naam Bank | ING Bank |
+| Code Bank | INGBNL2A |
+| Rekeningnummer Bank | NL91INGB0417164300 |
+| Naam verzekeraar | |
+| Begindatum | |
+| Einddatum | |
+| Soort verzekering | |
+| Nummer verzekerde | |
+| Zorgorganisatie | Tendens |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Zorgkantoor Groningen |  |
-|-------------------------------------------|---------------------|
-| Naam betaler                               |                     |
-| Naam Bank                                  |                     |
-| Code Bank                                  |                     |
-| Rekeningnummer Bank                        |                     |
-| Naam verzekeraar                           | Zorgkantoor Groningen        |
-| Begindatum                                 | 01-01-2025          |
-| Einddatum                                  | 31-12-2025          |
-| Soort verzekering                          | Basis verzekering   |
-| Nummer verzekerde                          | 2312312312          |
-| Zorgorganisatie                            | Tendens             |
+| Geselecteerde regel: Zorgkantoor Groningen | |
+| --- | --- |
+| Naam betaler | |
+| Naam Bank | |
+| Code Bank | |
+| Rekeningnummer Bank | |
+| Naam verzekeraar | Zorgkantoor Groningen |
+| Begindatum | 01-01-2025 |
+| Einddatum | 31-12-2025 |
+| Soort verzekering | Basis verzekering |
+| Nummer verzekerde | 2312312312 |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
-### Behandeldoel 
+#### Behandeldoel
 
 <u>Overzichtsscherm</u>
 
-| Doel behandeling                | Prioriteit      | 
-|---------------------------------|------------------|
-| Tandvleesontsteking behandelen  | Hoge prioriteit  |
-| Vullen gaatje rechter kies      | Lage prioriteit  |
+| Doel behandeling | Prioriteit |
+| --- | --- |
+| Tandvleesontsteking behandelen | Hoge prioriteit |
+| Vullen gaatje rechter kies | Lage prioriteit |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Tandvleesontsteking behandelen |  |
-|--------------------------------------------------|---------------|
-| Doel behandeling                                  | Tandvleesontsteking behandelen |
-| Prioriteit                                        | Hoge prioriteit |
+| Geselecteerde regel: Tandvleesontsteking behandelen | |
+| --- | --- |
+| Doel behandeling | Tandvleesontsteking behandelen |
+| Prioriteit | Hoge prioriteit |
 
 <br/>
 
-### CariësRisico
+#### Cariësrisico
 
 <u>Overzichtsscherm</u>
 
-| Risico op gaatjes | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|--------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Laag               | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Verlaagd           | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Risico op gaatjes | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
+| --- | --- | --- | --- | --- |
+| Laag | 01-01-2024 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
+| Verlaagd | 01-12-2023 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Laag |  |
-|--------------------------------------------------|---------------|
-| Risico op gaatjes                                 | Laag |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
+| Geselecteerde regel: Laag | |
+| --- | --- |
+| Risico op gaatjes | Laag |
+| Datum | 01-01-2024 |
+| Uitleg | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener | A.B. Janssen <br/> Tandarts |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
-### Dental Fitness
+#### Dental Fitness
 
 <u>Overzichtsscherm</u>
 
-| DentalFitnessScore                                      | Datum       | Zorgverlener               | Uitleg             | Zorgorganisatie |
-|---------------------------------------------------------|-------------|-----------------------------|---------------------|-----------------|
-| Klasse 1: vereist geen tandheelkundige behandeling       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.   | Tendens         |
+| DentalFitnessScore | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
+| --- | --- | --- | --- | --- |
+| Klasse 1: vereist geen tandheelkundige behandeling | 01-01-2024 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Klasse 1: vereist geen tandheelkundige behandeling |  |
-|--------------------------------------------------|---------------|
-| DentalFitnessScore                                | Klasse 1: vereist geen tandheelkundige behandeling |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
+| Geselecteerde regel: Klasse 1: vereist geen tandheelkundige behandeling | |
+| --- | --- |
+| DentalFitnessScore | Klasse 1: vereist geen tandheelkundige behandeling |
+| Datum | 01-01-2024 |
+| Uitleg | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener | A.B. Janssen <br/> Tandarts |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
-### Mondhygiëne
+#### Mondhygiëne
 
 <u>Overzichtsscherm</u>
 
-| Mondhygiëne           | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Slecht    | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Zeer slecht            | 01-12-2023  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Mondhygiëne | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
+| --- | --- | --- | --- | --- |
+| Slecht | 01-01-2024 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
+| Zeer slecht | 01-12-2023 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Slecht |  |
-|--------------------------------------------------|---------------|
-| Mondhygiëne                                       | Slecht |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
+| Geselecteerde regel: Slecht | |
+| --- | --- |
+| Mondhygiëne | Slecht |
+| Datum | 01-01-2024 |
+| Uitleg | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener | A.B. Janssen <br/> Tandarts |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
-### Parafunctionele activiteit
+#### Parafunctionele activiteit
 
 <u>Overzichtsscherm</u>
 
-| Schadelijke gewoonte met tanden       | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Overmatig knarsen bij stress           | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Erosie door het drinken van vruchtensap| 01-12-2023  | A.B. Janssen               | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Schadelijke gewoonte met tanden | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
+| --- | --- | --- | --- | --- |
+| Overmatig knarsen bij stress | 01-01-2024 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
+| Erosie door het drinken van vruchtensap | 01-12-2023 | A.B. Janssen | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Overmatig knarsen bij stress |  |
-|--------------------------------------------------|---------------|
-| Schadelijke gewoonte met tanden                   | Overmatig knarsen bij stress |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
+| Geselecteerde regel: Overmatig knarsen bij stress | |
+| --- | --- |
+| Schadelijke gewoonte met tanden | Overmatig knarsen bij stress |
+| Datum | 01-01-2024 |
+| Uitleg | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener | A.B. Janssen <br/> Tandarts |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
-### Periodieke Parodontale Screening (PPS)
+#### Periodieke Parodontale Screening-score (PPS-score)
 
 <u>Overzichtsscherm</u>
 
-| Controle tandvlees                    | Datum       | Zorgverlener               | Uitleg               | Zorgorganisatie |
-|----------------------------------------|-------------|-----------------------------|-----------------------|-----------------|
-| Pockets 0–3 millimeter = in orde       | 01-01-2024  | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
-| Pockets 4–5 millimeter = mogelijk in orde | 01-12-2023 | A.B. Janssen<br>Tandarts    | Hier komt een tekst te staan die extra uitleg geeft.     | Tendens         |
+| Controle tandvlees | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
+| --- | --- | --- | --- | --- |
+| Pockets 0–3 millimeter = in orde | 01-01-2024 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
+| Pockets 4–5 millimeter = mogelijk in orde | 01-12-2023 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Pockets 0–3 millimeter = in orde |  |
-|--------------------------------------------------|---------------|
-| Controle tandvlees                                | Pockets 0–3 millimeter = in orde |
-| Datum                                             | 01-01-2024 |
-| Uitleg                                            | Hier komt een tekst te staan die extra uitleg geeft. |
-| Zorgverlener                                      | A.B. Janssen<br>Tandarts |
-| Zorgorganisatie                                   | Tendens          |
+| Geselecteerde regel: Pockets 0–3 millimeter = in orde | |
+| --- | --- |
+| Controle tandvlees | Pockets 0–3 millimeter = in orde |
+| Datum | 01-01-2024 |
+| Uitleg | Hier komt een tekst te staan die extra uitleg geeft. |
+| Zorgverlener | A.B. Janssen <br/> Tandarts |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
-### Verrichting
+#### Verrichting
 
 <u>Overzichtsscherm</u>
 
-| Naam Verrichting                                             | Startdatum verrichting | Zorgverlener                  | Zorgorganisatie |
-|--------------------------------------------------------------|-------------------------|-------------------------------|-----------------|
-| H42 wortelpuntoperatie, per tandwortel, zonder afsluiting    | 01-01-2024              | A.B. Janssen<br>Tandarts      | Tendens         |
-| R67 Plaatsen opbouw ten behoeve van implantaatkroon          | 01-12-2023              | A.B. Janssen<br>Tandarts      | Tendens         |
+| Naam verrichting | Startdatum verrichting | Zorgverlener | Zorgorganisatie |
+| --- | --- | --- | --- |
+| H42 wortelpuntoperatie, per tandwortel, zonder afsluiting | 01-01-2024 | A.B. Janssen <br/> Tandarts | Tendens |
+| R67 Plaatsen opbouw ten behoeve van implantaatkroon | 01-12-2023 | A.B. Janssen <br/> Tandarts | Tendens |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |  |
-|-------------------------------------------------------------------------------|--------------------------------------------------|
-| Naam verrichting                                   | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
-| Startdatum verrichting                             | 01-01-2024                                      |
-| Einddatum verrichting                              | 01-01-2024                                      |
-| Manier verrichting                                 | Vrijmaken                                       |
-| Zorgverlener                                       | A.B. Janssen<br>Tandarts                        |
-| Zorgorganisatie                                    | Tendens                                         |
+| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting | |
+| --- | --- |
+| Naam verrichting | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
+| Startdatum verrichting | 01-01-2024 |
+| Einddatum verrichting | 01-01-2024 |
+| Manier verrichting | Vrijmaken |
+| Zorgverlener | A.B. Janssen <br/> Tandarts |
+| Zorgorganisatie | Tendens |
 
 <br/>
 
@@ -334,7 +333,7 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 
 <br/>
 
-| **Prioriteit** | **Omschrijving** |
+| Prioriteit | Omschrijving |
 | --- | --- |
 | M(ust have) | Nodig voor de basisfunctionaliteit van de toepassing en moet worden geïmplementeerd om het proces succesvol te laten verlopen. |
 | S(hould have) | Belangrijke functionaliteit die niet vereist is, maar die voordelen biedt voor gebruikers en de algehele gebruikservaring. |
@@ -366,9 +365,9 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 </style>
 
 <!-- 9 KOLOMMEN:
-1 Naam data-item | 2 Type item | 3 Id | 4 Voorbeeld |
-5 Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven | 6 Opmerkingen |
-7 Advies tekst weergave in de PGO | 8 Advies: Gebruikersvriendelijke toelichting | 9 Prioriteit (MoSCoW)
+1 Naam data-item | 2 Type data-item | 3 Id | 4 Voorbeeld |
+5 Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven | 6 Opmerkingen |
+7 Advies weergavetekst in de PGO | 8 Advies gebruikersvriendelijke toelichting | 9 Prioriteit (MoSCoW)
 Breedteverdeling (op basis van eerdere mapping):
 13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3%  (totaal 100%) -->
 
@@ -380,9 +379,9 @@ Breedteverdeling (op basis van eerdere mapping):
   </colgroup>
   <thead>
     <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -410,7 +409,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -423,9 +422,9 @@ Breedteverdeling (op basis van eerdere mapping):
   </colgroup>
   <thead>
     <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -491,9 +490,9 @@ Breedteverdeling (op basis van eerdere mapping):
   </colgroup>
   <thead>
     <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -584,9 +583,9 @@ Breedteverdeling (op basis van eerdere mapping):
   </colgroup>
   <thead>
     <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -669,9 +668,9 @@ Breedteverdeling (op basis van eerdere mapping):
   </colgroup>
   <thead>
     <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -709,9 +708,9 @@ Breedteverdeling (op basis van eerdere mapping):
   </colgroup>
   <thead>
     <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -737,7 +736,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -751,13 +750,13 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th>
-      <th>Type item</th>
+      <th>Type data-item</th>
       <th>Id</th>
       <th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th>
-      <th>Advies tekst weergave in de PGO</th>
-      <th>Advies: Gebruikersvriendelijke toelichting</th>
+      <th>Advies weergavetekst in de PGO</th>
+      <th>Advies gebruikersvriendelijke toelichting</th>
       <th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
@@ -790,7 +789,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -803,9 +802,9 @@ Breedteverdeling (op basis van eerdere mapping):
   </colgroup>
   <thead>
     <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -831,7 +830,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -844,9 +843,9 @@ Breedteverdeling (op basis van eerdere mapping):
   </colgroup>
   <thead>
     <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -874,12 +873,12 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>???</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>OOrganisatienaam: M, Overige datavelden: W</td>
+      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
 
-<!-- PERIODIEKE PARODONTALE SCREENEN (PPS)Periodieke Parodontale Screening Score https://knmt.nl/nieuws/periodiek-parodontaal-screenen-ben-jij-er-al-aan-gewend -->
+<!-- PERIODIEKE PARODONTALE SCREENING-SCORE (PPS-SCORE) -->
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
@@ -887,9 +886,9 @@ Breedteverdeling (op basis van eerdere mapping):
   </colgroup>
   <thead>
     <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -929,9 +928,9 @@ Breedteverdeling (op basis van eerdere mapping):
   </colgroup>
   <thead>
     <tr>
-      <th>Naam data-item</th><th>Type item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in de PGO? (a) als overzicht en detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies tekst weergave in de PGO</th><th>Advies: Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
+      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
