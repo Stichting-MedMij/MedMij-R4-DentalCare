@@ -13,6 +13,15 @@
       "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
     ]
   },
+  "category": {
+    "coding": [
+      {
+        "code": "225362009",
+        "system": "http://snomed.info/sct",
+        "display": "tandheelkundige zorg"
+      }
+    ]
+  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Maken en beoordelen kleine röntgenfoto<br/>Patiënt: Anita Jansen<br/>Status: Voltooid<br/>Datum: 2022-02-11<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Tandartspraktijk de Ruiter</div>"

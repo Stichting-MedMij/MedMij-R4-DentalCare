@@ -147,6 +147,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Wortelpuntoperatie, per tandwortel, zonder afsluiting<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
 * status = #completed
+* category = $SCT#225362009 "tandheelkundige zorg"
 * code = $ProcedureTypeVektisDentalCareCodeSystemOID#F121A "Eerste consult"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
@@ -287,6 +288,8 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "100"
   * city = "Nijmegen"
   * postalCode = "6532 SZ"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Defensie Tandheelkundige Dienst"
   * type = "Organization"
 

@@ -75,6 +75,8 @@
 
 ## Healthcare Provider data
 
+### Healthcare Provider - Defensie Tandheelkundige Dienst
+
 | | |
 | --- | --- |
 | HealthProviderIdentificationNumber | 12095095 (in identifier system 'Vektis AGB-zorgverlener tabel') |
@@ -94,12 +96,14 @@
 | AddressInformation.Postcode | 3584 AB |
 | AddressInformation.PlaceOfResidence | Utrecht |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | |
+| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Work Place (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
 | OrganizationLocation.LocationName | |
 | OrganizationLocation.LocationNumber | |
+
+### Healthcare Provider - Vliegbasis Gilze-Rijen
 
 | | |
 | --- | --- |
@@ -120,7 +124,7 @@
 | AddressInformation.Postcode | 5120 AA |
 | AddressInformation.PlaceOfResidence | Rijen |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | |
+| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Work Place (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
@@ -156,6 +160,8 @@
 
 ## Encounter data
 
+## Encounter - 22-07-2026
+
 | | |
 | --- | --- |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor') |
@@ -169,6 +175,8 @@
 | ContactReason.CommentContactReason | Laatste orthopantomogram (röntgenfoto) was in 2025 |
 | Origin | |
 | Destination | |
+
+## Encounter - 20-05-2025
 
 | | |
 | --- | --- |
@@ -204,6 +212,8 @@
 
 ## Payer data
 
+## Payer - Erik van Oranje
+
 | | |
 | --- | --- |
 | PayerPerson.PayerName | Erik van Oranje |
@@ -233,6 +243,8 @@
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
+
+## Payer - Zorgkantoor Groningen
 
 | | |
 | --- | --- |
@@ -300,11 +312,15 @@
 
 ## Treatment Objective data
 
+## Treatment Objective - Tandvleesontsteking behandelen
+
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Tandvleesontsteking behandelen |
 | DesiredHealthCondition | |
 | Problem | |
+
+## Treatment Objective - Brug monteren bij rechterbovenkies
 
 | | |
 | --- | --- |

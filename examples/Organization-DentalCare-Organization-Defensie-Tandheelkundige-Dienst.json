@@ -48,7 +48,24 @@
       ],
       "use": "work",
       "city": "Utrecht",
-      "postalCode": "3584 AB"
+      "postalCode": "3584 AB",
+      "country": "Nederland",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NL",
+                  "system": "urn:iso:std:iso:3166",
+                  "display": "Netherlands"
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   ],
   "text": {

@@ -75,6 +75,8 @@
 
 ## Healthcare Provider data
 
+### Healthcare Provider - Defensie Tandheelkundige Dienst
+
 | | |
 | --- | --- |
 | HealthProviderIdentificationNumber | 12095095 (in identifier system 'Vektis AGB-zorgverlener tabel') |
@@ -94,12 +96,14 @@
 | AddressInformation.Postcode | 3584 AB |
 | AddressInformation.PlaceOfResidence | Utrecht |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | |
+| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Work Place (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
 | OrganizationLocation.LocationName | |
 | OrganizationLocation.LocationNumber | |
+
+### Healthcare Provider - CWZ Nijmegen
 
 | | |
 | --- | --- |
@@ -120,7 +124,7 @@
 | AddressInformation.Postcode | 6532 SZ |
 | AddressInformation.PlaceOfResidence | Nijmegen |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | |
+| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Work Place (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
@@ -190,6 +194,8 @@
 
 ## Payer data
 
+## Payer - Berend van de Stok
+
 | | |
 | --- | --- |
 | PayerPerson.PayerName | Berend van de Stok |
@@ -219,6 +225,8 @@
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
+
+## Payer - A.S.R.
 
 | | |
 | --- | --- |
@@ -286,11 +294,15 @@
 
 ## Treatment Objective data
 
+## Treatment Objective - Trekken snijtand linksboven
+
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Trekken snijtand linksboven |
 | DesiredHealthCondition | |
 | Problem | |
+
+## Treatment Objective - Wortelpuntoperatie (apexresectie)
 
 | | |
 | --- | --- |

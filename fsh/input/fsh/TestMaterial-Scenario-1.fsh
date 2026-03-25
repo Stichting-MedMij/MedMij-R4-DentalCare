@@ -147,6 +147,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
 * status = #completed
+* category = $SCT#225362009 "tandheelkundige zorg"
 * code = $ProcedureTypeVektisDentalCareCodeSystemOID#R67 "Plaatsen opbouw ten behoeve van implantaatkroon"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
@@ -303,6 +304,8 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
   * city = "Utrecht"
   * postalCode = "3584 AB"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
 Instance: DentalCare-Location-Vliegbasis-Gilze-Rijen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider
@@ -325,6 +328,8 @@ Usage: #example
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "121"
   * city = "Rijen"
   * postalCode = "5120 AA"
+  * country = "Nederland"
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Defensie Tandheelkundige Dienst"
   * type = "Organization"
 
