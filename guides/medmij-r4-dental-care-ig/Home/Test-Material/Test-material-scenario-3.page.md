@@ -195,7 +195,7 @@
 
 | | |
 | --- | --- |
-| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Consult t.b.v. intake |
 | ContactWith | B. Dijkstra, Tandarts |
 | Location | CWZ Nijmegen |
 | StartDateTime | 01-09-2025 09:00 |

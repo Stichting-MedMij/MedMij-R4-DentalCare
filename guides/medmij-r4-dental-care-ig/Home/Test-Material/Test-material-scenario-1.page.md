@@ -198,7 +198,7 @@
 
 | | |
 | --- | --- |
-| ContactType | Anders (code 'OTH' from code system 'NullFlavor') |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
 | StartDateTime | 22-07-2026 10:00 |
@@ -214,7 +214,7 @@
 
 | | |
 | --- | --- |
-| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
 | StartDateTime | 20-05-2025 10:00 |

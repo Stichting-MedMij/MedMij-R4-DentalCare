@@ -195,7 +195,7 @@
 
 | | |
 | --- | --- |
-| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Second opinion |
 | ContactWith | D. de Ruiter, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
 | StartDateTime | 22-07-2023 09:00 |

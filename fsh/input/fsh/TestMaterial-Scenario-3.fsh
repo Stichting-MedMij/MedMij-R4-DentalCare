@@ -361,7 +361,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Consult t.b.v. intake<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-09-02T09:00:00+01:00<br/>Status: Gepland<br/>Locatie: CWZ Nijmegen</div>"
 * status = #planned
-* class = $ActCode#AMB "Ambulatory"
+* class = $NullFlavor#OTH "Anders"
 * type
   * text = "Consult t.b.v. intake"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
