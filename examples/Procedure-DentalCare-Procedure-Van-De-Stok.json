@@ -6,6 +6,15 @@
       "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
     ]
   },
+  "category": {
+    "coding": [
+      {
+        "code": "225362009",
+        "system": "http://snomed.info/sct",
+        "display": "tandheelkundige zorg"
+      }
+    ]
+  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Wortelpuntoperatie, per tandwortel, zonder afsluiting<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
