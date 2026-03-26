@@ -129,6 +129,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Wortelpuntoperatie, per tandwortel, zonder afsluiting<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Tandarts<br/>Locatie: Tandartspraktijk Dijkstra</div>"
 * status = #completed
+* category = $SCT#225362009 "tandheelkundige zorg"
 * code = $ProcedureTypeVektisDentalCareCodeSystemOID#F121A "Eerste consult"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
