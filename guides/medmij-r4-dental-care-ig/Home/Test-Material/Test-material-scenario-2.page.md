@@ -227,7 +227,7 @@
 
 ## Payer data
 
-## Payer - Anita Jansen
+### Payer - Anita Jansen
 
 | | |
 | --- | --- |
@@ -259,7 +259,7 @@
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
 
-## Payer - Menzis Zorgverzekeraar N.V.
+### Payer - Menzis Zorgverzekeraar N.V.
 
 | | |
 | --- | --- |
@@ -327,7 +327,7 @@
 
 ## Treatment Objective data
 
-## Treatment Objective - Vullen gaatjes rechterkies
+### Treatment Objective - Vullen gaatjes rechterkies
 
 | | |
 | --- | --- |
@@ -335,7 +335,7 @@
 | DesiredHealthCondition | |
 | Problem | |
 
-## Treatment Objective - Bekijken of vullingen op kroon nog goed aansluiten
+### Treatment Objective - Bekijken of vullingen op kroon nog goed aansluiten
 
 | | |
 | --- | --- |

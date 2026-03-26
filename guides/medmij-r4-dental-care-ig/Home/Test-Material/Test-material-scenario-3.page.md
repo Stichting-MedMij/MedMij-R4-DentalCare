@@ -227,7 +227,7 @@
 
 ## Payer data
 
-## Payer - Berend van de Stok
+### Payer - Berend van de Stok
 
 | | |
 | --- | --- |
@@ -259,7 +259,7 @@
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
 
-## Payer - A.S.R.
+### Payer - A.S.R.
 
 | | |
 | --- | --- |
@@ -327,7 +327,7 @@
 
 ## Treatment Objective data
 
-## Treatment Objective - Trekken snijtand linksboven
+### Treatment Objective - Trekken snijtand linksboven
 
 | | |
 | --- | --- |
@@ -335,7 +335,7 @@
 | DesiredHealthCondition | |
 | Problem | |
 
-## Treatment Objective - Wortelpuntoperatie (apexresectie)
+### Treatment Objective - Wortelpuntoperatie (apexresectie)
 
 | | |
 | --- | --- |

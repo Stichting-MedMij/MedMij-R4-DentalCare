@@ -194,7 +194,7 @@
 
 ## Encounter data
 
-## Encounter - 22-07-2026
+### Encounter - 22-07-2026
 
 | | |
 | --- | --- |
@@ -210,7 +210,7 @@
 | Origin | |
 | Destination | |
 
-## Encounter - 20-05-2025
+### Encounter - 20-05-2025
 
 | | |
 | --- | --- |
@@ -246,7 +246,7 @@
 
 ## Payer data
 
-## Payer - Erik van Oranje
+### Payer - Erik van Oranje
 
 | | |
 | --- | --- |
@@ -278,7 +278,7 @@
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
 
-## Payer - Zorgkantoor Groningen
+### Payer - Zorgkantoor Groningen
 
 | | |
 | --- | --- |
@@ -346,7 +346,7 @@
 
 ## Treatment Objective data
 
-## Treatment Objective - Tandvleesontsteking behandelen
+### Treatment Objective - Tandvleesontsteking behandelen
 
 | | |
 | --- | --- |
@@ -354,7 +354,7 @@
 | DesiredHealthCondition | |
 | Problem | |
 
-## Treatment Objective - Brug monteren bij rechterbovenkies
+### Treatment Objective - Brug monteren bij rechterbovenkies
 
 | | |
 | --- | --- |
