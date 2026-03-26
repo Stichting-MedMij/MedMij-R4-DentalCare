@@ -2,8 +2,24 @@
   "resourceType": "Procedure",
   "id": "DentalCare-Procedure-Van-Oranje",
   "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
     "profile": [
       "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "225362009",
+        "system": "http://snomed.info/sct",
+        "display": "tandheelkundige zorg"
+      }
     ]
   },
   "text": {
@@ -15,7 +31,7 @@
     "coding": [
       {
         "code": "R67",
-        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.981",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.010",
         "display": "Plaatsen opbouw ten behoeve van implantaatkroon"
       }
     ]
