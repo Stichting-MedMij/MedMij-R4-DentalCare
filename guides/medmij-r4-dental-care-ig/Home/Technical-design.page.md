@@ -59,3 +59,5 @@ The table below gives an overview of all granular data services that are applica
 **Table 2: Granular data services applicable for Dental Care+**
 
 The technical specifications with respect to the request message executed by the PHR and the response message of the XIS are detailed in the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.0.0#GeneralTechnicalSpecifications).
+
+Moreover, the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.0.0#CareType) contains specifications and requirements regarding the care type, which is exchanged via the `.meta.tag` element. In particular, two SHOULD statements are part of these requirements. Note, however, that within Dental Care these two requirements are stricter, as the care type SHALL always be conveyed in Dental Care data, which means that at least one `.meta.tag` indicating the care type SHALL be added to each FHIR resource, provided the care type is known in the source system.
