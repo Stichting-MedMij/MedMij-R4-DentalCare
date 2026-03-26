@@ -117,6 +117,9 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 
 <br/>
 
+<!-- CONTACTPERSOON: in overleg 25-03-2026 besloten deze weg te halen. Dit omdat contactpersoon een onderdeel is
+van de patient. De patient staat beschreven in de core. Deze is wel terug te vinden in de testdata.  -->
+<!--
 #### Contactpersoon
 
 <u>Overzichtsscherm</u>
@@ -141,6 +144,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Zorgorganisatie | Tendens |
 
 <br/>
+-->
 
 #### Betaler
 
