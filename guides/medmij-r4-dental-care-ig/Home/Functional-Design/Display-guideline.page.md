@@ -367,8 +367,8 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 
 <!-- 9 KOLOMMEN:
 1 Naam data-item | 2 Type data-item | 3 Id | 4 Voorbeeld |
-5 Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven | 6 Opmerkingen |
-7 Advies weergavetekst in de PGO | 8 Advies gebruikersvriendelijke toelichting | 9 Prioriteit (MoSCoW)
+5 Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven | 6 Opmerkingen |
+7 Weergavetekst in de PGO | 8 Gebruikersvriendelijke toelichting | 9 Prioriteit (MoSCoW)
 Breedteverdeling (op basis van eerdere mapping):
 13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3%  (totaal 100%) -->
 
@@ -381,8 +381,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -423,8 +423,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -476,6 +476,9 @@ Breedteverdeling (op basis van eerdere mapping):
 </table>
 
 <!-- CONTACTPERSOON -->
+<!-- CONTACTPERSOON: in overleg 25-03-2026 besloten deze weg te halen. Dit omdat contactpersoon een onderdeel is
+van de patient. De patient staat beschreven in de core. Deze is wel terug te vinden in de testdata.  -->
+<!--
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
@@ -484,8 +487,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -566,7 +569,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
     </tr>
   </tbody>
-</table>
+</table> -->
 
 <!-- BETALER -->
 <table class="pgo-table">
@@ -577,8 +580,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -662,8 +665,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -706,8 +709,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -750,10 +753,10 @@ Breedteverdeling (op basis van eerdere mapping):
       <th>Type data-item</th>
       <th>Id</th>
       <th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
       <th>Opmerkingen</th>
-      <th>Advies weergavetekst in de PGO</th>
-      <th>Advies gebruikersvriendelijke toelichting</th>
+      <th>Weergavetekst in de PGO</th>
+      <th>Gebruikersvriendelijke toelichting</th>
       <th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
@@ -799,8 +802,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -840,8 +843,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -883,8 +886,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
@@ -925,8 +928,8 @@ Breedteverdeling (op basis van eerdere mapping):
   <thead>
     <tr>
       <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Advies waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Advies weergavetekst in de PGO</th><th>Advies gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
+      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
+      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
     </tr>
   </thead>
   <tbody>
