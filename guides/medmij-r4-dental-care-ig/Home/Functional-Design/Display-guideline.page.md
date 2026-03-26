@@ -469,7 +469,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td>Bloedend tandvlees<td>b</td>
+      <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td>Bloedend tandvlees</td><td>b</td>
       <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
