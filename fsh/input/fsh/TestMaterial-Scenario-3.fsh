@@ -184,6 +184,7 @@ Usage: #example
   * system = #phone
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "Mobile contact"
   * value = "+31687654321"
+  * use = #home
 * telecom[1]
   * system = #email
   * value = "berendvandestok@gmail.com"
@@ -205,7 +206,7 @@ Usage: #example
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 * contact
   * relationship[0]
-    * coding = $RoleCode#FTH "father"
+    * coding = $RoleCode#FTH "Vader"
   * relationship[1]
     * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon"
   * name

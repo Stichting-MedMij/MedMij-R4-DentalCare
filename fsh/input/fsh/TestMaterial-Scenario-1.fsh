@@ -185,6 +185,7 @@ Usage: #example
   * system = #phone
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile contact"
   * value = "+31612345600"
+  * use = #home
 * telecom[1]
   * system = #email
   * value = "erikvanoranje@icloud.com"

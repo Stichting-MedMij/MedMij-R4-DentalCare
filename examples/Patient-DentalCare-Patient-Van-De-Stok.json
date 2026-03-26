@@ -83,7 +83,8 @@
           }
         ]
       },
-      "value": "+31687654321"
+      "value": "+31687654321",
+      "use": "home"
     },
     {
       "system": "email",
@@ -181,7 +182,7 @@
             {
               "code": "FTH",
               "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-              "display": "father"
+              "display": "Vader"
             }
           ]
         },

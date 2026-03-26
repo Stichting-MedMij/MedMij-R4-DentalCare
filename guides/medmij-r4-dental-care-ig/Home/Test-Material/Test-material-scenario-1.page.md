@@ -4,9 +4,9 @@
 
 | | |
 | --- | --- |
-| NameInformation.FirstNames | |
+| NameInformation.FirstNames | Erik |
 | NameInformation.Initials | |
-| NameInformation.GivenName | Erik |
+| NameInformation.GivenName | |
 | NameInformation.NameUsage | |
 | NameInformation.LastName.Prefix | van |
 | NameInformation.LastName.LastName | Oranje |
@@ -23,13 +23,13 @@
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | Officieel Adres (code 'HP' from code system 'AddressUse') |
+| AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345600 |
 | ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
-| ContactInformation.TelephoneNumbers.NumberType | |
+| ContactInformation.TelephoneNumbers.NumberType | Telefoonnummer thuis (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | erikvanoranje@icloud.com |
-| ContactInformation.EmailAddresses.EmailAddressType | |
+| ContactInformation.EmailAddresses.EmailAddressType | Privé e-mailadres (code 'HP' from code system 'AddressUse') |
 | PatientIdentificationNumber | 999998286 (in identifier system 'Burgerservicenummer') |
 | DateOfBirth | 02-08-1991 |
 | Gender | Man (code 'M' from code system 'AdministrativeGender') |
@@ -65,11 +65,11 @@
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345601 |
-| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'AddressUse') |
-| ContactInformation.TelephoneNumbers.NumberType | |
+| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | dekoning@tandarts.nl |
-| ContactInformation.EmailAddresses.EmailAddressType | |
+| ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
 | HealthcareProvider | Defensie Tandheelkundige Dienst |
 | HealthProfessionalRole | |
 
@@ -83,11 +83,11 @@
 | OrganizationName | Defensie Tandheelkundige Dienst |
 | DepartmentSpeciality | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31653603740 |
-| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'AddressUse') |
-| ContactInformation.TelephoneNumbers.NumberType | |
+| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | PJ.Jumpertz.01@mindef.nl |
-| ContactInformation.EmailAddresses.EmailAddressType | |
+| ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
 | AddressInformation.Street | Herculeslaan |
 | AddressInformation.HouseNumber | 1 |
 | AddressInformation.HouseNumberLetter | |
@@ -98,7 +98,7 @@
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | Work Place (code 'WP' from code system 'AddressUse') |
+| AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
 | OrganizationLocation.LocationName | |
 | OrganizationLocation.LocationNumber | |
@@ -111,8 +111,8 @@
 | OrganizationName | Vliegbasis Gilze-Rijen |
 | DepartmentSpeciality | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | 0889502753 |
-| ContactInformation.TelephoneNumbers.TelecomType | Work Place (code 'WP' from code system 'AddressUse') |
-| ContactInformation.TelephoneNumbers.NumberType | |
+| ContactInformation.TelephoneNumbers.TelecomType | Vast telefoonnummer (code 'LL' from code system 'TelecomDeviceTypes') |
+| ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
@@ -126,10 +126,44 @@
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | Work Place (code 'WP' from code system 'AddressUse') |
+| AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
 | OrganizationLocation.LocationName | |
 | OrganizationLocation.LocationNumber | |
+
+## Contact Person data
+
+| | |
+| --- | --- |
+| NameInformation.FirstNames | Leo |
+| NameInformation.Initials | |
+| NameInformation.GivenName | |
+| NameInformation.NameUsage | |
+| NameInformation.LastName.Prefix | |
+| NameInformation.LastName.LastName | Jansen |
+| NameInformation.LastNamePartner.PartnerPrefix | |
+| NameInformation.LastNamePartner.PartnerLastName | |
+| NameInformation.Titles | |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | |
+| ContactInformation.TelephoneNumbers.TelecomType | |
+| ContactInformation.TelephoneNumbers.NumberType | |
+| ContactInformation.TelephoneNumbers.Comment | |
+| ContactInformation.EmailAddresses.EmailAddress | |
+| ContactInformation.EmailAddresses.EmailAddressType | |
+| AddressInformation.Street | |
+| AddressInformation.HouseNumber | |
+| AddressInformation.HouseNumberLetter | |
+| AddressInformation.HouseNumberAddition | |
+| AddressInformation.HouseNumberIndication | |
+| AddressInformation.Postcode | |
+| AddressInformation.PlaceOfResidence | |
+| AddressInformation.Municipality | |
+| AddressInformation.Country | |
+| AddressInformation.AdditionalInformation | |
+| AddressInformation.AddressType | |
+| Role | Eerste relatie/contactpersoon (code '01' from code system 'COD821-VEKT') |
+| Role | Mantelzorger (code '100001' from code system 'ExtraRolcodes') |
+| Relationship | |
 
 ## ASA Score data
 
@@ -236,7 +270,7 @@
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | Officieel Adres (code 'HP' from code system 'AddressUse') |
+| AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | |
 | ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | |
@@ -268,7 +302,7 @@
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | Work Place (code 'WP' from code system 'AddressUse') |
+| AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | |
 | ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | |

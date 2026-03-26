@@ -20,6 +20,7 @@
 | Test material          | In the test instances for the CIM Procedure the `.code` has been updated to align with the new terminology specified in the mz-Procedure profile. | [DOSINZAGE1-911](https://medmij.atlassian.net/browse/DOSINZAGE1-911) |
 | Test material          | In the test instances for the CIMs ASAScore and TreatmentObjective the `.meta.profile` has been updated to reference the medmij-core-ASAScore and nl-core-TreatmentObjective profiles, respectively. | [DOSINZAGE1-883](https://medmij.atlassian.net/browse/DOSINZAGE1-883) |
 | Test material          | The `.meta.tag`s corresponding to the care type have been added to all test instances. | [DOSINZAGE1-883](https://medmij.atlassian.net/browse/DOSINZAGE1-883) |
+| Test material          | Several small errors in the test material have been corrected. | [DOSINZAGE1-883](https://medmij.atlassian.net/browse/DOSINZAGE1-883) |
 | Test material          | The test material has been relocated to the IG. | [DOSINZAGE1-883](https://medmij.atlassian.net/browse/DOSINZAGE1-883) |
 
 ## 1.0.0-beta.1
