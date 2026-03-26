@@ -461,15 +461,15 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td></td><td>b</td>
+      <td>Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td>Tandsteen</td><td>b</td>
       <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td></td><td>b</td>
+      <td>Verrichting</td><td>Reference</td><td>NL-CM:15.1.11</td><td>Wortelkanaalbehandeling</td><td>b</td>
       <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td><td>b</td>
+      <td>AfwijkendeUitslag</td><td>Item</td><td>NL-CM:15.1.12</td><td></td>Bloedend tandvlees<td>b</td>
       <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
