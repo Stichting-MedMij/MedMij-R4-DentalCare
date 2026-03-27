@@ -10,7 +10,7 @@ Description: "Caries risk."
 * insert PublisherAndContact
 * ^purpose = "This Observation resource represents the CariesRisk Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
-* . 
+* .
   * ^short = "CariesRisk"
   * ^definition = "Caries risk."
   * ^alias = "Cariësrisico"

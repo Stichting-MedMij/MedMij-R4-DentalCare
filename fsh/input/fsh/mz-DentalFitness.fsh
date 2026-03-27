@@ -10,7 +10,7 @@ Description: "Dental fitness according to the NATO classification system."
 * insert PublisherAndContact
 * ^purpose = "This Observation resource represents the DentalFitness Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
-* . 
+* .
   * ^short = "DentalFitness"
   * ^definition = "Dental fitness according to the NATO classification system."
   * ^alias = "DentalFitness"

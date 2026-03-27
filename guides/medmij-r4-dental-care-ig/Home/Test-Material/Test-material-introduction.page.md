@@ -8,7 +8,7 @@ The functional test data can be found on the underlying pages for each of the di
 
 For mapping between metadata, functional dataset and FHIR, please refer to the {{pagelink: TD, text: technical design, anchor: RelatingFHIRToFunctionalCounterpart}}.
 
-## Structure  
+## Structure
 - This IG contains the functional test data from which the FHIR resources are generated.
 - The `examples` folder on GitHub contains the FHIR test resources.
 
