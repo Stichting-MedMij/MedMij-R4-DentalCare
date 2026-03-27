@@ -35,8 +35,8 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-beta2-20260324",
-      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260324"
+      "identity": "mz-dataset-100-beta2-20260401",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
     },
     {
       "identity": "SNOMED",
@@ -66,7 +66,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260324",
+            "identity": "mz-dataset-100-beta2-20260401",
             "map": "mz-dataelement-16",
             "comment": "ParafunctionalActivity"
           }
@@ -89,7 +89,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260324",
+            "identity": "mz-dataset-100-beta2-20260401",
             "map": "mz-dataelement-17",
             "comment": "ParafunctionalActivityDateTime"
           },
@@ -117,7 +117,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260324",
+            "identity": "mz-dataset-100-beta2-20260401",
             "map": "mz-dataelement-18",
             "comment": "ParafunctionalActivityValue"
           },
@@ -148,7 +148,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260324",
+            "identity": "mz-dataset-100-beta2-20260401",
             "map": "mz-dataelement-19",
             "comment": "Performer"
           }
@@ -171,7 +171,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260324",
+            "identity": "mz-dataset-100-beta2-20260401",
             "map": "mz-dataelement-20",
             "comment": "Comment"
           },
