@@ -83,7 +83,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Second opinion |  |
+| Geselecteerde regel: Second opinion | |
 | --- | --- |
 | Type contact | Second opinion |
 | Begindatum | 01-01-2024 |
@@ -102,7 +102,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 
 | Score gezondheid (ASA) | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
 | --- | --- | --- | --- | --- |
-| ASA-score 1 Gezonde patiënt | 01-01-2024  | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens         |
+| ASA-score 1 Gezonde patiënt | 01-01-2024  | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 | ASA-score 2 Milde systemische aandoening zonder belemmering | 01-12-2023 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 
 <u>Detailscherm</u>
@@ -116,35 +116,6 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Zorgorganisatie | Tendens |
 
 <br/>
-
-<!-- CONTACTPERSOON: in overleg 25-03-2026 besloten deze weg te halen. Dit omdat contactpersoon een onderdeel is
-van de patient. De patient staat beschreven in de core. Deze is wel terug te vinden in de testdata.  -->
-<!--
-#### Contactpersoon
-
-<u>Overzichtsscherm</u>
-
-| Naam | Rol | Zorgorganisatie |
-| --- | --- | --- |
-| T.S. Pietersen | Wettelijke vertegenwoordiger | Tendens |
-| C.W. Willemsen | Mantelzorger | Tendens |
-
-<u>Detailscherm</u>
-
-| Geselecteerde regel: Wettelijke vertegenwoordiger |  |
-| --- | --- |
-| Naam | T.S. Pietersen |
-| Roepnaam | Teun |
-| Rol | Wettelijke vertegenwoordiger |
-| Relatie | Vader |
-| Straat | Slaapstraat |
-| Huisnummer | 2 |
-| Woonplaats | Droom |
-| Land | Dromenland |
-| Zorgorganisatie | Tendens |
-
-<br/>
--->
 
 #### Betaler
 
@@ -194,7 +165,7 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
 | Doel behandeling | Prioriteit | Zorgorganisatie |
 | --- | --- | --- |
 | Tandvleesontsteking behandelen | Hoge prioriteit | Tendens |
-| Vullen gaatje rechter kies | Lage prioriteit | Tendens |
+| Vullen gaatje rechterkies | Lage prioriteit | Tendens |
 
 <u>Detailscherm</u>
 
@@ -231,7 +202,7 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
 
 <u>Overzichtsscherm</u>
 
-| DentalFitnessScore | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
+| Dental Fitness-score | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
 | --- | --- | --- | --- | --- |
 | Klasse 1: vereist geen tandheelkundige behandeling | 01-01-2024 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 
@@ -239,7 +210,7 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
 
 | Geselecteerde regel: Klasse 1: vereist geen tandheelkundige behandeling | |
 | --- | --- |
-| DentalFitnessScore | Klasse 1: vereist geen tandheelkundige behandeling |
+| Dental Fitness-score | Klasse 1: vereist geen tandheelkundige behandeling |
 | Datum | 01-01-2024 |
 | Uitleg | Hier komt een tekst te staan die extra uitleg geeft. |
 | Zorgverlener | A.B. Janssen <br/> Tandarts |
@@ -275,7 +246,7 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
 | Schadelijke gewoonte met tanden | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
 | --- | --- | --- | --- | --- |
 | Overmatig knarsen bij stress | 01-01-2024 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
-| Erosie door het drinken van vruchtensap | 01-12-2023 | A.B. Janssen | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
+| Erosie door het drinken van vruchtensap | 01-12-2023 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 
 <u>Detailscherm</u>
 
@@ -316,14 +287,14 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
 
 | Naam verrichting | Startdatum verrichting | Zorgverlener | Zorgorganisatie |
 | --- | --- | --- | --- |
-| H42 wortelpuntoperatie, per tandwortel, zonder afsluiting | 01-01-2024 | A.B. Janssen <br/> Tandarts | Tendens |
+| H42 Wortelpuntoperatie, per tandwortel, zonder afsluiting | 01-01-2024 | A.B. Janssen <br/> Tandarts | Tendens |
 | R67 Plaatsen opbouw ten behoeve van implantaatkroon | 01-12-2023 | A.B. Janssen <br/> Tandarts | Tendens |
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: H42 wortelpuntoperatie, per tandwortel, zonder afsluiting | |
+| Geselecteerde regel: H42 Wortelpuntoperatie, per tandwortel, zonder afsluiting | |
 | --- | --- |
-| Naam verrichting | H42 wortelpuntoperatie, per tandwortel, zonder afsluiting |
+| Naam verrichting | H42 Wortelpuntoperatie, per tandwortel, zonder afsluiting |
 | Startdatum verrichting | 01-01-2024 |
 | Einddatum verrichting | 01-01-2024 |
 | Manier verrichting | Vrijmaken |
@@ -370,9 +341,7 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 </style>
 
 <!-- 9 KOLOMMEN:
-1 Naam data-item | 2 Type data-item | 3 Id | 4 Voorbeeld |
-5 Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven | 6 Opmerkingen |
-7 Weergavetekst in de PGO | 8 Gebruikersvriendelijke toelichting | 9 Prioriteit (MoSCoW)
+Naam data-item | Type data-item | Id | Voorbeeld | Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven | Opmerkingen | Weergavetekst in de PGO | Gebruikersvriendelijke toelichting | Prioriteit (MoSCoW)
 Breedteverdeling (op basis van eerdere mapping):
 13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3%  (totaal 100%) -->
 
@@ -391,29 +360,29 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>ASAscore</strong></td><td><strong>Rootconcept</strong></td><td>medmij-core-dataelement-1</td><td></td><td><td></td></td>
-      <td>Score gezondheid (ASA)</td><td>De ASA-classificatie is het American Society of Anesthesiologists classificatiesysteem voor fysieke status (algehele medische toestand) </td><td></td>
+      <td><strong>ASAScore</strong></td><td><strong>Rootconcept</strong></td><td>medmij-core-dataelement-1</td><td></td><td><td></td></td>
+      <td>Score gezondheid (ASA)</td><td>De ASA-classificatie is het American Society of Anesthesiologists classificatiesysteem voor fysieke status (algehele medische toestand)</td><td></td>
     </tr>
     <tr>
-      <td>ASAScoreDatumTijd</td><td>Item</td><td>medmij-core-dataelement-2</td><td>01-01-2024</td><td>a </td>
+      <td>ASAScoreDatumTijd</td><td>Item</td><td>medmij-core-dataelement-2</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>ASAScoreWaarde</td><td>Item</td><td>medmij-core-dataelement-3</td><td>ASA-score 1 Gezonde patiënt (code 413495001 in codesysteem 'SNOMED CT')</td><td>a </td>
-      <td>De patiëntvriendelijke toelichting die achter de score 1 t/m 6 staan zoals "Gezonde patiënt" is verplicht om te tonen in de PGO. Enkel de waarden zoals "ASA-score 1" zegt de pgo-gebruikber niet genoeg.</td><td>Score gezondheid (ASA)</td>
+      <td>ASAScoreWaarde</td><td>Item</td><td>medmij-core-dataelement-3</td><td>ASA-score 1 Gezonde patiënt (code '413495001' in codesysteem 'SNOMED CT')</td><td>a</td>
+      <td>De patiëntvriendelijke toelichting die achter de score 1 t/m 6 staat zoals "Gezonde patiënt" is verplicht om te tonen in de PGO. Enkel de waarde zoals "ASA-score 1" zegt de PGO-gebruiker niet genoeg.</td><td>Score gezondheid (ASA)</td>
       <td></td><td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>medmij-core-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td>medmij-core-dataelement-5</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -437,16 +406,16 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Contact</td><td></td><td></td>
     </tr>
     <tr>
-      <td>ContactType</td><td>Item</td><td>NL-CM:15.1.2</td><td>Second opinion (code 'OTH' Second Opinion in codesysteem 'NullFlavor')</td><td>a</td>
+      <td>ContactType</td><td>Item</td><td>NL-CM:15.1.2</td><td>Second opinion (code 'OTH' in codesysteem 'NullFlavor')</td><td>a</td>
       <td></td><td>Type contact</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
-      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam M, Overige datavelden: C</td>
+      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
     </tr>
      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>09:00</td><td>a</td>
      <td></td><td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd</td><td></td><td>M</td>
@@ -454,7 +423,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
     <tr>
      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
-     <td></td><td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd </td><td></td><td>M</td>
+     <td></td><td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
@@ -473,107 +442,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Reden contact</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra Controle vanwege bloedend tandvlees</td><td>b</td>
+      <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra controle vanwege bloedend tandvlees</td><td>b</td>
       <td></td><td>Reden contact toelichting of Uitleg reden contact</td><td></td><td>M</td>
     </tr>
   </tbody>
 </table>
-
-<!-- CONTACTPERSOON -->
-<!-- CONTACTPERSOON: in overleg 25-03-2026 besloten deze weg te halen. Dit omdat contactpersoon een onderdeel is
-van de patient. De patient staat beschreven in de core. Deze is wel terug te vinden in de testdata.  -->
-<!--
-<table class="pgo-table">
-  <colgroup>
-    <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Naam data-item</th><th>Type data-item</th><th>Id</th><th>Voorbeeld</th>
-      <th>Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven</th>
-      <th>Opmerkingen</th><th>Weergavetekst in de PGO</th><th>Gebruikersvriendelijke toelichting</th><th>Prioriteit (MoSCoW)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>ContactPersoon</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:3.1.1</td><td></td><td></td>
-      <td></td><td>Contactpersoon</td><td></td><td></td>
-    </tr>
-    <tr>
-      <td>Naamgegevens</td><td>Reference</td><td>NL-CM:3.1.4</td><td></td><td></td>
-      <td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-      <td>Initialen</td><td>Item</td><td>NL-CM:20.4.5</td><td>T.S. Pietersen</td><td>a</td>
-      <td>Initialen, voorvoegsel en achternaam in één veld weergeven</td><td>Naam</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Roepnaam</td><td>Item</td><td>NL-CM:20.4.6</td><td>Teun</td><td>b</td>
-      <td></td><td>Roepnaam</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Voorvoegsels</td><td>Item</td><td>NL-CM:20.4.11</td><td>T.S. Pietersen</td><td>a</td>
-      <td>Initialen, voorvoegsel en achternaam in één veld weergeven</td><td>Naam</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Achternaam</td><td>Item</td><td>NL-CM:20.4.10</td><td>T.S. Pietersen</td><td>a</td>
-      <td>Initialen, voorvoegsel en achternaam in één veld weergeven</td><td>Naam</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Contactgegevens</td><td>Reference </td><td>NL-CM:20.6.1</td><td></td><td></td>
-      <td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-      <td>Telefoonnummer</td><td>Item</td><td>NL-CM:20.6.4</td><td>+31664615805</td><td>b</td>
-      <td></td><td>Telefoonnummer</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>EmailAdres</td><td>Item</td><td>NL-CM:20.6.7</td><td>zomaar@test.nl</td><td>b</td>
-      <td></td><td>Email</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Adresgegevens</td><td>Reference </td><td>NL-CM:3.1.5</td><td></td><td></td>
-      <td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-      <td>Straat</td><td>Item</td><td>NL-CM:20.5.2</td><td>Slaapstraat</td><td>b</td>
-      <td></td><td>Straat</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Huisnummer</td><td>Item</td><td>NL-CM:20.5.12</td><td>2</td><td>b</td>
-      <td>Huisnummer + Huisnummerletter + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Huisnummerletter</td><td>Item</td><td>NL-CM:20.5.11</td><td></td><td>b</td>
-      <td>Huisnummer + Huisnummerletter + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>HuisnummerToevoeging</td><td>Item</td><td>NL-CM:20.5.10</td><td></td><td>b</td>
-      <td>Huisnummer + Huisnummerletter + HuisnummerToevoeging weergeven in 1 veld</td><td>Huisnummer</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Woonplaats</td><td>Item</td><td>NL-CM:20.5.3</td><td>Droom</td><td>b</td>
-      <td></td><td>Woonplaats</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Land</td><td>Item</td><td>NL-CM:20.5.5</td><td>Dromenland</td><td>b</td>
-      <td></td><td>Land</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Rol</td><td>Item</td><td>NL-CM:3.1.2</td><td>Wettelijke vertegenwoordiger (code '24' in codesysteem 'RoleCode')</td><td>a</td>
-      <td></td><td>Rol</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Relatie</td><td>Item</td><td>NL-CM:3.1.3</td><td>Vader (code 'FTH' in codesysteem 'COD821-VEKT')</td><td>b</td>
-      <td></td><td>Relatie</td><td></td><td>S</td>
-    </tr>
-    <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
-    </tr>
-  </tbody>
-</table> -->
 
 <!-- BETALER -->
 <table class="pgo-table">
@@ -591,7 +464,7 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
   <tbody>
     <tr>
       <td><strong>Betaler</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:1.1.1</td><td></td><td></td>
-      <td>Dit is de persoon of verzekeraar die de rekening betaald</td><td>Betaler</td><td></td><td></td>
+      <td>Dit is de persoon of verzekeraar die de rekening betaalt.</td><td>Betaler</td><td></td><td></td>
     </tr>
     <tr>
       <td><strong>BetalerPersoon</strong></td><td><strong>Container</strong></td><td>NL-CM:1.1.2</td><td></td><td></td>
@@ -599,23 +472,23 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
     </tr>
     <tr>
       <td>BetalerNaam</td><td>Item</td><td>NL-CM:1.1.5</td><td>J.L. Teunissen</td><td>a</td>
-      <td></td><td>Naam Betaler</td><td></td><td>M</td>
+      <td></td><td>Naam betaler</td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>Bankgegevens</strong></td><td><strong>Container</strong></td><td>NL-CM:1.1.4</td><td></td><td></td>
-      <td></td><td>Bankgegegevens </td><td></td><td></td>
+      <td></td><td>Bankgegegevens</td><td></td><td></td>
     </tr>
     <tr>
       <td>BankNaam</td><td>Item</td><td>NL-CM:1.1.9</td><td>ING Bank</td><td>b</td>
-      <td></td><td>Naam Bank</td><td></td><td>M</td>
+      <td></td><td>Naam bank</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>BankCode</td><td>Item</td><td>NL-CM:1.1.10</td><td>INGBNL2A</td><td>b</td>
-      <td></td><td>Code Bank</td><td></td><td>M</td>
+      <td></td><td>Code bank</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Rekeningnummer</td><td>Item</td><td>NL-CM:1.1.11</td><td>NL91INGB0417164300</td><td>b</td>
-      <td></td><td>Rekeningnummer Bank</td><td></td><td>M</td>
+      <td></td><td>Rekeningnummer bank</td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>Verzekeraar</strong></td><td><strong>Container</strong></td><td>NL-CM:1.1.3</td><td></td><td></td>
@@ -627,15 +500,15 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
     </tr>
     <tr>
       <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:1.1.13</td><td>01-01-2025</td><td>b</td>
-      <td>Alleen datum, geen tijd</td><td>Begindatum</td><td></td><td>M</td>
+      <td>Alleen datum, geen tijd.</td><td>Begindatum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>EindDatumTijd</td><td>Item</td><td>NL-CM:1.1.14</td><td>31-12-2025</td><td>b</td>
-      <td>Alleen datum, geen tijd</td><td>Einddatum</td><td></td><td>M</td>
+      <td>Alleen datum, geen tijd.</td><td>Einddatum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Verzekeringssoort</td><td>Item</td><td>NL-CM:1.1.15</td><td>Basis verzekerd (code 'B' in codesysteem 'Verzekeringssoort')</td><td>b</td>
-      <td></td><td>Soort Verzekering</td><td></td><td>M</td>
+      <td></td><td>Soort verzekering</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>OrganisatieNaam</td><td>Item</td><td>NL-CM:1.1.16</td><td>Zorgkantoor Groningen</td><td>a</td>
@@ -654,8 +527,8 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
       <td></td><td></td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -679,11 +552,11 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
       <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td></td><td></td><td></td>
     </tr>
     <tr>
-      <td>GewenstZorgresultaat</td><td>Item</td><td>NL-CM:13.5.3</td><td>Tandvleesontsteking behandelen</td><td>a </td>
+      <td>GewenstZorgresultaat</td><td>Item</td><td>NL-CM:13.5.3</td><td>Tandvleesontsteking behandelen</td><td>a</td>
       <td></td><td>Doel behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a </td>
+      <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a</td>
       <td>High-priority weergeven als Hoge prioriteit en Low-priority weergeven als Lage prioriteit</td>
       <td>Prioriteit</td>
       <td>Aangeven of het GewenstZorgresultaat high-priority = (korte termijn) of low-priority (lange termijn) heeft.</td>
@@ -698,8 +571,8 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td></td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -720,27 +593,27 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
   <tbody>
     <tr>
       <td><strong>Cariësrisico</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-1</td><td></td><td></td>
-      <td></td><td>Risico op gaatjes </td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes. </td><td></td>
+      <td></td><td>Risico op gaatjes</td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes.</td><td></td>
     </tr>
     <tr>
-      <td>CariesRisicoDatumTijd</td><td>Item</td><td>mz-dataelement-2</td><td>01-01-2024</td><td>a </td>
+      <td>CariësrisicoDatumTijd</td><td>Item</td><td>mz-dataelement-2</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>CariesRisicoWaarde</td><td>Item</td><td>mz-dataelement-3</td><td>Laag (code 62482003 in codesysteem 'SNOMED CT')</td><td>a</td>
+      <td>CariësrisicoWaarde</td><td>Item</td><td>mz-dataelement-3</td><td>Laag (code '62482003' in codesysteem 'SNOMED CT')</td><td>a</td>
       <td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td>mz-dataelement-5</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -767,32 +640,32 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
   <tbody>
     <tr>
       <td><strong>Dental Fitness</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-6</td><td></td><td></td>
-      <td>De PGO ontvangt maar 1 Dental Fitness Score (geen historie)</td>
-      <td>Dental Fitness</td>
-      <td>De Dental Fitness Classificatie (DFC) is een tandheelkundige risico-inventarisatie en geeft aan in welke mate een militair kans loopt op tandheelkundige problemen welke (directe) behandeling behoeven binnen de 12 maanden vanaf het moment van vaststellen. </td>
+      <td>De PGO ontvangt maar één Dental Fitness-score (geen historie).</td>
+      <td>DentalFitness</td>
+      <td>De Dental Fitness Classificatie (DFC) is een tandheelkundige risico-inventarisatie en geeft aan in welke mate een militair kans loopt op tandheelkundige problemen welke (directe) behandeling behoeven binnen de 12 maanden vanaf het moment van vaststellen.</td>
       <td></td>
     </tr>
     <tr>
       <td>DentalFitnessDatumTijd</td><td>Item</td><td>mz-dataelement-7</td><td>01-01-2024</td><td>a</td>
-      <td>Alleen datum, geen tijd</td><td>Datum</td><td></td><td>M</td>
+      <td>Alleen datum, geen tijd.</td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>DentalFitnessWaarde</td><td>Item</td><td>mz-dataelement-8</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
-      <td>De patiëntvriendelijke toelichting die achter de klasse 0 t/m 4 staan zoals "nooit gezien door een defensietandarts" is verplicht om te tonen in de PGO. Enkel de waarden zoals "Klasse 0" zegt de militair niet genoeg. De patiëntvriendelijke toelichting houdt de NATO AMedP-4.4. standaard en defensierichtlijn aan. De Dental Fitness Score is bekend bij het personeel van defensie.</td>
-      <td>DentalFitnessScore</td>
+      <td>De patiëntvriendelijke toelichting die achter de klasse 0 t/m 4 staat zoals "nooit gezien door een defensietandarts" is verplicht om te tonen in de PGO. Enkel de waarde zoals "Klasse 0" zegt de militair niet genoeg. De patiëntvriendelijke toelichting houdt de NAVO AMedP-4.4-standaard en defensierichtlijn aan. De Dental Fitness-score is bekend bij het personeel van Defensie.</td>
+      <td>Dental Fitness-score</td>
       <td></td><td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-9</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td>mz-dataelement-10</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -820,20 +693,20 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>MondhygiëneWaarde</td><td>Item</td><td>mz-dataelement-13</td><td>Slecht (code slecht in codesysteem 'SNOMED CT')</td><td>a </td>
-      <td></td><td>Mondhygiëne </td><td></td><td>M</td>
+      <td>MondhygiëneWaarde</td><td>Item</td><td>mz-dataelement-13</td><td>Slecht (code '556001' in codesysteem 'SNOMED CT')</td><td>a</td>
+      <td></td><td>Mondhygiëne</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-14</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td>mz-dataelement-15</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -855,28 +728,28 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
     <tr>
       <td><strong>ParafunctioneleActiviteit</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-16</td><td></td><td></td>
       <td></td><td>Schadelijke gewoonte met tanden</td>
-      <td>Parafuncties zijn mondbewegingen die niets met kauwen, slikken of spreken te maken hebben (zoals tandenknarsen).  </td>
+      <td>Parafuncties zijn mondbewegingen die niets met kauwen, slikken of spreken te maken hebben (zoals tandenknarsen). </td>
       <td></td>
     </tr>
     <tr>
-      <td>ParafunctioneleActiviteitDatumTijd</td><td>Item</td><td>mz-dataelement-17</td><td>01-01-2024</td><td>a </td>
+      <td>ParafunctioneleActiviteitDatumTijd</td><td>Item</td><td>mz-dataelement-17</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Parafunctionele activiteit waarde</td><td>Item</td><td>mz-dataelement-18</td><td>Overmatig knarsen bij stress</td><td>a </td>
+      <td>Parafunctionele activiteit waarde</td><td>Item</td><td>mz-dataelement-18</td><td>Overmatig knarsen bij stress</td><td>a</td>
       <td></td><td>Schadelijke gewoonte met tanden</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-19</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td>mz-dataelement-20</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -905,20 +778,20 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
       <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>PPSScore</td><td>Item</td><td>mz-dataelement-23</td><td>Pockets 0-3 millimeter = in orde (code ppsscore1 in codesysteem 'Nog invullen??!!')</td><td>a </td>
+      <td>PPSScore</td><td>Item</td><td>mz-dataelement-23</td><td>Pockets 0-3 millimeter = in orde (code 'ppsscore1' in codesysteem 'PeriodicPeriodontalScreeningScore')</td><td>a</td>
       <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-24</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener</td><td></td><td>Zorgverlener naam en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td>mz-dataelement-25</td><td>Hier komt een tekst te staan die extra uitleg geeft.</td><td>a of b</td>
-      <td></td><td>Uitleg (of Toelichting)</td><td></td><td>M</td>
+      <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen. </td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W<br/></td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W<br/></td>
     </tr>
   </tbody>
 </table>
@@ -943,19 +816,19 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
     </tr>
     <tr>
       <td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td> 01-01-2024</td><td>a</td>
-      <td></td><td>Startdatum verrichting of startdatum</td><td></td><td>M</td>
+      <td></td><td>Startdatum verrichting of Startdatum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>VerrichtingEindDatum</td><td>Item</td><td>NL-CM:14.1.3</td><td> 01-01-2024</td><td>b</td>
-      <td></td><td>Einddatum verrichting of einddatum</td><td></td><td>M</td>
+      <td></td><td>Einddatum verrichting of Einddatum</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 wortelpuntoperatie, per tandwortel, zonder afsluiting (code H42 in codesysteem 'NZa codes')</td><td>a</td>
+      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 Wortelpuntoperatie, per tandwortel, zonder afsluiting (code 'H42' in codesysteem 'Vektis Prestatiecodelijst Mondzorg')</td><td>a</td>
       <td></td><td>Naam verrichting of Verrichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken (code 302196006 in codesysteem 'SNOMED CT')</td><td>b</td>
-      <td></td><td>Manier verrichting of manier</td><td></td><td>S</td>
+      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken (code '302196006' in codesysteem 'SNOMED CT')</td><td>b</td>
+      <td></td><td>Manier verrichting of Manier</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td></td>
@@ -971,11 +844,11 @@ van de patient. De patient staat beschreven in de core. Deze is wel terug te vin
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:14.1.5</td><td>Tendens</td><td>a</td>
-      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, Overige datavelden: W</td>
+      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
     <tr>
       <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als specialisme tonen. </td><td>Zorgverlener </td><td></td><td>Zorgverlener naam en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Aanvrager::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.10</td><td></td><td></td>
