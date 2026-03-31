@@ -12,7 +12,7 @@ topic: OralHygiene
 | **Data service name without version (Dutch)** | Verzamelen Mondzorg - Mondhygiëne |
 | **Data service version** | 1.0.0-beta.1 |
 | **System role(s)** | MZ-OHR-1.0.0-beta.1-FHIR (PHR) <br/> MZ-OHB-1.0.0-beta.1-FHIR (XIS) |
-| **Relevant domain(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
+| **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
 | | |

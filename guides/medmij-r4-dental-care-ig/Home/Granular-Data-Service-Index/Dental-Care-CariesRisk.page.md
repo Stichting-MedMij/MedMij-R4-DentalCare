@@ -12,7 +12,7 @@ topic: CariesRisk
 | **Data service name without version (Dutch)** | Verzamelen Mondzorg - Cariësrisico |
 | **Data service version** | 1.0.0-beta.1 |
 | **System role(s)** | MZ-CRR-1.0.0-beta.1-FHIR (PHR) <br/> MZ-CRB-1.0.0-beta.1-FHIR (XIS) |
-| **Relevant domain(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
+| **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
 | | |
