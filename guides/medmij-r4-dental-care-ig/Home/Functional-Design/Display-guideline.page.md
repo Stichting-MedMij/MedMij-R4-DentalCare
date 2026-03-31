@@ -373,7 +373,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>medmij-core-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>medmij-core-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
@@ -604,7 +604,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Toelichting gewenst</td><td>Risico op gaatjes</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-4</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
@@ -647,7 +647,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>DentalFitnessDatumTijd</td><td>Item</td><td>mz-dataelement-7</td><td>01-01-2024</td><td>a</td>
-      <td>Alleen datum, geen tijd.</td><td>Datum</td><td></td><td>M</td>
+      <td></td><td>Datum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>DentalFitnessWaarde</td><td>Item</td><td>mz-dataelement-8</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
@@ -740,7 +740,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Schadelijke gewoonte met tanden</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-19</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-19</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
@@ -782,7 +782,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Context, reference</td><td>mz-dataelement-24</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-24</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
