@@ -557,10 +557,10 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a</td>
-      <td>High-priority weergeven als Hoge prioriteit en Low-priority weergeven als Lage prioriteit</td>
+      <td>Dit data-item zit momenteel niet in de bijbehorende CIM. Indien dit item aanwezig is in het bronsysteem, kan deze via het FHIR-element <code>Goal.priority</code> uitgewisseld worden. Hierbij moet <i>high-priority</i> weergegeven worden als 'Hoge prioriteit', en <i>low-priority</i> als 'Lage prioriteit'.</td>
       <td>Prioriteit</td>
-      <td>Aangeven of het GewenstZorgresultaat high-priority = (korte termijn) of low-priority (lange termijn) heeft.</td>
-      <td>M</td>
+      <td>Aangeven of het GewenstZorgresultaat hoge prioriteit (i.e. korte termijn) of lage prioriteit (i.e. lange termijn) heeft.</td>
+      <td>C</td>
     </tr>
     <tr>
       <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td>NL-CM:4.26.1</td><td></td><td></td>
