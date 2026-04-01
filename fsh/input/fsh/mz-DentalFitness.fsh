@@ -8,16 +8,16 @@ Description: "Dental fitness according to the NATO classification system."
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This Observation resource represents the DentalFitness building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Observation resource represents the DentalFitness Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
-* . 
+* .
   * ^short = "DentalFitness"
+  * ^definition = "Dental fitness according to the NATO classification system."
   * ^alias = "DentalFitness"
 * code
   * ^patternCodeableConcept = $SCT#440271000146100
+* subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
-  * ^short = "Patient"
-  * ^alias = "Patient"
 * effectiveDateTime
   * ^short = "DentalFitnessDateTime"
   * ^definition = "The date and time at which the dental fitness was determined."
@@ -32,7 +32,7 @@ Description: "Dental fitness according to the NATO classification system."
     """
   * ^alias = "Uitvoerder"
 * valueCodeableConcept 1..1
-* valueCodeableConcept from $DentalFitnessValueSetURL (required)
+* valueCodeableConcept from DentalFitness_VS (required)
   * ^short = "DentalFitnessValue"
   * ^definition = "The dental fitness."
   * ^alias = "DentalFitnessWaarde"
@@ -42,60 +42,12 @@ Description: "Dental fitness according to the NATO classification system."
     * ^definition = "Comment on the dental fitness, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-ValueSet: DentalFitness
-Id: DentalFitness
-Title: "DentalFitness ValueSet."
-Description: "Dental fitness according to the NATO classification system."
-* ^url = $DentalFitnessValueSetURL
-* ^identifier.use = #official
-* ^identifier.system = $URI
-* ^identifier.value = $DentalFitnessValueSetOID
-* ^status = #draft
-* ^experimental = false
-* insert PublisherAndContact
-* $SCT#440351000146101 "klasse 0"
-  * ^designation[0].language = #nl-NL
-  * ^designation[0].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[0].value = "nooit gezien door een defensietandarts"
-  * ^designation[1].language = #en-US
-  * ^designation[1].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[1].value = "never seen by a military dentist"
-* $SCT#258392002 "klasse 1"
-  * ^designation[0].language = #nl-NL
-  * ^designation[0].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[0].value = "vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen"
-  * ^designation[1].language = #en-US
-  * ^designation[1].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[1].value = "no dental treatment required / low risk for dental emergency"
-* $SCT#258393007 "klasse 2"
-  * ^designation[0].language = #nl-NL
-  * ^designation[0].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[0].value = "kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden"
-  * ^designation[1].language = #en-US
-  * ^designation[1].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[1].value = "may require dental treatment but unlikely to result in a dental emergency within 12 months"
-* $SCT#258394001 "klasse 3"
-  * ^designation[0].language = #nl-NL
-  * ^designation[0].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[0].value = "huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken"
-  * ^designation[1].language = #en-US
-  * ^designation[1].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[1].value = "current dental treatment to correct a dental condition that is likely to cause a dental emergency within 12 months"
-* $SCT#264750004 "klasse 4"
-  * ^designation[0].language = #nl-NL
-  * ^designation[0].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[0].value = "vereist periodiek tandheelkundig onderzoek, een onbepaalde tandheelkundige status of tandheelkundige gegevens ontbreken of zijn onvolledig"
-  * ^designation[1].language = #en-US
-  * ^designation[1].use = $SCT#900000000000013009 "Synonym"
-  * ^designation[1].value = "periodic dental examination required, undetermined dental status, or dental record is missing or incomplete"
-
-Mapping: MedMijDentalFitness
+Mapping: MzDentalFitnessMedMij-100-beta2
 Source: MzDentalFitness
-Id: mz-dataset-100-beta1-20250814
-Title: "Dataset Mondzorg 1.0.0-beta.1 20250814"
-* -> "mz-dataelement-109" "DentalFitness"
-* subject -> "mz-dataelement-1" "Patient"
-* effectiveDateTime -> "mz-dataelement-110" "DentalFitnessDateTime"
-* performer -> "mz-dataelement-145" "Performer"
-* valueCodeableConcept -> "mz-dataelement-111" "DentalFitnessValue"
-* note.text -> "mz-dataelement-112" "Comment"
+Id: mz-dataset-100-beta2-20260401
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
+* -> "mz-dataelement-6" "DentalFitness"
+* effectiveDateTime -> "mz-dataelement-7" "DentalFitnessDateTime"
+* performer -> "mz-dataelement-9" "Performer"
+* valueCodeableConcept -> "mz-dataelement-8" "DentalFitnessValue"
+* note.text -> "mz-dataelement-10" "Comment"

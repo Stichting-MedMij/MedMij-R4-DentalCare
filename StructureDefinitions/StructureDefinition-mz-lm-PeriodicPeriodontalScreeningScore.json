@@ -1,0 +1,191 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mz-lm-PeriodicPeriodontalScreeningScore",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "url": "http://medmij.nl/fhir/StructureDefinition/mz-lm-PeriodicPeriodontalScreeningScore",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.3.1.3"
+    }
+  ],
+  "name": "MzLmPeriodicPeriodontalScreeningScore",
+  "title": "PeriodicPeriodontalScreeningScore",
+  "status": "draft",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine the patient, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
+  "purpose": "This LogicalModel represents the PeriodicPeriodontalScreeningScore Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is based on the [Richtlijn Parodontale Screening, Diagnostiek en Behandeling in de Algemene praktijk](https://www.nvvp.org/voor-professionals/richtlijnen) authored by the NVvP.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "mz-dataset-100-beta2-20260401",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
+    },
+    {
+      "identity": "SNOMED",
+      "name": "SNOMED CT",
+      "uri": "http://snomed.info/sct"
+    },
+    {
+      "identity": "LOINC",
+      "name": "LOINC",
+      "uri": "http://loinc.org"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://medmij.nl/fhir/StructureDefinition/mz-lm-PeriodicPeriodontalScreeningScore",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "mz-lm-PeriodicPeriodontalScreeningScore",
+        "path": "mz-lm-PeriodicPeriodontalScreeningScore",
+        "short": "PeriodicPeriodontalScreeningScore",
+        "definition": "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine the patient, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually.",
+        "alias": [
+          "PeriodiekeParodontaleScreeningScore"
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-21",
+            "comment": "PeriodicPeriodontalScreeningScore"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-PeriodicPeriodontalScreeningScore.PeriodicPeriodontalScreeningScoreDateTime",
+        "path": "mz-lm-PeriodicPeriodontalScreeningScore.PeriodicPeriodontalScreeningScoreDateTime",
+        "short": "Periodic Periodontal Screening score date/time",
+        "definition": "The date and time at which the PPS was performed.",
+        "alias": [
+          "PeriodiekeParodontaleScreeningScoreDatumTijd"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-22",
+            "comment": "PeriodicPeriodontalScreeningScoreDateTime"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "439771001",
+            "comment": "datum van gebeurtenis"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-PeriodicPeriodontalScreeningScore.PeriodicPeriodontalScreeningScoreValue",
+        "path": "mz-lm-PeriodicPeriodontalScreeningScore.PeriodicPeriodontalScreeningScoreValue",
+        "short": "Periodic Periodontal Screening score value",
+        "definition": "The score of the PPS.",
+        "alias": [
+          "PeriodiekeParodontaleScreeningScoreWaarde"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://medmij.nl/fhir/ValueSet/PeriodicPeriodontalScreeningScore"
+        },
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-23",
+            "comment": "PeriodicPeriodontalScreeningScoreValue"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "540501000146103",
+            "comment": "score op periodieke parodontale screening"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-PeriodicPeriodontalScreeningScore.Performer",
+        "path": "mz-lm-PeriodicPeriodontalScreeningScore.Performer",
+        "short": "Performer",
+        "definition": "The health professional who performed the PPS.",
+        "alias": [
+          "Uitvoerder"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthProfessional"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-24",
+            "comment": "Performer"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-PeriodicPeriodontalScreeningScore.Comment",
+        "path": "mz-lm-PeriodicPeriodontalScreeningScore.Comment",
+        "short": "Comment",
+        "definition": "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+        "alias": [
+          "Toelichting"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-25",
+            "comment": "Comment"
+          },
+          {
+            "identity": "LOINC",
+            "map": "48767-8",
+            "comment": "Verklarend commentaar"
+          }
+        ]
+      }
+    ]
+  }
+}

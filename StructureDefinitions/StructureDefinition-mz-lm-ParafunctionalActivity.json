@@ -1,0 +1,187 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mz-lm-ParafunctionalActivity",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "url": "http://medmij.nl/fhir/StructureDefinition/mz-lm-ParafunctionalActivity",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.3.1.6"
+    }
+  ],
+  "name": "MzLmParafunctionalActivity",
+  "title": "ParafunctionalActivity",
+  "status": "draft",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Parafunctional activity.",
+  "purpose": "This LogicalModel represents the ParafunctionalActivity Clinical Information Model (CIM) for patient use cases in the context of Dental Care.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "mz-dataset-100-beta2-20260401",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
+    },
+    {
+      "identity": "SNOMED",
+      "name": "SNOMED CT",
+      "uri": "http://snomed.info/sct"
+    },
+    {
+      "identity": "LOINC",
+      "name": "LOINC",
+      "uri": "http://loinc.org"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://medmij.nl/fhir/StructureDefinition/mz-lm-ParafunctionalActivity",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "mz-lm-ParafunctionalActivity",
+        "path": "mz-lm-ParafunctionalActivity",
+        "short": "ParafunctionalActivity",
+        "definition": "Parafunctional activity.",
+        "alias": [
+          "ParafunctioneleActiviteit"
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-16",
+            "comment": "ParafunctionalActivity"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-ParafunctionalActivity.ParafunctionalActivityDateTime",
+        "path": "mz-lm-ParafunctionalActivity.ParafunctionalActivityDateTime",
+        "short": "Parafunctional activity date/time",
+        "definition": "The date and time at which the parafunctional activity was determined.",
+        "alias": [
+          "ParafunctioneleActiviteitDatumTijd"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-17",
+            "comment": "ParafunctionalActivityDateTime"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "439771001",
+            "comment": "datum van gebeurtenis"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-ParafunctionalActivity.ParafunctionalActivityValue",
+        "path": "mz-lm-ParafunctionalActivity.ParafunctionalActivityValue",
+        "short": "Parafunctional activity value",
+        "definition": "The parafunctional activity.",
+        "alias": [
+          "ParafunctioneleActiviteitWaarde"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-18",
+            "comment": "ParafunctionalActivityValue"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "110353005",
+            "comment": "parafunctionele gewoonte"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-ParafunctionalActivity.Performer",
+        "path": "mz-lm-ParafunctionalActivity.Performer",
+        "short": "Performer",
+        "definition": "The health professional who determined the parafunctional activity.",
+        "alias": [
+          "Uitvoerder"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthProfessional"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-19",
+            "comment": "Performer"
+          }
+        ]
+      },
+      {
+        "id": "mz-lm-ParafunctionalActivity.Comment",
+        "path": "mz-lm-ParafunctionalActivity.Comment",
+        "short": "Comment",
+        "definition": "Comment on the parafunctional activity, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+        "alias": [
+          "Toelichting"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-20",
+            "comment": "Comment"
+          },
+          {
+            "identity": "LOINC",
+            "map": "48767-8",
+            "comment": "Verklarend commentaar"
+          }
+        ]
+      }
+    ]
+  }
+}

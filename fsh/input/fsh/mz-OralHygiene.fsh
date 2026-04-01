@@ -4,20 +4,20 @@ Profile: MzOralHygiene
 Parent: Observation
 Id: mz-OralHygiene
 Title: "mz OralHygiene"
-Description: "Oral hygiene finding."
+Description: "Oral hygiene."
 * insert DefaultNarrative
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This Observation resource represents the OralHygiene building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care)."
+* ^purpose = "This Observation resource represents the OralHygiene Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
-* . 
+* .
   * ^short = "OralHygiene"
+  * ^definition = "Oral hygiene."
   * ^alias = "Mondhygiëne"
 * code
   * ^patternCodeableConcept = $SCT#364126007
+* subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
-  * ^short = "Patient"
-  * ^alias = "Patient"
 * effectiveDateTime
   * ^short = "OralHygieneDateTime"
   * ^definition = "The date and time at which the oral hygiene was determined."
@@ -32,7 +32,7 @@ Description: "Oral hygiene finding."
     """
   * ^alias = "Uitvoerder"
 * valueCodeableConcept 1..1
-* valueCodeableConcept from $OralHygieneValueSetURL (extensible)
+* valueCodeableConcept from OralHygiene_VS (extensible)
   * ^short = "OralHygieneValue"
   * ^definition = "The oral hygiene."
   * ^alias = "MondhygiëneWaarde"
@@ -42,30 +42,12 @@ Description: "Oral hygiene finding."
     * ^definition = "Comment on the oral hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-ValueSet: OralHygiene
-Id: OralHygiene
-Title: "OralHygiene ValueSet."
-Description: "Oral hygiene."
-* ^url = $OralHygieneValueSetURL
-* ^identifier.use = #official
-* ^identifier.system = $URI
-* ^identifier.value = $OralHygieneValueSetOID
-* ^status = #draft
-* ^experimental = false
-* insert PublisherAndContact
-* $SCT#425405005 "uitstekend"
-* $SCT#20572008 "goed"
-* $SCT#17621005 "normaal"
-* $SCT#556001 "slecht"
-* $SCT#1336219002 "zeer slecht"
-
-Mapping: MedMijOralHygiene
+Mapping: MzOralHygieneMedMij-100-beta2
 Source: MzOralHygiene
-Id: mz-dataset-100-beta1-20250814
-Title: "Dataset Mondzorg 1.0.0-beta.1 20250814"
-* -> "mz-dataelement-120" "OralHygiene"
-* subject -> "mz-dataelement-1" "Patient"
-* effectiveDateTime -> "mz-dataelement-121" "OralHygieneDateTime"
-* performer -> "mz-dataelement-146" "Performer"
-* valueCodeableConcept -> "mz-dataelement-122" "OralHygieneValue"
-* note.text -> "mz-dataelement-123" "Comment"
+Id: mz-dataset-100-beta2-20260401
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
+* -> "mz-dataelement-11" "OralHygiene"
+* effectiveDateTime -> "mz-dataelement-12" "OralHygieneDateTime"
+* performer -> "mz-dataelement-14" "Performer"
+* valueCodeableConcept -> "mz-dataelement-13" "OralHygieneValue"
+* note.text -> "mz-dataelement-15" "Comment"

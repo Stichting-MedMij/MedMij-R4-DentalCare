@@ -23,13 +23,13 @@
     }
   ],
   "description": "Dental fitness according to the NATO classification system.",
-  "purpose": "This Observation resource represents the DentalFitness building block for implementations following the information standard [Dental Care (Mondzorg)](https://simplifier.net/medmij-r4-dental-care).",
+  "purpose": "This Observation resource represents the DentalFitness Clinical Information Model (CIM) for patient use cases in the context of Dental Care.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-beta1-20250814",
-      "name": "Dataset Mondzorg 1.0.0-beta.1 20250814"
+      "identity": "mz-dataset-100-beta2-20260401",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
     }
   ],
   "kind": "resource",
@@ -43,6 +43,7 @@
         "id": "Observation",
         "path": "Observation",
         "short": "DentalFitness",
+        "definition": "Dental fitness according to the NATO classification system.",
         "alias": [
           "DentalFitness",
           "Measurement",
@@ -51,8 +52,8 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-109",
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-6",
             "comment": "DentalFitness"
           }
         ]
@@ -72,10 +73,7 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "short": "Patient",
-        "alias": [
-          "Patient"
-        ],
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -83,13 +81,6 @@
               "http://hl7.org/fhir/StructureDefinition/Patient",
               "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
             ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-1",
-            "comment": "Patient"
           }
         ]
       },
@@ -125,8 +116,8 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-110",
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-7",
             "comment": "DentalFitnessDateTime"
           }
         ]
@@ -156,8 +147,8 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-145",
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-9",
             "comment": "Performer"
           }
         ]
@@ -199,8 +190,8 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-111",
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-8",
             "comment": "DentalFitnessValue"
           }
         ]
@@ -215,8 +206,8 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta1-20250814",
-            "map": "mz-dataelement-112",
+            "identity": "mz-dataset-100-beta2-20260401",
+            "map": "mz-dataelement-10",
             "comment": "Comment"
           }
         ]
