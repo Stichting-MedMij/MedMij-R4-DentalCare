@@ -35,8 +35,8 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-beta2-20260401",
-      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
+      "identity": "mz-dataset-100-beta3-20260409",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.3 20260409"
     },
     {
       "identity": "SNOMED",
@@ -66,7 +66,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-6",
             "comment": "DentalFitness"
           }
@@ -89,7 +89,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-7",
             "comment": "DentalFitnessDateTime"
           },
@@ -121,7 +121,7 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-8",
             "comment": "DentalFitnessValue"
           },
@@ -152,7 +152,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-9",
             "comment": "Performer"
           }
@@ -175,7 +175,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-10",
             "comment": "Comment"
           },

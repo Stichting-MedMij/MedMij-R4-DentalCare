@@ -42,10 +42,10 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
     * ^definition = "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MzPeriodicPeriodontalScreeningScoreMedMij-100-beta2
+Mapping: MzPeriodicPeriodontalScreeningScoreMedMij-100-beta3
 Source: MzPeriodicPeriodontalScreeningScore
-Id: mz-dataset-100-beta2-20260401
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
+Id: mz-dataset-100-beta3-20260409
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.3 20260409"
 * -> "mz-dataelement-21" "PeriodicPeriodontalScreeningScore"
 * effectiveDateTime -> "mz-dataelement-22" "PeriodicPeriodontalScreeningScoreDateTime"
 * performer -> "mz-dataelement-24" "Performer"

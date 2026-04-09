@@ -33,8 +33,8 @@
       "uri": "https://zibs.nl/wiki/Procedure-v5.2(2020EN)"
     },
     {
-      "identity": "mz-dataset-100-beta2-20260401",
-      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
+      "identity": "mz-dataset-100-beta3-20260409",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.3 20260409"
     }
   ],
   "kind": "resource",
@@ -58,7 +58,7 @@
             "comment": "Procedure"
           },
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-26",
             "comment": "Procedure"
           }
@@ -109,12 +109,12 @@
             "comment": "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
           },
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-27",
             "comment": "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
           },
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-28",
             "comment": "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
           }
@@ -149,7 +149,7 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-29",
             "comment": "ProcedureType"
           }
@@ -211,7 +211,7 @@
             "comment": "ProcedureStartDate"
           },
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-27",
             "comment": "ProcedureStartDate"
           }
@@ -233,7 +233,7 @@
             "comment": "ProcedureEndDate"
           },
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-28",
             "comment": "ProcedureEndDate"
           }
@@ -263,7 +263,7 @@
             "comment": "ProcedureStartDate"
           },
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-27",
             "comment": "ProcedureStartDate"
           }
@@ -299,7 +299,7 @@
             "comment": "Performer"
           },
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-47",
             "comment": "Performer"
           }
@@ -329,7 +329,7 @@
             "comment": "Location"
           },
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-46",
             "comment": "Location"
           }
@@ -363,7 +363,7 @@
             "comment": "Indication"
           },
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-34",
             "comment": "Indication"
           }
@@ -397,7 +397,7 @@
             "comment": "ProcedureAnatomicalLocation"
           },
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-31",
             "comment": "ProcedureAnatomicalLocation"
           }

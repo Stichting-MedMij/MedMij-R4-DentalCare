@@ -28,8 +28,8 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-beta2-20260401",
-      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
+      "identity": "mz-dataset-100-beta3-20260409",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.3 20260409"
     }
   ],
   "kind": "resource",
@@ -52,7 +52,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-1",
             "comment": "CariesRisk"
           }
@@ -116,7 +116,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-2",
             "comment": "CariesRiskDateTime"
           }
@@ -147,7 +147,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-4",
             "comment": "Performer"
           }
@@ -190,7 +190,7 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-3",
             "comment": "CariesRiskValue"
           }
@@ -206,7 +206,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260409",
             "map": "mz-dataelement-5",
             "comment": "Comment"
           }

@@ -18,7 +18,7 @@ topic: ParafunctionalActivity
 | | |
 | --- | --- |
 | **CIM** | ParafunctionalActivity |
-| **Functional version** | 1.0.0-beta.2 |
+| **Functional version** | 1.0.0-beta.3 |
 
 The Logical Model is included below.
 
@@ -37,12 +37,12 @@ The Logical Model is included below.
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.2) |
-| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-beta.2 or compatible |
+| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.3) |
+| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-beta.3 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|110353005` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueString` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.0.0#CareType)) |
-| **CapabilityStatement(s)** | [Dental Care ParafunctionalActivity Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-ParafunctionalActivity-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.2) <br/> [Dental Care ParafunctionalActivity Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-ParafunctionalActivity-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.2) |
+| **CapabilityStatement(s)** | [Dental Care ParafunctionalActivity Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-ParafunctionalActivity-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.3) <br/> [Dental Care ParafunctionalActivity Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-ParafunctionalActivity-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.3) |
 
 The FHIR profile is included below.
 

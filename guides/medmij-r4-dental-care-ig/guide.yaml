@@ -1,6 +1,6 @@
-title: MedMij R4 Dental Care IG 1.0.0-beta.2
+title: MedMij R4 Dental Care IG 1.0.0-beta.3
 description: 'FHIR IG for MedMij Dental Care (Dutch: Mondzorg).'
-version: 1.0.0-beta.2
+version: 1.0.0-beta.3
 style-root: project
 style-name: MedMij
 numbered-headings: true
