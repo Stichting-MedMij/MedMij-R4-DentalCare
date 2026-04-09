@@ -10,8 +10,8 @@ topic: ParafunctionalActivity
 | **Id** | 900000106 |
 | **Data service name without version (English)** | Retrieve Dental Care - Parafunctional activity |
 | **Data service name without version (Dutch)** | Verzamelen Mondzorg - Parafunctionele activiteit |
-| **Data service version** | 1.0.0-beta.1 |
-| **System role(s)** | MZ-PAR-1.0.0-beta.1-FHIR (PHR) <br/> MZ-PAB-1.0.0-beta.1-FHIR (XIS) |
+| **Data service version** | 1.0.0-beta.2 |
+| **System role(s)** | MZ-PAR-beta.2 (PHR) <br/> MZ-PAB-beta.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model

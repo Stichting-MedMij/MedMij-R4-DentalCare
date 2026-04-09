@@ -8,7 +8,7 @@
   },
   "name": "Mz OralHygiene Retrieve",
   "status": "draft",
-  "date": "2026-04-01",
+  "date": "2026-04-09",
   "publisher": "MedMij",
   "contact": [
     {
@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "client",
-      "documentation": "Minimal requirements for a client to fulfill the 'Retrieve Oral hygiene' transaction (system role: MZ-OHR-1.0.0-beta.1-FHIR).",
+      "documentation": "Minimal requirements for a client to fulfill the 'Retrieve Oral hygiene' transaction (system role: MZ-OHR-beta.2).",
       "resource": [
         {
           "type": "Observation",

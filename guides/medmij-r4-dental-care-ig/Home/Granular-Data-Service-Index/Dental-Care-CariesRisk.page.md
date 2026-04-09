@@ -10,8 +10,8 @@ topic: CariesRisk
 | **Id** | 900000105 |
 | **Data service name without version (English)** | Retrieve Dental Care - Caries risk |
 | **Data service name without version (Dutch)** | Verzamelen Mondzorg - Cariësrisico |
-| **Data service version** | 1.0.0-beta.1 |
-| **System role(s)** | MZ-CRR-1.0.0-beta.1-FHIR (PHR) <br/> MZ-CRB-1.0.0-beta.1-FHIR (XIS) |
+| **Data service version** | 1.0.0-beta.2 |
+| **System role(s)** | MZ-CRR-beta.2 (PHR) <br/> MZ-CRB-beta.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
