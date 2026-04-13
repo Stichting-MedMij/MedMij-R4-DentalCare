@@ -10,8 +10,8 @@ topic: Procedure
 | **Id** | 900000102 |
 | **Data service name without version (English)** | Retrieve Dental Care - Procedure |
 | **Data service name without version (Dutch)** | Verzamelen Mondzorg - Verrichting |
-| **Data service version** | 1.0.0-beta.1 |
-| **System role(s)** | MZ-PRR-1.0.0-beta.1-FHIR (PHR) <br/> MZ-PRB-1.0.0-beta.1-FHIR (XIS) |
+| **Data service version** | 1.0.0-beta.2 |
+| **System role(s)** | MZ-PRR-beta.2 (PHR) <br/> MZ-PRB-beta.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model

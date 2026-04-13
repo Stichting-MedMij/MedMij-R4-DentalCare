@@ -6,7 +6,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz CariesRisk Retrieve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Caries risk' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -17,7 +17,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Caries risk' transaction (system role: MZ-CRR-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Caries risk' transaction (system role: MZ-CRR-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk"
@@ -70,7 +70,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz CariesRisk Serve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Caries risk' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -81,7 +81,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Caries risk' transaction (system role: MZ-CRB-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Caries risk' transaction (system role: MZ-CRB-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk"
@@ -134,7 +134,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz DentalFitness Retrieve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Dental fitness' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -145,7 +145,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Dental fitness' transaction (system role: MZ-DFR-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Dental fitness' transaction (system role: MZ-DFR-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness"
@@ -198,7 +198,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz DentalFitness Serve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -209,7 +209,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction (system role: MZ-DFB-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction (system role: MZ-DFB-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness"
@@ -262,7 +262,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz OralHygiene Retrieve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Oral hygiene' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -273,7 +273,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Oral hygiene' transaction (system role: MZ-OHR-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Oral hygiene' transaction (system role: MZ-OHR-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
@@ -326,7 +326,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz OralHygiene Serve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -337,7 +337,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction (system role: MZ-OHB-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction (system role: MZ-OHB-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
@@ -390,7 +390,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz ParafunctionalActivity Retrieve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Parafunctional activity' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -401,7 +401,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Parafunctional activity' transaction (system role: MZ-PAR-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Parafunctional activity' transaction (system role: MZ-PAR-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
@@ -454,7 +454,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz ParafunctionalActivity Serve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Parafunctional activity' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -465,7 +465,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Parafunctional activity' transaction (system role: MZ-PAB-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Parafunctional activity' transaction (system role: MZ-PAB-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
@@ -518,7 +518,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz PeriodicPeriodontalScreeningScore Retrieve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Periodic Periodontal Screening score' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -529,7 +529,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Periodic Periodontal Screening score' transaction (system role: MZ-PSR-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Periodic Periodontal Screening score' transaction (system role: MZ-PSR-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
@@ -582,7 +582,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz PeriodicPeriodontalScreeningScore Serve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -593,7 +593,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction (system role: MZ-PSB-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction (system role: MZ-PSB-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
@@ -646,7 +646,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz Procedure Retrieve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Procedure' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -657,7 +657,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Procedure' transaction (system role: MZ-PRR-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Procedure' transaction (system role: MZ-PRR-beta.2)."
   * resource[+]
     * type = #Procedure
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
@@ -717,7 +717,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz Procedure Serve"
 * status = #draft
-* date = "2026-04-01"
+* date = "2026-04-09"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Procedure' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -728,7 +728,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Procedure' transaction (system role: MZ-PRB-1.0.0-beta.1-FHIR)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Procedure' transaction (system role: MZ-PRB-beta.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
