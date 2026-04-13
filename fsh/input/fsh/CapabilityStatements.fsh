@@ -6,7 +6,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz CariesRisk Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Caries risk' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -70,7 +70,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz CariesRisk Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Caries risk' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -134,7 +134,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz DentalFitness Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Dental fitness' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -198,7 +198,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz DentalFitness Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -262,7 +262,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz OralHygiene Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Oral hygiene' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -326,7 +326,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz OralHygiene Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -390,7 +390,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz ParafunctionalActivity Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Parafunctional activity' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -454,7 +454,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz ParafunctionalActivity Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Parafunctional activity' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -518,7 +518,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz PeriodicPeriodontalScreeningScore Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Periodic Periodontal Screening score' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -582,7 +582,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz PeriodicPeriodontalScreeningScore Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -646,7 +646,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz Procedure Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Procedure' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -717,7 +717,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "Mz Procedure Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Procedure' transaction within Dental Care."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
