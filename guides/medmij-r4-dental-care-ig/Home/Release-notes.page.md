@@ -1,5 +1,13 @@
 # {{page-title}}
 
+## 1.0.0-beta.3
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| Functional design           | The cross-domain data services ASA score, Encounter, Patient, Payer and Treatment objective have been updated to version 1.0.0-beta.2. | [DOSINZAGE1-989](https://medmij.atlassian.net/browse/DOSINZAGE1-989) |
+| Technical design            | The cross-domain data services ASA score, Encounter, Patient, Payer and Treatment objective have been updated to version 1.0.0-beta.2. | [DOSINZAGE1-989](https://medmij.atlassian.net/browse/DOSINZAGE1-989) |
+| FHIR artifacts              | The MedMij R4 Core dependency has been updated to version 1.0.1. | [DOSINZAGE1-989](https://medmij.atlassian.net/browse/DOSINZAGE1-989) |
+
 ## 1.0.0-beta.2
 
 | Component                   | Description  | Ticket   |
