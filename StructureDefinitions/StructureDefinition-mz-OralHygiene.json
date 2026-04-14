@@ -28,8 +28,8 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-beta2-20260401",
-      "name": "Dataset Mondzorg MedMij 1.0.0-beta.2 20260401"
+      "identity": "mz-dataset-100-beta3-20260413",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.3 20260413"
     }
   ],
   "kind": "resource",
@@ -52,7 +52,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260413",
             "map": "mz-dataelement-11",
             "comment": "OralHygiene"
           }
@@ -116,7 +116,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260413",
             "map": "mz-dataelement-12",
             "comment": "OralHygieneDateTime"
           }
@@ -147,7 +147,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260413",
             "map": "mz-dataelement-14",
             "comment": "Performer"
           }
@@ -190,7 +190,7 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260413",
             "map": "mz-dataelement-13",
             "comment": "OralHygieneValue"
           }
@@ -206,7 +206,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta2-20260401",
+            "identity": "mz-dataset-100-beta3-20260413",
             "map": "mz-dataelement-15",
             "comment": "Comment"
           }

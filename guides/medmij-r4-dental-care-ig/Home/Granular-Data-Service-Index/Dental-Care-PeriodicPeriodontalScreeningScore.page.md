@@ -10,15 +10,15 @@ topic: PeriodicPeriodontalScreeningScore
 | **Id** | 900000108 |
 | **Data service name without version (English)** | Retrieve Dental Care - Periodic Periodontal Screening score |
 | **Data service name without version (Dutch)** | Verzamelen Mondzorg - Periodieke Parodontale Screening-score |
-| **Data service version** | 1.0.0-beta.1 |
-| **System role(s)** | MZ-PSR-1.0.0-beta.1-FHIR (PHR) <br/> MZ-PSB-1.0.0-beta.1-FHIR (XIS) |
+| **Data service version** | 1.0.0-beta.2 |
+| **System role(s)** | MZ-PSR-beta.2 (PHR) <br/> MZ-PSB-beta.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
 | | |
 | --- | --- |
 | **CIM** | PeriodicPeriodontalScreeningScore (based on the [Richtlijn Parodontale Screening, Diagnostiek en Behandeling in de Algemene praktijk](https://www.nvvp.org/voor-professionals/richtlijnen) authored by the NVvP) |
-| **Functional version** | 1.0.0-beta.2 |
+| **Functional version** | 1.0.0-beta.3 |
 
 The Logical Model is included below.
 
@@ -37,12 +37,12 @@ The Logical Model is included below.
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.2) |
-| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-beta.2 or compatible |
+| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.3) |
+| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-beta.3 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|540501000146103` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.0.0#CareType)) |
-| **CapabilityStatement(s)** | [Dental Care PeriodicPeriodontalScreeningScore Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-PeriodicPeriodontalScreeningScore-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.2) <br/> [Dental Care PeriodicPeriodontalScreeningScore Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-PeriodicPeriodontalScreeningScore-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.2) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.0.1#CareType)) |
+| **CapabilityStatement(s)** | [Dental Care PeriodicPeriodontalScreeningScore Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-PeriodicPeriodontalScreeningScore-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.3) <br/> [Dental Care PeriodicPeriodontalScreeningScore Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-PeriodicPeriodontalScreeningScore-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.3) |
 
 The FHIR profile is included below.
 

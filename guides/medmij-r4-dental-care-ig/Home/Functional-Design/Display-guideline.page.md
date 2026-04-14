@@ -52,7 +52,7 @@ In het Overzicht Zorgaanbieder - Mondzorg heeft het overzichtsscherm van elke CI
 De acceptatiecriteria voor de overzichtsschermen van elke CIM is als volgt.
 
 | Nr | Acceptatiecriteria |
-|----|--------------------|
+| --- | --- |
 | 1 | Standaard worden alle beschikbaar gestelde gegevens van de zorgaanbieders(s) overzichtelijk weergegeven, gesorteerd op datum van nieuw naar oud. |
 | 2 | Je kunt zoeken op (delen van) de gegevens of op informatie uit de andere datavelden in het overzichtsscherm. De gebruiker moet minimaal 3 karakters invoeren. |
 | 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. |
