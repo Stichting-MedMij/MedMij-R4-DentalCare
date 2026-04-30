@@ -416,19 +416,19 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Contact met of (Zorgverlener)</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
-      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
+      <td></td><td>Locatie (of Zorgorganisatie)</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
     </tr>
      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>09:00</td><td>a</td>
-     <td></td><td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd</td><td></td><td>M</td>
+     <td>BeginDatumTijd en EindDatumTijd mogen ook als periode in 1 veld getoond worden</td><td>Weergeven in twee velden (of Begindatum en -tijd in 1 veld weergeven)<br/>Begindatum<br/>Begintijd</td><td></td><td>M</td>
     </tr>
     <tr>
     <tr>
      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
-     <td></td><td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd</td><td></td><td>M</td>
+     <td>BeginDatumTijd en EindDatumTijd mogen ook als periode in 1 veld getoond worden</td><td>Weergeven in twee velden (of Begindatum en -tijd in 1 veld weergeven)<br/>Einddatum<br/>Eindtijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
