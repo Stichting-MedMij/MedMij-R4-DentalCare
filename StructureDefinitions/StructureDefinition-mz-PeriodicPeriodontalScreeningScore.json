@@ -28,8 +28,8 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-beta3-20260413",
-      "name": "Dataset Mondzorg MedMij 1.0.0-beta.3 20260413"
+      "identity": "mz-dataset-100-beta4-20260505",
+      "name": "Dataset Mondzorg MedMij 1.0.0-beta.4 20260505"
     }
   ],
   "kind": "resource",
@@ -52,7 +52,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta3-20260413",
+            "identity": "mz-dataset-100-beta4-20260505",
             "map": "mz-dataelement-21",
             "comment": "PeriodicPeriodontalScreeningScore"
           }
@@ -116,7 +116,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta3-20260413",
+            "identity": "mz-dataset-100-beta4-20260505",
             "map": "mz-dataelement-22",
             "comment": "PeriodicPeriodontalScreeningScoreDateTime"
           }
@@ -147,7 +147,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta3-20260413",
+            "identity": "mz-dataset-100-beta4-20260505",
             "map": "mz-dataelement-24",
             "comment": "Performer"
           }
@@ -190,7 +190,7 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta3-20260413",
+            "identity": "mz-dataset-100-beta4-20260505",
             "map": "mz-dataelement-23",
             "comment": "PeriodicPeriodontalScreeningScoreValue"
           }
@@ -206,7 +206,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-beta3-20260413",
+            "identity": "mz-dataset-100-beta4-20260505",
             "map": "mz-dataelement-25",
             "comment": "Comment"
           }

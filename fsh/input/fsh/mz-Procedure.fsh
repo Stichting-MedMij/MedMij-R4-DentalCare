@@ -89,10 +89,10 @@ Title: "zib Procedure-v5.2(2020EN)"
 * reasonReference -> "NL-CM:14.1.9" "Indication"
 * bodySite -> "NL-CM:14.1.13" "ProcedureAnatomicalLocation"
 
-Mapping: MzProcedureMedMij-100-beta3
+Mapping: MzProcedureMedMij-100-beta4
 Source: MzProcedure
-Id: mz-dataset-100-beta3-20260413
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.3 20260413"
+Id: mz-dataset-100-beta4-20260505
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260505"
 * -> "mz-dataelement-26" "Procedure"
 * status -> "mz-dataelement-27" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
 * status -> "mz-dataelement-28" "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"

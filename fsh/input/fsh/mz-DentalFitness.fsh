@@ -42,10 +42,10 @@ Description: "Dental fitness according to the NATO classification system."
     * ^definition = "Comment on the dental fitness, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MzDentalFitnessMedMij-100-beta3
+Mapping: MzDentalFitnessMedMij-100-beta4
 Source: MzDentalFitness
-Id: mz-dataset-100-beta3-20260413
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.3 20260413"
+Id: mz-dataset-100-beta4-20260505
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260505"
 * -> "mz-dataelement-6" "DentalFitness"
 * effectiveDateTime -> "mz-dataelement-7" "DentalFitnessDateTime"
 * performer -> "mz-dataelement-9" "Performer"

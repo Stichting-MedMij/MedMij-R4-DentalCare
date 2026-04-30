@@ -198,10 +198,10 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * Performer 0..* Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who carried out the procedure. In most cases, only the medical specialty is entered, and not the name of the health professional."
   * ^alias = "Uitvoerder"
 
-Mapping: MzLmCariesRiskMedMij-100-beta3
+Mapping: MzLmCariesRiskMedMij-100-beta4
 Source: MzLmCariesRisk
-Id: mz-dataset-100-beta3-20260413
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.3 20260413"
+Id: mz-dataset-100-beta4-20260505
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260505"
 * . -> "mz-dataelement-1" "CariesRisk"
 * CariesRiskDateTime -> "mz-dataelement-2" "CariesRiskDateTime"
 * CariesRiskValue -> "mz-dataelement-3" "CariesRiskValue"
@@ -224,10 +224,10 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmDentalFitnessMedMij-100-beta3
+Mapping: MzLmDentalFitnessMedMij-100-beta4
 Source: MzLmDentalFitness
-Id: mz-dataset-100-beta3-20260413
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.3 20260413"
+Id: mz-dataset-100-beta4-20260505
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260505"
 * . -> "mz-dataelement-6" "DentalFitness"
 * DentalFitnessDateTime -> "mz-dataelement-7" "DentalFitnessDateTime"
 * DentalFitnessValue -> "mz-dataelement-8" "DentalFitnessValue"
@@ -249,10 +249,10 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmOralHygieneMedMij-100-beta3
+Mapping: MzLmOralHygieneMedMij-100-beta4
 Source: MzLmOralHygiene
-Id: mz-dataset-100-beta3-20260413
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.3 20260413"
+Id: mz-dataset-100-beta4-20260505
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260505"
 * . -> "mz-dataelement-11" "OralHygiene"
 * OralHygieneDateTime -> "mz-dataelement-12" "OralHygieneDateTime"
 * OralHygieneValue -> "mz-dataelement-13" "OralHygieneValue"
@@ -275,10 +275,10 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmParafunctionalActivityMedMij-100-beta3
+Mapping: MzLmParafunctionalActivityMedMij-100-beta4
 Source: MzLmParafunctionalActivity
-Id: mz-dataset-100-beta3-20260413
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.3 20260413"
+Id: mz-dataset-100-beta4-20260505
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260505"
 * . -> "mz-dataelement-16" "ParafunctionalActivity"
 * ParafunctionalActivityDateTime -> "mz-dataelement-17" "ParafunctionalActivityDateTime"
 * ParafunctionalActivityValue -> "mz-dataelement-18" "ParafunctionalActivityValue"
@@ -300,10 +300,10 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmPeriodicPeriodontalScreeningScoreMedMij-100-beta3
+Mapping: MzLmPeriodicPeriodontalScreeningScoreMedMij-100-beta4
 Source: MzLmPeriodicPeriodontalScreeningScore
-Id: mz-dataset-100-beta3-20260413
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.3 20260413"
+Id: mz-dataset-100-beta4-20260505
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260505"
 * . -> "mz-dataelement-21" "PeriodicPeriodontalScreeningScore"
 * PeriodicPeriodontalScreeningScoreDateTime -> "mz-dataelement-22" "PeriodicPeriodontalScreeningScoreDateTime"
 * PeriodicPeriodontalScreeningScoreValue -> "mz-dataelement-23" "PeriodicPeriodontalScreeningScoreValue"
@@ -339,10 +339,10 @@ Title: "zib Procedure-v5.2(2020EN)"
 * Location -> "NL-CM:14.1.5" "Location"
 * Performer -> "NL-CM:14.1.6" "Performer"
 
-Mapping: MzLmProcedureMedMij-100-beta3
+Mapping: MzLmProcedureMedMij-100-beta4
 Source: MzLmProcedure
-Id: mz-dataset-100-beta3-20260413
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.3 20260413"
+Id: mz-dataset-100-beta4-20260505
+Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260505"
 * . -> "mz-dataelement-26" "Procedure"
 * ProcedureStartDate -> "mz-dataelement-27" "ProcedureStartDate"
 * ProcedureEndDate -> "mz-dataelement-28" "ProcedureEndDate"
