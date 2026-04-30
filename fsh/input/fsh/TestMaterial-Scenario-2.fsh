@@ -59,7 +59,8 @@ Instance: DentalCare-OralHygiene-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
 Usage: #example
 * meta
-  * tag = $VektisAGB#1200 "Tandartsen"
+  * tag[0] = $VektisAGB#1200 "Tandartsen"
+  * tag[1] = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"

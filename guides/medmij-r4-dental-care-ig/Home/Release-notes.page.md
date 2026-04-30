@@ -1,5 +1,11 @@
 # {{page-title}}
 
+## 1.0.0-beta.4
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| Test material               | The `.meta.tag`s corresponding to the care type have been updated in several test instances. | [DOSINZAGE1-941](https://medmij.atlassian.net/browse/DOSINZAGE1-941) |
+
 ## 1.0.0-beta.3
 
 | Component                   | Description  | Ticket    |
