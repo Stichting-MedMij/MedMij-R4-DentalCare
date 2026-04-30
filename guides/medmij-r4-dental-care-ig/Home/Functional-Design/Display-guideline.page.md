@@ -54,11 +54,11 @@ De acceptatiecriteria voor de overzichtsschermen van elke CIM is als volgt.
 | Nr | Acceptatiecriteria |
 | --- | --- |
 | 1 | Standaard worden alle beschikbaar gestelde gegevens van de zorgaanbieders(s) overzichtelijk weergegeven, gesorteerd op datum van nieuw naar oud. |
-| 2 | Je kunt zoeken op (delen van) de gegevens of op informatie uit de andere datavelden in het overzichtsscherm. De gebruiker moet minimaal 3 karakters invoeren. |
-| 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. |
+| 2 | Je kunt zoeken op (delen van) de gegevens of op informatie uit de andere datavelden in het overzichtsscherm. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven. |
+| 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven.|
 | 4 | Voor het datumveld in het overzichtsscherm kun je een specifieke periode selecteren. |
-| 5 | Alle datavelden in het overzichtsscherm zijn sorteerbaar. |
-| 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld. |
+| 5 | In het overzichtsscherm kan minimaal op datum worden gesorteerd, maar bij voorkeur is sorteren op alle datavelden mogelijk.  |
+| 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld. In verband met beperkte schermruimte op mobiele apparaten mogen de labelnamen van de datavelden in het overzichtsscherm worden weggelaten. |
 
 ### Detailscherm mondzorg
 Dit detailscherm krijgt een PGO-gebruiker te zien na het selecteren van een specifieke regel in het overzichtsscherm. De in de mock-up weergegeven gegevens dienen uitsluitend ter demonstratie.
@@ -68,6 +68,10 @@ Dit detailscherm krijgt een PGO-gebruiker te zien na het selecteren van een spec
 {{render: guides/medmij-r4-dental-care-ig/images/Detailscherm Mondzorg.png}}
 
 **Figuur 3: Voorbeeld Detailscherm Mondzorg**
+
+| Nr | Acceptatiecriteria |
+| --- | --- |
+| 1 | De datavelden in het detailscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld.|
 
 ### Mondzorggegevens per CIM
 Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
@@ -314,7 +318,7 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 | M(ust have) | Nodig voor de basisfunctionaliteit van de toepassing en moet worden geïmplementeerd om het proces succesvol te laten verlopen. |
 | S(hould have) | Belangrijke functionaliteit die niet vereist is, maar die voordelen biedt voor gebruikers en de algehele gebruikservaring. |
 | C(ould have) | Gewenste functionaliteit die waarde toevoegt, maar minder kritisch is en indien nodig kan worden uitgesteld. |
-| W(on't have) | Functionaliteiten die nu buiten scope zijn maar mogelijk in de toekomst worden overwogen. |
+| W(on't have) | Functionaliteiten die nu buiten scope zijn maar mogelijk in de toekomst worden overwogen. PGO’s hebben de vrijheid om deze datavelden desondanks toch te tonen. Het uitgangspunt is echter dat deze velden niet primair worden weergegeven, zodat de gebruiker deze informatie niet direct ziet. De gegevens zijn alleen beschikbaar wanneer de gebruiker hier expliciet naar zoekt of doorklikt, aangezien deze datavelden geen duidelijke meerwaarde hebben voor directe weergave.  |
 
 <br/>
 
@@ -407,23 +411,24 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ContactType</td><td>Item</td><td>NL-CM:15.1.2</td><td>Second opinion (code 'OTH' in codesysteem 'NullFlavor')</td><td>a</td>
-      <td></td><td>Type contact</td><td></td><td>M</td>
+      <td>Als de (gecodeerde) waarde van dit data-item gelijk is aan de NullFlavor <i>OTH</i>, wordt de specifieke omschrijving via het FHIR-element <code>Encounter.type(.text)</code> uitgewisseld.</td>
+      <td>Type contact</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Contact met of (Zorgverlener)</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
-      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
+      <td></td><td>Locatie (of Zorgorganisatie)</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
     </tr>
      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>09:00</td><td>a</td>
-     <td></td><td>Weergeven in twee velden<br/>Begindatum<br/>Begintijd</td><td></td><td>M</td>
+     <td>BeginDatumTijd en EindDatumTijd mogen ook als periode in 1 veld getoond worden</td><td>Weergeven in twee velden (of Begindatum en -tijd in 1 veld weergeven)<br/>Begindatum<br/>Begintijd</td><td></td><td>M</td>
     </tr>
     <tr>
     <tr>
      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
-     <td></td><td>Weergeven in twee velden<br/>Einddatum<br/>Eindtijd</td><td></td><td>M</td>
+     <td>BeginDatumTijd en EindDatumTijd mogen ook als periode in 1 veld getoond worden</td><td>Weergeven in twee velden (of Begindatum en -tijd in 1 veld weergeven)<br/>Einddatum<br/>Eindtijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
