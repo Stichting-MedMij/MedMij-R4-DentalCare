@@ -59,7 +59,7 @@ Instance: DentalCare-OralHygiene-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
 Usage: #example
 * meta
-  * tag = $VektisAGB#1200 "Tandartsen"
+  * tag = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
@@ -112,7 +112,8 @@ Instance: DentalCare-TreatmentObjective-1-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
 * meta
-  * tag = $VektisAGB#1200 "Tandartsen"
+  * tag[0] = $VektisAGB#1200 "Tandartsen"
+  * tag[1] = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Tandvleesontsteking behandelen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
@@ -142,7 +143,8 @@ Instance: DentalCare-Procedure-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
 Usage: #example
 * meta
-  * tag = $VektisAGB#1200 "Tandartsen"
+  * tag[0] = $VektisAGB#1200 "Tandartsen"
+  * tag[1] = $VektisAGB#1201 "Tandarts, implantoloog"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
