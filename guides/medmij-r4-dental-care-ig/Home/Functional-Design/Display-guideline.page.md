@@ -407,7 +407,8 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ContactType</td><td>Item</td><td>NL-CM:15.1.2</td><td>Second opinion (code 'OTH' in codesysteem 'NullFlavor')</td><td>a</td>
-      <td></td><td>Type contact</td><td></td><td>M</td>
+      <td>Als de (gecodeerde) waarde van dit data-item gelijk is aan de NullFlavor <i>OTH</i>, wordt de specifieke omschrijving via het FHIR-element <code>Encounter.type(.text)</code> uitgewisseld.</td>
+      <td>Type contact</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
