@@ -473,7 +473,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td><strong>BetalerPersoon</strong></td><td><strong>Container</strong></td><td>NL-CM:1.1.2</td><td></td><td></td>
-      <td></td><td></td><td></td><td></td>
+      <td></td><td>Betaler</td><td></td><td></td>
     </tr>
     <tr>
       <td>BetalerNaam</td><td>Item</td><td>NL-CM:1.1.5</td><td>J.L. Teunissen</td><td>a</td>
@@ -493,7 +493,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Rekeningnummer</td><td>Item</td><td>NL-CM:1.1.11</td><td>NL91INGB0417164300</td><td>b</td>
-      <td></td><td>Rekeningnummer bank</td><td></td><td>M</td>
+      <td></td><td>Rekeningnummer</td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>Verzekeraar</strong></td><td><strong>Container</strong></td><td>NL-CM:1.1.3</td><td></td><td></td>
@@ -514,6 +514,10 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td>Verzekeringssoort</td><td>Item</td><td>NL-CM:1.1.15</td><td>Basis verzekerd (code 'B' in codesysteem 'Verzekeringssoort')</td><td>b</td>
       <td></td><td>Soort verzekering</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>IdentificatieNummer</td><td>Item</td><td>NL-CM:1.1.7</td><td>3332 (in identificerend systeem '2.16.840.1.113883.2.4.6.4')</td><td>b</td>
+      <td></td><td>Identificatienummer</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>OrganisatieNaam</td><td>Item</td><td>NL-CM:1.1.16</td><td>Zorgkantoor Groningen</td><td>a</td>
