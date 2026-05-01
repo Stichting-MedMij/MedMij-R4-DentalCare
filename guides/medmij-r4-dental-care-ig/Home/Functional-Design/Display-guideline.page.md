@@ -54,10 +54,10 @@ De acceptatiecriteria voor de overzichtsschermen van elke CIM is als volgt.
 | Nr | Acceptatiecriteria |
 | --- | --- |
 | 1 | Standaard worden alle beschikbaar gestelde gegevens van de zorgaanbieders(s) overzichtelijk weergegeven, gesorteerd op datum van nieuw naar oud. |
-| 2 | Je kunt zoeken op (delen van) de gegevens of op informatie uit de andere datavelden in het overzichtsscherm. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven. |
-| 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven.|
+| 2 | Je kunt zoeken op (delen van) de gegevens of op informatie uit de datavelden in het overzichtsscherm. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven. |
+| 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven. |
 | 4 | Voor het datumveld in het overzichtsscherm kun je een specifieke periode selecteren. |
-| 5 | In het overzichtsscherm kan minimaal op datum worden gesorteerd, maar bij voorkeur is sorteren op alle datavelden mogelijk.  |
+| 5 | In het overzichtsscherm kan minimaal op datum worden gesorteerd, maar bij voorkeur is sorteren op alle datavelden mogelijk. |
 | 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld. In verband met beperkte schermruimte op mobiele apparaten mogen de labelnamen van de datavelden in het overzichtsscherm worden weggelaten. |
 
 ### Detailscherm mondzorg
@@ -71,7 +71,7 @@ Dit detailscherm krijgt een PGO-gebruiker te zien na het selecteren van een spec
 
 | Nr | Acceptatiecriteria |
 | --- | --- |
-| 1 | De datavelden in het detailscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld.|
+| 1 | De datavelden in het detailscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld. |
 
 ### Mondzorggegevens per CIM
 Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvorm weergegeven. De zorgaanbieder in het overzichtsscherm en detailscherm is alleen nodig voor scenario 1. Deze is niet nodig voor scenario 2.
@@ -80,7 +80,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 
 <u>Overzichtsscherm</u>
 
-| Type contact | Begindatum  | Begintijd | Zorgverlener | Zorgorganisatie |
+| Type contact | Begindatum | Begintijd | Zorgverlener | Zorgorganisatie |
 | --- | --- | --- | --- | --- |
 | Second opinion | 01-01-2024 | 09:00 | A.B. Janssen <br/> Tandarts | Tendens |
 | Tandarts Periodiek Preventief Onderzoek | 01-12-2023 | 11:00 | A.B. Janssen <br/> Tandarts | Tendens |
@@ -106,7 +106,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 
 | Score gezondheid (ASA) | Datum | Zorgverlener | Uitleg | Zorgorganisatie |
 | --- | --- | --- | --- | --- |
-| ASA-score 1 Gezonde patiënt | 01-01-2024  | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
+| ASA-score 1 Gezonde patiënt | 01-01-2024 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 | ASA-score 2 Milde systemische aandoening zonder belemmering | 01-12-2023 | A.B. Janssen <br/> Tandarts | Hier komt een tekst te staan die extra uitleg geeft. | Tendens |
 
 <u>Detailscherm</u>
@@ -318,7 +318,7 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 | M(ust have) | Nodig voor de basisfunctionaliteit van de toepassing en moet worden geïmplementeerd om het proces succesvol te laten verlopen. |
 | S(hould have) | Belangrijke functionaliteit die niet vereist is, maar die voordelen biedt voor gebruikers en de algehele gebruikservaring. |
 | C(ould have) | Gewenste functionaliteit die waarde toevoegt, maar minder kritisch is en indien nodig kan worden uitgesteld. |
-| W(on't have) | Functionaliteiten die nu buiten scope zijn maar mogelijk in de toekomst worden overwogen. PGO’s hebben de vrijheid om deze datavelden desondanks toch te tonen. Het uitgangspunt is echter dat deze velden niet primair worden weergegeven, zodat de gebruiker deze informatie niet direct ziet. De gegevens zijn alleen beschikbaar wanneer de gebruiker hier expliciet naar zoekt of doorklikt, aangezien deze datavelden geen duidelijke meerwaarde hebben voor directe weergave.  |
+| W(on't have) | Functionaliteiten die nu buiten scope zijn maar mogelijk in de toekomst worden overwogen. PGO’s hebben de vrijheid om deze datavelden desondanks toch te tonen. Het uitgangspunt is echter dat deze velden niet primair worden weergegeven, zodat de gebruiker deze informatie niet direct ziet. De gegevens zijn alleen beschikbaar wanneer de gebruiker hier expliciet naar zoekt of doorklikt, aangezien deze datavelden geen duidelijke meerwaarde hebben voor directe weergave. |
 
 <br/>
 
@@ -347,7 +347,7 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <!-- 9 KOLOMMEN:
 Naam data-item | Type data-item | Id | Voorbeeld | Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven | Opmerkingen | Weergavetekst in de PGO | Gebruikersvriendelijke toelichting | Prioriteit (MoSCoW)
 Breedteverdeling (op basis van eerdere mapping):
-13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3%  (totaal 100%) -->
+13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3% (totaal 100%) -->
 
 <!-- ASA-SCORE -->
 <table class="pgo-table">
@@ -416,19 +416,19 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ContactMet::Zorgverlener</td><td>Reference</td><td>NL-CM:15.1.7</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
-      <td>Zowel de naam als het specialisme tonen.</td><td>Contact met of (Zorgverlener)</td><td></td><td>Naamgegevens en specialisme: S</td>
+      <td>Zowel de naam als het specialisme tonen.</td><td>Contact met (of Zorgverlener)</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
       <td></td><td>Locatie (of Zorgorganisatie)</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
     </tr>
      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>09:00</td><td>a</td>
-     <td>BeginDatumTijd en EindDatumTijd mogen ook als periode in 1 veld getoond worden</td><td>Weergeven in twee velden (of Begindatum en -tijd in 1 veld weergeven)<br/>Begindatum<br/>Begintijd</td><td></td><td>M</td>
+     <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden (of Begindatum en -tijd in één veld weergeven)<br/>Begindatum<br/>Begintijd</td><td></td><td>M</td>
     </tr>
     <tr>
     <tr>
      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
-     <td>BeginDatumTijd en EindDatumTijd mogen ook als periode in 1 veld getoond worden</td><td>Weergeven in twee velden (of Begindatum en -tijd in 1 veld weergeven)<br/>Einddatum<br/>Eindtijd</td><td></td><td>M</td>
+     <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden (of Einddatum en -tijd in één veld weergeven)<br/>Einddatum<br/>Eindtijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
@@ -516,7 +516,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Soort verzekering</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>IdentificatieNummer</td><td>Item</td><td>NL-CM:1.1.7</td><td>3332 (in identificerend systeem '2.16.840.1.113883.2.4.6.4')</td><td>b</td>
+      <td>IdentificatieNummer</td><td>Item</td><td>NL-CM:1.1.7</td><td>3332 (in identificerend systeem 'UZOVI')</td><td>b</td>
       <td></td><td>Identificatienummer</td><td></td><td>M</td>
     </tr>
     <tr>

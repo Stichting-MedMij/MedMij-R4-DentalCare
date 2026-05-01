@@ -4,7 +4,7 @@
 
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
-| Functional design           | The display guideline has been updated: <br/> <ul> <li> Guidance on the exchange of the CIM Encounter with other contact types (i.e. with ContactType equal to NullFlavor *OTH*) has been added. | [DOSINZAGE1-1001](https://medmij.atlassian.net/browse/DOSINZAGE1-1001) |
+| Functional design           | The display guideline has been updated: <br/> <ul> <li> Guidance on the exchange of the CIM Encounter with other contact types (i.e. with ContactType equal to NullFlavor *OTH*) has been added. <li> The acceptance criteria for the overview have been updated, while the acceptance criteria for the detail view have been added. <li> The definition of 'Won't have' in the MoSCoW method has been finetuned. | [DOSINZAGE1-1001](https://medmij.atlassian.net/browse/DOSINZAGE1-1001) |
 | Test material               | The `.meta.tag`s corresponding to the care type have been updated in several test instances. | [DOSINZAGE1-941](https://medmij.atlassian.net/browse/DOSINZAGE1-941) |
 
 ## 1.0.0-beta.3
