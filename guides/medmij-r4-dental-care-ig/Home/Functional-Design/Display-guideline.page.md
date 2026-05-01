@@ -423,12 +423,12 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Locatie (of Zorgorganisatie)</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
     </tr>
      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>09:00</td><td>a</td>
-     <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden (of Begindatum en -tijd in één veld weergeven)<br/>Begindatum<br/>Begintijd</td><td></td><td>M</td>
+     <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden Begindatum en Begintijd (of Begindatum en -tijd in één veld weergeven)</td><td></td><td>M</td>
     </tr>
     <tr>
     <tr>
      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
-     <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden (of Einddatum en -tijd in één veld weergeven)<br/>Einddatum<br/>Eindtijd</td><td></td><td>M</td>
+     <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden Einddatum en Eindtijd (of Einddatum en -tijd in één veld weergeven)</td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
