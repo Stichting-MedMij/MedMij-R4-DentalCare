@@ -5,6 +5,7 @@
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Functional design           | The display guideline has been updated: <br/> <ul> <li> Guidance on the exchange of the CIM Encounter with other contact types (i.e. with ContactType equal to NullFlavor *OTH*) has been added. <li> The acceptance criteria for the overview have been updated, while the acceptance criteria for the detail view have been added. <li> The definition of 'Won't have' in the MoSCoW method has been finetuned. | [DOSINZAGE1-1001](https://medmij.atlassian.net/browse/DOSINZAGE1-1001) |
+| Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve Dental Care - Caries risk, version 1.0.0-beta.3 <li> Retrieve Dental Care - Dental fitness, version 1.0.0-beta.3 <li> Retrieve Dental Care - Oral hygiene, version 1.0.0-beta.3 <li> Retrieve Dental Care - Parafunctional activity, version 1.0.0-beta.3 <li> Retrieve Dental Care - Periodic Periodontal Screening score, version 1.0.0-beta.3 <li> Retrieve Dental Care - Procedure, version 1.0.0-beta.3 | [DOSINZAGE1-1018](https://medmij.atlassian.net/browse/DOSINZAGE1-1018) |
 | Test material               | The `.meta.tag`s corresponding to the care type have been updated in several test instances. | [DOSINZAGE1-941](https://medmij.atlassian.net/browse/DOSINZAGE1-941) |
 
 ## 1.0.0-beta.3
