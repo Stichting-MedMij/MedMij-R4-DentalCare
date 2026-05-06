@@ -135,13 +135,14 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Geselecteerde regel: J.L. Teunissen | |
 | --- | --- |
 | Naam betaler | J.L. Teunissen |
-| Naam Bank | ING Bank |
-| Code Bank | INGBNL2A |
-| Rekeningnummer Bank | NL91INGB0417164300 |
+| Naam bank | ING Bank |
+| Code bank | INGBNL2A |
+| Rekeningnummer | NL91INGB0417164300 |
 | Naam verzekeraar | |
 | Begindatum | |
 | Einddatum | |
 | Soort verzekering | |
+| Identificatienummer | |
 | Nummer verzekerde | |
 | Zorgorganisatie | Tendens |
 
@@ -150,13 +151,14 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Geselecteerde regel: Zorgkantoor Groningen | |
 | --- | --- |
 | Naam betaler | |
-| Naam Bank | |
-| Code Bank | |
-| Rekeningnummer Bank | |
+| Naam bank | |
+| Code bank | |
+| Rekeningnummer | |
 | Naam verzekeraar | Zorgkantoor Groningen |
 | Begindatum | 01-01-2025 |
 | Einddatum | 31-12-2025 |
 | Soort verzekering | Basis verzekering |
+| Identificatienummer | 3332 |
 | Nummer verzekerde | 2312312312 |
 | Zorgorganisatie | Tendens |
 
@@ -580,7 +582,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Goal.expressedBy</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via <code>Goal.expressedBy</code>></td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
