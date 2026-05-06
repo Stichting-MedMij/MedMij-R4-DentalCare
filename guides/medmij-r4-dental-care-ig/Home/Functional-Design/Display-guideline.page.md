@@ -581,7 +581,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td>via Goal.expressedBy</td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
