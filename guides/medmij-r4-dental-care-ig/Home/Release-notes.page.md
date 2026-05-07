@@ -1,5 +1,11 @@
 # {{page-title}}
 
+## 1.0.0-rc.1
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| FHIR artifacts              | For each Logical Model and FHIR profile, the mappings have been added in the IG. Moreover, for each FHIR profile, (links to) the corresponding examples have been added in the IG. | [PG-1016](https://medmij.atlassian.net/browse/PG-1016) |
+
 ## 1.0.0-beta.4
 
 | Component                   | Description  | Ticket    |

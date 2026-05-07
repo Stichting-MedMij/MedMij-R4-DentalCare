@@ -1,5 +1,6 @@
 ---
 topic: MzLmProcedure
+canonical: http://medmij.nl/fhir/StructureDefinition/mz-lm-Procedure
 ---
 
 # Procedure
@@ -9,6 +10,9 @@ The Procedure CIM is largely based on the zib [Procedure](https://zibs.nl/wiki/P
 <tabs>
     <tab title="Tree view" active="true">
       {{tree:http://medmij.nl/fhir/StructureDefinition/mz-lm-Procedure, buttons}}
+    </tab>
+    <tab title="Mappings">
+      {{page:fql-get-mappings}}
     </tab>
     <tab title="Xml">
       {{xml:http://medmij.nl/fhir/StructureDefinition/mz-lm-Procedure}}
