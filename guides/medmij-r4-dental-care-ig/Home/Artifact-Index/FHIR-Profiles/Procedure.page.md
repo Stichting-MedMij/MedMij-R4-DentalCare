@@ -1,5 +1,6 @@
 ---
 topic: MzProcedure
+canonical: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
 ---
 
 # Procedure
@@ -10,10 +11,16 @@ The Procedure CIM is largely based on zib publication 2020, but uses dental care
     <tab title="Tree view" active="true">
       {{tree:http://medmij.nl/fhir/StructureDefinition/mz-Procedure, buttons}}
     </tab>
+    <tab title="Mappings">
+      {{page:fql-get-mappings}}
+    </tab>
     <tab title="Xml">
       {{xml:http://medmij.nl/fhir/StructureDefinition/mz-Procedure}}
     </tab>
     <tab title="Json">
       {{json:http://medmij.nl/fhir/StructureDefinition/mz-Procedure}}
+    </tab>
+    <tab title="Examples">
+      {{page:fql-get-examples}}
     </tab>
 </tabs>
