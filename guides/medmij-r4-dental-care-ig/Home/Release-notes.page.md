@@ -4,6 +4,7 @@
 
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
+| Functional design           | The display guideline has been updated: <br/> <ul> <li> The display text for date concepts has been updated in the specifications table. <li> The acceptance criterium with respect to filtering for the overview has been updated. | [DOSINZAGE1-1030](https://medmij.atlassian.net/browse/DOSINZAGE1-1030) |
 | FHIR artifacts              | For each Logical Model and FHIR profile, the mappings have been added in the IG. Moreover, for each FHIR profile, (links to) the corresponding examples have been added in the IG. | [DOSINZAGE1-1016](https://medmij.atlassian.net/browse/DOSINZAGE1-1016) |
 
 ## 1.0.0-beta.4
