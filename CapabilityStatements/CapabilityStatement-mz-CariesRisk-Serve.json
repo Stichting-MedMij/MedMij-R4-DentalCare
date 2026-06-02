@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Caries risk' transaction (system role: MZ-CRB-beta.3).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Caries risk' transaction (system role: MZ-CRB-rc.1).",
       "resource": [
         {
           "type": "Observation",
