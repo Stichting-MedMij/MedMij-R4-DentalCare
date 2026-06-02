@@ -55,7 +55,7 @@ De acceptatiecriteria voor de overzichtsschermen van elke CIM is als volgt.
 | --- | --- |
 | 1 | Standaard worden alle beschikbaar gestelde gegevens van de zorgaanbieders(s) overzichtelijk weergegeven, gesorteerd op datum van nieuw naar oud. |
 | 2 | Je kunt zoeken op (delen van) de gegevens of op informatie uit de datavelden in het overzichtsscherm. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven. |
-| 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven. |
+| 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven. Ook datavelden die leiden tot een te lange lijst van filterwaarden vormen een uitzondering. |
 | 4 | Voor het datumveld in het overzichtsscherm kun je een specifieke periode selecteren. |
 | 5 | In het overzichtsscherm kan minimaal op datum worden gesorteerd, maar bij voorkeur is sorteren op alle datavelden mogelijk. |
 | 6 | De datavelden in het overzichtsscherm zijn begrijpelijk en gebruiksvriendelijk geformuleerd. Zie de {{pagelink: Weergaverichtlijn, text: Tabel met specificaties, anchor: TabelSpecificaties}} voor de aanbevolen termen per opgehaald dataveld. In verband met beperkte schermruimte op mobiele apparaten mogen de labelnamen van de datavelden in het overzichtsscherm worden weggelaten. |
@@ -371,7 +371,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ASAScoreDatumTijd</td><td>Item</td><td>medmij-core-dataelement-2</td><td>01-01-2024</td><td>a</td>
-      <td></td><td>Datum</td><td></td><td>M</td>
+      <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>ASAScoreWaarde</td><td>Item</td><td>medmij-core-dataelement-3</td><td>ASA-score 1 Gezonde patiënt (code '413495001' in codesysteem 'SNOMED CT')</td><td>a</td>
@@ -608,7 +608,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>CariësrisicoDatumTijd</td><td>Item</td><td>mz-dataelement-2</td><td>01-01-2024</td><td>a</td>
-      <td></td><td>Datum</td><td></td><td>M</td>
+      <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>CariësrisicoWaarde</td><td>Item</td><td>mz-dataelement-3</td><td>Laag (code '62482003' in codesysteem 'SNOMED CT')</td><td>a</td>
@@ -658,7 +658,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>DentalFitnessDatumTijd</td><td>Item</td><td>mz-dataelement-7</td><td>01-01-2024</td><td>a</td>
-      <td></td><td>Datum</td><td></td><td>M</td>
+      <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>DentalFitnessWaarde</td><td>Item</td><td>mz-dataelement-8</td><td>Klasse 1: vereist geen tandheelkundige behandeling</td><td>a</td>
@@ -701,7 +701,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>MondhygiëneDatumTijd</td><td>Item</td><td>mz-dataelement-12</td><td>01-01-2024</td><td>a</td>
-      <td></td><td>Datum</td><td></td><td>M</td>
+      <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>MondhygiëneWaarde</td><td>Item</td><td>mz-dataelement-13</td><td>Slecht (code '556001' in codesysteem 'SNOMED CT')</td><td>a</td>
@@ -744,7 +744,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ParafunctioneleActiviteitDatumTijd</td><td>Item</td><td>mz-dataelement-17</td><td>01-01-2024</td><td>a</td>
-      <td></td><td>Datum</td><td></td><td>M</td>
+      <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Parafunctionele activiteit waarde</td><td>Item</td><td>mz-dataelement-18</td><td>Overmatig knarsen bij stress</td><td>a</td>
@@ -786,7 +786,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>PPSDatumTijd</td><td>Item</td><td>mz-dataelement-22</td><td>01-01-2024</td><td>a</td>
-      <td></td><td>Datum</td><td></td><td>M</td>
+      <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>PPSScore</td><td>Item</td><td>mz-dataelement-23</td><td>Pockets 0-3 millimeter = in orde (code 'ppsscore1' in codesysteem 'PeriodicPeriodontalScreeningScore')</td><td>a</td>
@@ -827,11 +827,11 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td> 01-01-2024</td><td>a</td>
-      <td></td><td>Startdatum verrichting of Startdatum</td><td></td><td>M</td>
+      <td></td><td>Startdatum of Startdatum verrichting of Startdatum en -tijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>VerrichtingEindDatum</td><td>Item</td><td>NL-CM:14.1.3</td><td> 01-01-2024</td><td>b</td>
-      <td></td><td>Einddatum verrichting of Einddatum</td><td></td><td>M</td>
+      <td></td><td>Einddatum of Einddatum verrichting of Einddatum en -tijd</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 Wortelpuntoperatie, per tandwortel, zonder afsluiting (code 'H42' in codesysteem 'Vektis Prestatiecodelijst Mondzorg')</td><td>a</td>

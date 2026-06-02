@@ -4,6 +4,7 @@
 
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
+| Functional design           | The display guideline has been updated: <br/> <ul> <li> The display text for date concepts has been updated in the specifications table. <li> The acceptance criterium with respect to filtering for the overview has been updated. | [DOSINZAGE1-1030](https://medmij.atlassian.net/browse/DOSINZAGE1-1030) |
 | Functional design           | The cross-domain data services ASA score, Encounter, Patient, Payer and Treatment objective have been updated to version 1.0.0-rc.1. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |
 | Technical design            | The cross-domain data services ASA score, Encounter, Patient, Payer and Treatment objective have been updated to version 1.0.0-rc.1. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |
 | FHIR artifacts              | The MedMij R4 Core dependency has been updated to version 1.1.0. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |
