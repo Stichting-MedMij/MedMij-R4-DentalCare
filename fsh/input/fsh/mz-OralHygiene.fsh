@@ -42,10 +42,10 @@ Description: "Oral hygiene."
     * ^definition = "Comment on the oral hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MzOralHygieneMedMij-100-beta4
+Mapping: MzOralHygieneMedMij-100-rc1
 Source: MzOralHygiene
-Id: mz-dataset-100-beta4-20260506
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260506"
+Id: mz-dataset-100-rc1-20260603
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * -> "mz-dataelement-11" "OralHygiene"
 * effectiveDateTime -> "mz-dataelement-12" "OralHygieneDateTime"
 * performer -> "mz-dataelement-14" "Performer"

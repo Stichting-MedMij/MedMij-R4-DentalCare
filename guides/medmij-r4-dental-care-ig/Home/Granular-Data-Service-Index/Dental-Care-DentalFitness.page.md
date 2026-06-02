@@ -10,15 +10,15 @@ topic: DentalFitness
 | **Id** | 900000109 |
 | **Data service name without version (English)** | Retrieve Dental Care - Dental fitness |
 | **Data service name without version (Dutch)** | Verzamelen Mondzorg - Dental fitness |
-| **Data service version** | 1.0.0-beta.3 |
-| **System role(s)** | MZ-DFR-beta.3 (PHR) <br/> MZ-DFB-beta.3 (XIS) |
+| **Data service version** | 1.0.0-rc.1 |
+| **System role(s)** | MZ-DFR-rc.1 (PHR) <br/> MZ-DFB-rc.1 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
 | | |
 | --- | --- |
 | **CIM** | DentalFitness (based on the [AMedP-4.4 standard](https://www.coemed.org/files/stanags/03_AMEDP/AMedP-4.4_EDB_V1_E.pdf) authored by NATO) |
-| **Functional version** | 1.0.0-beta.4 |
+| **Functional version** | 1.0.0-rc.1 |
 
 The Logical Model is included below.
 
@@ -37,12 +37,12 @@ The Logical Model is included below.
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.4) |
-| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-beta.4 or compatible |
+| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
+| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.1 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|440271000146100` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.0.1#CareType)) |
-| **CapabilityStatement(s)** | [Dental Care DentalFitness Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-DentalFitness-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.4) <br/> [Dental Care DentalFitness Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-DentalFitness-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-beta.4) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#CareType)) |
+| **CapabilityStatement(s)** | [Dental Care DentalFitness Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-DentalFitness-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) <br/> [Dental Care DentalFitness Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-DentalFitness-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
 
 The FHIR profile is included below.
 

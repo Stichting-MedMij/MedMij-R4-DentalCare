@@ -42,10 +42,10 @@ Description: "Caries risk."
     * ^definition = "Comment on the caries risk, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MzCariesRiskMedMij-100-beta4
+Mapping: MzCariesRiskMedMij-100-rc1
 Source: MzCariesRisk
-Id: mz-dataset-100-beta4-20260506
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260506"
+Id: mz-dataset-100-rc1-20260603
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * -> "mz-dataelement-1" "CariesRisk"
 * effectiveDateTime -> "mz-dataelement-2" "CariesRiskDateTime"
 * performer -> "mz-dataelement-4" "Performer"
