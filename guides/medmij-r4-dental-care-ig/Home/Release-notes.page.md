@@ -8,6 +8,7 @@
 | Technical design            | The cross-domain data services ASA score, Encounter, Patient, Payer and Treatment objective have been updated to version 1.0.0-rc.1. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |
 | FHIR artifacts              | The MedMij R4 Core dependency has been updated to version 1.1.0. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |
 | FHIR artifacts              | For each Logical Model and FHIR profile, the mappings have been added in the IG. Moreover, for each FHIR profile, (links to) the corresponding examples have been added in the IG. | [DOSINZAGE1-1016](https://medmij.atlassian.net/browse/DOSINZAGE1-1016) |
+| Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve Dental Care - Caries risk, version 1.0.0-rc.1 <li> Retrieve Dental Care - Dental fitness, version 1.0.0-rc.1 <li> Retrieve Dental Care - Oral hygiene, version 1.0.0-rc.1 <li> Retrieve Dental Care - Parafunctional activity, version 1.0.0-rc.1 <li> Retrieve Dental Care - Periodic Periodontal Screening score, version 1.0.0-rc.1 <li> Retrieve Dental Care - Procedure, version 1.0.0-rc.1 | [DOSINZAGE1-1031](https://medmij.atlassian.net/browse/DOSINZAGE1-1031) |
 
 ## 1.0.0-beta.4
 

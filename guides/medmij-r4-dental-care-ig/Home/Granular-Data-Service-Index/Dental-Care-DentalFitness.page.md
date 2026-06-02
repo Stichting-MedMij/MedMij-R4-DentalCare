@@ -10,8 +10,8 @@ topic: DentalFitness
 | **Id** | 900000109 |
 | **Data service name without version (English)** | Retrieve Dental Care - Dental fitness |
 | **Data service name without version (Dutch)** | Verzamelen Mondzorg - Dental fitness |
-| **Data service version** | 1.0.0-beta.3 |
-| **System role(s)** | MZ-DFR-beta.3 (PHR) <br/> MZ-DFB-beta.3 (XIS) |
+| **Data service version** | 1.0.0-rc.1 |
+| **System role(s)** | MZ-DFR-rc.1 (PHR) <br/> MZ-DFB-rc.1 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
