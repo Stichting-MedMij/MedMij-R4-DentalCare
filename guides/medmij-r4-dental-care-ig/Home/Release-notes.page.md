@@ -4,6 +4,9 @@
 
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
+| Functional design           | The cross-domain data services ASA score, Encounter, Patient, Payer and Treatment objective have been updated to version 1.0.0-rc.1. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |
+| Technical design            | The cross-domain data services ASA score, Encounter, Patient, Payer and Treatment objective have been updated to version 1.0.0-rc.1. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |
+| FHIR artifacts              | The MedMij R4 Core dependency has been updated to version 1.1.0. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |
 | FHIR artifacts              | For each Logical Model and FHIR profile, the mappings have been added in the IG. Moreover, for each FHIR profile, (links to) the corresponding examples have been added in the IG. | [DOSINZAGE1-1016](https://medmij.atlassian.net/browse/DOSINZAGE1-1016) |
 
 ## 1.0.0-beta.4
