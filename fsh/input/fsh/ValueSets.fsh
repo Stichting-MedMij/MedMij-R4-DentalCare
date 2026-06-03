@@ -9,7 +9,7 @@ Description: "ValueSet for caries risk."
 * ^identifier.system = $URI
 * ^identifier.value = $CariesRiskValueSetOID
 * ^name = "CariesRisk"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * insert PublisherAndContact
 * $SCT#62482003 "laag"
@@ -26,7 +26,7 @@ Description: "ValueSet for dental fitness according to the NATO classification s
 * ^identifier.system = $URI
 * ^identifier.value = $DentalFitnessValueSetOID
 * ^name = "DentalFitness"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * insert PublisherAndContact
 * $SCT#440351000146101 "klasse 0"
@@ -74,7 +74,7 @@ Description: "ValueSet for oral hygiene."
 * ^identifier.system = $URI
 * ^identifier.value = $OralHygieneValueSetOID
 * ^name = "OralHygiene"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * insert PublisherAndContact
 * $SCT#425405005 "uitstekend"
@@ -92,7 +92,7 @@ Description: "ValueSet for the periodontal screening for dental plaque-related d
 * ^identifier.system = $URI
 * ^identifier.value = $PeriodicPeriodontalScreeningScoreValueSetOID
 * ^name = "PeriodicPeriodontalScreeningScore"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * insert PublisherAndContact
 * include codes from system PeriodicPeriodontalScreeningScore_CS
@@ -106,7 +106,7 @@ Description: "ValueSet for the procedure type in dental care authored by Vektis 
 * ^identifier.system = $URI
 * ^identifier.value = $ProcedureTypeVektisDentalCareValueSetOID
 * ^name = "ProcedureTypeVektisDentalCare"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * insert PublisherAndContact
 * include codes from system ProcedureTypeVektisDentalCare_CS

@@ -9,7 +9,7 @@ Description: "Caries risk."
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmCariesRiskOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the CariesRisk Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
@@ -35,7 +35,7 @@ Description: "Dental fitness according to the NATO classification system."
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmDentalFitnessOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the DentalFitness Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is based on the [AMedP-4.4 standard](https://www.coemed.org/files/stanags/03_AMEDP/AMedP-4.4_EDB_V1_E.pdf) authored by NATO."
 * insert Copyright
@@ -61,7 +61,7 @@ Description: "Oral hygiene."
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmOralHygieneOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the OralHygiene Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
@@ -87,7 +87,7 @@ Description: "Parafunctional activity."
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmParafunctionalActivityOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the ParafunctionalActivity Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
@@ -112,7 +112,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmPeriodicPeriodontalScreeningScoreOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the PeriodicPeriodontalScreeningScore Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is based on the [Richtlijn Parodontale Screening, Diagnostiek en Behandeling in de Algemene praktijk](https://www.nvvp.org/voor-professionals/richtlijnen) authored by the NVvP."
 * insert Copyright
@@ -138,7 +138,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmProcedureOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)) adjusted such that it is suitable for implementation purposes in the context of Dental Care. In particular, it uses dental care-specific terminology to indicate the ProcedureType, and the MedicalDevice and Requester concepts from the zib are omitted."
 * insert Copyright
@@ -198,10 +198,10 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * Performer 0..* Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who carried out the procedure. In most cases, only the medical specialty is entered, and not the name of the health professional."
   * ^alias = "Uitvoerder"
 
-Mapping: MzLmCariesRiskMedMij-100-beta4
+Mapping: MzLmCariesRiskMedMij-100-rc1
 Source: MzLmCariesRisk
-Id: mz-dataset-100-beta4-20260506
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260506"
+Id: mz-dataset-100-rc1-20260603
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * . -> "mz-dataelement-1" "CariesRisk"
 * CariesRiskDateTime -> "mz-dataelement-2" "CariesRiskDateTime"
 * CariesRiskValue -> "mz-dataelement-3" "CariesRiskValue"
@@ -224,10 +224,10 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmDentalFitnessMedMij-100-beta4
+Mapping: MzLmDentalFitnessMedMij-100-rc1
 Source: MzLmDentalFitness
-Id: mz-dataset-100-beta4-20260506
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260506"
+Id: mz-dataset-100-rc1-20260603
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * . -> "mz-dataelement-6" "DentalFitness"
 * DentalFitnessDateTime -> "mz-dataelement-7" "DentalFitnessDateTime"
 * DentalFitnessValue -> "mz-dataelement-8" "DentalFitnessValue"
@@ -249,10 +249,10 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmOralHygieneMedMij-100-beta4
+Mapping: MzLmOralHygieneMedMij-100-rc1
 Source: MzLmOralHygiene
-Id: mz-dataset-100-beta4-20260506
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260506"
+Id: mz-dataset-100-rc1-20260603
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * . -> "mz-dataelement-11" "OralHygiene"
 * OralHygieneDateTime -> "mz-dataelement-12" "OralHygieneDateTime"
 * OralHygieneValue -> "mz-dataelement-13" "OralHygieneValue"
@@ -275,10 +275,10 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmParafunctionalActivityMedMij-100-beta4
+Mapping: MzLmParafunctionalActivityMedMij-100-rc1
 Source: MzLmParafunctionalActivity
-Id: mz-dataset-100-beta4-20260506
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260506"
+Id: mz-dataset-100-rc1-20260603
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * . -> "mz-dataelement-16" "ParafunctionalActivity"
 * ParafunctionalActivityDateTime -> "mz-dataelement-17" "ParafunctionalActivityDateTime"
 * ParafunctionalActivityValue -> "mz-dataelement-18" "ParafunctionalActivityValue"
@@ -300,10 +300,10 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmPeriodicPeriodontalScreeningScoreMedMij-100-beta4
+Mapping: MzLmPeriodicPeriodontalScreeningScoreMedMij-100-rc1
 Source: MzLmPeriodicPeriodontalScreeningScore
-Id: mz-dataset-100-beta4-20260506
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260506"
+Id: mz-dataset-100-rc1-20260603
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * . -> "mz-dataelement-21" "PeriodicPeriodontalScreeningScore"
 * PeriodicPeriodontalScreeningScoreDateTime -> "mz-dataelement-22" "PeriodicPeriodontalScreeningScoreDateTime"
 * PeriodicPeriodontalScreeningScoreValue -> "mz-dataelement-23" "PeriodicPeriodontalScreeningScoreValue"
@@ -339,10 +339,10 @@ Title: "zib Procedure-v5.2(2020EN)"
 * Location -> "NL-CM:14.1.5" "Location"
 * Performer -> "NL-CM:14.1.6" "Performer"
 
-Mapping: MzLmProcedureMedMij-100-beta4
+Mapping: MzLmProcedureMedMij-100-rc1
 Source: MzLmProcedure
-Id: mz-dataset-100-beta4-20260506
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260506"
+Id: mz-dataset-100-rc1-20260603
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * . -> "mz-dataelement-26" "Procedure"
 * ProcedureStartDate -> "mz-dataelement-27" "ProcedureStartDate"
 * ProcedureEndDate -> "mz-dataelement-28" "ProcedureEndDate"

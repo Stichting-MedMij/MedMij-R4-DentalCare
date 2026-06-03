@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "DentalFitness",
   "id": "DentalFitness",
   "title": "DentalFitness ValueSet.",

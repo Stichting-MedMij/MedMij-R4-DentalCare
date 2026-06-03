@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "PeriodicPeriodontalScreeningScore",
   "id": "PeriodicPeriodontalScreeningScore",
   "title": "PeriodicPeriodontalScreeningScore ValueSet.",

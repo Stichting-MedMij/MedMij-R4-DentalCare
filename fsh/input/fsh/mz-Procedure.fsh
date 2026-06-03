@@ -6,7 +6,7 @@ Id: mz-Procedure
 Title: "mz Procedure"
 Description: "Therapeutic or diagnostic procedure undergone by the patient in dental care."
 * insert DefaultNarrative
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This Procedure resource represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. This profile is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)), but has no dependency on the corresponding nl-core-Procedure-event profile because it contains non-compatible changes with respect to ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, guidance and mappings corresponding to the MedicalDevice and Requester concepts, as well as the reversed reference for zib TextResult, which are present in the nl-core profile, have been omitted from this profile."
 * insert Copyright
@@ -89,10 +89,10 @@ Title: "zib Procedure-v5.2(2020EN)"
 * reasonReference -> "NL-CM:14.1.9" "Indication"
 * bodySite -> "NL-CM:14.1.13" "ProcedureAnatomicalLocation"
 
-Mapping: MzProcedureMedMij-100-beta4
+Mapping: MzProcedureMedMij-100-rc1
 Source: MzProcedure
-Id: mz-dataset-100-beta4-20260506
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260506"
+Id: mz-dataset-100-rc1-20260603
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * -> "mz-dataelement-26" "Procedure"
 * status -> "mz-dataelement-27" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
 * status -> "mz-dataelement-28" "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"

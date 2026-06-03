@@ -6,7 +6,7 @@ Id: mz-ParafunctionalActivity
 Title: "mz ParafunctionalActivity"
 Description: "Parafunctional activity."
 * insert DefaultNarrative
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This Observation resource represents the ParafunctionalActivity Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
@@ -40,10 +40,10 @@ Description: "Parafunctional activity."
     * ^definition = "Comment on the parafunctional activity, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MzParafunctionalActivityMedMij-100-beta4
+Mapping: MzParafunctionalActivityMedMij-100-rc1
 Source: MzParafunctionalActivity
-Id: mz-dataset-100-beta4-20260506
-Title: "Dataset Mondzorg MedMij 1.0.0-beta.4 20260506"
+Id: mz-dataset-100-rc1-20260603
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * -> "mz-dataelement-16" "ParafunctionalActivity"
 * effectiveDateTime -> "mz-dataelement-17" "ParafunctionalActivityDateTime"
 * performer -> "mz-dataelement-19" "Performer"
