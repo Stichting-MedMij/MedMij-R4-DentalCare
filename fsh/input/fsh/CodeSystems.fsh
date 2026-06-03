@@ -9,7 +9,7 @@ Description: "Codes for the periodontal screening for dental plaque-related dise
 * ^identifier.system = $URI
 * ^identifier.value = $PeriodicPeriodontalScreeningScoreCodeSystemOID
 * ^name = "PeriodicPeriodontalScreeningScore"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * insert PublisherAndContact
 * ^caseSensitive = false

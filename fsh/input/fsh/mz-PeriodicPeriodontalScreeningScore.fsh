@@ -6,7 +6,7 @@ Id: mz-PeriodicPeriodontalScreeningScore
 Title: "mz PeriodicPeriodontalScreeningScore"
 Description: "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine the patient, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually."
 * insert DefaultNarrative
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This Observation resource represents the PeriodicPeriodontalScreeningScore Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright

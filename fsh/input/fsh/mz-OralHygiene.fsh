@@ -6,7 +6,7 @@ Id: mz-OralHygiene
 Title: "mz OralHygiene"
 Description: "Oral hygiene."
 * insert DefaultNarrative
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This Observation resource represents the OralHygiene Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright

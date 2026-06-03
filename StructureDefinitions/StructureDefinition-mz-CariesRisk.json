@@ -8,7 +8,7 @@
   "url": "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk",
   "name": "MzCariesRisk",
   "title": "mz CariesRisk",
-  "status": "draft",
+  "status": "active",
   "publisher": "MedMij",
   "contact": [
     {

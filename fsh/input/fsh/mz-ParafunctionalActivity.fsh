@@ -6,7 +6,7 @@ Id: mz-ParafunctionalActivity
 Title: "mz ParafunctionalActivity"
 Description: "Parafunctional activity."
 * insert DefaultNarrative
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This Observation resource represents the ParafunctionalActivity Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright

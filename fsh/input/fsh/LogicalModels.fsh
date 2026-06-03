@@ -9,7 +9,7 @@ Description: "Caries risk."
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmCariesRiskOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the CariesRisk Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
@@ -35,7 +35,7 @@ Description: "Dental fitness according to the NATO classification system."
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmDentalFitnessOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the DentalFitness Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is based on the [AMedP-4.4 standard](https://www.coemed.org/files/stanags/03_AMEDP/AMedP-4.4_EDB_V1_E.pdf) authored by NATO."
 * insert Copyright
@@ -61,7 +61,7 @@ Description: "Oral hygiene."
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmOralHygieneOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the OralHygiene Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
@@ -87,7 +87,7 @@ Description: "Parafunctional activity."
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmParafunctionalActivityOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the ParafunctionalActivity Clinical Information Model (CIM) for patient use cases in the context of Dental Care."
 * insert Copyright
@@ -112,7 +112,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmPeriodicPeriodontalScreeningScoreOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the PeriodicPeriodontalScreeningScore Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is based on the [Richtlijn Parodontale Screening, Diagnostiek en Behandeling in de Algemene praktijk](https://www.nvvp.org/voor-professionals/richtlijnen) authored by the NVvP."
 * insert Copyright
@@ -138,7 +138,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MzLmProcedureOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)) adjusted such that it is suitable for implementation purposes in the context of Dental Care. In particular, it uses dental care-specific terminology to indicate the ProcedureType, and the MedicalDevice and Requester concepts from the zib are omitted."
 * insert Copyright

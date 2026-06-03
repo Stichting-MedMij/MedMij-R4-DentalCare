@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "ProcedureTypeVektisDentalCare",
   "id": "ProcedureTypeVektisDentalCare",
   "title": "ProcedureTypeVektisDentalCare ValueSet.",

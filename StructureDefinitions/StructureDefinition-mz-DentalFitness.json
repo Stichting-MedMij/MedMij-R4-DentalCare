@@ -8,7 +8,7 @@
   "url": "http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness",
   "name": "MzDentalFitness",
   "title": "mz DentalFitness",
-  "status": "draft",
+  "status": "active",
   "publisher": "MedMij",
   "contact": [
     {

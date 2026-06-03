@@ -5,7 +5,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz CariesRisk Retrieve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Caries risk' transaction within Dental Care."
@@ -69,7 +69,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz CariesRisk Serve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Caries risk' transaction within Dental Care."
@@ -133,7 +133,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz DentalFitness Retrieve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Dental fitness' transaction within Dental Care."
@@ -197,7 +197,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz DentalFitness Serve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction within Dental Care."
@@ -261,7 +261,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz OralHygiene Retrieve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Oral hygiene' transaction within Dental Care."
@@ -325,7 +325,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz OralHygiene Serve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction within Dental Care."
@@ -389,7 +389,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz ParafunctionalActivity Retrieve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Parafunctional activity' transaction within Dental Care."
@@ -453,7 +453,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz ParafunctionalActivity Serve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Parafunctional activity' transaction within Dental Care."
@@ -517,7 +517,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz PeriodicPeriodontalScreeningScore Retrieve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Periodic Periodontal Screening score' transaction within Dental Care."
@@ -581,7 +581,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz PeriodicPeriodontalScreeningScore Serve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction within Dental Care."
@@ -645,7 +645,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz Procedure Retrieve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Procedure' transaction within Dental Care."
@@ -716,7 +716,7 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "mz Procedure Serve"
-* status = #draft
+* status = #active
 * date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Procedure' transaction within Dental Care."
