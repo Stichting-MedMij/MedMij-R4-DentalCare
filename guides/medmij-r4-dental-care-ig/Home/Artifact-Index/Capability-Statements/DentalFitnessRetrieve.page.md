@@ -1,6 +1,6 @@
 ---
 topic: DentalFitnessRetrieve
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-DentalFitness-Retrieve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-DentalFitness-Retrieve
 ---
 
 # Dental Fitness (Retrieve)

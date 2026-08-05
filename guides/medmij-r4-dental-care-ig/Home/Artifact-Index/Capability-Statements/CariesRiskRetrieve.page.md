@@ -1,6 +1,6 @@
 ---
 topic: CariesRiskRetrieve
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-CariesRisk-Retrieve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-CariesRisk-Retrieve
 ---
 
 # Caries Risk (Retrieve)

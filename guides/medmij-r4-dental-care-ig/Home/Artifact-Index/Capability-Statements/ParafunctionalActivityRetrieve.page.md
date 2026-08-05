@@ -1,6 +1,6 @@
 ---
 topic: ParafunctionalActivityRetrieve
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-ParafunctionalActivity-Retrieve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-ParafunctionalActivity-Retrieve
 ---
 
 # Parafunctional Activity (Retrieve)

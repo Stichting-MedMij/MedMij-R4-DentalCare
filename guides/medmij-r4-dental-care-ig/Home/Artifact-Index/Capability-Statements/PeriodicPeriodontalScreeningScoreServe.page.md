@@ -1,6 +1,6 @@
 ---
 topic: PeriodicPeriodontalScreeningScoreServe
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-PeriodicPeriodontalScreeningScore-Serve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-PeriodicPeriodontalScreeningScore-Serve
 ---
 
 # Periodic Periodontal Screening Score (Serve)

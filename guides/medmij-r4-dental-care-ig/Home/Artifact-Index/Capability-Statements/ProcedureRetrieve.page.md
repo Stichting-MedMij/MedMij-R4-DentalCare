@@ -1,6 +1,6 @@
 ---
 topic: ProcedureRetrieve
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-Procedure-Retrieve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-Procedure-Retrieve
 ---
 
 # Procedure (Retrieve)

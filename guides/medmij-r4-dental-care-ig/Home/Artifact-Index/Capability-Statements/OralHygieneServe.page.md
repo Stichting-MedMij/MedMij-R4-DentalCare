@@ -1,6 +1,6 @@
 ---
 topic: OralHygieneServe
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-OralHygiene-Serve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-OralHygiene-Serve
 ---
 
 # Oral Hygiene (Serve)

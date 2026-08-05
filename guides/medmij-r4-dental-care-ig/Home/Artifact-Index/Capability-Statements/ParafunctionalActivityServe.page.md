@@ -1,6 +1,6 @@
 ---
 topic: ParafunctionalActivityServe
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-ParafunctionalActivity-Serve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-ParafunctionalActivity-Serve
 ---
 
 # Parafunctional Activity (Serve)

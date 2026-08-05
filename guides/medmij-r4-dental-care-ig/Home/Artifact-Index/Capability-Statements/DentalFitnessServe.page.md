@@ -1,6 +1,6 @@
 ---
 topic: DentalFitnessServe
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-DentalFitness-Serve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-DentalFitness-Serve
 ---
 
 # Dental Fitness (Serve)

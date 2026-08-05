@@ -1,6 +1,6 @@
 ---
 topic: CariesRiskServe
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-CariesRisk-Serve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-CariesRisk-Serve
 ---
 
 # Caries Risk (Serve)

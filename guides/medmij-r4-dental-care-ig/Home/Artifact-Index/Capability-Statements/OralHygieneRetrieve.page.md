@@ -1,6 +1,6 @@
 ---
 topic: OralHygieneRetrieve
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-OralHygiene-Retrieve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-OralHygiene-Retrieve
 ---
 
 # Oral Hygiene (Retrieve)

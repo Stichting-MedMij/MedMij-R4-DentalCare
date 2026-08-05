@@ -1,6 +1,6 @@
 ---
 topic: ProcedureServe
-canonical: http://medmij.nl/fhir/CapabilityStatement/medmij-core-Procedure-Serve
+canonical: http://medmij.nl/fhir/CapabilityStatement/mz-Procedure-Serve
 ---
 
 # Procedure (Serve)
