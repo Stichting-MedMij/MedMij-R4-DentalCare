@@ -64,7 +64,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
-* code = $SCT#364126007 "oral hygiene status"
+* code = $SCT#364126007 "status van mondhygiëne"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
@@ -96,7 +96,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen paradontale vervolgbehandeling<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen parodontale vervolgbehandeling<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -106,7 +106,7 @@ Usage: #example
   * type = "PractitionerRole"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
 * note
-  * text = "Geen paradontale vervolgbehandeling"
+  * text = "Geen parodontale vervolgbehandeling"
 
 Instance: DentalCare-TreatmentObjective-1-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective

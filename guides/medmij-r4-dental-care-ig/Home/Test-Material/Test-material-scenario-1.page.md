@@ -317,7 +317,7 @@
 | PeriodicPeriodontalScreeningScoreDateTime | 29-04-2024 06:43 |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | A.B.D.O. de Koning, Tandarts |
-| Comment | Geen paradontale vervolgbehandeling |
+| Comment | Geen parodontale vervolgbehandeling |
 
 ## Procedure data
 

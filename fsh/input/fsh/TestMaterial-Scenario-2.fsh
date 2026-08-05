@@ -65,7 +65,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * status = #final
-* code = $SCT#364126007 "oral hygiene status"
+* code = $SCT#364126007 "status van mondhygiëne"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
   * type = "Patient"
 * effectiveDateTime = "2022-02-11T10:43:00+01:00"
