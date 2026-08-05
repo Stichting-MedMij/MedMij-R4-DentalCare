@@ -1,5 +1,12 @@
 # {{page-title}}
 
+## 1.0.0-rc.2
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| FHIR artifacts              | The CapabilityStatements have been added to the Artifact index. | [DOSINZAGE1-1086](https://medmij.atlassian.net/browse/DOSINZAGE1-1086) |
+| Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve Dental Care - Caries risk, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve Dental Care - Dental fitness, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve Dental Care - Oral hygiene, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve Dental Care - Parafunctional activity, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve Dental Care - Periodic Periodontal Screening score, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve Dental Care - Procedure, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> | [DOSINZAGE1-1086](https://medmij.atlassian.net/browse/DOSINZAGE1-1086) |
+
 ## 1.0.0-rc.1
 
 | Component                   | Description  | Ticket    |
