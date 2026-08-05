@@ -32,7 +32,7 @@ The Logical Model is included below.
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|364126007` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#CareType)) |
-| **CapabilityStatement(s)** | [Dental Care OralHygiene Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-OralHygiene-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) <br/> [Dental Care OralHygiene Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-OralHygiene-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Oral Hygiene (Retrieve), anchor: OralHygieneRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Oral Hygiene (Serve), anchor: OralHygieneServe}} |
 
 The FHIR profile is included below.
 
