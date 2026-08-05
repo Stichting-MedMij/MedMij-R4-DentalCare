@@ -22,17 +22,7 @@ topic: PeriodicPeriodontalScreeningScore
 
 The Logical Model is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/mz-lm-PeriodicPeriodontalScreeningScore, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/mz-lm-PeriodicPeriodontalScreeningScore}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/mz-lm-PeriodicPeriodontalScreeningScore}}
-    </tab>
-</tabs>
+{{page:resource-lm-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/mz-lm-PeriodicPeriodontalScreeningScore}}
 
 ## Technical specification
 | | |
@@ -46,14 +36,4 @@ The Logical Model is included below.
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore}}
-    </tab>
-</tabs>
+{{page:resource-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore}}
