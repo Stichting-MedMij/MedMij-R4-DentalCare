@@ -321,7 +321,7 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: Berend van de Stok</div>"
 * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation]
   * extension[bankName].valueString = "ABNA"
   * extension[bankCode].valueString = "ABNA00NL"

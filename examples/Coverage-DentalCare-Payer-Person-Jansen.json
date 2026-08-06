@@ -43,7 +43,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Betaler: Anita Jansen</div>"
   },
   "status": "active",
   "beneficiary": {
