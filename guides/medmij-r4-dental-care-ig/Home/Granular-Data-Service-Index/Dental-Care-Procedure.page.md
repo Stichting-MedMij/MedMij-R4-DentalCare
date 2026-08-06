@@ -22,17 +22,7 @@ topic: Procedure
 
 The Logical Model is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/mz-lm-Procedure, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/mz-lm-Procedure}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/mz-lm-Procedure}}
-    </tab>
-</tabs>
+{{page:resource-lm-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/mz-lm-Procedure}}
 
 ## Technical specification
 | | |
@@ -42,18 +32,8 @@ The Logical Model is included below.
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Procedure?category=http://snomed.info/sct|225362009` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.code` <li> `.subject` <li> `.performedPeriod` <li> `.performedDateTime` <li> `.performer.actor` <li> `.location`<li> `.reasonReference` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#CareType)) |
-| **CapabilityStatement(s)** | [Dental Care Procedure Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-Procedure-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) <br/> [Dental Care Procedure Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-Procedure-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Procedure (Retrieve), anchor: ProcedureRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Procedure (Serve), anchor: ProcedureServe}} |
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/mz-Procedure, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/mz-Procedure}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/mz-Procedure}}
-    </tab>
-</tabs>
+{{page:resource-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/mz-Procedure}}

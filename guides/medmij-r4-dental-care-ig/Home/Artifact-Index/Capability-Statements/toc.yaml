@@ -1,0 +1,26 @@
+- name: Index
+  filename: Index.page.md
+- name: Caries Risk (Retrieve)
+  filename: CariesRiskRetrieve.page.md
+- name: Caries Risk (Serve)
+  filename: CariesRiskServe.page.md
+- name: Dental Fitness (Retrieve)
+  filename: DentalFitnessRetrieve.page.md
+- name: Dental Fitness (Serve)
+  filename: DentalFitnessServe.page.md
+- name: Oral Hygiene (Retrieve)
+  filename: OralHygieneRetrieve.page.md
+- name: Oral Hygiene (Serve)
+  filename: OralHygieneServe.page.md
+- name: Parafunctional Activity (Retrieve)
+  filename: ParafunctionalActivityRetrieve.page.md
+- name: Parafunctional Activity (Serve)
+  filename: ParafunctionalActivityServe.page.md
+- name: Periodic Periodontal Screening Score (Retrieve)
+  filename: PeriodicPeriodontalScreeningScoreRetrieve.page.md
+- name: Periodic Periodontal Screening Score (Serve)
+  filename: PeriodicPeriodontalScreeningScoreServe.page.md
+- name: Procedure (Retrieve)
+  filename: ProcedureRetrieve.page.md
+- name: Procedure (Serve)
+  filename: ProcedureServe.page.md
