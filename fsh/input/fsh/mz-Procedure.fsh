@@ -94,6 +94,7 @@ Source: MzProcedure
 Id: mz-dataset-100-rc1-20260603
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * -> "mz-dataelement-26" "Procedure"
+* extension[procedureMethod].value[x] -> "mz-dataelement-30" "ProcedureMethod"
 * status -> "mz-dataelement-27" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
 * status -> "mz-dataelement-28" "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
 * code -> "mz-dataelement-29" "ProcedureType"
@@ -104,3 +105,5 @@ Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * location -> "mz-dataelement-46" "Location"
 * reasonReference -> "mz-dataelement-34" "Indication"
 * bodySite -> "mz-dataelement-31" "ProcedureAnatomicalLocation"
+* bodySite -> "mz-dataelement-32" "Location"
+* bodySite.extension[laterality].value[x] -> "mz-dataelement-33" "Laterality"

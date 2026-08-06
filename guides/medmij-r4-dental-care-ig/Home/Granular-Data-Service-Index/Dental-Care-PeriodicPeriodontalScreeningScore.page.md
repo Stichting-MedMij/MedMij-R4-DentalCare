@@ -22,17 +22,7 @@ topic: PeriodicPeriodontalScreeningScore
 
 The Logical Model is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/mz-lm-PeriodicPeriodontalScreeningScore, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/mz-lm-PeriodicPeriodontalScreeningScore}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/mz-lm-PeriodicPeriodontalScreeningScore}}
-    </tab>
-</tabs>
+{{page:resource-lm-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/mz-lm-PeriodicPeriodontalScreeningScore}}
 
 ## Technical specification
 | | |
@@ -42,18 +32,8 @@ The Logical Model is included below.
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|540501000146103` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#CareType)) |
-| **CapabilityStatement(s)** | [Dental Care PeriodicPeriodontalScreeningScore Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-PeriodicPeriodontalScreeningScore-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) <br/> [Dental Care PeriodicPeriodontalScreeningScore Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-PeriodicPeriodontalScreeningScore-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Periodic Periodontal Screening Score (Retrieve), anchor: PeriodicPeriodontalScreeningScoreRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Periodic Periodontal Screening Score (Serve), anchor: PeriodicPeriodontalScreeningScoreServe}} |
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore}}
-    </tab>
-</tabs>
+{{page:resource-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore}}
