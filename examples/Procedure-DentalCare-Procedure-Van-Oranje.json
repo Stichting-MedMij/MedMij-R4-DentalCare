@@ -27,6 +27,45 @@
       }
     ]
   },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "257867005",
+            "system": "http://snomed.info/sct",
+            "display": "inbrengen"
+          }
+        ]
+      }
+    }
+  ],
+  "bodySite": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "24028007",
+                "system": "http://snomed.info/sct",
+                "display": "rechts"
+              }
+            ]
+          }
+        }
+      ],
+      "coding": [
+        {
+          "code": "38199008",
+          "system": "http://snomed.info/sct",
+          "display": "tandstructuur"
+        }
+      ]
+    }
+  ],
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
@@ -46,7 +85,10 @@
     "display": "Erik van Oranje",
     "type": "Patient"
   },
-  "performedDateTime": "2024-04-29",
+  "performedPeriod": {
+    "start": "2024-04-29",
+    "end": "2024-04-29"
+  },
   "performer": [
     {
       "actor": {

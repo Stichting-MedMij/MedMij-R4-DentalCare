@@ -40,5 +40,10 @@
       "type": "PractitionerRole"
     }
   ],
-  "valueString": "Erosie door het drinken van vruchtensap"
+  "valueString": "Erosie door het drinken van vruchtensap",
+  "note": [
+    {
+      "text": "Advies gegeven om de inname te beperken en niet direct na consumptie te poetsen"
+    }
+  ]
 }
