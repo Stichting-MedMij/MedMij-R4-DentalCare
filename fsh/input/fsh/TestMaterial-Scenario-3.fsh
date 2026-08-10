@@ -54,6 +54,8 @@ Usage: #example
 * valueCodeableConcept
   * coding = $SCT#258393007 "klasse 2"
   * text = "kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden"
+* note
+  * text = "Beginnende gebitsproblemen vastgesteld"
 
 Instance: DentalCare-OralHygiene-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene

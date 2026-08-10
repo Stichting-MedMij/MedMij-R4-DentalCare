@@ -35,6 +35,8 @@ Usage: #example
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
   * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#62482003 "laag"
+* note
+  * text = "Advies: frequentie van suikerhoudende tussendoortjes beperken."
 
 Instance: DentalCare-DentalFitness-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness
@@ -148,17 +150,46 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
+* extension[http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod]
+  * valueCodeableConcept = $SCT#257867005 "inbrengen"
 * status = #completed
 * category = $SCT#225362009 "tandheelkundige zorg"
 * code = $ProcedureTypeVektisDentalCareCodeSystemOID#R67 "Plaatsen opbouw ten behoeve van implantaatkroon"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
-* performedDateTime = "2024-04-29"
+* performedPeriod
+  * start = "2024-04-29"
+  * end = "2024-04-29"
 * performer
   * actor = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
     * type = "PractitionerRole"
 * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
   * type = "Location"
+* bodySite = $SCT#38199008 "tandstructuur"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality]
+    * valueCodeableConcept = $SCT#24028007 "rechts"
+
+Instance: DentalCare-Problem-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem
+Usage: #example
+* meta
+  * tag[0] = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2024-04-29<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
+* clinicalStatus = $ConditionClinical#active "Active"
+* verificationStatus = $ConditionVerification#confirmed "Confirmed"
+* category = $SCT#282291009 "Interpretatie van diagnose"
+* code = $SCT#80967001 "gaatje in je tand of kies"
+* bodySite = $SCT#38199008 "tandstructuur"
+* subject = Reference(Patient/DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
+* onsetDateTime = "2024-04-29"
+* recordedDate = "2024-04-29"
+* asserter = Reference(PractitionerRole/DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+  * type = "PractitionerRole"
+* note
+  * text = "Actieve cariës vastgesteld. Restauratieve behandeling en preventief advies besproken."
 
 Instance: DentalCare-Patient-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient

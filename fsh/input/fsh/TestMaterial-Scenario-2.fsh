@@ -72,6 +72,8 @@ Usage: #example
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
   * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#1336219002 "zeer slecht"
+* note
+  * text = "Veel tandsteen aanwezig"
 
 Instance: DentalCare-ParafunctionalActivity-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
@@ -89,6 +91,8 @@ Usage: #example
 * performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
   * type = "PractitionerRole"
 * valueString = "Erosie door het drinken van vruchtensap"
+* note
+  * text = "Advies gegeven om de inname te beperken en niet direct na consumptie te poetsen"
 
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
