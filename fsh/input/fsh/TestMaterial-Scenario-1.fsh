@@ -178,7 +178,6 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2024-04-29<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
 * clinicalStatus = $ConditionClinical#active "Active"
-* verificationStatus = $ConditionVerification#confirmed "Confirmed"
 * category = $SCT#282291009 "Interpretatie van diagnose"
 * code = $SCT#80967001 "gaatje in je tand of kies"
 * bodySite = $SCT#38199008 "tandstructuur"

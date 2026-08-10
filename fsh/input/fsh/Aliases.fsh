@@ -26,4 +26,3 @@ Alias: $VektisCOD472 = urn:oid:2.16.840.1.113883.2.4.3.11.22.472
 Alias: $Verzekeringssoort = urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1
 Alias: $Verzekeringstype = http://terminology.hl7.org/CodeSystem/coverage-selfpay
 Alias: $ConditionClinical = http://terminology.hl7.org/CodeSystem/condition-clinical
-Alias: $ConditionVerification = http://terminology.hl7.org/CodeSystem/condition-ver-status
