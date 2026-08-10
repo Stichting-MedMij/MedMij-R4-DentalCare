@@ -165,6 +165,7 @@ Usage: #example
     * type = "PractitionerRole"
 * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
   * type = "Location"
+* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
 * bodySite = $SCT#38199008 "tandstructuur"
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality]
     * valueCodeableConcept = $SCT#24028007 "rechts"

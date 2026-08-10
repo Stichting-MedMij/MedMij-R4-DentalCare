@@ -102,5 +102,11 @@
     "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
     "display": "Vliegbasis Gilze-Rijen",
     "type": "Location"
-  }
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/DentalCare-Problem-Van-Oranje",
+      "display": "gaatje in je tand of kies"
+    }
+  ]
 }
