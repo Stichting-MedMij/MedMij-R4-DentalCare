@@ -179,7 +179,9 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2024-04-29<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
 * clinicalStatus = $ConditionClinical#active "Active"
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
+* verificationStatu
+  * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
+  * coding[+] = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 * category = $SCT#282291009 "Interpretatie van diagnose"
 * code
   * coding[0] = $SCT#80967001 "gaatje in je tand of kies"
