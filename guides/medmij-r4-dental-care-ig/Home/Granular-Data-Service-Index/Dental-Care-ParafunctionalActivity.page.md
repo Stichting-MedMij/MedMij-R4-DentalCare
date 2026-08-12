@@ -27,7 +27,7 @@ The Logical Model is included below.
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
+| **FHIR profile(s)** | {{pagelink: FHIRProfilesIndex, text: <text>http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity</text>, anchor: MzParafunctionalActivity}} |
 | **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.1 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|110353005` |

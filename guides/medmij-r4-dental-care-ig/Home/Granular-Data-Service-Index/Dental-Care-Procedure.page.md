@@ -27,7 +27,7 @@ The Logical Model is included below.
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-Procedure](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-Procedure&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
+| **FHIR profile(s)** | {{pagelink: FHIRProfilesIndex, text: <text>http://medmij.nl/fhir/StructureDefinition/mz-Procedure</text>, anchor: MzProcedure}} |
 | **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.1 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Procedure?category=http://snomed.info/sct|225362009` |
