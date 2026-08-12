@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Procedure' transaction (system role: MZ-PRB-rc.1).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Procedure' transaction (system role: MZ-PRB-rc.2).",
       "resource": [
         {
           "type": "Observation",
