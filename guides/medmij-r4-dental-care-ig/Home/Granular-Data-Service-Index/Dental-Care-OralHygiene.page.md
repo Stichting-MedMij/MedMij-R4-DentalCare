@@ -18,7 +18,7 @@ topic: OralHygiene
 | | |
 | --- | --- |
 | **CIM** | OralHygiene |
-| **Functional version** | 1.0.0-rc.1 |
+| **Functional version** | 1.0.0-rc.2 |
 
 The Logical Model is included below.
 
@@ -28,7 +28,7 @@ The Logical Model is included below.
 | | |
 | --- | --- |
 | **FHIR profile(s)** | {{pagelink: FHIRProfilesIndex, text: <text>http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene</text>, anchor: MzOralHygiene}} |
-| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.1 or compatible |
+| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.2 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|364126007` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#CareType)) |

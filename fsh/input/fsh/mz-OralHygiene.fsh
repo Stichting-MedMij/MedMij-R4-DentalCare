@@ -44,8 +44,8 @@ Description: "Oral hygiene."
 
 Mapping: MzOralHygieneMedMij-100-rc1
 Source: MzOralHygiene
-Id: mz-dataset-100-rc1-20260603
-Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
+Id: mz-dataset-100-rc2-2026xxyy
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-11" "OralHygiene"
 * effectiveDateTime -> "mz-dataelement-12" "OralHygieneDateTime"
 * performer -> "mz-dataelement-14" "Performer"
