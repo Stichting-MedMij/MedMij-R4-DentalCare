@@ -150,7 +150,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
-* extension[http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod]
+* extension[ProcedureMethod]
   * valueCodeableConcept = $SCT#257867005 "inbrengen"
 * status = #completed
 * category = $SCT#225362009 "tandheelkundige zorg"
@@ -158,42 +158,42 @@ Usage: #example
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
 * performedPeriod
-  * start = "2024-04-29"
-  * end = "2024-04-29"
+  * start = "2024-04-29T09:00:00+01:00"
+  * end = "2024-04-29T10:00:00+01:00"
 * performer
   * actor = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
     * type = "PractitionerRole"
 * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
   * type = "Location"
 * reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
-* bodySite = $SCT#38199008 "tandstructuur"
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality]
+* bodySite = $SCT#38199008 "tand en/of kies"
+  * extension[Laterality]
     * valueCodeableConcept = $SCT#24028007 "rechts"
 
 Instance: DentalCare-Problem-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem
 Usage: #example
 * meta
-  * tag[0] = $VektisAGB#1200 "Tandartsen"
+  * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2024-04-29<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
-* clinicalStatus = $ConditionClinical#active "Active"
-* verificationStatus
-  * coding[+] = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
+* clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
+* verificationStatus =
+  * coding = $ConditionVerificationStatus#confirmed "Confirmed"
   * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
-* category = $SCT#282291009 "Interpretatie van diagnose"
+* category[ProblemType] = $SCT#282291009 "interpretatie van diagnose"
 * code
-  * coding[0] = $SCT#80967001 "gaatje in je tand of kies"
+  * coding = $SCT#80967001 "gaatje in je tand of kies"
   * text = "Cariës rechterbovenkies"
-* bodySite = $SCT#38199008 "tandstructuur"
+* bodySite = $SCT#38199008 "tand en/of kies"
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality]
     * valueCodeableConcept = $SCT#24028007 "rechts"
-* subject = Reference(Patient/DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
-* onsetDateTime = "2024-04-29"
-* recordedDate = "2024-04-29"
-* asserter = Reference(PractitionerRole/DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+* onsetDateTime = "2024-04-26T09:00:00+01:00"
+* recordedDate = "2024-04-26T10:00:00+01:00"
+* asserter = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
   * type = "PractitionerRole"
 * note
   * text = "Actieve cariës vastgesteld. Restauratieve behandeling en preventief advies besproken."
