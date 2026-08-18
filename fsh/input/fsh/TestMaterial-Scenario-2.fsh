@@ -351,6 +351,12 @@ Usage: #example
 * period
   * start = "2023-07-22T09:00:00+01:00"
   * end = "2023-07-22T09:30:00+01:00"
+* reasonCode[deviatingResult]
+  * extension[commentContactReason].valueString = "Second opinion vanwege aanhoudende klachten"
+  * text = "Afwijkende uitslag parodontale screening"
+* reasonReference = Reference(DentalCare-Procedure-Jansen) "Maken en beoordelen kleine röntgenfoto"
+* hospitalization
+  * DischargeDisposition = $SCT#264362003 "thuis"  
 * location
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
     * type = "Location"

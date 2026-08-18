@@ -479,7 +479,10 @@ Usage: #example
   * start = "2025-05-20T10:00:00+01:00"
   * end = "2025-05-20T11:00:00+01:00"
 * reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Extra controle vanwege bloedend tandvlees"
+  * extension[commentContactReason].valueString = "Extra controle vanwege bloedend tandvlees"
+* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+* hospitalization
+  * admitSource = $SCT#264362003 "thuis"  
 * location
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
     * type = "Location"
