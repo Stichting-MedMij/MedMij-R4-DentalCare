@@ -127,6 +127,42 @@ Usage: #example
   * text = "Vullen gaatjes rechterkies"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
   * type = "Patient"
+* target
+  * measure = $SCT#80967001 "gaatje in je tand of kies"
+  * detailCodeableConcept = $SCT#17621005 "normaal"
+  * dueDate = "2022-04-11"
+* addresses = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
+  * type = "Condition"
+* note
+  * text = "Caviteiten in de rechterkies restaureren met composiet."
+
+Instance: DentalCare-Problem-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës rechterkies<br/>Patiënt: Anita Jansen<br/>Begindatum: 2022-02-11<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: D. de Ruiter, Tandarts</div>"
+* clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
+* verificationStatus
+  * coding = $ConditionVerificationStatus#confirmed "Confirmed"
+  * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
+* category[problemType] = $SCT#282291009 "interpretatie van diagnose"
+* code
+  * coding = $SCT#80967001 "gaatje in je tand of kies"
+  * text = "Cariës rechterkies"
+* bodySite = $SCT#38199008 "tand en/of kies"
+  * extension[laterality]
+    * valueCodeableConcept = $SCT#24028007 "rechts"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
+* onsetDateTime = "2022-02-11"
+* recordedDate = "2022-02-11"
+* asserter = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+  * type = "PractitionerRole"
+* note
+  * text = "Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland."
 
 Instance: DentalCare-TreatmentObjective-2-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
@@ -170,26 +206,29 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Anita Jansen<br/>Geboortedatum: 2010-03-15<br/>Geslacht: Vrouw<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam, Nederland<br/>Telefoon: +31612345678<br/>E-mail: anitajansen@icloud.com</div>"
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Anita Jansen-van Dijk<br/>Geboortedatum: 2010-03-15<br/>Geslacht: Vrouw<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam, Nederland<br/>Telefoon: +31612345678<br/>E-mail: anitajansen@icloud.com</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
   * value.extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason].valueCode = #masked // gemaskeerd BSN
 * name[nameInformation]
   * use = #official
-  * text = "Anita Jansen"
-  * family = "Jansen"
+  * text = "Anita Jansen-van Dijk"
+  * family = "Jansen-van Dijk"
     * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Jansen"
+    * extension[partnerPrefix].valueString = "van"
+    * extension[partnerLastName].valueString = "Dijk"
   * given = "Anita"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
 * name[nameInformation-GivenName]
   * use = #usual
   * given = "Anita"
-* telecom[0]
+* telecom[telephoneNumbers]
   * system = #phone
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile contact"
   * value = "+31612345678"
   * use = #home
-* telecom[1]
+  * extension[comment].valueString = "Bereikbaar na 16.00 uur"
+* telecom[emailAddresses]
   * system = #email
   * value = "anitajansen@icloud.com"
   * use = #home
@@ -197,6 +236,7 @@ Usage: #example
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender#F "Female"
 * birthDate = "2010-03-15"
 * deceasedBoolean = false
+* multipleBirthBoolean = false
 * address
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "primary home"
   * use = #home
@@ -204,7 +244,10 @@ Usage: #example
   * line = "Achillesstraat 12"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Achillesstraat"
     * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "12"
+    * extension[houseNumberIndication].valueString = "tegenover"
+    * extension[additionalInformation].valueString = "2 hoog achter"
   * city = "Amsterdam"
+  * district = "Amsterdam"
   * postalCode = "1234 AA"
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
@@ -319,6 +362,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Menzis Zorgverzekeraar<br/>Adres: Lawickse Allee 130, 6709 DZ Wageningen</div>"
+* identifier
+  * system = "http://fhir.nl/fhir/NamingSystem/uzovi"
+  * value = "3332"
 * name = "Menzis Zorgverzekeraar N.V."
 * address
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"

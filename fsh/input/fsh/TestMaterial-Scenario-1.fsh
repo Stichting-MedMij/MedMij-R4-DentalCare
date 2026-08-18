@@ -221,6 +221,8 @@ Usage: #example
 * name[nameInformation-GivenName]
   * use = #usual
   * given = "Erik"
+* name [nameUsage]
+  * valueCode = $Naamgebruik#NL1 "Eigen geslachtsnaam"
 * telecom[0]
   * system = #phone
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile contact"
@@ -420,7 +422,14 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Groningen<br/>Adres: Winschoterdiep 70, 9723 AB Groningen</div>"
+* identifier
+  * system = "http://fhir.nl/fhir/NamingSystem/uzovi"
+  * value = "5501"
 * name = "Zorgkantoor Groningen"
+* telecom
+  * system = #phone
+  * value = "0501234567"
+  * use = #work
 * address
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
   * use = #work
