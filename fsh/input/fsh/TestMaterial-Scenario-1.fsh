@@ -150,7 +150,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
-* extension[ProcedureMethod]
+* extension[procedureMethod]
   * valueCodeableConcept = $SCT#257867005 "inbrengen"
 * status = #completed
 * category = $SCT#225362009 "tandheelkundige zorg"
@@ -167,7 +167,7 @@ Usage: #example
   * type = "Location"
 * reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
 * bodySite = $SCT#38199008 "tand en/of kies"
-  * extension[Laterality]
+  * extension[laterality]
     * valueCodeableConcept = $SCT#24028007 "rechts"
 
 Instance: DentalCare-Problem-Van-Oranje
@@ -179,15 +179,15 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2024-04-29<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
 * clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
-* verificationStatus =
+* verificationStatus
   * coding = $ConditionVerificationStatus#confirmed "Confirmed"
   * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
-* category[ProblemType] = $SCT#282291009 "interpretatie van diagnose"
+* category[problemType] = $SCT#282291009 "interpretatie van diagnose"
 * code
   * coding = $SCT#80967001 "gaatje in je tand of kies"
   * text = "Cariës rechterbovenkies"
 * bodySite = $SCT#38199008 "tand en/of kies"
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality]
+  * extension[laterality]
     * valueCodeableConcept = $SCT#24028007 "rechts"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
@@ -479,7 +479,7 @@ Usage: #example
   * start = "2025-05-20T10:00:00+01:00"
   * end = "2025-05-20T11:00:00+01:00"
 * reasonCode
-  * extension[commentContactReason].valueString = "Extra controle vanwege bloedend tandvlees"
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Extra controle vanwege bloedend tandvlees"
 * reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
 * hospitalization
   * admitSource = $SCT#264362003 "thuis"  
