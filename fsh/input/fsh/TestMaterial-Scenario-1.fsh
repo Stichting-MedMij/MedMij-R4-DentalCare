@@ -212,6 +212,7 @@ Usage: #example
   * value.extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason].valueCode = #masked // gemaskeerd BSN
 * name[nameInformation]
   * use = #official
+  * extension[nameUsage].valueCode = http://terminology.hl7.org/CodeSystem/name-assembly-order#NL1 "Eigen geslachtsnaam"
   * text = "Erik van Oranje"
   * family = "van Oranje"
     * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-prefix].valueString = "van"
@@ -221,8 +222,6 @@ Usage: #example
 * name[nameInformation-GivenName]
   * use = #usual
   * given = "Erik"
-* name [nameUsage]
-  * valueCode = $Naamgebruik#NL1 "Eigen geslachtsnaam"
 * telecom[0]
   * system = #phone
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile contact"
