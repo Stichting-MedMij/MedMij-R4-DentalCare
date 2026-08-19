@@ -14,6 +14,7 @@ Alias: $MzLmParafunctionalActivityOID = urn:oid:2.16.528.1.1023.3.1.6
 Alias: $MzLmPeriodicPeriodontalScreeningScoreOID = urn:oid:2.16.528.1.1023.3.1.3
 Alias: $MzLmProcedureOID = urn:oid:2.16.528.1.1023.3.1.7
 Alias: $NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
+Alias: $Naamgebruik = urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.4
 Alias: $OralHygieneValueSetOID = urn:oid:2.16.528.1.1023.4.1.4
 Alias: $PeriodicPeriodontalScreeningScoreCodeSystemOID = urn:oid:2.16.528.1.1023.2.1.1
 Alias: $PeriodicPeriodontalScreeningScoreCodeSystemURL = http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore

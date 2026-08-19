@@ -48,6 +48,12 @@
   "name": [
     {
       "use": "official",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+          "valueCode": "NL1"
+        }
+      ],
       "given": [
         "Erik"
       ],

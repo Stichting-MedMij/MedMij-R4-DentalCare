@@ -34,5 +34,40 @@
     "reference": "Patient/DentalCare-Patient-Jansen",
     "display": "Anita Jansen",
     "type": "Patient"
-  }
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "code": "80967001",
+            "system": "http://snomed.info/sct",
+            "display": "gaatje in je tand of kies"
+          }
+        ]
+      },
+      "detailCodeableConcept": {
+        "coding": [
+          {
+            "code": "17621005",
+            "system": "http://snomed.info/sct",
+            "display": "normaal"
+          }
+        ]
+      },
+      "dueDate": "2022-04-11"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/DentalCare-Problem-Jansen",
+      "display": "Cariës rechterkies",
+      "type": "Condition"
+    }
+  ],
+  "note": [
+    {
+      "text": "Caviteiten in de rechterkies restaureren met composiet."
+    }
+  ]
 }

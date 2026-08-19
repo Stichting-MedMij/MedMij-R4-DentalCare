@@ -56,6 +56,23 @@
     "start": "2025-05-20T10:00:00+01:00",
     "end": "2025-05-20T11:00:00+01:00"
   },
+  "reasonReference": [
+    {
+      "reference": "Condition/DentalCare-Problem-Van-Oranje",
+      "display": "gaatje in je tand of kies"
+    }
+  ],
+  "hospitalization": {
+    "admitSource": {
+      "coding": [
+        {
+          "code": "264362003",
+          "system": "http://snomed.info/sct",
+          "display": "thuis"
+        }
+      ]
+    }
+  },
   "location": [
     {
       "location": {

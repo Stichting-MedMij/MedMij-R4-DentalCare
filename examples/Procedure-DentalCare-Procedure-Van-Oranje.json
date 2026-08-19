@@ -61,7 +61,7 @@
         {
           "code": "38199008",
           "system": "http://snomed.info/sct",
-          "display": "tandstructuur"
+          "display": "tand en/of kies"
         }
       ]
     }
@@ -86,8 +86,8 @@
     "type": "Patient"
   },
   "performedPeriod": {
-    "start": "2024-04-29",
-    "end": "2024-04-29"
+    "start": "2024-04-29T09:00:00+01:00",
+    "end": "2024-04-29T10:00:00+01:00"
   },
   "performer": [
     {

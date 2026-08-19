@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "DentalCare-Problem-Van-Oranje",
+  "id": "DentalCare-Problem-Jansen",
   "meta": {
     "tag": [
       {
@@ -9,7 +9,7 @@
         "display": "Tandartsen"
       }
     ],
-    "profile": [ 
+    "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem"
     ]
   },
@@ -40,7 +40,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Cariës<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2024-04-29<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Cariës rechterkies<br/>Patiënt: Anita Jansen<br/>Begindatum: 2022-02-11<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: D. de Ruiter, Tandarts</div>"
   },
   "clinicalStatus": {
     "coding": [
@@ -84,23 +84,23 @@
         "display": "gaatje in je tand of kies"
       }
     ],
-    "text": "Cariës rechterbovenkies"
+    "text": "Cariës rechterkies"
   },
   "subject": {
-    "reference": "Patient/DentalCare-Patient-Van-Oranje",
-    "display": "Erik van Oranje",
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen",
     "type": "Patient"
   },
-  "onsetDateTime": "2024-04-26T09:00:00+01:00",
-  "recordedDate": "2024-04-26T10:00:00+01:00",
+  "onsetDateTime": "2022-02-11",
+  "recordedDate": "2022-02-11",
   "asserter": {
-    "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
-    "display": "A.B.D.O. de Koning, Tandarts",
+    "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+    "display": "D. de Ruiter, Tandarts",
     "type": "PractitionerRole"
   },
   "note": [
     {
-      "text": "Actieve cariës vastgesteld. Restauratieve behandeling en preventief advies besproken."
+      "text": "Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland."
     }
   ]
 }
