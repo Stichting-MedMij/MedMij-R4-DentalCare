@@ -78,15 +78,14 @@
         ]
       },
       {
-        "id": "mz-lm-CariesRisk.EffectiveDateTime",
-        "path": "mz-lm-CariesRisk.EffectiveDateTime",
+        "id": "mz-lm-CariesRisk.Effective[x]:EffectiveDateTime",
+        "path": "mz-lm-CariesRisk.Effective[x]",
+        "sliceName": "EffectiveDateTime",
         "short": "Caries risk date/time",
         "definition": "The date and time at which the caries risk was determined.",
         "alias": [
           "CariësrisicoDatumTijd"
         ],
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "dateTime"

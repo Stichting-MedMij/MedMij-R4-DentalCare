@@ -16,7 +16,9 @@ Description: "Caries risk."
 * ^abstract = false
 * .
   * ^alias = "Cariësrisico"
-* EffectiveDateTime 0..1 dateTime "Caries risk date/time" "The date and time at which the caries risk was determined."
+* EffectiveDateTime
+  * ^short = "Caries risk date/time"
+  * ^definition = "The date and time at which the caries risk was determined."
   * ^alias = "CariësrisicoDatumTijd"
 * CariesRiskValue 1..1 CodeableConcept "Caries risk value" "The caries risk."
 * CariesRiskValue from CariesRisk_VS (extensible)
@@ -42,7 +44,9 @@ Description: "Dental fitness according to the NATO classification system."
 * ^abstract = false
 * .
   * ^alias = "DentalFitness"
-* EffectiveDateTime 0..1 dateTime "Dental fitness date/time" "The date and time at which the dental fitness was determined."
+* EffectiveDateTime
+  * ^short = "Dental fitness date/time"
+  * ^definition = "The date and time at which the dental fitness was determined."
   * ^alias = "DentalFitnessDatumTijd"
 * DentalFitnessValue 1..1 CodeableConcept "Dental fitness value" "The dental fitness."
 * DentalFitnessValue from DentalFitness_VS (required)
@@ -68,7 +72,9 @@ Description: "Oral hygiene."
 * ^abstract = false
 * .
   * ^alias = "Mondhygiëne"
-* EffectiveDateTime 0..1 dateTime "Oral hygiene date/time" "The date and time at which the oral hygiene was determined."
+* EffectiveDateTime
+  * ^short = "Oral hygiene date/time"
+  * ^definition = "The date and time at which the oral hygiene was determined."
   * ^alias = "MondhygiëneDatumTijd"
 * OralHygieneValue 1..1 CodeableConcept "Oral hygiene value" "The oral hygiene."
 * OralHygieneValue from OralHygiene_VS (extensible)
@@ -94,7 +100,9 @@ Description: "Parafunctional activity."
 * ^abstract = false
 * .
   * ^alias = "ParafunctioneleActiviteit"
-* EffectiveDateTime 0..1 dateTime "Parafunctional activity date/time" "The date and time at which the parafunctional activity was determined."
+* EffectiveDateTime
+  * ^short = "Parafunctional activity date/time"
+  * ^definition = "The date and time at which the parafunctional activity was determined."
   * ^alias = "ParafunctioneleActiviteitDatumTijd"
 * ParafunctionalActivityValue 1..1 string "Parafunctional activity value" "The parafunctional activity."
   * ^alias = "ParafunctioneleActiviteitWaarde"
@@ -119,7 +127,9 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^abstract = false
 * .
   * ^alias = "PeriodiekeParodontaleScreeningScore"
-* EffectiveDateTime 0..1 dateTime "Periodic Periodontal Screening score date/time" "The date and time at which the PPS was performed."
+* EffectiveDateTime
+  * ^short = "Periodic Periodontal Screening score date/time"
+  * ^definition = "The date and time at which the PPS was performed."
   * ^alias = "PeriodiekeParodontaleScreeningScoreDatumTijd"
 * PeriodicPeriodontalScreeningScoreValue 1..1 CodeableConcept "Periodic Periodontal Screening score value" "The score of the PPS."
 * PeriodicPeriodontalScreeningScoreValue from PeriodicPeriodontalScreeningScore_VS (required)
@@ -145,10 +155,14 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * ^abstract = false
 * .
   * ^alias = "Verrichting"
-* Effective[x]
-  * start 0..1 dateTime "Procedure start date" "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the start of the period of a series of related procedures."
+* EffectivePeriod
+  * start
+    * ^short = "Procedure start date"
+    * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the start of the period of a series of related procedures."
     * ^alias = "VerrichtingStartDatum"
-  * end 0..1 dateTime "Procedure end date" "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
+  * end
+    * ^short = "Procedure end date"
+    * ^definition = "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
     * ^alias = "VerrichtingEindDatum"
 * ProcedureType 1..1 CodeableConcept "Procedure type" "The name of the procedure based on the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis."
 * ProcedureType from ProcedureTypeVektisDentalCare_VS (extensible)

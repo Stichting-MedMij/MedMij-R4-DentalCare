@@ -73,15 +73,14 @@
         ]
       },
       {
-        "id": "mz-lm-ParafunctionalActivity.EffectiveDateTime",
-        "path": "mz-lm-ParafunctionalActivity.EffectiveDateTime",
+        "id": "mz-lm-ParafunctionalActivity.Effective[x]:EffectiveDateTime",
+        "path": "mz-lm-ParafunctionalActivity.Effective[x]",
+        "sliceName": "EffectiveDateTime",
         "short": "Parafunctional activity date/time",
         "definition": "The date and time at which the parafunctional activity was determined.",
         "alias": [
           "ParafunctioneleActiviteitDatumTijd"
         ],
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "dateTime"

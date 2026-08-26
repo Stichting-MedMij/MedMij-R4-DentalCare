@@ -83,42 +83,6 @@
         ]
       },
       {
-        "id": "mz-lm-Procedure.Effective[x]",
-        "path": "mz-lm-Procedure.Effective[x]"
-      },
-      {
-        "id": "mz-lm-Procedure.Effective[x].start",
-        "path": "mz-lm-Procedure.Effective[x].start",
-        "short": "Procedure start date",
-        "definition": "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the start of the period of a series of related procedures.",
-        "alias": [
-          "VerrichtingStartDatum"
-        ],
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
-      },
-      {
-        "id": "mz-lm-Procedure.Effective[x].end",
-        "path": "mz-lm-Procedure.Effective[x].end",
-        "short": "Procedure end date",
-        "definition": "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty.",
-        "alias": [
-          "VerrichtingEindDatum"
-        ],
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
-      },
-      {
         "id": "mz-lm-Procedure.Effective[x]:EffectivePeriod",
         "path": "mz-lm-Procedure.Effective[x]",
         "sliceName": "EffectivePeriod",
@@ -131,10 +95,10 @@
       {
         "id": "mz-lm-Procedure.Effective[x]:EffectivePeriod.start",
         "path": "mz-lm-Procedure.Effective[x].start",
-        "type": [
-          {
-            "code": "dateTime"
-          }
+        "short": "Procedure start date",
+        "definition": "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the start of the period of a series of related procedures.",
+        "alias": [
+          "VerrichtingStartDatum"
         ],
         "mapping": [
           {
@@ -147,10 +111,10 @@
       {
         "id": "mz-lm-Procedure.Effective[x]:EffectivePeriod.end",
         "path": "mz-lm-Procedure.Effective[x].end",
-        "type": [
-          {
-            "code": "dateTime"
-          }
+        "short": "Procedure end date",
+        "definition": "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty.",
+        "alias": [
+          "VerrichtingEindDatum"
         ],
         "mapping": [
           {

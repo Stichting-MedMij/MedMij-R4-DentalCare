@@ -78,15 +78,14 @@
         ]
       },
       {
-        "id": "mz-lm-OralHygiene.EffectiveDateTime",
-        "path": "mz-lm-OralHygiene.EffectiveDateTime",
+        "id": "mz-lm-OralHygiene.Effective[x]:EffectiveDateTime",
+        "path": "mz-lm-OralHygiene.Effective[x]",
+        "sliceName": "EffectiveDateTime",
         "short": "Oral hygiene date/time",
         "definition": "The date and time at which the oral hygiene was determined.",
         "alias": [
           "MondhygiëneDatumTijd"
         ],
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "dateTime"

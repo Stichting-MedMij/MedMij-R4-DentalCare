@@ -73,15 +73,14 @@
         ]
       },
       {
-        "id": "mz-lm-PeriodicPeriodontalScreeningScore.EffectiveDateTime",
-        "path": "mz-lm-PeriodicPeriodontalScreeningScore.EffectiveDateTime",
+        "id": "mz-lm-PeriodicPeriodontalScreeningScore.Effective[x]:EffectiveDateTime",
+        "path": "mz-lm-PeriodicPeriodontalScreeningScore.Effective[x]",
+        "sliceName": "EffectiveDateTime",
         "short": "Periodic Periodontal Screening score date/time",
         "definition": "The date and time at which the PPS was performed.",
         "alias": [
           "PeriodiekeParodontaleScreeningScoreDatumTijd"
         ],
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "dateTime"
