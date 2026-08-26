@@ -159,7 +159,7 @@ Usage: #example
   * measure = $SCT#288919008 "kan kauwen"
   * detailCodeableConcept = $SCT#162019007 "probleem met kauwen afwezig"
   * dueDate = "2024-12-31"
-* addresses = Reference(DentalCare-Problem-Van-De-Stok) "malocclusie van tanden en/of kiezen en/of kiezen"
+* addresses = Reference(DentalCare-Problem-Van-De-Stok) "malocclusie van tanden en/of kiezen"
   * type = "Condition"
 * note
   * text = "Na het trekken van de snijtand linksboven en het plaatsen van de beugel moet het kauwen weer klachtenvrij zijn."
@@ -171,7 +171,7 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Bedoeld<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandenboog<br/>Indicatie: malocclusie van tanden en/of kiezen<br/>Zorgverlener: B. Dijkstra, Tandarts<br/>Locatie: CWZ Nijmegen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Bedoeld<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandboog<br/>Indicatie: malocclusie van tanden en/of kiezen<br/>Zorgverlener: B. Dijkstra, Tandarts<br/>Locatie: CWZ Nijmegen</div>"
 * extension[healthProfessional].valueReference = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
   * type = "PractitionerRole"
 * extension[location].valueReference = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
@@ -188,7 +188,7 @@ Usage: #example
   * end = "2025-08-01"
 * device = Reference(DentalCare-MedicalDevice-Product-Van-De-Stok) "Vaste multibracket-beugel bovenboog"
   * type = "Device"
-* reasonReference[indication] = Reference(DentalCare-Problem-Van-De-Stok) "malocclusie van tanden en/of kiezen en/of kiezen"
+* reasonReference[indication] = Reference(DentalCare-Problem-Van-De-Stok) "malocclusie van tanden en/of kiezen"
   * type = "Condition"
 * bodySite = $SCT#39481002 "bovenste tandboog"
 * note
@@ -226,14 +226,14 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: malocclusie van tanden en/of kiezen en/of kiezen<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: malocclusie van tanden en/of kiezen<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Tandarts</div>"
 * clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
 * verificationStatus
   * coding = $ConditionVerificationStatus#confirmed "Confirmed"
   * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
 * category[problemType] = $SCT#282291009 "interpretatie van diagnose"
 * code
-  * coding = $SCT#47944004 "malocclusie van tanden en/of kiezen en/of kiezen"
+  * coding = $SCT#47944004 "malocclusie van tanden en/of kiezen"
   * text = "Malocclusie met scheefstand van de snijtand linksboven"
 * bodySite = $SCT#39481002 "bovenste tandboog"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"

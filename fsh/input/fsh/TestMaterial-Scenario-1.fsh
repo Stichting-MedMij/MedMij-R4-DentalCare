@@ -254,11 +254,41 @@ Usage: #example
     * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon"
   * name
     * use = #official
-    * text = "Leo Jansen"
-    * family = "Jansen"
+    * extension[nameUsage].valueCode = http://terminology.hl7.org/CodeSystem/name-assembly-order#NL4 "Eigen geslachtsnaam gevolgd door geslachtsnaam partner"
+    * text = "drs. Leo Jansen-van der Heide MSc"
+    * family = "Jansen-van der Heide"
       * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Jansen"
+      * extension[http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix].valueString = "van der"
+      * extension[http://hl7.org/fhir/StructureDefinition/humanname-partner-name].valueString = "Heide"
     * given = "Leo"
       * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
+    * prefix = "drs."
+    * suffix = "MSc"
+  * telecom[telephoneNumbers]
+    * system = #phone
+      * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile contact"
+    * value = "+31612345611"
+    * use = #home
+    * extension[comment].valueString = "Bereikbaar op werkdagen tussen 9.00 en 17.00 uur"
+  * telecom[emailAddresses]
+    * system = #email
+    * value = "leojansen@icloud.com"
+    * use = #home
+  * address
+    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "primary home"
+    * use = #home
+    * type = #both
+    * line = "Kerkstraat 12B"
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Kerkstraat"
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "12"
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix].valueString = "B"
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator].valueString = "naast"
+      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID].valueString = "boven de bakkerij"
+    * city = "Didam"
+    * district = "Montferland"
+    * postalCode = "6942 AB"
+    * country = "Nederland"
+      * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
 
 Instance: DentalCare-PractitionerRole-De-Koning
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
