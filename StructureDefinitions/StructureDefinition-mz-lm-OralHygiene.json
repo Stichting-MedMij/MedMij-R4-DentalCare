@@ -52,7 +52,7 @@
   "kind": "logical",
   "abstract": false,
   "type": "http://medmij.nl/fhir/StructureDefinition/mz-lm-OralHygiene",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "baseDefinition": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base",
   "derivation": "specialization",
   "differential": {
     "element": [
@@ -78,8 +78,8 @@
         ]
       },
       {
-        "id": "mz-lm-OralHygiene.OralHygieneDateTime",
-        "path": "mz-lm-OralHygiene.OralHygieneDateTime",
+        "id": "mz-lm-OralHygiene.EffectiveDateTime",
+        "path": "mz-lm-OralHygiene.EffectiveDateTime",
         "short": "Oral hygiene date/time",
         "definition": "The date and time at which the oral hygiene was determined.",
         "alias": [
@@ -90,18 +90,6 @@
         "type": [
           {
             "code": "dateTime"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
-            "map": "mz-dataelement-12",
-            "comment": "OralHygieneDateTime"
-          },
-          {
-            "identity": "SNOMED",
-            "map": "439771001",
-            "comment": "datum van gebeurtenis"
           }
         ]
       },

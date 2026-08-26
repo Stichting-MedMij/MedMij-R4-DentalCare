@@ -13,7 +13,22 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * .
   * ^short = "Procedure"
   * ^alias = "Verrichting"
+* meta
+  * tag
+    * ^slicing.discriminator.type = #value
+    * ^slicing.discriminator.path = "$this"
+    * ^slicing.rules = #open
+  * tag contains 
+      careType 0..*
+  * tag[careType] from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)
+    * ^short = "CareType"
+    * ^definition = "The category of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care. It enables patients and systems to interpret the origin and context of medical data."
+    * ^alias = "Zorgtype"
 * extension contains http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod named procedureMethod 0..*
+* identifier
+  * ^short = "IdentificationNumber"
+  * ^definition = "Globally unique number that identifies the instantiation of the CIM. The number is composed of an identification of the issuer organization and a unique number assigned by this organization."
+  * ^alias = "Identificatienummer"
 * status
   * ^definition = """
   This element is implictly mapped to the zib concepts ProcedureStartDate (NL-CM:14.1.2) and ProcedureEndDate (NL-CM:14.1.3). Unless the status is explicitly recorded, the following guidance applies:
@@ -32,22 +47,32 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^comment = "Since the _required_ binding of VerrichtingTypeCodelijsten in the nl-core profile does not contain the procedure types relevant for dental care, this profile is not derived from the nl-core profile."
   * ^alias = "VerrichtingType"
 * subject only Reference(Patient or Group or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
+  * ^short = "Patient"
+  * ^definition = "The patient as subject of the information."
+  * ^alias = "Patiënt"
 * performedPeriod
+  * ^short = "EffectivePeriod"
+  * ^alias[0] = "Geldigheid"
+  * ^alias[1] = "Periode"
   * start
-    * ^short = "ProcedureStartDate"
+    * ^short = "StartDateTime"
     * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted. The element offers the option to indicate the start of the period of a series of related procedures."
     * ^comment = "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed)."
-    * ^alias = "VerrichtingStartDatum"
+    * ^alias[0] = "StartDatumTijd"
+    * ^alias[1] = "VerrichtingStartDatum"
   * end
-    * ^short = "ProcedureEndDate"
+    * ^short = "EndDateTime"
     * ^definition = "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted. The element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
     * ^comment = "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed)."
-    * ^alias = "VerrichtingEindDatum"
+    * ^alias[0] = "EindDatumTijd"
+    * ^alias[1] = "VerrichtingEindDatum"
 * performedDateTime
-  * ^short = "ProcedureStartDate"
+  * ^short = "EffectiveDateTime"
   * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted. `Procedure.performedDateTime` is used for instantaneous or very short lasting procedures."
   * ^comment = "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed)."
-  * ^alias = "VerrichtingStartDatum"
+  * ^alias[0] = "Geldigheid"
+  * ^alias[1] = "DatumTijd"
+  * ^alias[2] = "VerrichtingStartDatum"
 * performer
   * actor only Reference(Practitioner or PractitionerRole or Organization or Patient or RelatedPerson or Device or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
     * ^short = "Performer"
@@ -89,18 +114,30 @@ Title: "zib Procedure-v5.2(2020EN)"
 * reasonReference -> "NL-CM:14.1.9" "Indication"
 * bodySite -> "NL-CM:14.1.13" "ProcedureAnatomicalLocation"
 
-Mapping: MzProcedureMedMij-100-rc1
+Mapping: MzProcedureMedMijCore-120
+Source: MzProcedure
+Id: medmij-core-dataset-120-2026xxyy
+Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+* meta
+  * tag[careType] -> "medmij-core-dataelement-123" "CareType"
+* identifier -> "medmij-core-dataelement-115" "IdentificationNumber"
+* status -> "medmij-core-dataelement-119" "EffectiveDateTime (implicit, main mapping is on Procedure.performedDateTime)"
+* status -> "medmij-core-dataelement-121" "StartDateTime (implicit, main mapping is on Procedure.performedPeriod.start)"
+* status -> "medmij-core-dataelement-122" "EndDateTime (implicit, main mapping is on Procedure.performedPeriod.end)"
+* subject -> "medmij-core-dataelement-116" "Patient"
+* performedPeriod -> "medmij-core-dataelement-120" "EffectivePeriod"
+  * start -> "medmij-core-dataelement-121" "StartDateTime"
+  * end -> "medmij-core-dataelement-122" "EndDateTime"
+* performedDateTime -> "medmij-core-dataelement-119" "EffectiveDateTime"
+* performer.actor -> "medmij-core-dataelement-117" "HealthcareProvider (implicit, actual mapping is on PractitionerRole.organization)"
+
+Mapping: MzProcedureMedMij-100-rc2
 Source: MzProcedure
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-26" "Procedure"
 * extension[procedureMethod].value[x] -> "mz-dataelement-30" "ProcedureMethod"
-* status -> "mz-dataelement-27" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
-* status -> "mz-dataelement-28" "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
 * code -> "mz-dataelement-29" "ProcedureType"
-* performedPeriod.start -> "mz-dataelement-27" "ProcedureStartDate"
-* performedPeriod.end -> "mz-dataelement-28" "ProcedureEndDate"
-* performedDateTime -> "mz-dataelement-27" "ProcedureStartDate"
 * performer.actor -> "mz-dataelement-47" "Performer"
 * location -> "mz-dataelement-46" "Location"
 * reasonReference -> "mz-dataelement-34" "Indication"

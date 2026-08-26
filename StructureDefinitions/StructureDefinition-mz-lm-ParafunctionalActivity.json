@@ -52,7 +52,7 @@
   "kind": "logical",
   "abstract": false,
   "type": "http://medmij.nl/fhir/StructureDefinition/mz-lm-ParafunctionalActivity",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "baseDefinition": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base",
   "derivation": "specialization",
   "differential": {
     "element": [
@@ -73,8 +73,8 @@
         ]
       },
       {
-        "id": "mz-lm-ParafunctionalActivity.ParafunctionalActivityDateTime",
-        "path": "mz-lm-ParafunctionalActivity.ParafunctionalActivityDateTime",
+        "id": "mz-lm-ParafunctionalActivity.EffectiveDateTime",
+        "path": "mz-lm-ParafunctionalActivity.EffectiveDateTime",
         "short": "Parafunctional activity date/time",
         "definition": "The date and time at which the parafunctional activity was determined.",
         "alias": [
@@ -85,18 +85,6 @@
         "type": [
           {
             "code": "dateTime"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
-            "map": "mz-dataelement-17",
-            "comment": "ParafunctionalActivityDateTime"
-          },
-          {
-            "identity": "SNOMED",
-            "map": "439771001",
-            "comment": "datum van gebeurtenis"
           }
         ]
       },

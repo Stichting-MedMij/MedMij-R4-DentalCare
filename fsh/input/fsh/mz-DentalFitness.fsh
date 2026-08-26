@@ -14,14 +14,34 @@ Description: "Dental fitness according to the NATO classification system."
   * ^short = "DentalFitness"
   * ^definition = "Dental fitness according to the NATO classification system."
   * ^alias = "DentalFitness"
+* meta
+  * tag
+    * ^slicing.discriminator.type = #value
+    * ^slicing.discriminator.path = "$this"
+    * ^slicing.rules = #open
+  * tag contains 
+      careType 0..*
+  * tag[careType] from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)
+    * ^short = "CareType"
+    * ^definition = "The category of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care. It enables patients and systems to interpret the origin and context of medical data."
+    * ^alias = "Zorgtype"
+* identifier
+  * ^short = "IdentificationNumber"
+  * ^definition = "Globally unique number that identifies the instantiation of the CIM. The number is composed of an identification of the issuer organization and a unique number assigned by this organization."
+  * ^alias = "Identificatienummer"
 * code
   * ^patternCodeableConcept = $SCT#440271000146100
 * subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
+  * ^short = "Patient"
+  * ^definition = "The patient as subject of the information."
+  * ^alias = "Patiënt"
 * effectiveDateTime
-  * ^short = "DentalFitnessDateTime"
+  * ^short = "EffectiveDateTime"
   * ^definition = "The date and time at which the dental fitness was determined."
-  * ^alias = "DentalFitnessDatumTijd"
+  * ^alias[0] = "Geldigheid"
+  * ^alias[1] = "DatumTijd"
+  * ^alias[2] = "DentalFitnessDatumTijd"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the dental fitness."
@@ -42,12 +62,22 @@ Description: "Dental fitness according to the NATO classification system."
     * ^definition = "Comment on the dental fitness, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MzDentalFitnessMedMij-100-rc1
+Mapping: MzDentalFitnessMedMijCore-120
+Source: MzDentalFitness
+Id: medmij-core-dataset-120-2026xxyy
+Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+* meta
+  * tag[careType] -> "medmij-core-dataelement-123" "CareType"
+* identifier -> "medmij-core-dataelement-115" "IdentificationNumber"
+* subject -> "medmij-core-dataelement-116" "Patient"
+* effectiveDateTime -> "medmij-core-dataelement-119" "EffectiveDateTime"
+* performer -> "medmij-core-dataelement-117" "HealthcareProvider (implicit, actual mapping is on PractitionerRole.organization)"
+
+Mapping: MzDentalFitnessMedMij-100-rc2
 Source: MzDentalFitness
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-6" "DentalFitness"
-* effectiveDateTime -> "mz-dataelement-7" "DentalFitnessDateTime"
 * performer -> "mz-dataelement-9" "Performer"
 * valueCodeableConcept -> "mz-dataelement-8" "DentalFitnessValue"
 * note.text -> "mz-dataelement-10" "Comment"
