@@ -18,42 +18,22 @@ topic: DentalFitness
 | | |
 | --- | --- |
 | **CIM** | DentalFitness (based on the [AMedP-4.4 standard](https://www.coemed.org/files/stanags/03_AMEDP/AMedP-4.4_EDB_V1_E.pdf) authored by NATO) |
-| **Functional version** | 1.0.0-rc.1 |
+| **Functional version** | 1.0.0-rc.2 |
 
 The Logical Model is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/mz-lm-DentalFitness, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/mz-lm-DentalFitness}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/mz-lm-DentalFitness}}
-    </tab>
-</tabs>
+{{page:resource-lm-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/mz-lm-DentalFitness}}
 
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
-| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.1 or compatible |
+| **FHIR profile(s)** | {{pagelink: FHIRProfilesIndex, text: <text>http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness</text>, anchor: MzDentalFitness}} |
+| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.2 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|440271000146100` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#CareType)) |
-| **CapabilityStatement(s)** | [Dental Care DentalFitness Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-DentalFitness-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) <br/> [Dental Care DentalFitness Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-DentalFitness-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Dental Fitness (Retrieve), anchor: DentalFitnessRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Dental Fitness (Serve), anchor: DentalFitnessServe}} |
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness}}
-    </tab>
-</tabs>
+{{page:resource-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness}}

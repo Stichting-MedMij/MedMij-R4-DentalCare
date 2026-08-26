@@ -18,42 +18,22 @@ topic: CariesRisk
 | | |
 | --- | --- |
 | **CIM** | CariesRisk |
-| **Functional version** | 1.0.0-rc.1 |
+| **Functional version** | 1.0.0-rc.2 |
 
 The Logical Model is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/mz-lm-CariesRisk, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/mz-lm-CariesRisk}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/mz-lm-CariesRisk}}
-    </tab>
-</tabs>
+{{page:resource-lm-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/mz-lm-CariesRisk}}
 
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
-| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.1 or compatible |
+| **FHIR profile(s)** | {{pagelink: FHIRProfilesIndex, text: <text>http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk</text>, anchor: MzCariesRisk}} |
+| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.2 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|74024006` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#CareType)) |
-| **CapabilityStatement(s)** | [Dental Care CariesRisk Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-CariesRisk-Retrieve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) <br/> [Dental Care CariesRisk Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/mz-CariesRisk-Serve&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Caries Risk (Retrieve), anchor: CariesRiskRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Caries Risk (Serve), anchor: CariesRiskServe}} |
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk}}
-    </tab>
-</tabs>
+{{page:resource-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk}}

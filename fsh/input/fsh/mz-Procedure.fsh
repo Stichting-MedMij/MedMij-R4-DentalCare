@@ -8,7 +8,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * insert DefaultNarrative
 * ^status = #active
 * insert PublisherAndContact
-* ^purpose = "This Procedure resource represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. This profile is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)), but has no dependency on the corresponding nl-core-Procedure-event profile because it contains non-compatible changes with respect to ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care data set). Moreover, guidance and mappings corresponding to the MedicalDevice and Requester concepts, as well as the reversed reference for zib TextResult, which are present in the nl-core profile, have been omitted from this profile."
+* ^purpose = "This Procedure resource represents the Procedure Clinical Information Model (CIM) for patient use cases in the context of Dental Care. This profile is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Procedure v5.2 (2020)](https://zibs.nl/wiki/Procedure-v5.2(2020EN)), but has no dependency on the corresponding nl-core-Procedure-event profile because it contains non-compatible changes with respect to ProcedureType. Where compatible, mappings to zib concepts are defined (next to the mappings to the Dental Care dataset). Moreover, guidance and mappings corresponding to the MedicalDevice and Requester concepts, as well as the reversed reference for zib TextResult, which are present in the nl-core profile, have been omitted from this profile."
 * insert Copyright
 * .
   * ^short = "Procedure"
@@ -91,9 +91,10 @@ Title: "zib Procedure-v5.2(2020EN)"
 
 Mapping: MzProcedureMedMij-100-rc1
 Source: MzProcedure
-Id: mz-dataset-100-rc1-20260603
-Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
+Id: mz-dataset-100-rc2-2026xxyy
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-26" "Procedure"
+* extension[procedureMethod].value[x] -> "mz-dataelement-30" "ProcedureMethod"
 * status -> "mz-dataelement-27" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
 * status -> "mz-dataelement-28" "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
 * code -> "mz-dataelement-29" "ProcedureType"
@@ -104,3 +105,5 @@ Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
 * location -> "mz-dataelement-46" "Location"
 * reasonReference -> "mz-dataelement-34" "Indication"
 * bodySite -> "mz-dataelement-31" "ProcedureAnatomicalLocation"
+* bodySite -> "mz-dataelement-32" "Location"
+* bodySite.extension[laterality].value[x] -> "mz-dataelement-33" "Laterality"

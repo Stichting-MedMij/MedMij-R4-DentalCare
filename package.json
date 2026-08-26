@@ -1,7 +1,7 @@
 {
   "name": "medmij.fhir.nl.r4.dentalcare",
-  "version": "1.0.0-rc.1",
-  "description": "Package of FHIR R4 conformance resources for MedMij Dental Care version 1.0.0-rc.1.",
+  "version": "1.0.0-rc.2",
+  "description": "Package of FHIR R4 conformance resources for MedMij Dental Care version 1.0.0-rc.2.",
   "author": "MedMij",
   "license": "CC0-1.0",
   "title": "FHIR implementation of Dental Care",

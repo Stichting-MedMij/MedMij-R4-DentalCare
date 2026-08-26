@@ -54,7 +54,7 @@ The table below gives an overview of all granular data services that are applica
 | 900000104 | {{pagelink: OralHygiene, text: Retrieve Dental Care - Oral hygiene}} | Verzamelen Mondzorg - Mondhygiëne | 1.0.0-rc.1 |
 | 900000106 | {{pagelink: ParafunctionalActivity, text: Retrieve Dental Care - Parafunctional activity}} | Verzamelen Mondzorg - Parafunctionele activiteit | 1.0.0-rc.1 |
 | 900000108 | {{pagelink: PeriodicPeriodontalScreeningScore, text: Retrieve Dental Care - Periodic Periodontal Screening score}} | Verzamelen Mondzorg - Periodieke Parodontale Screening-score | 1.0.0-rc.1 |
-| 900000102 | {{pagelink: Procedure, text: Retrieve Dental Care - Procedure}} | Verzamelen Mondzorg - Verrichting | 1.0.0-rc.1 |
+| 900000102 | {{pagelink: Procedure, text: Retrieve Dental Care - Procedure}} | Verzamelen Mondzorg - Verrichting | 1.0.0-rc.2 |
 
 **Table 2: Granular data services applicable for Dental Care+**
 

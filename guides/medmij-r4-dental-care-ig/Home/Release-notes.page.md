@@ -1,5 +1,13 @@
 # {{page-title}}
 
+## 1.0.0-rc.2
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| FHIR artifacts              | The CapabilityStatements have been added to the Artifact index. | [DOSINZAGE1-1086](https://medmij.atlassian.net/browse/DOSINZAGE1-1086) |
+| FHIR artifacts              | Mappings to the ProcedureMethod, Location and Laterality concepts have been added in the mz-Procedure profile. | [DOSINZAGE1-1086](https://medmij.atlassian.net/browse/DOSINZAGE1-1086) |
+| Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve Dental Care - Caries risk, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve Dental Care - Dental fitness, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve Dental Care - Oral hygiene, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve Dental Care - Parafunctional activity, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve Dental Care - Periodic Periodontal Screening score, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve Dental Care - Procedure, version 1.0.0-rc.2 <ul> <li> The Logical Model and FHIR profile mappings have been added. <li> Mappings to the ProcedureMethod, Location and Laterality concepts have been added in the mz-Procedure profile. </ul> | [DOSINZAGE1-1086](https://medmij.atlassian.net/browse/DOSINZAGE1-1086) |
+
 ## 1.0.0-rc.1
 
 | Component                   | Description  | Ticket    |
@@ -15,7 +23,7 @@
 
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
-| Functional design           | The display guideline has been updated: <br/> <ul> <li> Guidance on the exchange of the CIM Encounter with other contact types (i.e. with ContactType equal to NullFlavor *OTH*) has been added. <li> The acceptance criteria for the overview have been updated, while the acceptance criteria for the detail view have been added. <li> The definition of 'Won't have' in the MoSCoW method has been finetuned. | [DOSINZAGE1-1001](https://medmij.atlassian.net/browse/DOSINZAGE1-1001) |
+| Functional design           | The display guideline has been updated: <br/> <ul> <li> Guidance on the exchange of the CIM Encounter with other contact types (i.e. with ContactType equal to NullFlavor _OTH_) has been added. <li> The acceptance criteria for the overview have been updated, while the acceptance criteria for the detail view have been added. <li> The definition of 'Won't have' in the MoSCoW method has been finetuned. | [DOSINZAGE1-1001](https://medmij.atlassian.net/browse/DOSINZAGE1-1001) |
 | Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve Dental Care - Caries risk, version 1.0.0-beta.3 <li> Retrieve Dental Care - Dental fitness, version 1.0.0-beta.3 <li> Retrieve Dental Care - Oral hygiene, version 1.0.0-beta.3 <li> Retrieve Dental Care - Parafunctional activity, version 1.0.0-beta.3 <li> Retrieve Dental Care - Periodic Periodontal Screening score, version 1.0.0-beta.3 <li> Retrieve Dental Care - Procedure, version 1.0.0-beta.3 | [DOSINZAGE1-1018](https://medmij.atlassian.net/browse/DOSINZAGE1-1018) |
 | Test material               | The `.meta.tag`s corresponding to the care type have been updated in several test instances. | [DOSINZAGE1-941](https://medmij.atlassian.net/browse/DOSINZAGE1-941) |
 
@@ -60,20 +68,20 @@
 | Component             | Description  | Ticket   |
 | --------------------- | ------------ | ---------|
 | Dataset               | Zibs Encounter, ContactPerson and Payer from publication 2020 have been added. | [DOSINZAGE1-640](https://medmij.atlassian.net/browse/DOSINZAGE1-640) |
-| Dataset               | Replaced the TreatmentObjective concepts for short- and long-term by a single, generic concept TreatmentObjective. | [DOSINZAGE1-641](https://medmij.atlassian.net/browse/DOSINZAGE1-641) |
+| Dataset               | The TreatmentObjective CIMs for short- and long-term have been replaced by a single, generic TreatmentObjective CIM. | [DOSINZAGE1-641](https://medmij.atlassian.net/browse/DOSINZAGE1-641) |
 | Dataset               | SNOMED CT terminology codes have been added. | [DOSINZAGE1-645](https://medmij.atlassian.net/browse/DOSINZAGE1-645) |
 | Dataset               | Orthodontic procedures have been added to the Procedure concept. | [DOSINZAGE1-647](https://medmij.atlassian.net/browse/DOSINZAGE1-647) |
-| Dataset               | Several corrections based on test findings Alpha phase have been done. | [DOSINZAGE1-631](https://medmij.atlassian.net/browse/DOSINZAGE1-631) |
-| Dataset               | <ul> <li> The terminology codes for CariesRisk and OralHygiene have been changed. <li> The name of the Periodic Periodontal Screening building block has been changed to Periodic Periodontal Screening Score. <li> The cardinality of all Comment concepts has been changed from `0..1` to `0..*`. | [DOSINZAGE1-668](https://medmij.atlassian.net/browse/DOSINZAGE1-668) |
-| Technical design      | Added references and search queries for the zibs Encounter, ContactPerson and Payer. | [DOSINZAGE1-642](https://medmij.atlassian.net/browse/DOSINZAGE1-642) |
-| Technical design      | Added guidance on the search parameter `date` for the Encounter resource. | [DOSINZAGE1-651](https://medmij.atlassian.net/browse/DOSINZAGE1-651) |
-| Technical design      | Changed search query for Parafunctional Activity. | [DOSINZAGE1-652](https://medmij.atlassian.net/browse/DOSINZAGE1-652) |
+| Dataset               | Several corrections based on test findings in the alpha phase have been done. | [DOSINZAGE1-631](https://medmij.atlassian.net/browse/DOSINZAGE1-631) |
+| Dataset               | <ul> <li> The terminology codes for CariesRisk and OralHygiene have been changed. <li> The name of the PeriodicPeriodontalScreening CIM has been changed to PeriodicPeriodontalScreeningScore. <li> The cardinality of all Comment concepts has been changed from `0..1` to `0..*`. | [DOSINZAGE1-668](https://medmij.atlassian.net/browse/DOSINZAGE1-668) |
+| Technical design      | References and search queries have been added for the zibs Encounter, ContactPerson and Payer. | [DOSINZAGE1-642](https://medmij.atlassian.net/browse/DOSINZAGE1-642) |
+| Technical design      | Guidance on the search parameter `date` for the Encounter resource has been added. | [DOSINZAGE1-651](https://medmij.atlassian.net/browse/DOSINZAGE1-651) |
+| Technical design      | The search query for ParafunctionalActivity has been changed. | [DOSINZAGE1-652](https://medmij.atlassian.net/browse/DOSINZAGE1-652) |
 | FHIR artifacts        | FHIR profiles have been renamed and finetuned. Mappings to the dataset have been added. | [DOSINZAGE1-544](https://medmij.atlassian.net/browse/DOSINZAGE1-544) |
 | FHIR artifacts        | The nl-core dependency has been updated to 0.12.0-beta.1. | [DOSINZAGE1-544](https://medmij.atlassian.net/browse/DOSINZAGE1-544) |
 | FHIR artifacts        | A new profile mz-TreatmentObjective has been added. The SearchParameter `goal-priority` has been removed. | [DOSINZAGE1-641](https://medmij.atlassian.net/browse/DOSINZAGE1-641) |
 | FHIR artifacts        | Several ValueSets and `Observation.code`s have been updated with SNOMED CT codes. | [DOSINZAGE1-645](https://medmij.atlassian.net/browse/DOSINZAGE1-645), [DOSINZAGE1-668](https://medmij.atlassian.net/browse/DOSINZAGE1-668)|
 | FHIR artifacts        | Orthodontic procedures have been added to `.code` in the mz-Procedure profile. | [DOSINZAGE1-647](https://medmij.atlassian.net/browse/DOSINZAGE1-647) |
 | FHIR artifacts        | <ul> <li> The `.code`s for mz-CariesRisk and mz-OralHygiene have been changed. <li> The name of the mz-PeriodicPeriodontalScreening profile has been changed to mz-PeriodicPeriodontalScreeningScore. <li> The cardinality of all `Observation.note` concepts has been changed from `0..1` to `0..*`. | [DOSINZAGE1-668](https://medmij.atlassian.net/browse/DOSINZAGE1-668) |
-| Test material         | Removed Location reference from PractitionerRole resources. | [DOSINZAGE1-555](https://medmij.atlassian.net/browse/DOSINZAGE1-555) |
+| Test material         | The Location reference has been removed from PractitionerRole resources. | [DOSINZAGE1-555](https://medmij.atlassian.net/browse/DOSINZAGE1-555) |
 | Test material         | <ul> <li> Terminology in the test material has been updated to reflect the changes in dataset and FHIR profiles. <li> Several `.display`s have been updated. <li> Test instances have been finetuned. | [DOSINZAGE1-557](https://medmij.atlassian.net/browse/DOSINZAGE1-557), [DOSINZAGE1-631](https://medmij.atlassian.net/browse/DOSINZAGE1-631), [DOSINZAGE1-645](https://medmij.atlassian.net/browse/DOSINZAGE1-645) |
 | Test material         | Test instances for the zibs Encounter, ContactPerson and Payer have been added. | [DOSINZAGE1-635](https://medmij.atlassian.net/browse/DOSINZAGE1-635), [DOSINZAGE1-661](https://medmij.atlassian.net/browse/DOSINZAGE1-661) |
