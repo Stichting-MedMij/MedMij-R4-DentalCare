@@ -16,15 +16,15 @@ This index contains all active domain-specific granular data services within Den
         - the Transaction indicator is either 'R' or 'B', indicating a Retrieve (Dutch: Raadplegen) or Serve (Dutch: Beschikbaar stellen) transaction, respectively. The former transaction is intended for the PHR, while the latter is relevant for the XIS (this is also explicitly indicated for each individual system role). As the corresponding transaction (group) can be derived from the system role, the transactions and transaction groups are not specified on the respective data service pages. Instead, these can be found in the [MedMij Catalogus](https://catalogus.medmij.nl/overzicht/actueel/actuele-catalogus);
         - the Suffix is an optional addition, and is described in more detail [here](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#PublicationGranularDataServices);
         - the Data service version is abbreviated for prereleases (i.e. if the data service is released as an alpha, beta or release candidate). For these, only the latter part of the data service version is included. For instance, if the data service version is '1.0.0-alpha.1', the abbreviated version is 'alpha.1'.
-    - **Used in Implementation Guide(s)** - the IGs (and corresponding domains) in which the granular data service is used, which is always *Dental Care* in this IG.
+    - **Used in Implementation Guide(s)** - the IGs (and corresponding domains) in which the granular data service is used, which is always _Dental Care_ in this IG.
 - **Functional model**
     - **CIM** - the underlying Clinical Information Model, which is often a zib.
-    - **Functional version** - the version of the CIM. For a CIM that is a zib, this version is of the form '*x.y*([zib publication])', e.g. '3.2(2020)'. For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version. More guidance on this version can be found [here](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#VersioningGranularDataServices).
+    - **Functional version** - the version of the CIM. For a CIM that is a zib, this version is of the form '_x.y_([zib publication])', e.g. '3.2(2020)'. For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version. More guidance on this version can be found [here](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#VersioningGranularDataServices).
     - Moreover, either a link to the functional model in ART-DECOR, or a Logical Model is included in this section.
 - **Technical specification**
     - **FHIR profile(s)** - the FHIR profiles that are used to exchange the CIM.
     - **FHIR package** - the FHIR package in which the FHIR profiles have been published.
-    - **FHIR version** - the version of FHIR in which the profiles corresponding to the CIM have been created, which is always *R4* in this IG.
+    - **FHIR version** - the version of FHIR in which the profiles corresponding to the CIM have been created, which is always _R4_ in this IG.
     - **Search request** - the request to be executed by the PHR to retrieve the data corresponding to the granular data service.
     - **Must Support** - the elements that have to be supported in the manner described [here](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#MustSupport).
     - **CapabilityStatement(s)** - the FHIR CapabilityStatements that describe the minimal requirements for a client or server to fulfill the corresponding transaction(s) defined within the data service.

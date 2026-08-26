@@ -70,7 +70,7 @@ Anita Jansen vermoed dat ze gaatjes heeft. Ze is naar een civiele tandarts gewee
 - In de PGO van de patiënt worden de opgevraagde gegevens overzichtelijk en begrijpelijk getoond.
 
 ### Bedrijfsrollen
-Deze usecase onderscheidt twee bedrijfsrollen, namelijk de *Patiënt* en de *Zorgaanbieder*, zoals te zien in onderstaande tabel.
+Deze usecase onderscheidt twee bedrijfsrollen, namelijk de _Patiënt_ en de _Zorgaanbieder_, zoals te zien in onderstaande tabel.
 
 | Bedrijfsrol (actor) | Beschrijving bedrijfsrol |
 | --- | --- |
