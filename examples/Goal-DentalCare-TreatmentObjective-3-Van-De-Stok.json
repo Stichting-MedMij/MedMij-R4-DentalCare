@@ -1,0 +1,73 @@
+{
+  "resourceType": "Goal",
+  "id": "DentalCare-TreatmentObjective-3-Van-De-Stok",
+  "meta": {
+    "tag": [
+      {
+        "code": "1300",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2024-12-31<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Malocclusie van tanden<br/>Toelichting: Na het trekken van de snijtand linksboven en het plaatsen van de beugel moet het kauwen weer klachtenvrij zijn.</div>"
+  },
+  "lifecycleStatus": "active",
+  "priority": {
+    "coding": [
+      {
+        "code": "high-priority",
+        "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
+        "display": "High Priority"
+      }
+    ]
+  },
+  "description": {
+    "text": "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2024-12-31"
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-De-Stok",
+    "display": "Berend van de Stok",
+    "type": "Patient"
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "code": "288919008",
+            "system": "http://snomed.info/sct",
+            "display": "kan kauwen"
+          }
+        ]
+      },
+      "detailCodeableConcept": {
+        "coding": [
+          {
+            "code": "162019007",
+            "system": "http://snomed.info/sct",
+            "display": "geen problemen met kauwen"
+          }
+        ]
+      },
+      "dueDate": "2024-12-31"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/DentalCare-Problem-Van-De-Stok",
+      "display": "Malocclusie van tanden",
+      "type": "Condition"
+    }
+  ],
+  "note": [
+    {
+      "text": "Na het trekken van de snijtand linksboven en het plaatsen van de beugel moet het kauwen weer klachtenvrij zijn."
+    }
+  ]
+}

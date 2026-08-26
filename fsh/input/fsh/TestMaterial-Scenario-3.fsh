@@ -141,6 +141,110 @@ Usage: #example
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
 
+Instance: DentalCare-TreatmentObjective-3-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
+Usage: #example
+* meta
+  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2024-12-31<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: malocclusie van tanden en/of kiezen<br/>Toelichting: Na het trekken van de snijtand linksboven en het plaatsen van de beugel moet het kauwen weer klachtenvrij zijn.</div>"
+* lifecycleStatus = #active
+* priority = $GoalPriority#high-priority "High Priority"
+* description
+  * text = "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2024-12-31"
+* subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
+* target
+  * measure = $SCT#288919008 "kan kauwen"
+  * detailCodeableConcept = $SCT#162019007 "probleem met kauwen afwezig"
+  * dueDate = "2024-12-31"
+* addresses = Reference(DentalCare-Problem-Van-De-Stok) "malocclusie van tanden en/of kiezen en/of kiezen"
+  * type = "Condition"
+* note
+  * text = "Na het trekken van de snijtand linksboven en het plaatsen van de beugel moet het kauwen weer klachtenvrij zijn."
+
+Instance: DentalCare-MedicalDevice-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice
+Usage: #example
+* meta
+  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Bedoeld<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandenboog<br/>Indicatie: malocclusie van tanden en/of kiezen<br/>Zorgverlener: B. Dijkstra, Tandarts<br/>Locatie: CWZ Nijmegen</div>"
+* extension[healthProfessional].valueReference = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+  * type = "PractitionerRole"
+* extension[location].valueReference = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
+  * type = "Location"
+* extension[treatmentObjective].valueReference = Reference(DentalCare-TreatmentObjective-3-Van-De-Stok) "Behandeldoel: geen problemen met kauwen"
+  * type = "Goal"
+* status = #intended
+* subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
+* derivedFrom[procedure-event] = Reference(DentalCare-Procedure-Van-De-Stok) "Eerste consult"
+  * type = "Procedure"
+* timingPeriod
+  * start = "2024-02-01"
+  * end = "2025-08-01"
+* device = Reference(DentalCare-MedicalDevice-Product-Van-De-Stok) "Vaste multibracket-beugel bovenboog"
+  * type = "Device"
+* reasonReference[indication] = Reference(DentalCare-Problem-Van-De-Stok) "malocclusie van tanden en/of kiezen en/of kiezen"
+  * type = "Condition"
+* bodySite = $SCT#39481002 "bovenste tandboog"
+* note
+  * text = "Vaste multibracket-beugel in de bovenboog; controle elke zes weken."
+
+Instance: DentalCare-MedicalDevice-Product-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product
+Usage: #example
+* meta
+  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Product: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Producttype: Orthodontische apparatuur<br/>ProductID: (01)08712345678906(11)240115(17)290115(10)ORTHO24A(21)BVDS0001</div>"
+* identifier[gs1ProductID]
+  * system = $GS1GTIN
+  * value = "08712345678906"
+* udiCarrier[gs1UdiCarrier]
+  * deviceIdentifier = "08712345678906"
+  * issuer = $GS1GTIN
+  * carrierHRF = "(01)08712345678906(11)240115(17)290115(10)ORTHO24A(21)BVDS0001"
+* manufactureDate = "2024-01-15"
+* expirationDate = "2029-01-15"
+* lotNumber = "ORTHO24A"
+* serialNumber = "BVDS0001"
+* type = $SCT#25742001 "orthodontische apparatuur"
+* patient = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
+* note
+  * text = "Vaste multibracket-beugel voor de bovenboog"
+
+Instance: DentalCare-Problem-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem
+Usage: #example
+* meta
+  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: malocclusie van tanden en/of kiezen en/of kiezen<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Tandarts</div>"
+* clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
+* verificationStatus
+  * coding = $ConditionVerificationStatus#confirmed "Confirmed"
+  * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
+* category[problemType] = $SCT#282291009 "interpretatie van diagnose"
+* code
+  * coding = $SCT#47944004 "malocclusie van tanden en/of kiezen en/of kiezen"
+  * text = "Malocclusie met scheefstand van de snijtand linksboven"
+* bodySite = $SCT#39481002 "bovenste tandboog"
+* subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
+* onsetDateTime = "2023-11-15"
+* recordedDate = "2024-01-01T08:43:00+01:00"
+* asserter = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+  * type = "PractitionerRole"
+* note
+  * text = "Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland."
+
 Instance: DentalCare-Procedure-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
 Usage: #example

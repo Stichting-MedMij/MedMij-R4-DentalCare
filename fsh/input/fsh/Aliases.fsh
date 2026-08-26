@@ -7,6 +7,7 @@ Alias: $ConditionVerificationStatus = http://terminology.hl7.org/CodeSystem/cond
 Alias: $DentalFitnessValueSetOID = urn:oid:2.16.528.1.1023.4.1.1
 Alias: $ExtraRolcodes = urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.23.1
 Alias: $GoalPriority = http://terminology.hl7.org/CodeSystem/goal-priority
+Alias: $GS1GTIN = https://www.gs1.org/gtin
 Alias: $MzLmCariesRiskOID = urn:oid:2.16.528.1.1023.3.1.5
 Alias: $MzLmDentalFitnessOID = urn:oid:2.16.528.1.1023.3.1.1
 Alias: $MzLmOralHygieneOID = urn:oid:2.16.528.1.1023.3.1.4

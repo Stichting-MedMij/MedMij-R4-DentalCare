@@ -1,0 +1,89 @@
+{
+  "resourceType": "DeviceUseStatement",
+  "id": "DentalCare-MedicalDevice-Van-De-Stok",
+  "meta": {
+    "tag": [
+      {
+        "code": "1300",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.HealthProfessional",
+      "valueReference": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
+        "display": "B. Dijkstra, Tandarts",
+        "type": "PractitionerRole"
+      }
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.Location",
+      "valueReference": {
+        "reference": "Location/DentalCare-Location-CWZ-Nijmegen",
+        "display": "CWZ Nijmegen",
+        "type": "Location"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
+      "valueReference": {
+        "reference": "Goal/DentalCare-TreatmentObjective-3-Van-De-Stok",
+        "display": "Behandeldoel: geen problemen met kauwen",
+        "type": "Goal"
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Bedoeld<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandenboog<br/>Indicatie: Malocclusie van tanden<br/>Zorgverlener: B. Dijkstra, Tandarts<br/>Locatie: CWZ Nijmegen</div>"
+  },
+  "status": "intended",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Van-De-Stok",
+    "display": "Berend van de Stok",
+    "type": "Patient"
+  },
+  "derivedFrom": [
+    {
+      "reference": "Procedure/DentalCare-Procedure-Van-De-Stok",
+      "display": "Eerste consult",
+      "type": "Procedure"
+    }
+  ],
+  "timingPeriod": {
+    "start": "2024-02-01",
+    "end": "2025-08-01"
+  },
+  "device": {
+    "reference": "Device/DentalCare-MedicalDevice-Product-Van-De-Stok",
+    "display": "Vaste multibracket-beugel bovenboog",
+    "type": "Device"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/DentalCare-Problem-Van-De-Stok",
+      "display": "Malocclusie van tanden",
+      "type": "Condition"
+    }
+  ],
+  "bodySite": {
+    "coding": [
+      {
+        "code": "39481002",
+        "system": "http://snomed.info/sct",
+        "display": "bovenste tandenboog"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Vaste multibracket-beugel in de bovenboog; controle elke zes weken."
+    }
+  ]
+}
