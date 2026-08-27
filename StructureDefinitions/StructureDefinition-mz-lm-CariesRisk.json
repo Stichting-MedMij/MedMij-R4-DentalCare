@@ -93,6 +93,17 @@
         ]
       },
       {
+        "id": "mz-lm-CariesRisk.Effective[x]:EffectivePeriod",
+        "path": "mz-lm-CariesRisk.Effective[x]",
+        "sliceName": "EffectivePeriod",
+        "max": "0",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
         "id": "mz-lm-CariesRisk.CariesRiskValue",
         "path": "mz-lm-CariesRisk.CariesRiskValue",
         "short": "Caries risk value",

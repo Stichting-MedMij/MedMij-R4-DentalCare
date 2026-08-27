@@ -67,12 +67,11 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     * ^alias[0] = "EindDatumTijd"
     * ^alias[1] = "VerrichtingEindDatum"
 * performedDateTime
-  * ^short = "EffectiveDateTime"
+  * ^short = "StartDateTime"
   * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted. `Procedure.performedDateTime` is used for instantaneous or very short lasting procedures."
   * ^comment = "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed)."
-  * ^alias[0] = "Geldigheid"
-  * ^alias[1] = "DatumTijd"
-  * ^alias[2] = "VerrichtingStartDatum"
+  * ^alias[0] = "StartDatumTijd"
+  * ^alias[1] = "VerrichtingStartDatum"
 * performer
   * actor only Reference(Practitioner or PractitionerRole or Organization or Patient or RelatedPerson or Device or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
     * ^short = "Performer"
@@ -121,14 +120,13 @@ Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
 * meta
   * tag[careType] -> "medmij-core-dataelement-123" "CareType"
 * identifier -> "medmij-core-dataelement-115" "IdentificationNumber"
-* status -> "medmij-core-dataelement-119" "EffectiveDateTime (implicit, main mapping is on Procedure.performedDateTime)"
-* status -> "medmij-core-dataelement-121" "StartDateTime (implicit, main mapping is on Procedure.performedPeriod.start)"
+* status -> "medmij-core-dataelement-121" "StartDateTime (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
 * status -> "medmij-core-dataelement-122" "EndDateTime (implicit, main mapping is on Procedure.performedPeriod.end)"
 * subject -> "medmij-core-dataelement-116" "Patient"
 * performedPeriod -> "medmij-core-dataelement-120" "EffectivePeriod"
   * start -> "medmij-core-dataelement-121" "StartDateTime"
   * end -> "medmij-core-dataelement-122" "EndDateTime"
-* performedDateTime -> "medmij-core-dataelement-119" "EffectiveDateTime"
+* performedDateTime -> "medmij-core-dataelement-121" "StartDateTime"
 * performer.actor -> "medmij-core-dataelement-117" "HealthcareProvider (implicit, actual mapping is on PractitionerRole.organization)"
 
 Mapping: MzProcedureMedMij-100-rc2

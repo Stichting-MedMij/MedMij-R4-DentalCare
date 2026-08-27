@@ -88,6 +88,17 @@
         ]
       },
       {
+        "id": "mz-lm-PeriodicPeriodontalScreeningScore.Effective[x]:EffectivePeriod",
+        "path": "mz-lm-PeriodicPeriodontalScreeningScore.Effective[x]",
+        "sliceName": "EffectivePeriod",
+        "max": "0",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
         "id": "mz-lm-PeriodicPeriodontalScreeningScore.PeriodicPeriodontalScreeningScoreValue",
         "path": "mz-lm-PeriodicPeriodontalScreeningScore.PeriodicPeriodontalScreeningScoreValue",
         "short": "Periodic Periodontal Screening score value",

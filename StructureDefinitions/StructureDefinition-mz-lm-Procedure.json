@@ -83,6 +83,17 @@
         ]
       },
       {
+        "id": "mz-lm-Procedure.Effective[x]:EffectiveDateTime",
+        "path": "mz-lm-Procedure.Effective[x]",
+        "sliceName": "EffectiveDateTime",
+        "max": "0",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
         "id": "mz-lm-Procedure.Effective[x]:EffectivePeriod",
         "path": "mz-lm-Procedure.Effective[x]",
         "sliceName": "EffectivePeriod",

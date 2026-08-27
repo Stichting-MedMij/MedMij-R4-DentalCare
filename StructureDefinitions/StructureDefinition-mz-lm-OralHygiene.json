@@ -93,6 +93,17 @@
         ]
       },
       {
+        "id": "mz-lm-OralHygiene.Effective[x]:EffectivePeriod",
+        "path": "mz-lm-OralHygiene.Effective[x]",
+        "sliceName": "EffectivePeriod",
+        "max": "0",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
         "id": "mz-lm-OralHygiene.OralHygieneValue",
         "path": "mz-lm-OralHygiene.OralHygieneValue",
         "short": "Oral hygiene value",

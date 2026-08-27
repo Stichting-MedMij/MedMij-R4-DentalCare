@@ -88,6 +88,17 @@
         ]
       },
       {
+        "id": "mz-lm-ParafunctionalActivity.Effective[x]:EffectivePeriod",
+        "path": "mz-lm-ParafunctionalActivity.Effective[x]",
+        "sliceName": "EffectivePeriod",
+        "max": "0",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
         "id": "mz-lm-ParafunctionalActivity.ParafunctionalActivityValue",
         "path": "mz-lm-ParafunctionalActivity.ParafunctionalActivityValue",
         "short": "Parafunctional activity value",

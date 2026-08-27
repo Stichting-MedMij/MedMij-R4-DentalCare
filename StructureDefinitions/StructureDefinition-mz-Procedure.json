@@ -177,13 +177,8 @@
           },
           {
             "identity": "medmij-core-dataset-120-2026xxyy",
-            "map": "medmij-core-dataelement-119",
-            "comment": "EffectiveDateTime (implicit, main mapping is on Procedure.performedDateTime)"
-          },
-          {
-            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-121",
-            "comment": "StartDateTime (implicit, main mapping is on Procedure.performedPeriod.start)"
+            "comment": "StartDateTime (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
           },
           {
             "identity": "medmij-core-dataset-120-2026xxyy",
@@ -341,12 +336,11 @@
         "id": "Procedure.performed[x]:performedDateTime",
         "path": "Procedure.performed[x]",
         "sliceName": "performedDateTime",
-        "short": "EffectiveDateTime",
+        "short": "StartDateTime",
         "definition": "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted. `Procedure.performedDateTime` is used for instantaneous or very short lasting procedures.",
         "comment": "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed).",
         "alias": [
-          "Geldigheid",
-          "DatumTijd",
+          "StartDatumTijd",
           "VerrichtingStartDatum"
         ],
         "min": 0,
@@ -364,8 +358,8 @@
           },
           {
             "identity": "medmij-core-dataset-120-2026xxyy",
-            "map": "medmij-core-dataelement-119",
-            "comment": "EffectiveDateTime"
+            "map": "medmij-core-dataelement-121",
+            "comment": "StartDateTime"
           }
         ]
       },

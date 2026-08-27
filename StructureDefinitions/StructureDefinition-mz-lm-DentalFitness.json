@@ -88,6 +88,17 @@
         ]
       },
       {
+        "id": "mz-lm-DentalFitness.Effective[x]:EffectivePeriod",
+        "path": "mz-lm-DentalFitness.Effective[x]",
+        "sliceName": "EffectivePeriod",
+        "max": "0",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
         "id": "mz-lm-DentalFitness.DentalFitnessValue",
         "path": "mz-lm-DentalFitness.DentalFitnessValue",
         "short": "Dental fitness value",
