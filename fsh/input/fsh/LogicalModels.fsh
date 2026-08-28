@@ -214,7 +214,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     * ^alias = "VerificatieStatus"
   * Comment 0..1 string "Comment" "Comment by the one who determined or updated the problem."
     * ^alias = "Toelichting"
-* Location 0..1 Reference(MedMijCoreLmHealthcareProvider) "Location" "The healthcare center where the procedure was, is or or will be carried out."
+* Location 0..1 Reference(MedMijCoreLmHealthcareProvider) "Location" "The healthcare center where the procedure was, is or will be carried out."
   * ^alias = "Locatie"
 * Performer 0..* Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who carried out the procedure. In most cases, only the medical specialty is entered, and not the name of the health professional."
   * ^alias = "Uitvoerder"

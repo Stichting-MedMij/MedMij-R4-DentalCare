@@ -630,7 +630,7 @@
         "id": "mz-lm-Procedure.Location",
         "path": "mz-lm-Procedure.Location",
         "short": "Location",
-        "definition": "The healthcare center where the procedure was, is or or will be carried out.",
+        "definition": "The healthcare center where the procedure was, is or will be carried out.",
         "alias": [
           "Locatie"
         ],
