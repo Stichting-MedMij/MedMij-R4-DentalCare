@@ -31,12 +31,12 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^alias = "Identificatienummer"
 * status
   * ^definition = """
-  This element is implictly mapped to the zib concepts ProcedureStartDate (NL-CM:14.1.2) and ProcedureEndDate (NL-CM:14.1.3). Unless the status is explicitly recorded, the following guidance applies:
-  * When the ProcedureStartDate is in the future, `.status` will usually be set to _preparation_.
-  * When ProcedureStartDate is in the past and ProcedureEndDate is in the future, `.status` will usually be set to _in-progress_.
-  * When ProcedureEndDate is in the past, `.status` will usually be set to _completed_.
-  * When ProcedureStartDate is in the past and ProcedureEndDate is missing, it may be assumed that the Procedure was recorded as a point in time and `.status` will usually be set to _completed_.
-  * When a system is unable to infer the status from the ProcedureStartDate and ProcedureEndDate , `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the Procedure.
+  This element is implictly mapped to the concepts StartDateTime and EndDateTime. Unless the status is explicitly recorded, the following guidance applies:
+  * When StartDateTime is in the future, `.status` will usually be set to _preparation_.
+  * When StartDateTime is in the past and EndDateTime is in the future, `.status` will usually be set to _in-progress_.
+  * When StartDateTime is in the past, `.status` will usually be set to _completed_.
+  * When StartDateTime is in the past and EndDateTime is missing, it may be assumed that the Procedure was recorded as a point in time and `.status` will usually be set to _completed_.
+  * When a system is unable to infer the status from the StartDateTime and EndDateTime , `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the Procedure.
   """
 * category 1..1
   * ^patternCodeableConcept = $SCT#225362009
@@ -57,19 +57,19 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * start
     * ^short = "StartDateTime"
     * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted. The element offers the option to indicate the start of the period of a series of related procedures."
-    * ^comment = "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed)."
+    * ^comment = "If the CIM Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent concepts StartDateTime and EndDateTime. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for StartDateTime (EndDateTime doesn't have a meaning in this case; StartDateTime is the moment the procedure is performed)."
     * ^alias[0] = "StartDatumTijd"
     * ^alias[1] = "VerrichtingStartDatum"
   * end
     * ^short = "EndDateTime"
     * ^definition = "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted. The element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
-    * ^comment = "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed)."
+    * ^comment = "If the CIM Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent concepts StartDateTime and EndDateTime. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for StartDateTime (EndDateTime doesn't have a meaning in this case; StartDateTime is the moment the procedure is performed)."
     * ^alias[0] = "EindDatumTijd"
     * ^alias[1] = "VerrichtingEindDatum"
 * performedDateTime
   * ^short = "StartDateTime"
   * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted. `Procedure.performedDateTime` is used for instantaneous or very short lasting procedures."
-  * ^comment = "If the zib Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent zib concepts ProcedureStartDate and ProcedureEndDate. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for ProcedureStartDate (ProcedureEndDate doesn't have a meaning in this case; ProcedureStartDate is the moment the procedure is performed)."
+  * ^comment = "If the CIM Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent concepts StartDateTime and EndDateTime. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for StartDateTime (EndDateTime doesn't have a meaning in this case; StartDateTime is the moment the procedure is performed)."
   * ^alias[0] = "StartDatumTijd"
   * ^alias[1] = "VerrichtingStartDatum"
 * performer
