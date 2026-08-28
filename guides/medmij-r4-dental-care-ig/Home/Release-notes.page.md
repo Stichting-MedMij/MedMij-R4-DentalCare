@@ -5,6 +5,7 @@
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Data set                    | The Base Logical Model has been used as base definition of the CariesRisk, DentalFitness, OralHygiene, ParafunctionalActivity, PeriodicPeriodontalScreeningScore and Procedure Logical Models. | [MC-6](https://medmij.atlassian.net/browse/MC-6) |
+| Functional design           | The display guideline has been aligned with the Base Logical Model. In particular, the HealthcareProvider concept has been added in the specifications of the Contact and Procedure CIMs, and the mappings to the EffectiveDateTime, StartDateTime and EndDateTime concepts have been updated. | [MC-6](https://medmij.atlassian.net/browse/MC-6) |
 | FHIR artifacts              | The CapabilityStatements have been added to the Artifact index. | [DOSINZAGE1-1086](https://medmij.atlassian.net/browse/DOSINZAGE1-1086) |
 | FHIR artifacts              | Mappings to the ProcedureMethod, Location and Laterality concepts have been added in the mz-Procedure profile. | [DOSINZAGE1-1086](https://medmij.atlassian.net/browse/DOSINZAGE1-1086) |
 | FHIR artifacts              | In the mz-CariesRisk, mz-DentalFitness, mz-OralHygiene, mz-ParafunctionalActivity, mz-PeriodicPeriodontalScreeningScore and mz-Procedure profiles, mappings to concepts from the Base Logical Model have been added. | [MC-6](https://medmij.atlassian.net/browse/MC-6) |
