@@ -97,6 +97,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Reden contact toelichting | Extra controle vanwege bloedend tandvlees |
 | Zorgverlener | A.B. Janssen <br/> Tandarts |
 | Zorgorganisatie | Tendens |
+| Locatie | Praktijk Amsterdam |
 
 <br/>
 
@@ -306,6 +307,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Manier verrichting | Vrijmaken |
 | Zorgverlener | A.B. Janssen <br/> Tandarts |
 | Zorgorganisatie | Tendens |
+| Locatie | Praktijk Amsterdam |
 
 <br/>
 
