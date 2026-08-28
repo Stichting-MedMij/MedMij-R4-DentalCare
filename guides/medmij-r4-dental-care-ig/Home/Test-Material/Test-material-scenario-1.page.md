@@ -169,7 +169,9 @@
 
 | | |
 | --- | --- |
-| ASAScoreDateTime | 29-04-2024 06:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 29-04-2024 06:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 1 (code '413495001' from code system 'SNOMED CT')|
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | Verandering gezondheid: enkel gebroken |
@@ -178,7 +180,9 @@
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | 29-04-2024 06:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 29-04-2024 06:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | CariesRiskValue | Laag (code '62482003' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
@@ -187,7 +191,9 @@
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | 02-02-2024 06:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 02-02-2024 06:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DentalFitnessValue | Klasse 1 (code '258392002' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
@@ -198,6 +204,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
@@ -214,6 +222,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
@@ -230,7 +240,9 @@
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | 29-04-2024 06:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 29-04-2024 06:43 |
+| CareType | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | Slecht (code '556001' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
@@ -239,7 +251,9 @@
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | 29-04-2024 06:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 29-04-2024 06:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ParafunctionalActivityValue | Overmatig knarsen bij stress |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
@@ -250,6 +264,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Erik van Oranje |
 | PayerPerson.BankInformation.BankName | ING |
 | PayerPerson.BankInformation.BankCode | INGBNL2A |
@@ -282,6 +298,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
 | PayerPerson.BankInformation.BankCode | |
@@ -314,7 +332,9 @@
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 29-04-2024 06:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 29-04-2024 06:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | Geen paradontale vervolgbehandeling |
@@ -323,8 +343,10 @@
 
 | | |
 | --- | --- |
-| ProcedureStartDate | 29-04-2024 |
-| ProcedureEndDate | |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| StartDateTime | 29-04-2024 |
+| EndDateTime | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Plaatsen opbouw ten behoeve van implantaatkroon (code 'R67' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
@@ -350,6 +372,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Tandvleesontsteking behandelen |
 | DesiredHealthCondition | |
 | Problem | |
@@ -358,6 +382,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Brug monteren bij rechterbovenkies |
 | DesiredHealthCondition | |
 | Problem | |
