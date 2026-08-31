@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Malocclusie van tanden<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: malocclusie van tanden en/of kiezen<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Tandarts</div>"
   },
   "clinicalStatus": {
     "coding": [
@@ -56,7 +56,7 @@
       {
         "code": "47944004",
         "system": "http://snomed.info/sct",
-        "display": "malocclusie van tanden"
+        "display": "malocclusie van tanden en/of kiezen"
       }
     ],
     "text": "Malocclusie met scheefstand van de snijtand linksboven"
@@ -67,7 +67,7 @@
         {
           "code": "39481002",
           "system": "http://snomed.info/sct",
-          "display": "bovenste tandenboog"
+          "display": "bovenste tandboog"
         }
       ]
     }

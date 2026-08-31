@@ -181,6 +181,12 @@
     {
       "name": {
         "use": "official",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+            "valueCode": "NL4"
+          }
+        ],
         "given": [
           "Leo"
         ],
@@ -194,13 +200,128 @@
             ]
           }
         ],
-        "text": "Leo Jansen",
-        "family": "Jansen",
+        "text": "drs. Leo Jansen-van der Heide MSc",
+        "family": "Jansen-van der Heide",
         "_family": {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
               "valueString": "Jansen"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix",
+              "valueString": "van der"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
+              "valueString": "Heide"
+            }
+          ]
+        },
+        "prefix": [
+          "drs."
+        ],
+        "suffix": [
+          "MSc"
+        ]
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+              "valueString": "Bereikbaar op werkdagen tussen 9.00 en 17.00 uur"
+            }
+          ],
+          "system": "phone",
+          "_system": {
+            "extension": [
+              {
+                "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "MC",
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                      "display": "mobile contact"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "value": "+31612345611",
+          "use": "home"
+        },
+        {
+          "system": "email",
+          "value": "leojansen@icloud.com",
+          "use": "home"
+        }
+      ],
+      "address": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HP",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                  "display": "primary home"
+                }
+              ]
+            }
+          }
+        ],
+        "line": [
+          "Kerkstraat 12B"
+        ],
+        "_line": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                "valueString": "Kerkstraat"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                "valueString": "12"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+                "valueString": "B"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+                "valueString": "naast"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
+                "valueString": "boven de bakkerij"
+              }
+            ]
+          }
+        ],
+        "use": "home",
+        "type": "both",
+        "city": "Didam",
+        "district": "Montferland",
+        "postalCode": "6942 AB",
+        "country": "Nederland",
+        "_country": {
+          "extension": [
+            {
+              "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "NL",
+                    "system": "urn:iso:std:iso:3166",
+                    "display": "Netherlands"
+                  }
+                ]
+              }
             }
           ]
         }

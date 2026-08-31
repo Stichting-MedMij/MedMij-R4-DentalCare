@@ -9,7 +9,7 @@
         "display": "Tandartsen"
       }
     ],
-    "profile": [ 
+    "profile": [
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem"
     ]
   },

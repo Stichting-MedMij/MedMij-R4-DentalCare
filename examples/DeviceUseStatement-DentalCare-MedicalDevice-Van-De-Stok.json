@@ -41,7 +41,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Bedoeld<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandenboog<br/>Indicatie: Malocclusie van tanden<br/>Zorgverlener: B. Dijkstra, Tandarts<br/>Locatie: CWZ Nijmegen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Bedoeld<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandboog<br/>Indicatie: malocclusie van tanden en/of kiezen<br/>Zorgverlener: B. Dijkstra, Tandarts<br/>Locatie: CWZ Nijmegen</div>"
   },
   "status": "intended",
   "subject": {
@@ -68,7 +68,7 @@
   "reasonReference": [
     {
       "reference": "Condition/DentalCare-Problem-Van-De-Stok",
-      "display": "Malocclusie van tanden",
+      "display": "malocclusie van tanden en/of kiezen",
       "type": "Condition"
     }
   ],
@@ -77,7 +77,7 @@
       {
         "code": "39481002",
         "system": "http://snomed.info/sct",
-        "display": "bovenste tandenboog"
+        "display": "bovenste tandboog"
       }
     ]
   },
