@@ -172,12 +172,15 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Bedoeld<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandboog<br/>Indicatie: malocclusie van tanden en/of kiezen<br/>Zorgverlener: B. Dijkstra, Tandarts<br/>Locatie: CWZ Nijmegen</div>"
-* extension[healthProfessional].valueReference = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
-  * type = "PractitionerRole"
-* extension[location].valueReference = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
-  * type = "Location"
-* extension[treatmentObjective].valueReference = Reference(DentalCare-TreatmentObjective-3-Van-De-Stok) "Behandeldoel: geen problemen met kauwen"
-  * type = "Goal"
+* extension[healthProfessional]
+  * valueReference = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Tandarts"
+    * type = "PractitionerRole"
+* extension[location]
+  * valueReference = Reference(DentalCare-Location-CWZ-Nijmegen) "CWZ Nijmegen"
+    * type = "Location"
+* extension[treatmentObjective]
+  * valueReference = Reference(DentalCare-TreatmentObjective-3-Van-De-Stok) "Behandeldoel: geen problemen met kauwen"
+    * type = "Goal"
 * status = #intended
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
@@ -275,54 +278,67 @@ Usage: #example
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Berend van de Stok<br/>Geboortedatum: 1980-05-04<br/>Geslacht: Man<br/>Adres: Bloemstraat 25, 5678 BB Bergen op Zoom, Nederland<br/>Telefoon: +31687654321<br/>E-mail: berendvandestok@gmail.com</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
-  * value.extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason].valueCode = #masked // gemaskeerd BSN
+  * value
+    * extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason]
+      * valueCode = #masked // gemaskeerd BSN
 * name[nameInformation]
   * use = #official
   * text = "Berend van de Stok"
   * family = "van de Stok"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-prefix].valueString = "van de"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Stok"
+    * extension[prefix]
+      * valueString = "van de"
+    * extension[lastName]
+      * valueString = "Stok"
   * given = "Berend"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
+    * extension[givenOrInitial]
+      * valueCode = #BR
 * name[nameInformation-GivenName]
   * use = #usual
   * given = "Berend"
-* telecom[0]
+* telecom[telephoneNumbers]
   * system = #phone
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "Mobile contact"
+    * extension[telecomType]
+      * valueCodeableConcept = $AddressUse#MC "Mobile contact"
   * value = "+31687654321"
   * use = #home
-* telecom[1]
+* telecom[emailAddresses]
   * system = #email
   * value = "berendvandestok@gmail.com"
   * use = #home
 * gender = #male
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender#M "Male"
+  * extension[genderCodelist]
+    * valueCodeableConcept = $AdministrativeGender#M "Man"
 * birthDate = "1980-05-04"
 * deceasedBoolean = false
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "primary home"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#HP "primary home"
   * use = #home
   * type = #both
   * line = "Bloemstraat 25"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Bloemstraat"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "25"
+    * extension[streetName]
+      * valueString = "Bloemstraat"
+    * extension[houseNumber]
+      * valueString = "25"
   * city = "Bergen op Zoom"
   * postalCode = "5678 BB"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 * contact
-  * relationship[0]
+  * relationship[relationship]
     * coding = $RoleCode#FTH "Vader"
-  * relationship[1]
+  * relationship[role]
     * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon"
   * name
     * use = #official
     * text = "Piet Klaas"
     * family = "Klaas"
-      * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Klaas"
+      * extension[lastName]
+        * valueString = "Klaas"
     * given = "Piet"
-      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
+      * extension[givenOrInitial]
+        * valueCode = #BR
 
 Instance: DentalCare-PractitionerRole-Dijkstra
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
@@ -353,27 +369,33 @@ Usage: #example
   * use = #official
   * text = "B. Dijkstra"
   * family = "Dijkstra"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Dijkstra"
+    * extension[lastName]
+      * valueString = "Dijkstra"
   * given = "B."
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
-* telecom[0]
+    * extension[givenOrInitial]
+      * valueCode = #IN
+* telecom[telephoneNumbers]
   * system = #phone
   * value = "+31687654321"
   * use = #work
-* telecom[1]
+* telecom[emailAddresses]
   * system = #email
   * value = "dijkstra@tandarts.nl"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Simon Smitweg 1"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Simon Smitweg"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
+    * extension[streetName]
+      * valueString = "Simon Smitweg"
+    * extension[houseNumber]
+      * valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 
 Instance: DentalCare-Location-CWZ-Nijmegen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider
@@ -384,20 +406,24 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: CWZ Nijmegen<br/>Telefoon: 0246412121<br/>Adres: Weg door Jonkerbos 100, 6532 SZ Nijmegen<br/>Beherende organisatie: Defensie Tandheelkundige Dienst</div>"
 * name = "CWZ Nijmegen"
-* telecom
+* telecom[telephoneNumbers]
   * system = #phone
   * value = "0246412121"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Weg door Jonkerbos 100"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Weg door Jonkerbos"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "100"
+    * extension[streetName]
+      * valueString = "Weg door Jonkerbos"
+    * extension[houseNumber]
+      * valueString = "100"
   * city = "Nijmegen"
   * postalCode = "6532 SZ"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Defensie Tandheelkundige Dienst"
   * type = "Organization"
 
@@ -428,10 +454,13 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: Berend van de Stok</div>"
-* extension[http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation]
-  * extension[bankName].valueString = "ABNA"
-  * extension[bankCode].valueString = "ABNA00NL"
-  * extension[accountNumber].valueString = "NL00ABNA0001234567"
+* extension[bankInformation]
+  * extension[bankName]
+    * valueString = "ABNA"
+  * extension[bankCode]
+    * valueString = "ABNA00NL"
+  * extension[accountNumber]
+    * valueString = "NL00ABNA0001234567"
 * status = #active
 * type = $Verzekeringstype#pay "Pay"
 * beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -449,15 +478,19 @@ Usage: #example
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: A.S.R.<br/>Adres: Archimedeslaan 10, 3584 BA Utrecht</div>"
 * name = "A.S.R."
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Archimedeslaan 10"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Archimedeslaan"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "10"
+    * extension[streetName]
+      * valueString = "Archimedeslaan"
+    * extension[houseNumber]
+      * valueString = "10"
   * city = "Utrecht"
   * postalCode = "3584 BA"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 
 Instance: DentalCare-Encounter-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter

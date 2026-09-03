@@ -209,60 +209,77 @@ Usage: #example
   * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Anita Jansen-van Dijk<br/>Geboortedatum: 2010-03-15<br/>Geslacht: Vrouw<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam, Nederland<br/>Telefoon: +31612345678<br/>E-mail: anitajansen@icloud.com</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
-  * value.extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason].valueCode = #masked // gemaskeerd BSN
+  * value
+    * extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason]
+      * valueCode = #masked // gemaskeerd BSN
 * name[nameInformation]
   * use = #official
   * text = "Anita Jansen-van Dijk"
   * family = "Jansen-van Dijk"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Jansen"
-    * extension[partnerPrefix].valueString = "van"
-    * extension[partnerLastName].valueString = "Dijk"
+    * extension[lastName]
+      * valueString = "Jansen"
+    * extension[partnerPrefix]
+      * valueString = "van"
+    * extension[partnerLastName]
+      * valueString = "Dijk"
   * given = "Anita"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
+    * extension[givenOrInitial]
+      * valueCode = #BR
 * name[nameInformation-GivenName]
   * use = #usual
   * given = "Anita"
 * telecom[telephoneNumbers]
   * system = #phone
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile contact"
+    * extension[telecomType]
+      * valueCodeableConcept = $AddressUse#MC "mobile contact"
   * value = "+31612345678"
   * use = #home
-  * extension[comment].valueString = "Bereikbaar na 16.00 uur"
+  * extension[comment]
+    * valueString = "Bereikbaar na 16.00 uur"
 * telecom[emailAddresses]
   * system = #email
   * value = "anitajansen@icloud.com"
   * use = #home
 * gender = #female
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender#F "Female"
+  * extension[genderCodelist]
+    * valueCodeableConcept = $AdministrativeGender#F "Vrouw"
 * birthDate = "2010-03-15"
 * deceasedBoolean = false
 * multipleBirthBoolean = false
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "primary home"
+  * extension[addressType].valueCodeableConcept = $AddressUse#HP "primary home"
   * use = #home
   * type = #both
   * line = "Achillesstraat 12"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Achillesstraat"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "12"
-    * extension[houseNumberIndication].valueString = "tegenover"
-    * extension[additionalInformation].valueString = "2 hoog achter"
+    * extension[streetName]
+      * valueString = "Achillesstraat"
+    * extension[houseNumber]
+      * valueString = "12"
+    * extension[houseNumberIndication]
+      * valueString = "tegenover"
+    * extension[additionalInformation]
+      * valueString = "2 hoog achter"
   * city = "Amsterdam"
   * district = "Amsterdam"
   * postalCode = "1234 AA"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 * contact
-  * relationship
+  * relationship[role]
     * coding = $VektisCOD472#24 "Wettelijke vertegenwoordiger"
   * name
     * use = #official
     * text = "J.M. Curator"
     * family = "Curator"
-      * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Curator"
+      * extension[lastName]
+        * valueString = "Curator"
     * given[0] = "J."
-      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
+      * extension[givenOrInitial]
+        * valueCode = #IN
     * given[1] = "M."
-      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
+      * extension[givenOrInitial]
+        * valueCode = #IN
 
 Instance: DentalCare-PractitionerRole-De-Ruiter
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
@@ -293,28 +310,35 @@ Usage: #example
   * use = #official
   * text = "D. de Ruiter"
   * family = "de Ruiter"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-prefix].valueString = "de"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Ruiter"
+    * extension[prefix]
+      * valueString = "de"
+    * extension[lastName]
+      * valueString = "Ruiter"
   * given = "D."
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
-* telecom[0]
+    * extension[givenOrInitial]
+      * valueCode = #IN
+* telecom[telephoneNumbers]
   * system = #phone
   * value = "+31612345678"
   * use = #work
-* telecom[1]
+* telecom[emailAddresses]
   * system = #email
   * value = "deruiter@tandarts.nl"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Simon Smitweg 1"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Smitweg"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
+    * extension[streetName]
+      * valueString = "Smitweg"
+    * extension[houseNumber]
+      * valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 
 Instance: DentalCare-Payer-InsuranceCompany-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
@@ -343,10 +367,13 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Betaler: Anita Jansen</div>"
-* extension[http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation]
-  * extension[bankName].valueString = "RABO"
-  * extension[bankCode].valueString = "RABO21NL"
-  * extension[accountNumber].valueString = "NL21RABO0001234567"
+* extension[bankInformation]
+  * extension[bankName]
+    * valueString = "RABO"
+  * extension[bankCode]
+    * valueString = "RABO21NL"
+  * extension[accountNumber]
+    * valueString = "NL21RABO0001234567"
 * status = #active
 * type = $Verzekeringstype#pay "Pay"
 * beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
@@ -367,15 +394,19 @@ Usage: #example
   * value = "3332"
 * name = "Menzis Zorgverzekeraar N.V."
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Lawickse Allee 130"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Lawickse Allee"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "130"
+    * extension[streetName]
+      * valueString = "Lawickse Allee"
+    * extension[houseNumber]
+      * valueString = "130"
   * city = "Wageningen"
   * postalCode = "6709 DZ"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 
 Instance: DentalCare-Encounter-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
@@ -397,8 +428,9 @@ Usage: #example
 * period
   * start = "2023-07-22T09:00:00+01:00"
   * end = "2023-07-22T09:30:00+01:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Second opinion vanwege aanhoudende klachten"
+* reasonCode[deviatingResult]
+  * extension[commentContactReason]
+    * valueString = "Second opinion vanwege aanhoudende klachten"
   * text = "Afwijkende uitslag parodontale screening"
 * reasonReference = Reference(DentalCare-Procedure-Jansen) "Maken en beoordelen kleine röntgenfoto"
 * hospitalization

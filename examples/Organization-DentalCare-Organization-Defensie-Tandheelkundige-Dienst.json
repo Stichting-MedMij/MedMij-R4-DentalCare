@@ -13,6 +13,18 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
     ]
   },
+  "telecom": [
+    {
+      "system": "email",
+      "value": "PJ.Jumpertz.01@mindef.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "+31653603740",
+      "use": "work"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -78,17 +90,5 @@
       "value": "12095095"
     }
   ],
-  "name": "Defensie Tandheelkundige Dienst",
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "+31653603740",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "PJ.Jumpertz.01@mindef.nl",
-      "use": "work"
-    }
-  ]
+  "name": "Defensie Tandheelkundige Dienst"
 }
