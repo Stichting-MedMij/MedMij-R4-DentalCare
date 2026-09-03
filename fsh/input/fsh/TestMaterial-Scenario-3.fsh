@@ -181,7 +181,7 @@ Usage: #example
 * extension[treatmentObjective]
   * valueReference = Reference(DentalCare-TreatmentObjective-3-Van-De-Stok) "Behandeldoel: geen problemen met kauwen"
     * type = "Goal"
-* status = #intended
+* status = #complete
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
 * derivedFrom[procedure-event] = Reference(DentalCare-Procedure-Van-De-Stok) "Eerste consult"

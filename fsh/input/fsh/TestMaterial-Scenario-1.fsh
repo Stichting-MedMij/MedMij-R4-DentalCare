@@ -309,7 +309,7 @@ Usage: #example
       * extension[houseNumberLetter-houseNumberAddition]
         * valueString = "B"
       * extension[houseNumberIndication]
-        * valueString = "naast"
+        * valueString = "by"
       * extension[additionalInformation]
         * valueString = "boven de bakkerij"
     * city = "Didam"
@@ -531,11 +531,11 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-07-22T10:00:00<br/>Einddatum: 2026-07-22T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-07-22T10:00:00<br/>Einddatum: 2026-07-22T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #planned
 * class = $NullFlavor#OTH "Anders"
 * type
-  * text = "Tandarts Periodiek Preventief Onderzoek"
+  * text = "Second opinion"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
 * participant
@@ -546,7 +546,8 @@ Usage: #example
   * end = "2026-07-22T11:00:00+01:00"
 * reasonCode[deviatingResult]
   * extension[commentContactReason]
-    * valueString = "Laatste orthopantomogram (röntgenfoto) was in 2025"
+    * valueString = "Second opinion vanwege aanhoudende klachten"
+  * text = "Afwijkende uitslag parodontale screening"
 * location
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
     * type = "Location"
@@ -558,7 +559,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controleafspraak<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #finished
 * class = $NullFlavor#OTH "Anders"
 * type
@@ -571,10 +572,9 @@ Usage: #example
 * period
   * start = "2025-05-20T10:00:00+01:00"
   * end = "2025-05-20T11:00:00+01:00"
-* reasonCode[deviatingResult]
+* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
   * extension[commentContactReason]
     * valueString = "Extra controle vanwege bloedend tandvlees"
-* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
 * hospitalization
   * admitSource = $SCT#264362003 "thuis"  
 * location

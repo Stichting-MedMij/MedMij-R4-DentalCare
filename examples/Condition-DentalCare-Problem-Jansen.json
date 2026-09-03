@@ -40,7 +40,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Cariës rechterkies<br/>Patiënt: Anita Jansen<br/>Begindatum: 2022-02-11<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Cariës rechterkies<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: D. de Ruiter, Tandarts</div>"
   },
   "clinicalStatus": {
     "coding": [
@@ -88,7 +88,7 @@
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
   "onsetDateTime": "2022-02-11",

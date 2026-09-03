@@ -29,6 +29,12 @@
   "name": [
     {
       "use": "official",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+          "valueCode": "NL4"
+        }
+      ],
       "given": [
         "Anita"
       ],
@@ -134,7 +140,7 @@
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
-              "valueString": "tegenover"
+              "valueString": "to"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
@@ -145,7 +151,7 @@
       ],
       "use": "home",
       "type": "both",
-      "city": "Amsterdam",
+      "city": "Weesp",
       "district": "Amsterdam",
       "postalCode": "1234 AA",
       "country": "Nederland",

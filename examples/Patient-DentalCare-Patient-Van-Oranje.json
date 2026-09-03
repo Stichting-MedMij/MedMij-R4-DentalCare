@@ -294,7 +294,7 @@
               },
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
-                "valueString": "naast"
+                "valueString": "by"
               },
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
