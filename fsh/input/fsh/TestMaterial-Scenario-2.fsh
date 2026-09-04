@@ -120,11 +120,11 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Vullen gaatjes rechterkies<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal, per 11-04-2022<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#high-priority "High Priority"
 * description
-  * text = "Vullen gaatjes rechterkies"
+  * text = "Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal, per 11-04-2022"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
 * target
@@ -433,7 +433,7 @@ Usage: #example
   * end = "2023-07-22T09:30:00+01:00"
 * reasonReference = Reference(DentalCare-Procedure-Jansen) "Maken en beoordelen kleine röntgenfoto"
   * extension[commentContactReason]
-    * valueString = "Laatste orthopantomogram (röntgenfoto) was in 2025"
+    * valueString = "Laatste orthopantomogram (röntgenfoto) was in 2020"
 * hospitalization
   * dischargeDisposition = $SCT#264362003 "thuis"  
 * location

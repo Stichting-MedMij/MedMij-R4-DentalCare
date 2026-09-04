@@ -18,7 +18,7 @@
       "extension": [
         {
           "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
-          "valueString": "Laatste orthopantomogram (röntgenfoto) was in 2025"
+          "valueString": "Laatste orthopantomogram (röntgenfoto) was in 2020"
         }
       ],
       "reference": "Procedure/DentalCare-Procedure-Jansen",

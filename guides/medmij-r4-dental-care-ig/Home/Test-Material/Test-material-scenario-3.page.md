@@ -21,7 +21,7 @@
 | AddressInformation.Postcode | 5678 BB |
 | AddressInformation.PlaceOfResidence | Bergen op Zoom |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31687654321 |
@@ -34,7 +34,7 @@
 | DateOfBirth | 04-05-1980 |
 | Gender | Man (code 'M' from code system 'AdministrativeGender') |
 | MultipleBirthIndicator | |
-| DeathIndicator | |
+| DeathIndicator | Nee |
 | DateOfDeath | |
 
 ## Health Professional data
@@ -61,7 +61,7 @@
 | AddressInformation.Postcode | 2353 GA |
 | AddressInformation.PlaceOfResidence | Leiderdorp |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31687654321 |
@@ -96,7 +96,7 @@
 | AddressInformation.Postcode | 3584 AB |
 | AddressInformation.PlaceOfResidence | Utrecht |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
@@ -124,7 +124,7 @@
 | AddressInformation.Postcode | 6532 SZ |
 | AddressInformation.PlaceOfResidence | Nijmegen |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
@@ -178,7 +178,7 @@
 | | |
 | --- | --- |
 | CariesRiskDateTime | 01-01-2024 08:43 |
-| CariesRiskValue | Verhoogd (code '35105006' from code system 'SNOMED CT') |
+| CariesRiskValue | verhoogd (code '35105006' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Tandarts |
 | Comment | |
 
@@ -187,9 +187,9 @@
 | | |
 | --- | --- |
 | DentalFitnessDateTime | 03-03-2024 10:43 |
-| DentalFitnessValue | Klasse 2 (code '258393007' from code system 'SNOMED CT') |
+| DentalFitnessValue | klasse 2 (code '258393007' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Tandarts |
-| Comment | |
+| Comment | Beginnende gebitsproblemen vastgesteld |
 
 ## Encounter data
 
@@ -212,7 +212,7 @@
 | | |
 | --- | --- |
 | OralHygieneDateTime | 01-01-2024 08:43 |
-| OralHygieneValue | Goed (code '20572008' from code system 'SNOMED CT') |
+| OralHygieneValue | goed (code '20572008' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Tandarts |
 | Comment | |
 
@@ -249,7 +249,7 @@
 | AddressInformation.Postcode | 5678 BB |
 | AddressInformation.PlaceOfResidence | Bergen op Zoom |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | |
@@ -281,7 +281,7 @@
 | AddressInformation.Postcode | 3584 BA |
 | AddressInformation.PlaceOfResidence | Utrecht |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | |
@@ -309,12 +309,9 @@
 | ProcedureType | Eerste consult (code 'F121A' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
-| ProcedureAnatomicalLocation.Laterality| |
-| Indication | |
 | Indication.ProblemType | |
 | Indication.ProblemName | |
 | Indication.FurtherSpecificationProblemName | |
-| Indication.ProblemAnatomicalLocation | |
 | Indication.ProblemAnatomicalLocation.Location | |
 | Indication.ProblemAnatomicalLocation.Laterality | |
 | Indication.ProblemStartDate | |
@@ -332,7 +329,11 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Trekken snijtand linksboven |
-| DesiredHealthCondition | |
+| DesiredHealthCondition.StatusName | |
+| DesiredHealthCondition.StatusValue | |
+| DesiredHealthCondition.StatusDate | |
+| DesiredHealthCondition.Comment | |
+| DesiredHealthCondition.MedicalDevice | |
 | Problem | |
 
 ### Treatment Objective - Wortelpuntoperatie (apexresectie)
@@ -340,5 +341,52 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Wortelpuntoperatie (apexresectie) |
-| DesiredHealthCondition | |
+| DesiredHealthCondition.StatusName | |
+| DesiredHealthCondition.StatusValue | |
+| DesiredHealthCondition.StatusDate | |
+| DesiredHealthCondition.Comment | |
+| DesiredHealthCondition.MedicalDevice | |
 | Problem | |
+
+### Treatment Objective - geen problemen met kauwen
+
+| | |
+| --- | --- |
+| DesiredHealthcareResult | |
+| DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusDate | 31-12-2024 |
+| DesiredHealthCondition.Comment | Na het trekken van de snijtand linksboven en het plaatsen van de beugel moet het kauwen weer klachtenvrij zijn. |
+| DesiredHealthCondition.MedicalDevice | Vaste multibracket-beugel bovenboog |
+| Problem | malocclusie van tanden en/of kiezen |
+
+#### Medical Device - Vaste multibracket-beugel bovenboog
+
+| | |
+| --- | --- |
+| Product.ProductID | (01)08712345678906(11)240115(17)290115(10)ORTHO24A(21)BVDS0001 |
+| Product.ProductType | orthodontische apparatuur (code '25742001' from code system 'SNOMED CT') |
+| ProductDescription | Vaste multibracket-beugel voor de bovenboog |
+| AnatomicalLocation.Location | bovenste tandboog (code '39481002' from code system 'SNOMED CT') |
+| AnatomicalLocation.Laterality | |
+| Indication | malocclusie van tanden en/of kiezen |
+| StartDate | 01-02-2024 |
+| EndDate | 01-08-2025 |
+| Comment | Vaste multibracket-beugel in de bovenboog; controle elke zes weken. |
+| Location | CWZ Nijmegen |
+| HealthProfessional | B. Dijkstra, Tandarts |
+
+#### Problem - malocclusie van tanden en/of kiezen
+
+| | |
+| --- | --- |
+| ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
+| ProblemName | malocclusie van tanden en/of kiezen (code '47944004' from code system 'SNOMED CT') |
+| FurtherSpecificationProblemName | Malocclusie met scheefstand van de snijtand linksboven |
+| ProblemAnatomicalLocation.Location | bovenste tandboog (code '39481002' from code system 'SNOMED CT') |
+| ProblemAnatomicalLocation.Laterality | |
+| ProblemStartDate | 15-11-2023 |
+| ProblemEndDate | |
+| ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| Comment | Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland. |

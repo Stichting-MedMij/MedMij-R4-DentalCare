@@ -148,11 +148,11 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2024-12-31<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: malocclusie van tanden en/of kiezen<br/>Toelichting: Na het trekken van de snijtand linksboven en het plaatsen van de beugel moet het kauwen weer klachtenvrij zijn.</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 31-12-2024<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: malocclusie van tanden en/of kiezen<br/>Toelichting: Na het trekken van de snijtand linksboven en het plaatsen van de beugel moet het kauwen weer klachtenvrij zijn.</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#high-priority "High Priority"
 * description
-  * text = "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2024-12-31"
+  * text = "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 31-12-2024"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
 * target

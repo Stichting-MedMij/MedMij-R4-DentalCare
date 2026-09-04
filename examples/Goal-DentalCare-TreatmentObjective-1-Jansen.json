@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Vullen gaatjes rechterkies<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal, per 11-04-2022<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
   },
   "lifecycleStatus": "active",
   "priority": {
@@ -28,7 +28,7 @@
     ]
   },
   "description": {
-    "text": "Vullen gaatjes rechterkies"
+    "text": "Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal, per 11-04-2022"
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
