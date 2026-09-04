@@ -35,6 +35,8 @@ Usage: #example
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
   * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#62482003 "laag"
+* note
+  * text = "Advies: frequentie van suikerhoudende tussendoortjes beperken."
 
 Instance: DentalCare-DentalFitness-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness
@@ -64,7 +66,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
-* code = $SCT#364126007 "oral hygiene status"
+* code = $SCT#364126007 "status van mondhygiëne"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
 * effectiveDateTime = "2024-04-29T06:43:00+01:00"
@@ -96,7 +98,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen paradontale vervolgbehandeling<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen parodontale vervolgbehandeling<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -106,7 +108,7 @@ Usage: #example
   * type = "PractitionerRole"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
 * note
-  * text = "Geen paradontale vervolgbehandeling"
+  * text = "Geen parodontale vervolgbehandeling"
 
 Instance: DentalCare-TreatmentObjective-1-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
@@ -148,17 +150,53 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
+* extension[procedureMethod]
+  * valueCodeableConcept = $SCT#257867005 "inbrengen"
 * status = #completed
 * category = $SCT#225362009 "tandheelkundige zorg"
 * code = $ProcedureTypeVektisDentalCareCodeSystemOID#R67 "Plaatsen opbouw ten behoeve van implantaatkroon"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
-* performedDateTime = "2024-04-29"
+* performedPeriod
+  * start = "2024-04-29T09:00:00+01:00"
+  * end = "2024-04-29T10:00:00+01:00"
 * performer
   * actor = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
     * type = "PractitionerRole"
 * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
   * type = "Location"
+* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+* bodySite = $SCT#38199008 "tand en/of kies"
+  * extension[laterality]
+    * valueCodeableConcept = $SCT#24028007 "rechts"
+
+Instance: DentalCare-Problem-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2024-04-29<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
+* clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
+* verificationStatus
+  * coding = $ConditionVerificationStatus#confirmed "Confirmed"
+  * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
+* category[problemType] = $SCT#282291009 "interpretatie van diagnose"
+* code
+  * coding = $SCT#80967001 "gaatje in je tand of kies"
+  * text = "Cariës rechterbovenkies"
+* bodySite = $SCT#38199008 "tand en/of kies"
+  * extension[laterality]
+    * valueCodeableConcept = $SCT#24028007 "rechts"
+* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
+* onsetDateTime = "2024-04-26T09:00:00+01:00"
+* recordedDate = "2024-04-26T10:00:00+01:00"
+* asserter = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+  * type = "PractitionerRole"
+* note
+  * text = "Actieve cariës vastgesteld. Restauratieve behandeling en preventief advies besproken."
 
 Instance: DentalCare-Patient-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
@@ -168,58 +206,117 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Nationaliteit: Nederlandse<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
-* extension[http://hl7.org/fhir/StructureDefinition/patient-nationality].extension[code].valueCodeableConcept = urn:oid:2.16.840.1.113883.2.4.4.16.32#0001 "Nederlandse"
+* extension[nationality]
+  * extension[code]
+    * valueCodeableConcept = $GBATabel32Nationaliteiten#0001 "Nederlandse"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
-  * value.extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason].valueCode = #masked // gemaskeerd BSN
+  * value
+    * extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason]
+      * valueCode = #masked // gemaskeerd BSN
 * name[nameInformation]
+  * extension[nameUsage]
+    * valueCode = $HumanNameAssemblyOrder#NL1
   * use = #official
   * text = "Erik van Oranje"
   * family = "van Oranje"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-prefix].valueString = "van"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Oranje"
+    * extension[prefix]
+      * valueString = "van"
+    * extension[lastName]
+      * valueString = "Oranje"
   * given = "Erik"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
+    * extension[givenOrInitial]
+      * valueCode = #BR
 * name[nameInformation-GivenName]
   * use = #usual
   * given = "Erik"
-* telecom[0]
+* telecom[telephoneNumbers]
   * system = #phone
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#MC "mobile contact"
+    * extension[telecomType]
+      * valueCodeableConcept = $AddressUse#MC "mobile contact"
   * value = "+31612345600"
   * use = #home
-* telecom[1]
+* telecom[emailAddresses]
   * system = #email
   * value = "erikvanoranje@icloud.com"
   * use = #home
 * gender = #male
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept.coding = http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender#M "Male"
+  * extension[genderCodelist]
+    * valueCodeableConcept = $AdministrativeGender#M "Man"
 * birthDate = "1991-08-02"
 * deceasedBoolean = false
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#HP "primary home"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#HP "primary home"
   * use = #home
   * type = #both
   * line = "De Doerak 57A"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "De Doerak"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "57"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix].valueString = "A"
+    * extension[streetName]
+      * valueString = "De Doerak"
+    * extension[houseNumber]
+      * valueString = "57"
+    * extension[houseNumberLetter-houseNumberAddition]
+      * valueString = "A"
   * city = "Montferland"
   * postalCode = "6123 PP"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 * contact
   * relationship[0]
     * coding = $ExtraRolcodes#100001 "Mantelzorger"
   * relationship[1]
     * coding = $VektisCOD472#01 "Eerste relatie/contactpersoon"
   * name
+    * extension[nameUsage]
+      * valueCode = $HumanNameAssemblyOrder#NL4
     * use = #official
-    * text = "Leo Jansen"
-    * family = "Jansen"
-      * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Jansen"
+    * text = "Leo Jansen-van der Heide MSc"
+    * family = "Jansen-van der Heide"
+      * extension[lastName]
+        * valueString = "Jansen"
+      * extension[partnerPrefix]
+        * valueString = "van der"
+      * extension[partnerLastName]
+        * valueString = "Heide"
     * given = "Leo"
-      * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #BR
+      * extension[givenOrInitial]
+        * valueCode = #BR
+    * suffix = "MSc"
+  * telecom[telephoneNumbers]
+    * system = #phone
+      * extension[telecomType]
+        * valueCodeableConcept = $AddressUse#MC "mobile contact"
+    * value = "+31612345611"
+    * use = #home
+    * extension[comment]
+      * valueString = "Bereikbaar op werkdagen tussen 9.00 en 17.00 uur"
+  * telecom[emailAddresses]
+    * system = #email
+    * value = "leojansen@icloud.com"
+    * use = #home
+  * address
+    * extension[addressType]
+      * valueCodeableConcept = $AddressUse#HP "primary home"
+    * use = #home
+    * type = #both
+    * line = "Kerkstraat 12B"
+      * extension[streetName]
+        * valueString = "Kerkstraat"
+      * extension[houseNumber]
+        * valueString = "12"
+      * extension[houseNumberLetter-houseNumberAddition]
+        * valueString = "B"
+      * extension[houseNumberIndication]
+        * valueString = "by"
+      * extension[additionalInformation]
+        * valueString = "boven de bakkerij"
+    * city = "Didam"
+    * district = "Montferland"
+    * postalCode = "6942 AB"
+    * country = "Nederland"
+      * extension[countryCode]
+        * valueCodeableConcept = $ISO3166#NL "Netherlands"
 
 Instance: DentalCare-PractitionerRole-De-Koning
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole
@@ -250,34 +347,44 @@ Usage: #example
   * use = #official
   * text = "A.B.D.O. de Koning"
   * family = "de Koning"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-prefix].valueString = "de"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Koning"
+    * extension[prefix]
+      * valueString = "de"
+    * extension[lastName]
+      * valueString = "Koning"
   * given[0] = "A."
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
+    * extension[givenOrInitial]
+      * valueCode = #IN
   * given[1] = "B."
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
+    * extension[givenOrInitial]
+      * valueCode = #IN
   * given[2] = "D."
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
+    * extension[givenOrInitial]
+      * valueCode = #IN
   * given[3] = "O."
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
-* telecom[0]
+    * extension[givenOrInitial]
+      * valueCode = #IN
+* telecom[telephoneNumbers]
   * system = #phone
   * value = "+31612345601"
   * use = #work
-* telecom[1]
+* telecom[emailAddresses]
   * system = #email
   * value = "dekoning@tandarts.nl"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Simon Smitweg 1"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Simon Smitweg"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
+    * extension[streetName]
+      * valueString = "Simon Smitweg"
+    * extension[houseNumber]
+      * valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 
 Instance: DentalCare-Organization-Defensie-Tandheelkundige-Dienst
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization
@@ -291,24 +398,28 @@ Usage: #example
   * system = "http://fhir.nl/fhir/NamingSystem/agb-z"
   * value = "12095095"
 * name = "Defensie Tandheelkundige Dienst"
-* telecom[0]
+* telecom[telephoneNumbers]
   * system = #phone
   * value = "+31653603740"
   * use = #work
-* telecom[1]
+* telecom[emailAddresses]
   * system = #email
   * value = "PJ.Jumpertz.01@mindef.nl"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Herculeslaan 1"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Herculeslaan"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
+    * extension[streetName]
+      * valueString = "Herculeslaan"
+    * extension[houseNumber]
+      * valueString = "1"
   * city = "Utrecht"
   * postalCode = "3584 AB"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 
 Instance: DentalCare-Location-Vliegbasis-Gilze-Rijen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider
@@ -319,20 +430,24 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: Vliegbasis Gilze-Rijen<br/>Telefoon: 0889502753<br/>Adres: Rijksweg 121, 5120 AA Rijen<br/>Beherende organisatie: Defensie Tandheelkundige Dienst</div>"
 * name = "Vliegbasis Gilze-Rijen"
-* telecom
+* telecom[telephoneNumbers]
   * system = #phone
   * value = "0889502753"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Rijksweg 121"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Rijksweg"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "121"
+    * extension[streetName]
+      * valueString = "Rijksweg"
+    * extension[houseNumber]
+      * valueString = "121"
   * city = "Rijen"
   * postalCode = "5120 AA"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 * managingOrganization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Defensie Tandheelkundige Dienst"
   * type = "Organization"
 
@@ -362,11 +477,14 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Verzekeraar: Zorgkantoor Groningen</div>"
-* extension[http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation]
-  * extension[bankName].valueString = "ING"
-  * extension[bankCode].valueString = "INGBNL2A"
-  * extension[accountNumber].valueString = "NL85INGB0001234567"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Betaler: Erik van Oranje</div>"
+* extension[bankInformation]
+  * extension[bankName]
+    * valueString = "ING"
+  * extension[bankCode]
+    * valueString = "INGBNL2A"
+  * extension[accountNumber]
+    * valueString = "NL85INGB0001234567"
 * status = #active
 * type = $Verzekeringstype#pay "Pay"
 * beneficiary = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -382,17 +500,28 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Groningen<br/>Adres: Winschoterdiep 70, 9723 AB Groningen</div>"
+* identifier
+  * system = "http://fhir.nl/fhir/NamingSystem/uzovi"
+  * value = "5501"
 * name = "Zorgkantoor Groningen"
+* telecom[telephoneNumbers]
+  * system = #phone
+  * value = "0501234567"
+  * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Winschoterdiep 70"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Winschoterdiep"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "70"
+    * extension[streetName]
+      * valueString = "Winschoterdiep"
+    * extension[houseNumber]
+      * valueString = "70"
   * city = "Groningen"
   * postalCode = "9723 AB"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 
 Instance: DentalCare-Encounter-1-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
@@ -401,11 +530,11 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-07-22T10:00:00<br/>Einddatum: 2026-07-22T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-07-22T10:00:00<br/>Einddatum: 2026-07-22T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #planned
 * class = $NullFlavor#OTH "Anders"
 * type
-  * text = "Tandarts Periodiek Preventief Onderzoek"
+  * text = "Second opinion"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
 * participant
@@ -414,8 +543,10 @@ Usage: #example
 * period
   * start = "2026-07-22T10:00:00+01:00"
   * end = "2026-07-22T11:00:00+01:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Laatste orthopantomogram (röntgenfoto) was in 2025"
+* reasonCode[deviatingResult]
+  * extension[commentContactReason]
+    * valueString = "Second opinion vanwege aanhoudende klachten"
+  * text = "Afwijkende uitslag parodontale screening"
 * location
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
     * type = "Location"
@@ -427,7 +558,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controleafspraak<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
 * status = #finished
 * class = $NullFlavor#OTH "Anders"
 * type
@@ -440,8 +571,11 @@ Usage: #example
 * period
   * start = "2025-05-20T10:00:00+01:00"
   * end = "2025-05-20T11:00:00+01:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Extra controle vanwege bloedend tandvlees"
+* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+  * extension[commentContactReason]
+    * valueString = "Extra controle vanwege bloedend tandvlees"
+* hospitalization
+  * admitSource = $SCT#264362003 "thuis"  
 * location
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
     * type = "Location"

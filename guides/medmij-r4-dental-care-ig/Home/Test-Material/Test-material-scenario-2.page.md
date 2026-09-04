@@ -7,34 +7,34 @@
 | NameInformation.FirstNames | Anita |
 | NameInformation.Initials | |
 | NameInformation.GivenName | |
-| NameInformation.NameUsage | |
+| NameInformation.NameUsage | Eigen geslachtsnaam gevolgd door geslachtsnaam partner (code 'NL4' from code system 'NaamGebruik') |
 | NameInformation.LastName.Prefix | |
 | NameInformation.LastName.LastName | Jansen |
-| NameInformation.LastNamePartner.PartnerPrefix | |
-| NameInformation.LastNamePartner.PartnerLastName | |
-| NameInformation.Titles | |
+| NameInformation.LastNamePartner.PartnerPrefix | van |
+| NameInformation.LastNamePartner.PartnerLastName | Dijk |
+| NameInformation.Titles | drs. |
 | AddressInformation.Street | Achillesstraat |
 | AddressInformation.HouseNumber | 12 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
-| AddressInformation.HouseNumberIndication | |
+| AddressInformation.HouseNumberIndication | Tegenover (code 'to' from code system 'AanduidingBijHuisnummer') |
 | AddressInformation.Postcode | 1234 AA |
-| AddressInformation.PlaceOfResidence | Amsterdam |
-| AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
-| AddressInformation.AdditionalInformation | |
+| AddressInformation.PlaceOfResidence | Weesp |
+| AddressInformation.Municipality | Amsterdam |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.AdditionalInformation | 2 hoog achter |
 | AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345678 |
 | ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.NumberType | Telefoonnummer thuis (code 'HP' from code system 'AddressUse') |
-| ContactInformation.TelephoneNumbers.Comment | |
+| ContactInformation.TelephoneNumbers.Comment | Bereikbaar na 16.00 uur |
 | ContactInformation.EmailAddresses.EmailAddress | anitajansen@icloud.com |
 | ContactInformation.EmailAddresses.EmailAddressType | Privé e-mailadres (code 'HP' from code system 'AddressUse') |
 | PatientIdentificationNumber | 999998298 (in identifier system 'Burgerservicenummer') |
 | DateOfBirth | 15-03-2010 |
 | Gender | Vrouw (code 'F' from code system 'AdministrativeGender') |
-| MultipleBirthIndicator | |
-| DeathIndicator | |
+| MultipleBirthIndicator | Nee |
+| DeathIndicator | Nee |
 | DateOfDeath | |
 
 ## Health Professional data
@@ -61,7 +61,7 @@
 | AddressInformation.Postcode | 2353 GA |
 | AddressInformation.PlaceOfResidence | Leiderdorp |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345678 |
@@ -96,7 +96,7 @@
 | AddressInformation.Postcode | 3584 AB |
 | AddressInformation.PlaceOfResidence | Utrecht |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
@@ -124,7 +124,7 @@
 | AddressInformation.Postcode | 5120 AA |
 | AddressInformation.PlaceOfResidence | Rijen |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
@@ -169,7 +169,7 @@
 | | |
 | --- | --- |
 | ASAScoreDateTime | 11-02-2022 10:43 |
-| ASAScoreValue | ASA-score 2 (code '413496000' from code system 'SNOMED CT')|
+| ASAScoreValue | ASA-score 2 (code '413496000' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Allergisch voor hooikoorts, rookt 12 sigaretten per dag, gebruikt medicatie Cetirizine |
 
@@ -178,7 +178,7 @@
 | | |
 | --- | --- |
 | CariesRiskDateTime | 11-02-2022 10:43 |
-| CariesRiskValue | Verlaagd (code '1250004' from code system 'SNOMED CT') |
+| CariesRiskValue | verlaagd (code '1250004' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | |
 
@@ -187,7 +187,7 @@
 | | |
 | --- | --- |
 | DentalFitnessDateTime | 08-09-2024 11:43 |
-| DentalFitnessValue | Klasse 0 (code '440351000146101' from code system 'SNOMED CT') |
+| DentalFitnessValue | klasse 0 (code '440351000146101' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | |
 
@@ -195,26 +195,26 @@
 
 | | |
 | --- | --- |
-| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Second opinion |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | D. de Ruiter, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
 | StartDateTime | 22-07-2023 09:00 |
 | EndDateTime | 22-07-2023 09:30 |
 | ContactReason.Problem | |
-| ContactReason.Procedure | |
+| ContactReason.Procedure | Maken en beoordelen kleine röntgenfoto |
 | ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | |
+| ContactReason.CommentContactReason | Laatste orthopantomogram (röntgenfoto) was in 2020 |
 | Origin | |
-| Destination | |
+| Destination | thuis (code '264362003' from code system 'SNOMED CT') |
 
 ## Oral Hygiene data
 
 | | |
 | --- | --- |
 | OralHygieneDateTime | 11-02-2022 10:43 |
-| OralHygieneValue | Zeer slecht (code '1336219002' from code system 'SNOMED CT') |
+| OralHygieneValue | zeer slecht (code '1336219002' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
-| Comment | |
+| Comment | Veel tandsteen aanwezig |
 
 ## Parafunctional Activity data
 
@@ -223,15 +223,15 @@
 | ParafunctionalActivityDateTime | 11-02-2022 10:43 |
 | ParafunctionalActivityValue | Erosie door het drinken van vruchtensap |
 | Performer | D. de Ruiter, Tandarts |
-| Comment | |
+| Comment | Advies gegeven om de inname te beperken en niet direct na consumptie te poetsen |
 
 ## Payer data
 
-### Payer - Anita Jansen
+### Payer - Anita Jansen-van Dijk
 
 | | |
 | --- | --- |
-| PayerPerson.PayerName | Anita Jansen |
+| PayerPerson.PayerName | Anita Jansen-van Dijk |
 | PayerPerson.BankInformation.BankName | RABO |
 | PayerPerson.BankInformation.BankCode | RABO21NL |
 | PayerPerson.BankInformation.AccountNumber | NL21RABO0001234567 |
@@ -249,7 +249,7 @@
 | AddressInformation.Postcode | 1234 AA |
 | AddressInformation.PlaceOfResidence | Amsterdam |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | |
@@ -270,7 +270,7 @@
 | InsuranceCompany.Insurance.StartDateTime | 01-01-2025 |
 | InsuranceCompany.Insurance.EndDateTime | 01-01-2026 |
 | InsuranceCompany.Insurance.InsuranceType | Aanvullend + tand (code 'AT' from code system 'Verzekeringssoort') |
-| InsuranceCompany.IdentificationNumber | |
+| InsuranceCompany.IdentificationNumber | 3332 (in identifier system 'UZOVI') |
 | InsuranceCompany.OrganizationName | Menzis Zorgverzekeraar N.V. |
 | InsuranceCompany.InsurantNumber | 01234567 |
 | AddressInformation.Street | Lawickse Allee |
@@ -281,7 +281,7 @@
 | AddressInformation.Postcode | 6709 DZ |
 | AddressInformation.PlaceOfResidence | Wageningen |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | |
@@ -310,11 +310,9 @@
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
 | ProcedureAnatomicalLocation.Laterality| |
-| Indication | |
 | Indication.ProblemType | |
 | Indication.ProblemName | |
 | Indication.FurtherSpecificationProblemName | |
-| Indication.ProblemAnatomicalLocation | |
 | Indication.ProblemAnatomicalLocation.Location | |
 | Indication.ProblemAnatomicalLocation.Laterality | |
 | Indication.ProblemStartDate | |
@@ -331,14 +329,37 @@
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | Vullen gaatjes rechterkies |
-| DesiredHealthCondition | |
-| Problem | |
+| DesiredHealthcareResult | |
+| DesiredHealthCondition.StatusName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusValue | normaal (code '17621005' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusDate | 11-04-2022 |
+| DesiredHealthCondition.Comment | Caviteiten in de rechterkies restaureren met composiet. |
+| DesiredHealthCondition.MedicalDevice | |
+| Problem | Cariës rechterkies |
+
+#### Problem - Cariës rechterkies
+
+| | |
+| --- | --- |
+| ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
+| ProblemName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
+| FurtherSpecificationProblemName | Cariës rechterkies |
+| ProblemAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
+| ProblemAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
+| ProblemStartDate | 11-02-2022 |
+| ProblemEndDate | |
+| ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| Comment | Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland. |
 
 ### Treatment Objective - Bekijken of vullingen op kroon nog goed aansluiten
 
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Bekijken of vullingen op kroon nog goed aansluiten |
-| DesiredHealthCondition | |
+| DesiredHealthCondition.StatusName | |
+| DesiredHealthCondition.StatusValue | |
+| DesiredHealthCondition.StatusDate | |
+| DesiredHealthCondition.Comment | |
+| DesiredHealthCondition.MedicalDevice | |
 | Problem | |

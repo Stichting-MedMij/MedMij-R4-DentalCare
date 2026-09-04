@@ -7,7 +7,7 @@
 | NameInformation.FirstNames | Erik |
 | NameInformation.Initials | |
 | NameInformation.GivenName | |
-| NameInformation.NameUsage | |
+| NameInformation.NameUsage | Eigen geslachtsnaam (code 'NL1' from code system 'NaamGebruik') |
 | NameInformation.LastName.Prefix | van |
 | NameInformation.LastName.LastName | Oranje |
 | NameInformation.LastNamePartner.PartnerPrefix | |
@@ -21,7 +21,7 @@
 | AddressInformation.Postcode | 6123 PP |
 | AddressInformation.PlaceOfResidence | Montferland |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345600 |
@@ -34,7 +34,7 @@
 | DateOfBirth | 02-08-1991 |
 | Gender | Man (code 'M' from code system 'AdministrativeGender') |
 | MultipleBirthIndicator | |
-| DeathIndicator | |
+| DeathIndicator | Nee |
 | DateOfDeath | |
 
 ## Health Professional data
@@ -61,7 +61,7 @@
 | AddressInformation.Postcode | 2353 GA |
 | AddressInformation.PlaceOfResidence | Leiderdorp |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345601 |
@@ -96,7 +96,7 @@
 | AddressInformation.Postcode | 3584 AB |
 | AddressInformation.PlaceOfResidence | Utrecht |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
@@ -124,7 +124,7 @@
 | AddressInformation.Postcode | 5120 AA |
 | AddressInformation.PlaceOfResidence | Rijen |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
@@ -138,29 +138,29 @@
 | NameInformation.FirstNames | Leo |
 | NameInformation.Initials | |
 | NameInformation.GivenName | |
-| NameInformation.NameUsage | |
+| NameInformation.NameUsage | Eigen geslachtsnaam gevolgd door geslachtsnaam partner (code 'NL4' from code system 'NaamGebruik') |
 | NameInformation.LastName.Prefix | |
 | NameInformation.LastName.LastName | Jansen |
-| NameInformation.LastNamePartner.PartnerPrefix | |
-| NameInformation.LastNamePartner.PartnerLastName | |
-| NameInformation.Titles | |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | |
-| ContactInformation.TelephoneNumbers.TelecomType | |
-| ContactInformation.TelephoneNumbers.NumberType | |
-| ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | |
-| ContactInformation.EmailAddresses.EmailAddressType | |
-| AddressInformation.Street | |
-| AddressInformation.HouseNumber | |
-| AddressInformation.HouseNumberLetter | |
+| NameInformation.LastNamePartner.PartnerPrefix | van der |
+| NameInformation.LastNamePartner.PartnerLastName | Heide |
+| NameInformation.Titles | MSc |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345611 |
+| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.NumberType | Telefoonnummer thuis (code 'HP' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.Comment | Bereikbaar op werkdagen tussen 9.00 en 17.00 uur |
+| ContactInformation.EmailAddresses.EmailAddress | leojansen@icloud.com |
+| ContactInformation.EmailAddresses.EmailAddressType | Privé e-mailadres (code 'HP' from code system 'AddressUse') |
+| AddressInformation.Street | Kerkstraat |
+| AddressInformation.HouseNumber | 12 |
+| AddressInformation.HouseNumberLetter | B |
 | AddressInformation.HouseNumberAddition | |
-| AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | |
-| AddressInformation.PlaceOfResidence | |
-| AddressInformation.Municipality | |
-| AddressInformation.Country | |
-| AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | |
+| AddressInformation.HouseNumberIndication | Bij (code 'by' from code system 'AanduidingBijHuisnummer') |
+| AddressInformation.Postcode | 6942 AB |
+| AddressInformation.PlaceOfResidence | Didam |
+| AddressInformation.Municipality | Montferland |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.AdditionalInformation | boven de bakkerij |
+| AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
 | Role | Eerste relatie/contactpersoon (code '01' from code system 'COD821-VEKT') |
 | Role | Mantelzorger (code '100001' from code system 'ExtraRolcodes') |
 | Relationship | |
@@ -179,7 +179,7 @@
 | | |
 | --- | --- |
 | CariesRiskDateTime | 29-04-2024 06:43 |
-| CariesRiskValue | Laag (code '62482003' from code system 'SNOMED CT') |
+| CariesRiskValue | laag (code '62482003' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
 
@@ -188,7 +188,7 @@
 | | |
 | --- | --- |
 | DentalFitnessDateTime | 02-02-2024 06:43 |
-| DentalFitnessValue | Klasse 1 (code '258392002' from code system 'SNOMED CT') |
+| DentalFitnessValue | klasse 1 (code '258392002' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
 
@@ -198,15 +198,15 @@
 
 | | |
 | --- | --- |
-| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Second opinion |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
 | StartDateTime | 22-07-2026 10:00 |
 | EndDateTime | 22-07-2026 11:00 |
 | ContactReason.Problem | |
 | ContactReason.Procedure | |
-| ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | Laatste orthopantomogram (röntgenfoto) was in 2025 |
+| ContactReason.DeviatingResult | Afwijkende uitslag parodontale screening |
+| ContactReason.CommentContactReason | Second opinion vanwege aanhoudende klachte |
 | Origin | |
 | Destination | |
 
@@ -219,11 +219,11 @@
 | Location | Vliegbasis Gilze-Rijen |
 | StartDateTime | 20-05-2025 10:00 |
 | EndDateTime | 20-05-2025 11:00 |
-| ContactReason.Problem | |
+| ContactReason.Problem | gaatje in je tand of kies |
 | ContactReason.Procedure | |
 | ContactReason.DeviatingResult | |
 | ContactReason.CommentContactReason | Extra controle vanwege bloedend tandvlees |
-| Origin | |
+| Origin | thuis (code '264362003' from code system 'SNOMED CT') |
 | Destination | |
 
 ## Oral Hygiene data
@@ -231,7 +231,7 @@
 | | |
 | --- | --- |
 | OralHygieneDateTime | 29-04-2024 06:43 |
-| OralHygieneValue | Slecht (code '556001' from code system 'SNOMED CT') |
+| OralHygieneValue | slecht (code '556001' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
 
@@ -268,7 +268,7 @@
 | AddressInformation.Postcode | 6123 PP |
 | AddressInformation.PlaceOfResidence | Montferland |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | |
@@ -289,7 +289,7 @@
 | InsuranceCompany.Insurance.StartDateTime | 01-01-2025 |
 | InsuranceCompany.Insurance.EndDateTime | 01-01-2026 |
 | InsuranceCompany.Insurance.InsuranceType | Basis (code 'B' from code system 'Verzekeringssoort') |
-| InsuranceCompany.IdentificationNumber | |
+| InsuranceCompany.IdentificationNumber | 5501 (in identifier system 'UZOVI') |
 | InsuranceCompany.OrganizationName | Zorgkantoor Groningen |
 | InsuranceCompany.InsurantNumber | 12345678 |
 | AddressInformation.Street | Winschoterdiep |
@@ -300,12 +300,12 @@
 | AddressInformation.Postcode | 9723 AB |
 | AddressInformation.PlaceOfResidence | Groningen |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | |
-| ContactInformation.TelephoneNumbers.TelecomType | |
-| ContactInformation.TelephoneNumbers.NumberType | |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | 0501234567 |
+| ContactInformation.TelephoneNumbers.TelecomType | Vast telefoonnummer (code 'LL' from code system 'TelecomDeviceTypes') |
+| ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
@@ -317,30 +317,28 @@
 | PeriodicPeriodontalScreeningScoreDateTime | 29-04-2024 06:43 |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | A.B.D.O. de Koning, Tandarts |
-| Comment | Geen paradontale vervolgbehandeling |
+| Comment | Geen parodontale vervolgbehandeling |
 
 ## Procedure data
 
 | | |
 | --- | --- |
-| ProcedureStartDate | 29-04-2024 |
-| ProcedureEndDate | |
+| ProcedureStartDate | 29-04-2024 09:00 |
+| ProcedureEndDate | 29-04-2024 10:00 |
 | ProcedureType | Plaatsen opbouw ten behoeve van implantaatkroon (code 'R67' from code system 'Vektis Prestatiecodelijst Mondzorg') |
-| ProcedureMethod | |
-| ProcedureAnatomicalLocation.Location | |
-| ProcedureAnatomicalLocation.Laterality| |
-| Indication | |
-| Indication.ProblemType | |
-| Indication.ProblemName | |
-| Indication.FurtherSpecificationProblemName | |
-| Indication.ProblemAnatomicalLocation | |
-| Indication.ProblemAnatomicalLocation.Location | |
-| Indication.ProblemAnatomicalLocation.Laterality | |
-| Indication.ProblemStartDate | |
+| ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
+| ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
+| ProcedureAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
+| Indication.ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
+| Indication.ProblemName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
+| Indication.FurtherSpecificationProblemName | Cariës rechterbovenkies |
+| Indication.ProblemAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
+| Indication.ProblemAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
+| Indication.ProblemStartDate | 26-04-2024 09:00 |
 | Indication.ProblemEndDate | |
-| Indication.ProblemStatus | |
-| Indication.VerificationStatus | |
-| Indication.Comment | |
+| Indication.ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| Indication.VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| Indication.Comment | Actieve cariës vastgesteld. Restauratieve behandeling en preventief advies besproken. |
 | Location | Vliegbasis Gilze-Rijen |
 | Performer | A.B.D.O. de Koning, Tandarts |
 
@@ -351,7 +349,11 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Tandvleesontsteking behandelen |
-| DesiredHealthCondition | |
+| DesiredHealthCondition.StatusName | |
+| DesiredHealthCondition.StatusValue | |
+| DesiredHealthCondition.StatusDate | |
+| DesiredHealthCondition.Comment | |
+| DesiredHealthCondition.MedicalDevice | |
 | Problem | |
 
 ### Treatment Objective - Brug monteren bij rechterbovenkies
@@ -359,5 +361,9 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Brug monteren bij rechterbovenkies |
-| DesiredHealthCondition | |
+| DesiredHealthCondition.StatusName | |
+| DesiredHealthCondition.StatusValue | |
+| DesiredHealthCondition.StatusDate | |
+| DesiredHealthCondition.Comment | |
+| DesiredHealthCondition.MedicalDevice | |
 | Problem | |
