@@ -91,8 +91,8 @@ Title: "zib Procedure-v5.2(2020EN)"
 
 Mapping: MzProcedureMedMij-100-rc1
 Source: MzProcedure
-Id: mz-dataset-100-rc1-20260603
-Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
+Id: mz-dataset-100-rc2-2026xxyy
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-26" "Procedure"
 * extension[procedureMethod].value[x] -> "mz-dataelement-30" "ProcedureMethod"
 * status -> "mz-dataelement-27" "ProcedureStartDate (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"

@@ -18,7 +18,7 @@ topic: DentalFitness
 | | |
 | --- | --- |
 | **CIM** | DentalFitness (based on the [AMedP-4.4 standard](https://www.coemed.org/files/stanags/03_AMEDP/AMedP-4.4_EDB_V1_E.pdf) authored by NATO) |
-| **Functional version** | 1.0.0-rc.1 |
+| **Functional version** | 1.0.0-rc.2 |
 
 The Logical Model is included below.
 
@@ -27,8 +27,8 @@ The Logical Model is included below.
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness&scope=medmij.fhir.nl.r4.dentalcare@1.0.0-rc.1) |
-| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.1 or compatible |
+| **FHIR profile(s)** | {{pagelink: FHIRProfilesIndex, text: <text>http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness</text>, anchor: MzDentalFitness}} |
+| **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.2 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|440271000146100` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#CareType)) |
