@@ -97,6 +97,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Reden contact toelichting | Extra controle vanwege bloedend tandvlees |
 | Zorgverlener | A.B. Janssen <br/> Tandarts |
 | Zorgorganisatie | Tendens |
+| Locatie | Praktijk Amsterdam |
 
 <br/>
 
@@ -306,6 +307,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Manier verrichting | Vrijmaken |
 | Zorgverlener | A.B. Janssen <br/> Tandarts |
 | Zorgorganisatie | Tendens |
+| Locatie | Praktijk Amsterdam |
 
 <br/>
 
@@ -370,7 +372,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Score gezondheid (ASA)</td><td>De ASA-classificatie is het American Society of Anesthesiologists classificatiesysteem voor fysieke status (algehele medische toestand)</td><td></td>
     </tr>
     <tr>
-      <td>ASAScoreDatumTijd</td><td>Item</td><td>medmij-core-dataelement-2</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -387,7 +389,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (medmij-core-dataelement-4)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -421,16 +423,16 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Zowel de naam als het specialisme tonen.</td><td>Contact met (of Zorgverlener)</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
-      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
-      <td></td><td>Locatie (of Zorgorganisatie)</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
-    </tr>
-     <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>09:00</td><td>a</td>
-     <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden Begindatum en Begintijd (of Begindatum en -tijd in één veld weergeven)</td><td></td><td>M</td>
+      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Vliegbasis Gilze-Rijen</td><td>a</td>
+      <td></td><td>Locatie</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
     </tr>
     <tr>
+      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>09:00</td><td>a</td>
+      <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden Begindatum en Begintijd (of Begindatum en -tijd in één veld weergeven)</td><td></td><td>M</td>
+    </tr>
     <tr>
-     <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
-     <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden Einddatum en Eindtijd (of Einddatum en -tijd in één veld weergeven)</td><td></td><td>M</td>
+      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
+      <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden Einddatum en Eindtijd (of Einddatum en -tijd in één veld weergeven)</td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
@@ -451,6 +453,10 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra controle vanwege bloedend tandvlees</td><td>b</td>
       <td></td><td>Reden contact toelichting of Uitleg reden contact</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Defensie Tandheelkundige Dienst</td><td>a</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -538,7 +544,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td></td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -582,7 +588,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.<br/>Dit data-item wordt uitgewisseld via een PractitionerRole op <code>Goal.expressedBy</code>.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -607,7 +613,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Risico op gaatjes</td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes.</td><td></td>
     </tr>
     <tr>
-      <td>CariësrisicoDatumTijd</td><td>Item</td><td>mz-dataelement-2</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -623,7 +629,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (mz-dataelement-4)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -657,7 +663,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td>
     </tr>
     <tr>
-      <td>DentalFitnessDatumTijd</td><td>Item</td><td>mz-dataelement-7</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -675,7 +681,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (mz-dataelement-9)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -700,7 +706,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Mondhygiëne</td><td>Mondhygiëne is de (dagelijkse) verzorging van de mond en het gebit om deze gezond te houden en daardoor gaatjes (cariës) en tandvleesontstekingen te voorkomen.</td><td></td>
     </tr>
     <tr>
-      <td>MondhygiëneDatumTijd</td><td>Item</td><td>mz-dataelement-12</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -716,7 +722,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (mz-dataelement-14)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -743,7 +749,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td>
     </tr>
     <tr>
-      <td>ParafunctioneleActiviteitDatumTijd</td><td>Item</td><td>mz-dataelement-17</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -759,7 +765,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (mz-dataelement-19)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -785,11 +791,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
     </tr>
     <tr>
-      <td>PPSDatumTijd</td><td>Item</td><td>mz-dataelement-22</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>PPSScore</td><td>Item</td><td>mz-dataelement-23</td><td>Pockets 0-3 millimeter = in orde (code 'ppsscore1' in codesysteem 'PeriodicPeriodontalScreeningScore')</td><td>a</td>
+      <td>PeriodiekeParodontaleScreeningScoreWaarde</td><td>Item</td><td>mz-dataelement-23</td><td>Pockets 0-3 millimeter = in orde (code 'ppsscore1' in codesysteem 'PeriodicPeriodontalScreeningScore')</td><td>a</td>
       <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -801,7 +807,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (mz-dataelement-24)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W<br/></td>
     </tr>
   </tbody>
@@ -822,48 +828,44 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>Verrichting</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:14.1.1</td><td></td><td></td>
+      <td><strong>Verrichting</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-26</td><td></td><td></td>
       <td></td><td>Verrichting</td><td></td><td></td>
     </tr>
     <tr>
-      <td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td> 01-01-2024</td><td>a</td>
+      <td>StartDatumTijd</td><td>Item</td><td>medmij-core-dataelement-121</td><td> 01-01-2024</td><td>a</td>
       <td></td><td>Startdatum of Startdatum verrichting of Startdatum en -tijd</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingEindDatum</td><td>Item</td><td>NL-CM:14.1.3</td><td> 01-01-2024</td><td>b</td>
+      <td>EindDatumTijd</td><td>Item</td><td>medmij-core-dataelement-122</td><td> 01-01-2024</td><td>b</td>
       <td></td><td>Einddatum of Einddatum verrichting of Einddatum en -tijd</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 Wortelpuntoperatie, per tandwortel, zonder afsluiting (code 'H42' in codesysteem 'Vektis Prestatiecodelijst Mondzorg')</td><td>a</td>
+      <td>VerrichtingType</td><td>Item</td><td>mz-dataelement-29</td><td>H42 Wortelpuntoperatie, per tandwortel, zonder afsluiting (code 'H42' in codesysteem 'Vektis Prestatiecodelijst Mondzorg')</td><td>a</td>
       <td></td><td>Naam verrichting of Verrichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken (code '302196006' in codesysteem 'SNOMED CT')</td><td>b</td>
+      <td>VerrichtingMethode</td><td>Item</td><td>mz-dataelement-30</td><td>Vrijmaken (code '302196006' in codesysteem 'SNOMED CT')</td><td>b</td>
       <td></td><td>Manier verrichting of Manier</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td></td>
+      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>mz-dataelement-31</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Indicatie::Probleem</td><td>Reference</td><td>NL-CM:14.1.9</td><td></td><td></td>
+      <td>Indicatie::Probleem</td><td>Reference</td><td>mz-dataelement-34</td><td></td><td></td>
       <td></td><td></td><td></td><td>W</td>
     </tr>
     <tr>
-      <td>Verrichting::MedischHulpmiddel</td><td>Reference</td><td>NL-CM:14.1.7</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>mz-dataelement-46</td><td>Vliegbasis Gilze-Rijen</td><td>a</td>
+      <td></td><td>Locatie</td><td></td><td>Locatienaam: M, overige datavelden: C</td>
     </tr>
     <tr>
-      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:14.1.5</td><td>Tendens</td><td>a</td>
-      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
-    </tr>
-    <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-47</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
-      <td>Aanvrager::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.10</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Defensie Tandheelkundige Dienst</td><td>a</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>

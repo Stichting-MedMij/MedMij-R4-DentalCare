@@ -1,7 +1,7 @@
 // All LogicalModels used in Dental Care
 
 Logical: MzLmCariesRisk
-Parent: http://hl7.org/fhir/StructureDefinition/Element
+Parent: http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base
 Id: mz-lm-CariesRisk
 Title: "CariesRisk"
 Description: "Caries risk."
@@ -16,8 +16,11 @@ Description: "Caries risk."
 * ^abstract = false
 * .
   * ^alias = "Cariësrisico"
-* CariesRiskDateTime 0..1 dateTime "Caries risk date/time" "The date and time at which the caries risk was determined."
+* EffectiveDateTime
+  * ^short = "Caries risk date/time"
+  * ^definition = "The date and time at which the caries risk was determined."
   * ^alias = "CariësrisicoDatumTijd"
+* EffectivePeriod 0..0
 * CariesRiskValue 1..1 CodeableConcept "Caries risk value" "The caries risk."
 * CariesRiskValue from CariesRisk_VS (extensible)
   * ^alias = "CariësrisicoWaarde"
@@ -27,7 +30,7 @@ Description: "Caries risk."
   * ^alias = "Toelichting"
 
 Logical: MzLmDentalFitness
-Parent: http://hl7.org/fhir/StructureDefinition/Element
+Parent: http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base
 Id: mz-lm-DentalFitness
 Title: "DentalFitness"
 Description: "Dental fitness according to the NATO classification system."
@@ -42,8 +45,11 @@ Description: "Dental fitness according to the NATO classification system."
 * ^abstract = false
 * .
   * ^alias = "DentalFitness"
-* DentalFitnessDateTime 0..1 dateTime "Dental fitness date/time" "The date and time at which the dental fitness was determined."
+* EffectiveDateTime
+  * ^short = "Dental fitness date/time"
+  * ^definition = "The date and time at which the dental fitness was determined."
   * ^alias = "DentalFitnessDatumTijd"
+* EffectivePeriod 0..0
 * DentalFitnessValue 1..1 CodeableConcept "Dental fitness value" "The dental fitness."
 * DentalFitnessValue from DentalFitness_VS (required)
   * ^alias = "DentalFitnessWaarde"
@@ -53,7 +59,7 @@ Description: "Dental fitness according to the NATO classification system."
   * ^alias = "Toelichting"
 
 Logical: MzLmOralHygiene
-Parent: http://hl7.org/fhir/StructureDefinition/Element
+Parent: http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base
 Id: mz-lm-OralHygiene
 Title: "OralHygiene"
 Description: "Oral hygiene."
@@ -68,8 +74,11 @@ Description: "Oral hygiene."
 * ^abstract = false
 * .
   * ^alias = "Mondhygiëne"
-* OralHygieneDateTime 0..1 dateTime "Oral hygiene date/time" "The date and time at which the oral hygiene was determined."
+* EffectiveDateTime
+  * ^short = "Oral hygiene date/time"
+  * ^definition = "The date and time at which the oral hygiene was determined."
   * ^alias = "MondhygiëneDatumTijd"
+* EffectivePeriod 0..0
 * OralHygieneValue 1..1 CodeableConcept "Oral hygiene value" "The oral hygiene."
 * OralHygieneValue from OralHygiene_VS (extensible)
   * ^alias = "MondhygiëneWaarde"
@@ -79,7 +88,7 @@ Description: "Oral hygiene."
   * ^alias = "Toelichting"
 
 Logical: MzLmParafunctionalActivity
-Parent: http://hl7.org/fhir/StructureDefinition/Element
+Parent: http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base
 Id: mz-lm-ParafunctionalActivity
 Title: "ParafunctionalActivity"
 Description: "Parafunctional activity."
@@ -94,8 +103,11 @@ Description: "Parafunctional activity."
 * ^abstract = false
 * .
   * ^alias = "ParafunctioneleActiviteit"
-* ParafunctionalActivityDateTime 0..1 dateTime "Parafunctional activity date/time" "The date and time at which the parafunctional activity was determined."
+* EffectiveDateTime
+  * ^short = "Parafunctional activity date/time"
+  * ^definition = "The date and time at which the parafunctional activity was determined."
   * ^alias = "ParafunctioneleActiviteitDatumTijd"
+* EffectivePeriod 0..0
 * ParafunctionalActivityValue 1..1 string "Parafunctional activity value" "The parafunctional activity."
   * ^alias = "ParafunctioneleActiviteitWaarde"
 * Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the parafunctional activity."
@@ -104,7 +116,7 @@ Description: "Parafunctional activity."
   * ^alias = "Toelichting"
 
 Logical: MzLmPeriodicPeriodontalScreeningScore
-Parent: http://hl7.org/fhir/StructureDefinition/Element
+Parent: http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base
 Id: mz-lm-PeriodicPeriodontalScreeningScore
 Title: "PeriodicPeriodontalScreeningScore"
 Description: "Periodontal screening for dental plaque-related diseases (Periodic Periodontal Screening, PPS) is a critical routine examination method. The dentist or the dental hygienist can thereby examine the patient, periodically and at each tooth, in a simple and rapid way to identify potential periodontal problems at an early stage. This screening should preferably take place annually."
@@ -119,8 +131,11 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^abstract = false
 * .
   * ^alias = "PeriodiekeParodontaleScreeningScore"
-* PeriodicPeriodontalScreeningScoreDateTime 0..1 dateTime "Periodic Periodontal Screening score date/time" "The date and time at which the PPS was performed."
+* EffectiveDateTime
+  * ^short = "Periodic Periodontal Screening score date/time"
+  * ^definition = "The date and time at which the PPS was performed."
   * ^alias = "PeriodiekeParodontaleScreeningScoreDatumTijd"
+* EffectivePeriod 0..0
 * PeriodicPeriodontalScreeningScoreValue 1..1 CodeableConcept "Periodic Periodontal Screening score value" "The score of the PPS."
 * PeriodicPeriodontalScreeningScoreValue from PeriodicPeriodontalScreeningScore_VS (required)
   * ^alias = "PeriodiekeParodontaleScreeningScoreWaarde"
@@ -130,7 +145,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^alias = "Toelichting"
 
 Logical: MzLmProcedure
-Parent: http://hl7.org/fhir/StructureDefinition/Element
+Parent: http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base
 Id: mz-lm-Procedure
 Title: "Procedure"
 Description: "Therapeutic or diagnostic procedure undergone by the patient in dental care."
@@ -145,10 +160,16 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * ^abstract = false
 * .
   * ^alias = "Verrichting"
-* ProcedureStartDate 0..1 dateTime "Procedure start date" "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the start of the period of a series of related procedures."
-  * ^alias = "VerrichtingStartDatum"
-* ProcedureEndDate 0..1 dateTime "Procedure end date" "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
-  * ^alias = "VerrichtingEindDatum"
+* EffectiveDateTime 0..0
+* EffectivePeriod
+  * start
+    * ^short = "Procedure start date"
+    * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the start of the period of a series of related procedures."
+    * ^alias = "VerrichtingStartDatum"
+  * end
+    * ^short = "Procedure end date"
+    * ^definition = "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
+    * ^alias = "VerrichtingEindDatum"
 * ProcedureType 1..1 CodeableConcept "Procedure type" "The name of the procedure based on the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis."
 * ProcedureType from ProcedureTypeVektisDentalCare_VS (extensible)
   * ^alias = "VerrichtingType"
@@ -193,17 +214,16 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     * ^alias = "VerificatieStatus"
   * Comment 0..1 string "Comment" "Comment by the one who determined or updated the problem."
     * ^alias = "Toelichting"
-* Location 0..1 Reference(MedMijCoreLmHealthcareProvider) "Location" "The healthcare center where the procedure was, is or or will be carried out."
+* Location 0..1 Reference(MedMijCoreLmHealthcareProvider) "Location" "The healthcare center where the procedure was, is or will be carried out."
   * ^alias = "Locatie"
 * Performer 0..* Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who carried out the procedure. In most cases, only the medical specialty is entered, and not the name of the health professional."
   * ^alias = "Uitvoerder"
 
-Mapping: MzLmCariesRiskMedMij-100-rc1
+Mapping: MzLmCariesRiskMedMij-100-rc2
 Source: MzLmCariesRisk
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * . -> "mz-dataelement-1" "CariesRisk"
-* CariesRiskDateTime -> "mz-dataelement-2" "CariesRiskDateTime"
 * CariesRiskValue -> "mz-dataelement-3" "CariesRiskValue"
 * Performer -> "mz-dataelement-4" "Performer"
 * Comment -> "mz-dataelement-5" "Comment"
@@ -214,7 +234,6 @@ Target: "http://snomed.info/sct"
 Id: SNOMED
 Title: "SNOMED CT"
 * . -> "609399004" "risico op cariës"
-* CariesRiskDateTime -> "439771001" "datum van gebeurtenis"
 * CariesRiskValue -> "74024006" "vatbaarheid voor cariës"
 
 Mapping: MzLmCariesRiskLOINC
@@ -224,12 +243,11 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmDentalFitnessMedMij-100-rc1
+Mapping: MzLmDentalFitnessMedMij-100-rc2
 Source: MzLmDentalFitness
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * . -> "mz-dataelement-6" "DentalFitness"
-* DentalFitnessDateTime -> "mz-dataelement-7" "DentalFitnessDateTime"
 * DentalFitnessValue -> "mz-dataelement-8" "DentalFitnessValue"
 * Performer -> "mz-dataelement-9" "Performer"
 * Comment -> "mz-dataelement-10" "Comment"
@@ -239,7 +257,6 @@ Source: MzLmDentalFitness
 Target: "http://snomed.info/sct"
 Id: SNOMED
 Title: "SNOMED CT"
-* DentalFitnessDateTime -> "439771001" "datum van gebeurtenis"
 * DentalFitnessValue -> "440271000146100" "'dental fitness' volgens NAVO-classificatiesysteem"
 
 Mapping: MzLmDentalFitnessLOINC
@@ -249,12 +266,11 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmOralHygieneMedMij-100-rc1
+Mapping: MzLmOralHygieneMedMij-100-rc2
 Source: MzLmOralHygiene
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * . -> "mz-dataelement-11" "OralHygiene"
-* OralHygieneDateTime -> "mz-dataelement-12" "OralHygieneDateTime"
 * OralHygieneValue -> "mz-dataelement-13" "OralHygieneValue"
 * Performer -> "mz-dataelement-14" "Performer"
 * Comment -> "mz-dataelement-15" "Comment"
@@ -265,7 +281,6 @@ Target: "http://snomed.info/sct"
 Id: SNOMED
 Title: "SNOMED CT"
 * . -> "110298001" "bevinding betreffende mondhygiëne"
-* OralHygieneDateTime -> "439771001" "datum van gebeurtenis"
 * OralHygieneValue -> "364126007" "status van mondhygiëne"
 
 Mapping: MzLmOralHygieneLOINC
@@ -275,12 +290,11 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmParafunctionalActivityMedMij-100-rc1
+Mapping: MzLmParafunctionalActivityMedMij-100-rc2
 Source: MzLmParafunctionalActivity
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * . -> "mz-dataelement-16" "ParafunctionalActivity"
-* ParafunctionalActivityDateTime -> "mz-dataelement-17" "ParafunctionalActivityDateTime"
 * ParafunctionalActivityValue -> "mz-dataelement-18" "ParafunctionalActivityValue"
 * Performer -> "mz-dataelement-19" "Performer"
 * Comment -> "mz-dataelement-20" "Comment"
@@ -290,7 +304,6 @@ Source: MzLmParafunctionalActivity
 Target: "http://snomed.info/sct"
 Id: SNOMED
 Title: "SNOMED CT"
-* ParafunctionalActivityDateTime -> "439771001" "datum van gebeurtenis"
 * ParafunctionalActivityValue -> "110353005" "parafunctionele gewoonte"
 
 Mapping: MzLmParafunctionalActivityLOINC
@@ -300,12 +313,11 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MzLmPeriodicPeriodontalScreeningScoreMedMij-100-rc1
+Mapping: MzLmPeriodicPeriodontalScreeningScoreMedMij-100-rc2
 Source: MzLmPeriodicPeriodontalScreeningScore
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * . -> "mz-dataelement-21" "PeriodicPeriodontalScreeningScore"
-* PeriodicPeriodontalScreeningScoreDateTime -> "mz-dataelement-22" "PeriodicPeriodontalScreeningScoreDateTime"
 * PeriodicPeriodontalScreeningScoreValue -> "mz-dataelement-23" "PeriodicPeriodontalScreeningScoreValue"
 * Performer -> "mz-dataelement-24" "Performer"
 * Comment -> "mz-dataelement-25" "Comment"
@@ -315,7 +327,6 @@ Source: MzLmPeriodicPeriodontalScreeningScore
 Target: "http://snomed.info/sct"
 Id: SNOMED
 Title: "SNOMED CT"
-* PeriodicPeriodontalScreeningScoreDateTime -> "439771001" "datum van gebeurtenis"
 * PeriodicPeriodontalScreeningScoreValue -> "540501000146103" "score op periodieke parodontale screening"
 
 Mapping: MzLmPeriodicPeriodontalScreeningScoreLOINC
@@ -331,21 +342,20 @@ Target: "https://zibs.nl/wiki/Procedure-v5.2(2020EN)"
 Id: zib-procedure-v5.2-2020EN
 Title: "zib Procedure-v5.2(2020EN)"
 * . -> "NL-CM:14.1.1" "Procedure"
-* ProcedureStartDate -> "NL-CM:14.1.2" "ProcedureStartDate"
-* ProcedureEndDate -> "NL-CM:14.1.3" "ProcedureEndDate"
+* EffectivePeriod
+  * start -> "NL-CM:14.1.2" "ProcedureStartDate"
+  * end -> "NL-CM:14.1.3" "ProcedureEndDate"
 * ProcedureMethod -> "NL-CM:14.1.12" "ProcedureMethod"
 * ProcedureAnatomicalLocation -> "NL-CM:14.1.13" "ProcedureAnatomicalLocation"
 * Indication -> "NL-CM:14.1.9" "Indication"
 * Location -> "NL-CM:14.1.5" "Location"
 * Performer -> "NL-CM:14.1.6" "Performer"
 
-Mapping: MzLmProcedureMedMij-100-rc1
+Mapping: MzLmProcedureMedMij-100-rc2
 Source: MzLmProcedure
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * . -> "mz-dataelement-26" "Procedure"
-* ProcedureStartDate -> "mz-dataelement-27" "ProcedureStartDate"
-* ProcedureEndDate -> "mz-dataelement-28" "ProcedureEndDate"
 * ProcedureType -> "mz-dataelement-29" "ProcedureType"
 * ProcedureMethod -> "mz-dataelement-30" "ProcedureMethod"
 * ProcedureAnatomicalLocation -> "mz-dataelement-31" "ProcedureAnatomicalLocation"

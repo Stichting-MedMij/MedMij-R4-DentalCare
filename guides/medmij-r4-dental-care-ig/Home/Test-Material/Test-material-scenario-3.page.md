@@ -51,7 +51,7 @@
 | NameInformation.LastNamePartner.PartnerPrefix | |
 | NameInformation.LastNamePartner.PartnerLastName | |
 | NameInformation.Titles | |
-| Speciality | Tandartsen, algemeen practicus (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| Speciality | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | Gender | |
 | AddressInformation.Street | Simon Smitweg |
 | AddressInformation.HouseNumber | 1 |
@@ -168,7 +168,9 @@
 
 | | |
 | --- | --- |
-| ASAScoreDateTime | 01-01-2024 10:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 01-01-2024 10:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 3 (code '413497009' from code system 'SNOMED CT')|
 | Performer | B. Dijkstra, Tandarts |
 | Comment | Allergisch voor gluten, heeft nierziekte en bloedarmoede |
@@ -177,7 +179,9 @@
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | 01-01-2024 08:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 01-01-2024 08:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | CariesRiskValue | Verhoogd (code '35105006' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Tandarts |
 | Comment | |
@@ -186,7 +190,9 @@
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | 03-03-2024 10:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 03-03-2024 10:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | DentalFitnessValue | Klasse 2 (code '258393007' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Tandarts |
 | Comment | |
@@ -195,6 +201,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Consult t.b.v. intake |
 | ContactWith | B. Dijkstra, Tandarts |
 | Location | CWZ Nijmegen |
@@ -211,7 +219,9 @@
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | 01-01-2024 08:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 01-01-2024 08:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | Goed (code '20572008' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Tandarts |
 | Comment | |
@@ -220,7 +230,9 @@
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | 01-01-2024 08:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 01-01-2024 08:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ParafunctionalActivityValue | Tanden knarsen tijdens slaap |
 | Performer | B. Dijkstra, Tandarts |
 | Comment | |
@@ -231,6 +243,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Berend van de Stok |
 | PayerPerson.BankInformation.BankName | ABNA |
 | PayerPerson.BankInformation.BankCode | ABNA00NL |
@@ -263,6 +277,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
 | PayerPerson.BankInformation.BankCode | |
@@ -295,7 +311,9 @@
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 01-01-2024 08:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 01-01-2024 08:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | B. Dijkstra, Tandarts |
 | Comment | Paro-traject |
@@ -304,8 +322,10 @@
 
 | | |
 | --- | --- |
-| ProcedureStartDate | 01-01-2024 |
-| ProcedureEndDate | |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| StartDateTime | 01-01-2024 |
+| EndDateTime | |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Eerste consult (code 'F121A' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
@@ -331,6 +351,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Trekken snijtand linksboven |
 | DesiredHealthCondition | |
 | Problem | |
@@ -339,6 +361,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Wortelpuntoperatie (apexresectie) |
 | DesiredHealthCondition | |
 | Problem | |
