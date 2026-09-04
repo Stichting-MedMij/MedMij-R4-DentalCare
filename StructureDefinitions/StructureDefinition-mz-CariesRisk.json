@@ -173,7 +173,7 @@
         "short": "EffectiveDateTime",
         "definition": "The date and time at which the caries risk was determined.",
         "alias": [
-          "Geldigheid",
+          "Tijdsindicatie",
           "DatumTijd",
           "CariësrisicoDatumTijd"
         ],

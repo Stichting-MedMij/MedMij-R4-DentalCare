@@ -52,7 +52,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^alias = "Patiënt"
 * performedPeriod
   * ^short = "EffectivePeriod"
-  * ^alias[0] = "Geldigheid"
+  * ^alias[0] = "Tijdsindicatie"
   * ^alias[1] = "Periode"
   * start
     * ^short = "StartDateTime"

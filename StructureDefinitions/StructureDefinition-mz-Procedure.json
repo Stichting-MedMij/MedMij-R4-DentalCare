@@ -268,7 +268,7 @@
         "sliceName": "performedPeriod",
         "short": "EffectivePeriod",
         "alias": [
-          "Geldigheid",
+          "Tijdsindicatie",
           "Periode"
         ],
         "min": 0,

@@ -39,7 +39,7 @@ Description: "Oral hygiene."
 * effectiveDateTime
   * ^short = "EffectiveDateTime"
   * ^definition = "The date and time at which the oral hygiene was determined."
-  * ^alias[0] = "Geldigheid"
+  * ^alias[0] = "Tijdsindicatie"
   * ^alias[1] = "DatumTijd"
   * ^alias[2] = "MondhygiëneDatumTijd"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)

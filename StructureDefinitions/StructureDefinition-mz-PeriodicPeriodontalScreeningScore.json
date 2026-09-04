@@ -173,7 +173,7 @@
         "short": "EffectiveDateTime",
         "definition": "The date and time at which the PPS was performed.",
         "alias": [
-          "Geldigheid",
+          "Tijdsindicatie",
           "DatumTijd",
           "PeriodiekeParodontaleScreeningScoreDatumTijd"
         ],
