@@ -216,7 +216,7 @@ Usage: #example
   * extension[nameUsage]
     * valueCode = $HumanNameAssemblyOrder#NL4
   * use = #official
-  * text = "Anita Jansen-van Dijk"
+  * text = "drs. Anita Jansen-van Dijk"
   * family = "Jansen-van Dijk"
     * extension[lastName]
       * valueString = "Jansen"
@@ -227,6 +227,7 @@ Usage: #example
   * given = "Anita"
     * extension[givenOrInitial]
       * valueCode = #BR
+  * prefix = "drs."
 * name[nameInformation-GivenName]
   * use = #usual
   * given = "Anita"

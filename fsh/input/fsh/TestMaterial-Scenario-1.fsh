@@ -271,7 +271,7 @@ Usage: #example
     * extension[nameUsage]
       * valueCode = $HumanNameAssemblyOrder#NL4
     * use = #official
-    * text = "drs. Leo Jansen-van der Heide MSc"
+    * text = "Leo Jansen-van der Heide MSc"
     * family = "Jansen-van der Heide"
       * extension[lastName]
         * valueString = "Jansen"
@@ -282,7 +282,6 @@ Usage: #example
     * given = "Leo"
       * extension[givenOrInitial]
         * valueCode = #BR
-    * prefix = "drs."
     * suffix = "MSc"
   * telecom[telephoneNumbers]
     * system = #phone

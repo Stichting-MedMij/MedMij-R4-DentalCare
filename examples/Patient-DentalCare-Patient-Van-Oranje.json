@@ -200,7 +200,7 @@
             ]
           }
         ],
-        "text": "drs. Leo Jansen-van der Heide MSc",
+        "text": "Leo Jansen-van der Heide MSc",
         "family": "Jansen-van der Heide",
         "_family": {
           "extension": [
@@ -218,9 +218,6 @@
             }
           ]
         },
-        "prefix": [
-          "drs."
-        ],
         "suffix": [
           "MSc"
         ]
