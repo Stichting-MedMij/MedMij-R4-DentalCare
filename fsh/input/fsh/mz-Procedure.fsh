@@ -56,13 +56,13 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
   * ^alias[1] = "Periode"
   * start
     * ^short = "StartDateTime"
-    * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted. The element offers the option to indicate the start of the period of a series of related procedures."
+    * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted.\n\nThe element offers the option to indicate the start of the period of a series of related procedures."
     * ^comment = "If the CIM Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent concepts StartDateTime and EndDateTime. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for StartDateTime (EndDateTime doesn't have a meaning in this case; StartDateTime is the moment the procedure is performed)."
     * ^alias[0] = "StartDatumTijd"
     * ^alias[1] = "VerrichtingStartDatum"
   * end
     * ^short = "EndDateTime"
-    * ^definition = "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted. The element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
+    * ^definition = "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\n\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
     * ^comment = "If the CIM Procedure concerns a procedure performed over a period, `Procedure.performedPeriod.start` and `Procedure.performedPeriod.end` are used to represent concepts StartDateTime and EndDateTime. For instantaneous or very short lasting procedures, `Procedure.performedDateTime` is used for StartDateTime (EndDateTime doesn't have a meaning in this case; StartDateTime is the moment the procedure is performed)."
     * ^alias[0] = "EindDatumTijd"
     * ^alias[1] = "VerrichtingEindDatum"

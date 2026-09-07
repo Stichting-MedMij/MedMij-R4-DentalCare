@@ -164,11 +164,11 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
 * EffectivePeriod
   * start
     * ^short = "Procedure start date"
-    * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the start of the period of a series of related procedures."
+    * ^definition = "The start date (and if possible start time) of the procedure. A 'vague' date, such as only the year, is permitted.\n\nThe element offers the option to indicate the start of the period of a series of related procedures."
     * ^alias = "VerrichtingStartDatum"
   * end
     * ^short = "Procedure end date"
-    * ^definition = "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
+    * ^definition = "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\n\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
     * ^alias = "VerrichtingEindDatum"
 * ProcedureType 1..1 CodeableConcept "Procedure type" "The name of the procedure based on the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis."
 * ProcedureType from ProcedureTypeVektisDentalCare_VS (extensible)
