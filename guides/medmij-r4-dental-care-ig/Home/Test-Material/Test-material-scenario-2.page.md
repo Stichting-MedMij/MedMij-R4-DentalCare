@@ -245,19 +245,19 @@
 | AddressInformation.HouseNumber | 12 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
-| AddressInformation.HouseNumberIndication | |
+| AddressInformation.HouseNumberIndication | Tegenover (code 'to' from code system 'AanduidingBijHuisnummer') |
 | AddressInformation.Postcode | 1234 AA |
-| AddressInformation.PlaceOfResidence | Amsterdam |
-| AddressInformation.Municipality | |
+| AddressInformation.PlaceOfResidence | Weesp |
+| AddressInformation.Municipality | Amsterdam |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
-| AddressInformation.AdditionalInformation | |
+| AddressInformation.AdditionalInformation | 2 hoog achter |
 | AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | |
-| ContactInformation.TelephoneNumbers.TelecomType | |
-| ContactInformation.TelephoneNumbers.NumberType | |
-| ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | |
-| ContactInformation.EmailAddresses.EmailAddressType | |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345678 |
+| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.NumberType | Telefoonnummer thuis (code 'HP' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.Comment | Bereikbaar na 16.00 uur |
+| ContactInformation.EmailAddresses.EmailAddress | anitajansen@icloud.com |
+| ContactInformation.EmailAddresses.EmailAddressType | Privé e-mailadres (code 'HP' from code system 'AddressUse') |
 
 ### Payer - Menzis Zorgverzekeraar N.V.
 
