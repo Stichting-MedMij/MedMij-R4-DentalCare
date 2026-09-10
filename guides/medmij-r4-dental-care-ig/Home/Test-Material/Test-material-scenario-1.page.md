@@ -39,6 +39,8 @@
 
 ## Health Professional data
 
+### Health Professional - A.B.D.O. de Koning
+
 | | |
 | --- | --- |
 | HealthProfessionalIdentificationNumber | 12070100 (in identifier system 'BIG register inschrijvingsnummer') |
@@ -73,6 +75,42 @@
 | HealthcareProvider | Defensie Tandheelkundige Dienst |
 | HealthProfessionalRole | |
 
+### Health Professional - S. Vermeer
+
+| | |
+| --- | --- |
+| HealthProfessionalIdentificationNumber | 87001201 (in identifier system 'BIG register inschrijvingsnummer') |
+| NameInformation.FirstNames | |
+| NameInformation.Initials | S. |
+| NameInformation.GivenName | |
+| NameInformation.NameUsage | |
+| NameInformation.LastName.Prefix | |
+| NameInformation.LastName.LastName | Vermeer |
+| NameInformation.LastNamePartner.PartnerPrefix | |
+| NameInformation.LastNamePartner.PartnerLastName | |
+| NameInformation.Titles | |
+| Speciality | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
+| Gender | Vrouw (code 'F' from code system 'AdministrativeGender') |
+| AddressInformation.Street | Simon Smitweg |
+| AddressInformation.HouseNumber | 1 |
+| AddressInformation.HouseNumberLetter | |
+| AddressInformation.HouseNumberAddition | |
+| AddressInformation.HouseNumberIndication | |
+| AddressInformation.Postcode | 2353 GA |
+| AddressInformation.PlaceOfResidence | Leiderdorp |
+| AddressInformation.Municipality | |
+| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.AdditionalInformation | |
+| AddressInformation.AddressType | |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345603 |
+| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.Comment | |
+| ContactInformation.EmailAddresses.EmailAddress | vermeer@mondhygienist.nl |
+| ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| HealthProfessionalRole | |
+
 ## Healthcare Provider data
 
 ### Healthcare Provider - Defensie Tandheelkundige Dienst
@@ -81,27 +119,24 @@
 | --- | --- |
 | HealthProviderIdentificationNumber | 12095095 (in identifier system 'Vektis AGB-zorgverlener tabel') |
 | OrganizationName | Defensie Tandheelkundige Dienst |
-| DepartmentSpeciality | |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | +31653603740 |
+| DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345602 |
 | ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | PJ.Jumpertz.01@mindef.nl |
+| ContactInformation.EmailAddresses.EmailAddress | info@dtd.tandarts.nl |
 | ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
-| AddressInformation.Street | Herculeslaan |
-| AddressInformation.HouseNumber | 1 |
+| AddressInformation.Street | Paradeplein |
+| AddressInformation.HouseNumber | 5 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 3584 AB |
+| AddressInformation.Postcode | 3511 XX |
 | AddressInformation.PlaceOfResidence | Utrecht |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-| OrganizationType | |
-| OrganizationLocation.LocationName | |
-| OrganizationLocation.LocationNumber | |
 
 ### Healthcare Provider - Vliegbasis Gilze-Rijen
 
@@ -109,27 +144,25 @@
 | --- | --- |
 | HealthProviderIdentificationNumber | |
 | OrganizationName | Vliegbasis Gilze-Rijen |
-| DepartmentSpeciality | |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | 0889502753 |
+| DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | 0881234567 |
 | ContactInformation.TelephoneNumbers.TelecomType | Vast telefoonnummer (code 'LL' from code system 'TelecomDeviceTypes') |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
-| AddressInformation.Street | Rijksweg |
-| AddressInformation.HouseNumber | 121 |
+| AddressInformation.Street | Kampweg |
+| AddressInformation.HouseNumber | 8 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 5120 AA |
+| AddressInformation.Postcode | 5121 XX |
 | AddressInformation.PlaceOfResidence | Rijen |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-| OrganizationType | |
-| OrganizationLocation.LocationName | |
-| OrganizationLocation.LocationNumber | |
+| OrganizationType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 
 ## Contact Person data
 
@@ -232,7 +265,7 @@
 | --- | --- |
 | OralHygieneDateTime | 29-04-2024 06:43 |
 | OralHygieneValue | Slecht (code '556001' from code system 'SNOMED CT') |
-| Performer | A.B.D.O. de Koning, Tandarts |
+| Performer | S. Vermeer, Mondhygiënist |
 | Comment | |
 
 ## Parafunctional Activity data

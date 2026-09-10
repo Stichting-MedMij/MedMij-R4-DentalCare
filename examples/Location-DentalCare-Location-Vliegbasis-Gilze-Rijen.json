@@ -29,25 +29,25 @@
       }
     ],
     "line": [
-      "Rijksweg 121"
+      "Kampweg 8"
     ],
     "_line": [
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-            "valueString": "Rijksweg"
+            "valueString": "Kampweg"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-            "valueString": "121"
+            "valueString": "8"
           }
         ]
       }
     ],
     "use": "work",
     "city": "Rijen",
-    "postalCode": "5120 AA",
+    "postalCode": "5121 XX",
     "country": "Nederland",
     "_country": {
       "extension": [
@@ -68,13 +68,13 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Vliegbasis Gilze-Rijen<br/>Telefoon: 0889502753<br/>Adres: Rijksweg 121, 5120 AA Rijen<br/>Beherende organisatie: Defensie Tandheelkundige Dienst</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Vliegbasis Gilze-Rijen<br/>Telefoon: 0881234567<br/>Adres: Kampweg 8, 5121 XX Rijen<br/>Beherende organisatie: Defensie Tandheelkundige Dienst</div>"
   },
   "name": "Vliegbasis Gilze-Rijen",
   "telecom": [
     {
       "system": "phone",
-      "value": "0889502753",
+      "value": "0881234567",
       "use": "work"
     }
   ],

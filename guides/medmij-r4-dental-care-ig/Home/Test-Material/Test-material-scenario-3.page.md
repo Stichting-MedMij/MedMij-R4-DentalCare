@@ -81,27 +81,27 @@
 | --- | --- |
 | HealthProviderIdentificationNumber | 12095095 (in identifier system 'Vektis AGB-zorgverlener tabel') |
 | OrganizationName | Defensie Tandheelkundige Dienst |
-| DepartmentSpeciality | |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | +31653603740 |
+| DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345602 |
 | ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | PJ.Jumpertz.01@mindef.nl |
+| ContactInformation.EmailAddresses.EmailAddress | info@dtd.tandarts.nl |
 | ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
-| AddressInformation.Street | Herculeslaan |
-| AddressInformation.HouseNumber | 1 |
+| AddressInformation.Street | Paradeplein |
+| AddressInformation.HouseNumber | 5 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 3584 AB |
+| AddressInformation.Postcode | 3511 XX |
 | AddressInformation.PlaceOfResidence | Utrecht |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-| OrganizationType | |
-| OrganizationLocation.LocationName | |
-| OrganizationLocation.LocationNumber | |
+| OrganizationType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| OrganizationLocation.LocationName | CWZ Nijmegen |
+| OrganizationLocation.LocationNumber | 1 |
 
 ### Healthcare Provider - CWZ Nijmegen
 
@@ -109,7 +109,7 @@
 | --- | --- |
 | HealthProviderIdentificationNumber | |
 | OrganizationName | CWZ Nijmegen |
-| DepartmentSpeciality | |
+| DepartmentSpeciality | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | 0246412121 |
 | ContactInformation.TelephoneNumbers.TelecomType | Vast telefoonnummer (code 'LL' from code system 'TelecomDeviceTypes') |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
@@ -127,9 +127,7 @@
 | AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-| OrganizationType | |
-| OrganizationLocation.LocationName | |
-| OrganizationLocation.LocationNumber | |
+
 
 ## Contact Person data
 
