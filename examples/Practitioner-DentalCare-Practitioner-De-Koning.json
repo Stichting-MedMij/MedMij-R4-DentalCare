@@ -72,6 +72,18 @@
       }
     }
   ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "dekoning@tandarts.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "+31612345601",
+      "use": "work"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -135,18 +147,6 @@
     {
       "system": "http://fhir.nl/fhir/NamingSystem/big",
       "value": "12070100"
-    }
-  ],
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "+31612345601",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "dekoning@tandarts.nl",
-      "use": "work"
     }
   ]
 }

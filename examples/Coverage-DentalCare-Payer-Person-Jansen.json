@@ -43,18 +43,18 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Betaler: Anita Jansen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Betaler: Anita Jansen-van Dijk</div>"
   },
   "status": "active",
   "beneficiary": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
   "payor": [
     {
       "reference": "Patient/DentalCare-Patient-Jansen",
-      "display": "Anita Jansen",
+      "display": "Anita Jansen-van Dijk",
       "type": "Patient"
     }
   ]

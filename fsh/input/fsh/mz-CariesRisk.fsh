@@ -44,8 +44,8 @@ Description: "Caries risk."
 
 Mapping: MzCariesRiskMedMij-100-rc1
 Source: MzCariesRisk
-Id: mz-dataset-100-rc1-20260603
-Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
+Id: mz-dataset-100-rc2-2026xxyy
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-1" "CariesRisk"
 * effectiveDateTime -> "mz-dataelement-2" "CariesRiskDateTime"
 * performer -> "mz-dataelement-4" "Performer"

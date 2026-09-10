@@ -44,8 +44,8 @@ Description: "Dental fitness according to the NATO classification system."
 
 Mapping: MzDentalFitnessMedMij-100-rc1
 Source: MzDentalFitness
-Id: mz-dataset-100-rc1-20260603
-Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
+Id: mz-dataset-100-rc2-2026xxyy
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-6" "DentalFitness"
 * effectiveDateTime -> "mz-dataelement-7" "DentalFitnessDateTime"
 * performer -> "mz-dataelement-9" "Performer"

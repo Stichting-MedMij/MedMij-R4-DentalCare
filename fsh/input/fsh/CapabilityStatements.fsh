@@ -657,7 +657,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Procedure' transaction (system role: MZ-PRR-rc.1)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Procedure' transaction (system role: MZ-PRR-rc.2)."
   * resource[+]
     * type = #Procedure
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
@@ -728,7 +728,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Procedure' transaction (system role: MZ-PRB-rc.1)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Procedure' transaction (system role: MZ-PRB-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"

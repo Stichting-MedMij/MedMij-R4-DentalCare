@@ -1,13 +1,18 @@
 // All Aliases used in Dental Care
 
 Alias: $ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $AddressUse = http://terminology.hl7.org/CodeSystem/v3-AddressUse
+Alias: $AdministrativeGender = http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender
 Alias: $CariesRiskValueSetOID = urn:oid:2.16.528.1.1023.4.1.5
 Alias: $ConditionClinicalStatusCodes = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ConditionVerificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status 
 Alias: $DentalFitnessValueSetOID = urn:oid:2.16.528.1.1023.4.1.1
 Alias: $ExtraRolcodes = urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.23.1
+Alias: $GBATabel32Nationaliteiten = urn:oid:2.16.840.1.113883.2.4.4.16.32
 Alias: $GoalPriority = http://terminology.hl7.org/CodeSystem/goal-priority
 Alias: $GS1GTIN = https://www.gs1.org/gtin
+Alias: $HumanNameAssemblyOrder = http://terminology.hl7.org/CodeSystem/name-assembly-order
+Alias: $ISO3166 = urn:iso:std:iso:3166
 Alias: $MzLmCariesRiskOID = urn:oid:2.16.528.1.1023.3.1.5
 Alias: $MzLmDentalFitnessOID = urn:oid:2.16.528.1.1023.3.1.1
 Alias: $MzLmOralHygieneOID = urn:oid:2.16.528.1.1023.3.1.4
@@ -15,7 +20,6 @@ Alias: $MzLmParafunctionalActivityOID = urn:oid:2.16.528.1.1023.3.1.6
 Alias: $MzLmPeriodicPeriodontalScreeningScoreOID = urn:oid:2.16.528.1.1023.3.1.3
 Alias: $MzLmProcedureOID = urn:oid:2.16.528.1.1023.3.1.7
 Alias: $NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
-Alias: $Naamgebruik = urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.4
 Alias: $OralHygieneValueSetOID = urn:oid:2.16.528.1.1023.4.1.4
 Alias: $PeriodicPeriodontalScreeningScoreCodeSystemOID = urn:oid:2.16.528.1.1023.2.1.1
 Alias: $PeriodicPeriodontalScreeningScoreCodeSystemURL = http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore

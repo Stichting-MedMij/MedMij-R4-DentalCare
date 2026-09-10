@@ -70,7 +70,7 @@ Anita Jansen vermoed dat ze gaatjes heeft. Ze is naar een civiele tandarts gewee
 - In de PGO van de patiënt worden de opgevraagde gegevens overzichtelijk en begrijpelijk getoond.
 
 ### Bedrijfsrollen
-Deze usecase onderscheidt twee bedrijfsrollen, namelijk de *Patiënt* en de *Zorgaanbieder*, zoals te zien in onderstaande tabel.
+Deze usecase onderscheidt twee bedrijfsrollen, namelijk de _Patiënt_ en de _Zorgaanbieder_, zoals te zien in onderstaande tabel.
 
 | Bedrijfsrol (actor) | Beschrijving bedrijfsrol |
 | --- | --- |
@@ -105,6 +105,6 @@ De onderstaande tabel geeft een overzicht van alle granulaire gegevensdiensten d
 | 900000104 | {{pagelink: OralHygiene, text: Verzamelen Mondzorg - Mondhygiëne}} | 1.0.0-rc.1
 | 900000106 | {{pagelink: ParafunctionalActivity, text: Verzamelen Mondzorg - Parafunctionele activiteit}} | 1.0.0-rc.1 |
 | 900000108 | {{pagelink: PeriodicPeriodontalScreeningScore, text: Verzamelen Mondzorg - Periodieke Parodontale Screening-score}} | 1.0.0-rc.1 |
-| 900000102 | {{pagelink: Procedure, text: Verzamelen Mondzorg - Verrichting}} | 1.0.0-rc.1 |
+| 900000102 | {{pagelink: Procedure, text: Verzamelen Mondzorg - Verrichting}} | 1.0.0-rc.2 |
 
 **Tabel 2: Granulaire gegevensdiensten relevant voor Mondzorg**

@@ -44,8 +44,8 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 
 Mapping: MzPeriodicPeriodontalScreeningScoreMedMij-100-rc1
 Source: MzPeriodicPeriodontalScreeningScore
-Id: mz-dataset-100-rc1-20260603
-Title: "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
+Id: mz-dataset-100-rc2-2026xxyy
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-21" "PeriodicPeriodontalScreeningScore"
 * effectiveDateTime -> "mz-dataelement-22" "PeriodicPeriodontalScreeningScoreDateTime"
 * performer -> "mz-dataelement-24" "Performer"
