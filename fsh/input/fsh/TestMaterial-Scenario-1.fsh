@@ -7,7 +7,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:15<br/>Score: ASA-score 1<br/>Opmerking: Verandering gezondheid: enkel gebroken<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:15<br/>Score: ASA-score 1<br/>Opmerking: Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën.<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
@@ -17,7 +17,7 @@ Usage: #example
   * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#413495001 "ASA-score 1"
 * note
-  * text = "Verandering gezondheid: enkel gebroken"
+  * text = "Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën."
 
 Instance: DentalCare-CariesRisk-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
@@ -199,6 +199,61 @@ Usage: #example
 * note
   * text = "Actieve cariës vastgesteld tijdens periodiek preventief onderzoek. Restauratieve behandeling (éénvlaksvulling) en preventief advies besproken."
 
+Instance: DentalCare-Encounter-1-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-05-20T10:00:00<br/>Einddatum: 2026-05-20T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+* status = #planned
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Tandarts Periodiek Preventief Onderzoek"
+* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+    * type = "PractitionerRole"
+* period
+  * start = "2026-05-20T10:00:00+01:00"
+  * end = "2026-05-20T11:00:00+01:00"
+* reasonCode
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025"
+* location
+  * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
+    * type = "Location"
+
+Instance: DentalCare-Encounter-2-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controleafspraak<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+* status = #finished
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Tandarts Periodiek Preventief Onderzoek"
+* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+    * type = "PractitionerRole"
+* period
+  * start = "2025-05-20T10:00:00+01:00"
+  * end = "2025-05-20T11:00:00+01:00"
+* reasonCode
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne."
+* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+* hospitalization
+  * admitSource = $SCT#264362003 "thuis"  
+* location
+  * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
+    * type = "Location"
+    
 Instance: DentalCare-Patient-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
 Usage: #example
@@ -206,10 +261,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Nationaliteit: Nederlandse<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
-* extension[nationality]
-  * extension[code]
-    * valueCodeableConcept = $GBATabel32Nationaliteiten#0001 "Nederlandse"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
   * value
@@ -346,61 +398,6 @@ Usage: #example
 * organization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Defensie Tandheelkundige Dienst"
   * type = "Organization"
 * specialty[specialty] = $VektisAGB#8700 "Mondhygiënisten"
-
-Instance: DentalCare-Encounter-1-Van-Oranje
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-05-20T10:00:00<br/>Einddatum: 2026-05-20T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
-* status = #planned
-* class = $NullFlavor#OTH "Anders"
-* type
-  * text = "Tandarts Periodiek Preventief Onderzoek"
-* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
-  * type = "Patient"
-* participant
-  * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
-    * type = "PractitionerRole"
-* period
-  * start = "2026-05-20T10:00:00+01:00"
-  * end = "2026-05-20T11:00:00+01:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025"
-* location
-  * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
-    * type = "Location"
-
-Instance: DentalCare-Encounter-2-Van-Oranje
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controleafspraak<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
-* status = #finished
-* class = $NullFlavor#OTH "Anders"
-* type
-  * text = "Tandarts Periodiek Preventief Onderzoek"
-* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
-  * type = "Patient"
-* participant
-  * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
-    * type = "PractitionerRole"
-* period
-  * start = "2025-05-20T10:00:00+01:00"
-  * end = "2025-05-20T11:00:00+01:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne."
-* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
-* hospitalization
-  * admitSource = $SCT#264362003 "thuis"  
-* location
-  * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
-    * type = "Location"
 
 Instance: DentalCare-Practitioner-De-Koning
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner

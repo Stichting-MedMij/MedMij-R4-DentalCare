@@ -264,7 +264,7 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01T09:00:00+01:00<br/>Einddatum: 2025-08-01T09:30:00+01:00<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
 * status = #planned
-* class = $NullFlavor#OTH "Anders"
+* class = $ActCode#AMB "Poliklinisch"
 * type
   * text = "Controle / debonding"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"

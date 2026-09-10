@@ -6,7 +6,7 @@
 | --- | --- |
 | NameInformation.FirstNames | Berend |
 | NameInformation.Initials | |
-| NameInformation.GivenName | |
+| NameInformation.GivenName | Berend |
 | NameInformation.NameUsage | |
 | NameInformation.LastName.Prefix | van de |
 | NameInformation.LastName.LastName | Stok |
@@ -39,6 +39,8 @@
 
 ## Health Professional data
 
+### Health Professional - B. Dijkstra
+
 | | |
 | --- | --- |
 | HealthProfessionalIdentificationNumber | 12000003 (in identifier system 'BIG register inschrijvingsnummer') |
@@ -51,83 +53,55 @@
 | NameInformation.LastNamePartner.PartnerPrefix | |
 | NameInformation.LastNamePartner.PartnerLastName | |
 | NameInformation.Titles | |
-| Speciality | Tandartsen, algemeen practicus (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| Speciality | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | Gender | |
-| AddressInformation.Street | Simon Smitweg |
-| AddressInformation.HouseNumber | 1 |
+| AddressInformation.Street | Stationsstraat |
+| AddressInformation.HouseNumber | 18 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 2353 GA |
-| AddressInformation.PlaceOfResidence | Leiderdorp |
+| AddressInformation.Postcode | 4611 XX |
+| AddressInformation.PlaceOfResidence | Bergen op Zoom |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | +31687654321 |
-| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345604 |
+| ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | dijkstra@tandarts.nl |
+| ContactInformation.EmailAddresses.EmailAddress | dijkstra@orthodontiedijkstra.nl |
 | ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
-| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| HealthcareProvider | Orthodontiepraktijk Dijkstra |
 | HealthProfessionalRole | |
 
 ## Healthcare Provider data
 
-### Healthcare Provider - Defensie Tandheelkundige Dienst
+### Healthcare Provider - Orthodontiepraktijk Dijkstra
 
 | | |
 | --- | --- |
-| HealthProviderIdentificationNumber | 12095095 (in identifier system 'Vektis AGB-zorgverlener tabel') |
-| OrganizationName | Defensie Tandheelkundige Dienst |
-| DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345602 |
-| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
-| ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
-| ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | info@dtd.tandarts.nl |
-| ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
-| AddressInformation.Street | Paradeplein |
-| AddressInformation.HouseNumber | 5 |
-| AddressInformation.HouseNumberLetter | |
-| AddressInformation.HouseNumberAddition | |
-| AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 3511 XX |
-| AddressInformation.PlaceOfResidence | Utrecht |
-| AddressInformation.Municipality | |
-| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
-| AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-| OrganizationType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
-| OrganizationLocation.LocationName | CWZ Nijmegen |
-| OrganizationLocation.LocationNumber | 1 |
-
-### Healthcare Provider - CWZ Nijmegen
-
-| | |
-| --- | --- |
-| HealthProviderIdentificationNumber | |
-| OrganizationName | CWZ Nijmegen |
+| HealthProviderIdentificationNumber | 13004567 (in identifier system 'Vektis AGB-zorgverlener tabel') |
+| OrganizationName | Orthodontiepraktijk Dijkstra |
 | DepartmentSpeciality | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
-| ContactInformation.TelephoneNumbers.TelephoneNumber | 0246412121 |
-| ContactInformation.TelephoneNumbers.TelecomType | Vast telefoonnummer (code 'LL' from code system 'TelecomDeviceTypes') |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | 0164123456 |
+| ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | |
-| ContactInformation.EmailAddresses.EmailAddressType | |
-| AddressInformation.Street | Weg door Jonkerbos |
-| AddressInformation.HouseNumber | 100 |
+| ContactInformation.EmailAddresses.EmailAddress | info@orthodontiedijkstra.nl |
+| ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
+| AddressInformation.Street | Stationsstraat |
+| AddressInformation.HouseNumber | 18 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 6532 SZ |
-| AddressInformation.PlaceOfResidence | Nijmegen |
+| AddressInformation.Postcode | 4611 XX |
+| AddressInformation.PlaceOfResidence | Bergen op Zoom |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-
+| OrganizationType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 
 ## Contact Person data
 
@@ -167,37 +141,28 @@
 | | |
 | --- | --- |
 | ASAScoreDateTime | 01-01-2024 10:43 |
-| ASAScoreValue | ASA-score 3 (code '413497009' from code system 'SNOMED CT')|
-| Performer | B. Dijkstra, Tandarts |
+| ASAScoreValue | ASA-score 3 (code '413497009' from code system 'SNOMED CT') |
+| Performer | B. Dijkstra, Orthodontist |
 | Comment | Allergisch voor gluten, heeft nierziekte en bloedarmoede |
 
 ## Caries Risk data
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | 01-01-2024 08:43 |
+| CariesRiskDateTime | 01-01-2024 10:43 |
 | CariesRiskValue | verhoogd (code '35105006' from code system 'SNOMED CT') |
-| Performer | B. Dijkstra, Tandarts |
-| Comment | |
-
-## Dental Fitness data
-
-| | |
-| --- | --- |
-| DentalFitnessDateTime | 03-03-2024 10:43 |
-| DentalFitnessValue | klasse 2 (code '258393007' from code system 'SNOMED CT') |
-| Performer | B. Dijkstra, Tandarts |
-| Comment | Beginnende gebitsproblemen vastgesteld |
+| Performer | B. Dijkstra, Orthodontist |
+| Comment | Verhoogd risico mede i.v.m. comorbiditeit (nierziekte, bloedarmoede). |
 
 ## Encounter data
 
 | | |
 | --- | --- |
-| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Consult t.b.v. intake |
-| ContactWith | B. Dijkstra, Tandarts |
-| Location | CWZ Nijmegen |
-| StartDateTime | 01-09-2025 09:00 |
-| EndDateTime | 01-09-2025 09:30 |
+| ContactType | Poliklinisch (code 'AMB' from code system 'Actcode') |
+| ContactWith | B. Dijkstra, Orthodontist |
+| Location | Orthodontiepraktijk Dijkstra |
+| StartDateTime | 01-08-2025 09:00 |
+| EndDateTime | 01-08-2025 09:30 |
 | ContactReason.Problem | |
 | ContactReason.Procedure | |
 | ContactReason.DeviatingResult | |
@@ -209,18 +174,18 @@
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | 01-01-2024 08:43 |
+| OralHygieneDateTime | 01-01-2024 10:43 |
 | OralHygieneValue | goed (code '20572008' from code system 'SNOMED CT') |
-| Performer | B. Dijkstra, Tandarts |
-| Comment | |
+| Performer | B. Dijkstra, Orthodontist |
+| Comment | Goede mondhygiëne; eerdere parodontitis met stabiele restpockets. |
 
 ## Parafunctional Activity data
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | 01-01-2024 08:43 |
+| ParafunctionalActivityDateTime | 01-01-2024 10:43 |
 | ParafunctionalActivityValue | Tanden knarsen tijdens slaap |
-| Performer | B. Dijkstra, Tandarts |
+| Performer | B. Dijkstra, Orthodontist |
 | Comment | |
 
 ## Payer data
@@ -265,7 +230,7 @@
 | PayerPerson.BankInformation.BankName | |
 | PayerPerson.BankInformation.BankCode | |
 | PayerPerson.BankInformation.AccountNumber | |
-| InsuranceCompany.Insurance.StartDateTime | 01-01-2025 |
+| InsuranceCompany.Insurance.StartDateTime | 01-01-2024 |
 | InsuranceCompany.Insurance.EndDateTime | 01-01-2026 |
 | InsuranceCompany.Insurance.InsuranceType | Tandverzekering (los) (code 'T' from code system 'Verzekeringssoort') |
 | InsuranceCompany.IdentificationNumber | |
@@ -293,10 +258,10 @@
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 01-01-2024 08:43 |
+| PeriodicPeriodontalScreeningScoreDateTime | 01-01-2024 10:43 |
 | PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system 'PeriodicPeriodontalScreeningScore') |
-| Performer | B. Dijkstra, Tandarts |
-| Comment | Paro-traject |
+| Performer | B. Dijkstra, Orthodontist |
+| Comment | Verwezen naar paro; orthodontische behandeling pas na paro-stabilisatie (jan–feb 2024). |
 
 ## Procedure data
 
@@ -307,6 +272,7 @@
 | ProcedureType | Eerste consult (code 'F121A' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
+| ProcedureAnatomicalLocation.Laterality | |
 | Indication.ProblemType | |
 | Indication.ProblemName | |
 | Indication.FurtherSpecificationProblemName | |
@@ -317,8 +283,8 @@
 | Indication.ProblemStatus | |
 | Indication.VerificationStatus | |
 | Indication.Comment | |
-| Location | CWZ Nijmegen |
-| Performer | B. Dijkstra, Tandarts |
+| Location | Orthodontiepraktijk Dijkstra |
+| Performer | B. Dijkstra, Orthodontist |
 
 ## Treatment Objective data
 
@@ -327,18 +293,20 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Trekken snijtand linksboven |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
-| DesiredHealthCondition.Comment | |
+| DesiredHealthCondition.Comment | Extractie van de scheve snijtand linksboven als onderdeel van het orthodontische behandelplan vóór plaatsing van de vaste beugel. |
 | DesiredHealthCondition.MedicalDevice | |
-| Problem | |
+| Problem | malocclusie van tanden en/of kiezen |
 
 ### Treatment Objective - Wortelpuntoperatie (apexresectie)
 
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Wortelpuntoperatie (apexresectie) |
+| Priority | Lage prioriteit (code 'low-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
@@ -351,10 +319,11 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
-| DesiredHealthCondition.StatusDate | 31-12-2024 |
-| DesiredHealthCondition.Comment | Na het trekken van de snijtand linksboven en het plaatsen van de beugel moet het kauwen weer klachtenvrij zijn. |
+| DesiredHealthCondition.StatusDate | 01-08-2025 |
+| DesiredHealthCondition.Comment | Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn. |
 | DesiredHealthCondition.MedicalDevice | Vaste multibracket-beugel bovenboog |
 | Problem | malocclusie van tanden en/of kiezen |
 
@@ -370,9 +339,9 @@
 | Indication | malocclusie van tanden en/of kiezen |
 | StartDate | 01-02-2024 |
 | EndDate | 01-08-2025 |
-| Comment | Vaste multibracket-beugel in de bovenboog; controle elke zes weken. |
-| Location | CWZ Nijmegen |
-| HealthProfessional | B. Dijkstra, Tandarts |
+| Comment | Vaste multibracket-beugel in de bovenboog geplaatst na paro-stabilisatie en extractie; controle elke zes weken. |
+| Location | Orthodontiepraktijk Dijkstra |
+| HealthProfessional | B. Dijkstra, Orthodontist |
 
 #### Problem - malocclusie van tanden en/of kiezen
 
@@ -387,4 +356,4 @@
 | ProblemEndDate | |
 | ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
 | VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
-| Comment | Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland. |
+| Comment | Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie. |

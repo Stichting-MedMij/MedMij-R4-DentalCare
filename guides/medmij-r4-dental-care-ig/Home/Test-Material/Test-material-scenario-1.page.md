@@ -67,7 +67,7 @@
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345601 |
-| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | dekoning@tandarts.nl |
@@ -99,11 +99,11 @@
 | AddressInformation.Postcode | 2353 GA |
 | AddressInformation.PlaceOfResidence | Leiderdorp |
 | AddressInformation.Municipality | |
-| AddressInformation.Country | Netherlands (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345603 |
-| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | vermeer@mondhygienist.nl |
@@ -121,7 +121,7 @@
 | OrganizationName | Defensie Tandheelkundige Dienst |
 | DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345602 |
-| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | info@dtd.tandarts.nl |
@@ -146,7 +146,7 @@
 | OrganizationName | Vliegbasis Gilze-Rijen |
 | DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | 0881234567 |
-| ContactInformation.TelephoneNumbers.TelecomType | Vast telefoonnummer (code 'LL' from code system 'TelecomDeviceTypes') |
+| ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | |
@@ -202,44 +202,44 @@
 
 | | |
 | --- | --- |
-| ASAScoreDateTime | 29-04-2024 06:43 |
+| ASAScoreDateTime | 20-05-2025 10:15 |
 | ASAScoreValue | ASA-score 1 (code '413495001' from code system 'SNOMED CT')|
 | Performer | A.B.D.O. de Koning, Tandarts |
-| Comment | Verandering gezondheid: enkel gebroken |
+| Comment | Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën. |
 
 ## Caries Risk data
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | 29-04-2024 06:43 |
-| CariesRiskValue | laag (code '62482003' from code system 'SNOMED CT') |
+| CariesRiskDateTime | 20-05-2025 10:15 |
+| CariesRiskValue | verhoogd (code '35105006' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
-| Comment | |
+| Comment | Advies: frequentie van suikerhoudende tussendoortjes beperken. |
 
 ## Dental Fitness data
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | 02-02-2024 06:43 |
-| DentalFitnessValue | klasse 1 (code '258392002' from code system 'SNOMED CT') |
+| DentalFitnessDateTime | 20-05-2025 10:15 |
+| DentalFitnessValue | klasse 2 (code '258393007' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
-| Comment | |
+| Comment | Actieve cariës en gingivitis; restauratieve behandeling gepland. |
 
 ## Encounter data
 
-### Encounter - 22-07-2026
+### Encounter - 20-05-2026
 
 | | |
 | --- | --- |
-| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Second opinion |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
-| StartDateTime | 22-07-2026 10:00 |
-| EndDateTime | 22-07-2026 11:00 |
+| StartDateTime | 20-05-2026 10:00 |
+| EndDateTime | 20-05-2026 11:00 |
 | ContactReason.Problem | |
 | ContactReason.Procedure | |
-| ContactReason.DeviatingResult | Afwijkende uitslag parodontale screening |
-| ContactReason.CommentContactReason | Second opinion vanwege aanhoudende klachte |
+| ContactReason.DeviatingResult | |
+| ContactReason.CommentContactReason | Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025 |
 | Origin | |
 | Destination | |
 
@@ -255,7 +255,7 @@
 | ContactReason.Problem | gaatje in je tand of kies |
 | ContactReason.Procedure | |
 | ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | Extra controle vanwege bloedend tandvlees |
+| ContactReason.CommentContactReason | Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne. |
 | Origin | thuis (code '264362003' from code system 'SNOMED CT') |
 | Destination | |
 
@@ -263,7 +263,7 @@
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | 29-04-2024 06:43 |
+| OralHygieneDateTime | 20-05-2025 10:15 |
 | OralHygieneValue | slecht (code '556001' from code system 'SNOMED CT') |
 | Performer | S. Vermeer, Mondhygiënist |
 | Comment | |
@@ -272,7 +272,7 @@
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | 29-04-2024 06:43 |
+| ParafunctionalActivityDateTime | 20-05-2025 10:15 |
 | ParafunctionalActivityValue | Overmatig knarsen bij stress |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
@@ -347,18 +347,18 @@
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 29-04-2024 06:43 |
+| PeriodicPeriodontalScreeningScoreDateTime | 20-05-2025 10:15 |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
-| Performer | A.B.D.O. de Koning, Tandarts |
-| Comment | Geen parodontale vervolgbehandeling |
+| Performer | S. Vermeer, Mondhygiënist |
+| Comment | Geen parodontale vervolgbehandeling; wel gingivitis bij slechte mondhygiëne |
 
 ## Procedure data
 
 | | |
 | --- | --- |
-| ProcedureStartDate | 29-04-2024 09:00 |
-| ProcedureEndDate | 29-04-2024 10:00 |
-| ProcedureType | Plaatsen opbouw ten behoeve van implantaatkroon (code 'R67' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureStartDate | 03-06-2025 09:00 |
+| ProcedureEndDate | 03-06-2025 09:45 |
+| ProcedureType | Eénvlaksvulling (code 'V11' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
@@ -367,21 +367,22 @@
 | Indication.FurtherSpecificationProblemName | Cariës rechterbovenkies |
 | Indication.ProblemAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
 | Indication.ProblemAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
-| Indication.ProblemStartDate | 26-04-2024 09:00 |
+| Indication.ProblemStartDate | 20-05-2025 10:00 |
 | Indication.ProblemEndDate | |
 | Indication.ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
 | Indication.VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
-| Indication.Comment | Actieve cariës vastgesteld. Restauratieve behandeling en preventief advies besproken. |
+| Indication.Comment | Actieve cariës vastgesteld tijdens periodiek preventief onderzoek. Restauratieve behandeling (éénvlaksvulling) en preventief advies besproken. |
 | Location | Vliegbasis Gilze-Rijen |
 | Performer | A.B.D.O. de Koning, Tandarts |
 
 ## Treatment Objective data
 
-### Treatment Objective - Tandvleesontsteking behandelen
+### Treatment Objective - Gingivitis/tandvleesontsteking behandelen
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | Tandvleesontsteking behandelen |
+| DesiredHealthcareResult | Gingivitis/tandvleesontsteking behandelen |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
@@ -389,11 +390,12 @@
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
 
-### Treatment Objective - Brug monteren bij rechterbovenkies
+### Treatment Objective - Cariës rechterbovenkies restaureren
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | Brug monteren bij rechterbovenkies |
+| DesiredHealthcareResult | Cariës rechterbovenkies restaureren |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |

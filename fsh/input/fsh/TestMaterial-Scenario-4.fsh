@@ -305,8 +305,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Sophie Vermeulen<br/>Geboortedatum: 1985-11-22<br/>Geslacht: Vrouw<br/>Nationaliteit: Nederlandse<br/>Adres: Kennemerstraat 8, 2011 AA Haarlem, Nederland<br/>Telefoon: +31612345620<br/>E-mail: sophievermeulen@example.nl</div>"
-* extension[http://hl7.org/fhir/StructureDefinition/patient-nationality].extension[code].valueCodeableConcept = urn:oid:2.16.840.1.113883.2.4.4.16.32#0001 "Nederlandse"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Sophie Vermeulen<br/>Geboortedatum: 1985-11-22<br/>Geslacht: Vrouw<br/>Adres: Kennemerstraat 8, 2011 AA Haarlem, Nederland<br/>Telefoon: +31612345620<br/>E-mail: sophievermeulen@example.nl</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
   * value.extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason].valueCode = #masked // gemaskeerd BSN

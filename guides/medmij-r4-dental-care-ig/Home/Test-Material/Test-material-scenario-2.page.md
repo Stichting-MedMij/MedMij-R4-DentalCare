@@ -6,7 +6,7 @@
 | --- | --- |
 | NameInformation.FirstNames | Anita |
 | NameInformation.Initials | |
-| NameInformation.GivenName | |
+| NameInformation.GivenName | Anita |
 | NameInformation.NameUsage | Eigen geslachtsnaam gevolgd door geslachtsnaam partner (code 'NL4' from code system 'NaamGebruik') |
 | NameInformation.LastName.Prefix | |
 | NameInformation.LastName.LastName | Jansen |
@@ -39,6 +39,8 @@
 
 ## Health Professional data
 
+### Health Professional - D. de Ruiter
+
 | | |
 | --- | --- |
 | HealthProfessionalIdentificationNumber | 12101002 (in identifier system 'BIG register inschrijvingsnummer') |
@@ -63,12 +65,48 @@
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | |
+| AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345678 |
-| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | deruiter@tandarts.nl |
+| ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| HealthProfessionalRole | |
+
+### Health Professional - S. Vermeer
+
+| | |
+| --- | --- |
+| HealthProfessionalIdentificationNumber | 87001201 (in identifier system 'BIG register inschrijvingsnummer') |
+| NameInformation.FirstNames | |
+| NameInformation.Initials | S. |
+| NameInformation.GivenName | |
+| NameInformation.NameUsage | |
+| NameInformation.LastName.Prefix | |
+| NameInformation.LastName.LastName | Vermeer |
+| NameInformation.LastNamePartner.PartnerPrefix | |
+| NameInformation.LastNamePartner.PartnerLastName | |
+| NameInformation.Titles | |
+| Speciality | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
+| Gender | Vrouw (code 'F' from code system 'AdministrativeGender') |
+| AddressInformation.Street | Simon Smitweg |
+| AddressInformation.HouseNumber | 1 |
+| AddressInformation.HouseNumberLetter | |
+| AddressInformation.HouseNumberAddition | |
+| AddressInformation.HouseNumberIndication | |
+| AddressInformation.Postcode | 2353 GA |
+| AddressInformation.PlaceOfResidence | Leiderdorp |
+| AddressInformation.Municipality | |
+| AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
+| AddressInformation.AdditionalInformation | |
+| AddressInformation.AddressType | |
+| ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345603 |
+| ContactInformation.TelephoneNumbers.TelecomType | |
+| ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.Comment | |
+| ContactInformation.EmailAddresses.EmailAddress | vermeer@mondhygienist.nl |
 | ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
 | HealthcareProvider | Defensie Tandheelkundige Dienst |
 | HealthProfessionalRole | |
@@ -173,32 +211,32 @@
 | | |
 | --- | --- |
 | CariesRiskDateTime | 11-02-2022 10:43 |
-| CariesRiskValue | verlaagd (code '1250004' from code system 'SNOMED CT') |
+| CariesRiskValue | verhoogd (code '35105006' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
-| Comment | |
+| Comment | Advies: inname van vruchtensap beperken en niet direct na consumptie poetsen. |
 
 ## Dental Fitness data
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | 08-09-2024 11:43 |
-| DentalFitnessValue | klasse 0 (code '440351000146101' from code system 'SNOMED CT') |
+| DentalFitnessDateTime | 11-02-2022 10:43 |
+| DentalFitnessValue | klasse 3 (code '258394001' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
-| Comment | |
+| Comment | Actieve cariës en slechte mondhygiëne met aanhoudende klachten; onbehandeld waarschijnlijk noodgeval binnen 12 maanden. |
 
 ## Encounter data
 
 | | |
 | --- | --- |
-| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Second opinion |
 | ContactWith | D. de Ruiter, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
 | StartDateTime | 22-07-2023 09:00 |
 | EndDateTime | 22-07-2023 09:30 |
-| ContactReason.Problem | |
-| ContactReason.Procedure | Maken en beoordelen kleine röntgenfoto |
+| ContactReason.Problem | Cariës rechterkies |
+| ContactReason.Procedure | |
 | ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | Laatste orthopantomogram (röntgenfoto) was in 2020 |
+| ContactReason.CommentContactReason | Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening |
 | Origin | |
 | Destination | thuis (code '264362003' from code system 'SNOMED CT') |
 
@@ -208,7 +246,7 @@
 | --- | --- |
 | OralHygieneDateTime | 11-02-2022 10:43 |
 | OralHygieneValue | zeer slecht (code '1336219002' from code system 'SNOMED CT') |
-| Performer | D. de Ruiter, Tandarts |
+| Performer | S. Vermeer, Mondhygiënist |
 | Comment | Veel tandsteen aanwezig |
 
 ## Parafunctional Activity data
@@ -216,9 +254,9 @@
 | | |
 | --- | --- |
 | ParafunctionalActivityDateTime | 11-02-2022 10:43 |
-| ParafunctionalActivityValue | Erosie door het drinken van vruchtensap |
+| ParafunctionalActivityValue | Knarsen 's nachts |
 | Performer | D. de Ruiter, Tandarts |
-| Comment | Advies gegeven om de inname te beperken en niet direct na consumptie te poetsen |
+| Comment | Patiënt meldt ochtendklachten in de kaakspieren; mogelijk bijdragend aan klachten rechterkies. |
 
 ## Payer data
 
@@ -262,8 +300,8 @@
 | PayerPerson.BankInformation.BankName | |
 | PayerPerson.BankInformation.BankCode | |
 | PayerPerson.BankInformation.AccountNumber | |
-| InsuranceCompany.Insurance.StartDateTime | 01-01-2025 |
-| InsuranceCompany.Insurance.EndDateTime | 01-01-2026 |
+| InsuranceCompany.Insurance.StartDateTime | 01-01-2022 |
+| InsuranceCompany.Insurance.EndDateTime | 01-01-2024 |
 | InsuranceCompany.Insurance.InsuranceType | Aanvullend + tand (code 'AT' from code system 'Verzekeringssoort') |
 | InsuranceCompany.IdentificationNumber | 3332 (in identifier system 'UZOVI') |
 | InsuranceCompany.OrganizationName | Menzis Zorgverzekeraar N.V. |
@@ -290,7 +328,7 @@
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 11-02-2022 08:43 |
+| PeriodicPeriodontalScreeningScoreDateTime | 11-02-2022 10:43 |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 4-5 millimeter = mogelijk in orde (code 'ppsscore2' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Paro-preventietraject |
@@ -325,6 +363,7 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusValue | normaal (code '17621005' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusDate | 11-04-2022 |
@@ -347,14 +386,28 @@
 | VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Comment | Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland. |
 
-### Treatment Objective - Bekijken of vullingen op kroon nog goed aansluiten
+### Treatment Objective - Verbeteren mondhygiëne en tandsteenreductie
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | Bekijken of vullingen op kroon nog goed aansluiten |
+| DesiredHealthcareResult | Verbeteren mondhygiëne en tandsteenreductie |
+| Priority | Lage prioriteit (code 'low-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
-| DesiredHealthCondition.Comment | |
+| DesiredHealthCondition.Comment | Aansluitend op paro-preventietraject en slechte mondhygiëne. |
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
+
+### Treatment Objective - geen problemen met kauwen
+
+| | |
+| --- | --- |
+| DesiredHealthcareResult | |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
+| DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusDate | 11-04-2022 |
+| DesiredHealthCondition.Comment | Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn. |
+| DesiredHealthCondition.MedicalDevice | |
+| Problem | Cariës rechterkies |
