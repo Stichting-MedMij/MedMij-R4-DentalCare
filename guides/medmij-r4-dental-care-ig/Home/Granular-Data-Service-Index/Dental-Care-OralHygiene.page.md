@@ -10,8 +10,8 @@ topic: OralHygiene
 | **Id** | 900000104 |
 | **Data service name without version (English)** | Retrieve Dental Care - Oral hygiene |
 | **Data service name without version (Dutch)** | Verzamelen Mondzorg - Mondhygiëne |
-| **Data service version** | 1.0.0-rc.1 |
-| **System role(s)** | MZ-OHR-rc.1 (PHR) <br/> MZ-OHB-rc.1 (XIS) |
+| **Data service version** | 1.0.0-rc.2 |
+| **System role(s)** | MZ-OHR-rc.2 (PHR) <br/> MZ-OHB-rc.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model

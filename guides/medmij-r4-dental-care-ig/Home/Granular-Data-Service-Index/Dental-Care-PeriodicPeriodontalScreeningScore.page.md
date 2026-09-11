@@ -10,8 +10,8 @@ topic: PeriodicPeriodontalScreeningScore
 | **Id** | 900000108 |
 | **Data service name without version (English)** | Retrieve Dental Care - Periodic Periodontal Screening score |
 | **Data service name without version (Dutch)** | Verzamelen Mondzorg - Periodieke Parodontale Screening-score |
-| **Data service version** | 1.0.0-rc.1 |
-| **System role(s)** | MZ-PSR-rc.1 (PHR) <br/> MZ-PSB-rc.1 (XIS) |
+| **Data service version** | 1.0.0-rc.2 |
+| **System role(s)** | MZ-PSR-rc.2 (PHR) <br/> MZ-PSB-rc.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model

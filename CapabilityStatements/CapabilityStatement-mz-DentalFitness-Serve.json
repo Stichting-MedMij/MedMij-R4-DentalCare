@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction (system role: MZ-DFB-rc.1).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction (system role: MZ-DFB-rc.2).",
       "resource": [
         {
           "type": "Observation",

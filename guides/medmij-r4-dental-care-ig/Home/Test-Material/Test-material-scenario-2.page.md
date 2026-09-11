@@ -168,7 +168,9 @@
 
 | | |
 | --- | --- |
-| ASAScoreDateTime | 11-02-2022 10:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 11-02-2022 10:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 2 (code '413496000' from code system 'SNOMED CT')|
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Allergisch voor hooikoorts, rookt 12 sigaretten per dag, gebruikt medicatie Cetirizine |
@@ -177,7 +179,9 @@
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | 11-02-2022 10:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 11-02-2022 10:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | CariesRiskValue | Verlaagd (code '1250004' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | |
@@ -186,7 +190,9 @@
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | 08-09-2024 11:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 08-09-2024 11:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DentalFitnessValue | Klasse 0 (code '440351000146101' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | |
@@ -195,6 +201,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Second opinion |
 | ContactWith | D. de Ruiter, Tandarts |
 | Location | Vliegbasis Gilze-Rijen |
@@ -211,7 +219,9 @@
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | 11-02-2022 10:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 11-02-2022 10:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | Zeer slecht (code '1336219002' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | |
@@ -220,7 +230,9 @@
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | 11-02-2022 10:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 11-02-2022 10:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ParafunctionalActivityValue | Erosie door het drinken van vruchtensap |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | |
@@ -231,6 +243,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Anita Jansen |
 | PayerPerson.BankInformation.BankName | RABO |
 | PayerPerson.BankInformation.BankCode | RABO21NL |
@@ -263,6 +277,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
 | PayerPerson.BankInformation.BankCode | |
@@ -295,7 +311,9 @@
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 11-02-2022 08:43 |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| EffectiveDateTime | 11-02-2022 08:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 4-5 millimeter = mogelijk in orde (code 'ppsscore2' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Paro-preventietraject |
@@ -304,8 +322,10 @@
 
 | | |
 | --- | --- |
-| ProcedureStartDate | 11-02-2022 |
-| ProcedureEndDate | |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| StartDateTime | 11-02-2022 |
+| EndDateTime | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Maken en beoordelen kleine röntgenfoto (code 'X10' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
@@ -331,6 +351,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Vullen gaatjes rechterkies |
 | DesiredHealthCondition | |
 | Problem | |
@@ -339,6 +361,8 @@
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Bekijken of vullingen op kroon nog goed aansluiten |
 | DesiredHealthCondition | |
 | Problem | |
