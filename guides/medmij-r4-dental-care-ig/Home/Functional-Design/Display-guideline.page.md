@@ -169,17 +169,31 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 
 <u>Overzichtsscherm</u>
 
-| Doel behandeling | Prioriteit | Zorgorganisatie |
-| --- | --- | --- |
-| Tandvleesontsteking behandelen | Hoge prioriteit | Tendens |
-| Vullen gaatje rechterkies | Lage prioriteit | Tendens |
+| Doel behandeling | Datum | Prioriteit | Zorgorganisatie |
+| --- | --- | --- | --- |
+| Tandvleesontsteking behandelen | 04-04-2024 | Hoge prioriteit | Tendens |
+| Vullen gaatje rechterkies | 05-05-2025 | Lage prioriteit | Tendens |
+| Kan kauwen: zonder pijn, per 31-12-2024 | 15-12-2024 | | Tendens |
 
 <u>Detailscherm</u>
 
 | Geselecteerde regel: Tandvleesontsteking behandelen | |
 | --- | --- |
 | Doel behandeling | Tandvleesontsteking behandelen |
+| Datum | 04-04-2024 |
 | Prioriteit | Hoge prioriteit |
+| Zorgorganisatie | Tendens |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Kan kauwen: zonder problemen, per 31-12-2024 | |
+| --- | --- |
+| Doel behandeling | Kan kauwen: zonder pijn, per 31-12-2024 |
+| Probleem | slecht op elkaar passen van je tanden of kiezen |
+| Toelichting | Al enige tijd last van pijn bij het kauwen vanwege tanden die scheef op elkaar staan |
+| Medisch hulpmiddel | Beugel voor de bovenboog |
+| Datum | 15-12-2024 |
+| Prioriteit | |
 | Zorgorganisatie | Tendens |
 
 <br/>
@@ -436,7 +450,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td></td><td></td><td></td><td></td>
     </tr>
     <tr>
       <td>Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td>Tandsteen</td><td>b</td>
@@ -569,7 +583,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td></td><td></td><td></td>
     </tr>
     <tr>
-      <td>GewenstZorgresultaat</td><td>Item</td><td>NL-CM:13.5.3</td><td>Tandvleesontsteking behandelen</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
+      <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>GewenstZorgresultaat</td><td>Item</td><td>NL-CM:13.5.5</td><td>Tandvleesontsteking behandelen</td><td>a</td>
       <td></td><td>Doel behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -580,16 +598,16 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>C</td>
     </tr>
     <tr>
-      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td>NL-CM:4.26.1</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td>NL-CM:13.5.3</td><td></td><td></td>
+      <td>De concepten binnen de zib FunctioneleOfMentaleStatus (met name StatusNaam, StatusWaarde en StatusDatum) kunnen gecombineerd getoond worden.</td><td>Doel behandeling</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Probleem</td><td>Reference</td><td>NL-CM:13.5.4</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td></td><td>Probleem</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen.<br/>Dit data-item wordt uitgewisseld via een PractitionerRole op <code>Goal.expressedBy</code>.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -849,11 +867,11 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>mz-dataelement-31</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td></td><td></td><td></td><td>C</td>
     </tr>
     <tr>
       <td>Indicatie::Probleem</td><td>Reference</td><td>mz-dataelement-34</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td></td><td>Reden verrichting</td><td></td><td>C</td>
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>mz-dataelement-46</td><td>Vliegbasis Gilze-Rijen</td><td>a</td>
