@@ -24,7 +24,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen paradontale vervolgbehandeling<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen parodontale vervolgbehandeling<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
   },
   "status": "final",
   "subject": {
@@ -51,7 +51,7 @@
   },
   "note": [
     {
-      "text": "Geen paradontale vervolgbehandeling"
+      "text": "Geen parodontale vervolgbehandeling"
     }
   ]
 }

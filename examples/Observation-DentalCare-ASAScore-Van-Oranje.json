@@ -24,7 +24,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: ASA-score 1<br/>Opmerking: Verandering gezondheid: enkel gebroken<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Score: ASA-score 1<br/>Opmerking: Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën.<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
   },
   "status": "final",
   "subject": {
@@ -51,7 +51,7 @@
   },
   "note": [
     {
-      "text": "Verandering gezondheid: enkel gebroken"
+      "text": "Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën."
     }
   ]
 }

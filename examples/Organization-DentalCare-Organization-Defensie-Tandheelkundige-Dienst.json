@@ -30,25 +30,25 @@
         }
       ],
       "line": [
-        "Herculeslaan 1"
+        "Paradeplein 5"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Herculeslaan"
+              "valueString": "Paradeplein"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "1"
+              "valueString": "5"
             }
           ]
         }
       ],
       "use": "work",
       "city": "Utrecht",
-      "postalCode": "3584 AB",
+      "postalCode": "3511 XX",
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -70,7 +70,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Defensie Tandheelkundige Dienst<br/>AGB-code: 12095095<br/>Telefoon: +31653603740<br/>E-mail: PJ.Jumpertz.01@mindef.nl<br/>Adres: Herculeslaan 1, 3584 AB Utrecht</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Defensie Tandheelkundige Dienst<br/>AGB-code: 12095095<br/>Telefoon: +31612345602<br/>E-mail: info@dtd.tandarts.nl<br/>Adres: Paradeplein 5, 3511 XX Utrecht</div>"
   },
   "identifier": [
     {
@@ -78,16 +78,27 @@
       "value": "12095095"
     }
   ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "code": "1200",
+          "display": "Tandartsen"
+        }
+      ]
+    }
+  ],
   "name": "Defensie Tandheelkundige Dienst",
   "telecom": [
     {
       "system": "phone",
-      "value": "+31653603740",
+      "value": "+31612345602",
       "use": "work"
     },
     {
       "system": "email",
-      "value": "PJ.Jumpertz.01@mindef.nl",
+      "value": "info@dtd.tandarts.nl",
       "use": "work"
     }
   ]

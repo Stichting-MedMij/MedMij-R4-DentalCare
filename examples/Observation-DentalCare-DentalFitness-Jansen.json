@@ -24,12 +24,12 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2024-09-08 11:43<br/>Dental Fitness: Nooit gezien door een defensietandarts<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2024-09-08 11:43<br/>Dental Fitness: Huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
   "effectiveDateTime": "2024-09-08T11:43:00+01:00",
@@ -43,11 +43,11 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "440351000146101",
+        "code": "258394001",
         "system": "http://snomed.info/sct",
-        "display": "klasse 0"
+        "display": "klasse 3"
       }
     ],
-    "text": "nooit gezien door een defensietandarts"
+    "text": "huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken"
   }
 }

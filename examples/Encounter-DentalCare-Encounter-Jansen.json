@@ -13,9 +13,21 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
     ]
   },
+  "reasonReference": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+          "valueString": "Laatste orthopantomogram (röntgenfoto) was in 2020"
+        }
+      ],
+      "reference": "Procedure/DentalCare-Procedure-Jansen",
+      "display": "Maken en beoordelen kleine röntgenfoto"
+    }
+  ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
   },
   "status": "finished",
   "class": {
@@ -25,12 +37,12 @@
   },
   "type": [
     {
-      "text": "Second opinion"
+      "text": "Tandarts Periodiek Preventief Onderzoek"
     }
   ],
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
   "participant": [
@@ -45,6 +57,17 @@
   "period": {
     "start": "2023-07-22T09:00:00+01:00",
     "end": "2023-07-22T09:30:00+01:00"
+  },
+  "hospitalization": {
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "code": "264362003",
+          "system": "http://snomed.info/sct",
+          "display": "thuis"
+        }
+      ]
+    }
   },
   "location": [
     {
