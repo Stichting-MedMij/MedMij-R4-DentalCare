@@ -1,15 +1,4 @@
 // FHIR test instances in FSH format for Dental Care test scenario 4
-//
-// Publieke tandartspraktijk — volledige dekking van dataelementen uit de
-// Logical Models van MedMij R4 Core IG 1.1.0 en MedMij R4 Dental Care IG
-// 1.0.0-rc.1 (ASAScore, Patient, HealthProfessional, HealthcareProvider,
-// Encounter, Payer, TreatmentObjective inkl. FoMS; CariesRisk, DentalFitness,
-// OralHygiene, ParafunctionalActivity, PPS, Procedure inkl. Indication/
-// Method/anatomie; Problem; MedicalDevice).
-//
-// Casus: Sophie Vermeulen bij Tandartspraktijk Vos (Haarlem): Periodiek
-// Preventief Onderzoek met cariës rechterbovenkies, knarsen, PPS2;
-// V11-vulling; occlusale splint; later controle.
 
 Instance: DentalCare-ASAScore-Vermeulen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
@@ -30,6 +19,44 @@ Usage: #example
 * note
   * text = "Milde astma (salbutamol zo nodig); geen bekende allergieën"
 
+Instance: DentalCare-ASAScore-2-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-24 09:05<br/>Score: ASA-score 3<br/>Opmerking: Astma-aanval afgelopen week; salbutamol vaker nodig<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+* status = #final
+* code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* effectiveDateTime = "2025-03-24T09:05:00+01:00"
+* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+  * type = "PractitionerRole"
+* valueCodeableConcept = $SCT#413497009 "ASA-score 3"
+* note
+  * text = "Astma-aanval afgelopen week; salbutamol vaker nodig. Extra voorzichtigheid bij lokale anesthesie."
+
+Instance: DentalCare-ASAScore-3-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-04-07 10:05<br/>Score: ASA-score 1<br/>Opmerking: Astma stabiel; salbutamol zelden nodig; geen andere comorbiditeit<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+* status = #final
+* code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* effectiveDateTime = "2025-04-07T10:05:00+02:00"
+* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+  * type = "PractitionerRole"
+* valueCodeableConcept = $SCT#413495001 "ASA-score 1"
+* note
+  * text = "Astma stabiel; salbutamol zelden nodig; geen andere comorbiditeit."
+
 Instance: DentalCare-CariesRisk-Vermeulen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
 Usage: #example
@@ -49,26 +76,43 @@ Usage: #example
 * note
   * text = "Actieve cariës en matige mondhygiëne; voedings- en poetsadvies gegeven."
 
-Instance: DentalCare-DentalFitness-Vermeulen
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness
+Instance: DentalCare-CariesRisk-2-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
 Usage: #example
 * meta
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-10 10:15<br/>Dental Fitness: Kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-24 09:10<br/>Cariësrisico: Hoog<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
 * status = #final
-* code = $SCT#440271000146100 "'dental fitness' volgens NAVO-classificatiesysteem"
+* code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
   * type = "Patient"
-* effectiveDateTime = "2025-03-10T10:15:00+01:00"
+* effectiveDateTime = "2025-03-24T09:10:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
   * type = "PractitionerRole"
-* valueCodeableConcept
-  * coding = $SCT#258393007 "klasse 2"
-  * text = "kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden"
+* valueCodeableConcept = $SCT#75540009 "hoog"
 * note
-  * text = "Actieve cariës; restauratie gepland. Vastgelegd voor volledige CIM-dekking DentalFitness."
+  * text = "Actieve cariës rechterbovenkies gerestaureerd; voedingspatroon nog ongunstig."
+
+Instance: DentalCare-CariesRisk-3-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-04-07 10:10<br/>Cariësrisico: Laag<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+* status = #final
+* code = $SCT#74024006 "vatbaarheid voor cariës"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* effectiveDateTime = "2025-04-07T10:10:00+02:00"
+* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+  * type = "PractitionerRole"
+* valueCodeableConcept = $SCT#62482003 "laag"
+* note
+  * text = "Geen nieuwe laesies; betere poetsgewoonten en minder suikerhoudende dranken."
 
 Instance: DentalCare-OralHygiene-Vermeulen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
@@ -89,6 +133,44 @@ Usage: #example
 * note
   * text = "Plaque en beginnende tandsteen buccaal; poetsinstructie gegeven."
 
+Instance: DentalCare-OralHygiene-2-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-24 09:15<br/>Mondhygiëne: normaal<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+* status = #final
+* code = $SCT#364126007 "status van mondhygiëne"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* effectiveDateTime = "2025-03-24T09:15:00+01:00"
+* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+  * type = "PractitionerRole"
+* valueCodeableConcept = $SCT#17621005 "normaal"
+* note
+  * text = "Plaque verminderd na instructie; nog lichte tandsteen interdentaal."
+
+Instance: DentalCare-OralHygiene-3-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-04-07 10:15<br/>Mondhygiëne: goed<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+* status = #final
+* code = $SCT#364126007 "status van mondhygiëne"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* effectiveDateTime = "2025-04-07T10:15:00+02:00"
+* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+  * type = "PractitionerRole"
+* valueCodeableConcept = $SCT#20572008 "goed"
+* note
+  * text = "Poetsinstructie opgevolgd; weinig plaque, geen relevant tandsteen."
+
 Instance: DentalCare-ParafunctionalActivity-Vermeulen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
 Usage: #example
@@ -108,6 +190,44 @@ Usage: #example
 * note
   * text = "Occlusale splint gepland ter bescherming van restauraties en kaakgewricht."
 
+Instance: DentalCare-ParafunctionalActivity-2-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-24 09:20<br/>Activiteit: Kaken klemmen overdag<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+* status = #final
+* code = $SCT#110353005 "parafunctionele gewoonte"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* effectiveDateTime = "2025-03-24T09:20:00+01:00"
+* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+  * type = "PractitionerRole"
+* valueString = "Kaken klemmen overdag"
+* note
+  * text = "Naast nachtelijk knarsen ook overdag klemmen; splint plaatsing gepland."
+
+Instance: DentalCare-ParafunctionalActivity-3-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-04-07 10:20<br/>Activiteit: Knarsen verminderd met occlusale splint<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+* status = #final
+* code = $SCT#110353005 "parafunctionele gewoonte"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* effectiveDateTime = "2025-04-07T10:20:00+02:00"
+* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+  * type = "PractitionerRole"
+* valueString = "Knarsen verminderd met occlusale splint"
+* note
+  * text = "Occlusale splint vandaag geplaatst; instructie gegeven voor nachtelijk gebruik."
+
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Vermeulen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
 Usage: #example
@@ -126,6 +246,44 @@ Usage: #example
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore2 "Pockets 4-5 millimeter = mogelijk in orde"
 * note
   * text = "Paro-preventie; hercontrole over zes maanden."
+
+Instance: DentalCare-PeriodicPeriodontalScreeningScore-2-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-24 09:25<br/>Score: Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Locale verdieping bij element 16; hygiëne intensiveren<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+* status = #final
+* code = $SCT#540501000146103 "score op periodieke parodontale screening"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* effectiveDateTime = "2025-03-24T09:25:00+01:00"
+* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+  * type = "PractitionerRole"
+* valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore3 "Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde"
+* note
+  * text = "Locale verdieping bij element 16; hygiëne intensiveren."
+
+Instance: DentalCare-PeriodicPeriodontalScreeningScore-3-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-04-07 10:25<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Paro-preventie afgerond; pockets genormaliseerd<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+* status = #final
+* code = $SCT#540501000146103 "score op periodieke parodontale screening"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* effectiveDateTime = "2025-04-07T10:25:00+02:00"
+* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+  * type = "PractitionerRole"
+* valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
+* note
+  * text = "Paro-preventie afgerond; pockets genormaliseerd."
 
 Instance: DentalCare-TreatmentObjective-1-Vermeulen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
@@ -243,6 +401,48 @@ Usage: #example
   * extension[laterality]
     * valueCodeableConcept = $SCT#24028007 "rechts"
 
+Instance: DentalCare-Procedure-2-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Maken en beoordelen kleine röntgenfoto<br/>Patiënt: Sophie Vermeulen<br/>Status: Voltooid<br/>Datum: 2025-03-10<br/>Uitgevoerd door: M. Vos, Tandarts<br/>Locatie: Tandartspraktijk Vos</div>"
+* status = #completed
+* category = $SCT#225362009 "tandheelkundige zorg"
+* code = $ProcedureTypeVektisDentalCareCodeSystemOID#X10 "Maken en beoordelen kleine röntgenfoto"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* performedDateTime = "2025-03-10"
+* performer
+  * actor = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+    * type = "PractitionerRole"
+* location = Reference(DentalCare-Location-Tandartspraktijk-Vos) "Tandartspraktijk Vos"
+  * type = "Location"
+* reasonReference = Reference(DentalCare-Problem-Vermeulen) "Cariës rechterbovenkies"
+  * type = "Condition"
+
+Instance: DentalCare-Procedure-3-Vermeulen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Gebitsreiniging<br/>Patiënt: Sophie Vermeulen<br/>Status: Voltooid<br/>Datum: 2025-04-07<br/>Uitgevoerd door: M. Vos, Tandarts<br/>Locatie: Tandartspraktijk Vos</div>"
+* status = #completed
+* category = $SCT#225362009 "tandheelkundige zorg"
+* code = $ProcedureTypeVektisDentalCareCodeSystemOID#M01 "Gebitsreiniging"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* performedDateTime = "2025-04-07"
+* performer
+  * actor = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+    * type = "PractitionerRole"
+* location = Reference(DentalCare-Location-Tandartspraktijk-Vos) "Tandartspraktijk Vos"
+  * type = "Location"
+
 Instance: DentalCare-MedicalDevice-Vermeulen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice
 Usage: #example
@@ -297,6 +497,113 @@ Usage: #example
   * type = "Patient"
 * note
   * text = "Individueel vervaardigde occlusale splint voor de bovenboog"
+
+Instance: DentalCare-Encounter-1-Vermeulen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Periodiek preventief onderzoek<br/>Patiënt: Sophie Vermeulen<br/>Begindatum: 2025-03-10T10:00:00+01:00<br/>Einddatum: 2025-03-10T11:00:00+01:00<br/>Status: Afgerond<br/>Locatie: Tandartspraktijk Vos</div>"
+* status = #finished
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Periodiek preventief onderzoek"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+    * type = "PractitionerRole"
+* period
+  * start = "2025-03-10T10:00:00+01:00"
+  * end = "2025-03-10T11:00:00+01:00"
+* reasonCode
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Jaarlijks Periodiek Preventief Onderzoek; cariës rechterbovenkies vastgesteld"
+  * text = "Periodiek preventief onderzoek"
+* reasonReference = Reference(DentalCare-Problem-Vermeulen) "Cariës rechterbovenkies"
+* location
+  * location = Reference(DentalCare-Location-Tandartspraktijk-Vos) "Tandartspraktijk Vos"
+    * type = "Location"
+
+Instance: DentalCare-Encounter-2-Vermeulen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle na restauratie<br/>Patiënt: Sophie Vermeulen<br/>Begindatum: 2025-09-10T10:00:00+01:00<br/>Einddatum: 2025-09-10T10:30:00+01:00<br/>Status: Gepland<br/>Locatie: Tandartspraktijk Vos</div>"
+* status = #planned
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Controle na restauratie"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+    * type = "PractitionerRole"
+* period
+  * start = "2025-09-10T10:00:00+01:00"
+  * end = "2025-09-10T10:30:00+01:00"
+* location
+  * location = Reference(DentalCare-Location-Tandartspraktijk-Vos) "Tandartspraktijk Vos"
+    * type = "Location"
+
+Instance: DentalCare-Encounter-3-Vermeulen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Restauratieve behandeling<br/>Patiënt: Sophie Vermeulen<br/>Begindatum: 2025-03-24T09:00:00+01:00<br/>Einddatum: 2025-03-24T10:00:00+01:00<br/>Status: Afgerond<br/>Locatie: Tandartspraktijk Vos</div>"
+* status = #finished
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Restauratieve behandeling"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+    * type = "PractitionerRole"
+* period
+  * start = "2025-03-24T09:00:00+01:00"
+  * end = "2025-03-24T10:00:00+01:00"
+* reasonCode
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Eénvlaksvulling (V11) rechterbovenkies"
+  * text = "Restauratie cariës rechterbovenkies"
+* reasonReference = Reference(DentalCare-Problem-Vermeulen) "Cariës rechterbovenkies"
+* location
+  * location = Reference(DentalCare-Location-Tandartspraktijk-Vos) "Tandartspraktijk Vos"
+    * type = "Location"
+
+Instance: DentalCare-Encounter-4-Vermeulen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Plaatsing occlusale splint<br/>Patiënt: Sophie Vermeulen<br/>Begindatum: 2025-04-07T10:00:00+02:00<br/>Einddatum: 2025-04-07T10:45:00+02:00<br/>Status: Afgerond<br/>Locatie: Tandartspraktijk Vos</div>"
+* status = #finished
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Plaatsing occlusale splint"
+* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
+    * type = "PractitionerRole"
+* period
+  * start = "2025-04-07T10:00:00+02:00"
+  * end = "2025-04-07T10:45:00+02:00"
+* reasonCode
+  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Plaatsing occlusale splint i.v.m. knarsen; gebitsreiniging"
+  * text = "Plaatsing occlusale splint"
+* location
+  * location = Reference(DentalCare-Location-Tandartspraktijk-Vos) "Tandartspraktijk Vos"
+    * type = "Location"
 
 Instance: DentalCare-Patient-Vermeulen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
@@ -429,59 +736,6 @@ Usage: #example
   * postalCode = "2011 HD"
   * country = "Nederland"
     * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
-
-Instance: DentalCare-Encounter-1-Vermeulen
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Periodiek preventief onderzoek<br/>Patiënt: Sophie Vermeulen<br/>Begindatum: 2025-03-10T10:00:00+01:00<br/>Einddatum: 2025-03-10T11:00:00+01:00<br/>Status: Afgerond<br/>Locatie: Tandartspraktijk Vos</div>"
-* status = #finished
-* class = $NullFlavor#OTH "Anders"
-* type
-  * text = "Periodiek preventief onderzoek"
-* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
-  * type = "Patient"
-* participant
-  * individual = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
-    * type = "PractitionerRole"
-* period
-  * start = "2025-03-10T10:00:00+01:00"
-  * end = "2025-03-10T11:00:00+01:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Jaarlijks Periodiek Preventief Onderzoek; cariës rechterbovenkies vastgesteld"
-  * text = "Periodiek preventief onderzoek"
-* reasonReference = Reference(DentalCare-Problem-Vermeulen) "Cariës rechterbovenkies"
-* location
-  * location = Reference(DentalCare-Location-Tandartspraktijk-Vos) "Tandartspraktijk Vos"
-    * type = "Location"
-
-Instance: DentalCare-Encounter-2-Vermeulen
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle na restauratie<br/>Patiënt: Sophie Vermeulen<br/>Begindatum: 2025-09-10T10:00:00+01:00<br/>Einddatum: 2025-09-10T10:30:00+01:00<br/>Status: Gepland<br/>Locatie: Tandartspraktijk Vos</div>"
-* status = #planned
-* class = $NullFlavor#OTH "Anders"
-* type
-  * text = "Controle na restauratie"
-* subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
-  * type = "Patient"
-* participant
-  * individual = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
-    * type = "PractitionerRole"
-* period
-  * start = "2025-09-10T10:00:00+01:00"
-  * end = "2025-09-10T10:30:00+01:00"
-* location
-  * location = Reference(DentalCare-Location-Tandartspraktijk-Vos) "Tandartspraktijk Vos"
-    * type = "Location"
-
 
 Instance: DentalCare-Organization-Tandartspraktijk-Vos
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization
