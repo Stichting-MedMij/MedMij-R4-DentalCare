@@ -264,7 +264,6 @@
 
 | | |
 | --- | --- |
-| HealthcareProvider | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Erik van Oranje |
 | PayerPerson.BankInformation.BankName | ING |
@@ -298,7 +297,6 @@
 
 | | |
 | --- | --- |
-| HealthcareProvider | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -373,6 +371,7 @@
 | | |
 | --- | --- |
 | HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Tandvleesontsteking behandelen |
 | DesiredHealthCondition | |
@@ -383,6 +382,7 @@
 | | |
 | --- | --- |
 | HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Brug monteren bij rechterbovenkies |
 | DesiredHealthCondition | |

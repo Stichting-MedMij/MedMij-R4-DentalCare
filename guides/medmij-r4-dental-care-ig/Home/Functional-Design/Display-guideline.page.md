@@ -557,10 +557,6 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Contactgegevens</td><td>Reference</td><td>NL-CM:1.1.12</td><td></td><td>b</td>
       <td></td><td></td><td></td><td>M</td>
     </tr>
-    <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
-    </tr>
   </tbody>
 </table>
 

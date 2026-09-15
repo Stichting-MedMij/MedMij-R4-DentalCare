@@ -5,7 +5,7 @@
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Data set                    | The Base Logical Model has been used as base definition of the CariesRisk, DentalFitness, OralHygiene, ParafunctionalActivity, PeriodicPeriodontalScreeningScore and Procedure Logical Models. | [MC-6](https://medmij.atlassian.net/browse/MC-6) |
-| Functional design           | The display guideline has been aligned with the Base Logical Model. In particular, the HealthcareProvider concept has been added in the specifications of the Encounter and Procedure CIMs, and the mappings to the EffectiveDateTime, StartDateTime and EndDateTime concepts have been updated. Moreover, the specifications on TreatmentObjective have been finetuned and aligned with the intention of the zib. | [MC-6](https://medmij.atlassian.net/browse/MC-6) |
+| Functional design           | The display guideline has been aligned with the Base Logical Model. <ul> <li> The mappings to the HealthcareProvider EffectiveDateTime, StartDateTime and EndDateTime concepts in the specification tables have been updated. <li> The HealthcareProvider concept has been added in the specification tables of the Encounter and Procedure CIMs, and removed in the specification table of the Payer CIM. <li> The examples of and specifications on the TreatmentObjective CIM have been finetuned and aligned with the intention of the zib. | [MC-6](https://medmij.atlassian.net/browse/MC-6) |
 | Functional design           | The cross-domain data services ASA score, Encounter, Payer and Treatment objective have been updated to version 1.0.0-rc.2. | [MC-6](https://medmij.atlassian.net/browse/MC-6) |
 | Technical design            | The cross-domain data services ASA score, Encounter, Payer and Treatment objective have been updated to version 1.0.0-rc.2. | [MC-6](https://medmij.atlassian.net/browse/MC-6) |
 | FHIR artifacts              | The CapabilityStatements have been added to the Artifact index. | [DOSINZAGE1-1086](https://medmij.atlassian.net/browse/DOSINZAGE1-1086) |
@@ -18,7 +18,7 @@
 
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
-| Functional design           | The display guideline has been updated: <br/> <ul> <li> The display text for date concepts has been updated in the specifications table. <li> The acceptance criterium with respect to filtering for the overview has been updated. | [DOSINZAGE1-1030](https://medmij.atlassian.net/browse/DOSINZAGE1-1030) |
+| Functional design           | The display guideline has been updated: <br/> <ul> <li> The display text for date concepts has been updated in the specification tables. <li> The acceptance criterium with respect to filtering for the overview has been updated. | [DOSINZAGE1-1030](https://medmij.atlassian.net/browse/DOSINZAGE1-1030) |
 | Functional design           | The cross-domain data services ASA score, Encounter, Patient, Payer and Treatment objective have been updated to version 1.0.0-rc.1. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |
 | Technical design            | The cross-domain data services ASA score, Encounter, Patient, Payer and Treatment objective have been updated to version 1.0.0-rc.1. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |
 | FHIR artifacts              | The MedMij R4 Core dependency has been updated to version 1.1.0. | [DOSINZAGE1-1034](https://medmij.atlassian.net/browse/DOSINZAGE1-1034) |

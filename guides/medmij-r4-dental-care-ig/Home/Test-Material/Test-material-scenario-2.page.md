@@ -243,7 +243,6 @@
 
 | | |
 | --- | --- |
-| HealthcareProvider | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Anita Jansen |
 | PayerPerson.BankInformation.BankName | RABO |
@@ -277,7 +276,6 @@
 
 | | |
 | --- | --- |
-| HealthcareProvider | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -352,6 +350,7 @@
 | | |
 | --- | --- |
 | HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Vullen gaatjes rechterkies |
 | DesiredHealthCondition | |
@@ -362,6 +361,7 @@
 | | |
 | --- | --- |
 | HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Bekijken of vullingen op kroon nog goed aansluiten |
 | DesiredHealthCondition | |

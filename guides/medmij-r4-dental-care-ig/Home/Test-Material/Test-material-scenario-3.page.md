@@ -243,7 +243,6 @@
 
 | | |
 | --- | --- |
-| HealthcareProvider | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Berend van de Stok |
 | PayerPerson.BankInformation.BankName | ABNA |
@@ -277,7 +276,6 @@
 
 | | |
 | --- | --- |
-| HealthcareProvider | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -352,6 +350,7 @@
 | | |
 | --- | --- |
 | HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Trekken snijtand linksboven |
 | DesiredHealthCondition | |
@@ -362,6 +361,7 @@
 | | |
 | --- | --- |
 | HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Wortelpuntoperatie (apexresectie) |
 | DesiredHealthCondition | |
