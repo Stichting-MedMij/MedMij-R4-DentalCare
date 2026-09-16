@@ -43,7 +43,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Verzekeraar: Zorgkantoor Groningen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Betaler: Erik van Oranje</div>"
   },
   "status": "active",
   "beneficiary": {

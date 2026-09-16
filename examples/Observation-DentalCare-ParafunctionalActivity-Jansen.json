@@ -24,12 +24,12 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen<br/>Datum/Tijd: 2022-02-11 10:43<br/>Activiteit: Erosie door het drinken van vruchtensap<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Activiteit: Erosie door het drinken van vruchtensap<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
   "effectiveDateTime": "2022-02-11T10:43:00+01:00",
@@ -40,5 +40,10 @@
       "type": "PractitionerRole"
     }
   ],
-  "valueString": "Erosie door het drinken van vruchtensap"
+  "valueString": "Erosie door het drinken van vruchtensap",
+  "note": [
+    {
+      "text": "Advies gegeven om de inname te beperken en niet direct na consumptie te poetsen"
+    }
+  ]
 }

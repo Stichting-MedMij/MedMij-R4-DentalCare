@@ -18,14 +18,15 @@
       "extension": [
         {
           "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
-          "valueString": "Laatste orthopantomogram (röntgenfoto) was in 2025"
+          "valueString": "Second opinion vanwege aanhoudende klachten"
         }
-      ]
+      ],
+      "text": "Afwijkende uitslag parodontale screening"
     }
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-07-22T10:00:00<br/>Einddatum: 2026-07-22T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Second opinion<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-07-22T10:00:00<br/>Einddatum: 2026-07-22T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
   },
   "status": "planned",
   "class": {
@@ -35,7 +36,7 @@
   },
   "type": [
     {
-      "text": "Tandarts Periodiek Preventief Onderzoek"
+      "text": "Second opinion"
     }
   ],
   "subject": {

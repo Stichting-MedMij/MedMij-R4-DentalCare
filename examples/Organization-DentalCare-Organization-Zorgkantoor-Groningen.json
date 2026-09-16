@@ -72,5 +72,18 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Zorgkantoor Groningen<br/>Adres: Winschoterdiep 70, 9723 AB Groningen</div>"
   },
-  "name": "Zorgkantoor Groningen"
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/uzovi",
+      "value": "5501"
+    }
+  ],
+  "name": "Zorgkantoor Groningen",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0501234567",
+      "use": "work"
+    }
+  ]
 }
