@@ -50,12 +50,7 @@ Usage: #example
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
   * type = "Patient"
-* effectiveDateTime = "2025-04-07T10:05:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
-  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#413495001 "ASA-score 1"
-* note
-  * text = "Astma stabiel; salbutamol zelden nodig; geen andere comorbiditeit."
 
 Instance: DentalCare-CariesRisk-Vermeulen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
@@ -107,12 +102,7 @@ Usage: #example
 * code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
   * type = "Patient"
-* effectiveDateTime = "2025-04-07T10:10:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
-  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#62482003 "laag"
-* note
-  * text = "Geen nieuwe laesies; betere poetsgewoonten en minder suikerhoudende dranken."
 
 Instance: DentalCare-OralHygiene-Vermeulen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
@@ -164,12 +154,7 @@ Usage: #example
 * code = $SCT#364126007 "status van mondhygiëne"
 * subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
   * type = "Patient"
-* effectiveDateTime = "2025-04-07T10:15:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
-  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#20572008 "goed"
-* note
-  * text = "Poetsinstructie opgevolgd; weinig plaque, geen relevant tandsteen."
 
 Instance: DentalCare-ParafunctionalActivity-Vermeulen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
@@ -221,12 +206,7 @@ Usage: #example
 * code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
   * type = "Patient"
-* effectiveDateTime = "2025-04-07T10:20:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
-  * type = "PractitionerRole"
 * valueString = "Knarsen verminderd met occlusale splint"
-* note
-  * text = "Occlusale splint vandaag geplaatst; instructie gegeven voor nachtelijk gebruik."
 
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Vermeulen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
@@ -278,12 +258,7 @@ Usage: #example
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
   * type = "Patient"
-* effectiveDateTime = "2025-04-07T10:25:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
-  * type = "PractitionerRole"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
-* note
-  * text = "Paro-preventie afgerond; pockets genormaliseerd."
 
 Instance: DentalCare-TreatmentObjective-1-Vermeulen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
@@ -313,13 +288,10 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Verbeteren mondhygiëne<br/>Patiënt: Sophie Vermeulen<br/>Status: Actief<br/>Prioriteit: Laag</div>"
 * lifecycleStatus = #active
-* priority = $GoalPriority#low-priority "Low Priority"
 * description
   * text = "Verbeteren mondhygiëne"
 * subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
   * type = "Patient"
-* note
-  * text = "Aansluitend op paro-preventie en slechte mondhygiëne."
 
 Instance: DentalCare-TreatmentObjective-3-Vermeulen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
@@ -436,12 +408,9 @@ Usage: #example
 * code = $ProcedureTypeVektisDentalCareCodeSystemOID#M01 "Gebitsreiniging"
 * subject = Reference(DentalCare-Patient-Vermeulen) "Sophie Vermeulen"
   * type = "Patient"
-* performedDateTime = "2025-04-07"
 * performer
   * actor = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
     * type = "PractitionerRole"
-* location = Reference(DentalCare-Location-Tandartspraktijk-Vos) "Tandartspraktijk Vos"
-  * type = "Location"
 
 Instance: DentalCare-MedicalDevice-Vermeulen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice
@@ -595,9 +564,6 @@ Usage: #example
 * participant
   * individual = Reference(DentalCare-PractitionerRole-Vos) "M. Vos, Tandarts"
     * type = "PractitionerRole"
-* period
-  * start = "2025-04-07T10:00:00+02:00"
-  * end = "2025-04-07T10:45:00+02:00"
 * reasonCode
   * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Plaatsing occlusale splint i.v.m. knarsen; gebitsreiniging"
   * text = "Plaatsing occlusale splint"

@@ -51,12 +51,7 @@ Usage: #example
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
-* effectiveDateTime = "2023-07-22T09:10:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#413495001 "ASA-score 1"
-* note
-  * text = "Gestopt met roken; hooikoorts stabiel onder Cetirizine; geen andere comorbiditeit."
 
 Instance: DentalCare-CariesRisk-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
@@ -108,12 +103,7 @@ Usage: #example
 * code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
-* effectiveDateTime = "2023-07-22T09:15:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#62482003 "laag"
-* note
-  * text = "Na restauratie en betere poetsgewoonten geen nieuwe laesies; risico gedaald."
 
 Instance: DentalCare-DentalFitness-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness
@@ -169,14 +159,9 @@ Usage: #example
 * code = $SCT#440271000146100 "'dental fitness' volgens NAVO-classificatiesysteem"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
-* effectiveDateTime = "2023-07-22T09:20:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-  * type = "PractitionerRole"
 * valueCodeableConcept
   * coding = $SCT#258392002 "klasse 1"
   * text = "vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen"
-* note
-  * text = "Restauratie stabiel; geen acute behandelbehoefte bij second opinion."
 
 Instance: DentalCare-OralHygiene-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
@@ -231,12 +216,7 @@ Usage: #example
 * code = $SCT#364126007 "status van mondhygiëne"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
-* effectiveDateTime = "2023-07-22T09:25:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-Vermeer) "S. Vermeer, Mondhygiënist"
-  * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#20572008 "goed"
-* note
-  * text = "Poetsinstructie opgevolgd; weinig plaque, geen relevant tandsteen."
 
 Instance: DentalCare-ParafunctionalActivity-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
@@ -288,12 +268,7 @@ Usage: #example
 * code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
-* effectiveDateTime = "2023-07-22T09:30:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-  * type = "PractitionerRole"
 * valueString = "Nagels bijten"
-* note
-  * text = "Nachtelijk knarsen afgenomen; nagels bijten nog aanwezig."
 
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
@@ -345,12 +320,7 @@ Usage: #example
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
-* effectiveDateTime = "2023-07-22T09:35:00+02:00"
-* performer = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-  * type = "PractitionerRole"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
-* note
-  * text = "Paro-preventietraject afgerond; pockets genormaliseerd."
 
 Instance: DentalCare-TreatmentObjective-1-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
@@ -401,19 +371,10 @@ Usage: #example
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
 * lifecycleStatus = #active
-* priority = $GoalPriority#high-priority "High Priority"
 * description
   * text = "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
   * type = "Patient"
-* target
-  * measure = $SCT#288919008 "kan kauwen"
-  * detailCodeableConcept = $SCT#162019007 "probleem met kauwen afwezig"
-  * dueDate = "2022-04-11"
-* addresses = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
-  * type = "Condition"
-* note
-  * text = "Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn."
 
 Instance: DentalCare-Problem-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem
@@ -505,12 +466,9 @@ Usage: #example
 * code = $ProcedureTypeVektisDentalCareCodeSystemOID#M01 "Gebitsreiniging"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
-* performedDateTime = "2023-07-22"
 * performer
   * actor = Reference(DentalCare-PractitionerRole-Vermeer) "S. Vermeer, Mondhygiënist"
     * type = "PractitionerRole"
-* location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
-  * type = "Location"
 
 Instance: DentalCare-Encounter-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
@@ -584,16 +542,6 @@ Usage: #example
   * text = "Restauratieve behandeling"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
-* participant
-  * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-    * type = "PractitionerRole"
-* period
-  * start = "2022-04-11T09:00:00+02:00"
-  * end = "2022-04-11T10:00:00+02:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Eénvlaksvulling (V11) rechterkies; aansluitend controle mondhygiëne"
-  * text = "Restauratie cariës rechterkies"
-* reasonReference = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
 * location
   * location = Reference(DentalCare-Location-Vliegbasis-Gilze-Rijen) "Vliegbasis Gilze-Rijen"
     * type = "Location"
