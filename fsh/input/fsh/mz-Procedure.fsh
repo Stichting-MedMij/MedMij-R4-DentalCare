@@ -18,7 +18,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     * ^slicing.discriminator.type = #value
     * ^slicing.discriminator.path = "$this"
     * ^slicing.rules = #open
-  * tag contains 
+  * tag contains
       careType 0..*
   * tag[careType] from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)
     * ^short = "CareType"
