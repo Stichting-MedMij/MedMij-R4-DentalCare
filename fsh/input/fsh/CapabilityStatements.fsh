@@ -17,7 +17,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Caries risk' transaction (system role: MZ-CRR-rc.1)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Caries risk' transaction (system role: MZ-CRR-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk"
@@ -81,7 +81,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Caries risk' transaction (system role: MZ-CRB-rc.1)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Caries risk' transaction (system role: MZ-CRB-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk"
@@ -145,7 +145,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Dental fitness' transaction (system role: MZ-DFR-rc.1)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Dental fitness' transaction (system role: MZ-DFR-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness"
@@ -209,7 +209,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction (system role: MZ-DFB-rc.1)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Dental fitness' transaction (system role: MZ-DFB-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness"
@@ -273,7 +273,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Oral hygiene' transaction (system role: MZ-OHR-rc.1)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Oral hygiene' transaction (system role: MZ-OHR-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
@@ -337,7 +337,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction (system role: MZ-OHB-rc.1)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction (system role: MZ-OHB-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
@@ -401,7 +401,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Parafunctional activity' transaction (system role: MZ-PAR-rc.1)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Parafunctional activity' transaction (system role: MZ-PAR-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
@@ -465,7 +465,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Parafunctional activity' transaction (system role: MZ-PAB-rc.1)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Parafunctional activity' transaction (system role: MZ-PAB-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
@@ -529,7 +529,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Periodic Periodontal Screening score' transaction (system role: MZ-PSR-rc.1)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Periodic Periodontal Screening score' transaction (system role: MZ-PSR-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
@@ -593,7 +593,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction (system role: MZ-PSB-rc.1)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction (system role: MZ-PSB-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
