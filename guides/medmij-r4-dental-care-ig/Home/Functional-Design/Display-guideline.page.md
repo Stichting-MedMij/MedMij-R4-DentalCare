@@ -94,7 +94,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Begintijd | 09:00 |
 | Einddatum | 01-01-2024 |
 | Eindtijd | 10:00 |
-| Reden contact toelichting | Extra controle vanwege bloedend tandvlees |
+| Toelichting reden contact | Extra controle vanwege bloedend tandvlees |
 | Zorgverlener | A.B. Janssen <br/> Tandarts |
 | Zorgorganisatie | Tendens |
 | Locatie | Praktijk Amsterdam |
@@ -467,7 +467,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra controle vanwege bloedend tandvlees</td><td>b</td>
-      <td></td><td>Reden contact toelichting of Uitleg reden contact</td><td></td><td>M</td>
+      <td></td><td>Toelichting reden contact of Uitleg reden contact</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Defensie Tandheelkundige Dienst</td><td>a</td>
@@ -593,15 +593,15 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>StatusNaam</td><td>Item</td><td>NL-CM:4.26.2</td><td>Kan kauwen</td><td>a</td>
-      <td>Dit data-item wordt uitgewisseld als onderdeel van het FHIR-element <code>Goal.description.text</code>.</td><td></td><td></td><td>M</td>
+      <td>Dit data-item wordt uitgewisseld als onderdeel van het FHIR-element <code>Goal.description.text</code> (zie GewensteGezondheidstoestand).</td><td></td><td></td><td>M</td>
     </tr>
     <tr>
       <td>StatusWaarde</td><td>Item</td><td>NL-CM:4.26.3</td><td>Zonder pijn</td><td>a</td>
-      <td>Dit data-item wordt uitgewisseld als onderdeel van het FHIR-element <code>Goal.description.text</code>.</td><td></td><td></td><td>M</td>
+      <td>Dit data-item wordt uitgewisseld als onderdeel van het FHIR-element <code>Goal.description.text</code> (zie GewensteGezondheidstoestand).</td><td></td><td></td><td>M</td>
     </tr>
     <tr>
       <td>StatusDatum</td><td>Item</td><td>NL-CM:4.26.6</td><td>01-04-2024</td><td>b</td>
-      <td></td><td>Einddatum</td><td></td><td>M</td>
+      <td>Dit is de datum waarop het doel behaald moet zijn.</td><td>Einddatum</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Toelichting</td><td>Item</td><td>NL-CM:4.26.4</td><td>Al enige tijd last van pijn bij het kauwen vanwege tanden die scheef op elkaar staan</td><td>b</td>
@@ -609,7 +609,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>Hulpmiddel::MedischHulpmiddel</td><td>Reference</td><td>NL-CM:4.26.5</td><td>Beugel voor de bovenboog</td><td>b</td>
-      <td></td><td>Hulpmiddel</td><td></td><td>M</td>
+      <td></td><td>Hulpmiddel</td><td></td><td>C</td>
     </tr>
     <tr>
       <td>Probleem</td><td>Reference</td><td>NL-CM:13.5.4</td><td>slecht op elkaar passen van je tanden of kiezen</td><td>b</td>
@@ -883,12 +883,12 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Manier verrichting of Manier</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>mz-dataelement-31</td><td></td><td></td>
-      <td></td><td></td><td></td><td>C</td>
+      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>mz-dataelement-31</td><td>Bovenkaak (code '70925003' in codesysteem 'SNOMED CT')</td><td>b</td>
+      <td></td><td>Lichaamsdeel</td><td></td><td>C</td>
     </tr>
     <tr>
-      <td>Indicatie::Probleem</td><td>Reference</td><td>mz-dataelement-34</td><td></td><td></td>
-      <td></td><td>Reden verrichting</td><td></td><td>C</td>
+      <td>Indicatie::Probleem</td><td>Reference</td><td>mz-dataelement-34</td><td>Scheve kaak</td><td>b</td>
+      <td></td><td>Reden verrichting</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>mz-dataelement-46</td><td>Vliegbasis Gilze-Rijen</td><td>a</td>
