@@ -104,6 +104,11 @@
         ]
       },
       {
+        "id": "mz-lm-OralHygiene.CareType",
+        "path": "mz-lm-OralHygiene.CareType",
+        "min": 1
+      },
+      {
         "id": "mz-lm-OralHygiene.OralHygieneValue",
         "path": "mz-lm-OralHygiene.OralHygieneValue",
         "short": "Oral hygiene value",

@@ -136,6 +136,11 @@
         ]
       },
       {
+        "id": "mz-lm-Procedure.CareType",
+        "path": "mz-lm-Procedure.CareType",
+        "min": 1
+      },
+      {
         "id": "mz-lm-Procedure.ProcedureType",
         "path": "mz-lm-Procedure.ProcedureType",
         "short": "Procedure type",

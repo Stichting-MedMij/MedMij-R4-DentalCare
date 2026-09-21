@@ -21,6 +21,7 @@ Description: "Caries risk."
   * ^definition = "The date and time at which the caries risk was determined."
   * ^alias = "CariësrisicoDatumTijd"
 * EffectivePeriod 0..0
+* CareType 1..*
 * CariesRiskValue 1..1 CodeableConcept "Caries risk value" "The caries risk."
 * CariesRiskValue from CariesRisk_VS (extensible)
   * ^alias = "CariësrisicoWaarde"
@@ -50,6 +51,7 @@ Description: "Dental fitness according to the NATO classification system."
   * ^definition = "The date and time at which the dental fitness was determined."
   * ^alias = "DentalFitnessDatumTijd"
 * EffectivePeriod 0..0
+* CareType 1..*
 * DentalFitnessValue 1..1 CodeableConcept "Dental fitness value" "The dental fitness."
 * DentalFitnessValue from DentalFitness_VS (required)
   * ^alias = "DentalFitnessWaarde"
@@ -79,6 +81,7 @@ Description: "Oral hygiene."
   * ^definition = "The date and time at which the oral hygiene was determined."
   * ^alias = "MondhygiëneDatumTijd"
 * EffectivePeriod 0..0
+* CareType 1..*
 * OralHygieneValue 1..1 CodeableConcept "Oral hygiene value" "The oral hygiene."
 * OralHygieneValue from OralHygiene_VS (extensible)
   * ^alias = "MondhygiëneWaarde"
@@ -108,6 +111,7 @@ Description: "Parafunctional activity."
   * ^definition = "The date and time at which the parafunctional activity was determined."
   * ^alias = "ParafunctioneleActiviteitDatumTijd"
 * EffectivePeriod 0..0
+* CareType 1..*
 * ParafunctionalActivityValue 1..1 string "Parafunctional activity value" "The parafunctional activity."
   * ^alias = "ParafunctioneleActiviteitWaarde"
 * Performer 0..1 Reference(MedMijCoreLmHealthProfessional) "Performer" "The health professional who determined the parafunctional activity."
@@ -136,6 +140,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^definition = "The date and time at which the PPS was performed."
   * ^alias = "PeriodiekeParodontaleScreeningScoreDatumTijd"
 * EffectivePeriod 0..0
+* CareType 1..*
 * PeriodicPeriodontalScreeningScoreValue 1..1 CodeableConcept "Periodic Periodontal Screening score value" "The score of the PPS."
 * PeriodicPeriodontalScreeningScoreValue from PeriodicPeriodontalScreeningScore_VS (required)
   * ^alias = "PeriodiekeParodontaleScreeningScoreWaarde"
@@ -170,6 +175,7 @@ Description: "Therapeutic or diagnostic procedure undergone by the patient in de
     * ^short = "Procedure end date"
     * ^definition = "The end date (and if possible end time) of the procedure. A 'vague' date, such as only the year, is permitted.\n\nThe element offers the option to indicate the end of the period of a series of related procedures. The end date element is only used for a procedure that takes some time and is then always applied. If the procedure still continues, the value is left empty."
     * ^alias = "VerrichtingEindDatum"
+* CareType 1..*
 * ProcedureType 1..1 CodeableConcept "Procedure type" "The name of the procedure based on the [Prestatiecodelijst Mondzorg (010)](https://tog.vektis.nl/Webinfo.aspx?ID=Prestatiecodelijsten) authored by Vektis."
 * ProcedureType from ProcedureTypeVektisDentalCare_VS (extensible)
   * ^alias = "VerrichtingType"

@@ -99,6 +99,11 @@
         ]
       },
       {
+        "id": "mz-lm-PeriodicPeriodontalScreeningScore.CareType",
+        "path": "mz-lm-PeriodicPeriodontalScreeningScore.CareType",
+        "min": 1
+      },
+      {
         "id": "mz-lm-PeriodicPeriodontalScreeningScore.PeriodicPeriodontalScreeningScoreValue",
         "path": "mz-lm-PeriodicPeriodontalScreeningScore.PeriodicPeriodontalScreeningScoreValue",
         "short": "Periodic Periodontal Screening score value",

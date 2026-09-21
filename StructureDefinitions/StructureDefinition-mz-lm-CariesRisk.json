@@ -104,6 +104,11 @@
         ]
       },
       {
+        "id": "mz-lm-CariesRisk.CareType",
+        "path": "mz-lm-CariesRisk.CareType",
+        "min": 1
+      },
+      {
         "id": "mz-lm-CariesRisk.CariesRiskValue",
         "path": "mz-lm-CariesRisk.CariesRiskValue",
         "short": "Caries risk value",

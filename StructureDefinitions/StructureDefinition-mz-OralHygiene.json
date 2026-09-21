@@ -73,7 +73,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.meta.tag:careType",
@@ -84,7 +85,7 @@
         "alias": [
           "Zorgtype"
         ],
-        "min": 0,
+        "min": 1,
         "max": "*",
         "binding": {
           "strength": "required",

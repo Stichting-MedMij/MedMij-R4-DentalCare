@@ -99,6 +99,11 @@
         ]
       },
       {
+        "id": "mz-lm-DentalFitness.CareType",
+        "path": "mz-lm-DentalFitness.CareType",
+        "min": 1
+      },
+      {
         "id": "mz-lm-DentalFitness.DentalFitnessValue",
         "path": "mz-lm-DentalFitness.DentalFitnessValue",
         "short": "Dental fitness value",
