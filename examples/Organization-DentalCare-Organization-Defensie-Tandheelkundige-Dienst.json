@@ -13,6 +13,18 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
     ]
   },
+  "telecom": [
+    {
+      "system": "email",
+      "value": "info@dtd.tandarts.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "+31612345602",
+      "use": "work"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -82,24 +94,12 @@
     {
       "coding": [
         {
-          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
           "code": "1200",
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
           "display": "Tandartsen"
         }
       ]
     }
   ],
-  "name": "Defensie Tandheelkundige Dienst",
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "+31612345602",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "info@dtd.tandarts.nl",
-      "use": "work"
-    }
-  ]
+  "name": "Defensie Tandheelkundige Dienst"
 }

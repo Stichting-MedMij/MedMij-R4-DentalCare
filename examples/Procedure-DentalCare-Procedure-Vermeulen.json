@@ -1,0 +1,108 @@
+{
+  "resourceType": "Procedure",
+  "id": "DentalCare-Procedure-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "225362009",
+        "system": "http://snomed.info/sct",
+        "display": "tandheelkundige zorg"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "257867005",
+            "system": "http://snomed.info/sct",
+            "display": "inbrengen"
+          }
+        ]
+      }
+    }
+  ],
+  "bodySite": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "24028007",
+                "system": "http://snomed.info/sct",
+                "display": "rechts"
+              }
+            ]
+          }
+        }
+      ],
+      "coding": [
+        {
+          "code": "38199008",
+          "system": "http://snomed.info/sct",
+          "display": "tand en/of kies"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling<br/>Patiënt: Sophie Vermeulen<br/>Status: Voltooid<br/>Start: 2025-03-24T09:00<br/>Einde: 2025-03-24T09:40<br/>Uitgevoerd door: M. Vos, Tandarts<br/>Locatie: Tandartspraktijk Vos<br/>Indicatie: Cariës rechterbovenkies</div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "V11",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.10",
+        "display": "Eénvlaksvulling"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "performedPeriod": {
+    "start": "2025-03-24T09:00:00+01:00",
+    "end": "2025-03-24T09:40:00+01:00"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-Vos",
+        "display": "M. Vos, Tandarts",
+        "type": "PractitionerRole"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/DentalCare-Location-Tandartspraktijk-Vos",
+    "display": "Tandartspraktijk Vos",
+    "type": "Location"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/DentalCare-Problem-Vermeulen",
+      "display": "Cariës rechterbovenkies",
+      "type": "Condition"
+    }
+  ]
+}

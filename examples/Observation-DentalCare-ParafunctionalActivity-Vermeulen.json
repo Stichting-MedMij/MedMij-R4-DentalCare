@@ -1,0 +1,49 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-ParafunctionalActivity-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "110353005",
+        "system": "http://snomed.info/sct",
+        "display": "parafunctionele gewoonte"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Parafunctionele activiteit<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-10 10:15<br/>Activiteit: Knarsen 's nachts<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2025-03-10T10:15:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-Vos",
+      "display": "M. Vos, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueString": "Knarsen 's nachts",
+  "note": [
+    {
+      "text": "Occlusale splint gepland ter bescherming van restauraties en kaakgewricht."
+    }
+  ]
+}

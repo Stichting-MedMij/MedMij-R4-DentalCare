@@ -40,7 +40,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Cariës<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2024-04-29<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Cariës<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
   },
   "clinicalStatus": {
     "coding": [
@@ -91,8 +91,8 @@
     "display": "Erik van Oranje",
     "type": "Patient"
   },
-  "onsetDateTime": "2024-04-26T09:00:00+01:00",
-  "recordedDate": "2024-04-26T10:00:00+01:00",
+  "onsetDateTime": "2025-05-20T10:00:00+01:00",
+  "recordedDate": "2025-05-20T10:15:00+01:00",
   "asserter": {
     "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",
     "display": "A.B.D.O. de Koning, Tandarts",
@@ -100,7 +100,7 @@
   },
   "note": [
     {
-      "text": "Actieve cariës vastgesteld. Restauratieve behandeling en preventief advies besproken."
+      "text": "Actieve cariës vastgesteld tijdens periodiek preventief onderzoek. Restauratieve behandeling (éénvlaksvulling) en preventief advies besproken."
     }
   ]
 }

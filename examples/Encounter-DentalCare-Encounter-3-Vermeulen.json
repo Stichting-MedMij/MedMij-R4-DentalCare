@@ -1,0 +1,75 @@
+{
+  "resourceType": "Encounter",
+  "id": "DentalCare-Encounter-3-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
+    ]
+  },
+  "reasonCode": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+          "valueString": "Eénvlaksvulling (V11) rechterbovenkies"
+        }
+      ],
+      "text": "Restauratie cariës rechterbovenkies"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Restauratieve behandeling<br/>Patiënt: Sophie Vermeulen<br/>Begindatum: 2025-03-24T09:00:00+01:00<br/>Einddatum: 2025-03-24T10:00:00+01:00<br/>Status: Afgerond<br/>Locatie: Tandartspraktijk Vos</div>"
+  },
+  "status": "finished",
+  "class": {
+    "code": "OTH",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "display": "Anders"
+  },
+  "type": [
+    {
+      "text": "Restauratieve behandeling"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-Vos",
+        "display": "M. Vos, Tandarts",
+        "type": "PractitionerRole"
+      }
+    }
+  ],
+  "period": {
+    "start": "2025-03-24T09:00:00+01:00",
+    "end": "2025-03-24T10:00:00+01:00"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/DentalCare-Problem-Vermeulen",
+      "display": "Cariës rechterbovenkies"
+    }
+  ],
+  "location": [
+    {
+      "location": {
+        "reference": "Location/DentalCare-Location-Tandartspraktijk-Vos",
+        "display": "Tandartspraktijk Vos",
+        "type": "Location"
+      }
+    }
+  ]
+}

@@ -15,17 +15,17 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Consult t.b.v. intake<br/>Patiënt: Berend van de Stok<br/>begin datum: 2025-09-02T09:00:00+01:00<br/>Status: Gepland<br/>Locatie: CWZ Nijmegen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01T09:00:00+01:00<br/>Einddatum: 2025-08-01T09:30:00+01:00<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
   },
   "status": "planned",
   "class": {
-    "code": "OTH",
-    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-    "display": "Anders"
+    "code": "AMB",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "display": "Poliklinisch"
   },
   "type": [
     {
-      "text": "Consult t.b.v. intake"
+      "text": "Controle / debonding"
     }
   ],
   "subject": {
@@ -37,20 +37,20 @@
     {
       "individual": {
         "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
-        "display": "B. Dijkstra, Tandarts",
+        "display": "B. Dijkstra, Orthodontist",
         "type": "PractitionerRole"
       }
     }
   ],
   "period": {
-    "start": "2025-09-01T09:00:00+01:00",
-    "end": "2025-09-01T09:30:00+01:00"
+    "start": "2025-08-01T09:00:00+01:00",
+    "end": "2025-08-01T09:30:00+01:00"
   },
   "location": [
     {
       "location": {
-        "reference": "Location/DentalCare-Location-CWZ-Nijmegen",
-        "display": "CWZ Nijmegen",
+        "reference": "Location/DentalCare-Location-Orthodontiepraktijk-Dijkstra",
+        "display": "Orthodontiepraktijk Dijkstra",
         "type": "Location"
       }
     }

@@ -13,21 +13,20 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
     ]
   },
-  "reasonReference": [
+  "reasonCode": [
     {
       "extension": [
         {
           "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
-          "valueString": "Laatste orthopantomogram (röntgenfoto) was in 2020"
+          "valueString": "Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening"
         }
       ],
-      "reference": "Procedure/DentalCare-Procedure-Jansen",
-      "display": "Maken en beoordelen kleine röntgenfoto"
+      "text": "Aanhoudende klachten rechterkies / paro-preventie"
     }
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
   },
   "status": "finished",
   "class": {
@@ -37,12 +36,12 @@
   },
   "type": [
     {
-      "text": "Tandarts Periodiek Preventief Onderzoek"
+      "text": "Second opinion"
     }
   ],
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen-van Dijk",
+    "display": "Anita Jansen",
     "type": "Patient"
   },
   "participant": [
@@ -58,6 +57,12 @@
     "start": "2023-07-22T09:00:00+01:00",
     "end": "2023-07-22T09:30:00+01:00"
   },
+  "reasonReference": [
+    {
+      "reference": "Condition/DentalCare-Problem-Jansen",
+      "display": "Cariës rechterkies"
+    }
+  ],
   "hospitalization": {
     "dischargeDisposition": {
       "coding": [

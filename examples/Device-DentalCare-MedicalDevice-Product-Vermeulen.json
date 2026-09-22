@@ -1,0 +1,56 @@
+{
+  "resourceType": "Device",
+  "id": "DentalCare-MedicalDevice-Product-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.gs1.org/gtin",
+      "value": "08712345678913"
+    }
+  ],
+  "udiCarrier": [
+    {
+      "issuer": "https://www.gs1.org/gtin",
+      "deviceIdentifier": "08712345678913",
+      "carrierHRF": "(01)08712345678913(11)250320(17)300320(10)SPLINT25A(21)SVRM0001"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Product: Occlusale splint<br/>Patiënt: Sophie Vermeulen<br/>Producttype: Occlusale splint<br/>ProductID: (01)08712345678913(11)250320(17)300320(10)SPLINT25A(21)SVRM0001</div>"
+  },
+  "manufactureDate": "2025-03-20",
+  "expirationDate": "2030-03-20",
+  "lotNumber": "SPLINT25A",
+  "serialNumber": "SVRM0001",
+  "type": {
+    "coding": [
+      {
+        "code": "257192006",
+        "system": "http://snomed.info/sct",
+        "display": "occlusale splint"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "note": [
+    {
+      "text": "Individueel vervaardigde occlusale splint voor de bovenboog"
+    }
+  ]
+}

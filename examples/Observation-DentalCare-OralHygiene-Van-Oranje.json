@@ -24,7 +24,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2024-04-29 06:43<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:15<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
   },
   "status": "final",
   "subject": {
@@ -32,7 +32,7 @@
     "display": "Erik van Oranje",
     "type": "Patient"
   },
-  "effectiveDateTime": "2024-04-29T06:43:00+01:00",
+  "effectiveDateTime": "2025-05-20T10:15:00+01:00",
   "performer": [
     {
       "reference": "PractitionerRole/DentalCare-PractitionerRole-Vermeer",

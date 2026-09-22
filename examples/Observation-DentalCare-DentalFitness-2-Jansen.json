@@ -1,12 +1,12 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-DentalFitness-Van-De-Stok",
+  "id": "DentalCare-DentalFitness-2-Jansen",
   "meta": {
     "tag": [
       {
-        "code": "1300",
+        "code": "1200",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+        "display": "Tandartsen"
       }
     ],
     "profile": [
@@ -24,19 +24,19 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatiesysteem)<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-03-03 10:43<br/>Dental Fitness: Kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden<br/>Uitgevoerd door: B. Dijkstra, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:25<br/>Dental Fitness: Kan een tandheelkundige behandeling nodig zijn, maar het is onwaarschijnlijk dat dit binnen 12 maanden tot een tandheelkundig noodgeval zal leiden<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/DentalCare-Patient-Van-De-Stok",
-    "display": "Berend van de Stok",
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2024-03-03T10:43:00+01:00",
+  "effectiveDateTime": "2022-04-11T09:25:00+02:00",
   "performer": [
     {
-      "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
-      "display": "B. Dijkstra, Tandarts",
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
+      "display": "D. de Ruiter, Tandarts",
       "type": "PractitionerRole"
     }
   ],
@@ -52,7 +52,7 @@
   },
   "note": [
     {
-      "text": "Beginnende gebitsproblemen vastgesteld"
+      "text": "Cariës rechterkies gerestaureerd; mondhygiëne nog matig, geen acute dreiging meer."
     }
   ]
 }

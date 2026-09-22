@@ -18,15 +18,15 @@
       "url": "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.HealthProfessional",
       "valueReference": {
         "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
-        "display": "B. Dijkstra, Tandarts",
+        "display": "B. Dijkstra, Orthodontist",
         "type": "PractitionerRole"
       }
     },
     {
       "url": "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.Location",
       "valueReference": {
-        "reference": "Location/DentalCare-Location-CWZ-Nijmegen",
-        "display": "CWZ Nijmegen",
+        "reference": "Location/DentalCare-Location-Orthodontiepraktijk-Dijkstra",
+        "display": "Orthodontiepraktijk Dijkstra",
         "type": "Location"
       }
     },
@@ -41,9 +41,9 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Bedoeld<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandboog<br/>Indicatie: malocclusie van tanden en/of kiezen<br/>Zorgverlener: B. Dijkstra, Tandarts<br/>Locatie: CWZ Nijmegen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandboog<br/>Indicatie: malocclusie van tanden en/of kiezen<br/>Zorgverlener: B. Dijkstra, Orthodontist<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
   },
-  "status": "complete",
+  "status": "active",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
     "display": "Berend van de Stok",
@@ -83,7 +83,7 @@
   },
   "note": [
     {
-      "text": "Vaste multibracket-beugel in de bovenboog; controle elke zes weken."
+      "text": "Vaste multibracket-beugel in de bovenboog geplaatst na paro-stabilisatie en extractie; controle elke zes weken."
     }
   ]
 }

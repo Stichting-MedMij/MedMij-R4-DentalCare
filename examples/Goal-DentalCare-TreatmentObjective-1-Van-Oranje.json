@@ -20,7 +20,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Doel: Tandvleesontsteking behandelen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Doel: Gingivitis/tandvleesontsteking behandelen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
   },
   "lifecycleStatus": "active",
   "priority": {
@@ -33,7 +33,7 @@
     ]
   },
   "description": {
-    "text": "Tandvleesontsteking behandelen"
+    "text": "Gingivitis/tandvleesontsteking behandelen"
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",

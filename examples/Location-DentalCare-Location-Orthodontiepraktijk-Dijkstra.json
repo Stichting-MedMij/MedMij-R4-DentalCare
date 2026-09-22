@@ -1,0 +1,86 @@
+{
+  "resourceType": "Location",
+  "id": "DentalCare-Location-Orthodontiepraktijk-Dijkstra",
+  "meta": {
+    "tag": [
+      {
+        "code": "1300",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"
+    ]
+  },
+  "address": {
+    "extension": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "WP",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+              "display": "work place"
+            }
+          ]
+        }
+      }
+    ],
+    "line": [
+      "Stationsstraat 18"
+    ],
+    "_line": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+            "valueString": "Stationsstraat"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+            "valueString": "18"
+          }
+        ]
+      }
+    ],
+    "use": "work",
+    "city": "Bergen op Zoom",
+    "postalCode": "4611 XX",
+    "country": "Nederland",
+    "_country": {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "NL",
+                "system": "urn:iso:std:iso:3166",
+                "display": "Netherlands"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Orthodontiepraktijk Dijkstra<br/>Telefoon: 0164123456<br/>Adres: Stationsstraat 18, 4611 XX Bergen op Zoom<br/>Beherende organisatie: Orthodontiepraktijk Dijkstra</div>"
+  },
+  "name": "Orthodontiepraktijk Dijkstra",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0164123456",
+      "use": "work"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/DentalCare-Organization-Orthodontiepraktijk-Dijkstra",
+    "display": "Orthodontiepraktijk Dijkstra",
+    "type": "Organization"
+  }
+}

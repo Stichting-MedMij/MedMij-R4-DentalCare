@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-OralHygiene-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "364126007",
+        "system": "http://snomed.info/sct",
+        "display": "status van mondhygiëne"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-10 10:15<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2025-03-10T10:15:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-Vos",
+      "display": "M. Vos, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "556001",
+        "system": "http://snomed.info/sct",
+        "display": "slecht"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Plaque en beginnende tandsteen buccaal; poetsinstructie gegeven."
+    }
+  ]
+}

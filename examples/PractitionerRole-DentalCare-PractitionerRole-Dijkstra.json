@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Dijkstra<br/>Organisatie: Defensie Tandheelkundige Dienst<br/>Locatie: CWZ Nijmegen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlenerrol: Tandartsspecialisten dentomaxillaire orthopaedie<br/>Zorgverlener: Dijkstra<br/>Organisatie: Orthodontiepraktijk Dijkstra<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
   },
   "practitioner": {
     "reference": "Practitioner/DentalCare-Practitioner-Dijkstra",
@@ -23,17 +23,17 @@
     "type": "Practitioner"
   },
   "organization": {
-    "reference": "Organization/DentalCare-Organization-Defensie-Tandheelkundige-Dienst",
-    "display": "Defensie Tandheelkundige Dienst",
+    "reference": "Organization/DentalCare-Organization-Orthodontiepraktijk-Dijkstra",
+    "display": "Orthodontiepraktijk Dijkstra",
     "type": "Organization"
   },
   "specialty": [
     {
       "coding": [
         {
-          "code": "1200",
+          "code": "1300",
           "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-          "display": "Tandartsen, algemeen practicus"
+          "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
         }
       ]
     }

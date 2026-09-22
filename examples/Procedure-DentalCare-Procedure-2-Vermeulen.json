@@ -1,0 +1,66 @@
+{
+  "resourceType": "Procedure",
+  "id": "DentalCare-Procedure-2-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "225362009",
+        "system": "http://snomed.info/sct",
+        "display": "tandheelkundige zorg"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Maken en beoordelen kleine röntgenfoto<br/>Patiënt: Sophie Vermeulen<br/>Status: Voltooid<br/>Datum: 2025-03-10<br/>Uitgevoerd door: M. Vos, Tandarts<br/>Locatie: Tandartspraktijk Vos</div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "X10",
+        "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.10",
+        "display": "Maken en beoordelen kleine röntgenfoto"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "performedDateTime": "2025-03-10",
+  "performer": [
+    {
+      "actor": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-Vos",
+        "display": "M. Vos, Tandarts",
+        "type": "PractitionerRole"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/DentalCare-Location-Tandartspraktijk-Vos",
+    "display": "Tandartspraktijk Vos",
+    "type": "Location"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/DentalCare-Problem-Vermeulen",
+      "display": "Cariës rechterbovenkies",
+      "type": "Condition"
+    }
+  ]
+}

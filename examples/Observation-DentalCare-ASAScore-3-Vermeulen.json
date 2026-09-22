@@ -1,0 +1,44 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-ASAScore-3-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "413347006",
+        "display": "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-04-07 10:05<br/>Score: ASA-score 1<br/>Opmerking: Astma stabiel; salbutamol zelden nodig; geen andere comorbiditeit<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "413495001",
+        "system": "http://snomed.info/sct",
+        "display": "ASA-score 1"
+      }
+    ]
+  }
+}

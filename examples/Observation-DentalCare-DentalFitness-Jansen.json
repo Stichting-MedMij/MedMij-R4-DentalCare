@@ -24,7 +24,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2024-09-08 11:43<br/>Dental Fitness: Huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Dental Fitness: Huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
   "status": "final",
   "subject": {
@@ -32,7 +32,7 @@
     "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
-  "effectiveDateTime": "2024-09-08T11:43:00+01:00",
+  "effectiveDateTime": "2022-02-11T10:43:00+01:00",
   "performer": [
     {
       "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
@@ -49,5 +49,10 @@
       }
     ],
     "text": "huidige tandheelkundige behandeling om een tandheelkundige aandoening te corrigeren die waarschijnlijk binnen 12 maanden een tandheelkundige noodsituatie kan veroorzaken"
-  }
+  },
+  "note": [
+    {
+      "text": "Actieve cariës en slechte mondhygiëne met aanhoudende klachten; onbehandeld waarschijnlijk noodgeval binnen 12 maanden."
+    }
+  ]
 }

@@ -29,7 +29,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
   },
   "status": "final",
   "subject": {
@@ -40,8 +40,8 @@
   "effectiveDateTime": "2022-02-11T10:43:00+01:00",
   "performer": [
     {
-      "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Ruiter",
-      "display": "D. de Ruiter, Tandarts",
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-Vermeer",
+      "display": "S. Vermeer, Mondhygiënist",
       "type": "PractitionerRole"
     }
   ],

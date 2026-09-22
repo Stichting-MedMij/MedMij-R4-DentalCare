@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: Menzis<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: Menzis<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-01-01<br/>Einddatum: 2024-01-01<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
   },
   "status": "active",
   "type": {
@@ -34,8 +34,8 @@
     "type": "Patient"
   },
   "period": {
-    "start": "2025-01-01",
-    "end": "2026-01-01"
+    "start": "2022-01-01",
+    "end": "2024-01-01"
   },
   "payor": [
     {

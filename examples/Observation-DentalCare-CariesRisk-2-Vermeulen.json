@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-CariesRisk-2-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "74024006",
+        "system": "http://snomed.info/sct",
+        "display": "vatbaarheid voor cariës"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-24 09:10<br/>Cariësrisico: Hoog<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2025-03-24T09:10:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-Vos",
+      "display": "M. Vos, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "75540009",
+        "system": "http://snomed.info/sct",
+        "display": "hoog"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Actieve cariës rechterbovenkies gerestaureerd; voedingspatroon nog ongunstig."
+    }
+  ]
+}

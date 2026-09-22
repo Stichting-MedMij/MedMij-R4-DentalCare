@@ -1,0 +1,49 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-ParafunctionalActivity-2-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "110353005",
+        "system": "http://snomed.info/sct",
+        "display": "parafunctionele gewoonte"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Parafunctionele activiteit<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-24 09:20<br/>Activiteit: Kaken klemmen overdag<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2025-03-24T09:20:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-Vos",
+      "display": "M. Vos, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueString": "Kaken klemmen overdag",
+  "note": [
+    {
+      "text": "Naast nachtelijk knarsen ook overdag klemmen; splint plaatsing gepland."
+    }
+  ]
+}

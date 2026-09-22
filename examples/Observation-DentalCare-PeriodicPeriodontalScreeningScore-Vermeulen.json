@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "DentalCare-PeriodicPeriodontalScreeningScore-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "540501000146103",
+        "system": "http://snomed.info/sct",
+        "display": "score op periodieke parodontale screening"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Sophie Vermeulen<br/>Datum/Tijd: 2025-03-10 10:15<br/>Score: Pockets 4-5 millimeter = mogelijk in orde<br/>Opmerking: Paro-preventie; hercontrole over zes maanden<br/>Uitgevoerd door: M. Vos, Tandarts</div>"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2025-03-10T10:15:00+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/DentalCare-PractitionerRole-Vos",
+      "display": "M. Vos, Tandarts",
+      "type": "PractitionerRole"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "ppsscore2",
+        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore",
+        "display": "Pockets 4-5 millimeter = mogelijk in orde"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Paro-preventie; hercontrole over zes maanden."
+    }
+  ]
+}

@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: malocclusie van tanden en/of kiezen<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: malocclusie van tanden en/of kiezen<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Orthodontist</div>"
   },
   "clinicalStatus": {
     "coding": [
@@ -78,15 +78,15 @@
     "type": "Patient"
   },
   "onsetDateTime": "2023-11-15",
-  "recordedDate": "2024-01-01T08:43:00+01:00",
+  "recordedDate": "2024-01-01T10:43:00+01:00",
   "asserter": {
     "reference": "PractitionerRole/DentalCare-PractitionerRole-Dijkstra",
-    "display": "B. Dijkstra, Tandarts",
+    "display": "B. Dijkstra, Orthodontist",
     "type": "PractitionerRole"
   },
   "note": [
     {
-      "text": "Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland."
+      "text": "Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie."
     }
   ]
 }

@@ -1,0 +1,105 @@
+{
+  "resourceType": "Organization",
+  "id": "DentalCare-Organization-Tandartspraktijk-Vos",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
+    ]
+  },
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "WP",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                "display": "work place"
+              }
+            ]
+          }
+        }
+      ],
+      "line": [
+        "Grote Houtstraat 45"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Grote Houtstraat"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "45"
+            }
+          ]
+        }
+      ],
+      "use": "work",
+      "city": "Haarlem",
+      "postalCode": "2011 HD",
+      "country": "Nederland",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NL",
+                  "system": "urn:iso:std:iso:3166",
+                  "display": "Netherlands"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Tandartspraktijk Vos<br/>AGB-code: 12005678<br/>Telefoon: 0231234567<br/>E-mail: info@tandartspraktijkvos.nl<br/>Adres: Grote Houtstraat 45, 2011 HD Haarlem</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
+      "value": "12005678"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "1200",
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "display": "Tandartsen"
+        }
+      ]
+    }
+  ],
+  "name": "Tandartspraktijk Vos",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0231234567",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "info@tandartspraktijkvos.nl",
+      "use": "work"
+    }
+  ]
+}

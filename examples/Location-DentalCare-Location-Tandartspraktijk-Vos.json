@@ -1,12 +1,12 @@
 {
   "resourceType": "Location",
-  "id": "DentalCare-Location-CWZ-Nijmegen",
+  "id": "DentalCare-Location-Tandartspraktijk-Vos",
   "meta": {
     "tag": [
       {
-        "code": "1300",
+        "code": "1200",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+        "display": "Tandartsen"
       }
     ],
     "profile": [
@@ -29,25 +29,25 @@
       }
     ],
     "line": [
-      "Weg door Jonkerbos 100"
+      "Grote Houtstraat 45"
     ],
     "_line": [
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-            "valueString": "Weg door Jonkerbos"
+            "valueString": "Grote Houtstraat"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-            "valueString": "100"
+            "valueString": "45"
           }
         ]
       }
     ],
     "use": "work",
-    "city": "Nijmegen",
-    "postalCode": "6532 SZ",
+    "city": "Haarlem",
+    "postalCode": "2011 HD",
     "country": "Nederland",
     "_country": {
       "extension": [
@@ -68,19 +68,19 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: CWZ Nijmegen<br/>Telefoon: 0246412121<br/>Adres: Weg door Jonkerbos 100, 6532 SZ Nijmegen<br/>Beherende organisatie: Defensie Tandheelkundige Dienst</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Tandartspraktijk Vos<br/>Telefoon: 0231234567<br/>Adres: Grote Houtstraat 45, 2011 HD Haarlem<br/>Beherende organisatie: Tandartspraktijk Vos</div>"
   },
-  "name": "CWZ Nijmegen",
+  "name": "Tandartspraktijk Vos",
   "telecom": [
     {
       "system": "phone",
-      "value": "0246412121",
+      "value": "0231234567",
       "use": "work"
     }
   ],
   "managingOrganization": {
-    "reference": "Organization/DentalCare-Organization-Defensie-Tandheelkundige-Dienst",
-    "display": "Defensie Tandheelkundige Dienst",
+    "reference": "Organization/DentalCare-Organization-Tandartspraktijk-Vos",
+    "display": "Tandartspraktijk Vos",
     "type": "Organization"
   }
 }

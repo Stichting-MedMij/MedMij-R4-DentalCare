@@ -13,16 +13,6 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
     ]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: S. Vermeer<br/>BIG-nummer: 87001201<br/>Geslacht: Vrouw<br/>Telefoon: +31612345603<br/>E-mail: vermeer@mondhygienist.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
-  },
-  "identifier": [
-    {
-      "system": "http://fhir.nl/fhir/NamingSystem/big",
-      "value": "87001201"
-    }
-  ],
   "name": [
     {
       "use": "official",
@@ -51,18 +41,6 @@
       }
     }
   ],
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "+31612345603",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "vermeer@mondhygienist.nl",
-      "use": "work"
-    }
-  ],
   "address": [
     {
       "extension": [
@@ -79,7 +57,6 @@
           }
         }
       ],
-      "use": "work",
       "line": [
         "Simon Smitweg 1"
       ],
@@ -97,6 +74,7 @@
           ]
         }
       ],
+      "use": "work",
       "city": "Leiderdorp",
       "postalCode": "2353 GA",
       "country": "Nederland",
@@ -118,5 +96,27 @@
       }
     }
   ],
-  "gender": "female"
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: S. Vermeer<br/>BIG-nummer: 87001201<br/>Geslacht: Vrouw<br/>Telefoon: +31612345603<br/>E-mail: vermeer@mondhygienist.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/big",
+      "value": "87001201"
+    }
+  ],
+  "gender": "female",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+31612345603",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "vermeer@mondhygienist.nl",
+      "use": "work"
+    }
+  ]
 }

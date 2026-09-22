@@ -7,11 +7,6 @@
         "code": "1200",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
         "display": "Tandartsen"
-      },
-      {
-        "code": "1201",
-        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandarts, implantoloog"
       }
     ],
     "profile": [
@@ -68,15 +63,15 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Plaatsen opbouw ten behoeve van implantaatkroon<br/>Patiënt: Erik van Oranje<br/>Datum: 2024-04-29<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Tandartspraktijk de Koning</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling<br/>Patiënt: Erik van Oranje<br/>Datum: 2025-06-03<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
   },
   "status": "completed",
   "code": {
     "coding": [
       {
-        "code": "R67",
+        "code": "V11",
         "system": "urn:oid:2.16.840.1.113883.2.4.3.30.4.10",
-        "display": "Plaatsen opbouw ten behoeve van implantaatkroon"
+        "display": "Eénvlaksvulling"
       }
     ]
   },
@@ -86,8 +81,8 @@
     "type": "Patient"
   },
   "performedPeriod": {
-    "start": "2024-04-29T09:00:00+01:00",
-    "end": "2024-04-29T10:00:00+01:00"
+    "start": "2025-06-03T09:00:00+01:00",
+    "end": "2025-06-03T09:45:00+01:00"
   },
   "performer": [
     {

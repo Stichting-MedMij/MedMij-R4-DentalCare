@@ -1,0 +1,89 @@
+{
+  "resourceType": "DeviceUseStatement",
+  "id": "DentalCare-MedicalDevice-Vermeulen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.HealthProfessional",
+      "valueReference": {
+        "reference": "PractitionerRole/DentalCare-PractitionerRole-Vos",
+        "display": "M. Vos, Tandarts",
+        "type": "PractitionerRole"
+      }
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.Location",
+      "valueReference": {
+        "reference": "Location/DentalCare-Location-Tandartspraktijk-Vos",
+        "display": "Tandartspraktijk Vos",
+        "type": "Location"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
+      "valueReference": {
+        "reference": "Goal/DentalCare-TreatmentObjective-3-Vermeulen",
+        "display": "Behandeldoel: geen problemen met kauwen",
+        "type": "Goal"
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medisch hulpmiddel: Occlusale splint<br/>Patiënt: Sophie Vermeulen<br/>Status: Actief<br/>Begindatum: 2025-04-07<br/>Einddatum: 2026-04-07<br/>Anatomische locatie: Bovenste tandboog<br/>Indicatie: Knarsen 's nachts<br/>Zorgverlener: M. Vos, Tandarts<br/>Locatie: Tandartspraktijk Vos</div>"
+  },
+  "status": "active",
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Vermeulen",
+    "display": "Sophie Vermeulen",
+    "type": "Patient"
+  },
+  "derivedFrom": [
+    {
+      "reference": "Procedure/DentalCare-Procedure-Vermeulen",
+      "display": "Eénvlaksvulling",
+      "type": "Procedure"
+    }
+  ],
+  "timingPeriod": {
+    "start": "2025-04-07",
+    "end": "2026-04-07"
+  },
+  "device": {
+    "reference": "Device/DentalCare-MedicalDevice-Product-Vermeulen",
+    "display": "Occlusale splint",
+    "type": "Device"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/DentalCare-Problem-Vermeulen",
+      "display": "Cariës rechterbovenkies",
+      "type": "Condition"
+    }
+  ],
+  "bodySite": {
+    "coding": [
+      {
+        "code": "39481002",
+        "system": "http://snomed.info/sct",
+        "display": "bovenste tandboog"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Hard acrylaat bitje 's nachts i.v.m. knarsen; controle na drie maanden."
+    }
+  ]
+}

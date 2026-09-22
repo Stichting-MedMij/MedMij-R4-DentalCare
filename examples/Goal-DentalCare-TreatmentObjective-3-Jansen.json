@@ -1,0 +1,29 @@
+{
+  "resourceType": "Goal",
+  "id": "DentalCare-TreatmentObjective-3-Jansen",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
+  },
+  "lifecycleStatus": "active",
+  "description": {
+    "text": "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11"
+  },
+  "subject": {
+    "reference": "Patient/DentalCare-Patient-Jansen",
+    "display": "Anita Jansen",
+    "type": "Patient"
+  }
+}

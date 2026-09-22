@@ -13,25 +13,6 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
     ]
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality",
-      "extension": [
-        {
-          "url": "code",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "0001",
-                "system": "urn:oid:2.16.840.1.113883.2.4.4.16.32",
-                "display": "Nederlandse"
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
   "identifier": [
     {
       "system": "http://fhir.nl/fhir/NamingSystem/bsn",
@@ -347,7 +328,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Nationaliteit: Nederlandse<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
   },
   "gender": "male",
   "_gender": {
