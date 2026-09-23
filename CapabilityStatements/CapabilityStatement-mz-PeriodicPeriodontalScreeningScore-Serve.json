@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction (system role: MZ-PSB-rc.1).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Periodic Periodontal Screening score' transaction (system role: MZ-PSB-rc.2).",
       "resource": [
         {
           "type": "Observation",

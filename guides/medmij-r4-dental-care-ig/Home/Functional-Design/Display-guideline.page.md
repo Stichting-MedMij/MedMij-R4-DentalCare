@@ -94,9 +94,10 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Begintijd | 09:00 |
 | Einddatum | 01-01-2024 |
 | Eindtijd | 10:00 |
-| Reden contact toelichting | Extra controle vanwege bloedend tandvlees |
+| Toelichting reden contact | Extra controle vanwege bloedend tandvlees |
 | Zorgverlener | A.B. Janssen <br/> Tandarts |
 | Zorgorganisatie | Tendens |
+| Locatie | Praktijk Amsterdam |
 
 <br/>
 
@@ -168,17 +169,32 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 
 <u>Overzichtsscherm</u>
 
-| Doel behandeling | Prioriteit | Zorgorganisatie |
-| --- | --- | --- |
-| Tandvleesontsteking behandelen | Hoge prioriteit | Tendens |
-| Vullen gaatje rechterkies | Lage prioriteit | Tendens |
+| Doel behandeling | Datum | Prioriteit | Zorgorganisatie |
+| --- | --- | --- | --- |
+| Tandvleesontsteking behandelen | 04-04-2024 | Hoge prioriteit | Tendens |
+| Vullen gaatje rechterkies | 05-05-2025 | Lage prioriteit | Tendens |
+| Kan kauwen: zonder pijn | 15-12-2024 | | Tendens |
 
 <u>Detailscherm</u>
 
 | Geselecteerde regel: Tandvleesontsteking behandelen | |
 | --- | --- |
 | Doel behandeling | Tandvleesontsteking behandelen |
+| Datum | 04-04-2024 |
 | Prioriteit | Hoge prioriteit |
+| Zorgorganisatie | Tendens |
+
+<u>Detailscherm</u>
+
+| Geselecteerde regel: Kan kauwen: zonder pijn | |
+| --- | --- |
+| Doel behandeling | Kan kauwen: zonder pijn |
+| Einddatum | 31-12-2024 |
+| Uitleg | Al enige tijd last van pijn bij het kauwen vanwege tanden die scheef op elkaar staan |
+| Hulpmiddel | Beugel voor de bovenboog |
+| Reden doel | slecht op elkaar passen van je tanden of kiezen |
+| Datum | 15-12-2024 |
+| Prioriteit | |
 | Zorgorganisatie | Tendens |
 
 <br/>
@@ -306,6 +322,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Manier verrichting | Vrijmaken |
 | Zorgverlener | A.B. Janssen <br/> Tandarts |
 | Zorgorganisatie | Tendens |
+| Locatie | Praktijk Amsterdam |
 
 <br/>
 
@@ -349,13 +366,13 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <!-- 9 KOLOMMEN:
 Naam data-item | Type data-item | Id | Voorbeeld | Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven | Opmerkingen | Weergavetekst in de PGO | Gebruikersvriendelijke toelichting | Prioriteit (MoSCoW)
 Breedteverdeling (op basis van eerdere mapping):
-13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3% (totaal 100%) -->
+13% | 9% | 9% | 11% | 10% | 16% | 11% | 15% | 6% (totaal 100%) -->
 
 <!-- ASA-SCORE -->
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -370,7 +387,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Score gezondheid (ASA)</td><td>De ASA-classificatie is het American Society of Anesthesiologists classificatiesysteem voor fysieke status (algehele medische toestand)</td><td></td>
     </tr>
     <tr>
-      <td>ASAScoreDatumTijd</td><td>Item</td><td>medmij-core-dataelement-2</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -387,7 +404,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (medmij-core-dataelement-4)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -397,7 +414,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -421,20 +438,20 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Zowel de naam als het specialisme tonen.</td><td>Contact met (of Zorgverlener)</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
-      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Tendens</td><td>a</td>
-      <td></td><td>Locatie (of Zorgorganisatie)</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
-    </tr>
-     <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>09:00</td><td>a</td>
-     <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden Begindatum en Begintijd (of Begindatum en -tijd in één veld weergeven)</td><td></td><td>M</td>
+      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:15.1.8</td><td>Vliegbasis Gilze-Rijen</td><td>a</td>
+      <td></td><td>Locatie</td><td></td><td>Organisatienaam: M, overige datavelden: C</td>
     </tr>
     <tr>
+      <td>BeginDatumTijd</td><td>Item</td><td>NL-CM:15.1.3</td><td>01-01-2024<br/>09:00</td><td>a</td>
+      <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden Begindatum en Begintijd (of Begindatum en -tijd in één veld weergeven)</td><td></td><td>M</td>
+    </tr>
     <tr>
-     <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
-     <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden Einddatum en Eindtijd (of Einddatum en -tijd in één veld weergeven)</td><td></td><td>M</td>
+      <td>EindDatumTijd</td><td>Item</td><td>NL-CM:15.1.4</td><td>01-01-2024<br/>10:00</td><td>b</td>
+      <td>BeginDatumTijd en EindDatumTijd mogen ook samen als periode in één veld getoond worden</td><td>Weergeven in twee velden Einddatum en Eindtijd (of Einddatum en -tijd in één veld weergeven)</td><td></td><td>M</td>
     </tr>
     <tr>
       <td><strong>RedenContact</strong></td><td><strong>Container</strong></td><td>NL-CM:15.1.13</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td></td><td></td><td></td><td></td>
     </tr>
     <tr>
       <td>Probleem</td><td>Reference</td><td>NL-CM:15.1.6</td><td>Tandsteen</td><td>b</td>
@@ -450,7 +467,11 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra controle vanwege bloedend tandvlees</td><td>b</td>
-      <td></td><td>Reden contact toelichting of Uitleg reden contact</td><td></td><td>M</td>
+      <td></td><td>Toelichting reden contact of Uitleg reden contact</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Defensie Tandheelkundige Dienst</td><td>a</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -459,7 +480,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -537,10 +558,6 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Contactgegevens</td><td>Reference</td><td>NL-CM:1.1.12</td><td></td><td>b</td>
       <td></td><td></td><td></td><td>M</td>
     </tr>
-    <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
-    </tr>
   </tbody>
 </table>
 
@@ -548,7 +565,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -563,27 +580,51 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>Behandeldoel kan als Zorgplan aangeduid worden in de PGO.</td><td></td><td></td><td></td>
     </tr>
     <tr>
-      <td>GewenstZorgresultaat</td><td>Item</td><td>NL-CM:13.5.3</td><td>Tandvleesontsteking behandelen</td><td>a</td>
-      <td></td><td>Doel behandeling</td><td></td><td>M</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
+      <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>GewenstZorgresultaat</td><td>Item</td><td>NL-CM:13.5.5</td><td>Tandvleesontsteking behandelen</td><td>a</td>
+      <td>Zowel GewenstZorgresultaat als GewensteGezondheidstoestand kunnen in het overzichtsscherm in dezelfde kolom getoond worden, aangezien slechts één van de twee gevuld kan zijn. Het FHIR-element <code>Goal.description.text</code> bevat in beide gevallen de relevante waarde.</td><td>Doel behandeling</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td>NL-CM:13.5.3</td><td>Kan kauwen: zonder pijn</td><td>a</td>
+      <td>Zowel GewenstZorgresultaat als GewensteGezondheidstoestand kunnen in het overzichtsscherm in dezelfde kolom getoond worden, aangezien slechts één van de twee gevuld kan zijn. Het FHIR-element <code>Goal.description.text</code> bevat in beide gevallen de relevante waarde.</td><td>Doel behandeling</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>StatusNaam</td><td>Item</td><td>NL-CM:4.26.2</td><td>Kan kauwen</td><td>a</td>
+      <td>Dit data-item wordt uitgewisseld als onderdeel van het FHIR-element <code>Goal.description.text</code> (zie GewensteGezondheidstoestand).</td><td></td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>StatusWaarde</td><td>Item</td><td>NL-CM:4.26.3</td><td>Zonder pijn</td><td>a</td>
+      <td>Dit data-item wordt uitgewisseld als onderdeel van het FHIR-element <code>Goal.description.text</code> (zie GewensteGezondheidstoestand).</td><td></td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>StatusDatum</td><td>Item</td><td>NL-CM:4.26.6</td><td>01-04-2024</td><td>b</td>
+      <td>Dit is de datum waarop het doel behaald moet zijn.</td><td>Einddatum</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Toelichting</td><td>Item</td><td>NL-CM:4.26.4</td><td>Al enige tijd last van pijn bij het kauwen vanwege tanden die scheef op elkaar staan</td><td>b</td>
+      <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Hulpmiddel::MedischHulpmiddel</td><td>Reference</td><td>NL-CM:4.26.5</td><td>Beugel voor de bovenboog</td><td>b</td>
+      <td></td><td>Hulpmiddel</td><td></td><td>C</td>
+    </tr>
+    <tr>
+      <td>Probleem</td><td>Reference</td><td>NL-CM:13.5.4</td><td>slecht op elkaar passen van je tanden of kiezen</td><td>b</td>
+      <td></td><td>Reden doel</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a</td>
       <td>Dit data-item zit momenteel niet in de bijbehorende CIM. Indien dit item aanwezig is in het bronsysteem, kan deze via het FHIR-element <code>Goal.priority</code> uitgewisseld worden. Hierbij moet <i>high-priority</i> weergegeven worden als 'Hoge prioriteit', en <i>low-priority</i> als 'Lage prioriteit'.</td>
       <td>Prioriteit</td>
-      <td>Aangeven of het GewenstZorgresultaat hoge prioriteit (i.e. korte termijn) of lage prioriteit (i.e. lange termijn) heeft.</td>
+      <td>Aangeven of het GewenstZorgresultaat of de GewensteGezondheidstoestand hoge prioriteit (i.e. korte termijn) of lage prioriteit (i.e. lange termijn) heeft.</td>
       <td>C</td>
     </tr>
     <tr>
-      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td>NL-CM:4.26.1</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-    <tr>
-      <td>Probleem</td><td>Reference</td><td>NL-CM:13.5.4</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
-    </tr>
-    <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6</td><td>Tendens</td><td>a</td>
-      <td>Liefst geen afkortingen.<br/>Dit data-item wordt uitgewisseld via een PractitionerRole op <code>Goal.expressedBy</code>.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>
@@ -592,7 +633,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -607,7 +648,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Risico op gaatjes</td><td>Cariës (of tandbederf) is een proces waarbij in eerste instantie het tandglazuur wordt aangetast en bij voortzetting ook het tandbeen (dentine). Hierdoor ontstaan gaatjes.</td><td></td>
     </tr>
     <tr>
-      <td>CariësrisicoDatumTijd</td><td>Item</td><td>mz-dataelement-2</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -623,7 +664,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (mz-dataelement-4)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -633,7 +674,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -657,7 +698,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td>
     </tr>
     <tr>
-      <td>DentalFitnessDatumTijd</td><td>Item</td><td>mz-dataelement-7</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -675,7 +716,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (mz-dataelement-9)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -685,7 +726,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -700,7 +741,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Mondhygiëne</td><td>Mondhygiëne is de (dagelijkse) verzorging van de mond en het gebit om deze gezond te houden en daardoor gaatjes (cariës) en tandvleesontstekingen te voorkomen.</td><td></td>
     </tr>
     <tr>
-      <td>MondhygiëneDatumTijd</td><td>Item</td><td>mz-dataelement-12</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -716,7 +757,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (mz-dataelement-14)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -726,7 +767,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -743,7 +784,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td>
     </tr>
     <tr>
-      <td>ParafunctioneleActiviteitDatumTijd</td><td>Item</td><td>mz-dataelement-17</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -759,7 +800,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (mz-dataelement-19)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
@@ -769,7 +810,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -785,11 +826,11 @@ Breedteverdeling (op basis van eerdere mapping):
       <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
     </tr>
     <tr>
-      <td>PPSDatumTijd</td><td>Item</td><td>mz-dataelement-22</td><td>01-01-2024</td><td>a</td>
+      <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>
       <td></td><td>Datum of Datum en tijd</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>PPSScore</td><td>Item</td><td>mz-dataelement-23</td><td>Pockets 0-3 millimeter = in orde (code 'ppsscore1' in codesysteem 'PeriodicPeriodontalScreeningScore')</td><td>a</td>
+      <td>PeriodiekeParodontaleScreeningScoreWaarde</td><td>Item</td><td>mz-dataelement-23</td><td>Pockets 0-3 millimeter = in orde (code 'ppsscore1' in codesysteem 'PeriodicPeriodontalScreeningScore')</td><td>a</td>
       <td></td><td>Controle  tandvlees</td><td></td><td>M</td>
     </tr>
     <tr>
@@ -801,7 +842,7 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>Zorgaanbieder</td><td>Reference</td><td>NL-CM:17.1.6 via Uitvoerder::Zorgverlener (mz-dataelement-24)</td><td>Tendens</td><td>a</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
       <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W<br/></td>
     </tr>
   </tbody>
@@ -811,7 +852,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -822,48 +863,44 @@ Breedteverdeling (op basis van eerdere mapping):
   </thead>
   <tbody>
     <tr>
-      <td><strong>Verrichting</strong></td><td><strong>Rootconcept</strong></td><td>NL-CM:14.1.1</td><td></td><td></td>
+      <td><strong>Verrichting</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-26</td><td></td><td></td>
       <td></td><td>Verrichting</td><td></td><td></td>
     </tr>
     <tr>
-      <td>VerrichtingStartDatum</td><td>Item</td><td>NL-CM:14.1.2</td><td> 01-01-2024</td><td>a</td>
+      <td>StartDatumTijd</td><td>Item</td><td>medmij-core-dataelement-121</td><td> 01-01-2024</td><td>a</td>
       <td></td><td>Startdatum of Startdatum verrichting of Startdatum en -tijd</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingEindDatum</td><td>Item</td><td>NL-CM:14.1.3</td><td> 01-01-2024</td><td>b</td>
+      <td>EindDatumTijd</td><td>Item</td><td>medmij-core-dataelement-122</td><td> 01-01-2024</td><td>b</td>
       <td></td><td>Einddatum of Einddatum verrichting of Einddatum en -tijd</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingType</td><td>Item</td><td>NL-CM:14.1.4</td><td>H42 Wortelpuntoperatie, per tandwortel, zonder afsluiting (code 'H42' in codesysteem 'Vektis Prestatiecodelijst Mondzorg')</td><td>a</td>
+      <td>VerrichtingType</td><td>Item</td><td>mz-dataelement-29</td><td>H42 Wortelpuntoperatie, per tandwortel, zonder afsluiting (code 'H42' in codesysteem 'Vektis Prestatiecodelijst Mondzorg')</td><td>a</td>
       <td></td><td>Naam verrichting of Verrichting</td><td></td><td>M</td>
     </tr>
     <tr>
-      <td>VerrichtingMethode</td><td>Item</td><td>NL-CM:14.1.12</td><td>Vrijmaken (code '302196006' in codesysteem 'SNOMED CT')</td><td>b</td>
+      <td>VerrichtingMethode</td><td>Item</td><td>mz-dataelement-30</td><td>Vrijmaken (code '302196006' in codesysteem 'SNOMED CT')</td><td>b</td>
       <td></td><td>Manier verrichting of Manier</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>NL-CM:14.1.13</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>mz-dataelement-31</td><td>Bovenkaak (code '70925003' in codesysteem 'SNOMED CT')</td><td>b</td>
+      <td></td><td>Lichaamsdeel</td><td></td><td>C</td>
     </tr>
     <tr>
-      <td>Indicatie::Probleem</td><td>Reference</td><td>NL-CM:14.1.9</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td>Indicatie::Probleem</td><td>Reference</td><td>mz-dataelement-34</td><td>Scheve kaak</td><td>b</td>
+      <td></td><td>Reden verrichting</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>Verrichting::MedischHulpmiddel</td><td>Reference</td><td>NL-CM:14.1.7</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>mz-dataelement-46</td><td>Vliegbasis Gilze-Rijen</td><td>a</td>
+      <td></td><td>Locatie</td><td></td><td>Locatienaam: M, overige datavelden: C</td>
     </tr>
     <tr>
-      <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>NL-CM:14.1.5</td><td>Tendens</td><td>a</td>
-      <td></td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
-    </tr>
-    <tr>
-      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.6</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
+      <td>Uitvoerder::Zorgverlener</td><td>Reference</td><td>mz-dataelement-47</td><td>A.B. Janssen<br/>Tandarts</td><td>a of b</td>
       <td>Zowel de naam als het specialisme tonen.</td><td>Zorgverlener</td><td></td><td>Naamgegevens en specialisme: S</td>
     </tr>
     <tr>
-      <td>Aanvrager::Zorgverlener</td><td>Reference</td><td>NL-CM:14.1.10</td><td></td><td></td>
-      <td></td><td></td><td></td><td>W</td>
+      <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Defensie Tandheelkundige Dienst</td><td>a</td>
+      <td>Liefst geen afkortingen.</td><td>Zorgorganisatie</td><td></td><td>Organisatienaam: M, overige datavelden: W</td>
     </tr>
   </tbody>
 </table>

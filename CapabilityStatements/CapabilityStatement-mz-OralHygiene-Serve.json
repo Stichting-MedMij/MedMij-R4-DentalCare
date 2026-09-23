@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction (system role: MZ-OHB-rc.1).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Oral hygiene' transaction (system role: MZ-OHB-rc.2).",
       "resource": [
         {
           "type": "Observation",
