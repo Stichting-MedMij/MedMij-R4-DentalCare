@@ -31,7 +31,7 @@ The Logical Model is included below.
 | **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.2 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|110353005` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueString` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#CareType)) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueString` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.2.0#CareType)) |
 | **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Parafunctional Activity (Retrieve), anchor: ParafunctionalActivityRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Parafunctional Activity (Serve), anchor: ParafunctionalActivityServe}} |
 
 The FHIR profile is included below.

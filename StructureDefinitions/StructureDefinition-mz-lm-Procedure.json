@@ -42,11 +42,6 @@
     {
       "identity": "mz-dataset-100-rc2-2026xxyy",
       "name": "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
-    },
-    {
-      "identity": "SNOMED",
-      "name": "SNOMED CT",
-      "uri": "http://snomed.info/sct"
     }
   ],
   "kind": "logical",

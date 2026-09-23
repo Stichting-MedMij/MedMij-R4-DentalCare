@@ -64,8 +64,8 @@ Description: "Dental fitness according to the NATO classification system."
 
 Mapping: MzDentalFitnessMedMijCore-120
 Source: MzDentalFitness
-Id: medmij-core-dataset-120-2026xxyy
-Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+Id: medmij-core-dataset-120-20260923
+Title: "Dataset MedMij R4 Core 1.2.0 20260923"
 * meta
   * tag[careType] -> "medmij-core-dataelement-123" "CareType"
 * identifier -> "medmij-core-dataelement-115" "IdentificationNumber"
