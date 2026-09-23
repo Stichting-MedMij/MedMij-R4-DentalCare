@@ -33,8 +33,8 @@
       "uri": "https://zibs.nl/wiki/Procedure-v5.2(2020EN)"
     },
     {
-      "identity": "medmij-core-dataset-120-2026xxyy",
-      "name": "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+      "identity": "medmij-core-dataset-120-20260923",
+      "name": "Dataset MedMij R4 Core 1.2.0 20260923"
     },
     {
       "identity": "mz-dataset-100-rc2-2026xxyy",
@@ -79,7 +79,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Procedure.meta.tag:careType",
@@ -90,7 +91,7 @@
         "alias": [
           "Zorgtype"
         ],
-        "min": 0,
+        "min": 1,
         "max": "*",
         "binding": {
           "strength": "required",
@@ -98,7 +99,7 @@
         },
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-123",
             "comment": "CareType"
           }
@@ -154,7 +155,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-115",
             "comment": "IdentificationNumber"
           }
@@ -176,12 +177,12 @@
             "comment": "ProcedureEndDate (implicit, main mapping is on Procedure.performedPeriod.end)"
           },
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-121",
             "comment": "StartDateTime (implicit, main mapping is on Procedure.performedPeriod.start and Procedure.performedDateTime)"
           },
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-122",
             "comment": "EndDateTime (implicit, main mapping is on Procedure.performedPeriod.end)"
           }
@@ -242,7 +243,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-116",
             "comment": "Patient"
           }
@@ -280,7 +281,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-120",
             "comment": "EffectivePeriod"
           }
@@ -303,7 +304,7 @@
             "comment": "ProcedureStartDate"
           },
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-121",
             "comment": "StartDateTime"
           }
@@ -326,7 +327,7 @@
             "comment": "ProcedureEndDate"
           },
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-122",
             "comment": "EndDateTime"
           }
@@ -357,7 +358,7 @@
             "comment": "ProcedureStartDate"
           },
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-121",
             "comment": "StartDateTime"
           }
@@ -393,7 +394,7 @@
             "comment": "Performer"
           },
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-117",
             "comment": "HealthcareProvider (implicit, actual mapping is on PractitionerRole.organization)"
           },

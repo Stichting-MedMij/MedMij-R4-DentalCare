@@ -20,7 +20,7 @@ Description: "Oral hygiene."
     * ^slicing.discriminator.path = "$this"
     * ^slicing.rules = #open
   * tag contains
-      careType 0..*
+      careType 1..*
   * tag[careType] from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)
     * ^short = "CareType"
     * ^definition = "The type of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care. It enables patients and systems to interpret the origin and context of medical data."
@@ -64,8 +64,8 @@ Description: "Oral hygiene."
 
 Mapping: MzOralHygieneMedMijCore-120
 Source: MzOralHygiene
-Id: medmij-core-dataset-120-2026xxyy
-Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+Id: medmij-core-dataset-120-20260923
+Title: "Dataset MedMij R4 Core 1.2.0 20260923"
 * meta
   * tag[careType] -> "medmij-core-dataelement-123" "CareType"
 * identifier -> "medmij-core-dataelement-115" "IdentificationNumber"

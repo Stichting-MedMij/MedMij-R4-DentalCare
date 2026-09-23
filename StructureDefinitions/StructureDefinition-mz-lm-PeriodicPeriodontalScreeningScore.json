@@ -39,11 +39,6 @@
       "name": "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
     },
     {
-      "identity": "SNOMED",
-      "name": "SNOMED CT",
-      "uri": "http://snomed.info/sct"
-    },
-    {
       "identity": "LOINC",
       "name": "LOINC",
       "uri": "http://loinc.org"
@@ -97,6 +92,11 @@
             "code": "Period"
           }
         ]
+      },
+      {
+        "id": "mz-lm-PeriodicPeriodontalScreeningScore.CareType",
+        "path": "mz-lm-PeriodicPeriodontalScreeningScore.CareType",
+        "min": 1
       },
       {
         "id": "mz-lm-PeriodicPeriodontalScreeningScore.PeriodicPeriodontalScreeningScoreValue",

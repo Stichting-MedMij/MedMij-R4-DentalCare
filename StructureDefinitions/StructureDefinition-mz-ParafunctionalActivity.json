@@ -28,8 +28,8 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "medmij-core-dataset-120-2026xxyy",
-      "name": "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+      "identity": "medmij-core-dataset-120-20260923",
+      "name": "Dataset MedMij R4 Core 1.2.0 20260923"
     },
     {
       "identity": "mz-dataset-100-rc2-2026xxyy",
@@ -73,7 +73,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.meta.tag:careType",
@@ -84,7 +85,7 @@
         "alias": [
           "Zorgtype"
         ],
-        "min": 0,
+        "min": 1,
         "max": "*",
         "binding": {
           "strength": "required",
@@ -92,7 +93,7 @@
         },
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-123",
             "comment": "CareType"
           }
@@ -108,7 +109,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-115",
             "comment": "IdentificationNumber"
           }
@@ -146,7 +147,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-116",
             "comment": "Patient"
           }
@@ -186,7 +187,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-119",
             "comment": "EffectiveDateTime"
           }
@@ -217,7 +218,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-2026xxyy",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-117",
             "comment": "HealthcareProvider (implicit, actual mapping is on PractitionerRole.organization)"
           },

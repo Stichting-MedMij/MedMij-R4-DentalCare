@@ -94,7 +94,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | Begintijd | 09:00 |
 | Einddatum | 01-01-2024 |
 | Eindtijd | 10:00 |
-| Reden contact toelichting | Extra controle vanwege bloedend tandvlees |
+| Toelichting reden contact | Extra controle vanwege bloedend tandvlees |
 | Zorgverlener | A.B. Janssen <br/> Tandarts |
 | Zorgorganisatie | Tendens |
 | Locatie | Praktijk Amsterdam |
@@ -173,7 +173,7 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 | --- | --- | --- | --- |
 | Tandvleesontsteking behandelen | 04-04-2024 | Hoge prioriteit | Tendens |
 | Vullen gaatje rechterkies | 05-05-2025 | Lage prioriteit | Tendens |
-| Kan kauwen: zonder pijn, per 31-12-2024 | 15-12-2024 | | Tendens |
+| Kan kauwen: zonder pijn | 15-12-2024 | | Tendens |
 
 <u>Detailscherm</u>
 
@@ -186,12 +186,13 @@ Hieronder wordt voor alle CIM's relevant voor mondzorg een voorbeeld in tabelvor
 
 <u>Detailscherm</u>
 
-| Geselecteerde regel: Kan kauwen: zonder problemen, per 31-12-2024 | |
+| Geselecteerde regel: Kan kauwen: zonder pijn | |
 | --- | --- |
-| Doel behandeling | Kan kauwen: zonder pijn, per 31-12-2024 |
-| Probleem | slecht op elkaar passen van je tanden of kiezen |
-| Toelichting | Al enige tijd last van pijn bij het kauwen vanwege tanden die scheef op elkaar staan |
-| Medisch hulpmiddel | Beugel voor de bovenboog |
+| Doel behandeling | Kan kauwen: zonder pijn |
+| Einddatum | 31-12-2024 |
+| Uitleg | Al enige tijd last van pijn bij het kauwen vanwege tanden die scheef op elkaar staan |
+| Hulpmiddel | Beugel voor de bovenboog |
+| Reden doel | slecht op elkaar passen van je tanden of kiezen |
 | Datum | 15-12-2024 |
 | Prioriteit | |
 | Zorgorganisatie | Tendens |
@@ -365,13 +366,13 @@ De prioriteit van de te tonen datavelden wordt vastgesteld volgens de MoSCoW-met
 <!-- 9 KOLOMMEN:
 Naam data-item | Type data-item | Id | Voorbeeld | Waar tonen in PGO (a) in overzicht en als detailgegeven (b) als detailgegeven | Opmerkingen | Weergavetekst in de PGO | Gebruikersvriendelijke toelichting | Prioriteit (MoSCoW)
 Breedteverdeling (op basis van eerdere mapping):
-13% | 9% | 10% | 12% | 26% | 9% | 10% | 8% | 3% (totaal 100%) -->
+13% | 9% | 9% | 11% | 10% | 16% | 11% | 15% | 6% (totaal 100%) -->
 
 <!-- ASA-SCORE -->
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -413,7 +414,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -466,7 +467,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>ToelichtingRedenContact</td><td>Item</td><td>NL-CM:15.1.17</td><td>Extra controle vanwege bloedend tandvlees</td><td>b</td>
-      <td></td><td>Reden contact toelichting of Uitleg reden contact</td><td></td><td>M</td>
+      <td></td><td>Toelichting reden contact of Uitleg reden contact</td><td></td><td>M</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Defensie Tandheelkundige Dienst</td><td>a</td>
@@ -479,7 +480,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -564,7 +565,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -584,22 +585,42 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td>GewenstZorgresultaat</td><td>Item</td><td>NL-CM:13.5.5</td><td>Tandvleesontsteking behandelen</td><td>a</td>
-      <td></td><td>Doel behandeling</td><td></td><td>M</td>
+      <td>Zowel GewenstZorgresultaat als GewensteGezondheidstoestand kunnen in het overzichtsscherm in dezelfde kolom getoond worden, aangezien slechts één van de twee gevuld kan zijn. Het FHIR-element <code>Goal.description.text</code> bevat in beide gevallen de relevante waarde.</td><td>Doel behandeling</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td>NL-CM:13.5.3</td><td>Kan kauwen: zonder pijn</td><td>a</td>
+      <td>Zowel GewenstZorgresultaat als GewensteGezondheidstoestand kunnen in het overzichtsscherm in dezelfde kolom getoond worden, aangezien slechts één van de twee gevuld kan zijn. Het FHIR-element <code>Goal.description.text</code> bevat in beide gevallen de relevante waarde.</td><td>Doel behandeling</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>StatusNaam</td><td>Item</td><td>NL-CM:4.26.2</td><td>Kan kauwen</td><td>a</td>
+      <td>Dit data-item wordt uitgewisseld als onderdeel van het FHIR-element <code>Goal.description.text</code> (zie GewensteGezondheidstoestand).</td><td></td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>StatusWaarde</td><td>Item</td><td>NL-CM:4.26.3</td><td>Zonder pijn</td><td>a</td>
+      <td>Dit data-item wordt uitgewisseld als onderdeel van het FHIR-element <code>Goal.description.text</code> (zie GewensteGezondheidstoestand).</td><td></td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>StatusDatum</td><td>Item</td><td>NL-CM:4.26.6</td><td>01-04-2024</td><td>b</td>
+      <td>Dit is de datum waarop het doel behaald moet zijn.</td><td>Einddatum</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Toelichting</td><td>Item</td><td>NL-CM:4.26.4</td><td>Al enige tijd last van pijn bij het kauwen vanwege tanden die scheef op elkaar staan</td><td>b</td>
+      <td></td><td>Uitleg of Toelichting</td><td></td><td>M</td>
+    </tr>
+    <tr>
+      <td>Hulpmiddel::MedischHulpmiddel</td><td>Reference</td><td>NL-CM:4.26.5</td><td>Beugel voor de bovenboog</td><td>b</td>
+      <td></td><td>Hulpmiddel</td><td></td><td>C</td>
+    </tr>
+    <tr>
+      <td>Probleem</td><td>Reference</td><td>NL-CM:13.5.4</td><td>slecht op elkaar passen van je tanden of kiezen</td><td>b</td>
+      <td></td><td>Reden doel</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>Prioriteit</td><td>Item</td><td></td><td>Hoge prioriteit</td><td>a</td>
       <td>Dit data-item zit momenteel niet in de bijbehorende CIM. Indien dit item aanwezig is in het bronsysteem, kan deze via het FHIR-element <code>Goal.priority</code> uitgewisseld worden. Hierbij moet <i>high-priority</i> weergegeven worden als 'Hoge prioriteit', en <i>low-priority</i> als 'Lage prioriteit'.</td>
       <td>Prioriteit</td>
-      <td>Aangeven of het GewenstZorgresultaat hoge prioriteit (i.e. korte termijn) of lage prioriteit (i.e. lange termijn) heeft.</td>
+      <td>Aangeven of het GewenstZorgresultaat of de GewensteGezondheidstoestand hoge prioriteit (i.e. korte termijn) of lage prioriteit (i.e. lange termijn) heeft.</td>
       <td>C</td>
-    </tr>
-    <tr>
-      <td>GewensteGezondheidstoestand::FunctioneleOfMentaleStatus</td><td>Reference</td><td>NL-CM:13.5.3</td><td></td><td></td>
-      <td>De concepten binnen de zib FunctioneleOfMentaleStatus (met name StatusNaam, StatusWaarde en StatusDatum) kunnen gecombineerd getoond worden.</td><td>Doel behandeling</td><td></td><td>M</td>
-    </tr>
-    <tr>
-      <td>Probleem</td><td>Reference</td><td>NL-CM:13.5.4</td><td></td><td></td>
-      <td></td><td>Probleem</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>Zorgaanbieder</td><td>Reference</td><td>medmij-core-dataelement-117</td><td>Tendens</td><td>a</td>
@@ -612,7 +633,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -653,7 +674,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -705,7 +726,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -746,7 +767,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -789,7 +810,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -831,7 +852,7 @@ Breedteverdeling (op basis van eerdere mapping):
 <table class="pgo-table">
   <colgroup>
     <col style="width:13%"><col style="width:9%"><col style="width:9%"><col style="width:11%">
-    <col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:21%"><col style="width:6%">
+    <col style="width:10%"><col style="width:16%"><col style="width:11%"><col style="width:15%"><col style="width:6%">
   </colgroup>
   <thead>
     <tr>
@@ -862,12 +883,12 @@ Breedteverdeling (op basis van eerdere mapping):
       <td></td><td>Manier verrichting of Manier</td><td></td><td>S</td>
     </tr>
     <tr>
-      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>mz-dataelement-31</td><td></td><td></td>
-      <td></td><td></td><td></td><td>C</td>
+      <td>VerrichtingAnatomischeLocatie::AnatomischeLocatie</td><td>Reference</td><td>mz-dataelement-31</td><td>Bovenkaak (code '70925003' in codesysteem 'SNOMED CT')</td><td>b</td>
+      <td></td><td>Lichaamsdeel</td><td></td><td>C</td>
     </tr>
     <tr>
-      <td>Indicatie::Probleem</td><td>Reference</td><td>mz-dataelement-34</td><td></td><td></td>
-      <td></td><td>Reden verrichting</td><td></td><td>C</td>
+      <td>Indicatie::Probleem</td><td>Reference</td><td>mz-dataelement-34</td><td>Scheve kaak</td><td>b</td>
+      <td></td><td>Reden verrichting</td><td></td><td>S</td>
     </tr>
     <tr>
       <td>Locatie::Zorgaanbieder</td><td>Reference</td><td>mz-dataelement-46</td><td>Vliegbasis Gilze-Rijen</td><td>a</td>
