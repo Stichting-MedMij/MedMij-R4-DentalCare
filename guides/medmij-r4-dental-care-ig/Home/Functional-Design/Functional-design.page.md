@@ -28,7 +28,7 @@ Dit ontwerp is conform specificaties genoemd in de [algemene inleiding](https:/
 
 Binnen Mondzorg wordt gebruikgemaakt van enkele zibs uit [Publicatie 2020](https://zibs.nl/wiki/ZIB_Publicatie_2020(NL)). Naast de zibs zijn er een aantal nieuwe CIM's ontwikkeld voor klinische concepten die (nog) niet beschikbaar zijn als zib:
 - Voor de Periodieke Parodontale Screening-score is de [Richtlijn Parodontale Screening, Diagnostiek en Behandeling in de Algemene Praktijk](https://www.nvvp.org/voor-professionals/richtlijnen) van de NVvP gevolgd;
-- Voor de ASA-score is het [ASA Physical Status Classification System](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) gevolgd;
+- Voor de ASA-score is het [ASA Physical Status Classification System](https://journals.lww.com/anesthesiologyopen/fulltext/10.1097/ao9.0000000000000002~american-society-of-anesthesiologists-statement-on-asa) gevolgd, samen met een [Nederlandse versie](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) van de specificatie;
 - Voor de Dental Fitness zijn een internationale en nationale richtlijn gevolgd, namelijk de [NAVO-standaard AMedP-4.4 (Dental Fitness Standards for Military Personnel and the NATO Dental Fitness Classification System)](https://www.coemed.org/files/stanags/03_AMEDP/AMedP-4.4_EDB_V1_E.pdf) en Richtlijn 473 - Richtlijn bepaling Dental Fitness (2023), opgesteld door het Ministerie van Defensie.
 
 ### Reikwijdte
