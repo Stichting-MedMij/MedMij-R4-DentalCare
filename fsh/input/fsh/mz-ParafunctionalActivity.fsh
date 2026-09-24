@@ -36,7 +36,7 @@ Description: "Parafunctional activity."
   * ^short = "Patient"
   * ^definition = "The patient as subject of the information."
   * ^alias = "Patiënt"
-* effectiveDateTime
+* effectiveDateTime 1..1
   * ^short = "EffectiveDateTime"
   * ^definition = "The date and time at which the parafunctional activity was determined."
   * ^alias[0] = "Tijdsindicatie"

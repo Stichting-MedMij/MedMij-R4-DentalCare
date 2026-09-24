@@ -36,7 +36,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
   * ^short = "Patient"
   * ^definition = "The patient as subject of the information."
   * ^alias = "Patiënt"
-* effectiveDateTime
+* effectiveDateTime 1..1
   * ^short = "EffectiveDateTime"
   * ^definition = "The date and time at which the PPS was performed."
   * ^alias[0] = "Tijdsindicatie"

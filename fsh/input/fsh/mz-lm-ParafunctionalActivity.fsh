@@ -16,7 +16,7 @@ Description: "Parafunctional activity."
 * ^abstract = false
 * .
   * ^alias = "ParafunctioneleActiviteit"
-* EffectiveDateTime
+* EffectiveDateTime 1..1
   * ^short = "Parafunctional activity date/time"
   * ^definition = "The date and time at which the parafunctional activity was determined."
   * ^alias = "ParafunctioneleActiviteitDatumTijd"
