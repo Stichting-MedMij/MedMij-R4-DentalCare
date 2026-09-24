@@ -31,7 +31,7 @@ The Logical Model is included below.
 | **FHIR package** | [medmij.fhir.nl.r4.dentalcare](https://simplifier.net/packages/medmij.fhir.nl.r4.dentalcare) version 1.0.0-rc.2 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Procedure?category=http://snomed.info/sct|225362009` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.code` <li> `.subject` <li> `.performedPeriod` <li> `.performedDateTime` <li> `.performer.actor` <li> `.location`<li> `.reasonReference` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0#CareType)) |
+| **Must Support** | <ul> <li> `.identifier` <li> `.code` <li> `.subject` <li> `.performedPeriod` <li> `.performedDateTime` <li> `.performer.actor` <li> `.location`<li> `.reasonReference` <li> `.meta.tag` (only the [care type](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.2.0#CareType)) |
 | **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Procedure (Retrieve), anchor: ProcedureRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Procedure (Serve), anchor: ProcedureServe}} |
 
 The FHIR profile is included below.

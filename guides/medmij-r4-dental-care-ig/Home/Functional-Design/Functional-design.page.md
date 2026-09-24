@@ -7,9 +7,9 @@ topic: FO
 ## Algemeen
 Dit ontwerp beschrijft de databeschikbaarheid richting de persoon voor Mondzorg. Hierdoor kan de persoon zijn relevante mondzorggegevens bekijken via de PGO om een beter en vollediger inzicht te krijgen in de eigen medische situatie.​ In het vervolg wordt de term 'patiënt' gebruikt om de persoon aan te duiden, maar hier kan ook 'cliënt' of 'burger' gelezen worden. De term 'cliënt' is gebruikelijk binnen de mondzorg.
 
-De mondzorggegevens worden op een granulaire wijze uitgewisseld. Dit houdt in dat elk Clinical Information Model (CIM) binnen Mondzorg los opgevraagd en uitgewisseld kan worden, en dat voor elke CIM een zogenaamde granulaire gegevensdienst is gedefinieerd. Meer informatie over granulaire uitwisseling is te vinden in de [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.1.0).
+De mondzorggegevens worden op een granulaire wijze uitgewisseld. Dit houdt in dat elk Clinical Information Model (CIM) binnen Mondzorg los opgevraagd en uitgewisseld kan worden, en dat voor elke CIM een zogenaamde granulaire gegevensdienst is gedefinieerd. Meer informatie over granulaire uitwisseling is te vinden in de [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.2.0).
 
-Merk op dat naast dit ontwerp ook de (functionele) eisen en richtlijnen beschreven in de [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig?version=1.1.0) en het door Nictiz gepubliceerde [Functioneel ontwerp](https://informatiestandaarden.nictiz.nl/wiki/MedMij:FO:V1/FunctioneelOntwerp) van toepassing zijn.
+Merk op dat naast dit ontwerp ook de (functionele) eisen en richtlijnen beschreven in de [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig?version=1.2.0) en het door Nictiz gepubliceerde [Functioneel ontwerp](https://informatiestandaarden.nictiz.nl/wiki/MedMij:FO:V1/FunctioneelOntwerp) van toepassing zijn.
 
 ### Doelgroep
 De doelgroep voor deze pagina wijkt niet af van de [algemene doelgroep](https://informatiestandaarden.nictiz.nl/wiki/MedMij:FO:V1/FunctioneelOntwerp#Doelgroep) van de functionele ontwerpen binnen MedMij.
@@ -89,22 +89,24 @@ Zowel de patiënt als de zorgaanbieder maken ieder gebruik van een informatiesys
 Deze systemen kennen ieder verschillende systeemrollen, die het uitwisselen van gegevens tussen deze systemen mogelijk maken. Hier gaat het om de mondzorggegevens die zijn geregistreerd bij de zorgaanbieder naar de patiënt. Aangezien de mondzorggegevens worden uitgewisseld door middel van granulaire gegevensdiensten, is er per gegevensdienst een systeemrol opgesteld. De systeemrollen worden hier niet expliciet benoemd, maar zijn onderdeel van de specificatie van de individuele granulaire gegevensdiensten.
 
 ### Transacties en transactiegroepen
-Het uitwisselen van gegevens tussen de verschillende systeemrollen gebeurt op basis van transacties. Een verzameling van transacties (bijvoorbeeld een vraag- en antwoordbericht) vormt een zogeheten transactiegroep. Voor de transacties die tussen de systeemrollen plaatsvinden, beschrijven de bijbehorende CIM's (impliciet) welke gegevenselementen uitgewisseld worden binnen Mondzorg. Voor de technische specificaties, zie het {{pagelink: TD, text: technisch ontwerp}}.
+Het uitwisselen van gegevens tussen de verschillende systeemrollen gebeurt op basis van transacties. Een verzameling van transacties (bijvoorbeeld een vraag- en antwoordbericht) vormt een zogeheten transactiegroep. Voor de transacties die tussen de systeemrollen plaatsvinden, wordt voor de granulaire gegevensdiensten gebaseerd op zibs in [ART-DECOR](https://decor.nictiz.nl/pub/zib2020bbr/zib2020bbr-html-20260901T075704/scenarios.html) beschreven welke gegevenselementen uitgewisseld worden, en met welke kardinaliteiten/conformance. Hierbij is de transactie genaamd 'Registratie' telkens leidend. Voor de granulaire gegevensdiensten gebaseerd op CIM's die zijn geïntroduceerd binnen Mondzorg, beschrijven de bijbehorende {{pagelink: LogicalModelsIndex, text: Logical Models}} de transactie (zie ook de Logical Models in [MedMij R4 Core](https://simplifier.net/guide/medmij-r4-core-ig/Home/Artifact-Index/Logical-Models?version=1.2.0)).
+
+Voor de technische specificaties, zie het {{pagelink: TD, text: technisch ontwerp}}.
 
 De onderstaande tabel geeft een overzicht van alle granulaire gegevensdiensten die van toepassing zijn voor Mondzorg. De gegevensdienst 'Verzamelen Mondzorg - Dental fitness' is uitsluitend voor de Defensie-context van toepassing. Merk op dat de domeinoverstijgende gegevensdiensten in de MedMij R4 Core IG worden beschreven, terwijl domeinspecifieke gegevensdiensten in deze IG worden beschreven.
 
 | Id | Gegevensdienstnaam zonder versie | Versie |
 | --- | --- | --- | --- |
-| 900000107 | [Verzamelen MedMij Core - ASA-score](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-ASAScore?version=1.1.0) | 1.0.0-rc.1 |
-| 900000111 | [Verzamelen MedMij Core - Contact (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Encounter?version=1.1.0) | 1.0.0-rc.1 |
-| 900000101 | [Verzamelen MedMij Core - Patient (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Patient?version=1.1.0) | 1.0.0-rc.1 |
-| 900000110 | [Verzamelen MedMij Core - Betaler (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Payer?version=1.1.0) | 1.0.0-rc.1 |
-| 900000103 | [Verzamelen MedMij Core - Behandeldoel (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-TreatmentObjective?version=1.1.0) | 1.0.0-rc.1 |
-| 900000105 | {{pagelink: CariesRisk, text: Verzamelen Mondzorg - Cariësrisico}} | 1.0.0-rc.1 |
-| 900000109 | {{pagelink: DentalFitness, text: Verzamelen Mondzorg - Dental fitness}} | 1.0.0-rc.1 |
-| 900000104 | {{pagelink: OralHygiene, text: Verzamelen Mondzorg - Mondhygiëne}} | 1.0.0-rc.1
-| 900000106 | {{pagelink: ParafunctionalActivity, text: Verzamelen Mondzorg - Parafunctionele activiteit}} | 1.0.0-rc.1 |
-| 900000108 | {{pagelink: PeriodicPeriodontalScreeningScore, text: Verzamelen Mondzorg - Periodieke Parodontale Screening-score}} | 1.0.0-rc.1 |
+| 900000107 | [Verzamelen MedMij Core - ASA-score](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-ASAScore?version=1.2.0) | 1.0.0-rc.2 |
+| 900000111 | [Verzamelen MedMij Core - Contact (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Encounter?version=1.2.0) | 1.0.0-rc.2 |
+| 900000101 | [Verzamelen MedMij Core - Patient (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Patient?version=1.2.0) | 1.0.0-rc.2 |
+| 900000110 | [Verzamelen MedMij Core - Betaler (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Payer?version=1.2.0) | 1.0.0-rc.2 |
+| 900000103 | [Verzamelen MedMij Core - Behandeldoel (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-TreatmentObjective?version=1.2.0) | 1.0.0-rc.2 |
+| 900000105 | {{pagelink: CariesRisk, text: Verzamelen Mondzorg - Cariësrisico}} | 1.0.0-rc.2 |
+| 900000109 | {{pagelink: DentalFitness, text: Verzamelen Mondzorg - Dental fitness}} | 1.0.0-rc.2 |
+| 900000104 | {{pagelink: OralHygiene, text: Verzamelen Mondzorg - Mondhygiëne}} | 1.0.0-rc.2
+| 900000106 | {{pagelink: ParafunctionalActivity, text: Verzamelen Mondzorg - Parafunctionele activiteit}} | 1.0.0-rc.2 |
+| 900000108 | {{pagelink: PeriodicPeriodontalScreeningScore, text: Verzamelen Mondzorg - Periodieke Parodontale Screening-score}} | 1.0.0-rc.2 |
 | 900000102 | {{pagelink: Procedure, text: Verzamelen Mondzorg - Verrichting}} | 1.0.0-rc.2 |
 
 **Tabel 2: Granulaire gegevensdiensten relevant voor Mondzorg**
