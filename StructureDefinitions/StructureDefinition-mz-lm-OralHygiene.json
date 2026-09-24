@@ -73,6 +73,11 @@
         ]
       },
       {
+        "id": "mz-lm-OralHygiene.Effective[x]",
+        "path": "mz-lm-OralHygiene.Effective[x]",
+        "min": 1
+      },
+      {
         "id": "mz-lm-OralHygiene.Effective[x]:EffectiveDateTime",
         "path": "mz-lm-OralHygiene.Effective[x]",
         "sliceName": "EffectiveDateTime",
@@ -81,6 +86,7 @@
         "alias": [
           "MondhygiëneDatumTijd"
         ],
+        "min": 1,
         "type": [
           {
             "code": "dateTime"
