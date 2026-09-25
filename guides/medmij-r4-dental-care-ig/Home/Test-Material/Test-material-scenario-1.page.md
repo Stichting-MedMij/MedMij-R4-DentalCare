@@ -6,7 +6,7 @@
 | --- | --- |
 | NameInformation.FirstNames | Erik |
 | NameInformation.Initials | |
-| NameInformation.GivenName | |
+| NameInformation.GivenName | Erik |
 | NameInformation.NameUsage | Eigen geslachtsnaam (code 'NL1' from code system 'NaamGebruik') |
 | NameInformation.LastName.Prefix | van |
 | NameInformation.LastName.LastName | Oranje |
@@ -65,7 +65,7 @@
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | |
+| AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345601 |
 | ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
@@ -101,7 +101,7 @@
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | |
+| AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345603 |
 | ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
@@ -144,7 +144,7 @@
 | --- | --- |
 | HealthProviderIdentificationNumber | |
 | OrganizationName | Vliegbasis Gilze-Rijen |
-| DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| DepartmentSpeciality | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | 0881234567 |
 | ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
@@ -162,7 +162,7 @@
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-| OrganizationType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| OrganizationType | |
 
 ## Contact Person data
 
@@ -194,7 +194,7 @@
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | boven de bakkerij |
 | AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
-| Role | Eerste relatie/contactpersoon (code '01' from code system 'COD821-VEKT') |
+| Role | Eerste relatie/contactpersoon (code '01' from code system 'Vektis COD472') |
 | Role | Mantelzorger (code '100001' from code system 'ExtraRolcodes') |
 | Relationship | |
 
@@ -337,7 +337,7 @@
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | 0501234567 |
-| ContactInformation.TelephoneNumbers.TelecomType | Vast telefoonnummer (code 'LL' from code system 'TelecomDeviceTypes') |
+| ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | |
@@ -362,14 +362,14 @@
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
-| Indication.ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
+| Indication.ProblemType | interpretatie van diagnose (code '282291009' from code system 'SNOMED CT') |
 | Indication.ProblemName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
 | Indication.FurtherSpecificationProblemName | Cariës rechterbovenkies |
 | Indication.ProblemAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
 | Indication.ProblemAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
 | Indication.ProblemStartDate | 20-05-2025 10:00 |
 | Indication.ProblemEndDate | |
-| Indication.ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| Indication.ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
 | Indication.VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Indication.Comment | Actieve cariës vastgesteld tijdens periodiek preventief onderzoek. Restauratieve behandeling (éénvlaksvulling) en preventief advies besproken. |
 | Location | Vliegbasis Gilze-Rijen |

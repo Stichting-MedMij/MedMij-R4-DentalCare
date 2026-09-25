@@ -101,7 +101,7 @@
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-| OrganizationType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
+| OrganizationType | |
 
 ## Contact Person data
 
@@ -133,7 +133,7 @@
 | AddressInformation.Country | |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
-| Role | Eerste relatie/contactpersoon (code '01' from code system 'COD821-VEKT') |
+| Role | Eerste relatie/contactpersoon (code '01' from code system 'Vektis COD472') |
 | Relationship | Vader (code 'FTH' from code system 'RoleCode') |
 
 ## ASA Score data
@@ -158,7 +158,7 @@
 
 | | |
 | --- | --- |
-| ContactType | Poliklinisch (code 'AMB' from code system 'Actcode') |
+| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode'): Controle / debonding |
 | ContactWith | B. Dijkstra, Orthodontist |
 | Location | Orthodontiepraktijk Dijkstra |
 | StartDateTime | 01-08-2025 09:00 |
@@ -314,17 +314,17 @@
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
 
-### Treatment Objective - geen problemen met kauwen
+### Treatment Objective - Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-08-01
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | |
+| DesiredHealthcareResult | Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-08-01 |
 | Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusDate | 01-08-2025 |
 | DesiredHealthCondition.Comment | Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn. |
-| DesiredHealthCondition.MedicalDevice | Vaste multibracket-beugel bovenboog |
+| DesiredHealthCondition.MedicalDevice | |
 | Problem | malocclusie van tanden en/of kiezen |
 
 #### Medical Device - Vaste multibracket-beugel bovenboog
@@ -347,13 +347,13 @@
 
 | | |
 | --- | --- |
-| ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
+| ProblemType | interpretatie van diagnose (code '282291009' from code system 'SNOMED CT') |
 | ProblemName | malocclusie van tanden en/of kiezen (code '47944004' from code system 'SNOMED CT') |
 | FurtherSpecificationProblemName | Malocclusie met scheefstand van de snijtand linksboven |
 | ProblemAnatomicalLocation.Location | bovenste tandboog (code '39481002' from code system 'SNOMED CT') |
 | ProblemAnatomicalLocation.Laterality | |
 | ProblemStartDate | 15-11-2023 |
 | ProblemEndDate | |
-| ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
 | VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Comment | Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie. |

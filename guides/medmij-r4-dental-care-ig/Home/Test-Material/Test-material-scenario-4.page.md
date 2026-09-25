@@ -54,7 +54,7 @@
 | NameInformation.LastNamePartner.PartnerLastName | |
 | NameInformation.Titles | |
 | Speciality | Tandartsen, algemeen practicus (code '1200' from code system 'Vektis AGB-medische specialismen') |
-| Gender | Man (code 'M' from code system 'AdministrativeGender') |
+| Gender | Man (code 'male' from code system 'FHIR AdministrativeGender') |
 | AddressInformation.Street | Grote Houtstraat |
 | AddressInformation.HouseNumber | 45 |
 | AddressInformation.HouseNumberLetter | |
@@ -101,7 +101,7 @@
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-| OrganizationType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| OrganizationType | |
 
 ## Contact Person data
 
@@ -133,10 +133,12 @@
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
-| Role | Eerste relatie/contactpersoon (code '01' from code system 'COD821-VEKT') |
+| Role | Eerste relatie/contactpersoon (code '01' from code system 'Vektis COD472') |
 | Relationship | |
 
 ## ASA Score data
+
+### ASA Score - 10-03-2025
 
 | | |
 | --- | --- |
@@ -145,7 +147,27 @@
 | Performer | M. Vos, Tandarts |
 | Comment | Milde astma (salbutamol zo nodig); geen bekende allergieën |
 
+### ASA Score - 24-03-2025
+
+| | |
+| --- | --- |
+| ASAScoreDateTime | 24-03-2025 09:05 |
+| ASAScoreValue | ASA-score 3 (code '413497009' from code system 'SNOMED CT') |
+| Performer | M. Vos, Tandarts |
+| Comment | Astma-aanval afgelopen week; salbutamol vaker nodig. Extra voorzichtigheid bij lokale anesthesie. |
+
+### ASA Score - ASA-score 1
+
+| | |
+| --- | --- |
+| ASAScoreDateTime | |
+| ASAScoreValue | ASA-score 1 (code '413495001' from code system 'SNOMED CT') |
+| Performer | |
+| Comment | |
+
 ## Caries Risk data
+
+### Caries Risk - 10-03-2025
 
 | | |
 | --- | --- |
@@ -154,14 +176,23 @@
 | Performer | M. Vos, Tandarts |
 | Comment | Actieve cariës en matige mondhygiëne; voedings- en poetsadvies gegeven. |
 
-## Dental Fitness data
+### Caries Risk - 24-03-2025
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | 10-03-2025 10:15 |
-| DentalFitnessValue | klasse 2 (code '258393007' from code system 'SNOMED CT') |
+| CariesRiskDateTime | 24-03-2025 09:10 |
+| CariesRiskValue | hoog (code '75540009' from code system 'SNOMED CT') |
 | Performer | M. Vos, Tandarts |
-| Comment | Actieve cariës; restauratie gepland. Vastgelegd voor volledige CIM-dekking DentalFitness. |
+| Comment | Actieve cariës rechterbovenkies gerestaureerd; voedingspatroon nog ongunstig. |
+
+### Caries Risk - laag
+
+| | |
+| --- | --- |
+| CariesRiskDateTime | |
+| CariesRiskValue | laag (code '62482003' from code system 'SNOMED CT') |
+| Performer | |
+| Comment | |
 
 ## Encounter data
 
@@ -197,7 +228,41 @@
 | Origin | |
 | Destination | |
 
+### Encounter - Restauratieve behandeling
+
+| | |
+| --- | --- |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Restauratieve behandeling |
+| ContactWith | M. Vos, Tandarts |
+| Location | Tandartspraktijk Vos |
+| StartDateTime | 24-03-2025 09:00 |
+| EndDateTime | 24-03-2025 10:00 |
+| ContactReason.Problem | Cariës rechterbovenkies |
+| ContactReason.Procedure | |
+| ContactReason.DeviatingResult | |
+| ContactReason.CommentContactReason | Eénvlaksvulling (V11) rechterbovenkies |
+| Origin | |
+| Destination | |
+
+### Encounter - Plaatsing occlusale splint
+
+| | |
+| --- | --- |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Plaatsing occlusale splint |
+| ContactWith | M. Vos, Tandarts |
+| Location | Tandartspraktijk Vos |
+| StartDateTime | |
+| EndDateTime | |
+| ContactReason.Problem | |
+| ContactReason.Procedure | |
+| ContactReason.DeviatingResult | |
+| ContactReason.CommentContactReason | Plaatsing occlusale splint i.v.m. knarsen; gebitsreiniging |
+| Origin | |
+| Destination | |
+
 ## Oral Hygiene data
+
+### Oral Hygiene - 10-03-2025
 
 | | |
 | --- | --- |
@@ -206,7 +271,27 @@
 | Performer | M. Vos, Tandarts |
 | Comment | Plaque en beginnende tandsteen buccaal; poetsinstructie gegeven. |
 
+### Oral Hygiene - 24-03-2025
+
+| | |
+| --- | --- |
+| OralHygieneDateTime | 24-03-2025 09:15 |
+| OralHygieneValue | normaal (code '17621005' from code system 'SNOMED CT') |
+| Performer | M. Vos, Tandarts |
+| Comment | Plaque verminderd na instructie; nog lichte tandsteen interdentaal. |
+
+### Oral Hygiene - goed
+
+| | |
+| --- | --- |
+| OralHygieneDateTime | |
+| OralHygieneValue | goed (code '20572008' from code system 'SNOMED CT') |
+| Performer | |
+| Comment | |
+
 ## Parafunctional Activity data
+
+### Parafunctional Activity - 10-03-2025
 
 | | |
 | --- | --- |
@@ -214,6 +299,24 @@
 | ParafunctionalActivityValue | Knarsen 's nachts |
 | Performer | M. Vos, Tandarts |
 | Comment | Occlusale splint gepland ter bescherming van restauraties en kaakgewricht. |
+
+### Parafunctional Activity - 24-03-2025
+
+| | |
+| --- | --- |
+| ParafunctionalActivityDateTime | 24-03-2025 09:20 |
+| ParafunctionalActivityValue | Kaken klemmen overdag |
+| Performer | M. Vos, Tandarts |
+| Comment | Naast nachtelijk knarsen ook overdag klemmen; splint plaatsing gepland. |
+
+### Parafunctional Activity - Knarsen verminderd met occlusale splint
+
+| | |
+| --- | --- |
+| ParafunctionalActivityDateTime | |
+| ParafunctionalActivityValue | Knarsen verminderd met occlusale splint |
+| Performer | |
+| Comment | |
 
 ## Payer data
 
@@ -283,6 +386,8 @@
 
 ## Periodic Periodontal Screening Score data
 
+### Periodic Periodontal Screening Score - 10-03-2025
+
 | | |
 | --- | --- |
 | PeriodicPeriodontalScreeningScoreDateTime | 10-03-2025 10:15 |
@@ -290,7 +395,27 @@
 | Performer | M. Vos, Tandarts |
 | Comment | Paro-preventie; hercontrole over zes maanden. |
 
+### Periodic Periodontal Screening Score - 24-03-2025
+
+| | |
+| --- | --- |
+| PeriodicPeriodontalScreeningScoreDateTime | 24-03-2025 09:25 |
+| PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system 'PeriodicPeriodontalScreeningScore') |
+| Performer | M. Vos, Tandarts |
+| Comment | Locale verdieping bij element 16; hygiëne intensiveren. |
+
+### Periodic Periodontal Screening Score - ppsscore1
+
+| | |
+| --- | --- |
+| PeriodicPeriodontalScreeningScoreDateTime | |
+| PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
+| Performer | |
+| Comment | |
+
 ## Procedure data
+
+### Procedure - Eénvlaksvulling
 
 | | |
 | --- | --- |
@@ -300,17 +425,63 @@
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
-| Indication.ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
+| Indication.ProblemType | interpretatie van diagnose (code '282291009' from code system 'SNOMED CT') |
 | Indication.ProblemName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
 | Indication.FurtherSpecificationProblemName | Cariës rechterbovenkies (element 16) |
 | Indication.ProblemAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
 | Indication.ProblemAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
 | Indication.ProblemStartDate | 10-03-2025 10:00 |
 | Indication.ProblemEndDate | |
-| Indication.ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| Indication.ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
 | Indication.VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Indication.Comment | Occlusale cariës rechterbovenkies; restauratie met composiet gepland. |
 | Location | Tandartspraktijk Vos |
+| Performer | M. Vos, Tandarts |
+
+### Procedure - Maken en beoordelen kleine röntgenfoto
+
+| | |
+| --- | --- |
+| ProcedureStartDate | 10-03-2025 |
+| ProcedureEndDate | |
+| ProcedureType | Maken en beoordelen kleine röntgenfoto (code 'X10' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureMethod | |
+| ProcedureAnatomicalLocation.Location | |
+| ProcedureAnatomicalLocation.Laterality | |
+| Indication.ProblemType | interpretatie van diagnose (code '282291009' from code system 'SNOMED CT') |
+| Indication.ProblemName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
+| Indication.FurtherSpecificationProblemName | Cariës rechterbovenkies (element 16) |
+| Indication.ProblemAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
+| Indication.ProblemAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
+| Indication.ProblemStartDate | 10-03-2025 10:00 |
+| Indication.ProblemEndDate | |
+| Indication.ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
+| Indication.VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| Indication.Comment | Occlusale cariës rechterbovenkies; restauratie met composiet gepland. |
+| Location | Tandartspraktijk Vos |
+| Performer | M. Vos, Tandarts |
+
+### Procedure - Gebitsreiniging
+
+| | |
+| --- | --- |
+| ProcedureStartDate | |
+| ProcedureEndDate | |
+| ProcedureType | Gebitsreiniging (code 'M01' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureMethod | |
+| ProcedureAnatomicalLocation.Location | |
+| ProcedureAnatomicalLocation.Laterality | |
+| Indication.ProblemType | |
+| Indication.ProblemName | |
+| Indication.FurtherSpecificationProblemName | |
+| Indication.ProblemAnatomicalLocation.Location | |
+| Indication.ProblemAnatomicalLocation.Laterality | |
+| Indication.ProblemStartDate | |
+| Indication.ProblemEndDate | |
+| Indication.ProblemStatus | |
+| Indication.VerificationStatus | |
+| Indication.Comment | |
+| Location | |
 | Performer | M. Vos, Tandarts |
 
 ## Treatment Objective data
@@ -332,14 +503,14 @@
 
 | | |
 | --- | --- |
-| ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
+| ProblemType | interpretatie van diagnose (code '282291009' from code system 'SNOMED CT') |
 | ProblemName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
 | FurtherSpecificationProblemName | Cariës rechterbovenkies (element 16) |
 | ProblemAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
 | ProblemAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
 | ProblemStartDate | 10-03-2025 10:00 |
 | ProblemEndDate | |
-| ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
 | VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Comment | Occlusale cariës rechterbovenkies; restauratie met composiet gepland. |
 
@@ -348,25 +519,25 @@
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Verbeteren mondhygiëne |
-| Priority | Lage prioriteit (code 'low-priority' from code system 'GoalPriority') |
+| Priority | |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
-| DesiredHealthCondition.Comment | Aansluitend op paro-preventie en slechte mondhygiëne. |
+| DesiredHealthCondition.Comment | |
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
 
-### Treatment Objective - geen problemen met kauwen
+### Treatment Objective - Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-03-24
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | |
+| DesiredHealthcareResult | Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-03-24 |
 | Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusDate | 24-03-2025 |
 | DesiredHealthCondition.Comment | Na restauratie van de cariës rechterbovenkies moet kauwen weer klachtenvrij zijn. |
-| DesiredHealthCondition.MedicalDevice | Occlusale splint |
+| DesiredHealthCondition.MedicalDevice | |
 | Problem | Cariës rechterbovenkies |
 
 #### Medical Device - Occlusale splint

@@ -101,7 +101,7 @@
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
-| AddressInformation.AddressType | |
+| AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345603 |
 | ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
@@ -121,7 +121,7 @@
 | OrganizationName | Defensie Tandheelkundige Dienst |
 | DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345602 |
-| ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
+| ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | info@dtd.tandarts.nl |
@@ -144,9 +144,9 @@
 | --- | --- |
 | HealthProviderIdentificationNumber | |
 | OrganizationName | Vliegbasis Gilze-Rijen |
-| DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| DepartmentSpeciality | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | 0881234567 |
-| ContactInformation.TelephoneNumbers.TelecomType | Vast telefoonnummer (code 'LL' from code system 'TelecomDeviceTypes') |
+| ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | |
@@ -162,7 +162,7 @@
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
-| OrganizationType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| OrganizationType | |
 
 ## Contact Person data
 
@@ -194,10 +194,12 @@
 | AddressInformation.Country | |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
-| Role | Wettelijke vertegenwoordiger (code '24' from code system 'COD821-VEKT') |
+| Role | Wettelijke vertegenwoordiger (code '24' from code system 'Vektis COD472') |
 | Relationship | |
 
 ## ASA Score data
+
+### ASA Score - 11-02-2022
 
 | | |
 | --- | --- |
@@ -206,7 +208,27 @@
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Allergisch voor hooikoorts, rookt 12 sigaretten per dag, gebruikt medicatie Cetirizine |
 
+### ASA Score - 11-04-2022
+
+| | |
+| --- | --- |
+| ASAScoreDateTime | 11-04-2022 09:15 |
+| ASAScoreValue | ASA-score 3 (code '413497009' from code system 'SNOMED CT') |
+| Performer | D. de Ruiter, Tandarts |
+| Comment | Acute luchtwegklachten bij hooikoorts; rookt nog; Cetirizine onvoldoende werkzaam. Extra voorzichtigheid bij lokale anesthesie. |
+
+### ASA Score - ASA-score 1
+
+| | |
+| --- | --- |
+| ASAScoreDateTime | |
+| ASAScoreValue | ASA-score 1 (code '413495001' from code system 'SNOMED CT') |
+| Performer | |
+| Comment | |
+
 ## Caries Risk data
+
+### Caries Risk - 11-02-2022
 
 | | |
 | --- | --- |
@@ -215,7 +237,27 @@
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Advies: inname van vruchtensap beperken en niet direct na consumptie poetsen. |
 
+### Caries Risk - 11-04-2022
+
+| | |
+| --- | --- |
+| CariesRiskDateTime | 11-04-2022 09:20 |
+| CariesRiskValue | hoog (code '75540009' from code system 'SNOMED CT') |
+| Performer | D. de Ruiter, Tandarts |
+| Comment | Actieve cariës rechterkies en aanhoudend hoog suikergebruik; restauratie vandaag uitgevoerd. |
+
+### Caries Risk - laag
+
+| | |
+| --- | --- |
+| CariesRiskDateTime | |
+| CariesRiskValue | laag (code '62482003' from code system 'SNOMED CT') |
+| Performer | |
+| Comment | |
+
 ## Dental Fitness data
+
+### Dental Fitness - 11-02-2022
 
 | | |
 | --- | --- |
@@ -224,7 +266,27 @@
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Actieve cariës en slechte mondhygiëne met aanhoudende klachten; onbehandeld waarschijnlijk noodgeval binnen 12 maanden. |
 
+### Dental Fitness - 11-04-2022
+
+| | |
+| --- | --- |
+| DentalFitnessDateTime | 11-04-2022 09:25 |
+| DentalFitnessValue | klasse 2 (code '258393007' from code system 'SNOMED CT') |
+| Performer | D. de Ruiter, Tandarts |
+| Comment | Cariës rechterkies gerestaureerd; mondhygiëne nog matig, geen acute dreiging meer. |
+
+### Dental Fitness - klasse 1
+
+| | |
+| --- | --- |
+| DentalFitnessDateTime | |
+| DentalFitnessValue | klasse 1 (code '258392002' from code system 'SNOMED CT') |
+| Performer | |
+| Comment | |
+
 ## Encounter data
+
+### Encounter - 22-07-2023
 
 | | |
 | --- | --- |
@@ -240,7 +302,41 @@
 | Origin | |
 | Destination | thuis (code '264362003' from code system 'SNOMED CT') |
 
+### Encounter - 11-02-2022
+
+| | |
+| --- | --- |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Periodiek preventief onderzoek |
+| ContactWith | D. de Ruiter, Tandarts |
+| Location | Vliegbasis Gilze-Rijen |
+| StartDateTime | 11-02-2022 10:00 |
+| EndDateTime | 11-02-2022 11:00 |
+| ContactReason.Problem | Cariës rechterkies |
+| ContactReason.Procedure | |
+| ContactReason.DeviatingResult | |
+| ContactReason.CommentContactReason | Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld |
+| Origin | |
+| Destination | |
+
+### Encounter - Restauratieve behandeling
+
+| | |
+| --- | --- |
+| ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Restauratieve behandeling |
+| ContactWith | |
+| Location | Vliegbasis Gilze-Rijen |
+| StartDateTime | |
+| EndDateTime | |
+| ContactReason.Problem | |
+| ContactReason.Procedure | |
+| ContactReason.DeviatingResult | |
+| ContactReason.CommentContactReason | |
+| Origin | |
+| Destination | |
+
 ## Oral Hygiene data
+
+### Oral Hygiene - 11-02-2022
 
 | | |
 | --- | --- |
@@ -249,7 +345,27 @@
 | Performer | S. Vermeer, Mondhygiënist |
 | Comment | Veel tandsteen aanwezig |
 
+### Oral Hygiene - 11-04-2022
+
+| | |
+| --- | --- |
+| OralHygieneDateTime | 11-04-2022 09:30 |
+| OralHygieneValue | slecht (code '556001' from code system 'SNOMED CT') |
+| Performer | S. Vermeer, Mondhygiënist |
+| Comment | Tandsteen deels gereduceerd na instructie; plaque buccaal nog aanwezig. |
+
+### Oral Hygiene - goed
+
+| | |
+| --- | --- |
+| OralHygieneDateTime | |
+| OralHygieneValue | goed (code '20572008' from code system 'SNOMED CT') |
+| Performer | |
+| Comment | |
+
 ## Parafunctional Activity data
+
+### Parafunctional Activity - 11-02-2022
 
 | | |
 | --- | --- |
@@ -257,6 +373,24 @@
 | ParafunctionalActivityValue | Knarsen 's nachts |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Patiënt meldt ochtendklachten in de kaakspieren; mogelijk bijdragend aan klachten rechterkies. |
+
+### Parafunctional Activity - 11-04-2022
+
+| | |
+| --- | --- |
+| ParafunctionalActivityDateTime | 11-04-2022 09:35 |
+| ParafunctionalActivityValue | Kaken klemmen overdag |
+| Performer | D. de Ruiter, Tandarts |
+| Comment | Naast nachtelijk knarsen ook overdag klemmen bij spanning; aandachtspunt na restauratie. |
+
+### Parafunctional Activity - Nagels bijten
+
+| | |
+| --- | --- |
+| ParafunctionalActivityDateTime | |
+| ParafunctionalActivityValue | Nagels bijten |
+| Performer | |
+| Comment | |
 
 ## Payer data
 
@@ -333,6 +467,22 @@
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Paro-preventietraject |
 
+
+| | |
+| --- | --- |
+| PeriodicPeriodontalScreeningScoreDateTime | 11-04-2022 09:40 |
+| PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system 'PeriodicPeriodontalScreeningScore') |
+| Performer | D. de Ruiter, Tandarts |
+| Comment | Locale verdieping bij rechterkies; herbeoordeling na hygiëneverbetering. |
+
+
+| | |
+| --- | --- |
+| PeriodicPeriodontalScreeningScoreDateTime | |
+| PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
+| Performer | |
+| Comment | |
+
 ## Procedure data
 
 | | |
@@ -356,13 +506,59 @@
 | Location | Vliegbasis Gilze-Rijen |
 | Performer | D. de Ruiter, Tandarts |
 
-## Treatment Objective data
-
-### Treatment Objective - Vullen gaatjes rechterkies
+### Procedure - Eénvlaksvulling
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | |
+| ProcedureStartDate | 11-04-2022 09:00 |
+| ProcedureEndDate | 11-04-2022 09:45 |
+| ProcedureType | Eénvlaksvulling (code 'V11' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
+| ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
+| ProcedureAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
+| Indication.ProblemType | interpretatie van diagnose (code '282291009' from code system 'SNOMED CT') |
+| Indication.ProblemName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
+| Indication.FurtherSpecificationProblemName | Cariës rechterkies |
+| Indication.ProblemAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
+| Indication.ProblemAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
+| Indication.ProblemStartDate | 11-02-2022 |
+| Indication.ProblemEndDate | |
+| Indication.ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
+| Indication.VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| Indication.Comment | Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland. |
+| Location | Vliegbasis Gilze-Rijen |
+| Performer | D. de Ruiter, Tandarts |
+
+### Procedure - Gebitsreiniging
+
+| | |
+| --- | --- |
+| ProcedureStartDate | |
+| ProcedureEndDate | |
+| ProcedureType | Gebitsreiniging (code 'M01' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureMethod | |
+| ProcedureAnatomicalLocation.Location | |
+| ProcedureAnatomicalLocation.Laterality | |
+| Indication.ProblemType | |
+| Indication.ProblemName | |
+| Indication.FurtherSpecificationProblemName | |
+| Indication.ProblemAnatomicalLocation.Location | |
+| Indication.ProblemAnatomicalLocation.Laterality | |
+| Indication.ProblemStartDate | |
+| Indication.ProblemEndDate | |
+| Indication.ProblemStatus | |
+| Indication.VerificationStatus | |
+| Indication.Comment | |
+| Location | |
+| Performer | S. Vermeer, Mondhygiënist |
+
+## Treatment Objective data
+
+### Treatment Objective - Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal, per 11-04-2022
+
+| | |
+| --- | --- |
+| DesiredHealthcareResult | Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal, per 11-04-2022 |
 | Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusValue | normaal (code '17621005' from code system 'SNOMED CT') |
@@ -375,14 +571,14 @@
 
 | | |
 | --- | --- |
-| ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
+| ProblemType | interpretatie van diagnose (code '282291009' from code system 'SNOMED CT') |
 | ProblemName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
 | FurtherSpecificationProblemName | Cariës rechterkies |
 | ProblemAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
 | ProblemAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
 | ProblemStartDate | 11-02-2022 |
 | ProblemEndDate | |
-| ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
 | VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Comment | Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland. |
 
@@ -399,15 +595,15 @@
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
 
-### Treatment Objective - geen problemen met kauwen
+### Treatment Objective - Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | |
-| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
-| DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
-| DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
-| DesiredHealthCondition.StatusDate | 11-04-2022 |
-| DesiredHealthCondition.Comment | Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn. |
+| DesiredHealthcareResult | Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11 |
+| Priority | |
+| DesiredHealthCondition.StatusName | |
+| DesiredHealthCondition.StatusValue | |
+| DesiredHealthCondition.StatusDate | |
+| DesiredHealthCondition.Comment | |
 | DesiredHealthCondition.MedicalDevice | |
-| Problem | Cariës rechterkies |
+| Problem | |

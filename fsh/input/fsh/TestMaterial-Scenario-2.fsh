@@ -554,7 +554,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Anita Jansen-van Dijk<br/>Geboortedatum: 1988-03-15<br/>Geslacht: Vrouw<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam, Nederland<br/>Telefoon: +31612345678<br/>E-mail: anitajansen@icloud.com</div>"
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Anita Jansen-van Dijk<br/>Geboortedatum: 2010-03-15<br/>Geslacht: Vrouw<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam, Nederland<br/>Telefoon: +31612345678<br/>E-mail: anitajansen@icloud.com</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
   * value
