@@ -97,7 +97,7 @@ De onderstaande tabel geeft een overzicht van alle granulaire gegevensdiensten d
 | --- | --- | --- | --- |
 | 900000107 | [Verzamelen MedMij Core - ASA-score](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-ASAScore?version=1.2.0) | 1.0.0-rc.2 |
 | 900000111 | [Verzamelen MedMij Core - Contact (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Encounter?version=1.2.0) | 1.0.0-rc.2 |
-| 900000101 | [Verzamelen MedMij Core - Patient (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Patient?version=1.2.0) | 1.0.0-rc.1 |
+| 900000101 | [Verzamelen MedMij Core - Patient (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Patient?version=1.2.0) | 1.0.0-rc.2 |
 | 900000110 | [Verzamelen MedMij Core - Betaler (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-Payer?version=1.2.0) | 1.0.0-rc.2 |
 | 900000103 | [Verzamelen MedMij Core - Behandeldoel (zib2020/R4)](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-Data-Service-Index/MedMij-Core-TreatmentObjective?version=1.2.0) | 1.0.0-rc.2 |
 | 900000105 | {{pagelink: CariesRisk, text: Verzamelen Mondzorg - Cariësrisico}} | 1.0.0-rc.2 |
