@@ -62,10 +62,10 @@ Description: "Oral hygiene."
     * ^definition = "Comment on the oral hygiene, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MzOralHygieneMedMijCore-120
+Mapping: MzOralHygieneMedMijCore-130
 Source: MzOralHygiene
-Id: medmij-core-dataset-120-20260923
-Title: "Dataset MedMij R4 Core 1.2.0 20260923"
+Id: medmij-core-dataset-130-2026xxyy
+Title: "Dataset MedMij R4 Core 1.3.0 2026xxyy"
 * meta
   * tag[careType] -> "medmij-core-dataelement-123" "CareType"
 * identifier -> "medmij-core-dataelement-115" "IdentificationNumber"

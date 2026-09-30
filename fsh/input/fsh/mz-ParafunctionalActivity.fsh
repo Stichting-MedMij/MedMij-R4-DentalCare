@@ -61,10 +61,10 @@ Description: "Parafunctional activity."
     * ^definition = "Comment on the parafunctional activity, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MzParafunctionalActivityMedMijCore-120
+Mapping: MzParafunctionalActivityMedMijCore-130
 Source: MzParafunctionalActivity
-Id: medmij-core-dataset-120-20260923
-Title: "Dataset MedMij R4 Core 1.2.0 20260923"
+Id: medmij-core-dataset-130-2026xxyy
+Title: "Dataset MedMij R4 Core 1.3.0 2026xxyy"
 * meta
   * tag[careType] -> "medmij-core-dataelement-123" "CareType"
 * identifier -> "medmij-core-dataelement-115" "IdentificationNumber"
