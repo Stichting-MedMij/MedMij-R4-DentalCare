@@ -68,6 +68,11 @@
         ]
       },
       {
+        "id": "mz-lm-PeriodicPeriodontalScreeningScore.Effective[x]",
+        "path": "mz-lm-PeriodicPeriodontalScreeningScore.Effective[x]",
+        "min": 1
+      },
+      {
         "id": "mz-lm-PeriodicPeriodontalScreeningScore.Effective[x]:EffectiveDateTime",
         "path": "mz-lm-PeriodicPeriodontalScreeningScore.Effective[x]",
         "sliceName": "EffectiveDateTime",
@@ -76,6 +81,7 @@
         "alias": [
           "PeriodiekeParodontaleScreeningScoreDatumTijd"
         ],
+        "min": 1,
         "type": [
           {
             "code": "dateTime"

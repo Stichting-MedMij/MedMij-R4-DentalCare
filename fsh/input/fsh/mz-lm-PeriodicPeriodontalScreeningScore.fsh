@@ -16,7 +16,7 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
 * ^abstract = false
 * .
   * ^alias = "PeriodiekeParodontaleScreeningScore"
-* EffectiveDateTime
+* EffectiveDateTime 1..1
   * ^short = "Periodic Periodontal Screening score date/time"
   * ^definition = "The date and time at which the PPS was performed."
   * ^alias = "PeriodiekeParodontaleScreeningScoreDatumTijd"

@@ -16,7 +16,7 @@ Description: "Caries risk."
 * ^abstract = false
 * .
   * ^alias = "Cariësrisico"
-* EffectiveDateTime
+* EffectiveDateTime 1..1
   * ^short = "Caries risk date/time"
   * ^definition = "The date and time at which the caries risk was determined."
   * ^alias = "CariësrisicoDatumTijd"

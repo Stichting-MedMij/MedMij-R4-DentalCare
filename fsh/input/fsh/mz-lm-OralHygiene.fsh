@@ -16,7 +16,7 @@ Description: "Oral hygiene."
 * ^abstract = false
 * .
   * ^alias = "Mondhygiëne"
-* EffectiveDateTime
+* EffectiveDateTime 1..1
   * ^short = "Oral hygiene date/time"
   * ^definition = "The date and time at which the oral hygiene was determined."
   * ^alias = "MondhygiëneDatumTijd"
