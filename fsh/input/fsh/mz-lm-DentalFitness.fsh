@@ -16,7 +16,7 @@ Description: "Dental fitness according to the NATO classification system."
 * ^abstract = false
 * .
   * ^alias = "DentalFitness"
-* EffectiveDateTime
+* EffectiveDateTime 1..1
   * ^short = "Dental fitness date/time"
   * ^definition = "The date and time at which the dental fitness was determined."
   * ^alias = "DentalFitnessDatumTijd"

@@ -68,6 +68,11 @@
         ]
       },
       {
+        "id": "mz-lm-DentalFitness.Effective[x]",
+        "path": "mz-lm-DentalFitness.Effective[x]",
+        "min": 1
+      },
+      {
         "id": "mz-lm-DentalFitness.Effective[x]:EffectiveDateTime",
         "path": "mz-lm-DentalFitness.Effective[x]",
         "sliceName": "EffectiveDateTime",
@@ -76,6 +81,7 @@
         "alias": [
           "DentalFitnessDatumTijd"
         ],
+        "min": 1,
         "type": [
           {
             "code": "dateTime"

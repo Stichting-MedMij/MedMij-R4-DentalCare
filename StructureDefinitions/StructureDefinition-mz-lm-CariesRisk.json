@@ -73,6 +73,11 @@
         ]
       },
       {
+        "id": "mz-lm-CariesRisk.Effective[x]",
+        "path": "mz-lm-CariesRisk.Effective[x]",
+        "min": 1
+      },
+      {
         "id": "mz-lm-CariesRisk.Effective[x]:EffectiveDateTime",
         "path": "mz-lm-CariesRisk.Effective[x]",
         "sliceName": "EffectiveDateTime",
@@ -81,6 +86,7 @@
         "alias": [
           "CariësrisicoDatumTijd"
         ],
+        "min": 1,
         "type": [
           {
             "code": "dateTime"
