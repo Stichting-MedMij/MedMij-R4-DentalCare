@@ -28,7 +28,7 @@ This technical design assumes that a PHR is able to make a connection to the rig
 ## <a name="RelatingFHIRToFunctionalCounterpart"></a> Relating FHIR (profiles) to its functional counterpart
 The functional model used in Dental Care consists of zibs from [publication 2020](https://zibs.nl/wiki/HCIM_Release_2020(EN)), as well as Clinical Information Models (CIMs) defined by MedMij, the latter of which are represented by {{pagelink: LogicalModelsIndex, text: Logical Models}}.
 - For each concept in these Logical Models, an id is assigned by MedMij. These ids are also added as mappings in the {{pagelink: FHIRProfilesIndex, text: FHIR profiles}} on the corresponding elements, i.e. by specifying `.mapping.map` on each element accordingly. Therefore, these ids form the linking pin between the Logical Models and FHIR profiles. If no such mapping is possible for a certain element in a FHIR profile, guidance is provided to indicate how that element should be handled.
-- The zibs are technically implemented via nl-core profiles, which are bundled in the [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.4) package. In these profiles, mappings to the corresponding zib (concepts) have been added.
+- The zibs are technically implemented via nl-core profiles, which are bundled in the [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.1-beta.1) package. In these profiles, mappings to the corresponding zib (concepts) have been added.
 
 ## Use cases
 Within Dental Care the following use cases are distinguished:
