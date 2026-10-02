@@ -35,13 +35,8 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "mz-dataset-100-rc1-20260603",
-      "name": "Dataset Mondzorg MedMij 1.0.0-rc.1 20260603"
-    },
-    {
-      "identity": "SNOMED",
-      "name": "SNOMED CT",
-      "uri": "http://snomed.info/sct"
+      "identity": "mz-dataset-100-rc2-2026xxyy",
+      "name": "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
     },
     {
       "identity": "LOINC",
@@ -52,7 +47,7 @@
   "kind": "logical",
   "abstract": false,
   "type": "http://medmij.nl/fhir/StructureDefinition/mz-lm-ParafunctionalActivity",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "baseDefinition": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base",
   "derivation": "specialization",
   "differential": {
     "element": [
@@ -66,39 +61,48 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-rc1-20260603",
+            "identity": "mz-dataset-100-rc2-2026xxyy",
             "map": "mz-dataelement-16",
             "comment": "ParafunctionalActivity"
           }
         ]
       },
       {
-        "id": "mz-lm-ParafunctionalActivity.ParafunctionalActivityDateTime",
-        "path": "mz-lm-ParafunctionalActivity.ParafunctionalActivityDateTime",
+        "id": "mz-lm-ParafunctionalActivity.Effective[x]",
+        "path": "mz-lm-ParafunctionalActivity.Effective[x]",
+        "min": 1
+      },
+      {
+        "id": "mz-lm-ParafunctionalActivity.Effective[x]:EffectiveDateTime",
+        "path": "mz-lm-ParafunctionalActivity.Effective[x]",
+        "sliceName": "EffectiveDateTime",
         "short": "Parafunctional activity date/time",
         "definition": "The date and time at which the parafunctional activity was determined.",
         "alias": [
           "ParafunctioneleActiviteitDatumTijd"
         ],
-        "min": 0,
-        "max": "1",
+        "min": 1,
         "type": [
           {
             "code": "dateTime"
           }
-        ],
-        "mapping": [
+        ]
+      },
+      {
+        "id": "mz-lm-ParafunctionalActivity.Effective[x]:EffectivePeriod",
+        "path": "mz-lm-ParafunctionalActivity.Effective[x]",
+        "sliceName": "EffectivePeriod",
+        "max": "0",
+        "type": [
           {
-            "identity": "mz-dataset-100-rc1-20260603",
-            "map": "mz-dataelement-17",
-            "comment": "ParafunctionalActivityDateTime"
-          },
-          {
-            "identity": "SNOMED",
-            "map": "439771001",
-            "comment": "datum van gebeurtenis"
+            "code": "Period"
           }
         ]
+      },
+      {
+        "id": "mz-lm-ParafunctionalActivity.CareType",
+        "path": "mz-lm-ParafunctionalActivity.CareType",
+        "min": 1
       },
       {
         "id": "mz-lm-ParafunctionalActivity.ParafunctionalActivityValue",
@@ -117,7 +121,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-rc1-20260603",
+            "identity": "mz-dataset-100-rc2-2026xxyy",
             "map": "mz-dataelement-18",
             "comment": "ParafunctionalActivityValue"
           },
@@ -148,7 +152,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-rc1-20260603",
+            "identity": "mz-dataset-100-rc2-2026xxyy",
             "map": "mz-dataelement-19",
             "comment": "Performer"
           }
@@ -171,7 +175,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-rc1-20260603",
+            "identity": "mz-dataset-100-rc2-2026xxyy",
             "map": "mz-dataelement-20",
             "comment": "Comment"
           },

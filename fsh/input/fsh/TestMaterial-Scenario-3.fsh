@@ -230,7 +230,7 @@ Usage: #example
   * type = "Practitioner"
 * organization = Reference(DentalCare-Organization-Defensie-Tandheelkundige-Dienst) "Defensie Tandheelkundige Dienst"
   * type = "Organization"
-* specialty[specialty] = $VektisAGB#1200 "Tandartsen, algemeen practicus"
+* specialty[specialty] = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 
 Instance: DentalCare-Practitioner-Dijkstra
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner
