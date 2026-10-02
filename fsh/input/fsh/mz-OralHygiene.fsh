@@ -78,6 +78,6 @@ Source: MzOralHygiene
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-11" "OralHygiene"
-* performer -> "medmij-core-dataelement-14" "Performer"
+* performer -> "mz-dataelement-14" "Performer"
 * valueCodeableConcept -> "mz-dataelement-13" "OralHygieneValue"
 * note.text -> "mz-dataelement-15" "Comment"
