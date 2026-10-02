@@ -31,11 +31,6 @@ The functional model used in Dental Care consists of zibs from [publication 2020
 - The zibs are technically implemented via nl-core profiles, which are bundled in the [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.1-beta.1) package. In these profiles, mappings to the corresponding zib (concepts) have been added.
 
 ## Use cases
-Within Dental Care the following use cases are distinguished:
-- General dental care
-- Dental Fitness (only relevant in the Ministry of Defence context)
-
-Within this technical design these use cases are combined into a single use case, as a granular exchange approach is adopted.
 
 ### Use case: Retrieve Dental Care data
 The Dental Care data is defined and exchanged in a granular manner, which means that for each CIM that is part of Dental Care, a separate (granular) data service is defined. Granular exchange allows the PHR to retrieve individual data services that are part of Dental Care through targeted search interactions, in accordance with the general guidance and profiles defined in the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.2.0).
