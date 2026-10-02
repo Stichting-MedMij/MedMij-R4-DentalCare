@@ -113,10 +113,10 @@ Title: "zib Procedure-v5.2(2020EN)"
 * reasonReference -> "NL-CM:14.1.9" "Indication"
 * bodySite -> "NL-CM:14.1.13" "ProcedureAnatomicalLocation"
 
-Mapping: MzProcedureMedMijCore-120
+Mapping: MzProcedureMedMijCore-130
 Source: MzProcedure
-Id: medmij-core-dataset-120-20260923
-Title: "Dataset MedMij R4 Core 1.2.0 20260923"
+Id: medmij-core-dataset-130-20261005
+Title: "Dataset MedMij R4 Core 1.3.0 20261005"
 * meta
   * tag[careType] -> "medmij-core-dataelement-123" "CareType"
 * identifier -> "medmij-core-dataelement-115" "IdentificationNumber"

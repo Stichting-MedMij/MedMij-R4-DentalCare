@@ -62,10 +62,10 @@ Description: "Periodontal screening for dental plaque-related diseases (Periodic
     * ^definition = "Comment on the PPS, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MzPeriodicPeriodontalScreeningScoreMedMijCore-120
+Mapping: MzPeriodicPeriodontalScreeningScoreMedMijCore-130
 Source: MzPeriodicPeriodontalScreeningScore
-Id: medmij-core-dataset-120-20260923
-Title: "Dataset MedMij R4 Core 1.2.0 20260923"
+Id: medmij-core-dataset-130-20261005
+Title: "Dataset MedMij R4 Core 1.3.0 20261005"
 * meta
   * tag[careType] -> "medmij-core-dataelement-123" "CareType"
 * identifier -> "medmij-core-dataelement-115" "IdentificationNumber"
