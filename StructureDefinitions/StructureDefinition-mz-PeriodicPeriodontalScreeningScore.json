@@ -225,7 +225,7 @@
           },
           {
             "identity": "mz-dataset-100-rc2-2026xxyy",
-            "map": "medmij-core-dataelement-24",
+            "map": "mz-dataelement-24",
             "comment": "Performer"
           }
         ]

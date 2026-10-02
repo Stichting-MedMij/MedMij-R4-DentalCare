@@ -78,6 +78,6 @@ Source: MzPeriodicPeriodontalScreeningScore
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-21" "PeriodicPeriodontalScreeningScore"
-* performer -> "medmij-core-dataelement-24" "Performer"
+* performer -> "mz-dataelement-24" "Performer"
 * valueCodeableConcept -> "mz-dataelement-23" "PeriodicPeriodontalScreeningScoreValue"
 * note.text -> "mz-dataelement-25" "Comment"

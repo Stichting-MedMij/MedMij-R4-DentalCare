@@ -77,6 +77,6 @@ Source: MzParafunctionalActivity
 Id: mz-dataset-100-rc2-2026xxyy
 Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
 * -> "mz-dataelement-16" "ParafunctionalActivity"
-* performer -> "medmij-core-dataelement-19" "Performer"
+* performer -> "mz-dataelement-19" "Performer"
 * valueString -> "mz-dataelement-18" "ParafunctionalActivityValue"
 * note.text -> "mz-dataelement-20" "Comment"
