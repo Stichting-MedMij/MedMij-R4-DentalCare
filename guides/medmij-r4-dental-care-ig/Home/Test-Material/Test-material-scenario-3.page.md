@@ -223,7 +223,7 @@ Public dental care
 | ContactInformation.EmailAddresses.EmailAddress | berendvandestok@gmail.com |
 | ContactInformation.EmailAddresses.EmailAddressType | Privé e-mailadres (code 'HP' from code system 'AddressUse') |
 
-### Payer - A.S.R.
+### Payer - Verzekeraar Helderzicht
 
 | | |
 | --- | --- |
@@ -235,15 +235,15 @@ Public dental care
 | InsuranceCompany.Insurance.EndDateTime | 01-01-2026 |
 | InsuranceCompany.Insurance.InsuranceType | Tandverzekering (los) (code 'T' from code system 'Verzekeringssoort') |
 | InsuranceCompany.IdentificationNumber | |
-| InsuranceCompany.OrganizationName | A.S.R. |
+| InsuranceCompany.OrganizationName | Verzekeraar Helderzicht |
 | InsuranceCompany.InsurantNumber | 12345679 |
-| AddressInformation.Street | Archimedeslaan |
-| AddressInformation.HouseNumber | 10 |
+| AddressInformation.Street | Parksingel |
+| AddressInformation.HouseNumber | 8 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 3584 BA |
-| AddressInformation.PlaceOfResidence | Utrecht |
+| AddressInformation.Postcode | 9995 XX |
+| AddressInformation.PlaceOfResidence | Helderstad |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |

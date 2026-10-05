@@ -73,7 +73,7 @@ Defence dental care
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | deruiter@tandarts.nl |
 | ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
-| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
 | HealthProfessionalRole | |
 
 ### Health Professional - S. Vermeer
@@ -109,42 +109,42 @@ Defence dental care
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | vermeer@mondhygienist.nl |
 | ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
-| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
 | HealthProfessionalRole | |
 
 ## Healthcare Provider data
 
-### Healthcare Provider - Defensie Tandheelkundige Dienst
+### Healthcare Provider - Mondzorgcentrum Lindenhof
 
 | | |
 | --- | --- |
-| HealthProviderIdentificationNumber | 12095095 (in identifier system 'Vektis AGB-zorgverlener tabel') |
-| OrganizationName | Defensie Tandheelkundige Dienst |
+| HealthProviderIdentificationNumber | 12999001 (in identifier system 'Vektis AGB-zorgverlener tabel') |
+| OrganizationName | Mondzorgcentrum Lindenhof |
 | DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345602 |
 | ContactInformation.TelephoneNumbers.TelecomType | |
 | ContactInformation.TelephoneNumbers.NumberType | Zakelijk telefoonnummer (code 'WP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | info@dtd.tandarts.nl |
+| ContactInformation.EmailAddresses.EmailAddress | info@lindenhof-mondzorg.nl |
 | ContactInformation.EmailAddresses.EmailAddressType | Zakelijk e-mailadres (code 'WP' from code system 'AddressUse') |
-| AddressInformation.Street | Paradeplein |
-| AddressInformation.HouseNumber | 5 |
+| AddressInformation.Street | Meidoornlaan |
+| AddressInformation.HouseNumber | 15 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 3511 XX |
-| AddressInformation.PlaceOfResidence | Utrecht |
+| AddressInformation.Postcode | 9991 XX |
+| AddressInformation.PlaceOfResidence | Fictiedorp |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 
-### Healthcare Provider - Vliegbasis Gilze-Rijen
+### Healthcare Provider - Praktijklocatie Lindenhof
 
 | | |
 | --- | --- |
 | HealthProviderIdentificationNumber | |
-| OrganizationName | Vliegbasis Gilze-Rijen |
+| OrganizationName | Praktijklocatie Lindenhof |
 | DepartmentSpeciality | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | 0881234567 |
 | ContactInformation.TelephoneNumbers.TelecomType | |
@@ -152,13 +152,13 @@ Defence dental care
 | ContactInformation.TelephoneNumbers.Comment | |
 | ContactInformation.EmailAddresses.EmailAddress | |
 | ContactInformation.EmailAddresses.EmailAddressType | |
-| AddressInformation.Street | Kampweg |
-| AddressInformation.HouseNumber | 8 |
+| AddressInformation.Street | Heideweg |
+| AddressInformation.HouseNumber | 3 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 5121 XX |
-| AddressInformation.PlaceOfResidence | Rijen |
+| AddressInformation.Postcode | 9992 XX |
+| AddressInformation.PlaceOfResidence | Fictiedorp |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -293,7 +293,7 @@ Defence dental care
 | --- | --- |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Second opinion |
 | ContactWith | D. de Ruiter, Tandarts |
-| Location | Vliegbasis Gilze-Rijen |
+| Location | Praktijklocatie Lindenhof |
 | StartDateTime | 22-07-2023 09:00 |
 | EndDateTime | 22-07-2023 09:30 |
 | ContactReason.Problem | Cariës rechterkies |
@@ -309,7 +309,7 @@ Defence dental care
 | --- | --- |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Periodiek preventief onderzoek |
 | ContactWith | D. de Ruiter, Tandarts |
-| Location | Vliegbasis Gilze-Rijen |
+| Location | Praktijklocatie Lindenhof |
 | StartDateTime | 11-02-2022 10:00 |
 | EndDateTime | 11-02-2022 11:00 |
 | ContactReason.Problem | Cariës rechterkies |
@@ -325,7 +325,7 @@ Defence dental care
 | --- | --- |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Restauratieve behandeling |
 | ContactWith | |
-| Location | Vliegbasis Gilze-Rijen |
+| Location | Praktijklocatie Lindenhof |
 | StartDateTime | |
 | EndDateTime | |
 | ContactReason.Problem | |
@@ -427,7 +427,7 @@ Defence dental care
 | ContactInformation.EmailAddresses.EmailAddress | anitajansen@icloud.com |
 | ContactInformation.EmailAddresses.EmailAddressType | Privé e-mailadres (code 'HP' from code system 'AddressUse') |
 
-### Payer - Menzis Zorgverzekeraar N.V.
+### Payer - Zorgverzekeraar Horizon N.V.
 
 | | |
 | --- | --- |
@@ -438,16 +438,16 @@ Defence dental care
 | InsuranceCompany.Insurance.StartDateTime | 01-01-2022 |
 | InsuranceCompany.Insurance.EndDateTime | 01-01-2024 |
 | InsuranceCompany.Insurance.InsuranceType | Aanvullend + tand (code 'AT' from code system 'Verzekeringssoort') |
-| InsuranceCompany.IdentificationNumber | 3332 (in identifier system 'UZOVI') |
-| InsuranceCompany.OrganizationName | Menzis Zorgverzekeraar N.V. |
+| InsuranceCompany.IdentificationNumber | 9911 (in identifier system 'UZOVI') |
+| InsuranceCompany.OrganizationName | Zorgverzekeraar Horizon N.V. |
 | InsuranceCompany.InsurantNumber | 01234567 |
-| AddressInformation.Street | Lawickse Allee |
-| AddressInformation.HouseNumber | 130 |
+| AddressInformation.Street | Dennenlaan |
+| AddressInformation.HouseNumber | 40 |
 | AddressInformation.HouseNumberLetter | |
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
-| AddressInformation.Postcode | 6709 DZ |
-| AddressInformation.PlaceOfResidence | Wageningen |
+| AddressInformation.Postcode | 9993 XX |
+| AddressInformation.PlaceOfResidence | Atlasstad |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -504,7 +504,7 @@ Defence dental care
 | Indication.ProblemStatus | |
 | Indication.VerificationStatus | |
 | Indication.Comment | |
-| Location | Vliegbasis Gilze-Rijen |
+| Location | Praktijklocatie Lindenhof |
 | Performer | D. de Ruiter, Tandarts |
 
 ### Procedure - Eénvlaksvulling
@@ -527,7 +527,7 @@ Defence dental care
 | Indication.ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
 | Indication.VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Indication.Comment | Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland. |
-| Location | Vliegbasis Gilze-Rijen |
+| Location | Praktijklocatie Lindenhof |
 | Performer | D. de Ruiter, Tandarts |
 
 ### Procedure - Gebitsreiniging
