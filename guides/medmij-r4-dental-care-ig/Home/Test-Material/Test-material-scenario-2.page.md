@@ -318,6 +318,8 @@ Defence dental care
 
 | | |
 | --- | --- |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Second opinion |
 | ContactWith | D. de Ruiter, Tandarts |
 | Location | Praktijklocatie Lindenhof |
@@ -476,6 +478,7 @@ Defence dental care
 
 | | |
 | --- | --- |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
 | PayerPerson.BankInformation.BankCode | |
@@ -552,6 +555,7 @@ Defence dental care
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectivePeriodStart | 11-02-2022 |
 | EffectivePeriodEnd | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Maken en beoordelen kleine röntgenfoto (code 'X10' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
