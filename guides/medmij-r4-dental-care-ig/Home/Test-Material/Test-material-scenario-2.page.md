@@ -204,7 +204,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| ASAScoreDateTime | 11-02-2022 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-02-2022 10:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 2 (code '413496000' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Allergisch voor hooikoorts, rookt 12 sigaretten per dag, gebruikt medicatie Cetirizine |
@@ -213,19 +216,25 @@ Defence dental care
 
 | | |
 | --- | --- |
-| ASAScoreDateTime | 11-04-2022 09:15 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-04-2022 09:15 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 3 (code '413497009' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Acute luchtwegklachten bij hooikoorts; rookt nog; Cetirizine onvoldoende werkzaam. Extra voorzichtigheid bij lokale anesthesie. |
 
-### ASA Score - ASA-score 1
+### ASA Score - 22-07-2023
 
 | | |
 | --- | --- |
-| ASAScoreDateTime | |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 22-07-2023 09:10 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 1 (code '413495001' from code system 'SNOMED CT') |
-| Performer | |
-| Comment | |
+| Performer | D. de Ruiter, Tandarts |
+| Comment | Gestopt met roken; hooikoorts stabiel onder Cetirizine; geen andere comorbiditeit |
 
 ## Caries Risk data
 
@@ -233,7 +242,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | 11-02-2022 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-02-2022 10:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | CariesRiskValue | verhoogd (code '35105006' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Advies: inname van vruchtensap beperken en niet direct na consumptie poetsen. |
@@ -242,18 +254,24 @@ Defence dental care
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | 11-04-2022 09:20 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-04-2022 09:20 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | CariesRiskValue | hoog (code '75540009' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Actieve cariës rechterkies en aanhoudend hoog suikergebruik; restauratie vandaag uitgevoerd. |
 
-### Caries Risk - laag
+### Caries Risk - 22-07-2023
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 22-07-2023 09:15 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | CariesRiskValue | laag (code '62482003' from code system 'SNOMED CT') |
-| Performer | |
+| Performer | D. de Ruiter, Tandarts |
 | Comment | |
 
 ## Dental Fitness data
@@ -262,7 +280,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | 11-02-2022 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-02-2022 10:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DentalFitnessValue | klasse 3 (code '258394001' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Actieve cariës en slechte mondhygiëne met aanhoudende klachten; onbehandeld waarschijnlijk noodgeval binnen 12 maanden. |
@@ -271,18 +292,24 @@ Defence dental care
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | 11-04-2022 09:25 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-04-2022 09:25 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DentalFitnessValue | klasse 2 (code '258393007' from code system 'SNOMED CT') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Cariës rechterkies gerestaureerd; mondhygiëne nog matig, geen acute dreiging meer. |
 
-### Dental Fitness - klasse 1
+### Dental Fitness - 22-07-2023
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 22-07-2023 09:20 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DentalFitnessValue | klasse 1 (code '258392002' from code system 'SNOMED CT') |
-| Performer | |
+| Performer | D. de Ruiter, Tandarts |
 | Comment | |
 
 ## Encounter data
@@ -319,15 +346,15 @@ Defence dental care
 | Origin | |
 | Destination | |
 
-### Encounter - Restauratieve behandeling
+### Encounter - 11-04-2022
 
 | | |
 | --- | --- |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Restauratieve behandeling |
 | ContactWith | |
 | Location | Praktijklocatie Lindenhof |
-| StartDateTime | |
-| EndDateTime | |
+| StartDateTime | 11-04-2022 09:00 |
+| EndDateTime | 11-04-2022 10:00 |
 | ContactReason.Problem | |
 | ContactReason.Procedure | |
 | ContactReason.DeviatingResult | |
@@ -341,7 +368,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | 11-02-2022 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-02-2022 10:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'); Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | zeer slecht (code '1336219002' from code system 'SNOMED CT') |
 | Performer | S. Vermeer, Mondhygiënist |
 | Comment | Veel tandsteen aanwezig |
@@ -350,18 +380,24 @@ Defence dental care
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | 11-04-2022 09:30 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-04-2022 09:30 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'); Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | slecht (code '556001' from code system 'SNOMED CT') |
 | Performer | S. Vermeer, Mondhygiënist |
 | Comment | Tandsteen deels gereduceerd na instructie; plaque buccaal nog aanwezig. |
 
-### Oral Hygiene - goed
+### Oral Hygiene - 22-07-2023
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 22-07-2023 09:25 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'); Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | goed (code '20572008' from code system 'SNOMED CT') |
-| Performer | |
+| Performer | S. Vermeer, Mondhygiënist |
 | Comment | |
 
 ## Parafunctional Activity data
@@ -370,7 +406,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | 11-02-2022 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-02-2022 10:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ParafunctionalActivityValue | Knarsen 's nachts |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Patiënt meldt ochtendklachten in de kaakspieren; mogelijk bijdragend aan klachten rechterkies. |
@@ -379,18 +418,24 @@ Defence dental care
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | 11-04-2022 09:35 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-04-2022 09:35 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ParafunctionalActivityValue | Kaken klemmen overdag |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Naast nachtelijk knarsen ook overdag klemmen bij spanning; aandachtspunt na restauratie. |
 
-### Parafunctional Activity - Nagels bijten
+### Parafunctional Activity - 22-07-2023
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 22-07-2023 09:30 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ParafunctionalActivityValue | Nagels bijten |
-| Performer | |
+| Performer | D. de Ruiter, Tandarts |
 | Comment | |
 
 ## Payer data
@@ -461,35 +506,52 @@ Defence dental care
 
 ## Periodic Periodontal Screening Score data
 
+### Periodic Periodontal Screening Score - 11-02-2022
+
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 11-02-2022 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-02-2022 10:43 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 4-5 millimeter = mogelijk in orde (code 'ppsscore2' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Paro-preventietraject |
 
+### Periodic Periodontal Screening Score - 11-04-2022
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 11-04-2022 09:40 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 11-04-2022 09:40 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Locale verdieping bij rechterkies; herbeoordeling na hygiëneverbetering. |
 
+### Periodic Periodontal Screening Score - 22-07-2023
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 22-07-2023 09:35 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
-| Performer | |
-| Comment | |
+| Performer | D. de Ruiter, Tandarts |
+| Comment | Paro-preventietraject afgerond; pockets genormaliseerd |
 
 ## Procedure data
 
+### Procedure - Maken en beoordelen kleine röntgenfoto
+
 | | |
 | --- | --- |
-| ProcedureStartDate | 11-02-2022 |
-| ProcedureEndDate | |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectivePeriodStart | 11-02-2022 |
+| EffectivePeriodEnd | |
 | ProcedureType | Maken en beoordelen kleine röntgenfoto (code 'X10' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
@@ -511,8 +573,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| ProcedureStartDate | 11-04-2022 09:00 |
-| ProcedureEndDate | 11-04-2022 09:45 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectivePeriodStart | 11-04-2022 09:00 |
+| EffectivePeriodEnd | 11-04-2022 09:45 |
 | ProcedureType | Eénvlaksvulling (code 'V11' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
@@ -534,8 +598,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| ProcedureStartDate | |
-| ProcedureEndDate | |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectivePeriodStart | 22-07-2023 |
+| EffectivePeriodEnd | |
 | ProcedureType | Gebitsreiniging (code 'M01' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
@@ -550,7 +616,7 @@ Defence dental care
 | Indication.ProblemStatus | |
 | Indication.VerificationStatus | |
 | Indication.Comment | |
-| Location | |
+| Location | Praktijklocatie Lindenhof |
 | Performer | S. Vermeer, Mondhygiënist |
 
 ## Treatment Objective data
@@ -601,10 +667,10 @@ Defence dental care
 | | |
 | --- | --- |
 | DesiredHealthcareResult | Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11 |
-| Priority | |
-| DesiredHealthCondition.StatusName | |
-| DesiredHealthCondition.StatusValue | |
-| DesiredHealthCondition.StatusDate | |
-| DesiredHealthCondition.Comment | |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
+| DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusDate | 11-04-2022 |
+| DesiredHealthCondition.Comment | Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn. |
 | DesiredHealthCondition.MedicalDevice | |
-| Problem | |
+| Problem | Cariës rechterkies |

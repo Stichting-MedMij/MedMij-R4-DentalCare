@@ -203,7 +203,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| ASAScoreDateTime | 20-05-2025 10:15 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 20-05-2025 10:15 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 1 (code '413495001' from code system 'SNOMED CT')|
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën. |
@@ -212,7 +215,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | 20-05-2025 10:15 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 20-05-2025 10:15 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | CariesRiskValue | verhoogd (code '35105006' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | Advies: frequentie van suikerhoudende tussendoortjes beperken. |
@@ -221,7 +227,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| DentalFitnessDateTime | 20-05-2025 10:15 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 20-05-2025 10:15 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DentalFitnessValue | klasse 2 (code '258393007' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | Actieve cariës en gingivitis; restauratieve behandeling gepland. |
@@ -264,7 +273,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | 20-05-2025 10:15 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 20-05-2025 10:15 |
+| CareType | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | slecht (code '556001' from code system 'SNOMED CT') |
 | Performer | S. Vermeer, Mondhygiënist |
 | Comment | |
@@ -273,7 +285,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | 20-05-2025 10:15 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 20-05-2025 10:15 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ParafunctionalActivityValue | Overmatig knarsen bij stress |
 | Performer | A.B.D.O. de Koning, Tandarts |
 | Comment | |
@@ -348,7 +363,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 20-05-2025 10:15 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 20-05-2025 10:15 |
+| CareType | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | S. Vermeer, Mondhygiënist |
 | Comment | Geen parodontale vervolgbehandeling; wel gingivitis bij slechte mondhygiëne |
@@ -357,8 +375,10 @@ Defence dental care
 
 | | |
 | --- | --- |
-| ProcedureStartDate | 03-06-2025 09:00 |
-| ProcedureEndDate | 03-06-2025 09:45 |
+| IdentificationNumber | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectivePeriodStart | 03-06-2025 09:00 |
+| EffectivePeriodEnd | 03-06-2025 09:45 |
 | ProcedureType | Eénvlaksvulling (code 'V11' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |

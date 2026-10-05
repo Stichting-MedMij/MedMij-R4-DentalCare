@@ -141,7 +141,10 @@ Public dental care
 
 | | |
 | --- | --- |
-| ASAScoreDateTime | 01-01-2024 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Orthodontiepraktijk Dijkstra |
+| EffectiveDateTime | 01-01-2024 10:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 3 (code '413497009' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Orthodontist |
 | Comment | Allergisch voor gluten, heeft nierziekte en bloedarmoede |
@@ -150,7 +153,10 @@ Public dental care
 
 | | |
 | --- | --- |
-| CariesRiskDateTime | 01-01-2024 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Orthodontiepraktijk Dijkstra |
+| EffectiveDateTime | 01-01-2024 10:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | CariesRiskValue | verhoogd (code '35105006' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Orthodontist |
 | Comment | Verhoogd risico mede i.v.m. comorbiditeit (nierziekte, bloedarmoede). |
@@ -175,7 +181,10 @@ Public dental care
 
 | | |
 | --- | --- |
-| OralHygieneDateTime | 01-01-2024 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Orthodontiepraktijk Dijkstra |
+| EffectiveDateTime | 01-01-2024 10:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen'); Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | goed (code '20572008' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Orthodontist |
 | Comment | Goede mondhygiëne; eerdere parodontitis met stabiele restpockets. |
@@ -184,7 +193,10 @@ Public dental care
 
 | | |
 | --- | --- |
-| ParafunctionalActivityDateTime | 01-01-2024 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Orthodontiepraktijk Dijkstra |
+| EffectiveDateTime | 01-01-2024 10:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ParafunctionalActivityValue | Tanden knarsen tijdens slaap |
 | Performer | B. Dijkstra, Orthodontist |
 | Comment | |
@@ -259,7 +271,10 @@ Public dental care
 
 | | |
 | --- | --- |
-| PeriodicPeriodontalScreeningScoreDateTime | 01-01-2024 10:43 |
+| IdentificationNumber | |
+| HealthcareProvider | Orthodontiepraktijk Dijkstra |
+| EffectiveDateTime | 01-01-2024 10:43 |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | B. Dijkstra, Orthodontist |
 | Comment | Verwezen naar paro; orthodontische behandeling pas na paro-stabilisatie (jan–feb 2024). |
@@ -268,8 +283,10 @@ Public dental care
 
 | | |
 | --- | --- |
-| ProcedureStartDate | 01-01-2024 |
-| ProcedureEndDate | |
+| IdentificationNumber | |
+| HealthcareProvider | Orthodontiepraktijk Dijkstra |
+| EffectivePeriodStart | 01-01-2024 |
+| EffectivePeriodEnd | |
 | ProcedureType | Eerste consult (code 'F121A' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
@@ -325,7 +342,7 @@ Public dental care
 | DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusDate | 01-08-2025 |
 | DesiredHealthCondition.Comment | Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn. |
-| DesiredHealthCondition.MedicalDevice | |
+| DesiredHealthCondition.MedicalDevice | Vaste multibracket-beugel bovenboog |
 | Problem | malocclusie van tanden en/of kiezen |
 
 #### Medical Device - Vaste multibracket-beugel bovenboog
