@@ -477,7 +477,7 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: A.S.R<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2024-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Verzekeraar Helderzicht<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2024-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Verzekeraar Helderzicht</div>"
 * status = #active
 * type = $Verzekeringssoort#T "Tandverzekering (los)"
 * subscriberId = "12345679"
@@ -486,7 +486,7 @@ Usage: #example
 * period
   * start = "2024-01-01"
   * end = "2026-01-01"
-* payor = Reference(DentalCare-Organization-ASR) "A.S.R."
+* payor = Reference(DentalCare-Organization-Helderzicht) "Verzekeraar Helderzicht"
   * type = "Organization"
 
 Instance: DentalCare-Payer-Person-Van-De-Stok
@@ -511,26 +511,26 @@ Usage: #example
 * payor = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
 
-Instance: DentalCare-Organization-ASR
+Instance: DentalCare-Organization-Helderzicht
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
 Usage: #example
 * meta
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: A.S.R.<br/>Adres: Archimedeslaan 10, 3584 BA Utrecht</div>"
-* name = "A.S.R."
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Verzekeraar Helderzicht<br/>Adres: Parksingel 8, 9995 XX Helderstad</div>"
+* name = "Verzekeraar Helderzicht"
 * address
   * extension[addressType]
     * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
-  * line = "Archimedeslaan 10"
+  * line = "Parksingel 8"
     * extension[streetName]
-      * valueString = "Archimedeslaan"
+      * valueString = "Parksingel"
     * extension[houseNumber]
-      * valueString = "10"
-  * city = "Utrecht"
-  * postalCode = "3584 BA"
+      * valueString = "8"
+  * city = "Helderstad"
+  * postalCode = "9995 XX"
   * country = "Nederland"
     * extension[countryCode]
       * valueCodeableConcept = $ISO3166#NL "Netherlands"
