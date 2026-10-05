@@ -232,6 +232,8 @@ Defence dental care
 
 | | |
 | --- | --- |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Praktijklocatie Lindenhof |
@@ -248,6 +250,8 @@ Defence dental care
 
 | | |
 | --- | --- |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Praktijklocatie Lindenhof |
@@ -284,6 +288,7 @@ Defence dental care
 
 | | |
 | --- | --- |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Erik van Oranje |
 | PayerPerson.BankInformation.BankName | ING |
 | PayerPerson.BankInformation.BankCode | INGBNL2A |
@@ -316,6 +321,7 @@ Defence dental care
 
 | | |
 | --- | --- |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
 | PayerPerson.BankInformation.BankCode | |

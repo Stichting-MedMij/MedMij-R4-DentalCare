@@ -195,6 +195,7 @@ Public dental care
 
 | | |
 | --- | --- |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Berend van de Stok |
 | PayerPerson.BankInformation.BankName | ABNA |
 | PayerPerson.BankInformation.BankCode | ABNA00NL |
@@ -227,6 +228,7 @@ Public dental care
 
 | | |
 | --- | --- |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
 | PayerPerson.BankInformation.BankCode | |
@@ -268,8 +270,10 @@ Public dental care
 
 | | |
 | --- | --- |
-| ProcedureStartDate | 01-01-2024 |
-| ProcedureEndDate | |
+| HealthcareProvider | Defensie Tandheelkundige Dienst |
+| StartDateTime | 01-01-2024 |
+| EndDateTime | |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Eerste consult (code 'F121A' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
@@ -293,6 +297,9 @@ Public dental care
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| EffectiveDateTime | |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Trekken snijtand linksboven |
 | Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
@@ -306,6 +313,9 @@ Public dental care
 
 | | |
 | --- | --- |
+| HealthcareProvider | |
+| EffectiveDateTime | |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Wortelpuntoperatie (apexresectie) |
 | Priority | Lage prioriteit (code 'low-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
