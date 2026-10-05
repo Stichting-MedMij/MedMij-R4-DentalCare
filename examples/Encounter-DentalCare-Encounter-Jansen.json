@@ -26,7 +26,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
   "status": "finished",
   "class": {
@@ -77,8 +77,8 @@
   "location": [
     {
       "location": {
-        "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-        "display": "Vliegbasis Gilze-Rijen",
+        "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+        "display": "Praktijklocatie Lindenhof",
         "type": "Location"
       }
     }

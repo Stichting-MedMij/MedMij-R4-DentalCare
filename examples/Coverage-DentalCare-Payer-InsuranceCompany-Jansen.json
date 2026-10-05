@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: Menzis<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-01-01<br/>Einddatum: 2024-01-01<br/>Status: Actief<br/>Betaler: Menzis Zorgverzekeraar N.V.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: Horizon<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-01-01<br/>Einddatum: 2024-01-01<br/>Status: Actief<br/>Betaler: Zorgverzekeraar Horizon N.V.</div>"
   },
   "status": "active",
   "type": {
@@ -39,8 +39,8 @@
   },
   "payor": [
     {
-      "reference": "Organization/DentalCare-Organization-Menzis",
-      "display": "Menzis Zorgverzekeraar N.V.",
+      "reference": "Organization/DentalCare-Organization-Horizon",
+      "display": "Zorgverzekeraar Horizon N.V.",
       "type": "Organization"
     }
   ]

@@ -63,7 +63,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling<br/>Patiënt: Erik van Oranje<br/>Datum: 2025-06-03<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling<br/>Patiënt: Erik van Oranje<br/>Datum: 2025-06-03<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
   "status": "completed",
   "code": {
@@ -94,8 +94,8 @@
     }
   ],
   "location": {
-    "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-    "display": "Vliegbasis Gilze-Rijen",
+    "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+    "display": "Praktijklocatie Lindenhof",
     "type": "Location"
   },
   "reasonReference": [

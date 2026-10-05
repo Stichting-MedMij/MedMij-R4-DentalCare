@@ -1,6 +1,6 @@
 {
   "resourceType": "Organization",
-  "id": "DentalCare-Organization-Tandartspraktijk-Vos",
+  "id": "DentalCare-Organization-Mondzorgcentrum-Lindenhof",
   "meta": {
     "tag": [
       {
@@ -13,6 +13,18 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
     ]
   },
+  "telecom": [
+    {
+      "system": "email",
+      "value": "info@lindenhof-mondzorg.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "+31612345602",
+      "use": "work"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -30,25 +42,25 @@
         }
       ],
       "line": [
-        "Grote Houtstraat 45"
+        "Meidoornlaan 15"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Grote Houtstraat"
+              "valueString": "Meidoornlaan"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "45"
+              "valueString": "15"
             }
           ]
         }
       ],
       "use": "work",
-      "city": "Haarlem",
-      "postalCode": "2011 HD",
+      "city": "Fictiedorp",
+      "postalCode": "9991 XX",
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -70,12 +82,12 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Tandartspraktijk Vos<br/>AGB-code: 12005678<br/>Telefoon: 0231234567<br/>E-mail: info@tandartspraktijkvos.nl<br/>Adres: Grote Houtstraat 45, 2011 HD Haarlem</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Mondzorgcentrum Lindenhof<br/>AGB-code: 12999001<br/>Telefoon: +31612345602<br/>E-mail: info@lindenhof-mondzorg.nl<br/>Adres: Meidoornlaan 15, 9991 XX Fictiedorp</div>"
   },
   "identifier": [
     {
       "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
-      "value": "12005678"
+      "value": "12999001"
     }
   ],
   "type": [
@@ -89,17 +101,5 @@
       ]
     }
   ],
-  "name": "Tandartspraktijk Vos",
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "0231234567",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "info@tandartspraktijkvos.nl",
-      "use": "work"
-    }
-  ]
+  "name": "Mondzorgcentrum Lindenhof"
 }

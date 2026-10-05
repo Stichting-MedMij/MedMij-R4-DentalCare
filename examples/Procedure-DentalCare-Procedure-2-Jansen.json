@@ -63,7 +63,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Start: 2022-04-11T09:00<br/>Einde: 2022-04-11T09:45<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Vliegbasis Gilze-Rijen<br/>Indicatie: Cariës rechterkies</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Start: 2022-04-11T09:00<br/>Einde: 2022-04-11T09:45<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof<br/>Indicatie: Cariës rechterkies</div>"
   },
   "status": "completed",
   "code": {
@@ -94,8 +94,8 @@
     }
   ],
   "location": {
-    "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-    "display": "Vliegbasis Gilze-Rijen",
+    "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+    "display": "Praktijklocatie Lindenhof",
     "type": "Location"
   },
   "reasonReference": [

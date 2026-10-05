@@ -25,7 +25,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-05-20T10:00:00<br/>Einddatum: 2026-05-20T11:00:00<br/>Status: Gepland<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-05-20T10:00:00<br/>Einddatum: 2026-05-20T11:00:00<br/>Status: Gepland<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
   "status": "planned",
   "class": {
@@ -59,8 +59,8 @@
   "location": [
     {
       "location": {
-        "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-        "display": "Vliegbasis Gilze-Rijen",
+        "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+        "display": "Praktijklocatie Lindenhof",
         "type": "Location"
       }
     }

@@ -26,7 +26,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Periodiek preventief onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11T10:00:00+01:00<br/>Einddatum: 2022-02-11T11:00:00+01:00<br/>Status: Afgerond<br/>Locatie: Vliegbasis Gilze-Rijen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Periodiek preventief onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11T10:00:00+01:00<br/>Einddatum: 2022-02-11T11:00:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
   "status": "finished",
   "class": {
@@ -66,8 +66,8 @@
   "location": [
     {
       "location": {
-        "reference": "Location/DentalCare-Location-Vliegbasis-Gilze-Rijen",
-        "display": "Vliegbasis Gilze-Rijen",
+        "reference": "Location/DentalCare-Location-Praktijklocatie-Lindenhof",
+        "display": "Praktijklocatie Lindenhof",
         "type": "Location"
       }
     }

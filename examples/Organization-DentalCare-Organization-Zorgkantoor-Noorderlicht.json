@@ -1,12 +1,12 @@
 {
   "resourceType": "Organization",
-  "id": "DentalCare-Organization-ASR",
+  "id": "DentalCare-Organization-Zorgkantoor-Noorderlicht",
   "meta": {
     "tag": [
       {
-        "code": "1300",
+        "code": "1200",
         "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
-        "display": "Tandartsspecialisten dentomaxillaire orthopaedie"
+        "display": "Tandartsen"
       }
     ],
     "profile": [
@@ -30,25 +30,25 @@
         }
       ],
       "line": [
-        "Archimedeslaan 10"
+        "Kadeweg 22"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Archimedeslaan"
+              "valueString": "Kadeweg"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "10"
+              "valueString": "22"
             }
           ]
         }
       ],
       "use": "work",
-      "city": "Utrecht",
-      "postalCode": "3584 BA",
+      "city": "Noordhaven",
+      "postalCode": "9994 XX",
       "country": "Nederland",
       "_country": {
         "extension": [
@@ -70,7 +70,20 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: A.S.R.<br/>Adres: Archimedeslaan 10, 3584 BA Utrecht</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Zorgkantoor Noorderlicht<br/>Adres: Kadeweg 22, 9994 XX Noordhaven</div>"
   },
-  "name": "A.S.R."
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/uzovi",
+      "value": "9901"
+    }
+  ],
+  "name": "Zorgkantoor Noorderlicht",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0501234567",
+      "use": "work"
+    }
+  ]
 }

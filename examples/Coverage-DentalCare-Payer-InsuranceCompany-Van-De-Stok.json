@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: A.S.R<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2024-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: A.S.R.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: Verzekeraar Helderzicht<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2024-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Verzekeraar Helderzicht</div>"
   },
   "status": "active",
   "type": {
@@ -39,8 +39,8 @@
   },
   "payor": [
     {
-      "reference": "Organization/DentalCare-Organization-ASR",
-      "display": "A.S.R.",
+      "reference": "Organization/DentalCare-Organization-Helderzicht",
+      "display": "Verzekeraar Helderzicht",
       "type": "Organization"
     }
   ]

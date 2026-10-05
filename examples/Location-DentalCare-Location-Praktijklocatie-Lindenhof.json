@@ -1,6 +1,6 @@
 {
   "resourceType": "Location",
-  "id": "DentalCare-Location-Tandartspraktijk-Vos",
+  "id": "DentalCare-Location-Praktijklocatie-Lindenhof",
   "meta": {
     "tag": [
       {
@@ -29,25 +29,25 @@
       }
     ],
     "line": [
-      "Grote Houtstraat 45"
+      "Heideweg 3"
     ],
     "_line": [
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-            "valueString": "Grote Houtstraat"
+            "valueString": "Heideweg"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-            "valueString": "45"
+            "valueString": "3"
           }
         ]
       }
     ],
     "use": "work",
-    "city": "Haarlem",
-    "postalCode": "2011 HD",
+    "city": "Fictiedorp",
+    "postalCode": "9992 XX",
     "country": "Nederland",
     "_country": {
       "extension": [
@@ -68,19 +68,19 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Tandartspraktijk Vos<br/>Telefoon: 0231234567<br/>Adres: Grote Houtstraat 45, 2011 HD Haarlem<br/>Beherende organisatie: Tandartspraktijk Vos</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Praktijklocatie Lindenhof<br/>Telefoon: 0881234567<br/>Adres: Heideweg 3, 9992 XX Fictiedorp<br/>Beherende organisatie: Mondzorgcentrum Lindenhof</div>"
   },
-  "name": "Tandartspraktijk Vos",
+  "name": "Praktijklocatie Lindenhof",
   "telecom": [
     {
       "system": "phone",
-      "value": "0231234567",
+      "value": "0881234567",
       "use": "work"
     }
   ],
   "managingOrganization": {
-    "reference": "Organization/DentalCare-Organization-Tandartspraktijk-Vos",
-    "display": "Tandartspraktijk Vos",
+    "reference": "Organization/DentalCare-Organization-Mondzorgcentrum-Lindenhof",
+    "display": "Mondzorgcentrum Lindenhof",
     "type": "Organization"
   }
 }
