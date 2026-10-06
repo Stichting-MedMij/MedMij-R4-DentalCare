@@ -101,7 +101,8 @@
   "reasonReference": [
     {
       "reference": "Condition/DentalCare-Problem-Van-Oranje",
-      "display": "gaatje in je tand of kies"
+      "display": "gaatje in je tand of kies",
+      "type": "Condition"
     }
   ]
 }

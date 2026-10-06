@@ -293,8 +293,8 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Orthodontiepraktijk Dijkstra |
-| EffectivePeriodStart | 01-01-2024 |
-| EffectivePeriodEnd | |
+| StartDateTime | 01-01-2024 |
+| EndDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Eerste consult (code 'F121A' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
@@ -349,7 +349,7 @@
 | Problem | |
 | Priority | Lage prioriteit (code 'low-priority' from code system 'GoalPriority') |
 
-### Treatment Objective - Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-08-01
+### Treatment Objective - Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen
 
 | | |
 | --- | --- |
@@ -357,9 +357,9 @@
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
-| DesiredHealthcareResult | Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-08-01 |
+| DesiredHealthcareResult | Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen |
 | DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
-| DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusValue | geen probleem met kauwen (code '162019007' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusDate | 01-08-2025 |
 | DesiredHealthCondition.Comment | Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn. |
 | DesiredHealthCondition.MedicalDevice | Vaste multibracket-beugel bovenboog |

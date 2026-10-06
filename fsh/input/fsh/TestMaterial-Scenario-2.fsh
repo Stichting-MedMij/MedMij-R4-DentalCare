@@ -177,7 +177,7 @@ Usage: #example
 * class = $NullFlavor#OTH "Anders"
 * type
   * text = "Second opinion"
-* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
 * participant
   * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
@@ -186,6 +186,7 @@ Usage: #example
   * start = "2023-07-22T09:00:00+01:00"
   * end = "2023-07-22T09:30:00+01:00"
 * reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
+  * type = "Condition"
   * extension[commentContactReason]
     * valueString = "Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening"
 * hospitalization
@@ -215,6 +216,7 @@ Usage: #example
   * start = "2022-02-11T10:00:00+01:00"
   * end = "2022-02-11T11:00:00+01:00"
 * reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
+  * type = "Condition"
   * extension[commentContactReason]
     * valueString = "Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld"
 * location
@@ -570,11 +572,11 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal, per 11-04-2022<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#high-priority "High Priority"
 * description
-  * text = "Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal, per 11-04-2022"
+  * text = "Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
 * target
@@ -598,10 +600,8 @@ Usage: #example
 * priority = $GoalPriority#low-priority "Low Priority"
 * description
   * text = "Verbeteren mondhygiëne en tandsteenreductie"
-* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
-* note
-  * text = "Aansluitend op paro-preventietraject en slechte mondhygiëne."
 
 Instance: DentalCare-TreatmentObjective-3-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
@@ -610,12 +610,20 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
 * lifecycleStatus = #active
 * description
-  * text = "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11"
-* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * text = "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
+* target
+  * measure = $SCT#288919008 "kan kauwen"
+  * detailCodeableConcept = $SCT#162019007 "geen probleem met kauwen"
+  * dueDate = "2022-04-11"
+* addresses = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
+  * type = "Condition"
+* note
+  * text = "Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn."
 
 Instance: DentalCare-Patient-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient

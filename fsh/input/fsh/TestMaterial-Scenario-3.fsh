@@ -99,6 +99,71 @@ Usage: #example
   * type = "PractitionerRole"
 * valueString = "Tanden knarsen tijdens slaap"
 
+Instance: DentalCare-Payer-InsuranceCompany-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
+Usage: #example
+* meta
+  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Verzekeraar Helderzicht<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2024-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Verzekeraar Helderzicht</div>"
+* status = #active
+* type = $Verzekeringssoort#T "Tandverzekering (los)"
+* subscriberId = "12345679"
+* beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
+* period
+  * start = "2024-01-01"
+  * end = "2026-01-01"
+* payor = Reference(DentalCare-Organization-Helderzicht) "Verzekeraar Helderzicht"
+  * type = "Organization"
+
+Instance: DentalCare-Payer-Person-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
+Usage: #example
+* meta
+  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: Berend van de Stok</div>"
+* extension[bankInformation]
+  * extension[bankName]
+    * valueString = "ABNA"
+  * extension[bankCode]
+    * valueString = "ABNA00NL"
+  * extension[accountNumber]
+    * valueString = "NL00ABNA0001234567"
+* status = #active
+* type = $Verzekeringstype#pay "Pay"
+* beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
+* payor = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
+
+Instance: DentalCare-Organization-Helderzicht
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
+Usage: #example
+* meta
+  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Verzekeraar Helderzicht<br/>Adres: Parksingel 8, 9995 XX Den Helder</div>"
+* name = "Verzekeraar Helderzicht"
+* address
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
+  * use = #work
+  * line = "Parksingel 8"
+    * extension[streetName]
+      * valueString = "Parksingel"
+    * extension[houseNumber]
+      * valueString = "8"
+  * city = "Den Helder"
+  * postalCode = "9995 XX"
+  * country = "Nederland"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
+
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
 Usage: #example
@@ -205,16 +270,16 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-08-01<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: malocclusie van tanden en/of kiezen<br/>Toelichting: Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn.</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: malocclusie van tanden en/of kiezen<br/>Toelichting: Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn.</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#high-priority "High Priority"
 * description
-  * text = "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-08-01"
+  * text = "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
 * target
   * measure = $SCT#288919008 "kan kauwen"
-  * detailCodeableConcept = $SCT#162019007 "probleem met kauwen afwezig"
+  * detailCodeableConcept = $SCT#162019007 "geen probleem met kauwen"
   * dueDate = "2025-08-01"
 * addresses = Reference(DentalCare-Problem-Van-De-Stok) "malocclusie van tanden en/of kiezen"
   * type = "Condition"
@@ -236,7 +301,7 @@ Usage: #example
   * valueReference = Reference(DentalCare-Location-Orthodontiepraktijk-Dijkstra) "Orthodontiepraktijk Dijkstra"
     * type = "Location"
 * extension[treatmentObjective]
-  * valueReference = Reference(DentalCare-TreatmentObjective-3-Van-De-Stok) "Behandeldoel: geen problemen met kauwen"
+  * valueReference = Reference(DentalCare-TreatmentObjective-3-Van-De-Stok) "Behandeldoel: geen probleem met kauwen"
     * type = "Goal"
 * status = #active
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -473,68 +538,3 @@ Usage: #example
       * valueCodeableConcept = $ISO3166#NL "Netherlands"
 * managingOrganization = Reference(DentalCare-Organization-Orthodontiepraktijk-Dijkstra) "Orthodontiepraktijk Dijkstra"
   * type = "Organization"
-
-Instance: DentalCare-Payer-InsuranceCompany-Van-De-Stok
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
-Usage: #example
-* meta
-  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Verzekeraar Helderzicht<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2024-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Verzekeraar Helderzicht</div>"
-* status = #active
-* type = $Verzekeringssoort#T "Tandverzekering (los)"
-* subscriberId = "12345679"
-* beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
-  * type = "Patient"
-* period
-  * start = "2024-01-01"
-  * end = "2026-01-01"
-* payor = Reference(DentalCare-Organization-Helderzicht) "Verzekeraar Helderzicht"
-  * type = "Organization"
-
-Instance: DentalCare-Payer-Person-Van-De-Stok
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
-Usage: #example
-* meta
-  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: Berend van de Stok</div>"
-* extension[bankInformation]
-  * extension[bankName]
-    * valueString = "ABNA"
-  * extension[bankCode]
-    * valueString = "ABNA00NL"
-  * extension[accountNumber]
-    * valueString = "NL00ABNA0001234567"
-* status = #active
-* type = $Verzekeringstype#pay "Pay"
-* beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
-  * type = "Patient"
-* payor = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
-  * type = "Patient"
-
-Instance: DentalCare-Organization-Helderzicht
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
-Usage: #example
-* meta
-  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Verzekeraar Helderzicht<br/>Adres: Parksingel 8, 9995 XX Den Helder</div>"
-* name = "Verzekeraar Helderzicht"
-* address
-  * extension[addressType]
-    * valueCodeableConcept = $AddressUse#WP "work place"
-  * use = #work
-  * line = "Parksingel 8"
-    * extension[streetName]
-      * valueString = "Parksingel"
-    * extension[houseNumber]
-      * valueString = "8"
-  * city = "Den Helder"
-  * postalCode = "9995 XX"
-  * country = "Nederland"
-    * extension[countryCode]
-      * valueCodeableConcept = $ISO3166#NL "Netherlands"

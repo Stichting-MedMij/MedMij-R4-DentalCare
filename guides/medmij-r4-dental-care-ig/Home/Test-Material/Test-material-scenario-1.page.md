@@ -391,8 +391,8 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectivePeriodStart | 03-06-2025 09:00 |
-| EffectivePeriodEnd | 03-06-2025 09:45 |
+| StartDateTime | 03-06-2025 09:00 |
+| EndDateTime | 03-06-2025 09:45 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Eénvlaksvulling (code 'V11' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |

@@ -32,12 +32,7 @@
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
-  },
-  "note": [
-    {
-      "text": "Aansluitend op paro-preventietraject en slechte mondhygiëne."
-    }
-  ]
+  }
 }

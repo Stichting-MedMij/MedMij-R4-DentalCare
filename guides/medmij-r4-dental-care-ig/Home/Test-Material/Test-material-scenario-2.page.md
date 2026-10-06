@@ -567,8 +567,8 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectivePeriodStart | 11-02-2022 |
-| EffectivePeriodEnd | |
+| StartDateTime | 11-02-2022 |
+| EndDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Maken en beoordelen kleine röntgenfoto (code 'X10' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
@@ -593,8 +593,8 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectivePeriodStart | 11-04-2022 09:00 |
-| EffectivePeriodEnd | 11-04-2022 09:45 |
+| StartDateTime | 11-04-2022 09:00 |
+| EndDateTime | 11-04-2022 09:45 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Eénvlaksvulling (code 'V11' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
@@ -619,8 +619,8 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectivePeriodStart | |
-| EffectivePeriodEnd | |
+| StartDateTime | |
+| EndDateTime | |
 | ProcedureType | Gebitsreiniging (code 'M01' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
 | ProcedureAnatomicalLocation.Location | |
@@ -640,15 +640,15 @@
 
 ## Treatment Objective data
 
-### Treatment Objective - Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal, per 11-04-2022
+### Treatment Objective - Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal
 
 | | |
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | |
 | EffectiveDateTime | |
-| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
-| DesiredHealthcareResult | Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal, per 11-04-2022 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
+| DesiredHealthcareResult | |
 | DesiredHealthCondition.StatusName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusValue | normaal (code '17621005' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusDate | 11-04-2022 |
@@ -684,12 +684,12 @@
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
-| DesiredHealthCondition.Comment | Aansluitend op paro-preventietraject en slechte mondhygiëne. |
+| DesiredHealthCondition.Comment | |
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
 | Priority | Lage prioriteit (code 'low-priority' from code system 'GoalPriority') |
 
-### Treatment Objective - Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11
+### Treatment Objective - Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen
 
 | | |
 | --- | --- |
@@ -697,11 +697,11 @@
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
-| DesiredHealthcareResult | Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11 |
+| DesiredHealthcareResult | |
 | DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
-| DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusValue | geen probleem met kauwen (code '162019007' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusDate | 11-04-2022 |
 | DesiredHealthCondition.Comment | Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn. |
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | Cariës rechterkies |
-| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
+| Priority | |

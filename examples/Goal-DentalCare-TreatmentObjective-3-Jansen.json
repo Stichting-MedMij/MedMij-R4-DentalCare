@@ -15,15 +15,50 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
   },
   "lifecycleStatus": "active",
   "description": {
-    "text": "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11"
+    "text": "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen"
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
-  }
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "code": "288919008",
+            "system": "http://snomed.info/sct",
+            "display": "kan kauwen"
+          }
+        ]
+      },
+      "detailCodeableConcept": {
+        "coding": [
+          {
+            "code": "162019007",
+            "system": "http://snomed.info/sct",
+            "display": "geen probleem met kauwen"
+          }
+        ]
+      },
+      "dueDate": "2022-04-11"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/DentalCare-Problem-Jansen",
+      "display": "Cariës rechterkies",
+      "type": "Condition"
+    }
+  ],
+  "note": [
+    {
+      "text": "Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn."
+    }
+  ]
 }

@@ -22,7 +22,8 @@
         }
       ],
       "reference": "Condition/DentalCare-Problem-Jansen",
-      "display": "Cariës rechterkies"
+      "display": "Cariës rechterkies",
+      "type": "Condition"
     }
   ],
   "text": {

@@ -107,6 +107,7 @@ Usage: #example
   * start = "2025-05-20T10:00:00+01:00"
   * end = "2025-05-20T11:00:00+01:00"
 * reasonReference[problem] = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+  * type = "Condition"
   * extension[commentContactReason]
     * valueString = "Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne."
 * hospitalization
@@ -264,6 +265,7 @@ Usage: #example
 * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
   * type = "Location"
 * reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+  * type = "Condition"
 * bodySite = $SCT#38199008 "tand en/of kies"
   * extension[laterality]
     * valueCodeableConcept = $SCT#24028007 "rechts"
