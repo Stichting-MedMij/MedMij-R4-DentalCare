@@ -228,17 +228,17 @@
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Acute luchtwegklachten bij hooikoorts; rookt nog; Cetirizine onvoldoende werkzaam. Extra voorzichtigheid bij lokale anesthesie. |
 
-### ASA Score - 22-07-2023
+### ASA Score
 
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 22-07-2023 09:10 |
+| HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 1 (code '413495001' from code system 'SNOMED CT') |
-| Performer | D. de Ruiter, Tandarts |
-| Comment | Gestopt met roken; hooikoorts stabiel onder Cetirizine; geen andere comorbiditeit |
+| Performer | |
+| Comment | |
 
 ## Caries Risk data
 
@@ -266,16 +266,16 @@
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Actieve cariës rechterkies en aanhoudend hoog suikergebruik; restauratie vandaag uitgevoerd. |
 
-### Caries Risk - 22-07-2023
+### Caries Risk
 
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 22-07-2023 09:15 |
+| HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | CariesRiskValue | laag (code '62482003' from code system 'SNOMED CT') |
-| Performer | D. de Ruiter, Tandarts |
+| Performer | |
 | Comment | |
 
 ## Dental Fitness data
@@ -304,16 +304,16 @@
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Cariës rechterkies gerestaureerd; mondhygiëne nog matig, geen acute dreiging meer. |
 
-### Dental Fitness - 22-07-2023
+### Dental Fitness
 
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 22-07-2023 09:20 |
+| HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DentalFitnessValue | klasse 1 (code '258392002' from code system 'SNOMED CT') |
-| Performer | D. de Ruiter, Tandarts |
+| Performer | |
 | Comment | |
 
 ## Encounter data
@@ -350,15 +350,15 @@
 | Origin | |
 | Destination | |
 
-### Encounter - 11-04-2022
+### Encounter
 
 | | |
 | --- | --- |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Restauratieve behandeling |
 | ContactWith | |
 | Location | Praktijklocatie Lindenhof |
-| StartDateTime | 11-04-2022 09:00 |
-| EndDateTime | 11-04-2022 10:00 |
+| StartDateTime | |
+| EndDateTime | |
 | ContactReason.Problem | |
 | ContactReason.Procedure | |
 | ContactReason.DeviatingResult | |
@@ -392,16 +392,16 @@
 | Performer | S. Vermeer, Mondhygiënist |
 | Comment | Tandsteen deels gereduceerd na instructie; plaque buccaal nog aanwezig. |
 
-### Oral Hygiene - 22-07-2023
+### Oral Hygiene
 
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 22-07-2023 09:25 |
+| HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'); Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | goed (code '20572008' from code system 'SNOMED CT') |
-| Performer | S. Vermeer, Mondhygiënist |
+| Performer | |
 | Comment | |
 
 ## Parafunctional Activity data
@@ -430,16 +430,16 @@
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Naast nachtelijk knarsen ook overdag klemmen bij spanning; aandachtspunt na restauratie. |
 
-### Parafunctional Activity - 22-07-2023
+### Parafunctional Activity
 
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 22-07-2023 09:30 |
+| HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ParafunctionalActivityValue | Nagels bijten |
-| Performer | D. de Ruiter, Tandarts |
+| Performer | |
 | Comment | |
 
 ## Payer data
@@ -535,17 +535,17 @@
 | Performer | D. de Ruiter, Tandarts |
 | Comment | Locale verdieping bij rechterkies; herbeoordeling na hygiëneverbetering. |
 
-### Periodic Periodontal Screening Score - 22-07-2023
+### Periodic Periodontal Screening Score
 
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 22-07-2023 09:35 |
+| HealthcareProvider | |
+| EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
-| Performer | D. de Ruiter, Tandarts |
-| Comment | Paro-preventietraject afgerond; pockets genormaliseerd |
+| Performer | |
+| Comment | |
 
 ## Procedure data
 
@@ -596,7 +596,7 @@
 | Indication.ProblemStartDate | 11-02-2022 |
 | Indication.ProblemEndDate | |
 | Indication.ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
-| Indication.VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| Indication.VerificationStatus | aanwezigheid bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Indication.Comment | Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland. |
 | Location | Praktijklocatie Lindenhof |
 | Performer | D. de Ruiter, Tandarts |
@@ -607,7 +607,7 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectivePeriodStart | 22-07-2023 |
+| EffectivePeriodStart | |
 | EffectivePeriodEnd | |
 | ProcedureType | Gebitsreiniging (code 'M01' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
@@ -623,7 +623,7 @@
 | Indication.ProblemStatus | |
 | Indication.VerificationStatus | |
 | Indication.Comment | |
-| Location | Praktijklocatie Lindenhof |
+| Location | |
 | Performer | S. Vermeer, Mondhygiënist |
 
 ## Treatment Objective data
@@ -653,7 +653,7 @@
 | ProblemStartDate | 11-02-2022 |
 | ProblemEndDate | |
 | ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
-| VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| VerificationStatus | aanwezigheid bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Comment | Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland. |
 
 ### Treatment Objective - Verbeteren mondhygiëne en tandsteenreductie

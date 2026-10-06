@@ -261,7 +261,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@icloud.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@test.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
 * identifier
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
   * value
@@ -291,7 +291,7 @@ Usage: #example
   * use = #home
 * telecom[emailAddresses]
   * system = #email
-  * value = "erikvanoranje@icloud.com"
+  * value = "erikvanoranje@test.com"
   * use = #home
 * gender = #male
   * extension[genderCodelist]
@@ -346,7 +346,7 @@ Usage: #example
       * valueString = "Bereikbaar op werkdagen tussen 9.00 en 17.00 uur"
   * telecom[emailAddresses]
     * system = #email
-    * value = "leojansen@icloud.com"
+    * value = "leojansen@test.com"
     * use = #home
   * address
     * extension[addressType]

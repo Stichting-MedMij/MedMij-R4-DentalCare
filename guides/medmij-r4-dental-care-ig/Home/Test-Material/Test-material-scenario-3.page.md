@@ -383,5 +383,5 @@
 | ProblemStartDate | 15-11-2023 |
 | ProblemEndDate | |
 | ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
-| VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| VerificationStatus | aanwezigheid bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Comment | Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie. |

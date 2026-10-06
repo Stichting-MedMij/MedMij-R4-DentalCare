@@ -28,7 +28,7 @@
 | ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.NumberType | Telefoonnummer thuis (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | erikvanoranje@icloud.com |
+| ContactInformation.EmailAddresses.EmailAddress | erikvanoranje@test.com |
 | ContactInformation.EmailAddresses.EmailAddressType | Privé e-mailadres (code 'HP' from code system 'AddressUse') |
 | PatientIdentificationNumber | 999998286 (in identifier system 'Burgerservicenummer') |
 | DateOfBirth | 02-08-1991 |
@@ -186,7 +186,7 @@
 | ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.NumberType | Telefoonnummer thuis (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | Bereikbaar op werkdagen tussen 9.00 en 17.00 uur |
-| ContactInformation.EmailAddresses.EmailAddress | leojansen@icloud.com |
+| ContactInformation.EmailAddresses.EmailAddress | leojansen@test.com |
 | ContactInformation.EmailAddresses.EmailAddressType | Privé e-mailadres (code 'HP' from code system 'AddressUse') |
 | AddressInformation.Street | Kerkstraat |
 | AddressInformation.HouseNumber | 12 |
@@ -329,7 +329,7 @@
 | ContactInformation.TelephoneNumbers.TelecomType | Mobiel telefoonnummer (code 'MC' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.NumberType | Telefoonnummer thuis (code 'HP' from code system 'AddressUse') |
 | ContactInformation.TelephoneNumbers.Comment | |
-| ContactInformation.EmailAddresses.EmailAddress | erikvanoranje@icloud.com |
+| ContactInformation.EmailAddresses.EmailAddress | erikvanoranje@test.com |
 | ContactInformation.EmailAddresses.EmailAddressType | Privé e-mailadres (code 'HP' from code system 'AddressUse') |
 
 ### Payer - Zorgkantoor Noorderlicht
@@ -398,7 +398,7 @@
 | Indication.ProblemStartDate | 20-05-2025 10:00 |
 | Indication.ProblemEndDate | |
 | Indication.ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
-| Indication.VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| Indication.VerificationStatus | aanwezigheid bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Indication.Comment | Actieve cariës vastgesteld tijdens periodiek preventief onderzoek. Restauratieve behandeling (éénvlaksvulling) en preventief advies besproken. |
 | Location | Praktijklocatie Lindenhof |
 | Performer | A.B.D.O. de Koning, Tandarts |
