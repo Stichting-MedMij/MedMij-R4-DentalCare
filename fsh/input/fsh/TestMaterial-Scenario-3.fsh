@@ -287,7 +287,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Berend van de Stok<br/>Geboortedatum: 1980-05-04<br/>Geslacht: Man<br/>Adres: Bloemstraat 25, 5678 BB Bergen op Zoom, Nederland<br/>Telefoon: +31687654321<br/>E-mail: berendvandestok@gmail.com</div>"
-* identifier
+* identifier[bsn]
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
   * value
     * extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason]
@@ -373,7 +373,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: B. Dijkstra<br/>BIG-nummer: 12000003<br/>Telefoon: +31612345604<br/>E-mail: dijkstra@orthodontiedijkstra.nl<br/>Adres: Stationsstraat 18, 4611 XX Bergen op Zoom, Nederland</div>"
-* identifier
+* identifier[big]
   * system = "http://fhir.nl/fhir/NamingSystem/big"
   * value = "12000003"
 * name[nameInformation]
@@ -416,7 +416,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Orthodontiepraktijk Dijkstra<br/>AGB-code: 13004567<br/>Telefoon: 0164123456<br/>E-mail: info@orthodontiedijkstra.nl<br/>Adres: Stationsstraat 18, 4611 XX Bergen op Zoom</div>"
-* identifier
+* identifier[agb]
   * system = "http://fhir.nl/fhir/NamingSystem/agb-z"
   * value = "13004567"
 * type = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
@@ -430,15 +430,19 @@ Usage: #example
   * value = "info@orthodontiedijkstra.nl"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Stationsstraat 18"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Stationsstraat"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "18"
+    * extension[streetName]
+      * valueString = "Stationsstraat"
+    * extension[houseNumber]
+      * valueString = "18"
   * city = "Bergen op Zoom"
   * postalCode = "4611 XX"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 
 Instance: DentalCare-Location-Orthodontiepraktijk-Dijkstra
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider

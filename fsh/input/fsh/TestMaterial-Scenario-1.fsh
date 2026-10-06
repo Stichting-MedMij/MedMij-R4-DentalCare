@@ -219,8 +219,9 @@ Usage: #example
 * period
   * start = "2026-05-20T10:00:00+01:00"
   * end = "2026-05-20T11:00:00+01:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025"
+* reasonCode[deviatingResult]
+  * extension[commentContactReason]
+    * valueString = "Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025"
 * location
   * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
     * type = "Location"
@@ -245,9 +246,9 @@ Usage: #example
 * period
   * start = "2025-05-20T10:00:00+01:00"
   * end = "2025-05-20T11:00:00+01:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne."
-* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+* reasonReference[problem] = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+  * extension[commentContactReason]
+    * valueString = "Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne."
 * hospitalization
   * admitSource = $SCT#264362003 "thuis"  
 * location
@@ -262,7 +263,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patiënt: Erik van Oranje<br/>Geboortedatum: 1991-08-02<br/>Geslacht: Man<br/>Telefoon: +31612345600<br/>E-mail: erikvanoranje@test.com<br/>Adres: De Doerak 57A, 6123 PP Montferland, Nederland</div>"
-* identifier
+* identifier[bsn]
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
   * value
     * extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason]
@@ -353,7 +354,7 @@ Usage: #example
       * valueCodeableConcept = $AddressUse#HP "primary home"
     * use = #home
     * type = #both
-    * line = "Kerkstraat 12B"
+    * line = "Kerkstraat bij 12B"
       * extension[streetName]
         * valueString = "Kerkstraat"
       * extension[houseNumber]
@@ -407,7 +408,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: A.B.D.O de Koning<br/>BIG-nummer: 12070100<br/>Telefoon: +31612345601<br/>E-mail: dekoning@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
-* identifier
+* identifier[big]
   * system = "http://fhir.nl/fhir/NamingSystem/big"
   * value = "12070100"
 * name[nameInformation]
@@ -461,16 +462,18 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: S. Vermeer<br/>BIG-nummer: 87001201<br/>Geslacht: Vrouw<br/>Telefoon: +31612345603<br/>E-mail: vermeer@mondhygienist.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
-* identifier
+* identifier[big]
   * system = "http://fhir.nl/fhir/NamingSystem/big"
   * value = "87001201"
 * name[nameInformation]
   * use = #official
   * text = "S. Vermeer"
   * family = "Vermeer"
-    * extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Vermeer"
+    * extension[lastName]
+      * valueString = "Vermeer"
   * given[0] = "S."
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #IN
+    * extension[givenOrInitial]
+      * valueCode = #IN
 * gender = #female
 * telecom[0]
   * system = #phone
@@ -481,15 +484,19 @@ Usage: #example
   * value = "vermeer@mondhygienist.nl"
   * use = #work
 * address
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-AddressUse#WP "work place"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
   * use = #work
   * line = "Simon Smitweg 1"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName].valueString = "Simon Smitweg"
-    * extension[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber].valueString = "1"
+    * extension[streetName]
+      * valueString = "Simon Smitweg"
+    * extension[houseNumber]
+      * valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
   * country = "Nederland"
-    * extension[http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification].valueCodeableConcept = urn:iso:std:iso:3166#NL "Netherlands"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
 
 Instance: DentalCare-Organization-Mondzorgcentrum-Lindenhof
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization
@@ -499,7 +506,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Mondzorgcentrum Lindenhof<br/>AGB-code: 12999001<br/>Telefoon: +31612345602<br/>E-mail: info@lindenhof-mondzorg.nl<br/>Adres: Meidoornlaan 15, 9991 XX Fictiedorp</div>"
-* identifier
+* identifier[agb]
   * system = "http://fhir.nl/fhir/NamingSystem/agb-z"
   * value = "12999001"
 * type = $VektisAGB#1200 "Tandartsen"

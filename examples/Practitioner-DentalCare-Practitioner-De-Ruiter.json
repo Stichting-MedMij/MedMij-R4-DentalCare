@@ -13,6 +13,12 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/big",
+      "value": "12101002"
+    }
+  ],
   "name": [
     {
       "use": "official",
@@ -115,11 +121,5 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: D. de Ruiter<br/>BIG-nummer: 12101002<br/>Telefoon: +31612345678<br/>E-mail: deruiter@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
-  },
-  "identifier": [
-    {
-      "system": "http://fhir.nl/fhir/NamingSystem/big",
-      "value": "12101002"
-    }
-  ]
+  }
 }

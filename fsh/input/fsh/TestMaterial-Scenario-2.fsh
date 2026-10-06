@@ -1,6 +1,6 @@
 // FHIR test instances in FSH format for Dental Care test scenario 2
 
-Instance: DentalCare-ASAScore-Jansen
+Instance: DentalCare-ASAScore-1-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
 Usage: #example
 * meta
@@ -50,9 +50,10 @@ Usage: #example
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
+* effectiveDateTime = "2015-01-01"
 * valueCodeableConcept = $SCT#413495001 "ASA-score 1"
 
-Instance: DentalCare-CariesRisk-Jansen
+Instance: DentalCare-CariesRisk-1-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk
 Usage: #example
 * meta
@@ -102,9 +103,10 @@ Usage: #example
 * code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
+* effectiveDateTime = "2015-01-01"
 * valueCodeableConcept = $SCT#62482003 "laag"
 
-Instance: DentalCare-DentalFitness-Jansen
+Instance: DentalCare-DentalFitness-1-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-DentalFitness
 Usage: #example
 * meta
@@ -158,11 +160,12 @@ Usage: #example
 * code = $SCT#440271000146100 "'dental fitness' volgens NAVO-classificatiesysteem"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
+* effectiveDateTime = "2015-01-01"
 * valueCodeableConcept
   * coding = $SCT#258392002 "klasse 1"
   * text = "vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen"
 
-Instance: DentalCare-OralHygiene-Jansen
+Instance: DentalCare-OralHygiene-1-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
 Usage: #example
 * meta
@@ -215,9 +218,10 @@ Usage: #example
 * code = $SCT#364126007 "status van mondhygiëne"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
+* effectiveDateTime = "2015-01-01"
 * valueCodeableConcept = $SCT#20572008 "goed"
 
-Instance: DentalCare-ParafunctionalActivity-Jansen
+Instance: DentalCare-ParafunctionalActivity-1-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-ParafunctionalActivity
 Usage: #example
 * meta
@@ -267,9 +271,10 @@ Usage: #example
 * code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
+* effectiveDateTime = "2015-01-01"
 * valueString = "Nagels bijten"
 
-Instance: DentalCare-PeriodicPeriodontalScreeningScore-Jansen
+Instance: DentalCare-PeriodicPeriodontalScreeningScore-1-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
 Usage: #example
 * meta
@@ -319,6 +324,7 @@ Usage: #example
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
   * type = "Patient"
+* effectiveDateTime = "2015-01-01"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
 
 Instance: DentalCare-TreatmentObjective-1-Jansen
@@ -403,7 +409,7 @@ Usage: #example
 * note
   * text = "Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland."
 
-Instance: DentalCare-Procedure-Jansen
+Instance: DentalCare-Procedure-1-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
 Usage: #example
 * meta
@@ -469,7 +475,7 @@ Usage: #example
   * actor = Reference(DentalCare-PractitionerRole-Vermeer) "S. Vermeer, Mondhygiënist"
     * type = "PractitionerRole"
 
-Instance: DentalCare-Encounter-Jansen
+Instance: DentalCare-Encounter-1-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
 Usage: #example
 * meta
@@ -489,10 +495,11 @@ Usage: #example
 * period
   * start = "2023-07-22T09:00:00+01:00"
   * end = "2023-07-22T09:30:00+01:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening"
+* reasonCode[deviatingResult]
+  * extension[commentContactReason]
+    * valueString = "Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening"
   * text = "Aanhoudende klachten rechterkies / paro-preventie"
-* reasonReference = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
+* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
 * hospitalization
   * dischargeDisposition = $SCT#264362003 "thuis"  
 * location
@@ -519,10 +526,11 @@ Usage: #example
 * period
   * start = "2022-02-11T10:00:00+01:00"
   * end = "2022-02-11T11:00:00+01:00"
-* reasonCode
-  * extension[http://nictiz.nl/fhir/StructureDefinition/ext-Comment].valueString = "Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld"
+* reasonCode[deviatingResult]
+  * extension[commentContactReason]
+    * valueString = "Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld"
   * text = "Periodiek preventief onderzoek"
-* reasonReference = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
+* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
 * location
   * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
     * type = "Location"
@@ -554,7 +562,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt: Anita Jansen-van Dijk<br/>Geboortedatum: 2010-03-15<br/>Geslacht: Vrouw<br/>Adres: Achillesstraat 12, 1234 AA Amsterdam, Nederland<br/>Telefoon: +31612345678<br/>E-mail: anitajansen@icloud.com</div>"
-* identifier
+* identifier[bsn]
   * system = "http://fhir.nl/fhir/NamingSystem/bsn"
   * value
     * extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason]
@@ -653,7 +661,7 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlener: D. de Ruiter<br/>BIG-nummer: 12101002<br/>Telefoon: +31612345678<br/>E-mail: deruiter@tandarts.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
-* identifier
+* identifier[big]
   * system = "http://fhir.nl/fhir/NamingSystem/big"
   * value = "12101002"
 * name[nameInformation]

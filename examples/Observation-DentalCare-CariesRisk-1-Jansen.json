@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "DentalCare-PeriodicPeriodontalScreeningScore-Jansen",
+  "id": "DentalCare-CariesRisk-1-Jansen",
   "meta": {
     "tag": [
       {
@@ -10,21 +10,21 @@
       }
     ],
     "profile": [
-      "http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore"
+      "http://medmij.nl/fhir/StructureDefinition/mz-CariesRisk"
     ]
   },
   "code": {
     "coding": [
       {
-        "code": "540501000146103",
+        "code": "74024006",
         "system": "http://snomed.info/sct",
-        "display": "score op periodieke parodontale screening"
+        "display": "vatbaarheid voor cariës"
       }
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Score: Pockets 4-5 millimeter = mogelijk in orde<br/>Opmerking: Paro-preventietraject<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
   "status": "final",
   "subject": {
@@ -43,15 +43,15 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "ppsscore2",
-        "system": "http://medmij.nl/fhir/CodeSystem/PeriodicPeriodontalScreeningScore",
-        "display": "Pockets 4-5 millimeter = mogelijk in orde"
+        "code": "35105006",
+        "system": "http://snomed.info/sct",
+        "display": "verhoogd"
       }
     ]
   },
   "note": [
     {
-      "text": "Paro-preventietraject"
+      "text": "Advies: inname van vruchtensap beperken en niet direct na consumptie poetsen."
     }
   ]
 }
