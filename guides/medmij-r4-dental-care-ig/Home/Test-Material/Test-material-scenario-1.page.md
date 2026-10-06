@@ -1,5 +1,4 @@
 # Scenario 1
-Defence dental care
 
 ## Patient data
 
