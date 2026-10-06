@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Trekken snijtand linksboven<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: malocclusie van tanden en/of kiezen</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Trekken snijtand linksboven<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Malocclusie met scheefstand van de snijtand linksboven</div>"
   },
   "lifecycleStatus": "active",
   "priority": {
@@ -38,13 +38,8 @@
   "addresses": [
     {
       "reference": "Condition/DentalCare-Problem-Van-De-Stok",
-      "display": "malocclusie van tanden en/of kiezen",
+      "display": "Malocclusie met scheefstand van de snijtand linksboven",
       "type": "Condition"
-    }
-  ],
-  "note": [
-    {
-      "text": "Extractie van de scheve snijtand linksboven als onderdeel van het orthodontische behandelplan vóór plaatsing van de vaste beugel."
     }
   ]
 }

@@ -356,7 +356,7 @@
 | Origin | |
 | Destination | |
 
-### Encounter
+### Encounter - no date
 
 | | |
 | --- | --- |

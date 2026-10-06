@@ -106,7 +106,7 @@ Usage: #example
 * period
   * start = "2025-05-20T10:00:00+01:00"
   * end = "2025-05-20T11:00:00+01:00"
-* reasonReference[problem] = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+* reasonReference[problem] = Reference(DentalCare-Problem-Van-Oranje) "Cariës rechterbovenkies"
   * type = "Condition"
   * extension[commentContactReason]
     * valueString = "Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne."
@@ -264,7 +264,7 @@ Usage: #example
     * type = "PractitionerRole"
 * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
   * type = "Location"
-* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+* reasonReference = Reference(DentalCare-Problem-Van-Oranje) "Cariës rechterbovenkies"
   * type = "Condition"
 * bodySite = $SCT#38199008 "tand en/of kies"
   * extension[laterality]
@@ -277,7 +277,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës rechterbovenkies<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
 * clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
 * verificationStatus
   * coding = $ConditionVerificationStatus#confirmed "Confirmed"

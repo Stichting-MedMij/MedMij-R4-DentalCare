@@ -272,7 +272,7 @@
 | Location | Praktijklocatie Lindenhof |
 | StartDateTime | 20-05-2025 10:00 |
 | EndDateTime | 20-05-2025 11:00 |
-| ContactReason.Problem | gaatje in je tand of kies |
+| ContactReason.Problem | Cariës rechterbovenkies |
 | ContactReason.Procedure | |
 | ContactReason.DeviatingResult | |
 | ContactReason.CommentContactReason | Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne. |

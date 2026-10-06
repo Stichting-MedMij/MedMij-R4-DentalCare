@@ -6,7 +6,7 @@
 | --- | --- |
 | NameInformation.FirstNames | Berend |
 | NameInformation.Initials | |
-| NameInformation.GivenName | Berend |
+| NameInformation.GivenName | Beer |
 | NameInformation.NameUsage | |
 | NameInformation.LastName.Prefix | van de |
 | NameInformation.LastName.LastName | Stok |
@@ -38,8 +38,6 @@
 | DateOfDeath | |
 
 ## Health Professional data
-
-### Health Professional - B. Dijkstra
 
 | | |
 | --- | --- |
@@ -76,8 +74,6 @@
 | HealthProfessionalRole | |
 
 ## Healthcare Provider data
-
-### Healthcare Provider - Orthodontiepraktijk Dijkstra
 
 | | |
 | --- | --- |
@@ -327,10 +323,25 @@
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
-| DesiredHealthCondition.Comment | Extractie van de scheve snijtand linksboven als onderdeel van het orthodontische behandelplan vóór plaatsing van de vaste beugel. |
+| DesiredHealthCondition.Comment | |
 | DesiredHealthCondition.MedicalDevice | |
-| Problem | malocclusie van tanden en/of kiezen |
+| Problem | Malocclusie met scheefstand van de snijtand linksboven |
 | Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
+
+#### Problem - Malocclusie met scheefstand van de snijtand linksboven
+
+| | |
+| --- | --- |
+| ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
+| ProblemName | malocclusie van tanden en/of kiezen (code '47944004' from code system 'SNOMED CT') |
+| FurtherSpecificationProblemName | Malocclusie met scheefstand van de snijtand linksboven |
+| ProblemAnatomicalLocation.Location | bovenste tandboog (code '39481002' from code system 'SNOMED CT') |
+| ProblemAnatomicalLocation.Laterality | |
+| ProblemStartDate | 15-11-2023 |
+| ProblemEndDate | |
+| ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| Comment | Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie. |
 
 ### Treatment Objective - Wortelpuntoperatie (apexresectie)
 
@@ -357,13 +368,13 @@
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
-| DesiredHealthcareResult | Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen |
+| DesiredHealthcareResult | |
 | DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusValue | geen probleem met kauwen (code '162019007' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusDate | 01-08-2025 |
 | DesiredHealthCondition.Comment | Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn. |
 | DesiredHealthCondition.MedicalDevice | Vaste multibracket-beugel bovenboog |
-| Problem | malocclusie van tanden en/of kiezen |
+| Problem | Malocclusie met scheefstand van de snijtand linksboven |
 | Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 
 #### Medical Device - Vaste multibracket-beugel bovenboog
@@ -375,24 +386,9 @@
 | ProductDescription | Vaste multibracket-beugel voor de bovenboog |
 | AnatomicalLocation.Location | bovenste tandboog (code '39481002' from code system 'SNOMED CT') |
 | AnatomicalLocation.Laterality | |
-| Indication | malocclusie van tanden en/of kiezen |
+| Indication | Malocclusie met scheefstand van de snijtand linksboven |
 | StartDate | 01-02-2024 |
 | EndDate | 01-08-2025 |
 | Comment | Vaste multibracket-beugel in de bovenboog geplaatst na paro-stabilisatie en extractie; controle elke zes weken. |
 | Location | Orthodontiepraktijk Dijkstra |
 | HealthProfessional | B. Dijkstra, Orthodontist |
-
-#### Problem - malocclusie van tanden en/of kiezen
-
-| | |
-| --- | --- |
-| ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
-| ProblemName | malocclusie van tanden en/of kiezen (code '47944004' from code system 'SNOMED CT') |
-| FurtherSpecificationProblemName | Malocclusie met scheefstand van de snijtand linksboven |
-| ProblemAnatomicalLocation.Location | bovenste tandboog (code '39481002' from code system 'SNOMED CT') |
-| ProblemAnatomicalLocation.Laterality | |
-| ProblemStartDate | 15-11-2023 |
-| ProblemEndDate | |
-| ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
-| VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
-| Comment | Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie. |
