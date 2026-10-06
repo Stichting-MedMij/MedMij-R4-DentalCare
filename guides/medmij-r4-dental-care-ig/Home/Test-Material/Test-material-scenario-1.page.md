@@ -117,7 +117,7 @@
 
 | | |
 | --- | --- |
-| HealthProviderIdentificationNumber | 12999001 (in identifier system 'Vektis AGB-zorgverlener tabel') |
+| HealthcareProviderIdentificationNumber | 12999001 (in identifier system 'Vektis AGB-zorgverlener tabel') |
 | OrganizationName | Mondzorgcentrum Lindenhof |
 | DepartmentSpeciality | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | +31612345602 |
@@ -132,7 +132,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9991 XX |
-| AddressInformation.PlaceOfResidence | Fictiedorp |
+| AddressInformation.PlaceOfResidence | Leiderdorp |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -145,7 +145,7 @@
 
 | | |
 | --- | --- |
-| HealthProviderIdentificationNumber | |
+| HealthcareProviderIdentificationNumber | |
 | OrganizationName | Praktijklocatie Lindenhof |
 | DepartmentSpeciality | |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | 0881234567 |
@@ -160,7 +160,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9992 XX |
-| AddressInformation.PlaceOfResidence | Fictiedorp |
+| AddressInformation.PlaceOfResidence | Leiderdorp |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -199,7 +199,7 @@
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | boven de bakkerij |
 | AddressInformation.AddressType | Officieel adres (code 'HP' from code system 'AddressUse') |
-| Role | Eerste relatie/contactpersoon (code '01' from code system 'Vektis COD472') |
+| Role | Eerste relatie/contactpersoon (code '01' from code system 'COD472-VEKT') |
 | Role | Mantelzorger (code '100001' from code system 'ExtraRolcodes') |
 | Relationship | |
 
@@ -245,6 +245,9 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
+| HealthcareProvider | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Praktijklocatie Lindenhof |
@@ -262,12 +265,15 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
+| HealthcareProvider | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Praktijklocatie Lindenhof |
 | StartDateTime | 20-05-2025 10:00 |
 | EndDateTime | 20-05-2025 11:00 |
-| ContactReason.Problem | gaatje in je tand of kies |
+| ContactReason.Problem | Cariës rechterbovenkies |
 | ContactReason.Procedure | |
 | ContactReason.DeviatingResult | |
 | ContactReason.CommentContactReason | Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne. |
@@ -305,6 +311,7 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Erik van Oranje |
 | PayerPerson.BankInformation.BankName | ING |
@@ -338,6 +345,7 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -355,7 +363,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9994 XX |
-| AddressInformation.PlaceOfResidence | Noordhaven |
+| AddressInformation.PlaceOfResidence | Harlingen |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -385,22 +393,22 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectivePeriodStart | 03-06-2025 09:00 |
-| EffectivePeriodEnd | 03-06-2025 09:45 |
+| StartDateTime | 03-06-2025 09:00 |
+| EndDateTime | 03-06-2025 09:45 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Eénvlaksvulling composiet (code 'V91' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
-| ProcedureAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
-| Indication.ProblemType | interpretatie van diagnose (code '282291009' from code system 'SNOMED CT') |
+| ProcedureAnatomicalLocation.Laterality | Rechts (code '24028007' from code system 'SNOMED CT') |
+| Indication.ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
 | Indication.ProblemName | gaatje in je tand of kies (code '80967001' from code system 'SNOMED CT') |
 | Indication.FurtherSpecificationProblemName | Cariës rechterbovenkies |
 | Indication.ProblemAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
-| Indication.ProblemAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
+| Indication.ProblemAnatomicalLocation.Laterality | Rechts (code '24028007' from code system 'SNOMED CT') |
 | Indication.ProblemStartDate | 20-05-2025 10:00 |
 | Indication.ProblemEndDate | |
-| Indication.ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
-| Indication.VerificationStatus | aanwezigheid bevestigd (code '410605003' from code system 'SNOMED CT') |
+| Indication.ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| Indication.VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
 | Indication.Comment | Actieve cariës vastgesteld tijdens periodiek preventief onderzoek. Restauratieve behandeling (éénvlaksvulling) en preventief advies besproken. |
 | Location | Praktijklocatie Lindenhof |
 | Performer | A.B.D.O. de Koning, Tandarts |
@@ -411,14 +419,18 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
+| HealthcareProvider | |
+| EffectiveDateTime | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Gingivitis/tandvleesontsteking behandelen |
-| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
 | DesiredHealthCondition.Comment | |
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | StartDate | 2025-05-20 |
 | expressedBy | Mondzorgcentrum Lindenhof |
 
@@ -426,13 +438,17 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
+| HealthcareProvider | |
+| EffectiveDateTime | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Cariës rechterbovenkies restaureren |
-| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
 | DesiredHealthCondition.Comment | |
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | StartDate | 2025-05-20 |
 | expressedBy | Mondzorgcentrum Lindenhof |

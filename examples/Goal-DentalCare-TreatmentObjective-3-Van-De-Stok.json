@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-08-01<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: malocclusie van tanden en/of kiezen<br/>Toelichting: Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Malocclusie met scheefstand van de snijtand linksboven<br/>Toelichting: Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn.</div>"
   },
   "lifecycleStatus": "active",
   "priority": {
@@ -28,7 +28,7 @@
     ]
   },
   "description": {
-    "text": "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-08-01"
+    "text": "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen"
   },
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
@@ -51,7 +51,7 @@
           {
             "code": "162019007",
             "system": "http://snomed.info/sct",
-            "display": "probleem met kauwen afwezig"
+            "display": "geen probleem met kauwen"
           }
         ]
       },
@@ -61,7 +61,7 @@
   "addresses": [
     {
       "reference": "Condition/DentalCare-Problem-Van-De-Stok",
-      "display": "malocclusie van tanden en/of kiezen",
+      "display": "Malocclusie met scheefstand van de snijtand linksboven",
       "type": "Condition"
     }
   ],

@@ -13,7 +13,7 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
     ]
   },
-  "reasonCode": [
+  "reasonReference": [
     {
       "extension": [
         {
@@ -21,7 +21,9 @@
           "valueString": "Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld"
         }
       ],
-      "text": "Periodiek preventief onderzoek"
+      "reference": "Condition/DentalCare-Problem-Jansen",
+      "display": "Cariës rechterkies",
+      "type": "Condition"
     }
   ],
   "text": {
@@ -57,12 +59,6 @@
     "start": "2022-02-11T10:00:00+01:00",
     "end": "2022-02-11T11:00:00+01:00"
   },
-  "reasonReference": [
-    {
-      "reference": "Condition/DentalCare-Problem-Jansen",
-      "display": "Cariës rechterkies"
-    }
-  ],
   "location": [
     {
       "location": {

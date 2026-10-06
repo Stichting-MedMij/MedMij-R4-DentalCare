@@ -32,6 +32,7 @@
     "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
+  "effectiveDateTime": "2015-01-01",
   "valueCodeableConcept": {
     "coding": [
       {

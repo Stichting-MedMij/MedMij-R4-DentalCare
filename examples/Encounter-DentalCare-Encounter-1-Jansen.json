@@ -1,6 +1,6 @@
 {
   "resourceType": "Encounter",
-  "id": "DentalCare-Encounter-Jansen",
+  "id": "DentalCare-Encounter-1-Jansen",
   "meta": {
     "tag": [
       {
@@ -13,7 +13,7 @@
       "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
     ]
   },
-  "reasonCode": [
+  "reasonReference": [
     {
       "extension": [
         {
@@ -21,12 +21,14 @@
           "valueString": "Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening"
         }
       ],
-      "text": "Aanhoudende klachten rechterkies / paro-preventie"
+      "reference": "Condition/DentalCare-Problem-Jansen",
+      "display": "Cariës rechterkies",
+      "type": "Condition"
     }
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Second opinion<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
   "status": "finished",
   "class": {
@@ -41,7 +43,7 @@
   ],
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
-    "display": "Anita Jansen",
+    "display": "Anita Jansen-van Dijk",
     "type": "Patient"
   },
   "participant": [
@@ -57,12 +59,6 @@
     "start": "2023-07-22T09:00:00+01:00",
     "end": "2023-07-22T09:30:00+01:00"
   },
-  "reasonReference": [
-    {
-      "reference": "Condition/DentalCare-Problem-Jansen",
-      "display": "Cariës rechterkies"
-    }
-  ],
   "hospitalization": {
     "dischargeDisposition": {
       "coding": [

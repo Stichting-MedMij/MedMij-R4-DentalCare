@@ -46,7 +46,7 @@
       }
     ],
     "use": "work",
-    "city": "Fictiedorp",
+    "city": "Leiderdorp",
     "postalCode": "9992 XX",
     "country": "Nederland",
     "_country": {
@@ -68,7 +68,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Praktijklocatie Lindenhof<br/>Telefoon: 0881234567<br/>Adres: Heideweg 3, 9992 XX Fictiedorp<br/>Beherende organisatie: Mondzorgcentrum Lindenhof</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Praktijklocatie Lindenhof<br/>Telefoon: 0881234567<br/>Adres: Heideweg 3, 9992 XX Leiderdorp<br/>Beherende organisatie: Mondzorgcentrum Lindenhof</div>"
   },
   "name": "Praktijklocatie Lindenhof",
   "telecom": [

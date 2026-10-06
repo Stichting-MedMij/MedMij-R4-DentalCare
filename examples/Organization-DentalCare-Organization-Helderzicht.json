@@ -47,7 +47,7 @@
         }
       ],
       "use": "work",
-      "city": "Helderstad",
+      "city": "Den Helder",
       "postalCode": "9995 XX",
       "country": "Nederland",
       "_country": {
@@ -70,7 +70,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Verzekeraar Helderzicht<br/>Adres: Parksingel 8, 9995 XX Helderstad</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Verzekeraar Helderzicht<br/>Adres: Parksingel 8, 9995 XX Den Helder</div>"
   },
   "name": "Verzekeraar Helderzicht"
 }

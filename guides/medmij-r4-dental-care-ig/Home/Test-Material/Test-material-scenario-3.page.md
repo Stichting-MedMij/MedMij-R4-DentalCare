@@ -6,7 +6,7 @@
 | --- | --- |
 | NameInformation.FirstNames | Berend |
 | NameInformation.Initials | |
-| NameInformation.GivenName | Berend |
+| NameInformation.GivenName | Beer |
 | NameInformation.NameUsage | |
 | NameInformation.LastName.Prefix | van de |
 | NameInformation.LastName.LastName | Stok |
@@ -38,8 +38,6 @@
 | DateOfDeath | |
 
 ## Health Professional data
-
-### Health Professional - B. Dijkstra
 
 | | |
 | --- | --- |
@@ -77,11 +75,9 @@
 
 ## Healthcare Provider data
 
-### Healthcare Provider - Orthodontiepraktijk Dijkstra
-
 | | |
 | --- | --- |
-| HealthProviderIdentificationNumber | 13004567 (in identifier system 'Vektis AGB-zorgverlener tabel') |
+| HealthcareProviderIdentificationNumber | 13004567 (in identifier system 'Vektis AGB-zorgverlener tabel') |
 | OrganizationName | Orthodontiepraktijk Dijkstra |
 | DepartmentSpeciality | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ContactInformation.TelephoneNumbers.TelephoneNumber | 0164123456 |
@@ -135,7 +131,7 @@
 | AddressInformation.Country | |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | |
-| Role | Eerste relatie/contactpersoon (code '01' from code system 'Vektis COD472') |
+| Role | Eerste relatie/contactpersoon (code '01' from code system 'COD472-VEKT') |
 | Relationship | Vader (code 'FTH' from code system 'RoleCode') |
 
 ## ASA Score data
@@ -166,6 +162,9 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
+| HealthcareProvider | |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Poliklinisch (code 'AMB' from code system 'ActCode'): Controle / debonding |
 | ContactWith | B. Dijkstra, Orthodontist |
 | Location | Orthodontiepraktijk Dijkstra |
@@ -185,7 +184,7 @@
 | IdentificationNumber | |
 | HealthcareProvider | Orthodontiepraktijk Dijkstra |
 | EffectiveDateTime | 01-01-2024 10:43 |
-| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen'); Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | goed (code '20572008' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Orthodontist |
 | Comment | Goede mondhygiëne; eerdere parodontitis met stabiele restpockets. |
@@ -208,6 +207,7 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Berend van de Stok |
 | PayerPerson.BankInformation.BankName | ABNA |
@@ -241,6 +241,7 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -258,7 +259,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9995 XX |
-| AddressInformation.PlaceOfResidence | Helderstad |
+| AddressInformation.PlaceOfResidence | Den Helder |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -288,8 +289,8 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Orthodontiepraktijk Dijkstra |
-| EffectivePeriodStart | 01-01-2024 |
-| EffectivePeriodEnd | |
+| StartDateTime | 01-01-2024 |
+| EndDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Eerste consult (code 'F121A' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | |
@@ -314,46 +315,67 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Trekken snijtand linksboven |
-| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
-| DesiredHealthCondition.Comment | Extractie van de scheve snijtand linksboven als onderdeel van het orthodontische behandelplan vóór plaatsing van de vaste beugel. |
+| DesiredHealthCondition.Comment | |
 | DesiredHealthCondition.MedicalDevice | |
-| Problem | malocclusie van tanden en/of kiezen |
+| Problem | Malocclusie met scheefstand van de snijtand linksboven |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
+
+#### Problem - Malocclusie met scheefstand van de snijtand linksboven
+
+| | |
+| --- | --- |
+| ProblemType | Diagnose (code '282291009' from code system 'SNOMED CT') |
+| ProblemName | malocclusie van tanden en/of kiezen (code '47944004' from code system 'SNOMED CT') |
+| FurtherSpecificationProblemName | Malocclusie met scheefstand van de snijtand linksboven |
+| ProblemAnatomicalLocation.Location | bovenste tandboog (code '39481002' from code system 'SNOMED CT') |
+| ProblemAnatomicalLocation.Laterality | |
+| ProblemStartDate | 15-11-2023 |
+| ProblemEndDate | |
+| ProblemStatus | Actueel (code '55561003' from code system 'SNOMED CT') |
+| VerificationStatus | Bevestigd (code '410605003' from code system 'SNOMED CT') |
+| Comment | Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie. |
 
 ### Treatment Objective - Wortelpuntoperatie (apexresectie)
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Wortelpuntoperatie (apexresectie) |
-| Priority | Lage prioriteit (code 'low-priority' from code system 'GoalPriority') |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
 | DesiredHealthCondition.StatusDate | |
 | DesiredHealthCondition.Comment | |
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
+| Priority | Lage prioriteit (code 'low-priority' from code system 'GoalPriority') |
 
-### Treatment Objective - Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-08-01
+### Treatment Objective - Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen
 
 | | |
 | --- | --- |
-| DesiredHealthcareResult | Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2025-08-01 |
-| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
+| IdentificationNumber | |
+| HealthcareProvider | |
+| EffectiveDateTime | |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
+| DesiredHealthcareResult | |
 | DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
-| DesiredHealthCondition.StatusValue | probleem met kauwen afwezig (code '162019007' from code system 'SNOMED CT') |
+| DesiredHealthCondition.StatusValue | geen probleem met kauwen (code '162019007' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusDate | 01-08-2025 |
 | DesiredHealthCondition.Comment | Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn. |
 | DesiredHealthCondition.MedicalDevice | Vaste multibracket-beugel bovenboog |
-| Problem | malocclusie van tanden en/of kiezen |
+| Problem | Malocclusie met scheefstand van de snijtand linksboven |
+| Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
 
 #### Medical Device - Vaste multibracket-beugel bovenboog
 
@@ -364,24 +386,9 @@
 | ProductDescription | Vaste multibracket-beugel voor de bovenboog |
 | AnatomicalLocation.Location | bovenste tandboog (code '39481002' from code system 'SNOMED CT') |
 | AnatomicalLocation.Laterality | |
-| Indication | malocclusie van tanden en/of kiezen |
+| Indication | Malocclusie met scheefstand van de snijtand linksboven |
 | StartDate | 01-02-2024 |
 | EndDate | 01-08-2025 |
 | Comment | Vaste multibracket-beugel in de bovenboog geplaatst na paro-stabilisatie en extractie; controle elke zes weken. |
 | Location | Orthodontiepraktijk Dijkstra |
 | HealthProfessional | B. Dijkstra, Orthodontist |
-
-#### Problem - malocclusie van tanden en/of kiezen
-
-| | |
-| --- | --- |
-| ProblemType | interpretatie van diagnose (code '282291009' from code system 'SNOMED CT') |
-| ProblemName | malocclusie van tanden en/of kiezen (code '47944004' from code system 'SNOMED CT') |
-| FurtherSpecificationProblemName | Malocclusie met scheefstand van de snijtand linksboven |
-| ProblemAnatomicalLocation.Location | bovenste tandboog (code '39481002' from code system 'SNOMED CT') |
-| ProblemAnatomicalLocation.Laterality | |
-| ProblemStartDate | 15-11-2023 |
-| ProblemEndDate | |
-| ProblemStatus | Active (code 'active' from code system 'ConditionClinicalStatusCodes') |
-| VerificationStatus | aanwezigheid bevestigd (code '410605003' from code system 'SNOMED CT') |
-| Comment | Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie. |
