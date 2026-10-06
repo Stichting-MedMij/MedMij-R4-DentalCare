@@ -172,7 +172,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
 * status = #finished
 * class = $NullFlavor#OTH "Anders"
 * type
@@ -595,7 +595,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Verbeteren mondhygiëne en tandsteenreductie<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Laag</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Verbeteren mondhygiëne en tandsteenreductie<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Laag</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#low-priority "Low Priority"
 * description
@@ -610,7 +610,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Anita Jansen<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
 * lifecycleStatus = #active
 * description
   * text = "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen"
