@@ -138,6 +138,9 @@ Defence dental care
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
+| OrganizationType | |
+| OrganizationLocation.LocationName | |
+| OrganizationLocation.LocationNumber | |
 
 ### Healthcare Provider - Praktijklocatie Lindenhof
 
@@ -164,6 +167,8 @@ Defence dental care
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
+| OrganizationLocation.LocationName | |
+| OrganizationLocation.LocationNumber | |
 
 ## Contact Person data
 
@@ -241,8 +246,6 @@ Defence dental care
 
 | | |
 | --- | --- |
-| HealthcareProvider | Defensie Tandheelkundige Dienst |
-| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Praktijklocatie Lindenhof |
@@ -259,8 +262,6 @@ Defence dental care
 
 | | |
 | --- | --- |
-| HealthcareProvider | Defensie Tandheelkundige Dienst |
-| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
 | Location | Praktijklocatie Lindenhof |
@@ -385,6 +386,7 @@ Defence dental care
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectivePeriodStart | 03-06-2025 09:00 |
 | EffectivePeriodEnd | 03-06-2025 09:45 |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ProcedureType | Eénvlaksvulling (code 'V11' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |

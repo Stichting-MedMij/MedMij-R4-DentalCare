@@ -103,6 +103,8 @@ Public dental care
 | AddressInformation.AdditionalInformation | |
 | AddressInformation.AddressType | Werkadres (code 'WP' from code system 'AddressUse') |
 | OrganizationType | |
+| OrganizationLocation.LocationName | |
+| OrganizationLocation.LocationNumber | |
 
 ## Contact Person data
 
