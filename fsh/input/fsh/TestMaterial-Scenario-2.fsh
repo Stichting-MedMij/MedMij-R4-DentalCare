@@ -1,6 +1,5 @@
 // FHIR test instances in FSH format for Dental Care test scenario 2
 
-
 Instance: DentalCare-ASAScore-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
 Usage: #example

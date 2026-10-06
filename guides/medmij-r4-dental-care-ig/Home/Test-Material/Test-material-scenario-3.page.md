@@ -1,5 +1,4 @@
 # Scenario 3
-Public dental care
 
 ## Patient data
 

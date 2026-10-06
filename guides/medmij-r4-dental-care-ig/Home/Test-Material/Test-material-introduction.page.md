@@ -8,8 +8,6 @@ The functional test data can be found on the underlying pages for each of the di
 
 For mapping between metadata, functional dataset and FHIR, please refer to the {{pagelink: TD, text: technical design, anchor: RelatingFHIRToFunctionalCounterpart}}.
 
-This implementation guide contains four test scenarios for interoperability testing. Test scenarios 1 and 2 cover dental care within Defence, while test scenarios 3 and 4 cover public dental care. The functional test data for each scenario can be found on the corresponding underlying page.
-
 ## Structure
 - This IG contains the functional test data from which the FHIR resources are generated.
 - The Simplifier project and the `examples` folder on GitHub both contain the FHIR test resources.
