@@ -59,6 +59,62 @@ Usage: #example
 * note
   * text = "Actieve cariës en gingivitis; restauratieve behandeling gepland."
 
+Instance: DentalCare-Encounter-1-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-05-20T10:00:00<br/>Einddatum: 2026-05-20T11:00:00<br/>Status: Gepland<br/>Locatie: Praktijklocatie Lindenhof</div>"
+* status = #planned
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Tandarts Periodiek Preventief Onderzoek"
+* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+    * type = "PractitionerRole"
+* period
+  * start = "2026-05-20T10:00:00+01:00"
+  * end = "2026-05-20T11:00:00+01:00"
+* reasonCode[deviatingResult]
+  * extension[commentContactReason]
+    * valueString = "Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025"
+* location
+  * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
+    * type = "Location"
+
+Instance: DentalCare-Encounter-2-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controleafspraak<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+* status = #finished
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Tandarts Periodiek Preventief Onderzoek"
+* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
+    * type = "PractitionerRole"
+* period
+  * start = "2025-05-20T10:00:00+01:00"
+  * end = "2025-05-20T11:00:00+01:00"
+* reasonReference[problem] = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
+  * extension[commentContactReason]
+    * valueString = "Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne."
+* hospitalization
+  * admitSource = $SCT#264362003 "thuis"  
+* location
+  * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
+    * type = "Location"
+
 Instance: DentalCare-OralHygiene-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
 Usage: #example
@@ -93,6 +149,78 @@ Usage: #example
   * type = "PractitionerRole"
 * valueString = "Overmatig knarsen bij stress"
 
+Instance: DentalCare-Payer-InsuranceCompany-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Zorgkantoor Noorderlicht<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Zorgkantoor Noorderlicht</div>"
+* status = #active
+* type = $Verzekeringssoort#B "Basis"
+* subscriberId = "12345678"
+* beneficiary = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
+* period
+  * start = "2025-01-01"
+  * end = "2026-01-01"
+* payor = Reference(DentalCare-Organization-Zorgkantoor-Noorderlicht) "Zorgkantoor Noorderlicht"
+  * type = "Organization"
+
+Instance: DentalCare-Payer-Person-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Betaler: Erik van Oranje</div>"
+* extension[bankInformation]
+  * extension[bankName]
+    * valueString = "ING"
+  * extension[bankCode]
+    * valueString = "INGBNL2A"
+  * extension[accountNumber]
+    * valueString = "NL85INGB0001234567"
+* status = #active
+* type = $Verzekeringstype#pay "Pay"
+* beneficiary = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
+* payor = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
+  * type = "Patient"
+
+Instance: DentalCare-Organization-Zorgkantoor-Noorderlicht
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Noorderlicht<br/>Adres: Kadeweg 22, 9994 XX Harlingen</div>"
+* identifier[uzovi]
+  * system = "http://fhir.nl/fhir/NamingSystem/uzovi"
+  * value = "9901"
+* name = "Zorgkantoor Noorderlicht"
+* telecom[telephoneNumbers]
+  * system = #phone
+  * value = "0501234567"
+  * use = #work
+* address
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
+  * use = #work
+  * line = "Kadeweg 22"
+    * extension[streetName]
+      * valueString = "Kadeweg"
+    * extension[houseNumber]
+      * valueString = "22"
+  * city = "Harlingen"
+  * postalCode = "9994 XX"
+  * country = "Nederland"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
+
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
 Usage: #example
@@ -111,37 +239,6 @@ Usage: #example
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
 * note
   * text = "Geen parodontale vervolgbehandeling; wel gingivitis bij slechte mondhygiëne"
-
-Instance: DentalCare-TreatmentObjective-1-Van-Oranje
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
-Usage: #example
-* meta
-  * tag[0] = $VektisAGB#1200 "Tandartsen"
-  * tag[1] = $VektisAGB#8700 "Mondhygiënisten"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Gingivitis/tandvleesontsteking behandelen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
-* lifecycleStatus = #active
-* priority = $GoalPriority#high-priority "High Priority"
-* description
-  * text = "Gingivitis/tandvleesontsteking behandelen"
-* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
-  * type = "Patient"
-
-Instance: DentalCare-TreatmentObjective-2-Van-Oranje
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Cariës rechterbovenkies restaureren<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
-* lifecycleStatus = #active
-* priority = $GoalPriority#high-priority "High Priority"
-* description
-  * text = "Cariës rechterbovenkies restaureren"
-* subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
-  * type = "Patient"
 
 Instance: DentalCare-Procedure-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
@@ -199,61 +296,36 @@ Usage: #example
 * note
   * text = "Actieve cariës vastgesteld tijdens periodiek preventief onderzoek. Restauratieve behandeling (éénvlaksvulling) en preventief advies besproken."
 
-Instance: DentalCare-Encounter-1-Van-Oranje
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Instance: DentalCare-TreatmentObjective-1-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
 * meta
-  * tag = $VektisAGB#1200 "Tandartsen"
+  * tag[0] = $VektisAGB#1200 "Tandartsen"
+  * tag[1] = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Tandarts Periodiek Preventief Onderzoek<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2026-05-20T10:00:00<br/>Einddatum: 2026-05-20T11:00:00<br/>Status: Gepland<br/>Locatie: Praktijklocatie Lindenhof</div>"
-* status = #planned
-* class = $NullFlavor#OTH "Anders"
-* type
-  * text = "Tandarts Periodiek Preventief Onderzoek"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Gingivitis/tandvleesontsteking behandelen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+* lifecycleStatus = #active
+* priority = $GoalPriority#high-priority "High Priority"
+* description
+  * text = "Gingivitis/tandvleesontsteking behandelen"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
-* participant
-  * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
-    * type = "PractitionerRole"
-* period
-  * start = "2026-05-20T10:00:00+01:00"
-  * end = "2026-05-20T11:00:00+01:00"
-* reasonCode[deviatingResult]
-  * extension[commentContactReason]
-    * valueString = "Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025"
-* location
-  * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
-    * type = "Location"
 
-Instance: DentalCare-Encounter-2-Van-Oranje
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Instance: DentalCare-TreatmentObjective-2-Van-Oranje
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
 * meta
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controleafspraak<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20T10:00:00<br/>Einddatum: 2025-05-20T11:00:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
-* status = #finished
-* class = $NullFlavor#OTH "Anders"
-* type
-  * text = "Tandarts Periodiek Preventief Onderzoek"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Cariës rechterbovenkies restaureren<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+* lifecycleStatus = #active
+* priority = $GoalPriority#high-priority "High Priority"
+* description
+  * text = "Cariës rechterbovenkies restaureren"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
-* participant
-  * individual = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
-    * type = "PractitionerRole"
-* period
-  * start = "2025-05-20T10:00:00+01:00"
-  * end = "2025-05-20T11:00:00+01:00"
-* reasonReference[problem] = Reference(DentalCare-Problem-Van-Oranje) "gaatje in je tand of kies"
-  * extension[commentContactReason]
-    * valueString = "Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne."
-* hospitalization
-  * admitSource = $SCT#264362003 "thuis"  
-* location
-  * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
-    * type = "Location"
     
 Instance: DentalCare-Patient-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
@@ -563,75 +635,3 @@ Usage: #example
       * valueCodeableConcept = $ISO3166#NL "Netherlands"
 * managingOrganization = Reference(DentalCare-Organization-Mondzorgcentrum-Lindenhof) "Mondzorgcentrum Lindenhof"
   * type = "Organization"
-
-Instance: DentalCare-Payer-InsuranceCompany-Van-Oranje
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Zorgkantoor Noorderlicht<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Zorgkantoor Noorderlicht</div>"
-* status = #active
-* type = $Verzekeringssoort#B "Basis"
-* subscriberId = "12345678"
-* beneficiary = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
-  * type = "Patient"
-* period
-  * start = "2025-01-01"
-  * end = "2026-01-01"
-* payor = Reference(DentalCare-Organization-Zorgkantoor-Noorderlicht) "Zorgkantoor Noorderlicht"
-  * type = "Organization"
-
-Instance: DentalCare-Payer-Person-Van-Oranje
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Betaler: Erik van Oranje</div>"
-* extension[bankInformation]
-  * extension[bankName]
-    * valueString = "ING"
-  * extension[bankCode]
-    * valueString = "INGBNL2A"
-  * extension[accountNumber]
-    * valueString = "NL85INGB0001234567"
-* status = #active
-* type = $Verzekeringstype#pay "Pay"
-* beneficiary = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
-  * type = "Patient"
-* payor = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
-  * type = "Patient"
-
-Instance: DentalCare-Organization-Zorgkantoor-Noorderlicht
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Noorderlicht<br/>Adres: Kadeweg 22, 9994 XX Harlingen</div>"
-* identifier[uzovi]
-  * system = "http://fhir.nl/fhir/NamingSystem/uzovi"
-  * value = "9901"
-* name = "Zorgkantoor Noorderlicht"
-* telecom[telephoneNumbers]
-  * system = #phone
-  * value = "0501234567"
-  * use = #work
-* address
-  * extension[addressType]
-    * valueCodeableConcept = $AddressUse#WP "work place"
-  * use = #work
-  * line = "Kadeweg 22"
-    * extension[streetName]
-      * valueString = "Kadeweg"
-    * extension[houseNumber]
-      * valueString = "22"
-  * city = "Harlingen"
-  * postalCode = "9994 XX"
-  * country = "Nederland"
-    * extension[countryCode]
-      * valueCodeableConcept = $ISO3166#NL "Netherlands"

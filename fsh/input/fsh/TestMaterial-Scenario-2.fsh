@@ -165,6 +165,80 @@ Usage: #example
   * coding = $SCT#258392002 "klasse 1"
   * text = "vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen"
 
+Instance: DentalCare-Encounter-1-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+* status = #finished
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Second opinion"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+    * type = "PractitionerRole"
+* period
+  * start = "2023-07-22T09:00:00+01:00"
+  * end = "2023-07-22T09:30:00+01:00"
+* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
+  * extension[commentContactReason]
+    * valueString = "Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening"
+* hospitalization
+  * dischargeDisposition = $SCT#264362003 "thuis"  
+* location
+  * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
+    * type = "Location"
+
+Instance: DentalCare-Encounter-2-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Periodiek preventief onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11T10:00:00+01:00<br/>Einddatum: 2022-02-11T11:00:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+* status = #finished
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Periodiek preventief onderzoek"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+    * type = "PractitionerRole"
+* period
+  * start = "2022-02-11T10:00:00+01:00"
+  * end = "2022-02-11T11:00:00+01:00"
+* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
+  * extension[commentContactReason]
+    * valueString = "Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld"
+* location
+  * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
+    * type = "Location"
+
+Instance: DentalCare-Encounter-3-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Restauratieve behandeling<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-04-11T09:00:00+02:00<br/>Einddatum: 2022-04-11T10:00:00+02:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+* status = #finished
+* class = $NullFlavor#OTH "Anders"
+* type
+  * text = "Restauratieve behandeling"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
+  * type = "Patient"
+* location
+  * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
+    * type = "Location"
+
 Instance: DentalCare-OralHygiene-1-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
 Usage: #example
@@ -274,6 +348,74 @@ Usage: #example
 * effectiveDateTime = "2015-01-01"
 * valueString = "Nagels bijten"
 
+Instance: DentalCare-Payer-InsuranceCompany-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Horizon<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-01-01<br/>Einddatum: 2024-01-01<br/>Status: Actief<br/>Betaler: Zorgverzekeraar Horizon N.V.</div>"
+* status = #active
+* type = $Verzekeringssoort#AT "Aanvullend + tand"
+* subscriberId = "01234567"
+* beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
+  * type = "Patient"
+* period
+  * start = "2022-01-01"
+  * end = "2024-01-01"
+* payor = Reference(DentalCare-Organization-Horizon) "Zorgverzekeraar Horizon N.V."
+  * type = "Organization"
+
+Instance: DentalCare-Payer-Person-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Betaler: Anita Jansen-van Dijk</div>"
+* extension[bankInformation]
+  * extension[bankName]
+    * valueString = "RABO"
+  * extension[bankCode]
+    * valueString = "RABO21NL"
+  * extension[accountNumber]
+    * valueString = "NL21RABO0001234567"
+* status = #active
+* type = $Verzekeringstype#pay "Pay"
+* beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
+  * type = "Patient"
+* payor = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
+  * type = "Patient"
+
+Instance: DentalCare-Organization-Horizon
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgverzekeraar Horizon<br/>Adres: Dennenlaan 40, 9993 XX Arnhem</div>"
+* identifier[uzovi]
+  * system = "http://fhir.nl/fhir/NamingSystem/uzovi"
+  * value = "9911"
+* name = "Zorgverzekeraar Horizon N.V."
+* address
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#WP "work place"
+  * use = #work
+  * line = "Dennenlaan 40"
+    * extension[streetName]
+      * valueString = "Dennenlaan"
+    * extension[houseNumber]
+      * valueString = "40"
+  * city = "Arnhem"
+  * postalCode = "9993 XX"
+  * country = "Nederland"
+    * extension[countryCode]
+      * valueCodeableConcept = $ISO3166#NL "Netherlands"
+
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-1-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore
 Usage: #example
@@ -326,6 +468,100 @@ Usage: #example
   * type = "Patient"
 * effectiveDateTime = "2015-01-01"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
+
+Instance: DentalCare-Procedure-1-Jansen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Maken en beoordelen kleine röntgenfoto<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Datum: 2022-02-11<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
+* status = #completed
+* category = $SCT#225362009 "tandheelkundige zorg"
+* code = $ProcedureTypeVektisDentalCareCodeSystemOID#X10 "Maken en beoordelen kleine röntgenfoto"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
+  * type = "Patient"
+* performedDateTime = "2022-02-11"
+* performer
+  * actor = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+    * type = "PractitionerRole"
+* location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
+  * type = "Location"
+
+Instance: DentalCare-Procedure-2-Jansen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eénvlaksvulling<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Start: 2022-04-11T09:00<br/>Einde: 2022-04-11T09:45<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof<br/>Indicatie: Cariës rechterkies</div>"
+* extension[procedureMethod]
+  * valueCodeableConcept = $SCT#257867005 "inbrengen"
+* status = #completed
+* category = $SCT#225362009 "tandheelkundige zorg"
+* code = $ProcedureTypeVektisDentalCareCodeSystemOID#V11 "Eénvlaksvulling"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
+  * type = "Patient"
+* performedPeriod
+  * start = "2022-04-11T09:00:00+02:00"
+  * end = "2022-04-11T09:45:00+02:00"
+* performer
+  * actor = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+    * type = "PractitionerRole"
+* location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
+  * type = "Location"
+* reasonReference = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
+  * type = "Condition"
+* bodySite = $SCT#38199008 "tand en/of kies"
+  * extension[laterality]
+    * valueCodeableConcept = $SCT#24028007 "rechts"
+
+Instance: DentalCare-Problem-Jansen
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës rechterkies<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: D. de Ruiter, Tandarts</div>"
+* clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
+* verificationStatus
+  * coding = $ConditionVerificationStatus#confirmed "Confirmed"
+  * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
+* category[problemType] = $SCT#282291009 "interpretatie van diagnose"
+* code
+  * coding = $SCT#80967001 "gaatje in je tand of kies"
+  * text = "Cariës rechterkies"
+* bodySite = $SCT#38199008 "tand en/of kies"
+  * extension[laterality]
+    * valueCodeableConcept = $SCT#24028007 "rechts"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
+  * type = "Patient"
+* onsetDateTime = "2022-02-11"
+* recordedDate = "2022-02-11"
+* asserter = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
+  * type = "PractitionerRole"
+* note
+  * text = "Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland."
+
+Instance: DentalCare-Procedure-3-Jansen
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
+Usage: #example
+* meta
+  * tag = $VektisAGB#1200 "Tandartsen"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Gebitsreiniging<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Datum: 2023-07-22<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist<br/>Locatie: Praktijklocatie Lindenhof</div>"
+* status = #completed
+* category = $SCT#225362009 "tandheelkundige zorg"
+* code = $ProcedureTypeVektisDentalCareCodeSystemOID#M01 "Gebitsreiniging"
+* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
+  * type = "Patient"
+* performer
+  * actor = Reference(DentalCare-PractitionerRole-Vermeer) "S. Vermeer, Mondhygiënist"
+    * type = "PractitionerRole"
 
 Instance: DentalCare-TreatmentObjective-1-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
@@ -380,175 +616,6 @@ Usage: #example
   * text = "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen problemen met kauwen, per 2022-04-11"
 * subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
   * type = "Patient"
-
-Instance: DentalCare-Problem-Jansen
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Cariës rechterkies<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: D. de Ruiter, Tandarts</div>"
-* clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
-* verificationStatus
-  * coding = $ConditionVerificationStatus#confirmed "Confirmed"
-  * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
-* category[problemType] = $SCT#282291009 "interpretatie van diagnose"
-* code
-  * coding = $SCT#80967001 "gaatje in je tand of kies"
-  * text = "Cariës rechterkies"
-* bodySite = $SCT#38199008 "tand en/of kies"
-  * extension[laterality]
-    * valueCodeableConcept = $SCT#24028007 "rechts"
-* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
-  * type = "Patient"
-* onsetDateTime = "2022-02-11"
-* recordedDate = "2022-02-11"
-* asserter = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-  * type = "PractitionerRole"
-* note
-  * text = "Caviteiten in de rechterkies op röntgenfoto; restauratieve behandeling gepland."
-
-Instance: DentalCare-Procedure-1-Jansen
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Maken en beoordelen kleine röntgenfoto<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Datum: 2022-02-11<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
-* status = #completed
-* category = $SCT#225362009 "tandheelkundige zorg"
-* code = $ProcedureTypeVektisDentalCareCodeSystemOID#X10 "Maken en beoordelen kleine röntgenfoto"
-* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
-  * type = "Patient"
-* performedDateTime = "2022-02-11"
-* performer
-  * actor = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-    * type = "PractitionerRole"
-* location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
-  * type = "Location"
-
-Instance: DentalCare-Procedure-2-Jansen
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eénvlaksvulling<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Start: 2022-04-11T09:00<br/>Einde: 2022-04-11T09:45<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof<br/>Indicatie: Cariës rechterkies</div>"
-* extension[procedureMethod]
-  * valueCodeableConcept = $SCT#257867005 "inbrengen"
-* status = #completed
-* category = $SCT#225362009 "tandheelkundige zorg"
-* code = $ProcedureTypeVektisDentalCareCodeSystemOID#V11 "Eénvlaksvulling"
-* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
-  * type = "Patient"
-* performedPeriod
-  * start = "2022-04-11T09:00:00+02:00"
-  * end = "2022-04-11T09:45:00+02:00"
-* performer
-  * actor = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-    * type = "PractitionerRole"
-* location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
-  * type = "Location"
-* reasonReference = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
-  * type = "Condition"
-* bodySite = $SCT#38199008 "tand en/of kies"
-  * extension[laterality]
-    * valueCodeableConcept = $SCT#24028007 "rechts"
-
-Instance: DentalCare-Procedure-3-Jansen
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Gebitsreiniging<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Datum: 2023-07-22<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist<br/>Locatie: Praktijklocatie Lindenhof</div>"
-* status = #completed
-* category = $SCT#225362009 "tandheelkundige zorg"
-* code = $ProcedureTypeVektisDentalCareCodeSystemOID#M01 "Gebitsreiniging"
-* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
-  * type = "Patient"
-* performer
-  * actor = Reference(DentalCare-PractitionerRole-Vermeer) "S. Vermeer, Mondhygiënist"
-    * type = "PractitionerRole"
-
-Instance: DentalCare-Encounter-1-Jansen
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
-* status = #finished
-* class = $NullFlavor#OTH "Anders"
-* type
-  * text = "Second opinion"
-* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen"
-  * type = "Patient"
-* participant
-  * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-    * type = "PractitionerRole"
-* period
-  * start = "2023-07-22T09:00:00+01:00"
-  * end = "2023-07-22T09:30:00+01:00"
-* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
-  * extension[commentContactReason]
-    * valueString = "Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening"
-* hospitalization
-  * dischargeDisposition = $SCT#264362003 "thuis"  
-* location
-  * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
-    * type = "Location"
-
-Instance: DentalCare-Encounter-2-Jansen
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Periodiek preventief onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11T10:00:00+01:00<br/>Einddatum: 2022-02-11T11:00:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
-* status = #finished
-* class = $NullFlavor#OTH "Anders"
-* type
-  * text = "Periodiek preventief onderzoek"
-* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
-  * type = "Patient"
-* participant
-  * individual = Reference(DentalCare-PractitionerRole-De-Ruiter) "D. de Ruiter, Tandarts"
-    * type = "PractitionerRole"
-* period
-  * start = "2022-02-11T10:00:00+01:00"
-  * end = "2022-02-11T11:00:00+01:00"
-* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
-  * extension[commentContactReason]
-    * valueString = "Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld"
-* location
-  * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
-    * type = "Location"
-
-Instance: DentalCare-Encounter-3-Jansen
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Restauratieve behandeling<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-04-11T09:00:00+02:00<br/>Einddatum: 2022-04-11T10:00:00+02:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
-* status = #finished
-* class = $NullFlavor#OTH "Anders"
-* type
-  * text = "Restauratieve behandeling"
-* subject = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
-  * type = "Patient"
-* location
-  * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
-    * type = "Location"
-
 
 Instance: DentalCare-Patient-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
@@ -691,74 +758,6 @@ Usage: #example
       * valueString = "1"
   * city = "Leiderdorp"
   * postalCode = "2353 GA"
-  * country = "Nederland"
-    * extension[countryCode]
-      * valueCodeableConcept = $ISO3166#NL "Netherlands"
-
-Instance: DentalCare-Payer-InsuranceCompany-Jansen
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Horizon<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-01-01<br/>Einddatum: 2024-01-01<br/>Status: Actief<br/>Betaler: Zorgverzekeraar Horizon N.V.</div>"
-* status = #active
-* type = $Verzekeringssoort#AT "Aanvullend + tand"
-* subscriberId = "01234567"
-* beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
-  * type = "Patient"
-* period
-  * start = "2022-01-01"
-  * end = "2024-01-01"
-* payor = Reference(DentalCare-Organization-Horizon) "Zorgverzekeraar Horizon N.V."
-  * type = "Organization"
-
-Instance: DentalCare-Payer-Person-Jansen
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Betaler: Anita Jansen-van Dijk</div>"
-* extension[bankInformation]
-  * extension[bankName]
-    * valueString = "RABO"
-  * extension[bankCode]
-    * valueString = "RABO21NL"
-  * extension[accountNumber]
-    * valueString = "NL21RABO0001234567"
-* status = #active
-* type = $Verzekeringstype#pay "Pay"
-* beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
-  * type = "Patient"
-* payor = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
-  * type = "Patient"
-
-Instance: DentalCare-Organization-Horizon
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
-Usage: #example
-* meta
-  * tag = $VektisAGB#1200 "Tandartsen"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgverzekeraar Horizon<br/>Adres: Dennenlaan 40, 9993 XX Arnhem</div>"
-* identifier[uzovi]
-  * system = "http://fhir.nl/fhir/NamingSystem/uzovi"
-  * value = "9911"
-* name = "Zorgverzekeraar Horizon N.V."
-* address
-  * extension[addressType]
-    * valueCodeableConcept = $AddressUse#WP "work place"
-  * use = #work
-  * line = "Dennenlaan 40"
-    * extension[streetName]
-      * valueString = "Dennenlaan"
-    * extension[houseNumber]
-      * valueString = "40"
-  * city = "Arnhem"
-  * postalCode = "9993 XX"
   * country = "Nederland"
     * extension[countryCode]
       * valueCodeableConcept = $ISO3166#NL "Netherlands"

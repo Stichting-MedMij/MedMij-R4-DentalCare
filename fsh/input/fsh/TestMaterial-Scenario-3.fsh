@@ -38,6 +38,30 @@ Usage: #example
 * note
   * text = "Verhoogd risico mede i.v.m. comorbiditeit (nierziekte, bloedarmoede)."
 
+Instance: DentalCare-Encounter-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
+Usage: #example
+* meta
+  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01T09:00:00+01:00<br/>Einddatum: 2025-08-01T09:30:00+01:00<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+* status = #planned
+* class = $ActCode#AMB "Poliklinisch"
+* type
+  * text = "Controle / debonding"
+* subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
+* participant
+  * individual = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Orthodontist"
+    * type = "PractitionerRole"
+* period
+  * start = "2025-08-01T09:00:00+01:00"
+  * end = "2025-08-01T09:30:00+01:00"
+* location
+  * location = Reference(DentalCare-Location-Orthodontiepraktijk-Dijkstra) "Orthodontiepraktijk Dijkstra"
+    * type = "Location"
+
 Instance: DentalCare-OralHygiene-Van-De-Stok
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-OralHygiene
 Usage: #example
@@ -94,6 +118,26 @@ Usage: #example
 * note
   * text = "Verwezen naar paro; orthodontische behandeling pas na paro-stabilisatie (jan–feb 2024)."
 
+Instance: DentalCare-Procedure-Van-De-Stok
+InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
+Usage: #example
+* meta
+  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eerste consult<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Orthodontist<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+* status = #completed
+* category = $SCT#225362009 "tandheelkundige zorg"
+* code = $ProcedureTypeVektisDentalCareCodeSystemOID#F121A "Eerste consult"
+* subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
+* performedDateTime = "2024-01-01"
+* performer
+  * actor = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Orthodontist"
+    * type = "PractitionerRole"
+* location = Reference(DentalCare-Location-Orthodontiepraktijk-Dijkstra) "Orthodontiepraktijk Dijkstra"
+  * type = "Location"
+
 Instance: DentalCare-TreatmentObjective-1-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
@@ -112,6 +156,32 @@ Usage: #example
   * type = "Condition"
 * note
   * text = "Extractie van de scheve snijtand linksboven als onderdeel van het orthodontische behandelplan vóór plaatsing van de vaste beugel."
+
+Instance: DentalCare-Problem-Van-De-Stok
+InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem
+Usage: #example
+* meta
+  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
+* text
+  * status = #generated
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: malocclusie van tanden en/of kiezen<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Orthodontist</div>"
+* clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
+* verificationStatus
+  * coding = $ConditionVerificationStatus#confirmed "Confirmed"
+  * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
+* category[problemType] = $SCT#282291009 "interpretatie van diagnose"
+* code
+  * coding = $SCT#47944004 "malocclusie van tanden en/of kiezen"
+  * text = "Malocclusie met scheefstand van de snijtand linksboven"
+* bodySite = $SCT#39481002 "bovenste tandboog"
+* subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
+  * type = "Patient"
+* onsetDateTime = "2023-11-15"
+* recordedDate = "2024-01-01T10:43:00+01:00"
+* asserter = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Orthodontist"
+  * type = "PractitionerRole"
+* note
+  * text = "Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie."
 
 Instance: DentalCare-TreatmentObjective-2-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
@@ -208,76 +278,6 @@ Usage: #example
   * type = "Patient"
 * note
   * text = "Vaste multibracket-beugel voor de bovenboog"
-
-Instance: DentalCare-Problem-Van-De-Stok
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem
-Usage: #example
-* meta
-  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: malocclusie van tanden en/of kiezen<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Orthodontist</div>"
-* clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
-* verificationStatus
-  * coding = $ConditionVerificationStatus#confirmed "Confirmed"
-  * coding[verificationStatusCodelist] = $SCT#410605003 "aanwezigheid bevestigd"
-* category[problemType] = $SCT#282291009 "interpretatie van diagnose"
-* code
-  * coding = $SCT#47944004 "malocclusie van tanden en/of kiezen"
-  * text = "Malocclusie met scheefstand van de snijtand linksboven"
-* bodySite = $SCT#39481002 "bovenste tandboog"
-* subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
-  * type = "Patient"
-* onsetDateTime = "2023-11-15"
-* recordedDate = "2024-01-01T10:43:00+01:00"
-* asserter = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Orthodontist"
-  * type = "PractitionerRole"
-* note
-  * text = "Malocclusie met scheefstand van de snijtand linksboven; orthodontische behandeling met vaste beugel gepland na paro-stabilisatie en extractie."
-
-Instance: DentalCare-Procedure-Van-De-Stok
-InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
-Usage: #example
-* meta
-  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eerste consult<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Orthodontist<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
-* status = #completed
-* category = $SCT#225362009 "tandheelkundige zorg"
-* code = $ProcedureTypeVektisDentalCareCodeSystemOID#F121A "Eerste consult"
-* subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
-  * type = "Patient"
-* performedDateTime = "2024-01-01"
-* performer
-  * actor = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Orthodontist"
-    * type = "PractitionerRole"
-* location = Reference(DentalCare-Location-Orthodontiepraktijk-Dijkstra) "Orthodontiepraktijk Dijkstra"
-  * type = "Location"
-
-Instance: DentalCare-Encounter-Van-De-Stok
-InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
-Usage: #example
-* meta
-  * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
-* text
-  * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01T09:00:00+01:00<br/>Einddatum: 2025-08-01T09:30:00+01:00<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
-* status = #planned
-* class = $ActCode#AMB "Poliklinisch"
-* type
-  * text = "Controle / debonding"
-* subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
-  * type = "Patient"
-* participant
-  * individual = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Orthodontist"
-    * type = "PractitionerRole"
-* period
-  * start = "2025-08-01T09:00:00+01:00"
-  * end = "2025-08-01T09:30:00+01:00"
-* location
-  * location = Reference(DentalCare-Location-Orthodontiepraktijk-Dijkstra) "Orthodontiepraktijk Dijkstra"
-    * type = "Location"
 
 Instance: DentalCare-Patient-Van-De-Stok
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
