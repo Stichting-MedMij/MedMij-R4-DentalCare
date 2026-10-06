@@ -522,7 +522,7 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Verzekeraar Helderzicht<br/>Adres: Parksingel 8, 9995 XX Helderstad</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Verzekeraar Helderzicht<br/>Adres: Parksingel 8, 9995 XX Den Helder</div>"
 * name = "Verzekeraar Helderzicht"
 * address
   * extension[addressType]
@@ -533,7 +533,7 @@ Usage: #example
       * valueString = "Parksingel"
     * extension[houseNumber]
       * valueString = "8"
-  * city = "Helderstad"
+  * city = "Den Helder"
   * postalCode = "9995 XX"
   * country = "Nederland"
     * extension[countryCode]

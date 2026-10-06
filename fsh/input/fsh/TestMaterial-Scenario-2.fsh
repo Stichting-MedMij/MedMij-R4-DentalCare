@@ -495,11 +495,9 @@ Usage: #example
 * period
   * start = "2023-07-22T09:00:00+01:00"
   * end = "2023-07-22T09:30:00+01:00"
-* reasonCode[deviatingResult]
+* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
   * extension[commentContactReason]
     * valueString = "Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening"
-  * text = "Aanhoudende klachten rechterkies / paro-preventie"
-* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
 * hospitalization
   * dischargeDisposition = $SCT#264362003 "thuis"  
 * location
@@ -526,11 +524,9 @@ Usage: #example
 * period
   * start = "2022-02-11T10:00:00+01:00"
   * end = "2022-02-11T11:00:00+01:00"
-* reasonCode[deviatingResult]
+* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
   * extension[commentContactReason]
     * valueString = "Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld"
-  * text = "Periodiek preventief onderzoek"
-* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
 * location
   * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
     * type = "Location"
@@ -605,10 +601,11 @@ Usage: #example
 * deceasedBoolean = false
 * multipleBirthBoolean = false
 * address
-  * extension[addressType].valueCodeableConcept = $AddressUse#HP "primary home"
+  * extension[addressType]
+    * valueCodeableConcept = $AddressUse#HP "primary home"
   * use = #home
   * type = #both
-  * line = "Achillesstraat 12"
+  * line = "t/o Achillesstraat 12"
     * extension[streetName]
       * valueString = "Achillesstraat"
     * extension[houseNumber]
@@ -746,8 +743,8 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgverzekeraar Horizon<br/>Adres: Dennenlaan 40, 9993 XX Atlasstad</div>"
-* identifier
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgverzekeraar Horizon<br/>Adres: Dennenlaan 40, 9993 XX Arnhem</div>"
+* identifier[uzovi]
   * system = "http://fhir.nl/fhir/NamingSystem/uzovi"
   * value = "9911"
 * name = "Zorgverzekeraar Horizon N.V."
@@ -760,7 +757,7 @@ Usage: #example
       * valueString = "Dennenlaan"
     * extension[houseNumber]
       * valueString = "40"
-  * city = "Atlasstad"
+  * city = "Arnhem"
   * postalCode = "9993 XX"
   * country = "Nederland"
     * extension[countryCode]

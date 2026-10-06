@@ -132,7 +132,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9991 XX |
-| AddressInformation.PlaceOfResidence | Fictiedorp |
+| AddressInformation.PlaceOfResidence | Leiderdorp |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -160,7 +160,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9992 XX |
-| AddressInformation.PlaceOfResidence | Fictiedorp |
+| AddressInformation.PlaceOfResidence | Leiderdorp |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -309,6 +309,7 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Erik van Oranje |
 | PayerPerson.BankInformation.BankName | ING |
@@ -342,6 +343,7 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -359,7 +361,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9994 XX |
-| AddressInformation.PlaceOfResidence | Noordhaven |
+| AddressInformation.PlaceOfResidence | Harlingen |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |

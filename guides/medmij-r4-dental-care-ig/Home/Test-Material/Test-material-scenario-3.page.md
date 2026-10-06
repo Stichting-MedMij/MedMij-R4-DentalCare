@@ -188,7 +188,7 @@
 | IdentificationNumber | |
 | HealthcareProvider | Orthodontiepraktijk Dijkstra |
 | EffectiveDateTime | 01-01-2024 10:43 |
-| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen'); Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
+| CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | goed (code '20572008' from code system 'SNOMED CT') |
 | Performer | B. Dijkstra, Orthodontist |
 | Comment | Goede mondhygiëne; eerdere parodontitis met stabiele restpockets. |
@@ -211,6 +211,7 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Berend van de Stok |
 | PayerPerson.BankInformation.BankName | ABNA |
@@ -244,6 +245,7 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -261,7 +263,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9995 XX |
-| AddressInformation.PlaceOfResidence | Helderstad |
+| AddressInformation.PlaceOfResidence | Den Helder |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |

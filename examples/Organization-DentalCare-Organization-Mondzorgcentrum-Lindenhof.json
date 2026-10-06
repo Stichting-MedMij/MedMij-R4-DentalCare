@@ -65,7 +65,7 @@
         }
       ],
       "use": "work",
-      "city": "Fictiedorp",
+      "city": "Leiderdorp",
       "postalCode": "9991 XX",
       "country": "Nederland",
       "_country": {
@@ -88,7 +88,7 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Mondzorgcentrum Lindenhof<br/>AGB-code: 12999001<br/>Telefoon: +31612345602<br/>E-mail: info@lindenhof-mondzorg.nl<br/>Adres: Meidoornlaan 15, 9991 XX Fictiedorp</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Mondzorgcentrum Lindenhof<br/>AGB-code: 12999001<br/>Telefoon: +31612345602<br/>E-mail: info@lindenhof-mondzorg.nl<br/>Adres: Meidoornlaan 15, 9991 XX Leiderdorp</div>"
   },
   "type": [
     {

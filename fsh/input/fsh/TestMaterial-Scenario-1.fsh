@@ -354,7 +354,7 @@ Usage: #example
       * valueCodeableConcept = $AddressUse#HP "primary home"
     * use = #home
     * type = #both
-    * line = "Kerkstraat bij 12B"
+    * line = "bij Kerkstraat 12B"
       * extension[streetName]
         * valueString = "Kerkstraat"
       * extension[houseNumber]
@@ -505,7 +505,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Mondzorgcentrum Lindenhof<br/>AGB-code: 12999001<br/>Telefoon: +31612345602<br/>E-mail: info@lindenhof-mondzorg.nl<br/>Adres: Meidoornlaan 15, 9991 XX Fictiedorp</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Mondzorgcentrum Lindenhof<br/>AGB-code: 12999001<br/>Telefoon: +31612345602<br/>E-mail: info@lindenhof-mondzorg.nl<br/>Adres: Meidoornlaan 15, 9991 XX Leiderdorp</div>"
 * identifier[agb]
   * system = "http://fhir.nl/fhir/NamingSystem/agb-z"
   * value = "12999001"
@@ -528,7 +528,7 @@ Usage: #example
       * valueString = "Meidoornlaan"
     * extension[houseNumber]
       * valueString = "15"
-  * city = "Fictiedorp"
+  * city = "Leiderdorp"
   * postalCode = "9991 XX"
   * country = "Nederland"
     * extension[countryCode]
@@ -541,7 +541,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: Praktijklocatie Lindenhof<br/>Telefoon: 0881234567<br/>Adres: Heideweg 3, 9992 XX Fictiedorp<br/>Beherende organisatie: Mondzorgcentrum Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: Praktijklocatie Lindenhof<br/>Telefoon: 0881234567<br/>Adres: Heideweg 3, 9992 XX Leiderdorp<br/>Beherende organisatie: Mondzorgcentrum Lindenhof</div>"
 * name = "Praktijklocatie Lindenhof"
 * telecom[telephoneNumbers]
   * system = #phone
@@ -556,7 +556,7 @@ Usage: #example
       * valueString = "Heideweg"
     * extension[houseNumber]
       * valueString = "3"
-  * city = "Fictiedorp"
+  * city = "Leiderdorp"
   * postalCode = "9992 XX"
   * country = "Nederland"
     * extension[countryCode]
@@ -612,8 +612,8 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Noorderlicht<br/>Adres: Kadeweg 22, 9994 XX Noordhaven</div>"
-* identifier
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Zorgkantoor Noorderlicht<br/>Adres: Kadeweg 22, 9994 XX Harlingen</div>"
+* identifier[uzovi]
   * system = "http://fhir.nl/fhir/NamingSystem/uzovi"
   * value = "9901"
 * name = "Zorgkantoor Noorderlicht"
@@ -630,7 +630,7 @@ Usage: #example
       * valueString = "Kadeweg"
     * extension[houseNumber]
       * valueString = "22"
-  * city = "Noordhaven"
+  * city = "Harlingen"
   * postalCode = "9994 XX"
   * country = "Nederland"
     * extension[countryCode]

@@ -132,7 +132,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9991 XX |
-| AddressInformation.PlaceOfResidence | Fictiedorp |
+| AddressInformation.PlaceOfResidence | Leiderdorp |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -160,7 +160,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9992 XX |
-| AddressInformation.PlaceOfResidence | Fictiedorp |
+| AddressInformation.PlaceOfResidence | Leiderdorp |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
@@ -384,7 +384,7 @@
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-02-2022 10:43 |
-| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'); Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | zeer slecht (code '1336219002' from code system 'SNOMED CT') |
 | Performer | S. Vermeer, Mondhygiënist |
 | Comment | Veel tandsteen aanwezig |
@@ -396,7 +396,7 @@
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-04-2022 09:30 |
-| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'); Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | slecht (code '556001' from code system 'SNOMED CT') |
 | Performer | S. Vermeer, Mondhygiënist |
 | Comment | Tandsteen deels gereduceerd na instructie; plaque buccaal nog aanwezig. |
@@ -408,7 +408,7 @@
 | IdentificationNumber | |
 | HealthcareProvider | |
 | EffectiveDateTime | 01-01-2015 |
-| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'); Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | goed (code '20572008' from code system 'SNOMED CT') |
 | Performer | |
 | Comment | |
@@ -457,6 +457,8 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Anita Jansen-van Dijk |
 | PayerPerson.BankInformation.BankName | RABO |
 | PayerPerson.BankInformation.BankCode | RABO21NL |
@@ -489,6 +491,7 @@
 
 | | |
 | --- | --- |
+| IdentificationNumber | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -506,7 +509,7 @@
 | AddressInformation.HouseNumberAddition | |
 | AddressInformation.HouseNumberIndication | |
 | AddressInformation.Postcode | 9993 XX |
-| AddressInformation.PlaceOfResidence | Atlasstad |
+| AddressInformation.PlaceOfResidence | Arnhem |
 | AddressInformation.Municipality | |
 | AddressInformation.Country | Nederland (code 'NL' from code system 'ISO 3166-1 (alpha-2)') |
 | AddressInformation.AdditionalInformation | |
