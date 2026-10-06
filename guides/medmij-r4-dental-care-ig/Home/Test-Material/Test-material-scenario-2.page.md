@@ -333,6 +333,7 @@
 | ContactReason.CommentContactReason | Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening |
 | Origin | |
 | Destination | thuis (code '264362003' from code system 'SNOMED CT') |
+| ServiceProvider | Mondzorgcentrum Lindenhof |
 
 ### Encounter - 11-02-2022
 
@@ -349,6 +350,7 @@
 | ContactReason.CommentContactReason | Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld |
 | Origin | |
 | Destination | |
+| ServiceProvider | Mondzorgcentrum Lindenhof |
 
 ### Encounter
 
@@ -575,7 +577,7 @@
 | Location | Praktijklocatie Lindenhof |
 | Performer | D. de Ruiter, Tandarts |
 
-### Procedure - Eénvlaksvulling
+### Procedure - Eénvlaksvulling composiet
 
 | | |
 | --- | --- |
@@ -584,7 +586,7 @@
 | EffectivePeriodStart | 11-04-2022 09:00 |
 | EffectivePeriodEnd | 11-04-2022 09:45 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
-| ProcedureType | Eénvlaksvulling (code 'V11' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureType | Eénvlaksvulling composiet (code 'V91' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |

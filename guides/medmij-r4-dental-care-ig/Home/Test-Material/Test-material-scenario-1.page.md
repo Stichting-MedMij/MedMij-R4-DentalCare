@@ -209,7 +209,7 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 20-05-2025 10:15 |
+| EffectiveDateTime | 2025-06-03 09:05 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 1 (code '413495001' from code system 'SNOMED CT')|
 | Performer | A.B.D.O. de Koning, Tandarts |
@@ -221,7 +221,7 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 20-05-2025 10:15 |
+| EffectiveDateTime | 20-05-2025 10:30 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | CariesRiskValue | verhoogd (code '35105006' from code system 'SNOMED CT') |
 | Performer | A.B.D.O. de Koning, Tandarts |
@@ -256,6 +256,7 @@
 | ContactReason.CommentContactReason | Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025 |
 | Origin | |
 | Destination | |
+| ServiceProvider | Mondzorgcentrum Lindenhof |
 
 ### Encounter - 20-05-2025
 
@@ -272,6 +273,7 @@
 | ContactReason.CommentContactReason | Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne. |
 | Origin | thuis (code '264362003' from code system 'SNOMED CT') |
 | Destination | |
+| ServiceProvider | Mondzorgcentrum Lindenhof |
 
 ## Oral Hygiene data
 
@@ -279,7 +281,7 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 20-05-2025 10:15 |
+| EffectiveDateTime | 20-05-2025 10:45 |
 | CareType | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | OralHygieneValue | slecht (code '556001' from code system 'SNOMED CT') |
 | Performer | S. Vermeer, Mondhygiënist |
@@ -291,7 +293,7 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 20-05-2025 10:15 |
+| EffectiveDateTime | 20-05-2025 10:10 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ParafunctionalActivityValue | Overmatig knarsen bij stress |
 | Performer | A.B.D.O. de Koning, Tandarts |
@@ -371,7 +373,7 @@
 | --- | --- |
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 20-05-2025 10:15 |
+| EffectiveDateTime | 20-05-2025 10:05 |
 | CareType | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets 0-3 millimeter = in orde (code 'ppsscore1' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | S. Vermeer, Mondhygiënist |
@@ -386,7 +388,7 @@
 | EffectivePeriodStart | 03-06-2025 09:00 |
 | EffectivePeriodEnd | 03-06-2025 09:45 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
-| ProcedureType | Eénvlaksvulling (code 'V11' from code system 'Vektis Prestatiecodelijst Mondzorg') |
+| ProcedureType | Eénvlaksvulling composiet (code 'V91' from code system 'Vektis Prestatiecodelijst Mondzorg') |
 | ProcedureMethod | inbrengen (code '257867005' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Location | tand en/of kies (code '38199008' from code system 'SNOMED CT') |
 | ProcedureAnatomicalLocation.Laterality | rechts (code '24028007' from code system 'SNOMED CT') |
@@ -417,6 +419,8 @@
 | DesiredHealthCondition.Comment | |
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
+| StartDate | 2025-05-20 |
+| expressedBy | Mondzorgcentrum Lindenhof |
 
 ### Treatment Objective - Cariës rechterbovenkies restaureren
 
@@ -430,3 +434,5 @@
 | DesiredHealthCondition.Comment | |
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
+| StartDate | 2025-05-20 |
+| expressedBy | Mondzorgcentrum Lindenhof |

@@ -7,12 +7,12 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:15<br/>Score: ASA-score 1<br/>Opmerking: Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën.<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-06-03 09:05<br/>Score: ASA-score 1<br/>Opmerking: Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën.<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
-* effectiveDateTime = "2025-05-20T10:15:00+01:00"
+* effectiveDateTime = "2025-06-03T09:05:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
   * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#413495001 "ASA-score 1"
@@ -26,12 +26,12 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:15<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:30<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
-* effectiveDateTime = "2025-05-20T10:15:00+01:00"
+* effectiveDateTime = "2025-05-20T10:30:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
   * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#35105006 "verhoogd"
@@ -66,12 +66,12 @@ Usage: #example
   * tag = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:15<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:45<br/>Mondhygiëne: slecht<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
 * status = #final
 * code = $SCT#364126007 "status van mondhygiëne"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
-* effectiveDateTime = "2025-05-20T10:15:00+01:00"
+* effectiveDateTime = "2025-05-20T10:45:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Vermeer) "S. Vermeer, Mondhygiënist"
   * type = "PractitionerRole"
 * valueCodeableConcept = $SCT#556001 "slecht"
@@ -83,12 +83,12 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:15<br/>Activiteit: Overmatig knarsen bij stress<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:10<br/>Activiteit: Overmatig knarsen bij stress<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
 * status = #final
 * code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
-* effectiveDateTime = "2025-05-20T10:15:00+01:00"
+* effectiveDateTime = "2025-05-20T10:10:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-De-Koning) "A.B.D.O. de Koning, Tandarts"
   * type = "PractitionerRole"
 * valueString = "Overmatig knarsen bij stress"
@@ -100,12 +100,12 @@ Usage: #example
   * tag = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:15<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen parodontale vervolgbehandeling; wel gingivitis bij slechte mondhygiëne<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:05<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen parodontale vervolgbehandeling; wel gingivitis bij slechte mondhygiëne<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
 * status = #final
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
-* effectiveDateTime = "2025-05-20T10:15:00+01:00"
+* effectiveDateTime = "2025-05-20T10:05:00+01:00"
 * performer = Reference(DentalCare-PractitionerRole-Vermeer) "S. Vermeer, Mondhygiënist"
   * type = "PractitionerRole"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore1 "Pockets 0-3 millimeter = in orde"
@@ -120,13 +120,16 @@ Usage: #example
   * tag[1] = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Gingivitis/tandvleesontsteking behandelen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Gingivitis/tandvleesontsteking behandelen<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Startdatum: 2025-05-20<br/>Vastgesteld door: S. Vermeer, Mondhygiënist</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#high-priority "High Priority"
 * description
   * text = "Gingivitis/tandvleesontsteking behandelen"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
+* startDate = "2025-05-20"
+* expressedBy = Reference(DentalCare-PractitionerRole-Vermeer) "S. Vermeer, Mondhygiënist"
+  * type = "PractitionerRole"
 
 Instance: DentalCare-TreatmentObjective-2-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
@@ -135,13 +138,16 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Cariës rechterbovenkies restaureren<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Doel: Cariës rechterbovenkies restaureren<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Startdatum: 2025-05-20<br/>Vastgesteld door: S. Vermeer, Mondhygiënist</div>"
 * lifecycleStatus = #active
 * priority = $GoalPriority#high-priority "High Priority"
 * description
   * text = "Cariës rechterbovenkies restaureren"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
+* startDate = "2025-05-20"
+* expressedBy = Reference(DentalCare-PractitionerRole-Vermeer) "S. Vermeer, Mondhygiënist"
+  * type = "PractitionerRole"
 
 Instance: DentalCare-Procedure-Van-Oranje
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-Procedure
@@ -150,12 +156,12 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eénvlaksvulling<br/>Patiënt: Erik van Oranje<br/>Datum: 2025-06-03<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Erik van Oranje<br/>Datum: 2025-06-03<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
 * extension[procedureMethod]
   * valueCodeableConcept = $SCT#257867005 "inbrengen"
 * status = #completed
 * category = $SCT#225362009 "tandheelkundige zorg"
-* code = $ProcedureTypeVektisDentalCareCodeSystemOID#V11 "Eénvlaksvulling"
+* code = $ProcedureTypeVektisDentalCareCodeSystemOID#V91 "Eénvlaksvulling composiet"
 * subject = Reference(DentalCare-Patient-Van-Oranje) "Erik van Oranje"
   * type = "Patient"
 * performedPeriod
@@ -224,6 +230,8 @@ Usage: #example
 * location
   * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
     * type = "Location"
+* serviceProvider = Reference(DentalCare-Organization-Mondzorgcentrum-Lindenhof) "Mondzorgcentrum Lindenhof"
+  * type = "Organization"
 
 Instance: DentalCare-Encounter-2-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
@@ -253,6 +261,8 @@ Usage: #example
 * location
   * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
     * type = "Location"
+* serviceProvider = Reference(DentalCare-Organization-Mondzorgcentrum-Lindenhof) "Mondzorgcentrum Lindenhof"
+  * type = "Organization"
     
 Instance: DentalCare-Patient-Van-Oranje
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient
