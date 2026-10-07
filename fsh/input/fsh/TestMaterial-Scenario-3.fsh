@@ -8,6 +8,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Score: ASA-score 3<br/>Opmerking: Allergisch voor gluten, heeft nierziekte en bloedarmoede<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "0892c80d-df37-438a-ae24-20243feec745"
 * status = #final
 * code = $SCT#413347006 "bevinding betreffende lichamelijke toestand volgens classificatie van American Society of Anesthesiologists"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -27,6 +30,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "7d351e57-3ee3-4a7c-8e93-2c3789d0314a"
 * status = #final
 * code = $SCT#74024006 "vatbaarheid voor cariës"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -46,6 +52,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01T09:00:00+01:00<br/>Einddatum: 2025-08-01T09:30:00+01:00<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "bb9c5cf0-25e5-47e4-a9a9-350ec964fc6d"
 * status = #planned
 * class = $ActCode#AMB "Poliklinisch"
 * type
@@ -71,6 +80,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Mondhygiëne: Goed<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "f8d64a19-1350-4c20-9567-9395b8ba0978"
 * status = #final
 * code = $SCT#364126007 "status van mondhygiëne"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -90,6 +102,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Activiteit: Tanden knarsen tijdens slaap<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "87ecdf20-f2b0-4024-aaf7-67548be399a4"
 * status = #final
 * code = $SCT#110353005 "parafunctionele gewoonte"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -107,6 +122,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: Verzekeraar Helderzicht<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2024-01-01<br/>Einddatum: 2026-01-01<br/>Status: Actief<br/>Betaler: Verzekeraar Helderzicht</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "27c25ab9-9ec7-4f2e-b125-adad8694ca1f"
 * status = #active
 * type = $Verzekeringssoort#T "Tandverzekering (los)"
 * subscriberId = "12345679"
@@ -126,6 +144,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: Berend van de Stok</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "d2987f88-2494-4bf5-aca4-7838c0d84d54"
 * extension[bankInformation]
   * extension[bankName]
     * valueString = "ABNA"
@@ -148,6 +169,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Organisatie: Verzekeraar Helderzicht<br/>Adres: Parksingel 8, 9995 XX Den Helder</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "3920b8b8-8cb8-4d08-a034-f3516073287d"
 * name = "Verzekeraar Helderzicht"
 * address
   * extension[addressType]
@@ -172,6 +196,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Score: Pockets groter of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Verwezen naar paro; brace pas na stabilisatie<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "04f2e128-5ce8-491f-b518-b6afe4c69447"
 * status = #final
 * code = $SCT#540501000146103 "score op periodieke parodontale screening"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -191,6 +218,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eerste consult<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Orthodontist<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "1b48b2b6-2a04-41b6-a86b-06652937a253"
 * status = #completed
 * category = $SCT#225362009 "tandheelkundige zorg"
 * code = $ProcedureTypeVektisDentalCareCodeSystemOID#F121A "Eerste consult"
@@ -211,6 +241,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Trekken snijtand linksboven<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Malocclusie met scheefstand van de snijtand linksboven</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "fa406aee-3588-4c45-b282-c4a3fb5464de"
 * lifecycleStatus = #active
 * priority = $GoalPriority#high-priority "High Priority"
 * description
@@ -228,6 +261,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Probleem: Malocclusie met scheefstand van de snijtand linksboven<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2023-11-15<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: B. Dijkstra, Orthodontist</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "bc1d99b2-ec22-4ba7-a111-49741b584f03"
 * clinicalStatus = $ConditionClinicalStatusCodes#active "Active"
 * verificationStatus
   * coding = $ConditionVerificationStatus#confirmed "Confirmed"
@@ -254,6 +290,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Wortelpuntoperatie (apexresectie)<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Laag</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "594f942b-f84f-43db-85e8-f473b7187428"
 * lifecycleStatus = #active
 * priority = $GoalPriority#low-priority "Low Priority"
 * description
@@ -269,6 +308,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Malocclusie met scheefstand van de snijtand linksboven<br/>Toelichting: Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn.</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "9fe343ae-b170-4a5f-9491-9fb9eaebca23"
 * lifecycleStatus = #active
 * priority = $GoalPriority#high-priority "High Priority"
 * description
@@ -292,6 +334,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandboog<br/>Indicatie: Malocclusie met scheefstand van de snijtand linksboven<br/>Zorgverlener: B. Dijkstra, Orthodontist<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "5912d4cf-3d7e-4d8c-8b01-b787c42c98db"
 * extension[healthProfessional]
   * valueReference = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Orthodontist"
     * type = "PractitionerRole"
@@ -328,6 +373,9 @@ Usage: #example
 * identifier[gs1ProductID]
   * system = $GS1GTIN
   * value = "08712345678906"
+* identifier[+]
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "741f9bd5-b2db-4ece-8b39-f6184cb5961f"
 * udiCarrier[gs1UdiCarrier]
   * deviceIdentifier = "08712345678906"
   * issuer = $GS1GTIN
@@ -355,6 +403,9 @@ Usage: #example
   * value
     * extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason]
       * valueCode = #masked // gemaskeerd BSN
+* identifier[+]
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "5525abb8-d236-4f50-83bc-15035265e055"
 * name[nameInformation]
   * use = #official
   * text = "Berend van de Stok"
@@ -422,6 +473,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Specialisme: Tandartsspecialisten dentomaxillaire orthopaedie<br/>Zorgverlener: Dijkstra<br/>Organisatie: Orthodontiepraktijk Dijkstra</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "39f7b813-6618-4a2a-aa74-adfc2af9ac69"
 * practitioner = Reference(DentalCare-Practitioner-Dijkstra) "B. Dijkstra"
   * type = "Practitioner"
 * organization = Reference(DentalCare-Organization-Orthodontiepraktijk-Dijkstra) "Orthodontiepraktijk Dijkstra"
@@ -439,6 +493,9 @@ Usage: #example
 * identifier[big]
   * system = "http://fhir.nl/fhir/NamingSystem/big"
   * value = "12000003"
+* identifier[+]
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "b1974443-5188-4005-9816-d944fee901df"
 * name[nameInformation]
   * use = #official
   * text = "B. Dijkstra"
@@ -482,6 +539,9 @@ Usage: #example
 * identifier[agb]
   * system = "http://fhir.nl/fhir/NamingSystem/agb-z"
   * value = "13004567"
+* identifier[+]
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "80900c8e-70d8-4a58-b4ae-89dd25ae8467"
 * type = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * name = "Orthodontiepraktijk Dijkstra"
 * telecom[0]
@@ -515,6 +575,9 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Locatie: Orthodontiepraktijk Dijkstra<br/>Telefoon: 0164123456<br/>Adres: Stationsstraat 18, 4611 XX Bergen op Zoom<br/>Beherende organisatie: Orthodontiepraktijk Dijkstra</div>"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "7daa381e-1572-4ca9-b01b-478075bacc42"
 * name = "Orthodontiepraktijk Dijkstra"
 * telecom[telephoneNumbers]
   * system = #phone
