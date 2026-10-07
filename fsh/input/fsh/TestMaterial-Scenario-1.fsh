@@ -463,7 +463,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Koning, de<br/>Organisatie: Mondzorgcentrum Lindenhof<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Specialisme: Tandartsen, algemeen practicus<br/>Zorgverlener: Koning, de<br/>Organisatie: Mondzorgcentrum Lindenhof</div>"
 * practitioner = Reference(DentalCare-Practitioner-De-Koning) "A.B.D.O. de Koning"
   * type = "Practitioner"
 * organization = Reference(DentalCare-Organization-Mondzorgcentrum-Lindenhof) "Mondzorgcentrum Lindenhof"
@@ -477,7 +477,7 @@ Usage: #example
   * tag = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Mondhygiënisten<br/>Zorgverlener: Vermeer<br/>Organisatie: Mondzorgcentrum Lindenhof<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Specialisme: Mondhygiënisten<br/>Zorgverlener: Vermeer<br/>Organisatie: Mondzorgcentrum Lindenhof</div>"
 * practitioner = Reference(DentalCare-Practitioner-Vermeer) "S. Vermeer"
   * type = "Practitioner"
 * organization = Reference(DentalCare-Organization-Mondzorgcentrum-Lindenhof) "Mondzorgcentrum Lindenhof"
