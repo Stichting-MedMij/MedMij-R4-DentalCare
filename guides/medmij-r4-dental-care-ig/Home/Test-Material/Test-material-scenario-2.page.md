@@ -350,10 +350,10 @@
 | Location | Praktijklocatie Lindenhof |
 | StartDateTime | 11-02-2022 10:00 |
 | EndDateTime | 11-02-2022 11:00 |
-| ContactReason.Problem | Cariës rechterkies |
-| ContactReason.Procedure | |
+| ContactReason.Problem | |
+| ContactReason.Procedure | Maken en beoordelen kleine röntgenfoto |
 | ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld |
+| ContactReason.CommentContactReason | Periodiek preventief onderzoek; kleine röntgenfoto gemaakt en beoordeeld, daarbij cariës rechterkies vastgesteld |
 | Origin | |
 | Destination | |
 | ServiceProvider | Mondzorgcentrum Lindenhof |

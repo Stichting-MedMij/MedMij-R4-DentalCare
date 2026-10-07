@@ -217,10 +217,10 @@ Usage: #example
 * period
   * start = "2022-02-11T10:00:00+01:00"
   * end = "2022-02-11T11:00:00+01:00"
-* reasonReference[problem] = Reference(DentalCare-Problem-Jansen) "Cariës rechterkies"
-  * type = "Condition"
+* reasonReference[procedure] = Reference(DentalCare-Procedure-1-Jansen) "Maken en beoordelen kleine röntgenfoto"
+  * type = "Procedure"
   * extension[commentContactReason]
-    * valueString = "Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld"
+    * valueString = "Periodiek preventief onderzoek; kleine röntgenfoto gemaakt en beoordeeld, daarbij cariës rechterkies vastgesteld"
 * location
   * location = Reference(DentalCare-Location-Praktijklocatie-Lindenhof) "Praktijklocatie Lindenhof"
     * type = "Location"
