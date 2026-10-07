@@ -596,7 +596,7 @@ Instance: DentalCare-TreatmentObjective-2-Jansen
 InstanceOf: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 Usage: #example
 * meta
-  * tag = $VektisAGB#1200 "Tandartsen"
+  * tag = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Behandeldoel: Verbeteren mondhygiëne en tandsteenreductie<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Laag</div>"

@@ -304,7 +304,7 @@ Usage: #example
 * status = #active
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
-* derivedFrom[procedure-event] = Reference(DentalCare-Procedure-Van-De-Stok) "Eerste consult"
+* derivedFrom = Reference(DentalCare-Procedure-Van-De-Stok) "Eerste consult"
   * type = "Procedure"
 * timingPeriod
   * start = "2024-02-01"

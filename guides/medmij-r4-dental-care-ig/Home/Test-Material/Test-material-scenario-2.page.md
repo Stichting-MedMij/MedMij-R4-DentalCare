@@ -679,7 +679,7 @@
 | IdentificationNumber | |
 | HealthcareProvider | |
 | EffectiveDateTime | |
-| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
+| CareType | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Verbeteren mondhygiëne en tandsteenreductie |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
@@ -696,7 +696,7 @@
 | IdentificationNumber | |
 | HealthcareProvider | |
 | EffectiveDateTime | |
-| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | |
 | DesiredHealthCondition.StatusName | kan kauwen (code '288919008' from code system 'SNOMED CT') |
 | DesiredHealthCondition.StatusValue | geen probleem met kauwen (code '162019007' from code system 'SNOMED CT') |

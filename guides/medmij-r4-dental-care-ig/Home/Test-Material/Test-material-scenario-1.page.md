@@ -437,7 +437,7 @@
 | IdentificationNumber | |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 20-05-2025 |
-| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
+| CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Cariës rechterbovenkies restaureren |
 | DesiredHealthCondition.StatusName | |
 | DesiredHealthCondition.StatusValue | |
