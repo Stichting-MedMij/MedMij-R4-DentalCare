@@ -24,7 +24,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:15<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:30<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
   },
   "status": "final",
   "subject": {
@@ -32,7 +32,7 @@
     "display": "Erik van Oranje",
     "type": "Patient"
   },
-  "effectiveDateTime": "2025-05-20T10:15:00+01:00",
+  "effectiveDateTime": "2025-05-20T10:30:00+01:00",
   "performer": [
     {
       "reference": "PractitionerRole/DentalCare-PractitionerRole-De-Koning",

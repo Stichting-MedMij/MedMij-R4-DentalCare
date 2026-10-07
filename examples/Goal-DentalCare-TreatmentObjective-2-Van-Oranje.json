@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Doel: Cariës rechterbovenkies restaureren<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Doel: Cariës rechterbovenkies restaureren<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Startdatum: 2025-05-20<br/>Vastgesteld door: S. Vermeer, Mondhygiënist</div>"
   },
   "lifecycleStatus": "active",
   "priority": {
@@ -34,5 +34,11 @@
     "reference": "Patient/DentalCare-Patient-Van-Oranje",
     "display": "Erik van Oranje",
     "type": "Patient"
+  },
+  "startDate": "2025-05-20",
+  "expressedBy": {
+    "reference": "PractitionerRole/DentalCare-PractitionerRole-Vermeer",
+    "display": "S. Vermeer, Mondhygiënist",
+    "type": "PractitionerRole"
   }
 }

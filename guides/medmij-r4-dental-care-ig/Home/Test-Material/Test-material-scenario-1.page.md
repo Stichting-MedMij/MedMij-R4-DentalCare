@@ -246,7 +246,7 @@
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
@@ -259,14 +259,13 @@
 | ContactReason.CommentContactReason | Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025 |
 | Origin | |
 | Destination | |
-| ServiceProvider | Mondzorgcentrum Lindenhof |
 
 ### Encounter - 20-05-2025
 
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
 | ContactWith | A.B.D.O. de Koning, Tandarts |
@@ -279,7 +278,6 @@
 | ContactReason.CommentContactReason | Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne. |
 | Origin | thuis (code '264362003' from code system 'SNOMED CT') |
 | Destination | |
-| ServiceProvider | Mondzorgcentrum Lindenhof |
 
 ## Oral Hygiene data
 
@@ -420,8 +418,8 @@
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | |
-| EffectiveDateTime | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 20-05-2025 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Gingivitis/tandvleesontsteking behandelen |
 | DesiredHealthCondition.StatusName | |
@@ -431,16 +429,14 @@
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
 | Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
-| StartDate | 2025-05-20 |
-| expressedBy | Mondzorgcentrum Lindenhof |
 
 ### Treatment Objective - Cariës rechterbovenkies restaureren
 
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | |
-| EffectiveDateTime | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
+| EffectiveDateTime | 20-05-2025 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
 | DesiredHealthcareResult | Cariës rechterbovenkies restaureren |
 | DesiredHealthCondition.StatusName | |
@@ -450,5 +446,3 @@
 | DesiredHealthCondition.MedicalDevice | |
 | Problem | |
 | Priority | Hoge prioriteit (code 'high-priority' from code system 'GoalPriority') |
-| StartDate | 2025-05-20 |
-| expressedBy | Mondzorgcentrum Lindenhof |

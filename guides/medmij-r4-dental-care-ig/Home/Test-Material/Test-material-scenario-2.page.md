@@ -323,7 +323,7 @@
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Second opinion |
 | ContactWith | D. de Ruiter, Tandarts |
@@ -336,14 +336,13 @@
 | ContactReason.CommentContactReason | Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening |
 | Origin | |
 | Destination | thuis (code '264362003' from code system 'SNOMED CT') |
-| ServiceProvider | Mondzorgcentrum Lindenhof |
 
 ### Encounter - 11-02-2022
 
 | | |
 | --- | --- |
 | IdentificationNumber | |
-| HealthcareProvider | |
+| HealthcareProvider | Mondzorgcentrum Lindenhof |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Periodiek preventief onderzoek |
 | ContactWith | D. de Ruiter, Tandarts |
@@ -356,7 +355,6 @@
 | ContactReason.CommentContactReason | Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld |
 | Origin | |
 | Destination | |
-| ServiceProvider | Mondzorgcentrum Lindenhof |
 
 ### Encounter - no date
 

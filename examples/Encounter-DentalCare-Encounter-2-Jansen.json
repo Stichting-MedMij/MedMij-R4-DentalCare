@@ -67,5 +67,10 @@
         "type": "Location"
       }
     }
-  ]
+  ],
+  "serviceProvider": {
+    "reference": "Organization/DentalCare-Organization-Mondzorgcentrum-Lindenhof",
+    "display": "Mondzorgcentrum Lindenhof",
+    "type": "Organization"
+  }
 }
