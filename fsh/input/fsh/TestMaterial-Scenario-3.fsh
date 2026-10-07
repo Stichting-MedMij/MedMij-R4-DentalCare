@@ -421,7 +421,7 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsspecialisten dentomaxillaire orthopaedie<br/>Zorgverlener: Dijkstra<br/>Organisatie: Orthodontiepraktijk Dijkstra<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Specialisme: Tandartsspecialisten dentomaxillaire orthopaedie<br/>Zorgverlener: Dijkstra<br/>Organisatie: Orthodontiepraktijk Dijkstra</div>"
 * practitioner = Reference(DentalCare-Practitioner-Dijkstra) "B. Dijkstra"
   * type = "Practitioner"
 * organization = Reference(DentalCare-Organization-Orthodontiepraktijk-Dijkstra) "Orthodontiepraktijk Dijkstra"

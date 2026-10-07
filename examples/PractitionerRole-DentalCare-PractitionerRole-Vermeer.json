@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlenerrol: Mondhygiënisten<br/>Zorgverlener: Vermeer<br/>Organisatie: Mondzorgcentrum Lindenhof<br/>Locatie: Praktijklocatie Lindenhof</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Specialisme: Mondhygiënisten<br/>Zorgverlener: Vermeer<br/>Organisatie: Mondzorgcentrum Lindenhof</div>"
   },
   "practitioner": {
     "reference": "Practitioner/DentalCare-Practitioner-Vermeer",

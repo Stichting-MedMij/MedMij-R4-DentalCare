@@ -722,7 +722,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Zorgverlenerrol: Tandartsen, algemeen practicus<br/>Zorgverlener: Ruiter, de<br/>Organisatie: Mondzorgcentrum Lindenhof<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Specialisme: Tandartsen, algemeen practicus<br/>Zorgverlener: Ruiter, de<br/>Organisatie: Mondzorgcentrum Lindenhof</div>"
 * practitioner = Reference(DentalCare-Practitioner-De-Ruiter) "D. de Ruiter"
   * type = "Practitioner"
 * organization = Reference(DentalCare-Organization-Mondzorgcentrum-Lindenhof) "Mondzorgcentrum Lindenhof"
