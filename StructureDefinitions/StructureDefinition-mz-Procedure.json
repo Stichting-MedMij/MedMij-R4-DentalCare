@@ -37,8 +37,8 @@
       "name": "Dataset MedMij R4 Core 1.3.0 20261005"
     },
     {
-      "identity": "mz-dataset-100-rc2-2026xxyy",
-      "name": "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
+      "identity": "mz-dataset-100-rc2-20261008",
+      "name": "Dataset Mondzorg MedMij 1.0.0-rc.2 20261008"
     }
   ],
   "kind": "resource",
@@ -62,7 +62,7 @@
             "comment": "Procedure"
           },
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-26",
             "comment": "Procedure"
           }
@@ -139,7 +139,7 @@
         "path": "Procedure.extension.value[x]",
         "mapping": [
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-30",
             "comment": "ProcedureMethod"
           }
@@ -217,7 +217,7 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-29",
             "comment": "ProcedureType"
           }
@@ -399,7 +399,7 @@
             "comment": "HealthcareProvider (implicit, actual mapping is on PractitionerRole.organization)"
           },
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-47",
             "comment": "Performer"
           }
@@ -429,7 +429,7 @@
             "comment": "Location"
           },
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-46",
             "comment": "Location"
           }
@@ -463,7 +463,7 @@
             "comment": "Indication"
           },
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-34",
             "comment": "Indication"
           }
@@ -497,12 +497,12 @@
             "comment": "ProcedureAnatomicalLocation"
           },
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-31",
             "comment": "ProcedureAnatomicalLocation"
           },
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-32",
             "comment": "Location"
           }
@@ -518,7 +518,7 @@
         "path": "Procedure.bodySite.extension.value[x]",
         "mapping": [
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-33",
             "comment": "Laterality"
           }

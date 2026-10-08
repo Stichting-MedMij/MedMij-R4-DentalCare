@@ -32,8 +32,8 @@
       "name": "Dataset MedMij R4 Core 1.3.0 20261005"
     },
     {
-      "identity": "mz-dataset-100-rc2-2026xxyy",
-      "name": "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
+      "identity": "mz-dataset-100-rc2-20261008",
+      "name": "Dataset Mondzorg MedMij 1.0.0-rc.2 20261008"
     }
   ],
   "kind": "resource",
@@ -56,7 +56,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-1",
             "comment": "CariesRisk"
           }
@@ -224,7 +224,7 @@
             "comment": "HealthcareProvider (implicit, actual mapping is on PractitionerRole.organization)"
           },
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-4",
             "comment": "Performer"
           }
@@ -267,7 +267,7 @@
         },
         "mapping": [
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-3",
             "comment": "CariesRiskValue"
           }
@@ -283,7 +283,7 @@
         ],
         "mapping": [
           {
-            "identity": "mz-dataset-100-rc2-2026xxyy",
+            "identity": "mz-dataset-100-rc2-20261008",
             "map": "mz-dataelement-5",
             "comment": "Comment"
           }

@@ -131,8 +131,8 @@ Title: "Dataset MedMij R4 Core 1.3.0 20261005"
 
 Mapping: MzProcedureMedMij-100-rc2
 Source: MzProcedure
-Id: mz-dataset-100-rc2-2026xxyy
-Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
+Id: mz-dataset-100-rc2-20261008
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 20261008"
 * -> "mz-dataelement-26" "Procedure"
 * extension[procedureMethod].value[x] -> "mz-dataelement-30" "ProcedureMethod"
 * code -> "mz-dataelement-29" "ProcedureType"

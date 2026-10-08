@@ -93,8 +93,8 @@ Title: "zib Procedure-v5.2(2020EN)"
 
 Mapping: MzLmProcedureMedMij-100-rc2
 Source: MzLmProcedure
-Id: mz-dataset-100-rc2-2026xxyy
-Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 2026xxyy"
+Id: mz-dataset-100-rc2-20261008
+Title: "Dataset Mondzorg MedMij 1.0.0-rc.2 20261008"
 * . -> "mz-dataelement-26" "Procedure"
 * ProcedureType -> "mz-dataelement-29" "ProcedureType"
 * ProcedureMethod -> "mz-dataelement-30" "ProcedureMethod"
