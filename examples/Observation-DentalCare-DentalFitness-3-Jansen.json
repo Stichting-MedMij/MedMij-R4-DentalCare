@@ -24,8 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2023-07-22 09:20<br/>Dental Fitness: Vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Dental Fitness: Vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "bab1ae05-c5e2-4e50-9fc3-973f07118a60"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",

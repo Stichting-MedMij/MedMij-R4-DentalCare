@@ -24,8 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-06-03 09:05<br/>Score: ASA-score 1<br/>Opmerking: Geen relevante gezondheidsveranderingen sinds vorige keuring; patiënt is inzetbaar, geen medicatie of allergieën.<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-06-03 09:05<br/>Score: ASA-score 1<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "bdabb6dc-a6be-4124-85c5-49bd385a9868"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",

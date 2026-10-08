@@ -26,6 +26,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:35<br/>Activiteit: Kaken klemmen overdag<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "a2b16d77-1c8f-4fba-a8cb-226ef664e756"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",

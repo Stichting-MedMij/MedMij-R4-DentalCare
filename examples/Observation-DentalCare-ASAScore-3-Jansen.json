@@ -24,8 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2023-07-22 09:10<br/>Score: ASA-score 1<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Opmerking: Gestopt met roken; hooikoorts stabiel onder Cetirizine; geen andere comorbiditeit</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Score: ASA-score 1</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "ce68e627-ef88-411d-9401-d7f6fd751c34"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",

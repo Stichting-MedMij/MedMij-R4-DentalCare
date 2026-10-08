@@ -17,6 +17,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Malocclusie met scheefstand van de snijtand linksboven<br/>Toelichting: Na extractie snijtand linksboven en orthodontische behandeling met vaste beugel moet het kauwen weer klachtenvrij zijn.</div>"
   },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "9fe343ae-b170-4a5f-9491-9fb9eaebca23"
+    }
+  ],
   "lifecycleStatus": "active",
   "priority": {
     "coding": [

@@ -31,6 +31,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Mondhygiëne: zeer slecht<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "83c98e03-c33f-4b68-881b-e4e2fdf437d1"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",

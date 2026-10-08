@@ -138,7 +138,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 0892c80d-df37-438a-ae24-20243feec745 (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Orthodontiepraktijk Dijkstra |
 | EffectiveDateTime | 01-01-2024 10:43 |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
@@ -150,7 +150,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 7d351e57-3ee3-4a7c-8e93-2c3789d0314a (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Orthodontiepraktijk Dijkstra |
 | EffectiveDateTime | 01-01-2024 10:43 |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
@@ -162,7 +162,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | bb9c5cf0-25e5-47e4-a9a9-350ec964fc6d (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Poliklinisch (code 'AMB' from code system 'ActCode'): Controle / debonding |
@@ -181,7 +181,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | f8d64a19-1350-4c20-9567-9395b8ba0978 (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Orthodontiepraktijk Dijkstra |
 | EffectiveDateTime | 01-01-2024 10:43 |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
@@ -193,7 +193,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 87ecdf20-f2b0-4024-aaf7-67548be399a4 (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Orthodontiepraktijk Dijkstra |
 | EffectiveDateTime | 01-01-2024 10:43 |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
@@ -207,7 +207,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | d2987f88-2494-4bf5-aca4-7838c0d84d54 (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Berend van de Stok |
 | PayerPerson.BankInformation.BankName | ABNA |
@@ -241,7 +241,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 27c25ab9-9ec7-4f2e-b125-adad8694ca1f (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -275,7 +275,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 04f2e128-5ce8-491f-b518-b6afe4c69447 (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Orthodontiepraktijk Dijkstra |
 | EffectiveDateTime | 01-01-2024 10:43 |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
@@ -287,7 +287,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 1b48b2b6-2a04-41b6-a86b-06652937a253 (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Orthodontiepraktijk Dijkstra |
 | StartDateTime | 01-01-2024 |
 | EndDateTime | |
@@ -315,7 +315,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | fa406aee-3588-4c45-b282-c4a3fb5464de (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
@@ -347,7 +347,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 594f942b-f84f-43db-85e8-f473b7187428 (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
@@ -364,7 +364,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 9fe343ae-b170-4a5f-9491-9fb9eaebca23 (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |

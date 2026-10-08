@@ -17,6 +17,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Verbeteren mondhygiëne en tandsteenreductie<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Laag</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "7ea2de10-5d3f-4d7a-a4e5-1eb786ff212c"
+    }
+  ],
   "lifecycleStatus": "active",
   "priority": {
     "coding": [

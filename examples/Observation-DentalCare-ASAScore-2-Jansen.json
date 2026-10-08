@@ -24,8 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:15<br/>Score: ASA-score 3<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Opmerking: Acute luchtwegklachten bij hooikoorts; rookt nog; Cetirizine onvoldoende werkzaam</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:15<br/>Score: ASA-score 3<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "d290cecc-5e93-4e71-939f-7cf60f52ab1b"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",

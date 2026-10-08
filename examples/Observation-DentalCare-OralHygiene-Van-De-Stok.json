@@ -29,8 +29,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Mondhygiëne: Goed<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Mondhygiëne: goed<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
   },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "f8d64a19-1350-4c20-9567-9395b8ba0978"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",

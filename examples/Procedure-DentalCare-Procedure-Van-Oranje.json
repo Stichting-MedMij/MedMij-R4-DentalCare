@@ -63,8 +63,14 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Erik van Oranje<br/>Datum: 2025-06-03<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Erik van Oranje<br/>Startdatum: 2025-06-03 09:00<br/>Einddatum: 2025-06-03 09:45<br/>Status: Voltooid<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "1c2c7df9-8a1f-4ef9-9bfd-3640f8e39ec1"
+    }
+  ],
   "status": "completed",
   "code": {
     "coding": [

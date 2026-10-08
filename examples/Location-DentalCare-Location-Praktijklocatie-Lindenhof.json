@@ -70,6 +70,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Locatie: Praktijklocatie Lindenhof<br/>Telefoon: 0881234567<br/>Adres: Heideweg 3, 9992 XX Leiderdorp<br/>Beherende organisatie: Mondzorgcentrum Lindenhof</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "775c8df3-dab4-4059-a7b4-ae4ad9ae99e6"
+    }
+  ],
   "name": "Praktijklocatie Lindenhof",
   "telecom": [
     {

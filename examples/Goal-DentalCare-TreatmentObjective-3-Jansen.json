@@ -17,6 +17,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Probleem: Cariës rechterkies<br/>Toelichting: Na restauratie van de cariës in de rechterkies moet kauwen weer klachtenvrij zijn.</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "fa269297-4e4b-44b7-bff2-a83530298981"
+    }
+  ],
   "lifecycleStatus": "active",
   "description": {
     "text": "Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen"

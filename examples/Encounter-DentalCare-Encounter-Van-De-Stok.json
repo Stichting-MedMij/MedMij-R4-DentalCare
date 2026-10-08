@@ -15,8 +15,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01T09:00:00+01:00<br/>Einddatum: 2025-08-01T09:30:00+01:00<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01 09:00<br/>Einddatum: 2025-08-01 09:30<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
   },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "bb9c5cf0-25e5-47e4-a9a9-350ec964fc6d"
+    }
+  ],
   "status": "planned",
   "class": {
     "code": "AMB",

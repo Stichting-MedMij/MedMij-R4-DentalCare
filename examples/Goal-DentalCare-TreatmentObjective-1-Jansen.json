@@ -17,6 +17,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Behandeldoel: Gewenste gezondheidstoestand: gaatje in je tand of kies, specifiek doel: normaal<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Prioriteit: Hoog</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "dcc5a61e-c302-4aa3-acc3-837c0edb8882"
+    }
+  ],
   "lifecycleStatus": "active",
   "priority": {
     "coding": [

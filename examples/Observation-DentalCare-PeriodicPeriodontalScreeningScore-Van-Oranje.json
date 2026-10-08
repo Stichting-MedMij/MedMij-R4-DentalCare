@@ -24,8 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:05<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Geen parodontale vervolgbehandeling; wel gingivitis bij slechte mondhygiëne<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:05<br/>Score: Pockets 0-3 millimeter = in orde<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "8fed8eb5-5353-4ae6-88dc-ab283ad0afb3"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",

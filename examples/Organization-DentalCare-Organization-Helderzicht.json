@@ -72,5 +72,11 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Verzekeraar Helderzicht<br/>Adres: Parksingel 8, 9995 XX Den Helder</div>"
   },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "3920b8b8-8cb8-4d08-a034-f3516073287d"
+    }
+  ],
   "name": "Verzekeraar Helderzicht"
 }

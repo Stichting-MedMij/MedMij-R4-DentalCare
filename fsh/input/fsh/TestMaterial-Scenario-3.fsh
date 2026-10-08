@@ -7,7 +7,7 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Score: ASA-score 3<br/>Opmerking: Allergisch voor gluten, heeft nierziekte en bloedarmoede<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Score: ASA-score 3<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
 * identifier
   * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "0892c80d-df37-438a-ae24-20243feec745"
@@ -29,7 +29,7 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Cariësrisico: verhoogd<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
 * identifier
   * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "7d351e57-3ee3-4a7c-8e93-2c3789d0314a"
@@ -51,7 +51,7 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01T09:00:00+01:00<br/>Einddatum: 2025-08-01T09:30:00+01:00<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01 09:00<br/>Einddatum: 2025-08-01 09:30<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
 * identifier
   * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "bb9c5cf0-25e5-47e4-a9a9-350ec964fc6d"
@@ -79,7 +79,7 @@ Usage: #example
   * tag[1] = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Mondhygiëne: Goed<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Mondhygiëne: goed<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
 * identifier
   * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "f8d64a19-1350-4c20-9567-9395b8ba0978"
@@ -144,9 +144,6 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Betaler: Berend van de Stok</div>"
-* identifier
-  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
-  * value = "d2987f88-2494-4bf5-aca4-7838c0d84d54"
 * extension[bankInformation]
   * extension[bankName]
     * valueString = "ABNA"
@@ -154,6 +151,9 @@ Usage: #example
     * valueString = "ABNA00NL"
   * extension[accountNumber]
     * valueString = "NL00ABNA0001234567"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "d2987f88-2494-4bf5-aca4-7838c0d84d54"
 * status = #active
 * type = $Verzekeringstype#pay "Pay"
 * beneficiary = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
@@ -195,7 +195,7 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Score: Pockets groter of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Verwezen naar paro; brace pas na stabilisatie<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Berend van de Stok<br/>Datum/Tijd: 2024-01-01 10:43<br/>Score: Pockets groter of gelijk aan 6 millimeter = wellicht niet in orde<br/>Uitgevoerd door: B. Dijkstra, Orthodontist</div>"
 * identifier
   * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "04f2e128-5ce8-491f-b518-b6afe4c69447"
@@ -217,7 +217,7 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eerste consult<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Datum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Orthodontist<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eerste consult<br/>Patiënt: Berend van de Stok<br/>Status: Voltooid<br/>Startdatum: 2024-01-01<br/>Uitgevoerd door: B. Dijkstra, Orthodontist<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
 * identifier
   * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "1b48b2b6-2a04-41b6-a86b-06652937a253"
@@ -334,9 +334,6 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandboog<br/>Indicatie: Malocclusie met scheefstand van de snijtand linksboven<br/>Zorgverlener: B. Dijkstra, Orthodontist<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
-* identifier
-  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
-  * value = "5912d4cf-3d7e-4d8c-8b01-b787c42c98db"
 * extension[healthProfessional]
   * valueReference = Reference(DentalCare-PractitionerRole-Dijkstra) "B. Dijkstra, Orthodontist"
     * type = "PractitionerRole"
@@ -346,6 +343,9 @@ Usage: #example
 * extension[treatmentObjective]
   * valueReference = Reference(DentalCare-TreatmentObjective-3-Van-De-Stok) "Behandeldoel: geen probleem met kauwen"
     * type = "Goal"
+* identifier
+  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "5912d4cf-3d7e-4d8c-8b01-b787c42c98db"
 * status = #active
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
@@ -373,9 +373,6 @@ Usage: #example
 * identifier[gs1ProductID]
   * system = $GS1GTIN
   * value = "08712345678906"
-* identifier[+]
-  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
-  * value = "741f9bd5-b2db-4ece-8b39-f6184cb5961f"
 * udiCarrier[gs1UdiCarrier]
   * deviceIdentifier = "08712345678906"
   * issuer = $GS1GTIN
@@ -403,9 +400,6 @@ Usage: #example
   * value
     * extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason]
       * valueCode = #masked // gemaskeerd BSN
-* identifier[+]
-  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
-  * value = "5525abb8-d236-4f50-83bc-15035265e055"
 * name[nameInformation]
   * use = #official
   * text = "Berend van de Stok"
@@ -493,9 +487,6 @@ Usage: #example
 * identifier[big]
   * system = "http://fhir.nl/fhir/NamingSystem/big"
   * value = "12000003"
-* identifier[+]
-  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
-  * value = "b1974443-5188-4005-9816-d944fee901df"
 * name[nameInformation]
   * use = #official
   * text = "B. Dijkstra"
@@ -539,16 +530,13 @@ Usage: #example
 * identifier[agb]
   * system = "http://fhir.nl/fhir/NamingSystem/agb-z"
   * value = "13004567"
-* identifier[+]
-  * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
-  * value = "80900c8e-70d8-4a58-b4ae-89dd25ae8467"
 * type = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * name = "Orthodontiepraktijk Dijkstra"
-* telecom[0]
+* telecom[telephoneNumbers]
   * system = #phone
   * value = "0164123456"
   * use = #work
-* telecom[1]
+* telecom[emailAddresses]
   * system = #email
   * value = "info@orthodontiedijkstra.nl"
   * use = #work

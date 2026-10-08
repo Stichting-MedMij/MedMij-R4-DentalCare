@@ -17,6 +17,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: Horizon<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-01-01<br/>Einddatum: 2024-01-01<br/>Status: Actief<br/>Betaler: Zorgverzekeraar Horizon N.V.</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "d8000838-3aa4-4afc-8db7-e16ba12a67d9"
+    }
+  ],
   "status": "active",
   "type": {
     "coding": [

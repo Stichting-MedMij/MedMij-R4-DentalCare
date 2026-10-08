@@ -7,7 +7,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Score: ASA-score 2<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Opmerking: Allergisch voor hooikoorts, rookt 12 sigaretten per dag, gebruikt medicatie Cetirizine</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Score: ASA-score 2<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "96da11cb-5072-4365-9ff2-9133ab95904e"
@@ -29,7 +29,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:15<br/>Score: ASA-score 3<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Opmerking: Acute luchtwegklachten bij hooikoorts; rookt nog; Cetirizine onvoldoende werkzaam</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:15<br/>Score: ASA-score 3<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "d290cecc-5e93-4e71-939f-7cf60f52ab1b"
@@ -51,7 +51,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2023-07-22 09:10<br/>Score: ASA-score 1<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Opmerking: Gestopt met roken; hooikoorts stabiel onder Cetirizine; geen andere comorbiditeit</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: ASA-score<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Score: ASA-score 1</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "ce68e627-ef88-411d-9401-d7f6fd751c34"
@@ -69,7 +69,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Cariësrisico: verhoogd<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "be5ba489-3d8c-4ece-8ebf-88fcc5ae09af"
@@ -91,7 +91,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:20<br/>Cariësrisico: Hoog<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:20<br/>Cariësrisico: hoog<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "2d06eb52-b810-4cf9-9a75-8392c9bcec41"
@@ -113,7 +113,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2023-07-22 09:15<br/>Cariësrisico: Laag<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Cariësrisico: laag</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "6c0b26c3-a839-4193-a291-bda5c7ebe52b"
@@ -179,7 +179,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2023-07-22 09:20<br/>Dental Fitness: Vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Dental Fitness (NAVO-classificatie)<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Dental Fitness: Vereist geen tandheelkundige behandeling / laag risico voor tandheelkundige noodgevallen</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "bab1ae05-c5e2-4e50-9fc3-973f07118a60"
@@ -199,7 +199,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Second opinion<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2023-07-22 09:00<br/>Einddatum: 2023-07-22 09:30<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "8f52785b-73e4-432d-9732-812c458da947"
@@ -234,7 +234,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Periodiek preventief onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11T10:00:00+01:00<br/>Einddatum: 2022-02-11T11:00:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Periodiek preventief onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11 10:00<br/>Einddatum: 2022-02-11 11:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "522c2105-1c1a-4457-af16-108fca6930f3"
@@ -267,7 +267,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Restauratieve behandeling<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-04-11T09:00:00+02:00<br/>Einddatum: 2022-04-11T10:00:00+02:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Restauratieve behandeling<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "78527342-6a1c-4a33-a3c8-3b33a8a6051a"
@@ -335,7 +335,7 @@ Usage: #example
   * tag[1] = $VektisAGB#8700 "Mondhygiënisten"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2023-07-22 09:25<br/>Mondhygiëne: goed<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Mondhygiëne: goed</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "9f4eebd9-f643-4bd8-b9c2-29675d95bc4f"
@@ -397,7 +397,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2023-07-22 09:30<br/>Activiteit: Nagels bijten<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Parafunctionele activiteit<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Activiteit: Nagels bijten</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "99415cf2-a501-45e0-b33a-c916a25c3c3d"
@@ -438,9 +438,6 @@ Usage: #example
 * text
   * status = #generated
   * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verzekering: zelf betalen<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Betaler: Anita Jansen-van Dijk</div>"
-* identifier
-  * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
-  * value = "93578ded-469a-4b02-9835-88f949f04b32"
 * extension[bankInformation]
   * extension[bankName]
     * valueString = "RABO"
@@ -448,6 +445,9 @@ Usage: #example
     * valueString = "RABO21NL"
   * extension[accountNumber]
     * valueString = "NL21RABO0001234567"
+* identifier
+  * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
+  * value = "93578ded-469a-4b02-9835-88f949f04b32"
 * status = #active
 * type = $Verzekeringstype#pay "Pay"
 * beneficiary = Reference(DentalCare-Patient-Jansen) "Anita Jansen-van Dijk"
@@ -466,9 +466,6 @@ Usage: #example
 * identifier[uzovi]
   * system = "http://fhir.nl/fhir/NamingSystem/uzovi"
   * value = "9911"
-* identifier[+]
-  * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
-  * value = "ae28c1bb-9098-4764-95d5-25f24a5bff90"
 * name = "Zorgverzekeraar Horizon N.V."
 * address
   * extension[addressType]
@@ -492,7 +489,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Score: Pockets 4-5 millimeter = mogelijk in orde<br/>Opmerking: Paro-preventietraject<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Score: Pockets 4-5 millimeter = mogelijk in orde<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "257b3fa7-c547-4e3f-bdfd-19a1e5eab686"
@@ -514,7 +511,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:40<br/>Score: Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Locale verdieping bij rechterkies; herbeoordeling na hygiëneverbetering<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:40<br/>Score: Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "eec9bfb6-6605-457d-8e46-3a19d4b9c3d5"
@@ -536,7 +533,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2023-07-22 09:35<br/>Score: Pockets 0-3 millimeter = in orde<br/>Opmerking: Paro-preventietraject afgerond; pockets genormaliseerd<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Score: Pockets 0-3 millimeter = in orde</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "128a1416-ec48-4157-a7e7-8411f9cf2673"
@@ -554,7 +551,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Maken en beoordelen kleine röntgenfoto<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Datum: 2022-02-11<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Maken en beoordelen kleine röntgenfoto<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Startdatum: 2022-02-11<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "2ad51faf-fe53-4b12-b58d-0f7dc46860f9"
@@ -577,12 +574,12 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Start: 2022-04-11T09:00<br/>Einde: 2022-04-11T09:45<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof<br/>Indicatie: Cariës rechterkies</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Startdatum: 2022-04-11 09:00<br/>Einddatum: 2022-04-11 09:45<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof<br/>Indicatie: Cariës rechterkies</div>"
+* extension[procedureMethod]
+  * valueCodeableConcept = $SCT#257867005 "inbrengen"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "d3be0dd5-79a9-435f-a9b5-54d676a18efc"
-* extension[procedureMethod]
-  * valueCodeableConcept = $SCT#257867005 "inbrengen"
 * status = #completed
 * category = $SCT#225362009 "tandheelkundige zorg"
 * code = $ProcedureTypeVektisDentalCareCodeSystemOID#V91 "Eénvlaksvulling composiet"
@@ -640,7 +637,7 @@ Usage: #example
   * tag = $VektisAGB#1200 "Tandartsen"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Gebitsreiniging<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Datum: 2023-07-22<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist<br/>Locatie: Praktijklocatie Lindenhof</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Verrichting: Gebitsreiniging<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist<br/>Locatie: Praktijklocatie Lindenhof</div>"
 * identifier
   * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "db0ef50b-af32-4b6a-9286-4f21b94fc790"
@@ -735,9 +732,6 @@ Usage: #example
   * value
     * extension[http://hl7.org/fhir/StructureDefinition/data-absent-reason]
       * valueCode = #masked // gemaskeerd BSN
-* identifier[+]
-  * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
-  * value = "eca5e209-bd28-42f7-a0de-98ceba6afe73"
 * name[nameInformation]
   * extension[nameUsage]
     * valueCode = $HumanNameAssemblyOrder#NL4
@@ -839,9 +833,6 @@ Usage: #example
 * identifier[big]
   * system = "http://fhir.nl/fhir/NamingSystem/big"
   * value = "12101002"
-* identifier[+]
-  * system = "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier"
-  * value = "93bbfd31-b6d8-4edf-8251-8e5d693ced42"
 * name[nameInformation]
   * use = #official
   * text = "D. de Ruiter"

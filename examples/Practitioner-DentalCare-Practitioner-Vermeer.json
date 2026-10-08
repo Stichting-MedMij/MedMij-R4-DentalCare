@@ -47,6 +47,18 @@
       }
     }
   ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "vermeer@mondhygienist.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "+31612345603",
+      "use": "work"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -106,17 +118,5 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zorgverlener: S. Vermeer<br/>BIG-nummer: 87001201<br/>Geslacht: Vrouw<br/>Telefoon: +31612345603<br/>E-mail: vermeer@mondhygienist.nl<br/>Adres: Simon Smitweg 1, 2353 GA Leiderdorp, Nederland</div>"
   },
-  "gender": "female",
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "+31612345603",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "vermeer@mondhygienist.nl",
-      "use": "work"
-    }
-  ]
+  "gender": "female"
 }

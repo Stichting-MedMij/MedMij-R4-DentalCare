@@ -45,6 +45,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verzekering: zelf betalen<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Actief<br/>Betaler: Anita Jansen-van Dijk</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "93578ded-469a-4b02-9835-88f949f04b32"
+    }
+  ],
   "status": "active",
   "beneficiary": {
     "reference": "Patient/DentalCare-Patient-Jansen",

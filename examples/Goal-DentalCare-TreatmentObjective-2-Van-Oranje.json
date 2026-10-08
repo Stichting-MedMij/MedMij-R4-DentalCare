@@ -17,6 +17,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Doel: Cariës rechterbovenkies restaureren<br/>Patiënt: Erik van Oranje<br/>Status: Actief<br/>Prioriteit: Hoog<br/>Startdatum: 2025-05-20<br/>Vastgesteld door: S. Vermeer, Mondhygiënist</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "ff0bf74b-fb91-4054-acdc-4359df96036f"
+    }
+  ],
   "lifecycleStatus": "active",
   "priority": {
     "coding": [

@@ -24,8 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:40<br/>Score: Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde<br/>Opmerking: Locale verdieping bij rechterkies; herbeoordeling na hygiëneverbetering<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Periodic Periodontal Screening<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-04-11 09:40<br/>Score: Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "eec9bfb6-6605-457d-8e46-3a19d4b9c3d5"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",

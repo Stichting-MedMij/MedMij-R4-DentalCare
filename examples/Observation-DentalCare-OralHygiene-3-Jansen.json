@@ -29,8 +29,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2023-07-22 09:25<br/>Mondhygiëne: goed<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Bevinding betreffende mondhygiëne<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2015-01-01<br/>Mondhygiëne: goed</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "9f4eebd9-f643-4bd8-b9c2-29675d95bc4f"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",

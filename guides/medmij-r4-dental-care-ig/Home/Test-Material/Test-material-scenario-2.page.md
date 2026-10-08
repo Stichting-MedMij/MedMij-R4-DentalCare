@@ -208,7 +208,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 96da11cb-5072-4365-9ff2-9133ab95904e (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-02-2022 10:43 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -220,7 +220,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | d290cecc-5e93-4e71-939f-7cf60f52ab1b (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-04-2022 09:15 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -232,7 +232,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | ce68e627-ef88-411d-9401-d7f6fd751c34 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | 01-01-2015 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -246,7 +246,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | be5ba489-3d8c-4ece-8ebf-88fcc5ae09af (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-02-2022 10:43 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -258,7 +258,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 2d06eb52-b810-4cf9-9a75-8392c9bcec41 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-04-2022 09:20 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -270,7 +270,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 6c0b26c3-a839-4193-a291-bda5c7ebe52b (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | 01-01-2015 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -284,7 +284,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 272ca4a8-7fab-446b-95b8-238dd74a9839 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-02-2022 10:43 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -296,7 +296,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 9516c611-005c-46a6-a6d1-c5540f9453c2 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-04-2022 09:25 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -308,7 +308,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | bab1ae05-c5e2-4e50-9fc3-973f07118a60 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | 01-01-2015 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -322,7 +322,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 8f52785b-73e4-432d-9732-812c458da947 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Second opinion |
@@ -341,7 +341,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 522c2105-1c1a-4457-af16-108fca6930f3 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Periodiek preventief onderzoek |
@@ -360,7 +360,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 78527342-6a1c-4a33-a3c8-3b33a8a6051a (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Restauratieve behandeling |
@@ -381,7 +381,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 83c98e03-c33f-4b68-881b-e4e2fdf437d1 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-02-2022 10:43 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
@@ -393,7 +393,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 5163d496-5eaf-4224-8987-e5b933539da9 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-04-2022 09:30 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
@@ -405,7 +405,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 9f4eebd9-f643-4bd8-b9c2-29675d95bc4f (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | 01-01-2015 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
@@ -419,7 +419,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | b26b3637-88b8-4d30-b79b-73a1e90149ee (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-02-2022 10:43 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -431,7 +431,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | a2b16d77-1c8f-4fba-a8cb-226ef664e756 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-04-2022 09:35 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -443,7 +443,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 99415cf2-a501-45e0-b33a-c916a25c3c3d (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | 01-01-2015 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -457,7 +457,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 93578ded-469a-4b02-9835-88f949f04b32 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Anita Jansen-van Dijk |
 | PayerPerson.BankInformation.BankName | RABO |
@@ -491,7 +491,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | d8000838-3aa4-4afc-8db7-e16ba12a67d9 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -527,7 +527,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 257b3fa7-c547-4e3f-bdfd-19a1e5eab686 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-02-2022 10:43 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -539,7 +539,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | eec9bfb6-6605-457d-8e46-3a19d4b9c3d5 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 11-04-2022 09:40 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -551,7 +551,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 128a1416-ec48-4157-a7e7-8411f9cf2673 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | 01-01-2015 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -565,7 +565,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 2ad51faf-fe53-4b12-b58d-0f7dc46860f9 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | StartDateTime | 11-02-2022 |
 | EndDateTime | |
@@ -591,7 +591,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | d3be0dd5-79a9-435f-a9b5-54d676a18efc (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | StartDateTime | 11-04-2022 09:00 |
 | EndDateTime | 11-04-2022 09:45 |
@@ -617,7 +617,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | db0ef50b-af32-4b6a-9286-4f21b94fc790 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | StartDateTime | |
 | EndDateTime | |
@@ -644,7 +644,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | dcc5a61e-c302-4aa3-acc3-837c0edb8882 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -676,7 +676,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 7ea2de10-5d3f-4d7a-a4e5-1eb786ff212c (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
@@ -693,7 +693,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | fa269297-4e4b-44b7-bff2-a83530298981 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | EffectiveDateTime | |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |

@@ -207,9 +207,9 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | bdabb6dc-a6be-4124-85c5-49bd385a9868 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
-| EffectiveDateTime | 2025-06-03 09:05 |
+| EffectiveDateTime | 03-06-2025 09:05 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ASAScoreValue | ASA-score 1 (code '413495001' from code system 'SNOMED CT')|
 | Performer | A.B.D.O. de Koning, Tandarts |
@@ -219,7 +219,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 96a93ed3-7a65-4bf8-a656-ec975732f73e (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 20-05-2025 10:30 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -231,7 +231,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 3fd0d3e1-960d-4a05-8ab5-76adbc1ecdce (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 20-05-2025 10:15 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -245,7 +245,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 3fd0d3e1-960d-4a05-8ab5-76adbc1ecdce (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
@@ -255,8 +255,8 @@
 | EndDateTime | 20-05-2026 11:00 |
 | ContactReason.Problem | |
 | ContactReason.Procedure | |
-| ContactReason.DeviatingResult | |
-| ContactReason.CommentContactReason | Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025 |
+| ContactReason.DeviatingResult | Vorige orthopantomogram (röntgenfoto) was in 2025 |
+| ContactReason.CommentContactReason | Jaarlijkse periodiek preventief onderzoek |
 | Origin | |
 | Destination | |
 
@@ -264,7 +264,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 2ffbc4f2-95e8-4b98-a803-34386f4595e9 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
@@ -283,7 +283,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | cc98117d-988c-4d3a-990a-a831fe580d8a (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 20-05-2025 10:45 |
 | CareType | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
@@ -295,7 +295,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 525c56a1-d0b7-4ee2-8825-32db8f8148e4 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 20-05-2025 10:10 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
@@ -309,7 +309,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 95f5850e-1bfd-4aad-b6dc-45beee67f185 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | Erik van Oranje |
 | PayerPerson.BankInformation.BankName | ING |
@@ -343,7 +343,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | b60e42e2-e133-4528-873c-292f0bb29093 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PayerPerson.PayerName | |
 | PayerPerson.BankInformation.BankName | |
@@ -377,7 +377,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 8fed8eb5-5353-4ae6-88dc-ab283ad0afb3 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 20-05-2025 10:05 |
 | CareType | Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
@@ -389,7 +389,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | 1c2c7df9-8a1f-4ef9-9bfd-3640f8e39ec1 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | StartDateTime | 03-06-2025 09:00 |
 | EndDateTime | 03-06-2025 09:45 |
@@ -417,7 +417,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | b9239217-7b5b-465b-a550-c3cabceb7983 (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 20-05-2025 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen'), Mondhygiënisten (code '8700' from code system 'Vektis AGB-medische specialismen') |
@@ -434,7 +434,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | |
+| IdentificationNumber | ff0bf74b-fb91-4054-acdc-4359df96036f (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | EffectiveDateTime | 20-05-2025 |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |

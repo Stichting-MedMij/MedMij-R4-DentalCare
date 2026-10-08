@@ -19,6 +19,18 @@
       "value": "13004567"
     }
   ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "info@orthodontiedijkstra.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "0164123456",
+      "use": "work"
+    }
+  ],
   "address": [
     {
       "extension": [
@@ -89,17 +101,5 @@
       ]
     }
   ],
-  "name": "Orthodontiepraktijk Dijkstra",
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "0164123456",
-      "use": "work"
-    },
-    {
-      "system": "email",
-      "value": "info@orthodontiedijkstra.nl",
-      "use": "work"
-    }
-  ]
+  "name": "Orthodontiepraktijk Dijkstra"
 }

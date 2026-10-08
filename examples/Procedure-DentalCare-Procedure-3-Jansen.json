@@ -24,8 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Gebitsreiniging<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Datum: 2023-07-22<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist<br/>Locatie: Praktijklocatie Lindenhof</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Gebitsreiniging<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Uitgevoerd door: S. Vermeer, Mondhygiënist<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "db0ef50b-af32-4b6a-9286-4f21b94fc790"
+    }
+  ],
   "status": "completed",
   "code": {
     "coding": [

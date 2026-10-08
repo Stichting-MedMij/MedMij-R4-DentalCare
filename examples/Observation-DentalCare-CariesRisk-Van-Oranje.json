@@ -24,8 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:30<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Erik van Oranje<br/>Datum/Tijd: 2025-05-20 10:30<br/>Cariësrisico: verhoogd<br/>Uitgevoerd door: A.B.D.O. de Koning, Tandarts</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "96a93ed3-7a65-4bf8-a656-ec975732f73e"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-Oranje",

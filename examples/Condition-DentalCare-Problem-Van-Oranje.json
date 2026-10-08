@@ -42,6 +42,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Probleem: Cariës rechterbovenkies<br/>Patiënt: Erik van Oranje<br/>Begindatum: 2025-05-20<br/>Klinische status: Actief<br/>Verificatiestatus: Bevestigd<br/>Vastgesteld door: A.B.D.O. de Koning, Tandarts</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "e8abe925-81c6-409f-b9b1-e9ba7676197a"
+    }
+  ],
   "clinicalStatus": {
     "coding": [
       {

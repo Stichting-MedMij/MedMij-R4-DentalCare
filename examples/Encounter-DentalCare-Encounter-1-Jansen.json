@@ -28,8 +28,14 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Second opinion<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2023-07-22T09:00:00+01:00<br/>Einddatum: 2023-07-22T09:30:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Second opinion<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2023-07-22 09:00<br/>Einddatum: 2023-07-22 09:30<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "8f52785b-73e4-432d-9732-812c458da947"
+    }
+  ],
   "status": "finished",
   "class": {
     "code": "OTH",

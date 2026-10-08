@@ -17,6 +17,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Specialisme: Mondhygiënisten<br/>Zorgverlener: Vermeer<br/>Organisatie: Mondzorgcentrum Lindenhof</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "52540a61-342e-46c5-85b8-379a124c2115"
+    }
+  ],
   "practitioner": {
     "reference": "Practitioner/DentalCare-Practitioner-Vermeer",
     "display": "S. Vermeer",

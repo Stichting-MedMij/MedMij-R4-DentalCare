@@ -43,6 +43,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medisch hulpmiddel: Vaste multibracket-beugel bovenboog<br/>Patiënt: Berend van de Stok<br/>Status: Actief<br/>Begindatum: 2024-02-01<br/>Einddatum: 2025-08-01<br/>Anatomische locatie: Bovenste tandboog<br/>Indicatie: Malocclusie met scheefstand van de snijtand linksboven<br/>Zorgverlener: B. Dijkstra, Orthodontist<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
   },
+  "identifier": [
+    {
+      "system": "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "5912d4cf-3d7e-4d8c-8b01-b787c42c98db"
+    }
+  ],
   "status": "active",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",

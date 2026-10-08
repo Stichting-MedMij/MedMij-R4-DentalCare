@@ -18,18 +18,24 @@
       "extension": [
         {
           "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
-          "valueString": "Periodiek preventief onderzoek; cariës rechterkies en slechte mondhygiëne vastgesteld"
+          "valueString": "Periodiek preventief onderzoek; kleine röntgenfoto gemaakt en beoordeeld, daarbij cariës rechterkies vastgesteld"
         }
       ],
-      "reference": "Condition/DentalCare-Problem-Jansen",
-      "display": "Cariës rechterkies",
-      "type": "Condition"
+      "reference": "Procedure/DentalCare-Procedure-1-Jansen",
+      "display": "Maken en beoordelen kleine röntgenfoto",
+      "type": "Procedure"
     }
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Periodiek preventief onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11T10:00:00+01:00<br/>Einddatum: 2022-02-11T11:00:00+01:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Periodiek preventief onderzoek<br/>Patiënt: Anita Jansen-van Dijk<br/>Begindatum: 2022-02-11 10:00<br/>Einddatum: 2022-02-11 11:00<br/>Status: Afgerond<br/>Locatie: Praktijklocatie Lindenhof</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "522c2105-1c1a-4457-af16-108fca6930f3"
+    }
+  ],
   "status": "finished",
   "class": {
     "code": "OTH",

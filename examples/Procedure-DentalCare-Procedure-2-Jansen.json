@@ -63,8 +63,14 @@
   ],
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Start: 2022-04-11T09:00<br/>Einde: 2022-04-11T09:45<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof<br/>Indicatie: Cariës rechterkies</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verrichting: Eénvlaksvulling composiet<br/>Patiënt: Anita Jansen-van Dijk<br/>Status: Voltooid<br/>Startdatum: 2022-04-11 09:00<br/>Einddatum: 2022-04-11 09:45<br/>Uitgevoerd door: D. de Ruiter, Tandarts<br/>Locatie: Praktijklocatie Lindenhof<br/>Indicatie: Cariës rechterkies</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "d3be0dd5-79a9-435f-a9b5-54d676a18efc"
+    }
+  ],
   "status": "completed",
   "code": {
     "coding": [

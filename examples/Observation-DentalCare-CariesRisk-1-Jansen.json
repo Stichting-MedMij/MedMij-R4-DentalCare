@@ -24,8 +24,14 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Cariësrisico: Verhoogd<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observatie: Vatbaarheid voor cariës<br/>Patiënt: Anita Jansen-van Dijk<br/>Datum/Tijd: 2022-02-11 10:43<br/>Cariësrisico: verhoogd<br/>Uitgevoerd door: D. de Ruiter, Tandarts</div>"
   },
+  "identifier": [
+    {
+      "system": "https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier",
+      "value": "be5ba489-3d8c-4ece-8ebf-88fcc5ae09af"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/DentalCare-Patient-Jansen",
