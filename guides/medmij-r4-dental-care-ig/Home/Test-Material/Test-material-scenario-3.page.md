@@ -165,7 +165,7 @@
 | IdentificationNumber | bb9c5cf0-25e5-47e4-a9a9-350ec964fc6d (in identifier system 'https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | |
 | CareType | Tandartsspecialisten dentomaxillaire orthopaedie (code '1300' from code system 'Vektis AGB-medische specialismen') |
-| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode'): Controle / debonding |
+| ContactType | Poliklinisch (code 'AMB' from code system 'ActCode') |
 | ContactWith | B. Dijkstra, Orthodontist |
 | Location | Orthodontiepraktijk Dijkstra |
 | StartDateTime | 01-08-2025 09:00 |

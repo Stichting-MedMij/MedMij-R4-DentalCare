@@ -51,14 +51,12 @@ Usage: #example
   * tag = $VektisAGB#1300 "Tandartsspecialisten dentomaxillaire orthopaedie"
 * text
   * status = #generated
-  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01 09:00<br/>Einddatum: 2025-08-01 09:30<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+  * div = "<div xmlns='http://www.w3.org/1999/xhtml'>Type contact: Poliklinisch<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01 09:00<br/>Einddatum: 2025-08-01 09:30<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
 * identifier
   * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"
   * value = "bb9c5cf0-25e5-47e4-a9a9-350ec964fc6d"
 * status = #planned
 * class = $ActCode#AMB "Poliklinisch"
-* type
-  * text = "Controle / debonding"
 * subject = Reference(DentalCare-Patient-Van-De-Stok) "Berend van de Stok"
   * type = "Patient"
 * participant
@@ -341,7 +339,7 @@ Usage: #example
   * valueReference = Reference(DentalCare-Location-Orthodontiepraktijk-Dijkstra) "Orthodontiepraktijk Dijkstra"
     * type = "Location"
 * extension[treatmentObjective]
-  * valueReference = Reference(DentalCare-TreatmentObjective-3-Van-De-Stok) "Behandeldoel: geen probleem met kauwen"
+  * valueReference = Reference(DentalCare-TreatmentObjective-3-Van-De-Stok) "Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen"
     * type = "Goal"
 * identifier
   * system = "https://orthodontiepraktijk-dijkstra.nl/fhir/NamingSystem/resource-business-identifier"

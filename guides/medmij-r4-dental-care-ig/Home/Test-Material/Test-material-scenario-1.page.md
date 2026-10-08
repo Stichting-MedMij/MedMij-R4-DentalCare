@@ -276,7 +276,7 @@
 | ContactReason.Procedure | |
 | ContactReason.DeviatingResult | |
 | ContactReason.CommentContactReason | Periodiek preventief onderzoek: cariës rechterbovenkies vastgesteld; restauratie gepland. Tevens gingivitis bij slechte mondhygiëne. |
-| Origin | thuis (code '264362003' from code system 'SNOMED CT') |
+| Origin | Eigen woonomgeving (code '264362003' from code system 'SNOMED CT') |
 | Destination | |
 
 ## Oral Hygiene data

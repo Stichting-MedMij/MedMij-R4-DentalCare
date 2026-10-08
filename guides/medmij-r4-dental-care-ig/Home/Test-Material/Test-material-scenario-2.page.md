@@ -335,7 +335,7 @@
 | ContactReason.DeviatingResult | |
 | ContactReason.CommentContactReason | Second opinion vanwege aanhoudende klachten en afwijkende parodontale screening |
 | Origin | |
-| Destination | thuis (code '264362003' from code system 'SNOMED CT') |
+| Destination | Eigen woonomgeving (code '264362003' from code system 'SNOMED CT') |
 
 ### Encounter - 11-02-2022
 

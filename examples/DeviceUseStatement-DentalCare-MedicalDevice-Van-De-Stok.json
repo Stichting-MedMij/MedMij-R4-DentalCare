@@ -34,7 +34,7 @@
       "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
       "valueReference": {
         "reference": "Goal/DentalCare-TreatmentObjective-3-Van-De-Stok",
-        "display": "Behandeldoel: geen probleem met kauwen",
+        "display": "Behandeldoel: Gewenste gezondheidstoestand: kan kauwen, specifiek doel: geen probleem met kauwen",
         "type": "Goal"
       }
     }

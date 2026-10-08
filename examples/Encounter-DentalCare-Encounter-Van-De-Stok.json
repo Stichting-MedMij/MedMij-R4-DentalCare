@@ -15,7 +15,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Controle / debonding<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01 09:00<br/>Einddatum: 2025-08-01 09:30<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type contact: Poliklinisch<br/>Patiënt: Berend van de Stok<br/>Begindatum: 2025-08-01 09:00<br/>Einddatum: 2025-08-01 09:30<br/>Status: Gepland<br/>Locatie: Orthodontiepraktijk Dijkstra</div>"
   },
   "identifier": [
     {
@@ -29,11 +29,6 @@
     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
     "display": "Poliklinisch"
   },
-  "type": [
-    {
-      "text": "Controle / debonding"
-    }
-  ],
   "subject": {
     "reference": "Patient/DentalCare-Patient-Van-De-Stok",
     "display": "Berend van de Stok",
