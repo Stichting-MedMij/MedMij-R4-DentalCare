@@ -1,0 +1,105 @@
+{
+  "resourceType": "Organization",
+  "id": "DentalCare-Organization-Mondzorgcentrum-Lindenhof",
+  "meta": {
+    "tag": [
+      {
+        "code": "1200",
+        "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+        "display": "Tandartsen"
+      }
+    ],
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.nl/fhir/NamingSystem/agb-z",
+      "value": "12999001"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "info@lindenhof-mondzorg.nl",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "+31612345602",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "WP",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
+                "display": "work place"
+              }
+            ]
+          }
+        }
+      ],
+      "line": [
+        "Meidoornlaan 15"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Meidoornlaan"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "15"
+            }
+          ]
+        }
+      ],
+      "use": "work",
+      "city": "Leiderdorp",
+      "postalCode": "9991 XX",
+      "country": "Nederland",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NL",
+                  "system": "urn:iso:std:iso:3166",
+                  "display": "Netherlands"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Organisatie: Mondzorgcentrum Lindenhof<br/>AGB-code: 12999001<br/>Telefoon: +31612345602<br/>E-mail: info@lindenhof-mondzorg.nl<br/>Adres: Meidoornlaan 15, 9991 XX Leiderdorp</div>"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "1200",
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.7",
+          "display": "Tandartsen"
+        }
+      ]
+    }
+  ],
+  "name": "Mondzorgcentrum Lindenhof"
+}

@@ -8,12 +8,12 @@ topic: fql-get-mappings
   where
     url = %canonical
   for
-    differential.element 
+    differential.element
   select
-    id, join mapping {identity, map, comment}
-  order by identity, map
+    id, join mapping {name: defineVariable('elementIdentity', identity).select((%resource.mapping.where(identity = %elementIdentity).name | identity).first()), map, comment}
+  order by name
   select
-    'Mapping name': identity,
+    'Mapping name': name,
     'Concept id': map,
     'FHIR element': id,
     Comments: comment
