@@ -49,11 +49,11 @@ In het Overzicht Zorgaanbieder - Mondzorg heeft het overzichtsscherm van elke CI
 
 **Figuur 2: Voorbeeld Overzicht Zorgaanbieder - Mondzorg**
 
-De acceptatiecriteria voor de overzichtsschermen van elke CIM is als volgt.
+De acceptatiecriteria voor de overzichtsschermen van elke CIM zijn als volgt.
 
 | Nr | Acceptatiecriteria |
 | --- | --- |
-| 1 | Standaard worden alle beschikbaar gestelde gegevens van de zorgaanbieders(s) overzichtelijk weergegeven, gesorteerd op datum van nieuw naar oud. |
+| 1 | Standaard worden alle beschikbaar gestelde gegevens van de zorgaanbieder(s) overzichtelijk weergegeven, gesorteerd op datum van nieuw naar oud. |
 | 2 | Je kunt zoeken op (delen van) de gegevens of op informatie uit de datavelden in het overzichtsscherm. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven. |
 | 3 | Voor de datavelden in het overzichtsscherm is het mogelijk om te filteren op één of meerdere waarden. De datum vormt hierop een uitzondering, omdat hiervoor al een periode kan worden opgegeven. Ook datavelden die leiden tot een te lange lijst van filterwaarden vormen een uitzondering. |
 | 4 | Voor het datumveld in het overzichtsscherm kun je een specifieke periode selecteren. |
@@ -504,7 +504,7 @@ Breedteverdeling (op basis van eerdere mapping):
     </tr>
     <tr>
       <td><strong>Bankgegevens</strong></td><td><strong>Container</strong></td><td>NL-CM:1.1.4</td><td></td><td></td>
-      <td></td><td>Bankgegegevens</td><td></td><td></td>
+      <td></td><td>Bankgegevens</td><td></td><td></td>
     </tr>
     <tr>
       <td>BankNaam</td><td>Item</td><td>NL-CM:1.1.9</td><td>ING Bank</td><td>b</td>
@@ -823,7 +823,7 @@ Breedteverdeling (op basis van eerdere mapping):
     <tr>
       <td><strong>PeriodiekeParodontaleScreeningScore</strong></td><td><strong>Rootconcept</strong></td><td>mz-dataelement-21</td><td></td><td></td>
       <td></td><td>Controle  tandvlees</td>
-      <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodiek Parodontaal Screenen.</td><td></td>
+      <td>De tandarts of mondhygiënist controleert de diepte van de tandvleespockets minimaal jaarlijks en noteert de PPS-score. Deze score geeft globaal de noodzaak tot vervolgstappen aan. Het gebit wordt hierbij vaak verdeeld in 6 of 4 gebieden, elk gebied kan een cijfer krijgen variërend van 1-3. PPS is een afkorting voor Periodieke Parodontale Screening.</td><td></td>
     </tr>
     <tr>
       <td>DatumTijd</td><td>Item</td><td>medmij-core-dataelement-119</td><td>01-01-2024</td><td>a</td>

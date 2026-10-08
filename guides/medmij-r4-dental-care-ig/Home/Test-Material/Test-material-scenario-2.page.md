@@ -545,7 +545,7 @@
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | PeriodicPeriodontalScreeningScoreValue | Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde (code 'ppsscore3' from code system 'PeriodicPeriodontalScreeningScore') |
 | Performer | D. de Ruiter, Tandarts |
-| Comment | Locale verdieping bij rechterkies; herbeoordeling na hygiëneverbetering. |
+| Comment | Lokale verdieping bij rechterkies; herbeoordeling na hygiëneverbetering. |
 
 ### Periodic Periodontal Screening Score - 01-01-2015
 

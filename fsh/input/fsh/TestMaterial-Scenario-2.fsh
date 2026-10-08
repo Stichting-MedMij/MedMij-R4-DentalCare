@@ -524,7 +524,7 @@ Usage: #example
   * type = "PractitionerRole"
 * valueCodeableConcept = $PeriodicPeriodontalScreeningScoreCodeSystemURL#ppsscore3 "Pockets groter dan of gelijk aan 6 millimeter = wellicht niet in orde"
 * note
-  * text = "Locale verdieping bij rechterkies; herbeoordeling na hygiëneverbetering."
+  * text = "Lokale verdieping bij rechterkies; herbeoordeling na hygiëneverbetering."
 
 Instance: DentalCare-PeriodicPeriodontalScreeningScore-3-Jansen
 InstanceOf: http://medmij.nl/fhir/StructureDefinition/mz-PeriodicPeriodontalScreeningScore

@@ -51,7 +51,7 @@ The table below gives an overview of all granular data services that are applica
 | 900000108 | {{pagelink: PeriodicPeriodontalScreeningScore, text: Retrieve Dental Care - Periodic Periodontal Screening score}} | Verzamelen Mondzorg - Periodieke Parodontale Screening-score | 1.0.0-rc.2 |
 | 900000102 | {{pagelink: Procedure, text: Retrieve Dental Care - Procedure}} | Verzamelen Mondzorg - Verrichting | 1.0.0-rc.2 |
 
-**Table 2: Granular data services applicable for Dental Care+**
+**Table 2: Granular data services applicable for Dental Care**
 
 The technical specifications with respect to the request message executed by the PHR and the response message of the XIS are detailed in the [MedMij R4 Core IG](https://simplifier.net/guide/medmij-r4-core-ig/Home/Granular-exchange?version=1.3.0#GeneralTechnicalSpecifications).
 

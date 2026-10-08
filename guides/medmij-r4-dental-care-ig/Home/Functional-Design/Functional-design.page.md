@@ -16,14 +16,14 @@ De doelgroep voor deze pagina wijkt niet af van de [algemene doelgroep](https://
 
 ### Kaders en uitgangspunten
 
-### Algemeen
+#### Algemeen
 Diverse Nederlandse en Europese wetten vormen de kaders voor het kunnen uitwisselen van mondzorggegevens.
 
 Zodra gegevens binnen de Defensie-context worden uitgewisseld, kan dat uitsluitend met DVP- en DVA-systemen die voldoen aan zowel het [MedMij Afsprakenstelsel](https://afsprakenstelsel.medmij.nl/) als de militaire informatiebeveiliging conform de [Algemene Beveiligingseisen voor Defensieopdrachten (ABDO)](https://www.defensie.nl/site/binaries/site-content/collections/documents/2020/02/04/abdo-2019/ABDO2019_Definitief_V1.1_web.pdf). In het bijzonder zijn deze van toepassing bij de gegevensuitwisseling van de Dental Fitness.
 
 Voor overige mondzorggegevens zijn de ABDO-eisen niet van toepassing, wanneer deze buiten de Defensie-context worden uitgewisseld. Aanvullend is de [NEN 7510](https://www.nen.nl/zorg-welzijn/ict-in-de-zorg/informatiebeveiliging-in-de-zorg) van toepassing.
 
-### Richtlijn en proces
+#### Richtlijn en proces
 Dit ontwerp is conform specificaties genoemd in de [algemene inleiding](https://informatiestandaarden.nictiz.nl/wiki/MedMij:V2020.01/Ontwerpen#Richtlijn) van de functionele ontwerpen binnen MedMij.
 
 Binnen Mondzorg wordt gebruikgemaakt van enkele zibs uit [Publicatie 2020](https://zibs.nl/wiki/ZIB_Publicatie_2020(NL)). Naast de zibs zijn er een aantal nieuwe CIM's ontwikkeld voor klinische concepten die (nog) niet beschikbaar zijn als zib:
@@ -31,13 +31,13 @@ Binnen Mondzorg wordt gebruikgemaakt van enkele zibs uit [Publicatie 2020](https
 - Voor de ASA-score is het [ASA Physical Status Classification System](https://journals.lww.com/anesthesiologyopen/fulltext/10.1097/ao9.0000000000000002~american-society-of-anesthesiologists-statement-on-asa) gevolgd, samen met een [Nederlandse versie](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) van de specificatie;
 - Voor de Dental Fitness zijn een internationale en nationale richtlijn gevolgd, namelijk de [NAVO-standaard AMedP-4.4 (Dental Fitness Standards for Military Personnel and the NATO Dental Fitness Classification System)](https://www.coemed.org/files/stanags/03_AMEDP/AMedP-4.4_EDB_V1_E.pdf) en Richtlijn 473 - Richtlijn bepaling Dental Fitness (2023), opgesteld door het Ministerie van Defensie.
 
-### Reikwijdte
+#### Reikwijdte
 De reikwijdte van dit ontwerp beslaat de functionele beschrijvingen en de dataset voor de gegevensuitwisselingen die voortvloeien uit uitgevoerde mondzorg.
 
-### Infrastructuur
+#### Infrastructuur
 Geen nadere specificatie, anders dan genoemd in de [algemene inleiding](https://informatiestandaarden.nictiz.nl/wiki/MedMij:FO:V1/FunctioneelOntwerp#Infrastructuur) van de functionele ontwerpen binnen MedMij.
 
-### Geografische reikwijdte
+#### Geografische reikwijdte
 Geen nadere specificatie, anders dan genoemd in de [algemene inleiding](https://informatiestandaarden.nictiz.nl/wiki/MedMij:FO:V1/FunctioneelOntwerp#Geografische_reikwijdte) van de functionele ontwerpen binnen MedMij.
 
 ### Kwalificatie en testen
@@ -54,7 +54,7 @@ Het doel is om het voor patiënten mogelijk te maken om regie te nemen op hun ei
 #### Patiëntreis mondzorggegevens
 Een patiëntreis beschrijft enkele momenten waarop een patiënt inzicht kan of zou willen hebben in zijn zorggegevens. In de mondzorg zijn er verschillende patiëntreizen te onderscheiden. Hieronder is één patiëntreis beschreven die gaat over een denkbeeldige patiënt Anita en de uitwisseling van mondzorggegevens tussen zorgaanbieder en patiënt (via de PGO).
 
-Anita Jansen vermoed dat ze gaatjes heeft. Ze is naar een civiele tandarts geweest voor een tandartscontrole. De tandarts geeft aan dat ze risico heeft op cariës. Anita krijgt uitleg van de tandarts over hoe ze haar mondhygiëne kan verbeteren, zodat ze dit thuis kan toepassen. Anita gaat na haar controle naar huis en wil graag weten wat de tandarts over haar heeft geregistreerd. Ze logt daarom via haar mobiele telefoon in (via DigiD) op haar eigen gekozen PGO. Anita vraagt via de PGO haar gegevens op bij de tandarts waar ze de controleafspraak had. De bevindingen die de tandarts tijdens haar controleafspraak heeft gemeld, worden overzichtelijk en begrijpelijk getoond in haar PGO; zo ziet Anita een beschrijving van haar cariësrisico en ziet ze dat haar mondhymondhygiëne als 'normaal' is geregistreerd. Ze vindt het prettig dat ze de bevindingen van de tandarts thuis nog eens na kan lezen en logt uit.
+Anita Jansen vermoed dat ze gaatjes heeft. Ze is naar een civiele tandarts geweest voor een tandartscontrole. De tandarts geeft aan dat ze risico heeft op cariës. Anita krijgt uitleg van de tandarts over hoe ze haar mondhygiëne kan verbeteren, zodat ze dit thuis kan toepassen. Anita gaat na haar controle naar huis en wil graag weten wat de tandarts over haar heeft geregistreerd. Ze logt daarom via haar mobiele telefoon in (via DigiD) op haar eigen gekozen PGO. Anita vraagt via de PGO haar gegevens op bij de tandarts waar ze de controleafspraak had. De bevindingen die de tandarts tijdens haar controleafspraak heeft gemeld, worden overzichtelijk en begrijpelijk getoond in haar PGO; zo ziet Anita een beschrijving van haar cariësrisico en ziet ze dat haar mondhygiëne als 'normaal' is geregistreerd. Ze vindt het prettig dat ze de bevindingen van de tandarts thuis nog eens na kan lezen en logt uit.
 
 #### Preproces
 - De patiënt beschikt over een eigen PGO dat aan de MedMij-eisen voldoet.
