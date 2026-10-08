@@ -92,6 +92,7 @@ Usage: #example
   * start = "2026-05-20T10:00:00+01:00"
   * end = "2026-05-20T11:00:00+01:00"
 * reasonCode[deviatingResult]
+  * text = "Vorige orthopantomogram (röntgenfoto) was in 2025"
   * extension[commentContactReason]
     * valueString = "Jaarlijkse periodiek preventief onderzoek; vorige orthopantomogram (röntgenfoto) was in 2025"
 * location
