@@ -245,7 +245,7 @@
 
 | | |
 | --- | --- |
-| IdentificationNumber | 3fd0d3e1-960d-4a05-8ab5-76adbc1ecdce (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
+| IdentificationNumber | 071bba18-b651-4f76-a8d6-08f1661ad4cb (in identifier system 'https://mondzorgcentrum-lindenhof.nl/fhir/NamingSystem/resource-business-identifier') |
 | HealthcareProvider | Mondzorgcentrum Lindenhof |
 | CareType | Tandartsen (code '1200' from code system 'Vektis AGB-medische specialismen') |
 | ContactType | Anders (code 'OTH' from code system 'NullFlavor'): Tandarts Periodiek Preventief Onderzoek |
